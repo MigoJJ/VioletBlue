@@ -1,8 +1,8 @@
+// Jae Joon Koh M.D.
 package je.panse.doro.main;
 
-import je.panse.doro.comm.*;		
+import je.panse.doro.comm.*;			
 import je.panse.doro.exec.*;
-
 import java.io.IOException;
 
 public class Enter {
