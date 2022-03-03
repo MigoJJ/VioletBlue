@@ -1,1 +1,6 @@
-C.C.   eee  (onset 5 month-ago)
+C.C.   dm  (onset 4 day-ago)
+
+PMH :  tuberculosis(-) asthma(-) hepatitis(-) operation(-)
+         DM (-)   HTN (-)   Chol (-)
+FHx :  
+Allergy : food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
