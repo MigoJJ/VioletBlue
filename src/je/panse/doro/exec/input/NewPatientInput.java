@@ -1,9 +1,10 @@
 package je.panse.doro.exec.input;
 
-import java.io.IOException;
+import java.io.IOException;	
 import java.util.Scanner;
-
 import je.panse.doro.comm.ManageFile;
+import je.panse.doro.exec.input.la.ChiefComplain;
+import je.panse.doro.exec.input.la.PastMedicalHistory;
 
 public class NewPatientInput {
 // --------------------------------------------	

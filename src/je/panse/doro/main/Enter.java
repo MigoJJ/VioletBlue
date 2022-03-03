@@ -1,8 +1,10 @@
 // Jae Joon Koh M.D.
 package je.panse.doro.main;
 
-import je.panse.doro.comm.*;			
+import je.panse.doro.comm.*;				
 import je.panse.doro.exec.*;
+
+import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class Enter {
@@ -24,7 +26,7 @@ public class Enter {
 	public static void main(String[] args) throws IOException {
 		CurrentDate.defineTime();
         System.out.println(wf);
-	
+
 		ManageFile.deletefiler(wcf);
 		ManageFile.checkfiler(wcf);
 		ManageFile.readfiler(wf);

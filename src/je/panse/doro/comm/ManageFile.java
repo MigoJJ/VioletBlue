@@ -1,17 +1,15 @@
 package je.panse.doro.comm;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import java.util.Scanner;
-import je.panse.doro.main.*;
-
-import je.panse.doro.exec.StartForm;
 import je.panse.doro.main.Enter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.Files;
+import java.util.Scanner;
+
 
 public class ManageFile {
 // -------------------------------------------
@@ -48,21 +46,10 @@ public class ManageFile {
 			}
     }	
 // -------------------------------------------	
-	public static void writefiler(String wirtef) throws IOException {
-		try {
-			File contentsm = new File(wirtef);
-			FileWriter myWriter = new FileWriter(Enter.wcf, StandardCharsets.UTF_8, true);
-		   myWriter.append((CharSequence) contentsm);
-		   myWriter.close();
-		  
-		   System.out.println("Successfully wrote to the file.");
-			copyfiler(Enter.wcf);
-				} 
-		catch (IOException e) {
-		  System.out.println("An error occurred.");
-		      e.printStackTrace();
-		 }
-  }
+	public static void writefiler(String writef) throws IOException {
+			ManageFileAppend.main(writef);
+	}
+
 // -------------------------------------------	
 	public static void copyfiler(String copyf) throws IOException {
 		    System.out.println(copyf); 
