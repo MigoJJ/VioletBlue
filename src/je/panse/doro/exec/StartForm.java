@@ -1,9 +1,9 @@
 package je.panse.doro.exec;
 
-import java.io.IOException;		
+import java.io.IOException;			
 import java.util.Scanner;
-
 import je.panse.doro.comm.ManageFile;
+import je.panse.doro.exec.input.DiseaseCode;
 import je.panse.doro.exec.input.NewPatientInput;
 
 public class StartForm {
@@ -16,6 +16,7 @@ public class StartForm {
 		
 		switch (n_disease) {
 				  case "1" : NewPatientInput.main(n_disease);  	break;
+				  case "2" : DiseaseCode.main(n_disease);  	break;
 		
 //				  case "1" : abs_code ="DM without complications\n";				ManageFile.writefiler();  	break;
 //				  case "11": abs_code ="DM with retinopathy \n";				   ManageFile.writefiler();  	break;
