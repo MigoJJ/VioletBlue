@@ -7,7 +7,7 @@ import je.panse.doro.comm.ReadWriteToFile;
 
 public class DiseaseCode {
 	static String DMMpath = ("/home/migoey/DoRoHome/git/"
-			+ "VioletBlue/src/je/panse/doro/text/form/DMM/DMM_History_taking_list");
+			+ "VioletBlue/src/je/panse/doro/text/DiseaseCategoryMenuList");
 	
 	static String DMMpath_cc = ("/home/migoey/DoRoHome/git/"
 	        + "VioletBlue/src/je/panse/doro/text/form/DMM/1DMM_A_Basic");

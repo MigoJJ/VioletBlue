@@ -10,7 +10,7 @@ public class Enter {
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 	public static String wd = (currentUsersHomeDir + "/src/je/panse/doro/text");
 	
-	public static String wf    = (wd + "/form/NEW/History_taking_list");
+	public static String wf    = (wd + "/StartMenuList");
 	public static String wcf   = (wd + "/chart.txt");
 	public static String wcc   = (wd + "/form/NEW/1CC");
 	public static String wpmh  = (wd + "/form/NEW/2PMH");	
