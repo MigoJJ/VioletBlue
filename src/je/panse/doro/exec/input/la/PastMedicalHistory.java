@@ -9,7 +9,7 @@ public class PastMedicalHistory {
 	String PMHx = "\n\nPMH :  tuberculosis(-) asthma(-) hepatitis(-) operation(-)\n"
 			+ "         DM (-)   HTN (-)   Chol (-)\n"
 			+ "FHx :  \n"
-			+ "Allergy : food(-) drug(-) injection(-) antibiotics(-) vaccine(-)";
+			+ "Allergy : food(-) drug(-) injection(-) antibiotics(-) vaccine(-)\n";
 	System.out.println(PMHx);
 	ManageFile.writefiler(PMHx);
 	}
