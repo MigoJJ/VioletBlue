@@ -16,6 +16,7 @@ public class ManageFileAppend {
 				} catch (IOException e) {
 					e.printStackTrace();
 			}
+			bufferedWriter.newLine();
 			bufferedWriter.flush();
 			bufferedWriter.close();
    }

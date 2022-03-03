@@ -1,8 +1,9 @@
 package je.panse.doro.exec.input.la;
 
-import java.io.IOException;		
+import java.io.IOException;			
 import java.util.Scanner;
-import je.panse.doro.comm.ManageFile;
+import je.panse.doro.comm.*;
+import je.panse.doro.main.Enter;
 
 public class ChiefComplain {
 // --------------------------------------------			
@@ -28,7 +29,9 @@ public class ChiefComplain {
 
 	    System.out.println("C.C   " + chiefcomplain + "  (onset " + onset + dutation + ")");
 	    String chiefComplainC = ("C.C.   " + chiefcomplain + "  (onset " + onset + dutation + ")");
+	    
 	    ManageFile.writefiler(chiefComplainC);
+	    ReadWriteToFile.readWTF(Enter.wcc);
 	    }
 // --------------------------------------------
 }
