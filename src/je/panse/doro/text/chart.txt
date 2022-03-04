@@ -1,32 +1,45 @@
+C.C.  Hypertension  (onset 10 year-ago)
 
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
+ 민원식님 가족 
+ 윤석중 내과
+3월에 들어서서 DOE(+)
 
+Family History & Past Medical History
+-------------------------------------
+PMH> tuberculosis(-) asthma(-) 
+	 hepatitis(-)operation(-)
+     DM (-)   HTN (+)   Chol (+) 
+     Other(-) with medication
+FHx> 
+Allergy> food(-) drug(-) injection(-) 
+	 antibiotics(-) vaccine(-)
 
+O>
+	Body Weight [ 73.3 ]kg   Height [  168.3 ]cm  
+	Waist       [ 88.7 ]cm   BMI    [     ]
+	Blood Pressure
+		[ 156/80  ]mmHg  [ .  ]/min  
+		Regular Left-seated-position
+Lab
+	
+	Glucose   FBS [ 93  ] mg/dL	 HbA1c [     ] %
+	Glucose   PP2 [     ] mg/dL	 HbA1c [     ] %
+	Lipid-Battery [ 164-50-72-100 ] mg/dL 
+	
+	Creatinine    [  1.2] mg/dL 	
+	         +A/C [  .  ] eGFR [ 63 ] 
+A>
+	#  Hypertension
+	#  Hypercholesterolemia
+	#	
 
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
-
-
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
-
-
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
-
-
-
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
-
-
-General state of health: 
-excellent, good, fair, poor. 
-Note any significant change from previous state.
-
+P> 
+	# Today Laboratory test
+	
+	#	ditto x [     ] days and 
+		OPD F/U [     ] weeks later
+	#	next Lab F/U plan(+)
+	
+	# 	dose-adjust
+	#	 
+	
