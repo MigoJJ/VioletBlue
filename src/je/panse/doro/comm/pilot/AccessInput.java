@@ -1,6 +1,6 @@
 package je.panse.doro.comm.pilot;
 
-import java.io.BufferedWriter;
+import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -24,8 +24,7 @@ public class AccessInput {
 	            	System.out.println("Inserted code finished  !!!.: ");
 	            	break;
 	            }
-
-	            //            System.out.println("Insert answer code:");
+//            System.out.println("Insert answer code:");
 //            String answer = scanner.nextLine();
 //	            
 //            	if(answer.equals("quit")){
@@ -35,39 +34,51 @@ public class AccessInput {
     	System.out.println("Success");
     	scanner.close();
     }
-
-    
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {
+		switch (dcode) {
+			case "d" : accessInsert("  #  DM without complications	");break;
+					case "dr" : accessInsert("  #  DM with Retinopathy ");break;
+					case "dn" : accessInsert("  #  DM with Nephropathy");break;
+					case "dp" : accessInsert("  #  DM with Peripheral Neuropathy");break;
+					case "da" : accessInsert("  #  DM with Autonomic Neuropathy");break;
+					
+			case "t" : accessInsert("  #  Hypertension ")	;break;	
+			case "c" : accessInsert("  #  Hypercholesterolemia ");break;
 			
-//	    	System.out.println("disease code ... is: " + dcode);  // Output user input
+			case "te" : accessInsert("  #  Hyperthyroidism : Graves' disease")	;break;
+			case "to" : accessInsert("  #  Hypothyroidism : Hashimoto's thyroiditis")	;break;
+			case "ts" : accessInsert("  #  Subacute Thyroiditis ")		;break;
+			case "tn" : accessInsert("  #  Thyroid nodule ")		;break;
+			case "tep" : accessInsert("  #  Hyperthyroidism with Pregnancy ")		;break;
+			case "top" : accessInsert("  #  Hypothyroidism with Pregnancy ")		;break;
 			
-			switch (dcode) {
-					  case "1" : System.out.println("#  DM without complications");
-					              	writecoding("#  DM without complications")		;	break;
-					              	
-					  case "2" : System.out.println("#  Hypertension");	
-					  				writecoding("#  Hypertension")				; 	break;
-					  case "3" : System.out.println("#  Hypercholesterolemia");	
-		  				writecoding("#  Hypercholesterolemia")				; 	break;
-					  				
-					  case "4" : System.out.println("#  Hyperthyroidism : Graves' disease");	
-		  				writecoding("#  Hyperthyroidism : Graves' disease")				; 	break;
-					  case "41" : System.out.println("#  Hypothyroidism :  Hashimoto's thyroiditis");	
-		  				writecoding("#  Hypothyroidism :  Hashimoto's thyroiditis")				; 	break;		
-
-					  case "5" : System.out.println("#  Osteoporosis");	
-		  				writecoding("#  Osteoporosis")				; 	break;					  
-
-		  				
-					  case "fl" : System.out.println("#  Fatty Liver");	
-		  				writecoding("#  Fatty Liver")				; 	break;		
-				}
-			}
+			case "os" : accessInsert("  #  Osteoporosis ");break;
+			
+			// ----------------------------------------------진료 보조
+			case "oc" : accessInsert("  #  Cholecystectomy d/t GB stone	")		;break;
+			case "oa" : accessInsert("  #  Appendectomy ")		;break;
+			case "oh" : accessInsert("  #  TAH : Total Abdominal Hysterectomy ")		;break;			
+				
+			case "hf" : accessInsert("  #  Fatty Liver ")		;break;
+			case "hc" : accessInsert("  #  Hepatic Cyst ")		;break;
+			case "hn" : accessInsert("  #  Hepatic Nodule ")		;break;
+			
+			case "rc" : accessInsert("  #  Renal Cyst ")		;break;
+			case "rn" : accessInsert("  #  Renal Nodule ")	;break;
+			
+			case "bc" : accessInsert("  #  Breast Cyst ")		;break;
+			case "bn" : accessInsert("  #  Breast Nodule ")	;break;
+			// ----------------------------------------------이찬주원장님
+			case "pa" : accessInsert("  #  Bronchial Asthma ")	;break;
+			case "pc" : accessInsert("  #  Chronic Cough ")	;break;
+			case "pp" : accessInsert("  #  Pneumonia ")	;break;
+			case "pt" : accessInsert("  #  Pulmonary Tuberculosis ")	;break;
+		}
+		}
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
 //		   checkfiler(Enter.wd + "/comm/pilot/chart_access");
-		   
 			File file = new File(Enter.wd + "/comm/pilot/chart_access");
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file,true));
 				try {
@@ -80,20 +91,13 @@ public class AccessInput {
 			bufferedWriter.close();
 }
 //------------------------------------------------
-//		static void checkfiler(String checkf) throws IOException {
-//			try {
-//				File A_disease = new File(checkf);
-//				if (A_disease.createNewFile()) {
-//					System.out.println("File created: " + A_disease.getName());
-//				} 
-//				else {
-//					System.out.println("File already exists.");
-//				}
-//			} 
-//			catch (IOException e) {
-//			System.out.println("An error occurred.");
-//			e.printStackTrace();
-//			}
-//		}	
+	   static void accessInsert(String diaease_description) throws IOException {
+				try {
+					System.out.println(diaease_description);
+					writecoding(diaease_description);
+				} catch (IOException e) {
+					e.printStackTrace();
+			}
+}
 //------------------------------------------------
 }
