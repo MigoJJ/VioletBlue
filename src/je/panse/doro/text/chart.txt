@@ -1,37 +1,42 @@
-C.C.  Hypertension  (onset 10 year-ago)
+C.C.   1  (onset 23)
 
- 민원식님 가족 
- 윤석중 내과
-3월에 들어서서 DOE(+)
+General state of health: 
+excellent, good, fair, poor. 
+Note any significant change from previous state.
 
 Family History & Past Medical History
 -------------------------------------
 PMH> tuberculosis(-) asthma(-) 
 	 hepatitis(-)operation(-)
-     DM (-)   HTN (+)   Chol (+) 
+     DM (-)   HTN (-)   Chol (-) 
      Other(-) with medication
 FHx> 
 Allergy> food(-) drug(-) injection(-) 
 	 antibiotics(-) vaccine(-)
 
 O>
-	Body Weight [ 73.3 ]kg   Height [  168.3 ]cm  
-	Waist       [ 88.7 ]cm   BMI    [     ]
+	Body Weight [     ]kg   Height [     ]cm  
+	Waist       [     ]cm   BMI    [     ]
 	Blood Pressure
-		[ 156/80  ]mmHg  [ .  ]/min  
+		[    /    ]mmHg  [    ]/min  
 		Regular Left-seated-position
 Lab
 	
-	Glucose   FBS [ 93  ] mg/dL	 HbA1c [     ] %
+	Glucose   FBS [     ] mg/dL	 HbA1c [     ] %
 	Glucose   PP2 [     ] mg/dL	 HbA1c [     ] %
-	Lipid-Battery [ 164-50-72-100 ] mg/dL 
+	Lipid-Battery [     ] mg/dL 
 	
-	Creatinine    [  1.2] mg/dL 	
-	         +A/C [  .  ] eGFR [ 63 ] 
+	Creatinine    [     ] mg/dL 	
+	         +A/C [     ] eGFR [    ] 
+	
+	Ophtalmology Clinic : F/U     
+		retinopathy/ Normal/ Cataract/ Glucoma
+
 A>
-	#  Hypertension
-	#  Hypercholesterolemia
-	#	
+	#1	Diabetes Mellitus
+	#2  Hypertension
+	#3  Hypercholesterolemia
+	#4	
 
 P> 
 	# Today Laboratory test
