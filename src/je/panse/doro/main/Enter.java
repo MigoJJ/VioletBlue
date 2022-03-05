@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class Enter {
-	//--- user directory definition--------------------------------------------
+	//--- user directory definition--------------------------
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 	public static String wd = (currentUsersHomeDir + "/src/je/panse/doro");
 	
@@ -20,7 +20,7 @@ public class Enter {
 	public static String wlab  = (wd + "/text/form/NEW/6LAB");
 	public static String wacc  = (wd + "/text/form/NEW/7ACC");
 	public static String wplan = (wd + "/text/form/NEW/8PLAN");
-    //------------------------------------------------------------------------------------
+    //--------------------------------------------------------
 	public static void main(String[] args) throws IOException {
 		CurrentDate.defineTime();
         System.out.println(wf);
@@ -30,7 +30,8 @@ public class Enter {
 		ManageFile.readfiler(wf);
 
 		StartForm.main(wf);
-//		ManageFile.copyfiler(wcf);
 		
+		ManageFile.copyfiler(wf);
 	}
+//--------------------------------------------------------
 }

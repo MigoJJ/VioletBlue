@@ -1,9 +1,9 @@
-package je.panse.doro.exec.input.la;
+package je.panse.doro.exec.input.New;
 
 import java.io.IOException;		
 import je.panse.doro.comm.ManageFile;
 
-public class PastMedicalHistory {
+public class B_PastMedicalHistory {
 // --------------------------------------------	
 	public static void pmhScan() throws IOException {
 	String PMHx = "\n\nPMH :  tuberculosis(-) asthma(-) hepatitis(-) operation(-)\n"

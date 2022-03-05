@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.ReadWriteToFile;
 
-public class DiseaseCode {
+public class Item {
 	static String DMMpath = ("/home/migoey/DoRoHome/git/"
 			+ "VioletBlue/src/je/panse/doro/text/DiseaseCategoryMenuList");
 	

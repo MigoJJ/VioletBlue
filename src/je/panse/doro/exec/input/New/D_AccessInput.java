@@ -1,4 +1,4 @@
-package je.panse.doro.comm.pilot;
+package je.panse.doro.exec.input.New;
 
 import java.io.BufferedWriter;	
 import java.io.File;
@@ -6,11 +6,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import je.panse.doro.exec.input.DiseaseCode;
+import je.panse.doro.exec.input.SOAPInput;
 import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
-public class AccessInput {
+public class D_AccessInput {
     private static String question;
 
     public static void main(String args[]) throws IOException{

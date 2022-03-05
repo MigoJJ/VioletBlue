@@ -3,7 +3,7 @@ package je.panse.doro.exec;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.ManageFile;
-import je.panse.doro.exec.input.DiseaseCode;
+import je.panse.doro.exec.input.SOAPInput;
 import je.panse.doro.exec.input.NewPatientInput;
 
 public class StartForm {
@@ -16,10 +16,9 @@ public class StartForm {
 		
 		switch (n_disease) {
 				  case "1" : NewPatientInput.main(n_disease);  	break;
-				  case "2" : DiseaseCode.main(n_disease);  	break;
-		
-//				  case "1" : abs_code ="DM without complications\n";				ManageFile.writefiler();  	break;
-
+				  case "2" : SOAPInput.main(n_disease);  	break;
+				  case "3" : SOAPInput.main(n_disease);  	break;
+				  case "4" : SOAPInput.main(n_disease);  	break;
 			}
 		}
 	}
