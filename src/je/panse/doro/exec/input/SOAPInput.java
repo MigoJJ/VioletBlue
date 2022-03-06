@@ -26,7 +26,7 @@ public class SOAPInput {
 			switch (n_SOAP) {
 //					  case "1" : NewPatientInput.main(n_disease);  	break;
 					  case "3" : D_AccessInput.main(null);  	break;
-					  case "a" : D_AccessInput.main(null);  	break;
+//					  case "a" : D_AccessInput.main(null);  	break;
 					  //					  case "3" : SOAPInput.main(n_disease);  	break;
 //					  case "4" : SOAPInput.main(n_disease);  	break;
 			}
