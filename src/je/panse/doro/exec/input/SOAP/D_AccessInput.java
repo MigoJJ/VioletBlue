@@ -1,6 +1,6 @@
 package je.panse.doro.exec.input.SOAP;
 
-import java.io.BufferedWriter;		
+import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,9 +10,9 @@ import je.panse.doro.main.Enter;
 public class D_AccessInput {
     public static void main(String args[]) throws IOException{
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Insert disease code : ");
+//        System.out.println("Insert disease code : ");
         while (true) {
-//            System.out.println("Insert disease code : ");
+            System.out.println("Insert disease code : ");
             String question = scanner.nextLine();
         	code_select(question);
                 if(question.equals("quit")){
@@ -73,9 +73,9 @@ public class D_AccessInput {
 		}
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
-//		   checkfiler(Enter.wd + "/comm/pilot/chart_access");
-			File file = new File(Enter.wd + "/comm/pilot/chart_access");
-			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file,true));
+			File file_acc = new File(Enter.wd + "/text/form/SOAP/chart_access");
+			System.out.println(file_acc);
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {
 					bufferedWriter.write(writec);
 				} catch (IOException e) {
