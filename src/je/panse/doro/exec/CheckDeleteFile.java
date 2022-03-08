@@ -1,4 +1,4 @@
-package je.panse.doro.main;
+package je.panse.doro.exec;
 
 
 import java.io.File;
