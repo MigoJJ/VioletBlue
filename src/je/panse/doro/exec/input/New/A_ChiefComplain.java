@@ -1,11 +1,11 @@
-package je.panse.doro.exec.input.la;
+package je.panse.doro.exec.input.New;
 
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.*;
 import je.panse.doro.main.Enter;
 
-public class ChiefComplain {
+public class A_ChiefComplain {
 // --------------------------------------------			
 	public static void ccScan() throws IOException {
 		System.out.println("Enter values:");

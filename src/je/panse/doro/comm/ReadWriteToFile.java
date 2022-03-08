@@ -15,4 +15,15 @@ public class ReadWriteToFile
 	    System.out.println(actual);
 	    ManageFileAppend.main(actual);
 	}
+	
+	public static void readWTF_DMM(String rwtf_dmm) throws IOException
+	{
+		Path fileName = Path.of(rwtf_dmm);
+	    String actual  = Files.readString(fileName);
+
+	    System.out.println(actual);
+	    ManageFileAppend.main(actual);
+	}
+
+// ------------------------------------------
 }
