@@ -8,7 +8,7 @@ import java.nio.file.Path;
 public class Enter {
 	//--- user directory definition--------------------------------------------
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
-	public static String wd = (currentUsersHomeDir + "/src/je/panse/doro");
+	public static String wdt = (currentUsersHomeDir + "/src/je/panse/doro/text");
 	
 	public static String wf    = (wd + "/text/form/History_taking_list");
 	public static String wcf   = (wd + "/text/chart.txt");
@@ -22,8 +22,8 @@ public class Enter {
 	public static String wplan = (wd + "/text/form/8PLAN");
     //------------------------------------------------------------------------------------
 	public static void main(String[] args) throws IOException {
+       System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
-        System.out.println(wf);
 
 		ManageFile.deletefiler(wcf);
 		ManageFile.checkfiler(wcf);
