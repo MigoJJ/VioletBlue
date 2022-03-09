@@ -1,4 +1,4 @@
-package je.panse.doro.exec.input.New;
+package je.panse.doro.exec.input.hana;
 
 import java.io.IOException;			
 import java.util.Scanner;

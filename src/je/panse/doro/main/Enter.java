@@ -20,19 +20,17 @@ public class Enter {
 
        CheckDeleteFile.main(wtf);
        
-       ManageFile.deletefiler(wt + "/chartplate");
-       ManageFile.deletefiler(wt + "/comment");
-       ManageFile.checkfiler(wt + "/chartplate");
-       ManageFile.checkfiler(wt + "/comment");
+       ManageFile.deletefiler(wtf + "/chartplate");
+       ManageFile.deletefiler(wtf + "/comment");
        
        CheckCreateFile.main(wtf);
-//       
-//       CheckCreateFile.main(wtf);
-//       
-//		ManageFile.readfiler (wt + "/StartMenuList");
-//		
-//		StartForm.main(null);
-		
+       CheckCreateFile.chartplating(wtf);
+       
+       FirstPlate.main(null);
+       
+//       ReadWriteToFile.readFile(wtf +"/hana/3CC");
+       
+       
 //		ManageFile.copyfiler(wf);
 	}
 //--------------------------------------------------------
