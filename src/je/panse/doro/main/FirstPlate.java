@@ -23,9 +23,12 @@ public class FirstPlate {
 		  list.add("/9PLAN");  
 		  for(String fruit:list)  
 			  copyfiler(fruit);
+		  
+		  for(String fruit:list)  
+			  copyfiler(fruit);
+		  Managafile.appendfiler( fruit, );
 //	      System.out.println(fruit);
   }
-
 		public static void copyfiler(String copyf) throws IOException {
 		    System.out.println(copyf); 
 			// 1. 원본 File, 복사할 File 준비

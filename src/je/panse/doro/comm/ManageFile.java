@@ -46,8 +46,18 @@ public class ManageFile {
 			}
     }	
 // -------------------------------------------	
-	public static void writefiler(String writef) throws IOException {
-			ManageFileAppend.main(writef);
+	public static void appendfiler(String writef , String appdata) throws IOException {
+		try
+		{
+		    String filename= writef;
+		    FileWriter fw = new FileWriter(filename,true); //the true will append the new data
+		    fw.write(appdata + "\n");//appends the string to the file
+		    fw.close();
+		}
+		catch(IOException ioe)
+		{
+		    System.err.println("IOException: " + ioe.getMessage());
+		}
 	}
 
 // -------------------------------------------	
