@@ -16,8 +16,7 @@ public class ReadWriteToFile {
 		      while (myReader.hasNextLine()) {
 		        String data = myReader.nextLine();
 		        System.out.println(data);
-
-		        writeFile(Enter.wtf + "/3CC" , data);
+		        
 		      }
 		        myReader.close();
 		    } catch (FileNotFoundException e) {
