@@ -18,6 +18,7 @@ public class CheckCreateFile {
 		  for(String fruit:list)  
 			   cf(wtf + fruit);
 //		      System.out.println(fruit);
+		  chartplating(wtf);
 	  }
 // ------------------------------------------
 	static void cf(String file1) {	

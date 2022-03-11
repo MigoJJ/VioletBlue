@@ -17,21 +17,15 @@ public class Enter {
 	public static void main(String[] args) throws IOException {
 		CurrentDate.defineTime();
        System.out.println(currentUsersHomeDir);
-
+// --- File Preparing
        CheckDeleteFile.main(wtf);
-       
        ManageFile.deletefiler(wtf + "/chartplate");
        ManageFile.deletefiler(wtf + "/comment");
-       
        CheckCreateFile.main(wtf);
-       CheckCreateFile.chartplating(wtf);
-       
        FirstPlate.main(null);
+// --- File copy to chartplate
        
-//       ReadWriteToFile.readFile(wtf +"/hana/3CC");
        
-       
-//		ManageFile.copyfiler(wf);
-	}
+   }
 //--------------------------------------------------------
 }
