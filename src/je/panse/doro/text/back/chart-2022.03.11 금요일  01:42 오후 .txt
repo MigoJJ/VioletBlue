@@ -1,0 +1,41 @@
+C.C.   Diabetes Mellitus  (onset 1 year-ago)
+
+General state of health:  good (no any significant state.)C.C.   Diabetes Mellitus  (onset 1 year-ago)
+Family History & Past Medical History
+-------------------------------------
+PMH> tuberculosis(-) asthma(-)     hepatitis(-)operation(-)
+     DM (-)   HTN (-)   Chol (-)          Other(-) with medication
+FHx> 
+Allergy> food(-) drug(-) injection(-)   antibiotics(-) vaccine(-)
+S>
+subjective findings
+O>
+	Body Weight [     ]kg   Height [     ]cm  Waist       [     ]cm   BMI    [     ]
+	Blood Pressure
+		[    /    ]mmHg  [    ]/min  Regular Left-seated-position
+Lab
+	Glucose   FBS [     ] mg/dL	 HbA1c [     ] %
+	Glucose   PP2 [     ] mg/dL	 HbA1c [     ] %
+	Lipid-Battery [     ] mg/dL 
+	
+	Creatinine    [     ] mg/dL 	 +A/C [     ] eGFR [    ] 
+	
+	Ophtalmology Clinic : F/U     
+		retinopathy/ Normal/ Cataract/ Glucoma
+A>
+	#  Diabetes Mellitus
+	#  Hypertension
+	#  Hypercholesterolemia
+	#	
+P> 
+	# Today Laboratory test
+	#	ditto x [     ] days and 
+		OPD F/U [     ] weeks later
+	#	next Lab F/U plan(+)
+	# 	dose-adjustHypertension
+
+Hyperthyroidism    Graves' disease
+Hypothyroidism     Hashimpto's thyroiditis
+Hypercholesterolemia
+IDA
+Atrialfibrillation  -- >  sinus rhythm convert
