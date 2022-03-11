@@ -1,11 +1,7 @@
 // Jae Joon Koh M.D.
 package je.panse.doro.main;
-import je.panse.doro.comm.*;				
-import je.panse.doro.exec.*;
+import je.panse.doro.comm.*;					
 import java.io.IOException;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Enter {
 	//--- user directory definition--------------------------
@@ -26,7 +22,7 @@ public class Enter {
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
 		
        FirstPlate.main(null);
-       ManageFile.ucopyfiler();
+       ManageFile.ucopyfiler(wtf);
        
 	}
 //--------------------------------------------------------
