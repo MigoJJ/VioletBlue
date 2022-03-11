@@ -1,22 +1,39 @@
 package je.panse.doro.exec.input;
 
-import java.io.IOException;			
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
+
 import je.panse.doro.comm.ReadWriteToFile;
-import je.panse.doro.exec.input.hana.A_ChiefComplain;
 import je.panse.doro.main.Enter;
 
 public class NewPatientInput {
 // --------------------------------------------	
-	public static void main(String new1) throws IOException {
-		A_ChiefComplain.ccScan();
-//	    ReadWriteToFile.readWTF(Enter.wcc);
-	    ReadWriteToFile.readWTF(Enter.wpmh);
-//	    ReadWriteToFile.readWTF(Enter.whab);
-	    ReadWriteToFile.readWTF(Enter.wbmi);
-	    ReadWriteToFile.readWTF(Enter.wbp);
-	    ReadWriteToFile.readWTF(Enter.wlab);
-	    ReadWriteToFile.readWTF(Enter.wacc);
-	    ReadWriteToFile.readWTF(Enter.wplan);
-	}
+	public static void main(String[] args) throws IOException {
+			List<String> list=new ArrayList<String>();  
+			  list.add("/3CC");  
+			  list.add("/4PMH");  
+			  list.add("/5SUJ");  
+			  list.add("/6OBJ");  
+			  list.add("/7LAB");  
+			  list.add("/8ACC");  
+			  list.add("/9PLAN");  
+			  for(String fruit:list)  
+				  copyfiler(fruit);
+			  
+			  for(String fruit:list)
+				  	ReadWriteToFile.readFile(Enter.wtf + fruit);
+	  }
+	// -----------------------------------------------------------
+			public static void copyfiler(String copyf) throws IOException {
+				// 1. 원본 File, 복사할 File 준비
+				File file = new File(Enter.wtf + "/hana" + copyf); 
+				File newFile = new File(Enter.wtf + copyf);
+				// 2. 복사
+				Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+		}
 // --------------------------------------------
 }

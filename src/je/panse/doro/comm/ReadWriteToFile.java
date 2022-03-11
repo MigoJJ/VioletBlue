@@ -1,12 +1,10 @@
 package je.panse.doro.comm;
 
-import java.io.File;
+import java.io.File;	
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
-import je.panse.doro.exec.CheckCreateFile;
 import je.panse.doro.main.Enter;
 
 public class ReadWriteToFile {
@@ -32,7 +30,7 @@ public class ReadWriteToFile {
 		      FileWriter myWriter = new FileWriter(writef, true);
 		      myWriter.write(writed + "\n");
 		      myWriter.close();
-		      System.out.println("Successfully wrote to the file.");
+//		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();

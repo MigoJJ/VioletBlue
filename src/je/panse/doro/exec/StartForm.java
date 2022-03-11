@@ -3,7 +3,7 @@ package je.panse.doro.exec;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.ManageFile;
-import je.panse.doro.exec.input.SOAPInput;
+import je.panse.doro.exec.input.CategoryList;
 import je.panse.doro.exec.input.NewPatientInput;
 
 public class StartForm {
