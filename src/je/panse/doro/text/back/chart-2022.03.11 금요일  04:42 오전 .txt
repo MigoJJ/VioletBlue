@@ -1,7 +1,18 @@
+first trial for copy files
+
 
 C.C.   Diabetes Mellitus  (onset 1 year-ago)
 
-General state of health:  good (no any significant state.)
+General state of health:  good (no any significant state.)C.C.   Diabetes Mellitus  (onset 1 year-ago)
+
+
+Current Date: 2022.03.11 금요일  04:41 오전 
+/home/migoey/git/violetBlue0306
+successfully deleting file ~~^^
+successfully deleting file ~~^^
+File created: ChartPlate
+File created: Comment
+/home/migoey/git/violetBlue0306/src/je/panse/doro/text/formS
 Family History & Past Medical History
 -------------------------------------
 PMH> tuberculosis(-) asthma(-)     hepatitis(-)operation(-)
@@ -34,3 +45,9 @@ P>
 		OPD F/U [     ] weeks later
 	#	next Lab F/U plan(+)
 	# 	dose-adjustHypertension
+
+Hyperthyroidism    Graves' disease
+Hypothyroidism     Hashimpto's thyroiditis
+Hypercholesterolemia
+IDA
+Atrialfibrillation  -- >  sinus rhythm convert

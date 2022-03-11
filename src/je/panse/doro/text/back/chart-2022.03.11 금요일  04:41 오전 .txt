@@ -1,7 +1,9 @@
+first trial for copy files
+
 
 C.C.   Diabetes Mellitus  (onset 1 year-ago)
 
-General state of health:  good (no any significant state.)
+General state of health:  good (no any significant state.)C.C.   Diabetes Mellitus  (onset 1 year-ago)
 Family History & Past Medical History
 -------------------------------------
 PMH> tuberculosis(-) asthma(-)     hepatitis(-)operation(-)
@@ -34,3 +36,9 @@ P>
 		OPD F/U [     ] weeks later
 	#	next Lab F/U plan(+)
 	# 	dose-adjustHypertension
+
+Hyperthyroidism    Graves' disease
+Hypothyroidism     Hashimpto's thyroiditis
+Hypercholesterolemia
+IDA
+Atrialfibrillation  -- >  sinus rhythm convert

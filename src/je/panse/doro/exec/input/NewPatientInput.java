@@ -13,27 +13,9 @@ import je.panse.doro.main.Enter;
 public class NewPatientInput {
 // --------------------------------------------	
 	public static void main(String[] args) throws IOException {
-			List<String> list=new ArrayList<String>();  
-			  list.add("/3CC");  
-			  list.add("/4PMH");  
-			  list.add("/5SUJ");  
-			  list.add("/6OBJ");  
-			  list.add("/7LAB");  
-			  list.add("/8ACC");  
-			  list.add("/9PLAN");  
-			  for(String fruit:list)  
-				  copyfiler(fruit);
-			  
-			  for(String fruit:list)
-				  	ReadWriteToFile.readFile(Enter.wtf + fruit);
-	  }
-	// -----------------------------------------------------------
-			public static void copyfiler(String copyf) throws IOException {
-				// 1. 원본 File, 복사할 File 준비
-				File file = new File(Enter.wtf + "/hana" + copyf); 
-				File newFile = new File(Enter.wtf + copyf);
-				// 2. 복사
-				Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-		}
+	
+	
+	
+	}
 // --------------------------------------------
 }
