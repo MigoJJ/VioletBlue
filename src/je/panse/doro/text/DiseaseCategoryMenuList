@@ -1,5 +1,4 @@
-Diabetes Mellitus
-OPD regular F/U
+2. Disease Category
 -------------------------------------------------------------------
 
 		1. 	Diabetes Mellitus 
@@ -8,7 +7,20 @@ OPD regular F/U
 		
 		3. 	Hypercholestarolemia
 		
-		4.	ETC.
-
+		4.	Thyroid
+				[ 41 ] Hyperthyroidism : Greaves' disease
+				[ 42 ] Hyperthyroidism 
+				[ 43 ] Hypothyoridism  : Hashimoto's thyroiditis
+				[ 44 ] Hypothyroidism
+				[ 45 ] Subacute Thyroiditis
+		
+		5. Osteoporosis
+		
+		6. Infection 
+				[ 61 ] URI
+				[ 62 ] UTI      
+		
+		
+		 
 -------------------------------------------------------------------
 Choice the number >>>
