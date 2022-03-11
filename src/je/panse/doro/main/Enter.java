@@ -8,15 +8,23 @@ import java.nio.file.Path;
 public class Enter {
 	//--- user directory definition--------------------------
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
+<<<<<<< HEAD
+	public static String wdt = (currentUsersHomeDir + "/src/je/panse/doro/text");
+=======
 	public static String wd = (currentUsersHomeDir + "/src/je/panse/doro");
 
 	public static String wt    = (wd + "/text");
 	public static String wtf    = (wd + "/text/form");
+>>>>>>> refs/remotes/origin/frature
 	
     //--------------------------------------------------------
 	public static void main(String[] args) throws IOException {
-		CurrentDate.defineTime();
        System.out.println(currentUsersHomeDir);
+		CurrentDate.defineTime();
+<<<<<<< HEAD
+=======
+       System.out.println(currentUsersHomeDir);
+>>>>>>> refs/remotes/origin/frature
 
        CheckDeleteFile.main(wtf);
        
