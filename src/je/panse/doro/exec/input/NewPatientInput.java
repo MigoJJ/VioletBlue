@@ -12,7 +12,7 @@ import je.panse.doro.main.Enter;
 
 public class NewPatientInput {
 // --------------------------------------------	
-	public static void main(String[] args) throws IOException {
+	public static void main(String n_code) throws IOException {
 			List<String> list=new ArrayList<String>();  
 			  list.add("/3CC");  
 			  list.add("/4PMH");  
