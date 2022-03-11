@@ -46,7 +46,7 @@ public class ManageFile {
 	public static void ucopyfiler(String copyf) throws IOException {
 		    System.out.println(copyf); 
 			// 1. 원본 File, 복사할 File 준비
-		    File file = new File(Enter.wtf + "/text/ChartPlate"); 
+		    File file = new File(copyf+ "/ChartPlate"); 
 			File newFile = new File(Enter.wd + "/text/back/" + "chart-" + CurrentDate.save_time +".txt");
 			// 2. 복사
 			 Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);

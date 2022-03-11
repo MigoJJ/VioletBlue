@@ -23,8 +23,6 @@ public class FirstPlate {
 		  
 		  for(String fruit:list)
 			  	ReadWriteToFile.readFile(Enter.wtf + fruit);
-		  
-		  
   }
 // -----------------------------------------------------------
 		public static void copyfiler(String copyf) throws IOException {
