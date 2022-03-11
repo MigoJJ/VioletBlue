@@ -4,6 +4,8 @@ import je.panse.doro.comm.*;
 import je.panse.doro.exec.*;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Enter {
 	//--- user directory definition--------------------------
@@ -17,15 +19,15 @@ public class Enter {
 	public static void main(String[] args) throws IOException {
 		CurrentDate.defineTime();
        System.out.println(currentUsersHomeDir);
-// --- File Preparing
-       CheckDeleteFile.main(wtf);
-       ManageFile.deletefiler(wtf + "/chartplate");
-       ManageFile.deletefiler(wtf + "/comment");
-       CheckCreateFile.main(wtf);
+    // --- File Preparing 
+		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
+		ManageFile.deletefiler(Enter.wtf + "/Comment");
+		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
+		ManageFile.checkfiler(Enter.wtf + "/Comment");
+		
        FirstPlate.main(null);
-// --- File copy to chartplate
+       ManageFile.ucopyfiler();
        
-       
-   }
+	}
 //--------------------------------------------------------
 }
