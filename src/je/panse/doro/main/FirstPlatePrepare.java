@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import je.panse.doro.comm.ReadWriteToFile;
 
-public class FirstPlate {
+public class FirstPlatePrepare {
 	public static void main(String[] args) throws IOException {
 		List<String> list=new ArrayList<String>();  
 		  list.add("/3CC");  
@@ -26,7 +26,7 @@ public class FirstPlate {
   }
 // -----------------------------------------------------------
 		public static void copyfiler(String copyf) throws IOException {
-		    System.out.println(copyf); 
+//		    System.out.println(copyf); 
 			// 1. 원본 File, 복사할 File 준비
 			File file = new File(Enter.wtf + "/hana" + copyf); 
 			File newFile = new File(Enter.wtf + copyf);
