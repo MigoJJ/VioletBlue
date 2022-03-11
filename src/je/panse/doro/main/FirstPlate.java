@@ -1,17 +1,11 @@
 package je.panse.doro.main;
 
-import java.io.File;
+import java.io.File;	
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
-
-import je.panse.doro.comm.CurrentDate;
-import je.panse.doro.comm.ManageFile;
-import je.panse.doro.comm.ReadWriteToFile;
-import je.panse.doro.exec.CheckCreateFile;
-import je.panse.doro.exec.CheckDeleteFile;
 import je.panse.doro.comm.ReadWriteToFile;
 
 public class FirstPlate {
@@ -29,6 +23,8 @@ public class FirstPlate {
 		  
 		  for(String fruit:list)
 			  	ReadWriteToFile.readFile(Enter.wtf + fruit);
+		  
+		  
   }
 // -----------------------------------------------------------
 		public static void copyfiler(String copyf) throws IOException {

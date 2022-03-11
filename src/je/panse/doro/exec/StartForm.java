@@ -14,19 +14,11 @@ public class StartForm {
 		String n_code = d_code.nextLine();  // Read user input
 		System.out.println("disease code ... is: " + n_code);  // Output user input
 		
-<<<<<<< HEAD
-		switch (n_disease) {
-				  case "1" : NewPatientInput.main(n_disease);  	break;
-//				  case "3" : SOAPInput.main(n_disease);  	break;
-				  case "2" : SOAPInput.main(n_disease);  	break;
-//				  case "4" : SOAPInput.main(n_disease);  	break;
-=======
-		switch (n_code) {
+	switch (n_code) {
 				  case "1" : NewPatientInput.main(n_code);  	break;
-				  case "2" : SOAPInput.main(n_code);  	break;
-				  case "3" : SOAPInput.main(n_code);  	break;
-				  case "4" : SOAPInput.main(n_code);  	break;
->>>>>>> refs/remotes/origin/feature20220305
+//				  case "2" : SOAPInput.main(n_code);  	break;
+//				  case "3" : SOAPInput.main(n_code);  	break;
+//				  case "4" : SOAPInput.main(n_code);  	break;
 			}
 		}
 	}
