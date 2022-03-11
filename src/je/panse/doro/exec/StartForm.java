@@ -16,9 +16,9 @@ public class StartForm {
 		
 		switch (n_code) {
 				  case "1" : NewPatientInput.main(n_code);  	break;
-				  case "2" : SOAPInput.main(n_code);  	break;
-				  case "3" : SOAPInput.main(n_code);  	break;
-				  case "4" : SOAPInput.main(n_code);  	break;
+//				  case "2" : SOAPInput.main(n_code);  	break;
+//				  case "3" : SOAPInput.main(n_code);  	break;
+//				  case "4" : SOAPInput.main(n_code);  	break;
 			}
 		}
 	}
