@@ -2,7 +2,7 @@ package je.panse.doro.exec.input;
 
 import java.io.IOException;			
 import je.panse.doro.comm.ReadWriteToFile;
-import je.panse.doro.exec.input.New.A_ChiefComplain;
+import je.panse.doro.exec.input.hana.A_ChiefComplain;
 import je.panse.doro.main.Enter;
 
 public class NewPatientInput {

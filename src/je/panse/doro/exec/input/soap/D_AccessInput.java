@@ -1,14 +1,19 @@
-package je.panse.doro.exec.input.SOAP;
+package je.panse.doro.exec.input.soap;
 
 import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
+import je.panse.doro.exec.input.SOAPInput;
+import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
 public class D_AccessInput {
-    public static void main(String args[]) throws IOException{
+    private static String question;
+    
+    public static void main(String[] args) throws IOException{
         Scanner scanner=new Scanner(System.in);
 //        System.out.println("Insert disease code : ");
         while (true) {

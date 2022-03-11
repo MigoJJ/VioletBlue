@@ -1,30 +1,25 @@
-package je.panse.doro.main;
-
+package je.panse.doro.exec;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class CheckCreateFile {
 	  public static void main(String wtf) throws IOException {
-//		  wtf = (wtf + "/htn");
 		  List<String> list=new ArrayList<String>();  
-//		  list.add("/lanu/11ChartPlat");  
-//		  list.add("/lanu/12Comment");  
-		  list.add("/51CC");  
-		  list.add("/52PMH");  
-		  list.add("/53SUJ");  
-		  list.add("/54OBJ");  
-		  list.add("/55LAB");  
-		  list.add("/56ACC");  
-		  list.add("/57PLAN");  
+		  list.add("/3CC");  
+		  list.add("/4PMH");  
+		  list.add("/5SUJ");  
+		  list.add("/6OBJ");  
+		  list.add("/7LAB");  
+		  list.add("/8ACC");  
+		  list.add("/9PLAN");  
 		  for(String fruit:list)  
 			   cf(wtf + fruit);
 //		      System.out.println(fruit);
 	  }
-	  
+// ------------------------------------------
 	static void cf(String file1) {	
     	try {
 	      File file = new File(file1);
@@ -37,5 +32,14 @@ public class CheckCreateFile {
 	      e.printStackTrace();
 	}
   }
+	// ------------------------------------------
+	  public static void chartplating(String wtf) throws IOException {
+		  List<String> list=new ArrayList<String>();  
+		  list.add("/ChartPlat");  
+		  list.add("/Comment");  
+		  for(String fruit:list)  
+			   cf(wtf + fruit);
+//	      System.out.println(fruit);
+	  }
 // ------------------------------------------
 }

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import je.panse.doro.comm.ManageFile;
-import je.panse.doro.exec.input.New.D_AccessInput;
+import je.panse.doro.exec.input.hana.D_AccessInput;
 import je.panse.doro.main.Enter;
 
 public class SOAPInput {
