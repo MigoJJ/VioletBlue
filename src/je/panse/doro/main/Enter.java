@@ -27,7 +27,7 @@ public class Enter {
        ManageFile.ucopyfiler(wtf);
 	
 // --------------------------------------------------------
-       CategoryList.main(null);
+       CategoryList.main(Enter.wtf + "/StartMenuList");
 	}
 // --------------------------------------------------------
 }

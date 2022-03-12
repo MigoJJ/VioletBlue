@@ -1,17 +1,14 @@
 package je.panse.doro.exec.input;
 
-import java.io.IOException;	
+import java.io.IOException;			
 import java.util.Scanner;
-
 import je.panse.doro.comm.ManageFile;
-import je.panse.doro.main.Enter;
 
 public class CategoryList {
-	static String ndsi = (Enter.wtf + "/ChartPlate");
 	// --------------------------------------------	
-	public static void main(String args) throws IOException {
-		ManageFile.readfiler(Enter.wt + "/StartMenuList");
-		System.out.println(ndsi);
+	public static void main(String ndsi) throws IOException {
+		System.out.println("System.out.println(ndsi);" + ndsi);
+		ManageFile.readfiler(ndsi);
 		select_main();
 	}
 		
