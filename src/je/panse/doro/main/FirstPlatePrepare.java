@@ -17,14 +17,15 @@ public class FirstPlatePrepare {
 		  list.add("/6OBJ");  
 		  list.add("/7LAB");  
 		  list.add("/8ACC");  
-		  list.add("/9PLAN");  
+		  list.add("/9PLAN");
+// ------------------------------------------------------Form Files Copying	
 		  for(String fruit:list)  
 			  copyfiler(fruit);
-		  
+// ------------------------------------------------------ChartPlate writing		  
 		  for(String fruit:list)
 			  	ReadWriteToFile.readFile(Enter.wtf + fruit);
   }
-// -----------------------------------------------------------
+// ----------------------------------
 		public static void copyfiler(String copyf) throws IOException {
 //		    System.out.println(copyf); 
 			// 1. 원본 File, 복사할 File 준비
@@ -33,5 +34,5 @@ public class FirstPlatePrepare {
 			// 2. 복사
 			Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 	}
-// -----------------------------------------------------------
+// ----------------------------------
 }

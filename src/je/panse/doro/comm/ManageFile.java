@@ -60,8 +60,8 @@ public class ManageFile {
 		}
 	}
 
-// -------------------------------------------	
-	public static void ucopyfiler() throws IOException {
+// -------------------------------------------ChartPlate backup	
+	public static void ucopyfiler(String wtf) throws IOException {
 			// 1. 원본 File, 복사할 File 준비
 		    File file = new File(Enter.wd + "/text/form/ChartPlate"); 
 			File newFile = new File(Enter.wd + "/text/back/" + "chart-" + CurrentDate.save_time +".txt");
