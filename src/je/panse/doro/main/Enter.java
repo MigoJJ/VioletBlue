@@ -23,7 +23,7 @@ public class Enter {
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
 		
        FirstPlatePrepare.main(null);
-       ManageFile.ucopyfiler(wtf);
+//       ManageFile.ucopyfiler(wtf);
 	
     // ------------------------------------------------------GDStm Program starting
        StartForm.main(null);
