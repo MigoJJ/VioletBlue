@@ -24,20 +24,11 @@ public class Enter {
 		
        FirstPlatePrepare.main(null);
 //       ManageFile.ucopyfiler(wtf);
-	
-<<<<<<< HEAD
-    // ------------------------------------------------------GDStm Program starting
-       StartForm.main(null);
+// ------------------------------------------------------GDStm Program starting
+    StartForm.main(null);
     // CategoryList.main(null);
-=======
-// --------------------------------------------------------
-       CategoryList.main(Enter.wtf + "/StartMenuList");
->>>>>>> refs/remotes/origin/feature20220305
+
 	}
-<<<<<<< HEAD
-	// --------------------------------------------------------
-}
-=======
 // --------------------------------------------------------
 }
->>>>>>> refs/remotes/origin/feature20220305
+
