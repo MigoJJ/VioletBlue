@@ -1,22 +1,26 @@
 package je.panse.doro.exec.input;
 
-import java.io.IOException;			
-import je.panse.doro.comm.ReadWriteToFile;
-import je.panse.doro.exec.input.hana.A_ChiefComplain;
-import je.panse.doro.main.Enter;
+import java.io.IOException;
+import java.util.Scanner;
+
+import je.panse.doro.comm.ManageFile;
 
 public class NewPatientInput {
 // --------------------------------------------	
-	public static void main(String new1) throws IOException {
-		A_ChiefComplain.ccScan();
-//	    ReadWriteToFile.readWTF(Enter.wcc);
-	    ReadWriteToFile.readWTF(Enter.wpmh);
-//	    ReadWriteToFile.readWTF(Enter.whab);
-	    ReadWriteToFile.readWTF(Enter.wbmi);
-	    ReadWriteToFile.readWTF(Enter.wbp);
-	    ReadWriteToFile.readWTF(Enter.wlab);
-	    ReadWriteToFile.readWTF(Enter.wacc);
-	    ReadWriteToFile.readWTF(Enter.wplan);
-	}
+	public static void main(String n_code) throws IOException {
+		ManageFile.readfiler("/home/migowj/GDS/git/violetBlue0306/src/je/panse/doro/text/ChartInputMenu1");
+				
+		    try (Scanner c_code = new Scanner(System.in)) {
+				System.out.println("Enter selected code number ...   : ");
+				String cn_code = c_code.nextLine();  // Read user input
+				
+				switch (cn_code) {
+						  case "1" : Input1CC.main(n_code);  	break;
+//						  case "2" : SOAPInput.main(n_code);  	break;
+//						  case "3" : SOAPInput.main(n_code);  	break;
+//						  case "4" : SOAPInput.main(n_code);  	break;
+					}
+				}
+			}
 // --------------------------------------------
 }

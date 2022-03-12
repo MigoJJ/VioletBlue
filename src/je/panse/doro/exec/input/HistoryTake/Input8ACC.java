@@ -1,23 +1,18 @@
-package je.panse.doro.exec.input.hana;
+package je.panse.doro.exec.input.HistoryTake;
 
 import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
-import je.panse.doro.exec.input.SOAPInput;
-import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
-public class D_AccessInput {
-    private static String question;
-
-    public static void main(String args[]) throws IOException{
+public class Input8ACC {
+    public static void main(String n_code) throws IOException{
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Insert disease code : ");
+//        System.out.println("Insert disease code : ");
         while (true) {
-//            System.out.println("Insert disease code : ");
+            System.out.println("Insert disease code : ");
             String question = scanner.nextLine();
         	code_select(question);
                 if(question.equals("quit")){
@@ -75,12 +70,12 @@ public class D_AccessInput {
 			case "pp" : accessInsert("  #  Pneumonia ")	;break;
 			case "pt" : accessInsert("  #  Pulmonary Tuberculosis ")	;break;
 		}
-		}
+}
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
-//		   checkfiler(Enter.wd + "/comm/pilot/chart_access");
-			File file = new File(Enter.wd + "/comm/pilot/chart_access");
-			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file,true));
+			File file_acc = new File(Enter.wd + "/text/form/SOAP/chart_access");
+			System.out.println(file_acc);
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {
 					bufferedWriter.write(writec);
 				} catch (IOException e) {

@@ -1,19 +1,14 @@
-package je.panse.doro.exec.input.hten;
+package je.panse.doro.exec.input.HistoryTake;
 
 import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
-import je.panse.doro.exec.input.SOAPInput;
-import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
-public class D_AccessInput {
-    private static String question;
-    
-    public static void main(String[] args) throws IOException{
+public class Input1CC {
+    public static void main(String n_code) throws IOException{
         Scanner scanner=new Scanner(System.in);
 //        System.out.println("Insert disease code : ");
         while (true) {
@@ -75,7 +70,7 @@ public class D_AccessInput {
 			case "pp" : accessInsert("  #  Pneumonia ")	;break;
 			case "pt" : accessInsert("  #  Pulmonary Tuberculosis ")	;break;
 		}
-		}
+}
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
 			File file_acc = new File(Enter.wd + "/text/form/SOAP/chart_access");
