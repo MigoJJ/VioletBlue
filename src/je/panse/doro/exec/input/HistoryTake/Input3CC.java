@@ -41,9 +41,10 @@ public class Input3CC {
 					ReadWriteToChartPlate.writeFile(Enter.wtf + "/3CC", chartline);
 					ReadWriteToChartPlate.writeFile(Enter.wtf + "/3CC", chartline1);
 					
+					//-------------------------ChartPlate Update
 					PlatePrepUpdate.main(args);
-					
 					NewPatientInput.main(null);
+
 				  } catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
