@@ -1,6 +1,11 @@
-P> 
+P>  -------------------------- 
 	# Today Laboratory test
-	#	ditto x [     ] days and 
-		OPD F/U [     ] weeks later
+	
+	# Current Medication
+	 
+	#	ditto x [     ] days and OPD F/U [     ] weeks later
 	#	next Lab F/U plan(+)
-	# 	dose-adjustHypertension
+	# 	dose-adjust
+	    dose-up
+	    dose-down
+

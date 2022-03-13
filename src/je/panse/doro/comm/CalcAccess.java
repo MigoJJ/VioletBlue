@@ -1,4 +1,4 @@
-package je.panse.doro.exec.input.HistoryTake;
+package je.panse.doro.comm;
 
 import java.io.BufferedWriter;	
 import java.io.File;
@@ -7,8 +7,9 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
-public class Input1CC {
-    public static void main(String n_code) throws IOException{
+public class CalcAccess {
+    public static String diaease_description;
+	public static void main(String n_code) throws IOException{
         Scanner scanner=new Scanner(System.in);
 //        System.out.println("Insert disease code : ");
         while (true) {
@@ -27,7 +28,7 @@ public class Input1CC {
 //	            }
         }
     	System.out.println("Success");
-    	scanner.close();
+//    	scanner.close();
     }
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {
@@ -73,7 +74,7 @@ public class Input1CC {
 }
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
-			File file_acc = new File(Enter.wd + "/text/form/SOAP/chart_access");
+			File file_acc = new File(Enter.wtf + "/8ACC");
 			System.out.println(file_acc);
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {

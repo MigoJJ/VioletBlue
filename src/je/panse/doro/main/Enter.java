@@ -22,6 +22,7 @@ public class Enter {
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
 		
+<<<<<<< HEAD
        FirstPlatePrepare.main(null);
 //       ManageFile.ucopyfiler(wtf);
 // ------------------------------------------------------GDStm Program starting
@@ -32,3 +33,11 @@ public class Enter {
 // --------------------------------------------------------
 }
 
+=======
+       PlatePrepFirst.main(null);
+// ------------------------------------------------------GDStm Program starting
+       StartForm.main(null);
+// --------------------------------------------------------
+    }
+}
+>>>>>>> refs/remotes/origin/feature20220305
