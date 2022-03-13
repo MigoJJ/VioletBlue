@@ -2,6 +2,7 @@ package je.panse.doro.exec.input.HistoryTake;
 
 import java.io.IOException;
 import je.panse.doro.exec.StartForm;
+import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
 public class InputButton {
