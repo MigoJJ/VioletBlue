@@ -12,13 +12,16 @@ public class ReadWriteToChartPlate {
 		    try {
 		      File myObj = new File(readf);
 		      Scanner myReader = new Scanner(myObj);
+		      
 		      while (myReader.hasNextLine()) {
 		        String data = myReader.nextLine();
 //		        System.out.println(data);
 		        
-		        writeFile(Enter.wtf + "/ChartPlate",data);
+		        writeFile(Enter.wtf + "/ChartPlate" ,data);
 		      }
-		        myReader.close();
+		     
+		      myReader.close();
+		    
 		    } catch (FileNotFoundException e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();

@@ -8,9 +8,6 @@ import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String args []) throws IOException {
-		
-		
-   			System.out.println("/home/migowj/GDS/git/violetBlue0306/src/je/panse/doro/text/StartMenuList");	
 		    ManageFile.readfiler(Enter.wt + "/StartMenuList");
    			
    			try (Scanner d_code = new Scanner(System.in)) {
