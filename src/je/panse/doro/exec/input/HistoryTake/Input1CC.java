@@ -1,98 +1,77 @@
 package je.panse.doro.exec.input.HistoryTake;
 
-import java.io.BufferedWriter;	
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import je.panse.doro.comm.ManageFile;
+import je.panse.doro.comm.ReadWriteToChartPlate;
 import je.panse.doro.main.Enter;
+import je.panse.doro.main.PlatePrepUpdate;  
 
 public class Input1CC {
-    public static void main(String n_code) throws IOException{
-        Scanner scanner=new Scanner(System.in);
-//        System.out.println("Insert disease code : ");
-        while (true) {
-            System.out.println("Insert disease code : ");
-            String question = scanner.nextLine();
-        	code_select(question);
-                if(question.equals("quit")){
-	            	System.out.println("Inserted code finished  !!!.: ");
-	            	break;
-	            }
-//            System.out.println("Insert answer code:");
-//            String answer = scanner.nextLine();
-//	            
-//            	if(answer.equals("quit")){
-//	                break;
-//	            }
-        }
-    	System.out.println("Success");
-    	scanner.close();
-    }
-//------------------------------------------------     
-	static void code_select(String dcode) throws IOException {
-		switch (dcode) {
-			case "d" : accessInsert("  #  DM without complications	");break;
-					case "dr" : accessInsert("  #  DM with Retinopathy ");break;
-					case "dn" : accessInsert("  #  DM with Nephropathy");break;
-					case "dp" : accessInsert("  #  DM with Peripheral Neuropathy");break;
-					case "da" : accessInsert("  #  DM with Autonomic Neuropathy");break;
-					
-			case "t" : accessInsert("  #  Hypertension ")	;break;	
-			case "c" : accessInsert("  #  Hypercholesterolemia ");break;
-			
-			case "te" : accessInsert("  #  Hyperthyroidism : Graves' disease")	;break;
-			case "to" : accessInsert("  #  Hypothyroidism : Hashimoto's thyroiditis")	;break;
-			case "ts" : accessInsert("  #  Subacute Thyroiditis ")		;break;
-			case "tn" : accessInsert("  #  Thyroid nodule ")		;break;
-			case "tep" : accessInsert("  #  Hyperthyroidism with Pregnancy ")		;break;
-			case "top" : accessInsert("  #  Hypothyroidism with Pregnancy ")		;break;
-			
-			case "os" : accessInsert("  #  Osteoporosis ");break;
-			
-			// ----------------------------------------------진료 보조
-			case "oc" : accessInsert("  #  Cholecystectomy d/t GB stone	")		;break;
-			case "oa" : accessInsert("  #  Appendectomy ")		;break;
-			case "oh" : accessInsert("  #  TAH : Total Abdominal Hysterectomy ")		;break;			
+	static String a;
+	static String b;
+	static String c;
+	static String f;
+	static String chartline;
+	static String chartline1;
+		 public static void main(String args[]) 
+		 {
+			    Scanner s = new Scanner(System.in);
+			    System.out.print("Enter chief complain :");
+			    	a = s.nextLine();
+			    System.out.print("Enter duration:");
+			    	b = s.nextLine();
+			    System.out.print("Enter year/month/day:");
+			    	c = s.nextLine();
+				yymmdd(c);
 				
-			case "hf" : accessInsert("  #  Fatty Liver ")		;break;
-			case "hc" : accessInsert("  #  Hepatic Cyst ")		;break;
-			case "hn" : accessInsert("  #  Hepatic Nodule ")		;break;
-			
-			case "rc" : accessInsert("  #  Renal Cyst ")		;break;
-			case "rn" : accessInsert("  #  Renal Nodule ")	;break;
-			
-			case "bc" : accessInsert("  #  Breast Cyst ")		;break;
-			case "bn" : accessInsert("  #  Breast Nodule ")	;break;
-			// ----------------------------------------------이찬주원장님
-			case "pa" : accessInsert("  #  Bronchial Asthma ")	;break;
-			case "pc" : accessInsert("  #  Chronic Cough ")	;break;
-			case "pp" : accessInsert("  #  Pneumonia ")	;break;
-			case "pt" : accessInsert("  #  Pulmonary Tuberculosis ")	;break;
+			    Scanner d = new Scanner(System.in);
+			    System.out.print("\nEnter... General state of health : Excellent/Good/Fair/Poor ...");
+			    	f = d.nextLine();
+		    	egfp(f);
+		    	
+		    	
+				  try {
+					ManageFile.deletefiler(Enter.wtf + "/3CC");
+					ManageFile.checkfiler(Enter.wtf + "/3CC");
+					ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
+					ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
+//					
+					ReadWriteToChartPlate.writeFile(Enter.wtf + "/3CC", chartline);
+					ReadWriteToChartPlate.writeFile(Enter.wtf + "/3CC", chartline1);
+					
+					PlatePrepUpdate.main(args);
+					
+
+				  } catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				  }
 		}
-}
-//------------------------------------------------ 
-	   static void writecoding(String writec) throws IOException {
-			File file_acc = new File(Enter.wd + "/text/form/SOAP/chart_access");
-			System.out.println(file_acc);
-			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
-				try {
-					bufferedWriter.write(writec);
-				} catch (IOException e) {
-					e.printStackTrace();
+		//------------------------------------------------
+		 static void yymmdd(String ymd) {
+			 switch(ymd) {
+					  case "y":   c = "  year-ago";			    break;
+					  case "m":   c = "  month-ago";			    break;
+					  case "w":   c = "  week-ago";			    break; 
+					  case "d":   c = "  day-ago";			    break;  
+//					  default:    c = "  uncertain ... please check  !!";
+ 					  default:    ;
+					}
+					  chartline = "C.C. " + a + " (onset " + b + c + ")";
+					  System.out.println(chartline);
 			}
-			bufferedWriter.newLine();
-			bufferedWriter.flush();
-			bufferedWriter.close();
-}
-//------------------------------------------------
-	   static void accessInsert(String diaease_description) throws IOException {
-				try {
-					System.out.println(diaease_description);
-					writecoding(diaease_description);
-				} catch (IOException e) {
-					e.printStackTrace();
-			}
-}
+			//------------------------------------------------
+          static void egfp(String state) {
+			  switch(state) {
+					  case "e":   f = "-- Excellent";			    break;
+					  case "g":   f = "-- Good";			    break;
+					  case "f":   f = "-- Fair";			    break;  
+					  case "p":   f = "-- Poor";			    break;  
+					  default:    f = "   uncertain ... please check  !!";
+					}
+			  		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
+					System.out.println(chartline1);
+	}
 //------------------------------------------------
 }

@@ -22,13 +22,10 @@ public class Enter {
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
 		
-       FirstPlatePrepare.main(null);
+       PlatePrepFirst.main(null);
 //       ManageFile.ucopyfiler(wtf);
-	
-    // ------------------------------------------------------GDStm Program starting
+   // ------------------------------------------------------GDStm Program starting
        StartForm.main(null);
 // --------------------------------------------------------
-	}
-  
-// --------------------------------------------------------
+    }
 }

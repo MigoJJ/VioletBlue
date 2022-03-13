@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
-public class ReadWriteToFile {
+public class ReadWriteToChartPlate {
 	  public static void readFile(String readf) throws IOException {
 		    try {
 		      File myObj = new File(readf);

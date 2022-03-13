@@ -4,11 +4,12 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.ManageFile;
 import je.panse.doro.exec.input.HistoryTake.Input1CC;
+import je.panse.doro.main.Enter;
 
 public class NewPatientInput {
 // --------------------------------------------	
 	public static void main(String n_code) throws IOException {
-		ManageFile.readfiler("/home/migowj/GDS/git/violetBlue0306/src/je/panse/doro/text/ChartInputMenu1");
+		ManageFile.readfiler(Enter.wt + "/ChartInputMenu1");
 				
 		    try (Scanner c_code = new Scanner(System.in)) {
 				System.out.println("Enter selected code number ...   : ");
