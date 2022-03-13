@@ -50,11 +50,11 @@ public class Input3CC {
 		//------------------------------------------------
 		 static void yymmdd(String ymd) {
 			 switch(ymd) {
-					  case "y":   c = "  year-ago";			    break;
-					  case "m":   c = "  month-ago";			    break;
-					  case "w":   c = "  week-ago";			    break; 
-					  case "d":   c = "  day-ago";			    break;  
-//					  default:    c = "  uncertain ... please check  !!";
+					  case "y":   c = " year-ago";			    break;
+					  case "m":   c = " month-ago";			    break;
+					  case "w":   c = " week-ago";			    break; 
+					  case "d":   c = " day-ago";			    break;  
+//					  default:    c = " uncertain ... please check  !!";
  					  default:    ;
 					}
 					  chartline = "C.C. " + a + " (onset " + b + c + ")\n";
