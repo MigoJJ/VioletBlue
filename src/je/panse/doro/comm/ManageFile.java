@@ -10,7 +10,9 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.Files;
 import java.util.Scanner;
 
+
 public class ManageFile {
+// -------------------------------------------
 	public static void checkfiler(String checkf) throws IOException {
 		try {
 			File A_disease = new File(checkf);
@@ -25,18 +27,8 @@ public class ManageFile {
 		System.out.println("An error occurred.");
 		e.printStackTrace();
 		}
-	}
-	//--------------------------------------------------------
-	public static void deletefiler(String deletef) throws IOException { 
-		File file = new File(deletef); 
-		if( file.exists() ){ 
-			if(file.delete()){ System.out.println("successfully deleting file ~~^^"); 
-			}
-			else{ System.out.println("Fail to delete file ^^"); } 
-			}
-		else{ System.out.println("No exsisting files ~~"); } 
-	}
-	//--------------------------------------------------------
+	}			
+// -------------------------------------------
 	public static void readfiler(String readf) {
 		try{
 				File textDirName = new File(readf); 
@@ -51,9 +43,9 @@ public class ManageFile {
 			catch (FileNotFoundException e) {
 						System.out.println("An error occurred.");
 						e.printStackTrace();
-		}
+			}
     }	
-	// ----------------------------------
+// -------------------------------------------	
 	public static void appendfiler(String writef , String appdata) throws IOException {
 		try
 		{
@@ -67,7 +59,8 @@ public class ManageFile {
 		    System.err.println("IOException: " + ioe.getMessage());
 		}
 	}
-	//--------------------------------------------------------
+
+// -------------------------------------------ChartPlate backup	
 	public static void ucopyfiler(String wtf) throws IOException {
 			// 1. 원본 File, 복사할 File 준비
 		    File file = new File(Enter.wd + "/text/form/ChartPlate"); 
@@ -75,5 +68,15 @@ public class ManageFile {
 			// 2. 복사
 			 Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 	}
-//--------------------------------------------------------
+// -------------------------------------------
+	public static void deletefiler(String deletef) throws IOException { 
+			File file = new File(deletef); 
+			if( file.exists() ){ 
+				if(file.delete()){ System.out.println("successfully deleting file ~~^^"); 
+				}
+				else{ System.out.println("Fail to delete file ^^"); } 
+				}
+			else{ System.out.println("No exsisting files ~~"); } 
+			}
+// -------------------------------------------
 }
