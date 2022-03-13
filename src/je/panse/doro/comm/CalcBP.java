@@ -4,7 +4,8 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class CalcBP {
-	    public static void main(String[] Strings) {
+		public static String BPresult;
+		public static void main(String[] Strings) {
 
 	        Scanner input = new Scanner(System.in);
 
@@ -19,8 +20,12 @@ public class CalcBP {
 
 	        
 //	        DecimalFormat df = new DecimalFormat("##.#");
-	        System.out.print("BP : [ " + SBP +  "  /  " + DBP + " ] mmHg" 
-	        			+ " PR [ " + PR + " ] /minute");
-	        System.out.println("  Regular Left-seated-Position ");
+//	        System.out.print("BP : [ " + SBP +  "  /  " + DBP + " ] mmHg" 
+//	        			+ " PR [ " + PR + " ] /minute");
+//	        System.out.println("  Regular Left-seated-Position ");
+	        
+	        
+	        BPresult = ("\n\nBP : [ " + SBP +  "  /  " + DBP + " ] mmHg" 
+			+ " PR [ " + PR + " ] /minute" + "  Regular Left-seated-Position ");
 	    }
 	}
