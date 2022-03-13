@@ -31,6 +31,7 @@ public class Input3CC {
 			    	f = d.nextLine();
 		    	egfp(f);
 		    	
+		    	
 				  try {
 					ManageFile.deletefiler(Enter.wtf + "/3CC");
 					ManageFile.checkfiler(Enter.wtf + "/3CC");
@@ -41,6 +42,7 @@ public class Input3CC {
 					ReadWriteToChartPlate.writeFile(Enter.wtf + "/3CC", chartline1);
 					
 					PlatePrepUpdate.main(args);
+					
 					NewPatientInput.main(null);
 				  } catch (IOException e) {
 					// TODO Auto-generated catch block
