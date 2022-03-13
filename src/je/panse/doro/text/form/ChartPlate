@@ -1,19 +1,22 @@
-C.C. dm (onset 8  year-ago)
+C.C.  (onset )
+
 General state of health:
--- Excellent  (no any significant state change since last visiting.)
+   uncertain ... please check  !!  (no any significant state change since last visiting.)
+
+---------------------------------------------------------------
 Family History & Past Medical History
--------------------------------------
-PMH> tuberculosis(-) asthma(-)     hepatitis(-)operation(-)
-     DM (-)   HTN (-)   Chol (-)          Other(-) with medication
+
+PMH> tuberculosis(-) asthma(-)  hepatitis(-)operation(-)
+     DM (-)   HTN (-)   Chol (-) Other(-) with medication
 FHx> 
-Allergy> food(-) drug(-) injection(-)   antibiotics(-) vaccine(-)
+Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
+---------------------------------------------------------------
 S>
-subjective findings
 O>
-	Body Weight [     ]kg   Height [     ]cm  Waist       [     ]cm   BMI    [     ]
+	Body Weight [     ]kg   Height [     ]cm  Waist [     ]cm   BMI    [     ]
 	Blood Pressure
-		[    /    ]mmHg  [    ]/min  Regular Left-seated-position
-Lab
+	[    /    ]mmHg  [    ]/min  Regular Left-seated-position
+Lab>
 	Glucose   FBS [     ] mg/dL	 HbA1c [     ] %
 	Glucose   PP2 [     ] mg/dL	 HbA1c [     ] %
 	Lipid-Battery [     ] mg/dL 
@@ -27,9 +30,12 @@ A>
 	#  Hypertension
 	#  Hypercholesterolemia
 	#	
-P> 
+P>   -------------------------- 
 	# Today Laboratory test
-	#	ditto x [     ] days and 
-		OPD F/U [     ] weeks later
+	
+	# Current Medication
+	 
+	#	ditto x [     ] days and OPD F/U [     ] weeks later
 	#	next Lab F/U plan(+)
-	# 	dose-adjustHypertension
+	# 	dose-adjust
+	--------------------------------

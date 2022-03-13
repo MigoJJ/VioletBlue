@@ -25,8 +25,7 @@ public class PlatePrepFirst {
 		  for(String fruit:list)
 			  	ReadWriteToChartPlate.readFile(Enter.wtf + fruit);
   }
-
-// ----------------------------------
+	// ------------------------------------------------------Method for file copy	
 		public static void copyfiler(String copyf) throws IOException {
 			// 1. 원본 File, 복사할 File 준비
 			File file = new File(Enter.wtf + "/hana" + copyf); 

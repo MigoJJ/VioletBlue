@@ -3,7 +3,9 @@ package je.panse.doro.exec.input;
 import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.ManageFile;
-import je.panse.doro.exec.input.HistoryTake.Input1CC;
+import je.panse.doro.exec.input.HistoryTake.Input3CC;
+import je.panse.doro.exec.input.HistoryTake.Input4PMH;
+import je.panse.doro.exec.input.HistoryTake.InputButton;
 import je.panse.doro.main.Enter;
 
 public class NewPatientInput {
@@ -16,10 +18,17 @@ public class NewPatientInput {
 				String cn_code = c_code.nextLine();  // Read user input
 				
 				switch (cn_code) {
-						  case "1" : Input1CC.main(n_code);  	break;
-//						  case "2" : SOAPInput.main(n_code);  	break;
-//						  case "3" : SOAPInput.main(n_code);  	break;
-//						  case "4" : SOAPInput.main(n_code);  	break;
+						  case "1" : Input3CC.main(null);  	break;
+						  case "2" : Input4PMH.main(null);  	break;
+//						  case "3" : Input5SUJ.main(null);  	break;
+//						  case "4" : Input6OBJ.main(null);  	break;
+//						  case "5" : Input7LAB.main(null);  	break;
+//						  case "6" : Input8AVV.main(null);  	break;
+//						  case "7" : Input9PLAN.main(null);  	break;
+//						  
+//						  case "c" : InputCom.main(null);  	break;
+						  case "q" : InputButton.quitButton(null);  	break;
+//						  case "qq" : InputQuitSave.main(null);  	break;
 					}
 				}
 			}
