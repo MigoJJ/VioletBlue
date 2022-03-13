@@ -6,9 +6,9 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
-import je.panse.doro.comm.ReadWriteToFile;
+import je.panse.doro.comm.ReadWriteToChartPlate;
 
-public class FirstPlatePrepare {
+public class PlatePrepFirst {
 	public static void main(String[] args) throws IOException {
 		List<String> list=new ArrayList<String>();  
 		  list.add("/3CC");  
@@ -17,21 +17,22 @@ public class FirstPlatePrepare {
 		  list.add("/6OBJ");  
 		  list.add("/7LAB");  
 		  list.add("/8ACC");  
-		  list.add("/9PLAN");  
+		  list.add("/9PLAN");
+	// ------------------------------------------------------Form Files Copying	
 		  for(String fruit:list)  
 			  copyfiler(fruit);
-		  
+	// ------------------------------------------------------ChartPlate writing		  
 		  for(String fruit:list)
-			  	ReadWriteToFile.readFile(Enter.wtf + fruit);
+			  	ReadWriteToChartPlate.readFile(Enter.wtf + fruit);
   }
-// -----------------------------------------------------------
+	// ------------------------------------------------------Method for file copy	
 		public static void copyfiler(String copyf) throws IOException {
-//		    System.out.println(copyf); 
 			// 1. 원본 File, 복사할 File 준비
 			File file = new File(Enter.wtf + "/hana" + copyf); 
 			File newFile = new File(Enter.wtf + copyf);
 			// 2. 복사
 			Files.copy(file.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-	}
-// -----------------------------------------------------------
+// --------------------------------------------------------
+    }
 }
+

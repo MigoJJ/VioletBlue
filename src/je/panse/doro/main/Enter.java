@@ -1,12 +1,11 @@
 // Jae Joon Koh M.D.
 package je.panse.doro.main;
 import je.panse.doro.comm.*;
-import je.panse.doro.exec.input.CategoryList;
-
+import je.panse.doro.exec.StartForm;
 import java.io.IOException;
 
 public class Enter {
-	//--- user directory definition--------------------------
+	// ------------------------------------------------------user directory definition
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,7 +20,7 @@ public class Enter {
 	public static String wdt = (currentUsersHomeDir + "/src/je/panse/doro/text");
 >>>>>>> branch 'master' of https://github.com/MigoJJ/violetBlue0306.git
 	
-    //--- file preparing ------------------------------------
+	// ------------------------------------------------------file preparing
 	public static void main(String[] args) throws IOException {
        System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
@@ -38,11 +37,9 @@ public class Enter {
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
 		
-       FirstPlatePrepare.main(null);
-       ManageFile.ucopyfiler(wtf);
-	
+       PlatePrepFirst.main(null);
+// ------------------------------------------------------GDStm Program starting
+       StartForm.main(null);
 // --------------------------------------------------------
-       CategoryList.main(null);
-	}
-// --------------------------------------------------------
+    }
 }
