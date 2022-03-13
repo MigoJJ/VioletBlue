@@ -8,7 +8,8 @@ import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
 public class CalcAccess {
-    public static void main(String n_code) throws IOException{
+    public static String diaease_description;
+	public static void main(String n_code) throws IOException{
         Scanner scanner=new Scanner(System.in);
 //        System.out.println("Insert disease code : ");
         while (true) {
@@ -27,7 +28,7 @@ public class CalcAccess {
 //	            }
         }
     	System.out.println("Success");
-    	scanner.close();
+//    	scanner.close();
     }
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {

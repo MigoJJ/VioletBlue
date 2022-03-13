@@ -11,7 +11,7 @@ public class Input8ACC {
     public static void main(String[] Strings) throws IOException {
     	CalcAccess.main(null);
 //    	System.out.println(CalcBP.BPresult);
-//    	ReadWriteToChartPlate.writeFile("/home/migoey/git/violetBlue0306/src/je/panse/doro/text/form/8ACC", -----);
+    	ReadWriteToChartPlate.writeFile("/home/migoey/git/violetBlue0306/src/je/panse/doro/text/form/8ACC", CalcAccess.diaease_description);
 		
     	
 		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
@@ -21,5 +21,4 @@ public class Input8ACC {
     	PlatePrepUpdate.main(null);
 		NewPatientInput.main(null);
     }
-    
 }

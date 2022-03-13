@@ -10,7 +10,6 @@ public class NewPatientInput {
 // --------------------------------------------	
 	public static void main(String n_code) throws IOException {
 		ManageFile.readfiler(Enter.wt + "/ChartInputMenu1");
-				
 		    try (Scanner c_code = new Scanner(System.in)) {
 				System.out.println("Enter selected code number ...   : ");
 				String cn_code = c_code.nextLine();  // Read user input
