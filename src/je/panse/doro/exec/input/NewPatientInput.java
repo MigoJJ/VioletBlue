@@ -21,7 +21,7 @@ public class NewPatientInput {
 //						  case "3" : Input5SUJ.main(null);  	break;
 						  case "4" : Input6OBJ.main(null);  	break;
 //						  case "5" : Input7LAB.main(null);  	break;
-//						  case "6" : Input8AVV.main(null);  	break;
+						  case "6" : Input8ACC.main(null);  	break;
 //						  case "7" : Input9PLAN.main(null);  	break;
 //						  
 //						  case "c" : InputCom.main(null);  	break;
