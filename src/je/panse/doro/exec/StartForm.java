@@ -8,7 +8,7 @@ import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String args []) throws IOException {
-		    ManageFile.readfiler(Enter.wt + "/StartMenuList");
+		    ManageFile.readfiler(Enter.wt + "/MenuList/StartMenuList");
    			
    			try (Scanner d_code = new Scanner(System.in)) {
 				System.out.println("Enter selected code number ...   : ");

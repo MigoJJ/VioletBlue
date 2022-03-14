@@ -11,9 +11,8 @@ public class Input8ACC {
     public static void main(String[] Strings) throws IOException {
     	CalcAccess.main(null);
 //    	System.out.println(CalcBP.BPresult);
-    	ReadWriteToChartPlate.writeFile("/home/migoey/git/violetBlue0306/src/je/panse/doro/text/form/8ACC", CalcAccess.diaease_description);
+    	ReadWriteToChartPlate.writeFile(Enter.wtf + "/8ACC", CalcAccess.diaease_description);
 		
-    	
 		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
 		ManageFile.deletefiler(Enter.wtf + "/Comment");
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");

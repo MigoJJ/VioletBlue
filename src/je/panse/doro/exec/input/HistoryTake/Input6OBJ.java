@@ -13,7 +13,7 @@ public class Input6OBJ {
     public static void main(String[] Strings) throws IOException {
     	CalcBP.main(null);
     	System.out.println(CalcBP.BPresult);
-    	ReadWriteToChartPlate.writeFile("/home/migoey/git/violetBlue0306/src/je/panse/doro/text/form/6OBJ", CalcBP.BPresult);
+    	ReadWriteToChartPlate.writeFile("/home/migowj/GDS/git/violetBlue0306/src/je/panse/doro/text/form/6OBJ", CalcBP.BPresult);
 		
     	
 		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");

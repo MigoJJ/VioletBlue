@@ -1,21 +1,24 @@
-[ 1 ] New Patient 
+[ 4 ] Objective Findings 
 -------------------------------------------------------------------
 
-		1. 	Chief complaint
+		1. 	Body Weight Height Waist BMI
 		
-		2.	Past Medical History
+		2.	Blood Pressure
 		
-		3. 	Subjective Complaint
+		3. 	GFS CFS
 		
-		4.	Objective Complaint
+		4.	Chest PA
 		
-		5.	Laboratory Test
-		
-		6.	Accessment 
+		5.	EKG
 				
-		7.	Plan
+		6.	BT 
+				
+		7.	USG
 		
-		c.	Comments
+		8.	DEXA
+		
+		
+		c. Comments
 		
 		q.	Quit 
 		
