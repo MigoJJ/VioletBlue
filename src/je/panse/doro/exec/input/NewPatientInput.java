@@ -27,7 +27,10 @@ public class NewPatientInput {
 						  case "q" : InputButton.quitButton(null);  	break;
 //						  case "qq" : InputQuitSave.main(null);  	break;
 					}
-				}
+				}catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				  }
 			}
 // --------------------------------------------
 }

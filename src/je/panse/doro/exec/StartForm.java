@@ -21,7 +21,10 @@ public class StartForm {
 		//				  case "3" : SOAPInput.main(n_code);  	break;
 		//				  case "4" : SOAPInput.main(n_code);  	break;
 					}
-		}
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		  }
 // --------------------------------------------------------
     }
 }

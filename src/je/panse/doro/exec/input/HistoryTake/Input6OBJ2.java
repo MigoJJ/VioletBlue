@@ -17,7 +17,7 @@ public class Input6OBJ2 {
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
     	PlatePrepUpdate.main(null);
-//		Enter.main(null);
+		Input6OBJ.main(null);
     }
 //--------------------------------------    
 }
