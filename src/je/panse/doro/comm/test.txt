@@ -1,36 +1,13 @@
-class InstanceExample
-{
-    /* Below variable is Instance variable as it 
-    is inside the class and outside the method
-    declaration. It is not using STATIC 
-    keyword and using default access modifier*/
-    // Declaring Instance Variable
-    int instanceVariable;
-    
-    //Constructor for InstanceExample Class
-    InstanceExample(int num)
-    {
-        this.instanceVariable = num;
-    }
-    
-    //Method to display Instance Variable
-    void printInstanceVariable()
-    {
-        System.out.println("Value of Instance Variable is "+instanceVariable);
-    }
-    
-}
+Class variables – also known as static member variables
+Class variables, however, only have one copy of the variable(s) shared with all instances of the class. It’s important to remember that class variables are also known as static member variables in C++, Java, and C#. Each object of the class does not have its own copy of a class variable. Instead, every object shares the one and only copy of that class variable – and any changes made to that copy are seen by all of the objects of that class. Here is what a class variable – or a static member variable – would look like in C++:
+Example of a class variable:
 
-public class JavaHungry
+class Taxes
 {
-    public static void main(String args[])
-    {
-        //Creating object of InstanceExample Class
-        InstanceExample ob1 = new InstanceExample(5);
-        InstanceExample ob2 = new InstanceExample(10); 
- 
-        //Calling printInstanceVariable() for each object
-        ob1.printInstanceVariable();
-        ob2.printInstanceVariable();
-    }
+  static int count;
+  /*...*/
 }
+Difference between class and instance variables
+Now, it should be clear what the difference between instance and class variables is. Class variables only have one copy that is shared by all the different objects of a class, whereas every object has it’s own personal copy of an instance variable. So, instance variables across different objects can have different values whereas class variables across different objects can have only one value.
+
+출처: <https://www.programmerinterview.com/c-cplusplus/whats-the-difference-between-a-class-variable-and-an-instance-variable/> 
