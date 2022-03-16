@@ -1,23 +1,12 @@
-
-C.C.   Diabetes Mellitus  (onset 1 year-ago)
-
-General state of health:  good (no any significant state.)
----------------------------------------------------------------
-Family History & Past Medical History
-
-PMH> tuberculosis(-) asthma(-)  hepatitis(-)operation(-)
-     DM (-)   HTN (-)   Chol (-) Other(-) with medication
-FHx> 
-Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
----------------------------------------------------------------
+Chief Complaint -------------------------
 S>
 O>
-	Body Weight [     ]kg   Height [     ]cm  Waist [     ]cm   BMI    [     ]
+    Body Weight [     ]kg   Height [     ]cm  Waist [     ]cm   BMI    [     ]
 Lab>
     Glucose   FBS [     ] mg/dL	 HbA1c [     ] %
     Glucose   PP2 [     ] mg/dL	 HbA1c [     ] %
-A> 	 -------------------------- 
-P>   -------------------------- 
+A> 	-------------------------- 
+P> -------------------------- 
 	# Today Laboratory test
 	
 	# Current Medication

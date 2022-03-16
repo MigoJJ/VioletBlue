@@ -1,0 +1,38 @@
+		d : DM without complications
+					dr  #  DM with Retinopathy
+					dn  #  DM with Nephropathy");
+					dp  #  DM with Peripheral Neuropathy
+					da  #  DM with Autonomic Neuropathy
+		
+		t  #  Hypertension 
+		c  #  Hypercholesterolemia 
+		
+		te  #  Hyperthyroidism : Graves' disease
+		to  #  Hypothyroidism : Hashimoto's thyroiditis"
+		ts  #  Subacute Thyroiditis
+		tn  #  Thyroid nodule
+		 
+		tep   #  Hyperthyroidism with Pregnancy 
+		top   #  Hypothyroidism with Pregnancy 
+	   
+	   os   #  Osteoporosis 
+	   
+	   -----------------------진료 보조
+	   oc   #  Cholecystectomy d/t GB stone	
+	   oa   #  Appendectomy 
+	   oh   #  TAH : Total Abdominal Hysterectomy 		
+	   
+	   hf   #  Fatty Liver 
+	   hc   #  Hepatic Cyst
+	   hn   #  Hepatic Nodule 
+	   
+	   rc   #  Renal Cyst
+	   rn   #  Renal Nodule 
+	   
+	   bc   #  Breast Cyst
+	   bn   #  Breast Nodule
+	   -----------------------이찬주원장님
+	   pa   #  Bronchial Asthma 
+	   pc   #  Chronic Cough
+	   pp   #  Pneumonia
+	   pt   #  Pulmonary Tuberculosis 

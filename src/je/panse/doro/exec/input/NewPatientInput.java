@@ -9,7 +9,7 @@ import je.panse.doro.main.Enter;
 public class NewPatientInput {
 // --------------------------------------------	
 	public static void main(String n_code) throws IOException {
-		ManageFile.readfiler(Enter.wt + "/ChartInputMenu1");
+		ManageFile.readfiler(Enter.wt + "/MenuList/ChartInputMenu1");
 		    try (Scanner c_code = new Scanner(System.in)) {
 				System.out.println("Enter selected code number ...   : ");
 				String cn_code = c_code.nextLine();  // Read user input
@@ -27,7 +27,10 @@ public class NewPatientInput {
 						  case "q" : InputButton.quitButton(null);  	break;
 //						  case "qq" : InputQuitSave.main(null);  	break;
 					}
-				}
+				}catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				  }
 			}
 // --------------------------------------------
 }

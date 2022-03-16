@@ -33,8 +33,8 @@ public class Input3CC {
 		    	
 		    	
 				  try {
-					ManageFile.deletefiler(Enter.wtf + "/3CC");
-					ManageFile.checkfiler(Enter.wtf + "/3CC");
+//					ManageFile.deletefiler(Enter.wtf + "/3CC");
+//					ManageFile.checkfiler(Enter.wtf + "/3CC");
 					ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
 					ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 //					
