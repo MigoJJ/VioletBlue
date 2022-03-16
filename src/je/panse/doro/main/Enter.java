@@ -15,16 +15,17 @@ public class Enter {
 	// ------------------------------------------------------file preparing
 	public static void main(String[] args) throws IOException {
 		CurrentDate.defineTime();
-       System.out.println(currentUsersHomeDir);
+        System.out.println(currentUsersHomeDir);
 
-		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
-		ManageFile.deletefiler(Enter.wtf + "/Comment");
-		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
-		ManageFile.checkfiler(Enter.wtf + "/Comment");
-		
-       PlatePrepFirst.main(null);
+    	File_cdrw_proc ob1 = new File_cdrw_proc();
+	    	ob1.deletefiler(wtf + "/ChartPlate");
+	    	ob1.checkfiler(wtf + "/ChartPlate");
+	    	ob1.deletefiler(wtf + "/Comment);");
+	    	ob1.checkfiler(wtf + "/Comment");
+	    	   	
+        PlatePrepFirst.main(null);
 // ------------------------------------------------------GDStm Program starting
-       StartForm.main(null);
-// --------------------------------------------------------
-    }
+        StartForm.main(null);
+// ------------------------------------------------------    
+   }
 }

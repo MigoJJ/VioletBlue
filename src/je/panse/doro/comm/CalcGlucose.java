@@ -16,6 +16,8 @@ public class CalcGlucose {
 
 	        System.out.print("Input HbA1c  %  : ");
 	        double HbA1c = input.nextDouble();
+	        
+	        input.close();
 
 	        
 	        DecimalFormat df = new DecimalFormat("##.#");

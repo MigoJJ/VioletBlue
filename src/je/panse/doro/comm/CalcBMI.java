@@ -19,10 +19,13 @@ public class CalcBMI {
 	        
 //	        double BMI = weight * 0.45359237 / (inches * 0.0254 * inches * 0.0254);
 	        double BMI = weight / (inches* inches);
-
+	        input.close();
+	        
 	        DecimalFormat df = new DecimalFormat("##.#");
 //	        System.out.println("Original input value: " + BMI);
 	        System.out.println("Using DecimalForamt: Body Mass Index is " + df.format(BMI));
 	        System.out.println("Waist : " + waist + "cm");
+	        
+
 	    }
 	}

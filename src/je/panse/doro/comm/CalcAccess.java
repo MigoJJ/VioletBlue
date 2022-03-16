@@ -28,7 +28,7 @@ public class CalcAccess {
 //	            }
         }
     	System.out.println("Success");
-//    	scanner.close();
+    	scanner.close();
     }
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {

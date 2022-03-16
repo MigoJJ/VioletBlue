@@ -25,11 +25,13 @@ public class Input3CC {
 			    System.out.print("Enter year/month/day:");
 			    	c = s.nextLine();
 				yymmdd(c);
+				s.close();
 				
 			    Scanner d = new Scanner(System.in);
 			    System.out.print("\nEnter... General state of health : Excellent/Good/Fair/Poor ...");
 			    	f = d.nextLine();
 		    	egfp(f);
+		    	d.close();
 		    	
 		    	
 				  try {

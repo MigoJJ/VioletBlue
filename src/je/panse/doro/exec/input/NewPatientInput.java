@@ -2,6 +2,8 @@ package je.panse.doro.exec.input;
 
 import java.io.IOException;		
 import java.util.Scanner;
+
+import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.ManageFile;
 import je.panse.doro.exec.input.HistoryTake.*;
 import je.panse.doro.main.Enter;
@@ -9,8 +11,9 @@ import je.panse.doro.main.Enter;
 public class NewPatientInput {
 // --------------------------------------------	
 	public static void main(String n_code) throws IOException {
-		ManageFile.readfiler(Enter.wt + "/MenuList/ChartInputMenu1");
-		    try (Scanner c_code = new Scanner(System.in)) {
+    	File_cdrw_proc ob2 = new File_cdrw_proc(); 
+    	ob2.readfiler(Enter.wt + "/MenuList/ChartInputMenu1");
+try (Scanner c_code = new Scanner(System.in)) {
 				System.out.println("Enter selected code number ...   : ");
 				String cn_code = c_code.nextLine();  // Read user input
 				
