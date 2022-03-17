@@ -1,21 +1,20 @@
 package je.panse.doro.exec.input.HistoryTake;
 
 import java.io.IOException;
-import je.panse.doro.exec.StartForm;
-import je.panse.doro.exec.input.NewPatientInput;
+
+import je.panse.doro.hito.StartForm;
+import je.panse.doro.hito.newcategory;
 import je.panse.doro.main.Enter;
 
 public class InputButton {
 	public static void commentsButton(String cobu) throws IOException{
 	
 	}
-
 	
 	public static void quitButton(String cobu) throws IOException {
 		StartForm.main(null);
 	}
 
-	
 	public static void quitsaveButton(String cobu) throws IOException{
 		Enter.main(null);
 	}

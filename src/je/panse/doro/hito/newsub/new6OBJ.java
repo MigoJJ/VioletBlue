@@ -1,19 +1,20 @@
-package je.panse.doro.exec.input.HistoryTake;
+package je.panse.doro.hito.newsub;
 
 import java.io.IOException;	
 import java.util.Scanner;
-import je.panse.doro.comm.CalcBP;
+
 import je.panse.doro.comm.ManageFile;
 import je.panse.doro.comm.ReadWriteToChartPlate;
-import je.panse.doro.exec.input.NewPatientInput;
+import je.panse.doro.comm.item.CalcBP;
+import je.panse.doro.hito.newcategory;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.PlatePrepUpdate;
 
-public class Input6OBJ {
+public class new6OBJ {
     public static void main(String[] Strings) throws IOException {
     	ManageFile.readfiler("/home/migowj/GDS/git/violetBlue0306/src/je/panse/doro/text/MenuList/SubMenu/6OBJ_List");
     	OBJmenu();
-    	Input6OBJ2.main(null);
+    	new6OBJ2.main(null);
   	
 //		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
 //		ManageFile.deletefiler(Enter.wtf + "/Comment");
