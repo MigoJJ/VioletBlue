@@ -1,7 +1,8 @@
 // Jae Joon Koh M.D.
 package je.panse.doro.main;
 import je.panse.doro.comm.*;
-import je.panse.doro.exec.StartForm;
+import je.panse.doro.hito.StartForm;
+
 import java.io.IOException;
 
 public class Enter {
@@ -17,27 +18,16 @@ public class Enter {
 		CurrentDate.defineTime();
        System.out.println(currentUsersHomeDir);
 
-		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
-		ManageFile.deletefiler(Enter.wtf + "/Comment");
-		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
-		ManageFile.checkfiler(Enter.wtf + "/Comment");
-		
-<<<<<<< HEAD
-       FirstPlatePrepare.main(null);
-//       ManageFile.ucopyfiler(wtf);
+    	File_cdrw_proc ob1 = new File_cdrw_proc();
+	    	ob1.deletefiler(wtf + "/ChartPlate");
+	    	ob1.checkfiler(wtf + "/ChartPlate");
+	    	ob1.deletefiler(wtf + "/Comment);");
+	    	ob1.checkfiler(wtf + "/Comment");
+	    	   	
+        PlatePrepFirst.main(null);
 // ------------------------------------------------------GDStm Program starting
-    StartForm.main(null);
-    // CategoryList.main(null);
-
+        StartForm.main(null);
 	}
-// --------------------------------------------------------
+// ------------------------------------------------------    
 }
 
-=======
-       PlatePrepFirst.main(null);
-// ------------------------------------------------------GDStm Program starting
-       StartForm.main(null);
-// --------------------------------------------------------
-    }
-}
->>>>>>> refs/remotes/origin/feature20220305

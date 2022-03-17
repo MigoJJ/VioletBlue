@@ -1,4 +1,4 @@
-package je.panse.doro.exec.input.SOAP;
+package je.panse.doro.hito;
 
 import java.io.BufferedWriter;	
 import java.io.File;
