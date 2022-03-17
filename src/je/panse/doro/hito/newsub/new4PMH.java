@@ -1,8 +1,8 @@
-package je.panse.doro.exec.input.HistoryTake;
+package je.panse.doro.hito.newsub;
 
 import java.io.IOException;
 
-public class Input4PMH {
+public class new4PMH {
 	public static void main(String[] args) {
 	
 	}

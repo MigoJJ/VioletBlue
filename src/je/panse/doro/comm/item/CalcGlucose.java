@@ -1,4 +1,4 @@
-package je.panse.doro.comm;
+package je.panse.doro.comm.item;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -16,6 +16,8 @@ public class CalcGlucose {
 
 	        System.out.print("Input HbA1c  %  : ");
 	        double HbA1c = input.nextDouble();
+	        
+	        input.close();
 
 	        
 	        DecimalFormat df = new DecimalFormat("##.#");
