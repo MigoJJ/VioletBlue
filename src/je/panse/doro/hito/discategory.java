@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.ManageFile;
 import je.panse.doro.exec.input.HistoryTake.*;
 import je.panse.doro.hito.newsub.new3CC;
 import je.panse.doro.hito.newsub.new4PMH;

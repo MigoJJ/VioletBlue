@@ -6,7 +6,6 @@ import je.panse.doro.comm.*;
 import je.panse.doro.comm.item.CalcAccess;
 import je.panse.doro.hito.newcategory;
 import je.panse.doro.main.Enter;
-import je.panse.doro.main.PlatePrepUpdate;
 
 public class new8ACC {
     public static void main(String[] Strings) throws IOException {

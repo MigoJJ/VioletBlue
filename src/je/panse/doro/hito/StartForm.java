@@ -9,14 +9,16 @@ import je.panse.doro.main.Enter;
 public class StartForm {
 	public static void main(String args []) throws IOException {
     	File_cdrw_proc ob2 = new File_cdrw_proc(); 
-        	ob2.readfiler(Enter.wt + "/MenuList/StartMenuList");
+       	ob2.readfiler(Enter.wt + "/MenuList/StartMenuList");
 
-   			try (Scanner d_code = new Scanner(System.in)) {
-				System.out.println("Enter selected code number ...   : ");
-				String n_code = d_code.nextLine();  // Read user input
+		try (Scanner d_code = new Scanner(System.in)) {
+			System.out.println("Enter selected code number ...   : ");
+			String n_code = d_code.nextLine();  // Read user input
 				
 			switch (n_code) {
-						  case "1" : newcategory.main(n_code);  	break;
+				 case "1" : 
+					 newcategory ob12 = new newcategory(); 
+					 ob12.main(null);	break;
 		//				  case "2" : SOAPInput.main(n_code);  	break;
 		//				  case "3" : SOAPInput.main(n_code);  	break;
 		//				  case "4" : SOAPInput.main(n_code);  	break;
@@ -24,7 +26,7 @@ public class StartForm {
 		}catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		  }
+		}
 // --------------------------------------------------------
     }
 }
