@@ -1,11 +1,9 @@
-package je.panse.doro.exec;
+package je.panse.doro.hito;
 
-import java.io.IOException;					
+import java.io.IOException;						
 import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.ManageFile;
-import je.panse.doro.exec.input.NewPatientInput;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
@@ -18,7 +16,7 @@ public class StartForm {
 				String n_code = d_code.nextLine();  // Read user input
 				
 			switch (n_code) {
-						  case "1" : NewPatientInput.main(n_code);  	break;
+						  case "1" : newcategory.main(n_code);  	break;
 		//				  case "2" : SOAPInput.main(n_code);  	break;
 		//				  case "3" : SOAPInput.main(n_code);  	break;
 		//				  case "4" : SOAPInput.main(n_code);  	break;

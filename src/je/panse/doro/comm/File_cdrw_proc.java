@@ -65,9 +65,9 @@ public class File_cdrw_proc   {
 		}
     }	
 // ------------------------------	
-	  public void rwfiler(String rwfile, String rwfilet) throws IOException {
+	  public void rwfiler(String rwfileo, String rwfilet) throws IOException {
 		    try {
-		      File myObj = new File(rwfile);
+		      File myObj = new File(rwfileo);
 		      Scanner myReader = new Scanner(myObj);
 		      
 		      while (myReader.hasNextLine()) {

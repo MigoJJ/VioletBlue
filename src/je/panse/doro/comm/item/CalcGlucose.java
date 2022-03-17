@@ -1,4 +1,4 @@
-package je.panse.doro.comm;
+package je.panse.doro.comm.item;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
