@@ -1,12 +1,14 @@
-package je.panse.doro.comm.item;
+package je.panse.doro.hito.newsub;
 
 import java.io.IOException;	
 import java.util.Scanner;
+
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.newcategory;
 import je.panse.doro.main.Enter;
 
-public class CalcBP {
+
+public class new6OBJ2 {
 	public static int SBP, DBP, PR;
 	public static String BPresult;
 	
@@ -36,5 +38,5 @@ public class CalcBP {
 			e.printStackTrace();
 			}
 	}
-//---------------------------------------------------		
+// ----------------------------------------------
 }

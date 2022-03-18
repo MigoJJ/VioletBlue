@@ -1,6 +1,6 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;						
+import java.io.IOException;
 import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
@@ -11,20 +11,24 @@ public class StartForm {
     	File_cdrw_proc ob2 = new File_cdrw_proc(); 
        	ob2.readfiler(Enter.wt + "/MenuList/StartMenuList");
 
-		try (Scanner d_code = new Scanner(System.in)) {
-			System.out.println("Enter selected code number ...   : ");
-			String n_code = d_code.nextLine();  // Read user input
+		try (Scanner case_code = new Scanner(System.in)) {
+				int select_code = 0;
+			
+				while (true) {
+			    	if (select_code == 99) { break; }
 				
-			switch (n_code) {
-				 case "1" : 
-					 newcategory ob12 = new newcategory(); 
-					 ob12.main(null);	break;
-		//				  case "2" : SOAPInput.main(n_code);  	break;
-		//				  case "3" : SOAPInput.main(n_code);  	break;
-		//				  case "4" : SOAPInput.main(n_code);  	break;
-					}
-		}catch (IOException e) {
-			// TODO Auto-generated catch block
+				System.out.println("Enter selected code number ...   : ");
+				select_code = Integer.valueOf(case_code.nextLine());
+		
+				switch (select_code) {
+					 case 1 : 
+						 newcategory.main(null);	break;
+			//				  case "2" : SOAPInput.main(n_code);  	break;
+			//				  case "3" : SOAPInput.main(n_code);  	break;
+			//				  case "4" : SOAPInput.main(n_code);  	break;
+						}
+			}	
+		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
 // --------------------------------------------------------
