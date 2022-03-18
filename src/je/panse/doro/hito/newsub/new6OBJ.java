@@ -6,17 +6,15 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.item.CalcBP;
 import je.panse.doro.main.Enter;
 
-
 public class new6OBJ {
 	public static void main(String args) throws IOException { 
-
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/MenuList/SubMenu/6OBJ_List");
 
     	Scanner new_code = new Scanner(System.in);
     			int select_code = 0;
     	try {
-   			   			while (true) {
+   			while (true) {
    		    	if (select_code == 99) { break; }
    		 	
    		    	System.out.println("Enter selected code number ...   : ");

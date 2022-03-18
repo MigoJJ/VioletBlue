@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.newcategory;
+import je.panse.doro.hito.newsub.new6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcBP {
@@ -29,8 +30,8 @@ public class CalcBP {
 			System.out.print(BPresult);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writefiler(Enter.wtf + "/6OBJ", BPresult);
-			newcategory np1 = new newcategory();
-				np1.main("");
+				new6OBJ np2 = new new6OBJ();
+				np2.main("");
 			
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
