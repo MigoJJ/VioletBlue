@@ -1,24 +1,23 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;	
-import java.util.Scanner;
+import java.io.IOException;
 
-import je.panse.doro.comm.ManageFile;
-import je.panse.doro.comm.ReadWriteToChartPlate;
-import je.panse.doro.comm.item.CalcBP;
-import je.panse.doro.hito.newcategory;
+import je.panse.doro.comm.*;
+import je.panse.doro.comm.item.CalcAccess;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
-import je.panse.doro.main.PlatePrepUpdate;
 
-public class new6OBJ2 {
+public class New8ACC {
     public static void main(String[] Strings) throws IOException {
-  	
+    	CalcAccess.main(null);
+//    	System.out.println(CalcBP.BPresult);
+    	ReadWriteToChartPlate.writeFile(Enter.wtf + "/8ACC", CalcAccess.diaease_description);
+		
 		ManageFile.deletefiler(Enter.wtf + "/ChartPlate");
 		ManageFile.deletefiler(Enter.wtf + "/Comment");
 		ManageFile.checkfiler(Enter.wtf + "/ChartPlate");
 		ManageFile.checkfiler(Enter.wtf + "/Comment");
     	PlatePrepUpdate.main(null);
-		new6OBJ.main(null);
+		Newcategory.main(null);
     }
-//--------------------------------------    
 }
