@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import je.panse.doro.main.Enter;
-
 public class File_cdrw_proc   {
 // ------------------------------   
 	public void checkfiler(String checkf) throws IOException {
@@ -73,10 +71,8 @@ public class File_cdrw_proc   {
 		      while (myReader.hasNextLine()) {
 		        String data = myReader.nextLine();
 		        System.out.println(data);
-		        
-		        writeFile(rwfilet ,data);
+		        writefiler(rwfilet ,data);
 		      }
-		     
 		      myReader.close();
 		    
 		    } catch (FileNotFoundException e) {
@@ -85,10 +81,10 @@ public class File_cdrw_proc   {
 		    }
 		  }
 //----------------------------------------------------
-	  public void writeFile(String writef, String writed) throws IOException {
+	  public void writefiler(String writef, String writed) throws IOException {
 		    try {
 		      FileWriter myWriter = new FileWriter(writef, true);
-		      myWriter.write(writed + "\n");
+		      myWriter.write(writed+ "\n");
 		      myWriter.close();
 //		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {
