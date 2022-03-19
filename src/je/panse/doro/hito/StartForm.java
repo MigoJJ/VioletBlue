@@ -8,7 +8,7 @@ import je.panse.doro.main.Enter;
 public class StartForm {
 	public static void main(String string) throws IOException {
     	File_cdrw_proc us1 = new File_cdrw_proc(); 
-       us1.readfiler(Enter.wt + "/MenuList/StartMenuList");
+       us1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;

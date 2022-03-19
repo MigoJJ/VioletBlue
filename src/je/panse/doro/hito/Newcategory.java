@@ -1,6 +1,8 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;			
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -11,7 +13,7 @@ public class Newcategory {
 // --------------------------------------------	
 	public static void main(String args) throws IOException {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/MenuList/ChartInputMenu1");
+    	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	
     	switching();
 	}	
@@ -37,9 +39,29 @@ public class Newcategory {
 //						  case "c" : Com.main(null);  	break;
 //						  case "q" : InputButton.quitButton(null);  	break;
 //						  case "qq" : InputQuitSave.main(null);  	break;
-			  case 9 : File_cw_chart ari2 = new File_cw_chart();	 
+			  case 9 : 
+			    	File_cdrw_proc ari1 = new File_cdrw_proc();
+			    	ari1.deletefiler(Enter.wtf + "/ChartPlate");
+			    	ari1.checkfiler(Enter.wtf + "/ChartPlate");
+			    	
+	    			File_cw_chart nu3 = new File_cw_chart();
+
+			    		   List<String> list=new ArrayList<String>();  
+			    				  list.add("/3CC");  
+			    				  list.add("/4PMH");  
+			    				  list.add("/5SUJ");  
+			    				  list.add("/6OBJ");  
+			    				  list.add("/7LAB");  
+			    				  list.add("/8ACC");  
+			    				  list.add("/9PLAN");
+			    			  for(String fruit:list)  
+			    			  nu3.writechart(Enter.wtf + fruit, Enter.wtf + "/tripikata" + fruit);
+			    				  
+			    	
+				  
+				    File_cw_chart ari2 = new File_cw_chart();	 
 			  				ari2.writechart();
-			  				StartForm fe1 = new StartForm();
+			  		   StartForm fe1 = new StartForm();
 			  				fe1.main("");
 			  				; break;
 			}

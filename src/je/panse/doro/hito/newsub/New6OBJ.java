@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/MenuList/SubMenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
 
     	Scanner new_code = new Scanner(System.in);
     			int select_code = 0;
@@ -40,6 +40,6 @@ public class New6OBJ {
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
-	}
+    	}
 // ----------------------------------------------
 }

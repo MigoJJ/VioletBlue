@@ -13,7 +13,7 @@ public class CalcBP {
 	
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/MenuList/SubMenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("Input SBP   mmHg : ");
@@ -24,8 +24,8 @@ public class CalcBP {
 	        	PR = input.nextInt();
 //        input.close();
 
-	        	BPresult = ("   BP : [ " + SBP +  "  /  " + DBP + " ]mmHg" 
-			+ "   PR [ " + PR + " ]/minute" + "  Regular Left-seated-Position ");
+	        	BPresult = ("   BP : [ " + SBP +  " / " + DBP + " ]mmHg" 
+			+ "   PR [ " + PR + " ]/minute" + "  Regular LSP");
 
 			System.out.print(BPresult);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();

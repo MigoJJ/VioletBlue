@@ -41,7 +41,7 @@ public class New3CC {
 				  case "d":   c = " day-ago";			    break;  
 				  default :   c = " uncertain ... please check  !!";
 				}
-				  chartline = "\n    " + a + " (onset " + b + c + ")";
+				  chartline = "\n    " + a + " (onset " + b + c + ")\n";
 				  System.out.println(chartline);
 				  File_cdrw_proc fcp1 = new File_cdrw_proc();
 				  fcp1.writefiler(Enter.wtf + "/3CC", chartline);
