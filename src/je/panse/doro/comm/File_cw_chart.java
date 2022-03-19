@@ -37,5 +37,19 @@ public class File_cw_chart {
 			  nu2.rwfiler(Enter.wtf + fruit,Enter.wtf + "/ChartPlate");
 	}
 // ----------------------------------------------------------
-}
+	public void writechartbu(String origin, String target) throws IOException {
+		File_cdrw_proc nu2 = new File_cdrw_proc();
+		List<String> list=new ArrayList<String>();  
+			  list.add("/3CC");  
+			  list.add("/4PMH");  
+			  list.add("/5SUJ");  
+			  list.add("/6OBJ");  
+			  list.add("/7LAB");  
+			  list.add("/8ACC");  
+			  list.add("/9PLAN");
 
+			  for(String fruit:list)  
+			  nu2.rwfiler(Enter.wtf + fruit, Enter.wtf + "/tripikata" + fruit);
+	}
+// ----------------------------------------------------------
+}

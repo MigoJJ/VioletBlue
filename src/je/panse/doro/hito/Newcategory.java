@@ -55,7 +55,7 @@ public class Newcategory {
 			    				  list.add("/8ACC");  
 			    				  list.add("/9PLAN");
 			    			  for(String fruit:list)  
-			    			  nu3.writechart(Enter.wtf + fruit, Enter.wtf + "/tripikata" + fruit);
+			    			  nu3.writechartbu(Enter.wtf + fruit, Enter.wt + "/tripikata" + fruit);
 			    				  
 			    	
 				  
@@ -65,7 +65,7 @@ public class Newcategory {
 			  				fe1.main("");
 			  				; break;
 			}
-//			new_code.close();
+			new_code.close();
    		}
  // --------------------------------------------
    	}
