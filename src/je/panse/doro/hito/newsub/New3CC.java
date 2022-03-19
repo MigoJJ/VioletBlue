@@ -44,7 +44,7 @@ public class New3CC {
 				  chartline = "\n    " + a + " (onset " + b + c + ")\n";
 				  System.out.println(chartline);
 				  File_cdrw_proc fcp1 = new File_cdrw_proc();
-				  fcp1.writefiler(Enter.wtf + "/3CC", chartline);
+				  fcp1.writefiler(Enter.wts + "/3CC", chartline);
 				  
 		}
 		//------------------------------------------------
@@ -59,7 +59,7 @@ public class New3CC {
 			  		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
 					System.out.print(chartline1);
 					File_cdrw_proc fcp2 = new File_cdrw_proc();
-					fcp2.writefiler(Enter.wtf + "/3CC", chartline1);
+					fcp2.writefiler(Enter.wts + "/3CC", chartline1);
 	}
 //------------------------------------------------
 }

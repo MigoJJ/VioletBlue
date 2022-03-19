@@ -19,9 +19,9 @@ public class File_cw_chart {
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
-			  nu1.copyfiler(Enter.wtf + laname +fruit, Enter.wtf + fruit);
+			  nu1.copyfiler(Enter.wtk + laname +fruit, Enter.wts + fruit);
    }
-	// ------------------------------------------------------Form Files Copying	
+	// --------------------------------------------Write Files To Chart	
 	public void writechart() throws IOException {
 		File_cdrw_proc nu2 = new File_cdrw_proc();
 		List<String> list=new ArrayList<String>();  
@@ -34,11 +34,11 @@ public class File_cw_chart {
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
-			  nu2.rwfiler(Enter.wtf + fruit,Enter.wtf + "/ChartPlate");
+			  nu2.rwfiler(Enter.wts + fruit,Enter.wts + "/ChartPlate");
 	}
-// ----------------------------------------------------------
-	public void writechartbu(String origin, String target) throws IOException {
-		File_cdrw_proc nu2 = new File_cdrw_proc();
+// ------------------------------------------------Backup Files
+	public void chartbackup() throws IOException {
+		File_cdrw_proc nu3 = new File_cdrw_proc();
 		List<String> list=new ArrayList<String>();  
 			  list.add("/3CC");  
 			  list.add("/4PMH");  
@@ -47,9 +47,11 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ACC");  
 			  list.add("/9PLAN");
+			  list.add("/ChartPlate");
+			  list.add("/Comment");
 
-			  for(String fruit:list)  
-			  nu2.rwfiler(Enter.wtf + fruit, Enter.wtf + "/tripikata" + fruit);
+			  for(String fruit:list)
+				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
 	}
 // ----------------------------------------------------------
 }

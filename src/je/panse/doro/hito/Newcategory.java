@@ -1,8 +1,6 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -11,7 +9,7 @@ import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public static void main(String args) throws IOException {
+	public void main(String args) throws IOException {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	
@@ -23,50 +21,31 @@ public class Newcategory {
    		int select_code = 0;
 
    		while (true) {
-   		   	if (select_code == 99) { break; }
-   		 	
-   		   	System.out.println("Enter selected code number ...   : ");
-   		   	select_code = Integer.valueOf(new_code.nextLine().trim());
-
-   		   	switch (select_code) {
-			  case 1 : New3CC.main(null);	  	break;
-			  case 2 : New4PMH.main(null);  	break;
+		   	if (select_code == 99) { break; }
+		 	
+		   	System.out.println("Enter selected code number ...   : ");
+		   	select_code = Integer.valueOf(new_code.nextLine().trim());
+	
+		   	switch (select_code) {
+		   		case 1 : New3CC.main(null);	  				break;
+		   		case 2 : New4PMH.main(null);  				break;
 //						  case "3" : new5SUJ.main(null);  	break;
-			  case 4 : New6OBJ.main(null);  	break;
+		   		case 4 : New6OBJ.main(null);  				break;
 //						  case "5" : new7LAB.main(null);  	break;
 //						  case "6" : new8ACC.main(null);  	break;
 //						  case "7" : new9PLAN.main(null);  	break;
-//						  case "c" : Com.main(null);  	break;
-//						  case "q" : InputButton.quitButton(null);  	break;
-//						  case "qq" : InputQuitSave.main(null);  	break;
-			  case 9 : 
-			    	File_cdrw_proc ari1 = new File_cdrw_proc();
-			    	ari1.deletefiler(Enter.wtf + "/ChartPlate");
-			    	ari1.checkfiler(Enter.wtf + "/ChartPlate");
-			    	
-	    			File_cw_chart nu3 = new File_cw_chart();
-
-			    		   List<String> list=new ArrayList<String>();  
-			    				  list.add("/3CC");  
-			    				  list.add("/4PMH");  
-			    				  list.add("/5SUJ");  
-			    				  list.add("/6OBJ");  
-			    				  list.add("/7LAB");  
-			    				  list.add("/8ACC");  
-			    				  list.add("/9PLAN");
-			    			  for(String fruit:list)  
-			    			  nu3.writechartbu(Enter.wtf + fruit, Enter.wt + "/tripikata" + fruit);
-			    				  
-			    	
-				  
+//						  case "c" : Com.main(null);  		break;
+		   		case 9 : 
 				    File_cw_chart ari2 = new File_cw_chart();	 
-			  				ari2.writechart();
-			  		   StartForm fe1 = new StartForm();
-			  				fe1.main("");
-			  				; break;
-			}
-			new_code.close();
+		  				ari2.writechart();
+		   			File_cw_chart nu3 = new File_cw_chart();
+	    				nu3.chartbackup();
+
+			  		StartForm fe1 = new StartForm();
+		  				fe1.main("");  				; 		break;
+		   	}
+		new_code.close();
    		}
+    }
  // --------------------------------------------
-   	}
 }

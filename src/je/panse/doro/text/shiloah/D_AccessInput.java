@@ -1,4 +1,4 @@
-package je.panse.doro.hito;
+package je.panse.doro.text.shiloah;
 
 import java.io.BufferedWriter;	
 import java.io.File;

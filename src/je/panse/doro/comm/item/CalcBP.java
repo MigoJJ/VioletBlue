@@ -28,9 +28,10 @@ public class CalcBP {
 			+ "   PR [ " + PR + " ]/minute" + "  Regular LSP");
 
 			System.out.print(BPresult);
+			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wtf + "/6OBJ", BPresult);
-				New6OBJ np2 = new New6OBJ();
+				fcp1.writefiler(Enter.wts + "/6OBJ", BPresult);
+			New6OBJ np2 = new New6OBJ();
 				np2.main("");
 			
 			} catch (NumberFormatException e) {
