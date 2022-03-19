@@ -3,10 +3,11 @@ package je.panse.doro.hito.newsub;
 import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.item.CalcBP;
 import je.panse.doro.main.Enter;
 
-public class new6OBJ {
+public class New6OBJ {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/MenuList/SubMenu/6OBJ_List");
@@ -33,7 +34,8 @@ public class new6OBJ {
 	//					  case "c" : Com.main(null);  	break;
 	//					  case "q" : InputButton.quitButton(null);  	break;
 	//					  case "qq" : InputQuitSave.main(null);  	break;
-					}
+				  case 9 : File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart(); break;								
+   		    	}
    				}
 			} catch (NumberFormatException e) {
 			e.printStackTrace();

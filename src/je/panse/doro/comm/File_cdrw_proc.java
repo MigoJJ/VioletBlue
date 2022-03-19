@@ -71,10 +71,8 @@ public class File_cdrw_proc   {
 		      while (myReader.hasNextLine()) {
 		        String data = myReader.nextLine();
 		        System.out.println(data);
-		        
 		        writefiler(rwfilet ,data);
 		      }
-		     
 		      myReader.close();
 		    
 		    } catch (FileNotFoundException e) {
@@ -86,7 +84,7 @@ public class File_cdrw_proc   {
 	  public void writefiler(String writef, String writed) throws IOException {
 		    try {
 		      FileWriter myWriter = new FileWriter(writef, true);
-		      myWriter.write("\n" + writed + "\n");
+		      myWriter.write(writed+ "\n");
 		      myWriter.close();
 //		      System.out.println("Successfully wrote to the file.");
 		    } catch (IOException e) {

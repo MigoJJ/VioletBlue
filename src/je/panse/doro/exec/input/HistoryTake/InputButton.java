@@ -3,7 +3,7 @@ package je.panse.doro.exec.input.HistoryTake;
 import java.io.IOException;
 
 import je.panse.doro.hito.StartForm;
-import je.panse.doro.hito.newcategory;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class InputButton {
