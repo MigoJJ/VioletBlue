@@ -1,13 +1,11 @@
 package je.panse.doro.comm;
 
-import java.io.File;
+import java.io.File;	
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class File_cdrw_proc   {
@@ -57,14 +55,14 @@ public class File_cdrw_proc   {
 					}
 		       myReader.close();
 			} 
-			catch (FileNotFoundException e) {
-						System.out.println("An error occurred.");
-						e.printStackTrace();
+		catch (FileNotFoundException e) {
+				System.out.println("An error occurred.");
+				e.printStackTrace();
 		}
     }	
 // ------------------------------	
-	  public void rwfiler(String rwfileo, String rwfilet) throws IOException {
-		    try {
+	public void rwfiler(String rwfileo, String rwfilet) throws IOException {
+	    try {
 		      File myObj = new File(rwfileo);
 		      Scanner myReader = new Scanner(myObj);
 		      
@@ -75,14 +73,14 @@ public class File_cdrw_proc   {
 		      }
 		      myReader.close();
 		    
-		    } catch (FileNotFoundException e) {
+	    } catch (FileNotFoundException e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();
-		    }
-		  }
+	    }
+	 }
 //----------------------------------------------------
 	  public void writefiler(String writef, String writed) throws IOException {
-		    try {
+	    try {
 		      FileWriter myWriter = new FileWriter(writef, true);
 		      myWriter.write(writed+ "\n");
 		      myWriter.close();
@@ -92,24 +90,5 @@ public class File_cdrw_proc   {
 		      e.printStackTrace();
 		    }
 		  }
-//----------------------------------------------------
-		public void formdircopier(String fdc) throws IOException {
-			List<String> list=new ArrayList<String>();  
-			  list.add("/3CC");  
-			  list.add("/4PMH");  
-			  list.add("/5SUJ");  
-			  list.add("/6OBJ");  
-			  list.add("/7LAB");  
-			  list.add("/8ACC");  
-			  list.add("/9PLAN");
-		// ------------------------------------------------------Form Files Copying	
-			  for(String fruit:list)  
-				  copyfiler("/home/migowj/git/violetBlue0306/src/je/panse/doro/text/form/hana" + fruit, 
-						  "/home/migowj/git/violetBlue0306/src/je/panse/doro/text/form" + fruit);
-		// ------------------------------------------------------ChartPlate writing		  
-			  for(String fruit:list)  
-				  rwfiler("/home/migowj/git/violetBlue0306/src/je/panse/doro/text/form/" + fruit, 
-						  "/home/migowj/git/violetBlue0306/src/je/panse/doro/text/form/ChartPlate");
-		}
 //----------------------------------------------------
 }

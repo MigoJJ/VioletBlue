@@ -1,4 +1,4 @@
-package je.panse.doro.exec.input.HistoryTake;
+package je.panse.doro.text.shiloah;
 
 import java.io.IOException;
 
