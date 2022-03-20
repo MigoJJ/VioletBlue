@@ -31,12 +31,18 @@ public class Newcategory {
 		   		case 2 : New4PMH.main(null);  				break;
 //						  case "3" : new5SUJ.main(null);  	break;
 		   		case 4 : New6OBJ.main(null);  				break;
-//						  case "5" : new7LAB.main(null);  	break;
+				case 5 : New5LAB.main(null);  	break;
 //						  case "6" : new8ACC.main(null);  	break;
 //						  case "7" : new9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;
 		   		case 9 : 
-					File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
+		   	    	File_cdrw_proc ari1 = new File_cdrw_proc();
+			    	ari1.deletefiler(Enter.wts + "/ChartPlate");
+			    	ari1.checkfiler(Enter.wts + "/ChartPlate");
+			    	ari1.deletefiler(Enter.wts + "/Comment);");
+			    	ari1.checkfiler(Enter.wts + "/Comment");
+		   			
+		   			File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
 					File_cw_chart nu3 = new File_cw_chart();   nu3.chartbackup();
 			  		StartForm fe1 = new StartForm(); fe1.main(""); 		break;
 		   		

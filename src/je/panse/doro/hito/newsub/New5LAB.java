@@ -9,10 +9,10 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
-public class New6OBJ {
+public class New5LAB {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/5LAB_list");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -25,7 +25,7 @@ public class New6OBJ {
 
 			switch (select_code) {
 //			  case 1 : new3CC.main(null);	  	break;
-			  case 2 :    CalcBP ob3 = new CalcBP(); 
+			  case 1 :    CalcBP ob3 = new CalcBP(); 
 							ob3.main(null); 				break;
 //			  case 2 : new4PMH.main(null);  	break;
 //					  case "3" : new5SUJ.main(null);  	break;
