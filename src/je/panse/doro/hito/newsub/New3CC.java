@@ -3,6 +3,7 @@ package je.panse.doro.hito.newsub;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
@@ -23,6 +24,8 @@ public class New3CC {
 	    	egfp(f);
 //			s.close();
 // ("Public methods must be called by creating objects");
+	    	
+			File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
 
 			Newcategory np1 = new Newcategory();
 			np1.main("");

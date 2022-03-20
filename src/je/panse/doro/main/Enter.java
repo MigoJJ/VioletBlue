@@ -14,7 +14,7 @@ public class Enter {
 	public static String wtk    = (wd + "/text/knots");
 	public static String wts    = (wd + "/text/samsara");
 	// ------------------------------------------------------file preparing
-	public static void main(String[] args) throws IOException {
+	public static void main(String args) throws IOException {
        System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
         System.out.println(currentUsersHomeDir);
@@ -24,7 +24,7 @@ public class Enter {
 	    	ari1.checkfiler(wts + "/ChartPlate");
 	    	ari1.deletefiler(wts + "/Comment);");
 	    	ari1.checkfiler(wts + "/Comment");
-	    	   	
+	    	
     	File_cw_chart ari2 = new File_cw_chart();	
 	    	ari2.callchartlist("/hana");
 	    	

@@ -10,6 +10,12 @@ public class SingleBeam {
     	File_cdrw_proc cdrw = new File_cdrw_proc(); 
         cdrw.readfiler(Enter.wt + "/singlebeam/SingleBeam");
         cdrw.readfiler(Enter.wt + "/singlebeam/DoctorLogin");
+        
+        
+        
+        
+        
+        
         Enter.main(null);
 	}
 }

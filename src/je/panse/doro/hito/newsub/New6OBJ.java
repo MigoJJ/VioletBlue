@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.item.CalcBP;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
@@ -35,9 +36,11 @@ public class New6OBJ {
 //					  case "c" : Com.main(null);  	break;
 //					  case "q" : InputButton.quitButton(null);  	break;
 //					  case "qq" : InputQuitSave.main(null);  	break;
-			  case 9 : File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart(); 
-			           File_cw_chart ari3 = new File_cw_chart();	 ari3.chartbackup();
-			           StartForm ari4 = new StartForm();      		 ari4.main(null);
+			  case 9 :
+				  
+//						File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart(); 
+//						File_cw_chart ari3 = new File_cw_chart();	 ari3.chartbackup();
+			           Newcategory ari4 = new Newcategory();      		 ari4.main(null);
 			  		break;								
 				}
 			}

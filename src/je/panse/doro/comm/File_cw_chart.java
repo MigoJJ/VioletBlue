@@ -23,7 +23,7 @@ public class File_cw_chart {
    }
 	// --------------------------------------------Write Files To Chart	
 	public void writechart() throws IOException {
-		File_cdrw_proc nu2 = new File_cdrw_proc();
+		File_cdrw_proc nu9 = new File_cdrw_proc();
 		List<String> list=new ArrayList<String>();  
 			  list.add("/3CC");  
 			  list.add("/4PMH");  
@@ -34,7 +34,7 @@ public class File_cw_chart {
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
-			  nu2.rwfiler(Enter.wts + fruit,Enter.wts + "/ChartPlate");
+			  nu9.rwfiler(Enter.wts + fruit, Enter.wts + "/ChartPlate");
 	}
 // ------------------------------------------------Backup Files
 	public void chartbackup() throws IOException {

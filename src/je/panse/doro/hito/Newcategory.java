@@ -36,13 +36,14 @@ public class Newcategory {
 //						  case "7" : new9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;
 		   		case 9 : 
-				    File_cw_chart ari2 = new File_cw_chart();	 
-		  				ari2.writechart();
-		   			File_cw_chart nu3 = new File_cw_chart();
-	    				nu3.chartbackup();
-
-			  		StartForm fe1 = new StartForm();
-		  				fe1.main("");  				; 		break;
+					File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
+					File_cw_chart nu3 = new File_cw_chart();   nu3.chartbackup();
+			  		StartForm fe1 = new StartForm(); fe1.main(""); 		break;
+		   		
+		   		case 99 : 
+					File_cw_chart ari3 = new File_cw_chart();	 ari3.writechart();
+					File_cw_chart nu4 = new File_cw_chart();   nu4.chartbackup();
+			  		Enter fe2 = new Enter(); fe2.main(""); 		break;
 		   	}
 		new_code.close();
    		}
