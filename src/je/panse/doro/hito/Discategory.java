@@ -1,10 +1,8 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;		
+import java.io.IOException;			
 import java.util.Scanner;
-
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.exec.input.HistoryTake.*;
 import je.panse.doro.hito.newsub.New3CC;
 import je.panse.doro.hito.newsub.New4PMH;
 import je.panse.doro.hito.newsub.New6OBJ;
@@ -14,7 +12,7 @@ import je.panse.doro.text.shiloah.InputButton;
 
 public class Discategory {
 // --------------------------------------------	
-	public static void main(String n_code) throws IOException {
+	public static void main(String[] n_code) throws IOException {
     	File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/MenuList/ChartInputMenu1");
 try (Scanner c_code = new Scanner(System.in)) {

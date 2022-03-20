@@ -24,8 +24,8 @@ public class New5LAB {
 			select_code = Integer.valueOf(new_code.nextLine().trim());
 
 			switch (select_code) {
-//			  case 1 : new3CC.main(null);	  	break;
-			  case 1 :    CalcBP ob3 = new CalcBP(); 
+//			  	case 1 : new3CC.main(null);	  	break;
+				case 1 :    CalcBP ob3 = new CalcBP(); 
 							ob3.main(null); 				break;
 //			  case 2 : new4PMH.main(null);  	break;
 //					  case "3" : new5SUJ.main(null);  	break;
@@ -37,20 +37,18 @@ public class New5LAB {
 //					  case "q" : InputButton.quitButton(null);  	break;
 //					  case "qq" : InputQuitSave.main(null);  	break;
 			  case 9 :
-				  
-				  
 		   	    	File_cdrw_proc ari1 = new File_cdrw_proc();
 			    	ari1.deletefiler(Enter.wts + "/ChartPlate");
 			    	ari1.checkfiler(Enter.wts + "/ChartPlate");
 			    	ari1.deletefiler(Enter.wts + "/Comment);");
 			    	ari1.checkfiler(Enter.wts + "/Comment");
 		   			
-		   			File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
-					File_cw_chart nu3 = new File_cw_chart();   nu3.chartbackup();
-				  
-//						File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart(); 
-//						File_cw_chart ari3 = new File_cw_chart();	 ari3.chartbackup();
-			           Newcategory ari4 = new Newcategory();      		 ari4.main(null);
+		   			File_cw_chart ari2 = new File_cw_chart();	 
+		   			ari2.writechart();
+					File_cw_chart nu3 = new File_cw_chart();   
+					
+					Newcategory ari4 = new Newcategory();      		 
+					ari4.main(null);
 			  		break;								
 				}
 			}

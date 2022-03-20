@@ -5,11 +5,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
+import je.panse.doro.hito.newsub.New8ACC;
 import je.panse.doro.main.Enter;
 
-public class CalcAccess {
-    public static String diaease_description;
-	public static void main(String n_code) throws IOException{
+public class CalcACC {
+    public static void main(String args[]) throws IOException{
         Scanner scanner=new Scanner(System.in);
 //        System.out.println("Insert disease code : ");
         while (true) {
@@ -18,6 +19,8 @@ public class CalcAccess {
         	code_select(question);
                 if(question.equals("quit")){
 	            	System.out.println("Inserted code finished  !!!.: ");
+	            	New8ACC ob6 = new New8ACC(); 
+					ob6.main(null); 	
 	            	break;
 	            }
 //            System.out.println("Insert answer code:");
@@ -29,6 +32,8 @@ public class CalcAccess {
         }
     	System.out.println("Success");
     	scanner.close();
+    	
+    	
     }
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {
@@ -71,10 +76,10 @@ public class CalcAccess {
 			case "pp" : accessInsert("  #  Pneumonia ")	;break;
 			case "pt" : accessInsert("  #  Pulmonary Tuberculosis ")	;break;
 		}
-}
+		}
 //------------------------------------------------ 
 	   static void writecoding(String writec) throws IOException {
-			File file_acc = new File(Enter.wtf + "/8ACC");
+			File file_acc = new File(Enter.wts + "/8ACC");
 			System.out.println(file_acc);
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {

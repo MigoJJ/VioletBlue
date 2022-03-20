@@ -1,6 +1,6 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;	
+import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -9,7 +9,7 @@ import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public void main(String args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	
@@ -32,27 +32,32 @@ public class Newcategory {
 //						  case "3" : new5SUJ.main(null);  	break;
 		   		case 4 : New6OBJ.main(null);  				break;
 				case 5 : New5LAB.main(null);  	break;
-//						  case "6" : new8ACC.main(null);  	break;
+				case 6 : New8ACC.main(null);  	break;
 //						  case "7" : new9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;
 		   		case 9 : 
-		   	    	File_cdrw_proc ari1 = new File_cdrw_proc();
-			    	ari1.deletefiler(Enter.wts + "/ChartPlate");
-			    	ari1.checkfiler(Enter.wts + "/ChartPlate");
-			    	ari1.deletefiler(Enter.wts + "/Comment);");
-			    	ari1.checkfiler(Enter.wts + "/Comment");
+		   	    	File_cdrw_proc nc1 = new File_cdrw_proc();
+		   	    	nc1.deletefiler(Enter.wts + "/ChartPlate");
+		   	    	nc1.checkfiler(Enter.wts + "/ChartPlate");
+		   	    	nc1.deletefiler(Enter.wts + "/Comment);");
+		   	    	nc1.checkfiler(Enter.wts + "/Comment");
 		   			
-		   			File_cw_chart ari2 = new File_cw_chart();	 ari2.writechart();
-					File_cw_chart nu3 = new File_cw_chart();   nu3.chartbackup();
-			  		StartForm fe1 = new StartForm(); fe1.main(""); 		break;
+		   			File_cw_chart nc2 = new File_cw_chart();	 
+		   			nc2.writechart();
+					File_cw_chart nu3 = new File_cw_chart();   
+					nu3.chartbackup();
+			  		StartForm.main(null); 					break;
 		   		
 		   		case 99 : 
-					File_cw_chart ari3 = new File_cw_chart();	 ari3.writechart();
-					File_cw_chart nu4 = new File_cw_chart();   nu4.chartbackup();
-			  		Enter fe2 = new Enter(); fe2.main(""); 		break;
+					File_cw_chart nc5 = new File_cw_chart();	 
+					nc5.writechart();
+					File_cw_chart nc6 = new File_cw_chart();   
+					nc6.chartbackup();
+			  		Enter nc7 = new Enter(); 
+			  		nc7.main(null); 		break;
 		   	}
 		new_code.close();
-   		}
+   		}  //while
     }
  // --------------------------------------------
 }
