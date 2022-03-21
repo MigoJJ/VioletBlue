@@ -11,7 +11,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
-public class New5LAB {
+public class New5SUJ {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/submenu/5LAB_list");

@@ -32,7 +32,7 @@ public class Newcategory {
 		   		case 2 : New4PMH.main(null);  				break;
 //						  case "3" : new5SUJ.main(null);  	break;
 		   		case 4 : New6OBJ.main(null);  				break;
-				case 5 : New5LAB.main(null);  	break;
+				case 5 : New7LAB.main(null);  	break;
 				case 6 : New8ACC.main(null);  	break;
 //						  case "7" : new9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;

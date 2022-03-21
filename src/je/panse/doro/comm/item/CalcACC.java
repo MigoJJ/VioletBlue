@@ -32,8 +32,6 @@ public class CalcACC {
         }
     	System.out.println("Success");
     	scanner.close();
-    	
-    	
     }
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {
@@ -44,26 +42,38 @@ public class CalcACC {
 					case "dp" : accessInsert("  #  DM with Peripheral Neuropathy");break;
 					case "da" : accessInsert("  #  DM with Autonomic Neuropathy");break;
 					
-			case "t" : accessInsert("  #  Hypertension ")	;break;	
+			case "t" : accessInsert("  #  Hypertension ")	;break;
+			
 			case "c" : accessInsert("  #  Hypercholesterolemia ");break;
-			
+			case "ctg" : accessInsert("  #  HyperTriGlyceridemia ");break;
+
+	
 			case "te" : accessInsert("  #  Hyperthyroidism : Graves' disease")	;break;
-			case "to" : accessInsert("  #  Hypothyroidism : Hashimoto's thyroiditis")	;break;
-			case "ts" : accessInsert("  #  Subacute Thyroiditis ")		;break;
-			case "tn" : accessInsert("  #  Thyroid nodule ")		;break;
-			case "tep" : accessInsert("  #  Hyperthyroidism with Pregnancy ")		;break;
-			case "top" : accessInsert("  #  Hypothyroidism with Pregnancy ")		;break;
+				case "to" : accessInsert("  #  Hypothyroidism : Hashimoto's thyroiditis")	;break;
+				case "ts" : accessInsert("  #  Subacute Thyroiditis ")		;break;
+				case "tn" : accessInsert("  #  Thyroid nodule ")		;break;
+				case "tsg" : accessInsert("  #  Simple Goiter")		;break;
+				case "nti" : accessInsert("  #  Non-Thyroidal illness ");break;
+
+
+				case "tep" : accessInsert("  #  Hyperthyroidism with Pregnancy ")		;break;
+				case "top" : accessInsert("  #  Hypothyroidism with Pregnancy ")		;break;
+		
+			case "ospo" : accessInsert("  #  Osteoporosis ");break;
+			case "ospe" : accessInsert("  #  Osteopenia ");break;
 			
-			case "os" : accessInsert("  #  Osteoporosis ");break;
-			
+			case "ap" : accessInsert("  #  Angina Pectoris");break;
+			case "af" : accessInsert("  #  Atrial Fibrillation ");break;
 			// ----------------------------------------------진료 보조
 			case "oc" : accessInsert("  #  Cholecystectomy d/t GB stone	")		;break;
 			case "oa" : accessInsert("  #  Appendectomy ")		;break;
-			case "oh" : accessInsert("  #  TAH : Total Abdominal Hysterectomy ")		;break;			
+			case "oh" : accessInsert("  #  TAH : Total Abdominal Hysterectomy ")		;break;	
+			case "pb" : accessInsert("  #  BPH ");break;
 				
 			case "hf" : accessInsert("  #  Fatty Liver ")		;break;
 			case "hc" : accessInsert("  #  Hepatic Cyst ")		;break;
 			case "hn" : accessInsert("  #  Hepatic Nodule ")		;break;
+			case "hb" : accessInsert("  #  Hepatis B Infection   HBsAg(+)")		;break;
 			
 			case "rc" : accessInsert("  #  Renal Cyst ")		;break;
 			case "rn" : accessInsert("  #  Renal Nodule ")	;break;

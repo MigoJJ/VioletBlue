@@ -54,7 +54,7 @@ public class New3CC {
 			case "g":   f = "-- Good";			    break;
 			case "f":   f = "-- Fair";			    break;  
 			case "p":   f = "-- Poor";			    break;  
-			default:    f = "   uncertain ... please check  !!";
+			default:    ;
 		}
 		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
