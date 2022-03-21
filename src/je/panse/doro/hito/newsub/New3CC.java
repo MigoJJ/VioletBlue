@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
@@ -23,18 +24,15 @@ public class New3CC {
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
-// ("Public methods must be called by creating objects");
-	    	
-			File_cw_chart la1 = new File_cw_chart();	 
-			la1.writechart();
-
+   		    NineDeux.unnine();
+	    	// ("Public methods must be called by creating objects");
 			Newcategory.main(null);
 			
-			}catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			}
+		}catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 		}
+	}
 	//------------------------------------------------
 	static void yymmdd(String ymd) throws IOException {
 		switch(ymd) {

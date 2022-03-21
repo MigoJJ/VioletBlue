@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item.CalcBP;
 import je.panse.doro.comm.item.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
@@ -25,8 +26,8 @@ public class New6OBJ {
 			select_code = Integer.valueOf(new_code.nextLine().trim());
 
 			switch (select_code) {
-			  	case 1 : CalcHbA1c  ob7 = new CalcHbA1c(); 
-			  			ob7.main(null);	  	break;
+//			  	case 1 : CalcHbA1c  ob7 = new CalcHbA1c(); 
+//			  			ob7.main(null);	  	break;
 				case 2 : CalcBP ob3 = new CalcBP(); 
 						ob3.main(null); 				break;
 //			  case 2 : new4PMH.main(null);  	break;
@@ -38,22 +39,9 @@ public class New6OBJ {
 //					  case "c" : Com.main(null);  	break;
 //					  case "q" : InputButton.quitButton(null);  	break;
 //					  case "qq" : InputQuitSave.main(null);  	break;
-			  case 9 :
-		   	    	File_cdrw_proc ari1 = new File_cdrw_proc();
-			    	ari1.deletefiler(Enter.wts + "/ChartPlate");
-			    	ari1.checkfiler(Enter.wts + "/ChartPlate");
-			    	ari1.deletefiler(Enter.wts + "/Comment);");
-			    	ari1.checkfiler(Enter.wts + "/Comment");
-		   			
-		   			File_cw_chart ari2 = new File_cw_chart();	 
-		   			ari2.writechart();
-					
-		   			File_cw_chart nu3 = new File_cw_chart();   
-					nu3.chartbackup();
-				  
-					Newcategory ari4 = new Newcategory();      		 
-					ari4.main(null);
-			  		break;								
+			 	case 9 : NineDeux.deuxnine(); 
+ 							StartForm.main(null); break;						
+						
 				}
 			}
 			} catch (NumberFormatException e) {

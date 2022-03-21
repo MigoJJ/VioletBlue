@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
@@ -35,26 +36,10 @@ public class Newcategory {
 				case 6 : New8ACC.main(null);  	break;
 //						  case "7" : new9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;
-		   		case 9 : 
-		   	    	File_cdrw_proc nc1 = new File_cdrw_proc();
-		   	    	nc1.deletefiler(Enter.wts + "/ChartPlate");
-		   	    	nc1.checkfiler(Enter.wts + "/ChartPlate");
-		   	    	nc1.deletefiler(Enter.wts + "/Comment);");
-		   	    	nc1.checkfiler(Enter.wts + "/Comment");
-		   			
-		   			File_cw_chart nc2 = new File_cw_chart();	 
-		   			nc2.writechart();
-					File_cw_chart nu3 = new File_cw_chart();   
-					nu3.chartbackup();
-			  		StartForm.main(null); 					break;
-		   		
-		   		case 99 : 
-					File_cw_chart nc5 = new File_cw_chart();	 
-					nc5.writechart();
-					File_cw_chart nc6 = new File_cw_chart();   
-					nc6.chartbackup();
-			  		Enter nc7 = new Enter(); 
-			  		nc7.main(null); 		break;
+		   		case 9 : NineDeux.unnine(); 
+		   					StartForm.main(null); break;
+		   		case 99 :NineDeux.deuxnine();  	
+		   					Enter.main(null); break;
 		   	}
 		new_code.close();
    		}  //while

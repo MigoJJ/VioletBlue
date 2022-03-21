@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
@@ -20,12 +21,13 @@ public class StartForm {
 				select_code = Integer.valueOf(case_code.nextLine());
 			
 				switch (select_code) {
-					 case 1 : Newcategory st2 = new Newcategory(); st2.main(null);	break;
+					case 1 : Newcategory st2 = new Newcategory(); st2.main(null);	break;
 				//				  case "2" : SOAPInput.main(n_code);  	break;
 				//				  case "3" : SOAPInput.main(n_code);  	break;
-				//				  case "4" : SOAPInput.main(n_code);  	break;
+				 	case 9 : NineDeux.deuxnine(); 
+				 				StartForm.main(null); break;
 				}
-			}	
+			}	// while
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}

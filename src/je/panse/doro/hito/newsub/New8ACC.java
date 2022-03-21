@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item.CalcACC;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
@@ -37,23 +38,9 @@ public class New8ACC {
 //					  case "c" : Com.main(null);  	break;
 //					  case "q" : InputButton.quitButton(null);  	break;
 //					  case "qq" : InputQuitSave.main(null);  	break;
-			  case 9 :
-		   	    	File_cdrw_proc ari1 = new File_cdrw_proc();
-			    	ari1.deletefiler(Enter.wts + "/ChartPlate");
-			    	ari1.checkfiler(Enter.wts + "/ChartPlate");
-			    	ari1.deletefiler(Enter.wts + "/Comment);");
-			    	ari1.checkfiler(Enter.wts + "/Comment");
-		   			
-		   			File_cw_chart ari2 = new File_cw_chart();	 
-		   			ari2.writechart();
-					
-		   			File_cw_chart nu3 = new File_cw_chart();   
-					nu3.chartbackup();
-				  
-					Newcategory ari4 = new Newcategory();      		 
-					ari4.main(null);
-			  		break;								
+				case 9 : NineDeux.unnine(); 			 	 			break;								
 				}
+			Newcategory.main(null);
 			}
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
