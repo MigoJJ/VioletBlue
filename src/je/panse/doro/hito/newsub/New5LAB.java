@@ -6,6 +6,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item.CalcBP;
+import je.panse.doro.comm.item.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
@@ -25,8 +26,7 @@ public class New5LAB {
 			select_code = Integer.valueOf(new_code.nextLine().trim());
 
 			switch (select_code) {
-//			  	case 1 : new3CC.main(null);	  	break;
-				case 1 : CalcBP ob3 = new CalcBP(); ob3.main(null);  break;
+				case 1 : CalcHbA1c ob3 = new CalcHbA1c(); ob3.main(null);  break;
 //				case 2 : new4PMH.main(null);  	break;
 //				case "3" : new5SUJ.main(null);  	break;
 
