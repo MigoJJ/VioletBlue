@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.IOException;	
+import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.Newcategory;
@@ -8,8 +8,9 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcBP {
-	public static int ditto;
-	
+	public static int SBP, DBP, PR;
+	public static String BPresult;
+
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
