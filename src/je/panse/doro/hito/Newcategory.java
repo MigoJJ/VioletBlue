@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public static void main(String[] args) throws IOException {
+	public static void main(String string) throws IOException {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	
@@ -34,7 +34,7 @@ public class Newcategory {
 		   		case 4 : New6OBJ.main(null);  				break;
 				case 5 : New7LAB.main(null);  	break;
 				case 6 : New8ACC.main(null);  	break;
-//						  case "7" : new9PLAN.main(null);  	break;
+				case 7 : New9PLAN.main(null);  	break;
 //						  case "c" : Com.main(null);  		break;
 		   		case 9 : NineDeux.unnine(); 
 		   					StartForm.main(null); break;

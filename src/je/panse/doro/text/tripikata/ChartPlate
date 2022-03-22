@@ -1,15 +1,18 @@
  < Chief Complaint >
 
 < Past Medical History >
+	----------------------------------------------------------------
+    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
+         DM (-)   HTN (-)   Chol (-)
+    FHx>  
+    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
+          All denied condition 
+	----------------------------------------------------------------
 S >
 O >
- 
 LAB >
-   Glucose  FBS   PP2 : [ 125 ] mg/dl   HbA1c [ 85.0 % ]
-
-   Glucose  FBS   PP2 : [ 99 ] mg/dl   HbA1c [ 6.3 % ]
-
 A >
 P >
-    Continue Medication 
-    ditto x  [   ]  months
+	...ditto & OPD F/U x [ 6 ]-month later
+	...next Lab F/U plan (+)
+	...medication change or dose-adjust
