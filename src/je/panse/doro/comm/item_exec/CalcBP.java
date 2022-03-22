@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item;
+package je.panse.doro.comm.item_exec;
 
 import java.io.IOException;	
 import java.util.Scanner;
@@ -8,8 +8,7 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcBP {
-	public static int SBP, DBP, PR;
-	public static String BPresult;
+	public static int ditto;
 	
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 

@@ -1,16 +1,15 @@
-package je.panse.doro.hito.newsub;
+package je.panse.doro.comm.item;
 
-import java.io.IOException;		
+import java.io.IOException;
 import java.util.Scanner;
+import je.panse.doro.*;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
-import je.panse.doro.comm.item_exec.CalcACC;
-import je.panse.doro.comm.item_exec.CalcDitto;
+import je.panse.doro.comm.item_exec.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
-public class New9PLAN {
+public class New7LAB {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/submenu/9PLAN_List");
@@ -25,12 +24,11 @@ public class New9PLAN {
 			select_code = Integer.valueOf(new_code.nextLine().trim());
 
 			switch (select_code) {
-				case 1 : CalcDitto ob3 = new CalcDitto(); 
-						 ob3.main(null); 				
-						 break;
-//				case 2 : new3CC.main(null);	  	break;
-				
-//			    case 2 : new4PMH.main(null);  	break;
+			  	case 1 : CalcHbA1c  ob7 = new CalcHbA1c(); 
+			  			ob7.main(null);	  	break;
+//				case 2 : CalcBP ob3 = new CalcBP(); 
+//						ob3.main(null); 				break;
+//			  case 2 : new4PMH.main(null);  	break;
 //					  case "3" : new5SUJ.main(null);  	break;
 
 //					  case "5" : new7LAB.main(null);  	break;
@@ -40,12 +38,13 @@ public class New9PLAN {
 //					  case "q" : InputButton.quitButton(null);  	break;
 //					  case "qq" : InputQuitSave.main(null);  	break;
 				case 9 : NineDeux.unnine(); 			 	 			break;								
+						
 				}
 			Newcategory.main(null);
 			}
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
-   	}		
-// ----------------------------------------------
+   	}	
+//------------------------------------------------
 }

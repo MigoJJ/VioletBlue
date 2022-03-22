@@ -5,14 +5,14 @@ import java.util.Scanner;
 import je.panse.doro.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.NineDeux;
-import je.panse.doro.comm.item.CalcHbA1c;
+import je.panse.doro.comm.item_exec.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class New7LAB {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/7LAB_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;

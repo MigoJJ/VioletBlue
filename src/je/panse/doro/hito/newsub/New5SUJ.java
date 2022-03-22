@@ -5,13 +5,13 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
-import je.panse.doro.comm.item.CalcBP;
-import je.panse.doro.comm.item.CalcHbA1c;
+import je.panse.doro.comm.item_exec.CalcBP;
+import je.panse.doro.comm.item_exec.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
-public class New5LAB {
+public class New5SUJ {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/submenu/5LAB_list");

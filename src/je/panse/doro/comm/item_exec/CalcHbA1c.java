@@ -1,10 +1,11 @@
-package je.panse.doro.comm.item;
+package je.panse.doro.comm.item_exec;
 
 import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
+import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
 public class CalcHbA1c {
@@ -32,7 +33,7 @@ public class CalcHbA1c {
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writefiler(Enter.wts + "/7LAB", BPresult);
-			New6OBJ.main("");
+			New7LAB.main("");
 			
 			} catch (NumberFormatException e) {
 			e.printStackTrace();

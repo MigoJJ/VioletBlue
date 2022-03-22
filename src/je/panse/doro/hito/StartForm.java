@@ -24,7 +24,7 @@ public class StartForm {
 					case 1 : Newcategory st2 = new Newcategory(); st2.main(null);	break;
 				//				  case "2" : SOAPInput.main(n_code);  	break;
 				//				  case "3" : SOAPInput.main(n_code);  	break;
-				 	case 9 : NineDeux.deuxnine(); 
+				 	case 9 : NineDeux.unnine(); 
 				 				StartForm.main(null); break;
 				}
 			}	// while
