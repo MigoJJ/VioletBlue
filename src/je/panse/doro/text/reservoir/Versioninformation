@@ -1,0 +1,40 @@
+
+	--------------------------------------------------------------------
+	      Good Doctors’ Clinic
+	--------------------------------------------------------------------
+	
+	Version         -- V 0.11
+	Made by         -- MigoJJ
+	
+	Ubuntu------------------------------
+	Distributor ID:	Ubuntu
+	Description:	Ubuntu 21.10
+	Release:	21.10
+	Codename:	impish
+	
+	JAVA--------------------------------
+	openjdk 11.0.11 2021-04-20
+	OpenJDK Runtime Environment 
+	     (build 11.0.11+9-Ubuntu-0ubuntu2.20.04)
+	OpenJDK 64-Bit Server VM 
+	     (build 11.0.11+9-Ubuntu-0ubuntu2.20.04, mixed mode, sharing)
+	
+	Eclipse-----------------------------
+	Eclipse IDE for Java Developers (includes Incubating components)
+	Version: 2021-06 (4.20.0)
+	Build id: 20210612-2011
+	OS: Linux, v.5.11.0-36-generic, x86_64 / gtk 3.24.20, WebKit 2.32.4
+	Java vendor: Ubuntu
+	Java runtime version: 11.0.11+9-Ubuntu-0ubuntu2.20.04
+	Java version: 11.0.11
+	
+	Windows-----------------------------
+	프로세서	Intel(R) Pentium(R) CPU G3240 @ 3.10GHz   3.10 GHz
+	RAM	8.00GB
+	64비트 운영 체제, x64 기반 프로세서
+	Windows 10 Home  버전	21H2
+	Windows Feature Experience Pack 120.2212.4170.0
+
+	VMware------------------------------
+	VMware : VMware® Workstation 16 Pro Ver. 16.2.2 build-19200509
+	------------------------------------

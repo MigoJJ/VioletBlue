@@ -1,4 +1,4 @@
-package je.panse.doro.text.shiloah;
+package je.panse.doro.text.reservoir;
 
 import java.io.IOException;
 

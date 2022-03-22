@@ -11,12 +11,9 @@ import je.panse.doro.main.Enter;
 public class CalcHbA1c {
 	public static int Glucose;
 	public static double HbA1c;
-	public static String  BPresult;
+	public static String  Gluresult;
 	
 	public static void main(String args) throws IOException { 
-//		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-//    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
-		
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input Glucose : ");
@@ -26,13 +23,13 @@ public class CalcHbA1c {
 	        HbA1c = input.nextDouble();
 //      input.close();
 
-	        	BPresult = ("   Glucose  FBS   PP2 : [ " + Glucose +  " ] mg/dl" 
-	        			+ "   HbA1c [ " + HbA1c + " % ]\n");
+	        Gluresult = ("    FBS     : [ " + Glucose +  " ] mg/dl" 
+	        			+ "     HbA1c [ " + HbA1c + " ] %\n");
 
-			System.out.print(BPresult);
+			System.out.print(Gluresult);
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wts + "/7LAB", BPresult);
+				fcp1.writefiler(Enter.wts + "/7LAB", Gluresult);
 			New7LAB.main("");
 			
 			} catch (NumberFormatException e) {

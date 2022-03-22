@@ -8,7 +8,7 @@ import je.panse.doro.hito.newsub.New4PMH;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New8ACC;
 import je.panse.doro.main.Enter;
-import je.panse.doro.text.shiloah.InputButton;
+import je.panse.doro.text.reservoir.InputButton;
 
 public class Discategory {
 // --------------------------------------------	
