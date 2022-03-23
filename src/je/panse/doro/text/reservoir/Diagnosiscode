@@ -3,6 +3,7 @@
 					dn  #  DM with Nephropathy");
 					dp  #  DM with Peripheral Neuropathy
 					da  #  DM with Autonomic Neuropathy
+					pd  #  Prediabetes 
 		
 		t  #  Hypertension 
 		c  #  Hypercholesterolemia 
@@ -24,19 +25,24 @@
 	   
 	   hf   #  Fatty Liver 
 	   hc   #  Hepatic Cyst
-	   hn   #  Hepatic Nodule 
+	   hn   #  Hepatic Nodule
+	       
 	   
 	   rc   #  Renal Cyst
 	   rn   #  Renal Nodule 
 	   
 	   bc   #  Breast Cyst
 	   bn   #  Breast Nodule
+	     
 	   -----------------------이찬주원장님
 	   pa   #  Bronchial Asthma 
 	   pc   #  Chronic Cough
 	   pp   #  Pneumonia
 	   pt   #  Pulmonary Tuberculosis 
 	   
+   		
+   		hv     HBsAg(+)
+   		bco    Breast Cancer Opreation
    		Coronary spasm
 	   	Sinus Bradycardia
 	   	Atrial Fibrillation

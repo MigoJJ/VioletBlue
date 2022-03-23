@@ -1,21 +1,21 @@
 [ 1 ] New Patient 
 -------------------------------------------------------------------
 
-		1. 	Chief complaint
+	1. 	Chief complaint
 		
-		2.	Past Medical History
+	2.	Past Medical History
 		
-		3. 	Subjective Complaint
-		4.	Objective Findings
-		5.	Laboratory Test
+	3. 	Subjective Complaint
+	4.	Objective Findings
+	5.	Laboratory Test
 		
-		6.	Accessment 
+	6.	Accessment 
 				
-		7.	Plan
+	7.	Plan
 		
-			8.		Comments
-			9.		Return Home
-			99.		Save & Restart 
+		8.	Comments
+		9.	Return Home
+		99.	Save & Restart 
 		
 -------------------------------------------------------------------
 Choice the number >>>
