@@ -41,7 +41,8 @@ public class CalcACC {
 					case "dn" : accessInsert("\t#  DM with Nephropathy");break;
 					case "dp" : accessInsert("\t#  DM with Peripheral Neuropathy");break;
 					case "da" : accessInsert("\t#  DM with Autonomic Neuropathy");break;
-					
+					case "pd" : accessInsert("\t#  Prediabetes");break;
+
 			case "t" : accessInsert("\t#  Hypertension ")	;break;
 			
 			case "c" : accessInsert("\t#  Hypercholesterolemia ");break;
@@ -52,6 +53,7 @@ public class CalcACC {
 				case "to" : accessInsert("\t#  Hypothyroidism : Hashimoto's thyroiditis")	;break;
 				case "ts" : accessInsert("\t#  Subacute Thyroiditis ")		;break;
 				case "tn" : accessInsert("\t#  Thyroid nodule ")		;break;
+				case "tc" : accessInsert("\t#  Thyroid Cancer  PTC")		;break;
 				case "tsg" : accessInsert("\t#  Simple Goiter")		;break;
 				case "nti" : accessInsert("\t#  Non-Thyroidal illness ");break;
 
