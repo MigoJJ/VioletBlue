@@ -13,14 +13,11 @@ public class New3CC {
 	
 	public static void main(String[] args) throws IOException { 
 	    try (Scanner s = new Scanner(System.in)) {
-	    	System.out.println("Enter chief complain :");
-		    	a = s.nextLine();
-		    System.out.println("Enter duration:");
-		    	b = s.nextLine();
-		    System.out.println("Enter year/month/day:");
-		    	c = s.nextLine();
+	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
+		    System.out.println("Enter duration:");	    	b = s.nextLine();
+		    System.out.println("Enter year/month/day:");    	c = s.nextLine();
 		    System.out.println("\nEnter... General state of health : Excellent/Good/Fair/Poor ...");
-		    	f = s.nextLine();
+		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
@@ -54,7 +51,7 @@ public class New3CC {
 			case "g":   f = "-- Good";			    break;
 			case "f":   f = "-- Fair";			    break;  
 			case "p":   f = "-- Poor";			    break;  
-			default:    ;
+			default :   c = " uncertain ... please check  !!";
 		}
 		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();

@@ -17,33 +17,21 @@ public class New9PLAN {
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
-
 			while (true) {
-			if (select_code == 99) { break; }
-		 	
-			System.out.println("Enter selected code number ...   : ");
-			select_code = Integer.valueOf(new_code.nextLine().trim());
-
-			switch (select_code) {
-				case 1 : CalcDitto ob3 = new CalcDitto(); 
-						 ob3.main(null); 				
-						 break;
-//				case 2 : new3CC.main(null);	  	break;
-				
-//			    case 2 : new4PMH.main(null);  	break;
-//					  case "3" : new5SUJ.main(null);  	break;
-
-//					  case "5" : new7LAB.main(null);  	break;
-//					  case "6" : new8ACC.main(null);  	break;
-//					  case "7" : new9PLAN.main(null);  	break;
-//					  case "c" : Com.main(null);  	break;
-//					  case "q" : InputButton.quitButton(null);  	break;
-//					  case "qq" : InputQuitSave.main(null);  	break;
-				case 9 : NineDeux.unnine(); 			 	 			break;								
-				}
-			Newcategory.main(null);
+				System.out.println("Enter selected code number ...   : ");
+				select_code = Integer.valueOf(new_code.nextLine().trim());
+	
+				switch (select_code) {
+					case 1 : CalcDitto ob3 = new CalcDitto();		 ob3.main(null);break;
+	//				case "c" : Com.main(null);break;
+	//				case "q" : InputButton.quitButton(null);break;
+	//				case "qq" : InputQuitSave.main(null);break;
+					case 9 : NineDeux.unnine(); 			 	 			break;
+					default :System.out.println(" uncertain ... please check  !!");
+					}
+				Newcategory.main(null);
 			}
-			} catch (NumberFormatException e) {
+		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
    	}		

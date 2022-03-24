@@ -11,18 +11,14 @@ import je.panse.doro.main.Enter;
 
 public class New4PMH {
 	public static void main(String[] args) throws IOException { 
-		String pmh;
-		    try (Scanner s = new Scanner(System.in)) {
-			    System.out.println("Enter PMH ...:");
-		    	pmh = s.nextLine();
-		    	
+	    try (Scanner s = new Scanner(System.in)) {
+			System.out.println("Enter PMH ...:");
+			String pmh = s.nextLine();
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writefiler(Enter.wts + "/4PMH", "\n\t" + pmh);
-			
-   		    NineDeux.unnine();
-			
-			Newcategory.main(null);
-			}
+		   	NineDeux.unnine();
+		   	Newcategory.main(null);
 		}
+	}
 	// ----------------------------------------------
 }

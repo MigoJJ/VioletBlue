@@ -1,0 +1,32 @@
+ 1  :  정상( Within Normal Limits)
+
+ 2  :  동서맥(Sinus Bradycardia)
+ 3  :  동빈맥(Sinus tachycardia)
+
+ 4  :  심실조기수축(Early ventricular constraction)
+ 5  :  심방조기수축(Early atrial constraction)
+
+ 6  :  비특이적 ST-T분절 변화/비특이적 T분절 변화(Nonspecific ST-T change)
+
+ 7  :  완전(불완전) 우각차단(Complete/Incomplete Rt bundle branch block)
+ 8  :  좌각차단(Lt bundle branch block)
+
+ 9  :  Qiut  
+ 
+ 10 :  좌심실 비대(Left Ventricular Hypertrophy)
+ 11 :  우심방확장(Rt atrial enlargement)
+ 12 :  우심실 비대(Rt Ventricular Hypertrophy)
+
+ 13 :  좌각전섬유속차단/좌각후섬유속차단(LAFB/LPFB)
+
+ 14 :  심근경색(Myocardial infarction)
+ 141 : 오래된 심근경색(Old myocardial infarction)
+ 15 :  심근허혈(Myocardial ischemia)
+
+ 16 :  심방세동(Artrial Fibrillation)
+ 17 :  WPW 증후군(WPW syndrome)
+ 18 :  저전압(Low voltage)
+ 19 :  이소성 심박조율(Ectopic rhythm)
+ 20 :  심실내 전도지연/조기전이(Delayed ventricular conduction/Early conduction)
+
+ 21 :  고 T파 (Peaked T waves, Hyperacute T waves (HATW)) 

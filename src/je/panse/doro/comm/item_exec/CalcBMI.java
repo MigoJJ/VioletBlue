@@ -27,7 +27,7 @@ class bmi{
 			np2.main("");
 	}
 }
-	
+
 public class CalcBMI {
 	public static void main(String[] Strings) throws IOException {
         try (Scanner input = new Scanner(System.in)) {

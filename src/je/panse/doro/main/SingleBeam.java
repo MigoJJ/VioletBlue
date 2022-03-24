@@ -6,8 +6,8 @@ import je.panse.doro.comm.File_cdrw_proc;
 public class SingleBeam {
 	public static void main(String[] args) throws IOException {
     	File_cdrw_proc cdrw = new File_cdrw_proc(); 
-        cdrw.readfiler(Enter.wt + "/singlebeam/SingleBeam");
-        cdrw.readfiler(Enter.wt + "/singlebeam/DoctorLogin");
+       cdrw.readfiler(Enter.wt + "/singlebeam/SingleBeam");
+//       cdrw.readfiler(Enter.wt + "/singlebeam/DoctorLogin");
         
         Enter.main(null);
 	}

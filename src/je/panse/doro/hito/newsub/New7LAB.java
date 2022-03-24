@@ -17,35 +17,22 @@ public class New7LAB {
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
-
 			while (true) {
-		 	
-			System.out.println("Enter selected code number ...   : ");
-			select_code = Integer.valueOf(new_code.nextLine().trim());
-			switch (select_code) {
-		  	case 1 : CalcHbA1c  nl2 = new CalcHbA1c(); 
-		  				nl2.main(null);	  	break;
-			case 2 : CalcTFT  nl3 = new CalcTFT(); 
-						nl3.main(null);	  	break;
-			case 3 : CalcChol nl4 = new CalcChol();
-						nl4.main(null);	  	break;
-//				case 2 : CalcBP ob3 = new CalcBP(); 
-//						ob3.main(null); 				break;
-//			  case 2 : new4PMH.main(null);  	break;
-//					  case "3" : new5SUJ.main(null);  	break;
-
-//					  case "5" : new7LAB.main(null);  	break;
-//					  case "6" : new8ACC.main(null);  	break;
-//					  case "7" : new9PLAN.main(null);  	break;
-//					  case "c" : Com.main(null);  	break;
-//					  case "q" : InputButton.quitButton(null);  	break;
-//					  case "qq" : InputQuitSave.main(null);  	break;
+				System.out.println("Enter selected code number ...   : ");
+				select_code = Integer.valueOf(new_code.nextLine().trim());
+				switch (select_code) {
+			  	case 1 : CalcHbA1c  nl2 = new CalcHbA1c(); 	nl2.main(null);break;
+				case 2 : CalcTFT  nl3 = new CalcTFT(); 		nl3.main(null);break;
+				case 3 : CalcChol nl4 = new CalcChol();		nl4.main(null);break;
+	//					  case "c" : Com.main(null);  	break;
+	//					  case "q" : InputButton.quitButton(null);  	break;
+	//					  case "qq" : InputQuitSave.main(null);  	break;
 				case 9 : NineDeux.unnine(); 
-						Newcategory.main(null); break;							
-			}
-			
+						Newcategory.main(null); break;
+				default :System.out.println(" uncertain ... please check  !!");
 
-					}
+				}
+			}
 		}catch (NumberFormatException e) {
 			e.printStackTrace();
 		}

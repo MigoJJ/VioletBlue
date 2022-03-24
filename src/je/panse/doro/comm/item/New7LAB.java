@@ -18,8 +18,6 @@ public class New7LAB {
 			int select_code = 0;
 
 			while (true) {
-			if (select_code == 99) { break; }
-		 	
 			System.out.println("Enter selected code number ...   : ");
 			select_code = Integer.valueOf(new_code.nextLine().trim());
 

@@ -1,38 +1,44 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class New5SUJ{
-	
 	public static void main(String args[]) throws IOException {
-        String path = (Enter.wts + "/5SUJ");      
-        String st = ";q";
-        do{
-        	File file = new File(path);
+		String path = (Enter.wts + "/5SUJ");      
+    	String st;
+		FileWriter fileWriter = new FileWriter(path,true); 
+		Scanner suj_text = new Scanner(System.in);
+		System.out.println("Enter Subjective Complains  ...   : ");
 
-        	try (FileWriter fileWriter = new FileWriter(file,true)) {
-				Scanner suj_text = new Scanner(System.in);
+		do{
+			st = (suj_text.nextLine().trim());
+			System.out.println("st = :  " + st + "\n");
+			fileWriter.append(st + "\n");
+		  suj_insert(st);
+	        if(st.equals("quit")){
+	            	System.out.println("Inserted code finished  !  ");
+	            	Newcategory si1= new Newcategory(); 
+					si1.main(null); 	
+	        	break;
+	        }
+      	}while (st != "quit");
+		System.out.println("Success");
+		suj_text.close();
+	}
 
-					System.out.println("Enter Subjective complains  ...   : ");
-					st = (suj_text.nextLine().trim());
-					System.out.println("st = :  " + st + "\n");
-					fileWriter.append(st + "\n");
-			
-	
-        	
-    		}
-        	}while (st != "q"); 
-//	        bufferFileWriter.close();
-
-        System.out.println("Contents into File has been completed");
-         
-    }
-// ---------- 
+	private static void suj_insert(String st) throws IOException {
+    	String SUJresult = ("   " + st); 
+//    	System.out.print(SUJresult);
+		File_cdrw_proc suj1 = new File_cdrw_proc();
+		suj1.writefiler(Enter.wts + "/5SUJ", SUJresult);
+	}
+    // ---------- 
 }
+
+	

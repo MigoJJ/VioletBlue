@@ -6,6 +6,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.main.Enter;
+import je.panse.doro.main.SingleBeam;
 
 public class StartForm {
 	public static void main(String[] string) throws IOException {
@@ -16,21 +17,20 @@ public class StartForm {
 			int select_code = 0;
 			
 			while (true) {
-			   	if (select_code == 99) { break; }
-				
 				System.out.println("Enter selected code number ...   : ");
 				select_code = Integer.valueOf(case_code.nextLine());
 			
 				switch (select_code) {
-					case 1 : Newcategory st2 = new Newcategory(); 
-								st2.main(null);	break;
-					case 2 : File_cw_chart st3 = new File_cw_chart();	
-			    				st3.callchartlist("/soap");
-							 Newcategory st4 = new Newcategory(); 
-								st4.main(null);	break;
-				//				  case "3" : SOAPInput.main(n_code);  	break;
+					case 1 : Newcategory st2 = new Newcategory(); 	
+							st2.main(null);break;
+					case 2 : File_cw_chart st3 = new File_cw_chart();
+							st3.callchartlist("/soap");
+							Newcategory st4 = new Newcategory(); 
+							st4.main(null);break;
+				//	case "3" : SOAPInput.main(n_code);  	break;
 				 	case 9 : NineDeux.unnine(); 
-				 			 StartForm.main(null); break;
+				 			 Enter.main(null); break;
+					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}	// while
 		} catch (NumberFormatException e) {

@@ -28,10 +28,10 @@ public class Newcategory {
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 		   	switch (select_code) {
-		   		case 1 : New3CC.main(null);	  				break;
-		   		case 2 : New4PMH.main(null);  				break;
-//						  case "3" : new5SUJ.main(null);  	break;
-		   		case 4 : New6OBJ.main(null);  				break;
+		   		case 1 : New3CC.main(null);	  	break;
+		   		case 2 : New4PMH.main(null);  	break;
+				case 3 : New5SUJ.main(null);  	break;
+		   		case 4 : New6OBJ.main(null);  	break;
 				case 5 : New7LAB.main(null);  	break;
 				case 6 : New8ACC.main(null);  	break;
 				case 7 : New9PLAN.main(null);  	break;
@@ -40,6 +40,8 @@ public class Newcategory {
 		   					StartForm.main(null); break;
 		   		case 99 :NineDeux.deuxnine();  	
 		   					Enter.main(null); break;
+				default :System.out.println(" uncertain ... please check  !!");
+
 		   	}
 		new_code.close();
    		}  //while
