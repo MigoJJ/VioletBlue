@@ -1,15 +1,13 @@
- < Chief Complaint >
-
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
 S >
+    No significant subjective complain
 O >
+    BP        : [ 125 / 85 ]mmHg   PR [ 96 ]/minute  Regular LSP
+.    height   [  145.0 ] cm
+.    weight   [  75.0  ] kg
+.    BMI      [  35.7  ] kg/m^2
+.    waist    [  88.0  ] cm
+    EKG       : 정상 (Within Normal Limits)
+    Chest PA  : 폐결핵 흔적 (Pulmonary tuberculosis scar)
 LAB >
 A >
 P >

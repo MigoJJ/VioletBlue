@@ -1,9 +1,8 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.IOException;		
+import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
@@ -24,7 +23,7 @@ public class CalcBP {
 	        	PR = input.nextInt();
 //        input.close();
 
-	        	BPresult = ("   BP : [ " + SBP +  " / " + DBP + " ]mmHg" 
+	        	BPresult = ("    BP        [ " + SBP +  " / " + DBP + " ]mmHg" 
 			+ "   PR [ " + PR + " ]/minute" + "  Regular LSP");
 
 			System.out.print(BPresult);

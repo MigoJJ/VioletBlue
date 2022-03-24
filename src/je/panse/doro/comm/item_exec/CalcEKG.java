@@ -9,6 +9,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item_exec.CalcACC;
 import je.panse.doro.hito.Newcategory;
+import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcEKG {
@@ -59,7 +60,7 @@ public class CalcEKG {
 					case 9 : NineDeux.unnine();	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-				Newcategory.main(null);
+				New6OBJ.main(null);
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
@@ -71,7 +72,7 @@ public class CalcEKG {
 			System.out.println(file_acc);
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {
-					bufferedWriter.write("   EKG :  " + writec);
+					bufferedWriter.write("    EKG       : " + writec);
 				} catch (IOException e) {
 					e.printStackTrace();
 			}
