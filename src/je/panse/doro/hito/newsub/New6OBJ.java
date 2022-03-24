@@ -3,15 +3,12 @@ package je.panse.doro.hito.newsub;
 import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item_exec.CalcBMI;
 import je.panse.doro.comm.item_exec.CalcBP;
 import je.panse.doro.comm.item_exec.CalcCPA;
 import je.panse.doro.comm.item_exec.CalcEKG;
-import je.panse.doro.comm.item_exec.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
-import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
 public class New6OBJ {
@@ -27,7 +24,7 @@ public class New6OBJ {
 	
 				switch (select_code) {
 					case 1 : CalcBMI  lab1 = new CalcBMI();	lab1.main(null);break;
-					case 2 : CalcBP lab2 = new CalcBP(); 		lab2.main(null);break;
+					case 2 : CalcBP lab2 = new CalcBP(); 	lab2.main(null);break;
 					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
 

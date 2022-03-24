@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public static void main(String string) throws IOException {
+	public static void main(String agrs) throws IOException {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	
@@ -22,7 +22,7 @@ public class Newcategory {
    		int select_code = 0;
 
    		while (true) {
-		   	if (select_code == 99) { break; }
+//		   	if (select_code == 99) { break; }
 		 	
 		   	System.out.println("Enter selected code number ...   : ");
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());

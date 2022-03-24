@@ -1,11 +1,10 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;		
+import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
-import je.panse.doro.comm.item_exec.CalcACC;
+import je.panse.doro.comm.item.ThyPrescription;
 import je.panse.doro.comm.item_exec.CalcDitto;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
@@ -22,14 +21,23 @@ public class New9PLAN {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
-					case 1 : CalcDitto ob3 = new CalcDitto();		 ob3.main(null);break;
-	//				case "c" : Com.main(null);break;
+					case 1 : CalcDitto ob3 = new CalcDitto(); ob3.main(null);break;
+
+					case 2  : ThyPrescription ob4 = new ThyPrescription(); ob4.main(null); break;
+					case 21 : ThyPrescription.main("/ThySyrPx");
+					case 22 : ThyPrescription.main("/ThySyxPx");
+					case 23 : ThyPrescription.main("/ThyMetPx");
+					case 24 : ThyPrescription.main("/ThyAntPx");
+					case 25 : ThyPrescription.main("/ThyCamenPx");
+					case 26 : ThyPrescription.main("/ThyIndPx");
+
+					//				case "c" : Com.main(null);break;
 	//				case "q" : InputButton.quitButton(null);break;
 	//				case "qq" : InputQuitSave.main(null);break;
 					case 9 : NineDeux.unnine(); 			 	 			break;
 					default :System.out.println(" uncertain ... please check  !!");
 					}
-				Newcategory.main(null);
+				Newcategory.main(null); break;
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

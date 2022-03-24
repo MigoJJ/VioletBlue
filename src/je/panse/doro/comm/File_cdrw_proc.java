@@ -43,7 +43,7 @@ public class File_cdrw_proc   {
 		Files.copy(orifile.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 	}
 // ------------------------------
-	public void readfiler(String readf) {
+	public static void readfiler(String readf) {
 		try{
 			File textDirName = new File(readf); 
 				Scanner myReader = new Scanner(textDirName);
