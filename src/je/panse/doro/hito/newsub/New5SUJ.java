@@ -4,6 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -17,19 +19,23 @@ public class New5SUJ{
 
 			do{
 				st = (suj_text.nextLine().trim());
+			   if(st.equals("quit")){
+		        	System.out.println("Inserted code finished  !  ");
+					NineDeux.unnine(); 
+		        	Newcategory si1= new Newcategory(); 
+					si1.main(null); 	
+		    	break;
+			   }
 				System.out.println("st = :  " + st + "\n");
 				fileWriter.append(st + "\n");
 			  suj_insert(st);
-			    if(st.equals("quit")){
-			        	System.out.println("Inserted code finished  !  ");
-			        	Newcategory si1= new Newcategory(); 
-						si1.main(null); 	
-			    	break;
-			    }
+
 			}while (st != "quit");
 			System.out.println("Success");
+
 			suj_text.close();
 		}
+
 	}
 
 	private static void suj_insert(String st) throws IOException {
@@ -37,7 +43,6 @@ public class New5SUJ{
 //    	System.out.print(SUJresult);
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writefiler(Enter.wts + "/5SUJ", SUJresult);
-
 	}
     // ---------- 
 }
