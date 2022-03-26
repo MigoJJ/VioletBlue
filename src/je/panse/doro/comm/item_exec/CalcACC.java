@@ -54,7 +54,7 @@ public class CalcACC {
 				case "tep" : accessInsert("\t#  Hyperthyroidism with Pregnancy ");break;
 				case "top" : accessInsert("\t#  Hypothyroidism with Pregnancy ");break;
 		
-			case "ospo" : accessInsert("\t#  Osteoporosis ");break;
+			case "os" : accessInsert("\t#  Osteoporosis ");break;
 			case "ospe" : accessInsert("\t#  Osteopenia ");break;
 			
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;

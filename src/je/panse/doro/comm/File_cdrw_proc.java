@@ -35,7 +35,7 @@ public class File_cdrw_proc   {
 			else{ System.out.println("No exsisting files ~~"); } 
 	}
 // ------------------------------
-	public void copyfiler(String copyfo, String copyft) throws IOException {
+	public static void copyfiler(String copyfo, String copyft) throws IOException {
 		// 1. 원본 File, 복사할 File 준비
 		File orifile = new File(copyfo); 
 		File newFile = new File(copyft);

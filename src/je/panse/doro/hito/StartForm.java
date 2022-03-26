@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
@@ -28,8 +29,11 @@ public class StartForm {
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
 				//	case "3" : SOAPInput.main(n_code);  	break;
-				 	case 9 : NineDeux.unnine(); 
-				 			 Enter.main(null); break;
+				 	case 9 : 
+				 		File_cdrw_proc.copyfiler(Enter.wts + "/ChartPlate", Enter.wts + "/ChartPlateNote,");
+				 		File_editor_proc.main(null);
+				 		NineDeux.unnine();
+				 		Enter.main(null); break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}	// while
