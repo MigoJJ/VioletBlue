@@ -6,7 +6,7 @@ import java.io.File;
 import je.panse.doro.main.Enter;
 
 public class File_editor_proc {
-    public static void main(String args[]){
+    public static void main(String string){
         try
         {
             File file = new File(Enter.wts + "/ChartPlateNote");

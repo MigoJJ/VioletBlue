@@ -18,15 +18,6 @@ public class Enter {
 		CurrentDate.defineTime();
 		CurrentDate.defineDate();
 
-		
-		File_cdrw_proc ari1 = new File_cdrw_proc();
-			ari1.deletefiler(wts + "/ChartPlate");
-			ari1.checkfiler(wts + "/ChartPlate");
-			ari1.deletefiler(wts + "/Comment);");
-			ari1.checkfiler(wts + "/Comment");
-	    	
-    	File_cw_chart ari2 = new File_cw_chart();	
-	    	ari2.callchartlist("/hana");
 	// ------------------------------------------------------GDStm Program starting
         StartForm.main(null);
 	}

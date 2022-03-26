@@ -1,0 +1,30 @@
+
+	--------------------------------------------------------------------
+	      Good Doctors’ Clinic
+	--------------------------------------------------------------------
+	
+	Version         -- V 0.11
+	Made by         -- Jae Joon Koh M.D.
+	
+	Ubuntu------------------------------
+	Description:	Ubuntu 21.10
+	Codename:		impish
+	
+	JAVA--------------------------------
+	---> openjdk-17-jre-headless  # version 17.0.2+8-1~22.10
+	openjdk 11.0.11 2021-04-20
+	
+	Eclipse-----------------------------
+	Version: 2021-06 (4.20.0)
+	Build id: 20210612-2011
+	OS: Linux, v.5.11.0-36-generic, x86_64 / gtk 3.24.20, WebKit 2.32.4
+	
+	Windows-----------------------------
+	프로세서	Intel(R) Pentium(R) CPU G3240 @ 3.10GHz   3.10 GHz
+	RAM	8.00GB
+	64비트 운영 체제, x64 기반 프로세서
+	Windows 10 Home  버전	21H2
+
+	VMware------------------------------
+	VMware : VMware® Workstation 16 Pro Ver. 16.2.2 build-19200509
+	------------------------------------

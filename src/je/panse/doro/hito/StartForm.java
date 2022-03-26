@@ -29,11 +29,10 @@ public class StartForm {
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
 				//	case "3" : SOAPInput.main(n_code);  	break;
-				 	case 9 : 
-				 		File_cdrw_proc.copyfiler(Enter.wts + "/ChartPlate", Enter.wts + "/ChartPlateNote,");
-				 		File_editor_proc.main(null);
-				 		NineDeux.unnine();
-				 		Enter.main(null); break;
+			   		case 9 : NineDeux.unnine(); 
+   						StartForm.main(null); break;
+			   		case 99 :NineDeux.deuxnine();  	
+			   			StartForm.main(null); break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}	// while

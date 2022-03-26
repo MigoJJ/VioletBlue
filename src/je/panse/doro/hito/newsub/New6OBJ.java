@@ -14,7 +14,7 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
 	public static void main(String args) throws IOException { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
+    	File_cdrw_proc.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;

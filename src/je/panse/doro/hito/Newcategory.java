@@ -7,7 +7,6 @@ import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
-
 public class Newcategory {
 // --------------------------------------------	
 	public static void main(String agrs) throws IOException {
@@ -39,7 +38,7 @@ public class Newcategory {
 		   		case 9 : NineDeux.unnine(); 
 		   					StartForm.main(null); break;
 		   		case 99 :NineDeux.deuxnine();  	
-		   					Enter.main(null); break;
+		   		StartForm.main(null); break;
 				default :System.out.println(" uncertain ... please check  !!");
 
 		   	}
