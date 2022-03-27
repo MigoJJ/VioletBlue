@@ -10,7 +10,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class New5SUJ{
-	public static void main(String args[]) throws IOException {
+	public static void main(String args[]) throws Exception {
 		String path = (Enter.wts + "/5SUJ");      
     	String st;
 		try (FileWriter fileWriter = new FileWriter(path,true)) {

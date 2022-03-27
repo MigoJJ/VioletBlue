@@ -13,10 +13,10 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcEKG {
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 
 		File_cdrw_proc ekg1 = new File_cdrw_proc(); 
-		ekg1.readfiler(Enter.wt + "/singlebeam/submenu/6OBJs/EKGj");
+		ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJs/EKGj");
 		
 		System.out.println(ekg1);
 

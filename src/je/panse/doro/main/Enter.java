@@ -2,6 +2,8 @@
 package je.panse.doro.main;
 import je.panse.doro.comm.*;	
 import je.panse.doro.hito.StartForm;
+
+import java.io.File;
 import java.io.IOException;
 
 public class Enter {
@@ -13,7 +15,7 @@ public class Enter {
 	public static String wtk = (wd + "/text/knots");
 	public static String wts = (wd + "/text/samsara");
 	// ------------------------------------------------------file preparing
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
 		CurrentDate.defineDate();

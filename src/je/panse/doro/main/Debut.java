@@ -10,11 +10,9 @@ import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;
-	 		File_cdrw_proc.copyfiler(Enter.wts + "/ChartPlate", Enter.wts + "/ChartPlateNote,");
- 			File_editor_proc.main(Enter.wts + "/ChartPlateNote");
  			
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
@@ -28,15 +26,15 @@ public class Debut {
 							Key_Press_Any.main(null);
 							SingleBeam.main(null);							
 					case 3 : 
-						
 						File_cdrw_proc ari1 = new File_cdrw_proc();
 							ari1.deletefiler(Enter.wts + "/ChartPlate");
 							ari1.checkfiler(Enter.wts + "/ChartPlate");
 							ari1.deletefiler(Enter.wts + "/Comment);");
 							ari1.checkfiler(Enter.wts + "/Comment");
-				    	File_cw_chart ari2 = new File_cw_chart();	
-					    	ari2.callchartlist("/hana");
-						Enter.main(null);  	break;
+						File_cw_chart ari2 = new File_cw_chart();
+							ari2.callchartlist("/hana");
+						Enter.main(null);  	
+						break;
 				 	case 9 : 
 					default :System.out.println(" uncertain ... please check  !!");
 				}

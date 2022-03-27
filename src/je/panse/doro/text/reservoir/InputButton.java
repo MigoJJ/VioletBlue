@@ -11,11 +11,11 @@ public class InputButton {
 	
 	}
 	
-	public static void quitButton(String cobu) throws IOException {
+	public static void quitButton(String cobu) throws Exception {
 		StartForm.main(null);
 	}
 
-	public static void quitsaveButton(String cobu) throws IOException{
+	public static void quitsaveButton(String cobu) throws Exception{
 		Enter.main(null);
 	}
 //

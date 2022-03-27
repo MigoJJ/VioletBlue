@@ -10,9 +10,9 @@ public class CalcBP {
 	public static int SBP, DBP, PR;
 	public static String BPresult;
 
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("Input SBP   mmHg : ");

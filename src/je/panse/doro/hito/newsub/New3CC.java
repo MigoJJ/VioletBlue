@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 public class New3CC {
 	public static String a, b, c, f, chartline, chartline1;
 	
-	public static void main(String[] args) throws IOException { 
+	public static void main(String[] args) throws Exception { 
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();

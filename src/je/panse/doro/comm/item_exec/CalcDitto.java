@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 public class CalcDitto {
 	static int dittomo, labfu, dosead;
 	static String dittomol, labful, doseadl; 
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 
 		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("Input ditto month : ");

@@ -7,7 +7,7 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 class bmi{
-	static void BMIhw(String rh, String rw, String rB,String rwa) throws IOException {			
+	static void BMIhw(String rh, String rw, String rB,String rwa) throws Exception {			
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writefiler(Enter.wts + "/6OBJ", rh);
 			fcp1.writefiler(Enter.wts + "/6OBJ", rw);
@@ -16,7 +16,7 @@ class bmi{
 		New6OBJ np2 = new New6OBJ();
 			np2.main("");
 	}
-	static void BMIhw(String rh, String rw, String rB) throws IOException {			
+	static void BMIhw(String rh, String rw, String rB) throws Exception {			
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writefiler(Enter.wts + "/6OBJ", rh);
 			fcp1.writefiler(Enter.wts + "/6OBJ", rw);
@@ -27,7 +27,7 @@ class bmi{
 }
 
 public class CalcBMI {
-	public static void main(String[] Strings) throws IOException {
+	public static void main(String[] Strings) throws Exception {
         try (Scanner input = new Scanner(System.in)) {
 			System.out.print("Input weight in kilogram: ");
 			double weight = input.nextDouble();

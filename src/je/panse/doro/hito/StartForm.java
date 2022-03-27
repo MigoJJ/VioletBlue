@@ -1,16 +1,13 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;		
+import java.io.IOException;				
 import java.util.Scanner;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.File_editor_proc;
-import je.panse.doro.comm.NineDeux;
+import je.panse.doro.comm.*;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
 
 public class StartForm {
-	public static void main(String[] string) throws IOException {
+	public static void main(String[] string) throws Exception {
 		File_cdrw_proc st1 = new File_cdrw_proc(); 
 		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 
@@ -29,10 +26,13 @@ public class StartForm {
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
 				//	case "3" : SOAPInput.main(n_code);  	break;
-			   		case 9 : NineDeux.unnine(); 
+			   		case 99 : NineDeux.unnine(); 
    						StartForm.main(null); break;
-			   		case 99 :NineDeux.deuxnine();  	
-			   			StartForm.main(null); break;
+			   		case 999 :
+			   			Key_Iwbb st999 = new Key_Iwbb(); 
+			   			st999.Key_Iwbb_Page(select_code);
+
+			   			break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}	// while
@@ -40,5 +40,10 @@ public class StartForm {
 			e.printStackTrace();
 		}
     }
+
+	private static void Key_Iwbb_Page(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 // ----------
 }

@@ -6,11 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New8ACC;
 import je.panse.doro.main.Enter;
 
 public class CalcACC {
-    public static void main(String args[]) throws IOException{
+    public static void main(String args[]) throws Exception{
         Scanner scanner=new Scanner(System.in);
         while (true) {
             System.out.println("Insert disease code : ");
@@ -18,7 +19,7 @@ public class CalcACC {
         	code_select(question);
                 if(question.equals("quit")){
 		            	System.out.println("Inserted code finished  !  ");
-		            	New8ACC ob6 = new New8ACC(); 
+		            	Newcategory ob6 = new Newcategory(); 
 						ob6.main(null); 	
 	            	break;
 	            }

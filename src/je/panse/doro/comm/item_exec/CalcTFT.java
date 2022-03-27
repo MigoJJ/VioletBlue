@@ -11,7 +11,7 @@ public class CalcTFT {
 	public static double TSH;
 	public static String  TFTresult;
 	
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input free_T4 : ");
 	        free_T4 = input.nextDouble();

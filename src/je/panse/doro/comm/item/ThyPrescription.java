@@ -16,7 +16,7 @@ import je.panse.doro.main.Enter;
 
 public class ThyPrescription {
 
-	public static void main(String presd) throws IOException {
+	public static void main(String presd) throws Exception {
 		try {
 			
 			readfiler(Enter.wt + "/singlebeam/submenu/9PLANs" + presd);

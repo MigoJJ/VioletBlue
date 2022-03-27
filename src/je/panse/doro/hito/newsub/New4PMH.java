@@ -9,7 +9,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class New4PMH {
-	public static void main(String[] args) throws IOException { 
+	public static void main(String[] args) throws Exception { 
 	    try (Scanner s = new Scanner(System.in)) {
 			System.out.println("Enter PMH ...:");
 			String pmh = s.nextLine();

@@ -7,7 +7,7 @@ import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
 public class CalcChol {
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input TC : ");

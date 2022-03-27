@@ -8,9 +8,12 @@
     Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
          All denied conditions 
     ----------------------------------------------------------------
-	dga
 S >
 O >
+.    height   [  158.0 ] cm
+.    weight   [  74.0  ] kg
+.    BMI      [  29.6  ] kg/m^2
+.    waist    [  55.0  ] cm
 LAB >
 A >
 P >
@@ -24,11 +27,14 @@ P >
     Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
          All denied conditions 
     ----------------------------------------------------------------
-	dga
-
-	fga
 S >
 O >
+.    height   [  158.0 ] cm
+.    weight   [  74.0  ] kg
+.    BMI      [  29.6  ] kg/m^2
+.    waist    [  55.0  ] cm
 LAB >
+    FBS     : [ 125 ] mg/dl     HbA1c [ 85.0 ] %
+
 A >
 P >

@@ -1,4 +1,4 @@
-[ 1 ] New Patient 
+New Caterogy 
 -------------------------------------------------------------------
 
 	1. 	Chief complaint
@@ -14,7 +14,7 @@
 	7.	Plan
 		
 		8.	Comments
-		9.	Return Home
-		99.	Save & Restart 
+		99.	Return Home
+		999.	Save & Restart 
 		
 -------------------------------------------------------------------

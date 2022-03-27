@@ -13,7 +13,7 @@ public class CalcHbA1c {
 	public static double HbA1c;
 	public static String  Gluresult;
 	
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input Glucose : ");

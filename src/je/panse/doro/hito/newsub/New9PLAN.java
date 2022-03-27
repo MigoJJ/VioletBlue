@@ -3,14 +3,16 @@ package je.panse.doro.hito.newsub;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item.ThyPrescription;
 import je.panse.doro.comm.item_exec.CalcDitto;
 import je.panse.doro.hito.Newcategory;
+import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
 public class New9PLAN {
-	public static void main(String args) throws IOException { 
+	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/submenu/9PLAN_List");
 
@@ -31,10 +33,11 @@ public class New9PLAN {
 					case 25 : ThyPrescription.main("/ThyCamenPx");
 					case 26 : ThyPrescription.main("/ThyIndPx");
 
-					//				case "c" : Com.main(null);break;
-	//				case "q" : InputButton.quitButton(null);break;
-	//				case "qq" : InputQuitSave.main(null);break;
-					case 9 : NineDeux.unnine(); 			 	 			break;
+			   		case 99 : NineDeux.unnine(); 
+						StartForm.main(null); break;
+			   		case 999 :
+			   			Key_Iwbb st999 = new Key_Iwbb(); 
+			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 					}
 				Newcategory.main(null); break;
