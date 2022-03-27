@@ -15,8 +15,8 @@ public class New4PMH {
 			String pmh = s.nextLine();
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writefiler(Enter.wts + "/4PMH", "\n\t" + pmh);
-		   	NineDeux.unnine();
-		   	Newcategory.main(null);
+	   		NineDeux.deuxnine();
+	   		Newcategory.main(null);
 		}
 	}
 	// ----------------------------------------------

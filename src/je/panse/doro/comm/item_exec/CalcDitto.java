@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.Newcategory;
+import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
 
 public class CalcDitto {
@@ -35,7 +36,7 @@ public class CalcDitto {
 				fcp1.writefiler(Enter.wts + "/9PLAN", doseadl);
 //			File_cw_chart fcw = new File_cw_chart();
 			NineDeux.unnine();	
-			Newcategory.main("");
+			New9PLAN.main("");
 	        //        input.close();
 		} catch (NumberFormatException e) {
 		e.printStackTrace();

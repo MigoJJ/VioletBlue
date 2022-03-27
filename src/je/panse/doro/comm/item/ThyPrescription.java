@@ -19,9 +19,9 @@ public class ThyPrescription {
 	public static void main(String presd) throws Exception {
 		try {
 			
-			readfiler(Enter.wt + "/singlebeam/submenu/9PLANs" + presd);
+			readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
 			
-			Path path = Paths.get(Enter.wt + "/singlebeam/submenu/9PLANs" + presd);
+			Path path = Paths.get(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
 			Stream<String> lBl = Files.lines(path);
 				    Scanner myPx = new Scanner(System.in);  // Create a Scanner object
 				    System.out.println("Enter Px number : ");

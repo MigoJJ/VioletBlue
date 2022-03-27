@@ -21,7 +21,7 @@ public class New5SUJ{
 				st = (suj_text.nextLine().trim());
 			   if(st.equals("quit")){
 		        	System.out.println("Inserted code finished  !  ");
-					NineDeux.unnine(); 
+					NineDeux.deuxnine(); 
 		        	Newcategory si1= new Newcategory(); 
 					si1.main(null); 	
 		    	break;
@@ -40,7 +40,6 @@ public class New5SUJ{
 
 	private static void suj_insert(String st) throws IOException {
     	String SUJresult = ("   " + st); 
-//    	System.out.print(SUJresult);
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writefiler(Enter.wts + "/5SUJ", SUJresult);
 	}

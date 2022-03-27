@@ -14,7 +14,7 @@ import je.panse.doro.main.Enter;
 public class New9PLAN {
 	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/submenu/9PLAN_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -33,6 +33,8 @@ public class New9PLAN {
 					case 25 : ThyPrescription.main("/ThyCamenPx");
 					case 26 : ThyPrescription.main("/ThyIndPx");
 
+			   		case 9 : NineDeux.deuxnine(); 
+						Newcategory.main(null); break;
 			   		case 99 : NineDeux.unnine(); 
 						StartForm.main(null); break;
 			   		case 999 :
@@ -40,7 +42,7 @@ public class New9PLAN {
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 					}
-				Newcategory.main(null); break;
+				New9PLAN.main(null); break;
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

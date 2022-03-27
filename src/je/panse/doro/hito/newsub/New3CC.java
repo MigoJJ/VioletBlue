@@ -20,7 +20,7 @@ public class New3CC {
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
-   		    NineDeux.unnine();
+   		    NineDeux.deuxnine();
 	    	// ("Public methods must be called by creating objects");
 			Newcategory.main(null);
 			

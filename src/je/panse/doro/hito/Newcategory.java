@@ -13,6 +13,8 @@ public class Newcategory {
 	public static void main(String agrs) throws Exception {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+		File_cw_chart ob3 = new File_cw_chart(); 
+    	ob3.cleanChartPlate();
 	
     	switching();
 	}	
@@ -39,12 +41,13 @@ public class Newcategory {
 		   		case 99 : NineDeux.unnine(); 
 					StartForm.main(null); break;
 		   		case 999 :
+		   			
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
 		   			st999.Key_Iwbb_Page(select_code); break;
 				default :System.out.println(" uncertain ... please check  !!");
 
 		   	}
-		new_code.close();
+//		new_code.close();
    		}  //while
     }
  // --------------------------------------------

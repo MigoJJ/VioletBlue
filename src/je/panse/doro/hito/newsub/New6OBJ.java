@@ -30,7 +30,7 @@ public class New6OBJ {
 					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
 
-			   		case 9 : NineDeux.unnine(); 
+			   		case 9 : NineDeux.deuxnine(); 
 						Newcategory.main(null); break;
 			   		case 99 : NineDeux.unnine(); 
 						StartForm.main(null); break;

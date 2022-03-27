@@ -9,7 +9,7 @@ public class File_editor_proc {
     public static void main(String string){
         try
         {
-            File file = new File(Enter.wts + "/ChartPlateNote");
+            File file = new File(Enter.wt + "/tripikata/ChartPlate.txt");
             if(!Desktop.isDesktopSupported())
             {
                 System.out.println("not supported");

@@ -1,6 +1,5 @@
 package je.panse.doro.main;
 
-import java.io.IOException;	
 import je.panse.doro.comm.File_cdrw_proc;
 
 public class SingleBeam {

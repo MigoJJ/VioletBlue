@@ -18,7 +18,7 @@ public class Enter {
 	public static void main(String[] args) throws Exception {
 		System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
-		CurrentDate.defineDate();
+//		CurrentDate.defineDate();
 
 	// ------------------------------------------------------GDStm Program starting
         StartForm.main(null);

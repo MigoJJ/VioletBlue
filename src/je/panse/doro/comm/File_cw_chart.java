@@ -51,7 +51,15 @@ public class File_cw_chart {
 			  list.add("/Comment");
 
 			  for(String fruit:list)
-				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
+				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit +".txt");
+	}
+// ------------------------------------------------Clean ChatPlate
+	public void cleanChartPlate() throws IOException {
+		File_cdrw_proc nc1 = new File_cdrw_proc();
+			nc1.deletefiler(Enter.wts + "/ChartPlate");
+			nc1.checkfiler(Enter.wts + "/ChartPlate");
+			nc1.deletefiler(Enter.wts + "/Comment);");
+			nc1.checkfiler(Enter.wts + "/Comment");
 	}
 // ----------------------------------------------------------
 }

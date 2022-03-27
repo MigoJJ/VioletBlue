@@ -28,7 +28,9 @@ public class New7LAB {
 				case 3 : CalcChol nl4 = new CalcChol();		nl4.main(null);break;
 		   		
 				
-				case 99 : NineDeux.unnine(); 
+		   		case 9 : NineDeux.deuxnine(); 
+					Newcategory.main(null); break;
+		   		case 99 : NineDeux.unnine(); 
 					StartForm.main(null); break;
 		   		case 999 :
 		   			Key_Iwbb st999 = new Key_Iwbb(); 

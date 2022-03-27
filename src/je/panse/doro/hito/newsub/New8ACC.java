@@ -24,6 +24,8 @@ public class New8ACC {
 				switch (select_code) {
 					case 1 : CalcACC ob3 = new CalcACC();	 ob3.main(null);break;
 
+			   		case 9 : NineDeux.deuxnine(); 
+						Newcategory.main(null); break;
 			   		case 99 : NineDeux.unnine(); 
 						StartForm.main(null); break;
 			   		case 999 :
