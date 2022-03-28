@@ -1,5 +1,6 @@
-package je.panse.doro.comm;
+package je.panse.doro.comm.item_exec;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import je.panse.doro.hito.Newcategory;
@@ -8,44 +9,40 @@ import je.panse.doro.hito.StartForm;
 public class CalcDEXA {
 
 	public static void main(String[] args) {
-		String premono;
-		String fracture;
+		int realage; 
+		String gender; 
+		String SaintPan;
 		
-		Scanner rasc = new Scanner(System.in);
-		System.out.println("당신의 나이는 ?");
-		int realage = rasc.nextInt();
-	    System.out.println(realage); 
-	    
-		Scanner gesc = new Scanner(System.in);
-		System.out.println("당신의 성별은 ?");
-		String gender = gesc.nextLine();
-	    System.out.println(gender); 
-	    
-	    if  (gender.equals("m")) {
-		    System.out.println("gender   : ");
-	    }
+		try (Scanner rasc = new Scanner(System.in)) {
+			System.out.println("당신의 나이는 ?");
+			realage = rasc.nextInt();
+		
+		Scanner gesc = new Scanner(System.in); 
+			System.out.println("당신의 성별은 ?");
+			gender = gesc.nextLine();
+		
+		Scanner ossc = new Scanner(System.in); 	
+			System.out.println("당신은 골절 병력이 있습니까?   yes / no  ( y/n )   ");
+			ossc = nextLine();
+			
+			if  (gender.equals("m")) {
+			    System.out.println("gender   : m ");
+			}
+			else{
+			    System.out.println("gender   : f ");
+			} 
+		}
 	}
+
+	private static Scanner nextLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+		
+// ---------
 }
-
-//		
-
-//		System.out.println("폐경기 전의 여성 / 혹은 50세 미만의 남성 입니까?   yes / no  ( y/n )");
 //		System.out.println("당신은 골절 병력이 있습니까?   yes / no  ( y/n )   ");
-//		
-//		
-//		
-
-//		
-//		t_score();
-//		
-//		
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//}
-//3
-//premeno = input("당신은 \n18세 미만의 소아 혹은 청소년,\n폐경기 전의 여성 \n혹은 50세 미만의 남성 입니까?   yes / no  ( y/n )   ")
 //    fracture = input("당신은 골절 병력이 있습니까?   yes / no  ( y/n )   ")
 //
 //    if premeno =="y" :
