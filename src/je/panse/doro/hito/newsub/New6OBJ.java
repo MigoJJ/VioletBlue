@@ -26,7 +26,7 @@ public class New6OBJ {
 	
 				switch (select_code) {
 					case 1 : CalcBMI  lab1 = new CalcBMI();	lab1.main(null);break;
-					case 2 : CalcBP lab2 = new CalcBP(); 	lab2.main(null);break;
+					case 2 : CalcBP lab2 = new CalcBP(); 		lab2.main(null);break;
 					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
 
