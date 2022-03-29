@@ -19,8 +19,10 @@ public class Debut {
 				select_code = Integer.valueOf(case_code.nextLine());
 			
 				switch (select_code) {
-//					case 1 : Newcategory st2 = new Newcategory(); 	
-//							st2.main(null);break;
+					case 1 : File_cdrw_proc cdrw = new File_cdrw_proc(); 
+							cdrw.readfiler(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
+							Key_Press_Any.main(null);
+							SingleBeam.main(null);		
 					case 2 : File_cdrw_proc st3 = new File_cdrw_proc(); 
 							st3.readfiler(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 							Key_Press_Any.main(null);

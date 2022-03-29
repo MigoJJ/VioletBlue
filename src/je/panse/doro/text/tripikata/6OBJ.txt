@@ -1,2 +1,2 @@
 O >
-    BP        [ 125 / 75 ]mmHg   PR [ 81 ]/minute  Regular LSP
+    BP        [ 125 / 80 ]mmHg   PR [ 79 ]/minute  Regular LSP
