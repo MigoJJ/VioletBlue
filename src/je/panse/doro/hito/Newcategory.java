@@ -46,7 +46,7 @@ public class Newcategory {
 				case 61 : CalcACC ob3 = new CalcACC();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
 				
-		   		case 999 :	
+		   		case 9 : case 99: case 999 :	
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
 		   			st999.Key_Iwbb_Page(select_code); break;
 				default :System.out.println(" uncertain ... please check  !!");

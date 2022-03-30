@@ -25,11 +25,8 @@ public class New8ACC {
 					case 1 : CalcACC ob3 = new CalcACC();	 ob3.main(null);break;
 
 
-			   		case 9 : File_cw_chart dn1 = new File_cw_chart();
-		   				dn1.deuxnine();
-		   				Newcategory.main(null); break;
-			   		case 99 : case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb(); 
+			   		case 9 : case 99 : case 999 :
+			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}

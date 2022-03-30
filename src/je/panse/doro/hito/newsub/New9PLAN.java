@@ -33,11 +33,8 @@ public class New9PLAN {
 					case 25 : ThyPrescription.main("/ThyCamenPx");
 					case 26 : ThyPrescription.main("/ThyIndPx");
 
-			   		case 9 : File_cw_chart dn1 = new File_cw_chart();
-		   				dn1.deuxnine();
-		   				Newcategory.main(null); break;
-			   		case 99 : case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb(); 
+			   		case 9 : case 99 : case 999 :
+			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 					}

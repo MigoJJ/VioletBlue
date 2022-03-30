@@ -76,11 +76,13 @@ public class CalcACC {
 			
 			case "bc" : accessInsert("\t#  Breast Cyst ");break;
 			case "bn" : accessInsert("\t#  Breast Nodule ");break;
+			case "bca" : accessInsert("\t#  Breast Cancer ");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : accessInsert("\t#  Bronchial Asthma ");break;
 			case "pc" : accessInsert("\t#  Chronic Cough ");break;
 			case "pp" : accessInsert("\t#  Pneumonia ");break;
 			case "pt" : accessInsert("\t#  Pulmonary Tuberculosis ");break;
+			case "pn" : accessInsert("\t#  NMTPulmonary Tuberculosis ");break;
           
 			default: System.out.println(" ReInsert disease code please ...  : ");break;
 		}
