@@ -15,11 +15,11 @@ public class CalcBP {
     	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner input = new Scanner(System.in)) {
-	        System.out.print("Input SBP   mmHg : ");
+	        System.out.print("***** Input SBP   mmHg : ");
 	        	SBP = input.nextInt();
-	        System.out.print("Input DBP   mmHg : ");
+	        System.out.print("***** Input DBP   mmHg : ");
 	        	DBP = input.nextInt();
-	        System.out.print("Input pulse rate / minute : ");
+	        System.out.print("***** Input pulse rate / minute : ");
 	        	PR = input.nextInt();
 //        input.close();
 

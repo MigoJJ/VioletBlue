@@ -18,7 +18,6 @@ public class ThyPrescription {
 
 	public static void main(String presd) throws Exception {
 		try {
-			
 			readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
 			
 			Path path = Paths.get(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
@@ -35,10 +34,8 @@ public class ThyPrescription {
 				writefiler(Enter.wt + "/samsara/9PLAN", nthPx);	
 					
 					New9PLAN.main(null);
-
 //			myPx.close();			
 //			lBl.close();
-		
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
@@ -52,7 +49,7 @@ public class ThyPrescription {
 			while (myReader.hasNextLine()) {
 				String data = myReader.nextLine();
 				i++;
-				System.out.print(i + " ]  ");
+				System.out.print("  [ " + i + " ]  ");
 				System.out.println(data);
 			}
 	       myReader.close();
@@ -72,6 +69,6 @@ public class ThyPrescription {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();
 	    }
-		  }
+	 }
 // ----------	
 }

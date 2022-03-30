@@ -1,17 +1,9 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_exec.CalcBMI;
-import je.panse.doro.comm.item_exec.CalcBP;
-import je.panse.doro.comm.item_exec.CalcCPA;
-import je.panse.doro.comm.item_exec.CalcDEXA;
-import je.panse.doro.comm.item_exec.CalcEKG;
-import je.panse.doro.hito.Newcategory;
-import je.panse.doro.hito.StartForm;
+import je.panse.doro.comm.item_exec.*;
 import je.panse.doro.main.Enter;
 
 public class New6OBJ {
@@ -32,8 +24,7 @@ public class New6OBJ {
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
 					case 7 : CalcDEXA lab6 = new CalcDEXA(); 	lab6.main(null);break;
 
-
-			   		case 9 : case 99 : case 999 :
+					case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");

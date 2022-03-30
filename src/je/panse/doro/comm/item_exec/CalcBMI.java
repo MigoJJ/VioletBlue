@@ -1,6 +1,5 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.newsub.New6OBJ;

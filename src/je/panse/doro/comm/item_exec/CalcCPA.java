@@ -27,11 +27,10 @@ public class CalcCPA {
 				switch (select_code) {
 					case 1 : accessInsert("정상 (No Active lesions inLung)"); break;
 					case 2 : accessInsert("폐결핵 흔적 (Pulmonary tuberculosis scar)"); break;
-					
-//					case 5 : accessInsert("심방조기수축 (Early atrial constraction)"); break;
-					
+
+
 					case 9 : File_cw_chart dn1 = new File_cw_chart();
-								dn1.deuxnine();
+							dn1.deuxnine();	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				New6OBJ.main(null);

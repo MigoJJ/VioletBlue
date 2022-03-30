@@ -8,30 +8,26 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
 public class New3CC {
-	public static String a, b, c, f, chartline, chartline1;
-	
+	public static String a, b, c, f;
 	public static void main(String[] args) throws Exception { 
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();
 		    System.out.println("Enter year/month/day:");    	c = s.nextLine();
 		    System.out.println("\nEnter... General state of health : Excellent/Good/Fair/Poor ...");
-		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
 	    	File_cw_chart dn1 = new File_cw_chart();
 			dn1.deuxnine();
-	    	// ("Public methods must be called by creating objects");
 			Newcategory.main(null);
-			
 		}catch (IOException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 		}
 	}
 	//------------------------------------------------
 	static void yymmdd(String ymd) throws IOException {
+		String chartline;
 		switch(ymd) {
 			case "y":   c = " year-ago";			    break;
 			case "m":   c = " month-ago";			    break;
@@ -46,6 +42,7 @@ public class New3CC {
 		}
 	//------------------------------------------------
 	static void egfp(String state) throws IOException {
+		String chartline1;
 		switch(state) {
 			case "e":   f = "-- Excellent";			    break;
 			case "g":   f = "-- Good";			    break;
