@@ -10,7 +10,7 @@ import je.panse.doro.comm.NineDeux;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
-	public static void main(String[] args) throws Exception {
+	public void main(String[] args) throws Exception {
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;
  			
@@ -22,8 +22,8 @@ public class Debut {
 							cdrw.readfiler(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
 							Key_Press_Any.main(null);
 							SingleBeam.main(null);		
-					case 2 : File_cdrw_proc st3 = new File_cdrw_proc(); 
-							st3.readfiler(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
+					case 2 : File_cdrw_proc de1 = new File_cdrw_proc(); 
+							de1.readfiler(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 							Key_Press_Any.main(null);
 							SingleBeam.main(null);							
 					case 3 : File_cdrw_proc ari1 = new File_cdrw_proc();
