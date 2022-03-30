@@ -17,7 +17,7 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
 	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	File_cdrw_proc.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -37,7 +37,7 @@ public class New6OBJ {
 			   			dn1.deuxnine();
 						Newcategory.main(null); break;
 			   		case 99 : case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb(); 
+			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
