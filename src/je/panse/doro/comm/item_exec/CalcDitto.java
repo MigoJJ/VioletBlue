@@ -1,9 +1,9 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.IOException;	
+import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.NineDeux;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
@@ -34,8 +34,8 @@ public class CalcDitto {
 				fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
 				fcp1.writeliner(Enter.wts + "/9PLAN", labful);
 				fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
-//			File_cw_chart fcw = new File_cw_chart();
-			NineDeux.unnine();	
+			File_cw_chart dn1 = new File_cw_chart();
+			dn1.deuxnine();	
 			New9PLAN.main("");
 	        //        input.close();
 		} catch (NumberFormatException e) {

@@ -6,6 +6,12 @@ import java.util.List;
 import je.panse.doro.main.Enter;
 
 public class File_cw_chart {
+	public void deuxnine() throws IOException {
+		File_cw_chart nc5 = new File_cw_chart();	 
+			nc5.cleanChartPlate();
+			nc5.writechart();
+			nc5.chartbackup();
+	}
 	// -------------------------------------------Form Files Copying
 	public void callchartlist(String laname) throws IOException {
 	   File_cdrw_proc nu1 = new File_cdrw_proc();

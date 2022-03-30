@@ -1,9 +1,9 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;			
+import java.io.IOException;				
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.NineDeux;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
@@ -20,7 +20,8 @@ public class New3CC {
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
-   		    NineDeux.deuxnine();
+	    	File_cw_chart dn1 = new File_cw_chart();
+			dn1.deuxnine();
 	    	// ("Public methods must be called by creating objects");
 			Newcategory.main(null);
 			

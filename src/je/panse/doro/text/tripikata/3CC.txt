@@ -1,1 +1,6 @@
  < Chief Complaint >
+
+    "자고 일어나면 핑돈다" (onset 7 day-ago)
+
+General state of health:
+-- Good  (no any significant state change since last visiting.)

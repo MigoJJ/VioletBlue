@@ -13,8 +13,8 @@ public class Key_Iwbb {
 			 System.out.println("gugu  =9 :");
 		 }
 		 else if (select_code == 99) {
-			 System.out.println("gugu  =99 :");
-			 NineDeux.deuxnine();
+			 File_cw_chart dn1 = new File_cw_chart();
+			 dn1.deuxnine();
 			 StartForm st3 = new StartForm();
 			 st3.main(null);
 		  }

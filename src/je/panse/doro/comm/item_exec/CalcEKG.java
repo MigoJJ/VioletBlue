@@ -1,12 +1,12 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.BufferedWriter;
+import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.NineDeux;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.item_exec.CalcACC;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
@@ -57,7 +57,8 @@ public class CalcEKG {
 	//				case "c" : Com.main(null);break;
 	//				case "q" : InputButton.quitButton(null);break;
 	//				case "qq" : InputQuitSave.main(null);break;
-					case 9 : NineDeux.unnine();	break;
+					case 9 : File_cw_chart dn1 = new File_cw_chart();
+							dn1.deuxnine();;	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				New6OBJ.main(null);
