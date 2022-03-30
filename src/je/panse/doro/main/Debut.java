@@ -26,13 +26,10 @@ public class Debut {
 							de1.readfiler(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 							Key_Press_Any.main(null);
 							SingleBeam.main(null);							
-					case 3 : File_cdrw_proc ari1 = new File_cdrw_proc();
-							ari1.deletefiler(Enter.wts + "/ChartPlate");
-							ari1.checkfiler(Enter.wts + "/ChartPlate");
-							ari1.deletefiler(Enter.wts + "/Comment);");
-							ari1.checkfiler(Enter.wts + "/Comment");
-						File_cw_chart ari2 = new File_cw_chart();
-							ari2.callchartlist("/hana");
+					case 3 : File_cw_chart de2 = new File_cw_chart();
+							de2.cleanChartPlate();
+							File_cw_chart de3 = new File_cw_chart();
+							de3.callchartlist("/hana");
 						Enter.main(null);  	
 						break;
 				 	case 9 : 

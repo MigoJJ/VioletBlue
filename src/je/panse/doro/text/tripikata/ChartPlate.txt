@@ -1,22 +1,9 @@
  < Chief Complaint >
 
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
-S >
-O >
-LAB >
-A >
-P >
-	...ditto & OPD F/U x [  9  ]-month later
-null
-	...medication change or dose-adjust
- < Chief Complaint >
+    dm (onset 7 year-ago)
+
+General state of health:
+-- Good  (no any significant state change since last visiting.)
 
 < Past Medical History >
     ----------------------------------------------------------------
@@ -31,30 +18,3 @@ O >
 LAB >
 A >
 P >
-	...ditto & OPD F/U x [  9  ]-month later
-null
-	...medication change or dose-adjust
-	...ditto & OPD F/U x [  99  ]-month later
-	...next Lab F/U plan (+)
-	...medication change or dose-adjust
- < Chief Complaint >
-
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
-S >
-O >
-LAB >
-A >
-P >
-	...ditto & OPD F/U x [  9  ]-month later
-null
-	...medication change or dose-adjust
-	...ditto & OPD F/U x [  99  ]-month later
-	...next Lab F/U plan (+)
-	...medication change or dose-adjust
