@@ -10,6 +10,7 @@ public class NineDeux {
 	public static void unnine() throws IOException {
 		File_cw_chart nc2 = new File_cw_chart();	 
 			nc2.writechart();
+			nc2.chartbackup();
 	}
 	// ----------
 	public static void deuxnine() throws IOException {
@@ -21,6 +22,7 @@ public class NineDeux {
 	    	
 		File_cw_chart nc5 = new File_cw_chart();	 
 			nc5.writechart();
+			nc5.chartbackup();
 	}
 // ----------
 }

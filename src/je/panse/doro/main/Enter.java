@@ -7,20 +7,19 @@ import java.io.File;
 import java.io.IOException;
 
 public class Enter {
-	// ------------------------------------------------------user directory definition
+// ------------------------------------------------------user directory definition
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 	public static String wd = (currentUsersHomeDir + "/src/je/panse/doro");
 
 	public static String wt  = (wd + "/text");
 	public static String wtk = (wd + "/text/knots");
 	public static String wts = (wd + "/text/samsara");
-	// ------------------------------------------------------file preparing
+// ------------------------------------------------------file preparing
 	public static void main(String[] args) throws Exception {
 		System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
 //		CurrentDate.defineDate();
-
-	// ------------------------------------------------------GDStm Program starting
+// ------------------------------------------------------GDStm Program starting
         StartForm.main(null);
 	}
 // ----------    

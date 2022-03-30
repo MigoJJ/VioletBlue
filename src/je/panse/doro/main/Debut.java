@@ -17,7 +17,6 @@ public class Debut {
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
 				select_code = Integer.valueOf(case_code.nextLine());
-			
 				switch (select_code) {
 					case 1 : File_cdrw_proc cdrw = new File_cdrw_proc(); 
 							cdrw.readfiler(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
@@ -27,8 +26,7 @@ public class Debut {
 							st3.readfiler(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 							Key_Press_Any.main(null);
 							SingleBeam.main(null);							
-					case 3 : 
-						File_cdrw_proc ari1 = new File_cdrw_proc();
+					case 3 : File_cdrw_proc ari1 = new File_cdrw_proc();
 							ari1.deletefiler(Enter.wts + "/ChartPlate");
 							ari1.checkfiler(Enter.wts + "/ChartPlate");
 							ari1.deletefiler(Enter.wts + "/Comment);");
@@ -40,7 +38,7 @@ public class Debut {
 				 	case 9 : 
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-			}	// while
+			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}

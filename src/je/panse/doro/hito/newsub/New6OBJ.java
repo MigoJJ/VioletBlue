@@ -8,6 +8,7 @@ import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item_exec.CalcBMI;
 import je.panse.doro.comm.item_exec.CalcBP;
 import je.panse.doro.comm.item_exec.CalcCPA;
+import je.panse.doro.comm.item_exec.CalcDEXA;
 import je.panse.doro.comm.item_exec.CalcEKG;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
@@ -29,6 +30,8 @@ public class New6OBJ {
 					case 2 : CalcBP lab2 = new CalcBP(); 		lab2.main(null);break;
 					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
+					case 7 : CalcDEXA lab6 = new CalcDEXA(); 	lab6.main(null);break;
+
 
 			   		case 9 : NineDeux.deuxnine(); 
 						Newcategory.main(null); break;

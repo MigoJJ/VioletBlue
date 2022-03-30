@@ -19,9 +19,7 @@ public class Key_Iwbb {
 		          	st3.main(null);
               }
 		      else if (select_code == 999){
-//		  		File_cw_chart nc5 = new File_cw_chart();	 
-//				nc5.writechart();
-		    	File_cw_chart st4 = new File_cw_chart();
+		    	 File_cw_chart st4 = new File_cw_chart();
 		        st4.chartbackup();
 		        File_editor_proc st5 = new File_editor_proc();
 		        st5.main(null);
