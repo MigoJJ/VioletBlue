@@ -1,10 +1,7 @@
 // Jae Joon Koh M.D. ph.D.
 package je.panse.doro.main;
-import je.panse.doro.comm.*;	
+import je.panse.doro.comm.*;		
 import je.panse.doro.hito.StartForm;
-
-import java.io.File;
-import java.io.IOException;
 
 public class Enter {
 // ------------------------------------------------------user directory definition

@@ -1,10 +1,8 @@
 package je.panse.doro.hito;
 
-import java.io.IOException;				
 import java.util.Scanner;
 import je.panse.doro.comm.*;
 import je.panse.doro.main.Enter;
-import je.panse.doro.main.SingleBeam;
 
 public class StartForm {
 	public static void main(String[] string) throws Exception {
@@ -25,23 +23,17 @@ public class StartForm {
 							st3.callchartlist("/soap");
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
-							
+					case 3 : break;  // Disease Category
+					case 4 : break;  // Items		
 			   		case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb(); 
-			   			st999.Key_Iwbb_Page(select_code);
-
-			   			break;
+				   			Key_Iwbb st9 = new Key_Iwbb(); 
+				   			st9.Key_Iwbb_Page(select_code);	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-			}	// while
+			}	
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
     }
-
-	private static void Key_Iwbb_Page(int i) {
-		// TODO Auto-generated method stub
-		
-	}
 // ----------
 }

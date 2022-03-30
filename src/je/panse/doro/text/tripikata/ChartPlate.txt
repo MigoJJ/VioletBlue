@@ -6,6 +6,7 @@ General state of health:
 S >
     No significant subjective complain
    흉통이 아직 계속 됩니다.
+흉통이 아직 계속 됩니다.
 O >
 LAB >
 A >
