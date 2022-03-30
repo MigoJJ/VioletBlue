@@ -1,10 +1,10 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;	
+import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.NineDeux;
 import je.panse.doro.comm.item_exec.CalcChol;
 import je.panse.doro.comm.item_exec.CalcHbA1c;
 import je.panse.doro.comm.item_exec.CalcTFT;
@@ -28,12 +28,11 @@ public class New7LAB {
 				case 3 : CalcChol nl4 = new CalcChol();		nl4.main(null);break;
 		   		
 				
-		   		case 9 : NineDeux.deuxnine(); 
+		   		case 9 : File_cw_chart dn1 = new File_cw_chart();
+	   				dn1.deuxnine();
 					Newcategory.main(null); break;
-		   		case 99 : NineDeux.unnine(); 
-					StartForm.main(null); break;
-		   		case 999 :
-		   			Key_Iwbb st999 = new Key_Iwbb(); 
+		   		case 99 : case 999 :
+		   			Key_Iwbb st999 = new Key_Iwbb();
 		   			st999.Key_Iwbb_Page(select_code); break;
 				default :System.out.println(" uncertain ... please check  !!");
 

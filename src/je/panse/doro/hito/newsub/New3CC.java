@@ -1,9 +1,9 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;			
+import java.io.IOException;				
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.NineDeux;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
@@ -20,7 +20,8 @@ public class New3CC {
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
-   		    NineDeux.deuxnine();
+	    	File_cw_chart dn1 = new File_cw_chart();
+			dn1.deuxnine();
 	    	// ("Public methods must be called by creating objects");
 			Newcategory.main(null);
 			
@@ -40,7 +41,7 @@ public class New3CC {
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-		fcp1.writefiler(Enter.wts + "/3CC", chartline);
+		fcp1.writeliner(Enter.wts + "/3CC", chartline);
 						  
 		}
 	//------------------------------------------------
@@ -54,7 +55,7 @@ public class New3CC {
 		}
 		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
-		fcp2.writefiler(Enter.wts + "/3CC", chartline1);
+		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 //------------------------------------------------
 }

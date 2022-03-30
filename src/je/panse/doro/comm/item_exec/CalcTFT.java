@@ -26,7 +26,7 @@ public class CalcTFT {
 			System.out.print(TFTresult);
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wts + "/7LAB", TFTresult);
+				fcp1.writeliner(Enter.wts + "/7LAB", TFTresult);
 			New7LAB.main("");
 			
 			} catch (NumberFormatException e) {

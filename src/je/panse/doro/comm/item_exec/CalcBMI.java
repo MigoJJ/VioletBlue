@@ -9,18 +9,18 @@ import je.panse.doro.main.Enter;
 class bmi{
 	static void BMIhw(String rh, String rw, String rB,String rwa) throws Exception {			
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-			fcp1.writefiler(Enter.wts + "/6OBJ", rh);
-			fcp1.writefiler(Enter.wts + "/6OBJ", rw);
-			fcp1.writefiler(Enter.wts + "/6OBJ", rB);
-			fcp1.writefiler(Enter.wts + "/6OBJ", rwa);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rh);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rw);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rB);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rwa);
 		New6OBJ np2 = new New6OBJ();
 			np2.main("");
 	}
 	static void BMIhw(String rh, String rw, String rB) throws Exception {			
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-			fcp1.writefiler(Enter.wts + "/6OBJ", rh);
-			fcp1.writefiler(Enter.wts + "/6OBJ", rw);
-			fcp1.writefiler(Enter.wts + "/6OBJ", rB);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rh);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rw);
+			fcp1.writeliner(Enter.wts + "/6OBJ", rB);
 		New6OBJ np2 = new New6OBJ();
 			np2.main("");
 	}

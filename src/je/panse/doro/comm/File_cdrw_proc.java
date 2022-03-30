@@ -9,7 +9,6 @@ import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
 public class File_cdrw_proc   {
-
 	public void checkfiler(String checkf) throws IOException {
 		try {
 			File cfiler = new File(checkf);
@@ -17,10 +16,10 @@ public class File_cdrw_proc   {
 				System.out.println("File created: " + cfiler.getName());
 			} 
 			else {
-				System.out.println("File already exists.");
+//				System.out.println("File already exists.");
 			}
 		}catch (IOException e) {
-		System.out.println("An error occurred.");
+//		System.out.println("An error occurred.");
 		e.printStackTrace();
 		}
 	}
@@ -30,9 +29,9 @@ public class File_cdrw_proc   {
 		if( dfiler.exists() ){ 
 			if(dfiler.delete()){ System.out.println("successfully deleting file ~~^^"); 
 			}
-			else{ System.out.println("Fail to delete file ^^"); } 
+//			else{ System.out.println("Fail to delete file ^^"); } 
 			}
-			else{ System.out.println("No exsisting files ~~"); } 
+//			else{ System.out.println("No exsisting files ~~"); } 
 	}
 // ------------------------------
 	public static void copyfiler(String copyfo, String copyft) throws IOException {
@@ -43,7 +42,7 @@ public class File_cdrw_proc   {
 		Files.copy(orifile.toPath(), newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 	}
 // ------------------------------
-	public static void readfiler(String readf) {
+	public void readfiler(String readf) {
 		try{
 			File textDirName = new File(readf); 
 				Scanner myReader = new Scanner(textDirName);
@@ -64,16 +63,16 @@ public class File_cdrw_proc   {
 	      Scanner myReader = new Scanner(myObj);
 	      while (myReader.hasNextLine()) {
 	    	  String data = myReader.nextLine();
-	    	  writefiler(rwfilet ,data);
+	    	  writeliner(rwfilet ,data);
 	      }
 	      myReader.close();
 	    } catch (FileNotFoundException e) {
 		      System.out.println("An error occurred.");
 		      e.printStackTrace();
 	    }
-	 }
+	}
 //----------------------------------------------------
-	public void writefiler(String writef, String writed) throws IOException {
+	public void writeliner(String writef, String writed) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
 	      myWriter.write(writed+ "\n");
@@ -83,6 +82,6 @@ public class File_cdrw_proc   {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();
 	    }
-		  }
+	}
 //----------------------------------------------------
 }

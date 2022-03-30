@@ -1,2 +1,4 @@
 S >
-    No significant subjective complain
+   자다가 머리위치변경에 악화됨
+   주변이 도는 듯함.
+   Romberg's test : Negative

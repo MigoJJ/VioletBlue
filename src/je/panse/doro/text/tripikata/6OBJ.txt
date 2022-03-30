@@ -1,2 +1,6 @@
 O >
+<<<<<<< HEAD
     BP        [ 135 / 75 ]mmHg   PR [ 68 ]/minute  Regular LSP
+=======
+    BP        [ 115 / 70 ]mmHg   PR [ 75 ]/minute  Regular LSP
+>>>>>>> refs/heads/NineTois_fix

@@ -1,14 +1,12 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.BufferedWriter;
+import java.io.BufferedWriter;	
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;			
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.NineDeux;
-import je.panse.doro.comm.item_exec.CalcACC;
-import je.panse.doro.hito.Newcategory;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
@@ -32,7 +30,8 @@ public class CalcCPA {
 					
 //					case 5 : accessInsert("심방조기수축 (Early atrial constraction)"); break;
 					
-					case 9 : NineDeux.unnine();	break;
+					case 9 : File_cw_chart dn1 = new File_cw_chart();
+								dn1.deuxnine();
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				New6OBJ.main(null);
