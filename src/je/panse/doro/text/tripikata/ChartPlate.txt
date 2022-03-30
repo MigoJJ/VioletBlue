@@ -2,25 +2,9 @@ C.C.>
 S >
     No significant subjective complain
 O >
-    BP        [ 125 / 80 ]mmHg   PR [ 79 ]/minute  Regular LSP
 LAB >
 A >
-	#  Hypertension 
-	#  Hypercholesterolemia 
 P >
-	...ditto & OPD F/U x [  3  ]-month later
-	...next Lab F/U plan (+)
-	...medication change or dose-adjust
-C.C.>   
-S >
-    No significant subjective complain
-O >
-    BP        [ 125 / 80 ]mmHg   PR [ 79 ]/minute  Regular LSP
-LAB >
-A >
-	#  Hypertension 
-	#  Hypercholesterolemia 
-P >
-	...ditto & OPD F/U x [  3  ]-month later
+	...ditto & OPD F/U x [  2  ]-month later
 	...next Lab F/U plan (+)
 	...medication change or dose-adjust
