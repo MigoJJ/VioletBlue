@@ -2,9 +2,7 @@ C.C.>
 S >
     No significant subjective complain
 O >
+    BP        [ 135 / 75 ]mmHg   PR [ 68 ]/minute  Regular LSP
 LAB >
 A >
 P >
-	...ditto & OPD F/U x [  2  ]-month later
-	...next Lab F/U plan (+)
-	...medication change or dose-adjust
