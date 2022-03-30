@@ -63,7 +63,7 @@ public class File_cdrw_proc   {
 	      Scanner myReader = new Scanner(myObj);
 	      while (myReader.hasNextLine()) {
 	    	  String data = myReader.nextLine();
-	    	  writefiler(rwfilet ,data);
+	    	  writeliner(rwfilet ,data);
 	      }
 	      myReader.close();
 	    } catch (FileNotFoundException e) {
@@ -72,7 +72,7 @@ public class File_cdrw_proc   {
 	    }
 	}
 //----------------------------------------------------
-	public void writefiler(String writef, String writed) throws IOException {
+	public void writeliner(String writef, String writed) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
 	      myWriter.write(writed+ "\n");

@@ -41,7 +41,7 @@ public class New5SUJ{
 	private static void suj_insert(String st) throws IOException {
     	String SUJresult = ("   " + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
-		suj1.writefiler(Enter.wts + "/5SUJ", SUJresult);
+		suj1.writeliner(Enter.wts + "/5SUJ", SUJresult);
 	}
     // ---------- 
 }

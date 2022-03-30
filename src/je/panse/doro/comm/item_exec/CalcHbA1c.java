@@ -29,7 +29,7 @@ public class CalcHbA1c {
 			System.out.print(Gluresult);
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wts + "/7LAB", Gluresult);
+				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 			New7LAB.main("");
 			
 			} catch (NumberFormatException e) {

@@ -14,7 +14,7 @@ public class New4PMH {
 			System.out.println("Enter PMH ...:");
 			String pmh = s.nextLine();
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wts + "/4PMH", "\n\t" + pmh);
+				fcp1.writeliner(Enter.wts + "/4PMH", "\n\t" + pmh);
 	   		NineDeux.deuxnine();
 	   		Newcategory.main(null);
 		}

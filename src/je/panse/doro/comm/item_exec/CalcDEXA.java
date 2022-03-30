@@ -62,8 +62,8 @@ public class CalcDEXA {
 		    
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
-			fcp1.writefiler(Enter.wts + "/6OBJ", result_zt_score);
-			fcp1.writefiler(Enter.wts + "/6OBJ", result_z);
+			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
+			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
 			New6OBJ dexa1 = new New6OBJ();
 			dexa1.main("");
 	}

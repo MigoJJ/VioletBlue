@@ -31,9 +31,9 @@ public class CalcDitto {
 		        doseadl = ("\t...medication change or dose-adjust");
 	        }
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writefiler(Enter.wts + "/9PLAN", dittomol);
-				fcp1.writefiler(Enter.wts + "/9PLAN", labful);
-				fcp1.writefiler(Enter.wts + "/9PLAN", doseadl);
+				fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
+				fcp1.writeliner(Enter.wts + "/9PLAN", labful);
+				fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 //			File_cw_chart fcw = new File_cw_chart();
 			NineDeux.unnine();	
 			New9PLAN.main("");

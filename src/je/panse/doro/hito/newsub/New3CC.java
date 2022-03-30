@@ -40,7 +40,7 @@ public class New3CC {
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-		fcp1.writefiler(Enter.wts + "/3CC", chartline);
+		fcp1.writeliner(Enter.wts + "/3CC", chartline);
 						  
 		}
 	//------------------------------------------------
@@ -54,7 +54,7 @@ public class New3CC {
 		}
 		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
-		fcp2.writefiler(Enter.wts + "/3CC", chartline1);
+		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 //------------------------------------------------
 }
