@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;				
+import java.io.IOException;					
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -14,7 +14,8 @@ public class New3CC {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();
 		    System.out.println("Enter year/month/day:");    	c = s.nextLine();
-		    System.out.println("\nEnter... General state of health : Excellent/Good/Fair/Poor ...");
+		    System.out.println("\nEnter... state of health E/G/F/P...");
+		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
@@ -44,13 +45,13 @@ public class New3CC {
 	static void egfp(String state) throws IOException {
 		String chartline1;
 		switch(state) {
-			case "e":   f = "-- Excellent";			    break;
+			case "e":   f = "-- Excellent";		    break;
 			case "g":   f = "-- Good";			    break;
 			case "f":   f = "-- Fair";			    break;  
 			case "p":   f = "-- Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		chartline1 = "General state of health:\n" + f + "  (no any significant state change since last visiting.)";
+		chartline1 = "General state :  " + f + "  (no any significant state change)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
 		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
 	}

@@ -1,6 +1,5 @@
 package je.panse.doro.comm.item_exec;
 
-import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.newsub.New7LAB;
@@ -8,7 +7,6 @@ import je.panse.doro.main.Enter;
 
 public class CalcChol {
 	public static void main(String args) throws Exception { 
-
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input TC : ");
 	        int TC = input.nextInt();
@@ -24,7 +22,7 @@ public class CalcChol {
 //   
 //      input.close();
 
-	        String Cholresult = ("    TC-HDL-TG LDL :   [  " 
+	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dl" );
 
 

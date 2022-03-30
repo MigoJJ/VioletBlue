@@ -39,10 +39,10 @@ public class CalcBMI {
 			double BMI = weight / (height* height);
 			String result2 = String.format("%.1f", BMI);
 //	        input.close();
-			String rheight   = (".    height   [  " + height*100 + " ] cm");
-			String rweight   = (".    weight   [  " + weight + "  ] kg");
-			String BMIresult = (".    BMI      [  " + result2 +  "  ] kg/m^2"); 
-			String rwwaist   = (".    waist    [  " + waist + "  ] cm");
+			String rheight   = (".   height   [  " + height*100 + " ] cm");
+			String rweight   = (".   weight   [  " + weight + "  ] kg");
+			String BMIresult = (".   BMI      [  " + result2 +  "  ] kg/m^2"); 
+			String rwwaist   = (".   waist    [  " + waist + "  ] cm");
 			
 			if (waist == 0) {
 				bmi.BMIhw(rheight,rweight,BMIresult);

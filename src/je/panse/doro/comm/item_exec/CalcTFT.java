@@ -16,8 +16,8 @@ public class CalcTFT {
 	        System.out.print("========= Input TSH  : ");
 	        TSH = input.nextDouble();
 //      input.close();
-	        TFTresult = ("    free-T4 : [  " + free_T4 +  "  ] ug/dL" 
-	        			+ "    TSH [  " + TSH + "  ] mIU/mL\n");
+	        TFTresult = ("    free-T4   [  " + free_T4 +  "  ] ug/dL" 
+	        			+ "    TSH [  " + TSH + "  ] mIU/mL");
 			System.out.print(TFTresult);
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();

@@ -22,15 +22,15 @@ public class ThyPrescription {
 			
 			Path path = Paths.get(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
 			Stream<String> lBl = Files.lines(path);
-				    Scanner myPx = new Scanner(System.in);  // Create a Scanner object
-				    System.out.println("Enter Px number : ");
-				    String choicePx = myPx.nextLine();  // Read user input
-				    System.out.println("Px number is : " + choicePx);  // Output user input
-					
-				    int choicePxi = Integer.parseInt(choicePx);
-					String nthPx = lBl.skip(choicePxi -1).findFirst().get();
-					System.out.println(nthPx);
-			
+			    Scanner myPx = new Scanner(System.in);  // Create a Scanner object
+			    System.out.println("Enter Px number : ");
+			    String choicePx = myPx.nextLine();  // Read user input
+			    System.out.println("Px number is : " + choicePx);  // Output user input
+				
+			    int choicePxi = Integer.parseInt(choicePx);
+				String nthPx = lBl.skip(choicePxi -1).findFirst().get();
+				System.out.println(nthPx);
+		
 				writefiler(Enter.wt + "/samsara/9PLAN", nthPx);	
 					
 					New9PLAN.main(null);

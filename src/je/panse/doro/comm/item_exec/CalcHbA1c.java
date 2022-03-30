@@ -19,8 +19,8 @@ public class CalcHbA1c {
 	        HbA1c = input.nextDouble();
 //      input.close();
 
-	        Gluresult = ("    FBS     : [ " + Glucose +  " ] mg/dl" 
-	        			+ "     HbA1c [ " + HbA1c + " ] %\n");
+	        Gluresult = ("    FBS       [ " + Glucose +  " ] mg/dl" 
+	        			+ "     HbA1c [ " + HbA1c + " ] %");
 
 			System.out.print(Gluresult);
 			
