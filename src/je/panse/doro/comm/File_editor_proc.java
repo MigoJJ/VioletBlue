@@ -38,7 +38,7 @@ public class File_editor_proc {
 				System.out.println("User input is  : "+ lnol);
 					        
 				String line3 = Files.readAllLines(Paths.get(pickupfile)).get(lnol-1);
-				System.out.println("selected line is  : " + line3);
+				System.out.println(" : " + line3);
 			File_cdrw_proc savef1 = new File_cdrw_proc();
 				savef1.writeliner(savefilename, line3);
 			

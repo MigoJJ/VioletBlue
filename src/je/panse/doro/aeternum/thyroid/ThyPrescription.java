@@ -1,18 +1,16 @@
 package je.panse.doro.aeternum.thyroid;
 
-import java.io.File;		
+import java.io.File;			
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 import java.util.stream.Stream;
-
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_editor_proc;
-import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class ThyPrescription {
@@ -36,9 +34,12 @@ public class ThyPrescription {
 					case 24  : File_editor_proc.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
 					case 25  : File_editor_proc.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
 					case 26  : File_editor_proc.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
-			   		case 9 : case 99 : case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb();
-			   			st999.Key_Iwbb_Page(select_code); break;
+					case 9 : case 99 : case 999:
+						Newcategory.main(null);
+						
+					//			   		case 9 : case 99 : case 999 :
+//			   			Key_Iwbb st999 = new Key_Iwbb();
+//			   			st999.Key_Iwbb_Page(select_code); break;
 					default :System.out.println(" uncertain ... please check  !!");
 					}
 				}
