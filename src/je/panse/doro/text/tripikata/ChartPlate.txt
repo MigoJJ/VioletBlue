@@ -1,41 +1,22 @@
-C.C.>   
-    thyroid (onset 5 week-ago)
+ < Chief Complaint >
 
-	General state :
--- Good  (no any significant state change)
-
-soso condition
-S >   adadads
-   dfhg
-   7777777777777777777777777777777777
+< Past Medical History >
+    ----------------------------------------------------------------
+    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
+         DM (-)   HTN (-)   Chol (-)
+    FHx>  
+    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
+         All denied conditions 
+    ----------------------------------------------------------------
+S >
 O >
-.   height   [  185.0 ] cm
-.   weight   [  75.0  ] kg
-.   BMI      [  21.9  ] kg/m^2
-.   waist    [  99.0  ] cm
-    BP        [ 125 / 80 ]mmHg   PR [ 96 ]/minute  Regular LSP
-    Chest PA  : 정상 (No Active lesions inLung)
-    EKG       : 동서맥 (Sinus Bradycardia)
-
-    골밀도 검사 결과   T_score :  -3.0 입니다.
-   #   Osteoporosis   #
-    FBS       [ 125 ] mg/dl     HbA1c [ 6.4 ] %
-
-    free-T4   [  15.6  ] ug/dL    TSH [  2.25  ] mIU/mL
-
-    TC-HDL-TG LDL     [  200 - 50 - 125 - 100  ] mg/dl
+LAB >
 A >
-	#  DM without complications	
-	#  Hypertension 
-	#  Hypercholesterolemia 
-	#  Angina Pectoris
-	#  Atrial Fibrillation 
 P >
-	...ditto & OPD F/U x [  3  ]-month later
-	...next Lab F/U plan (+)
-	...medication change or dose-adjust
-    Synthyroxine		75  ug		1	tab. p.o. q.d.   
-    Synthyroxine  		37.5ug 	1 	tab. p.o. q.d.
-   Methimazole		5 mg    	2	tab   p.o. t.i.d. 
-	Camen    5  mg  0.5 tab p.o. q.o.d
-    Indenol	  			10 mg  	2 	tab. p.o. q.d.
+	
+	Synthroid	  100 ug	 1   tab. p.o. q.d.
+	Synthroid	  100 ug	 1   tab. p.o. q.o.d.
+	
+	Synthroid	  100 ug	 1   tab. p.o. q.o.d.
+	Synthyroxine 100 ug	1   tab. p.o. q.d.
+	Camen    5  mg  0.5 tab p.o. q.d

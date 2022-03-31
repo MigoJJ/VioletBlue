@@ -1,6 +1,8 @@
 package je.panse.doro.hito;
 
 import java.util.Scanner;
+
+import je.panse.doro.aeternum.thyroid.ThyPrescription;
 import je.panse.doro.comm.*;
 import je.panse.doro.main.Enter;
 
@@ -24,7 +26,8 @@ public class StartForm {
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
 					case 3 : break;  // Disease Category
-					case 4 : break;  // Items		
+					case 4 : ThyPrescription st6 = new ThyPrescription(); 
+							st6.main("/ThyroidStart");break; // Items		
 			   		case 999 :
 				   			Key_Iwbb st9 = new Key_Iwbb(); 
 				   			st9.Key_Iwbb_Page(select_code);	break;
