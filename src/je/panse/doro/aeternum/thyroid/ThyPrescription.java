@@ -1,6 +1,6 @@
-package je.panse.doro.comm.item;
+package je.panse.doro.aeternum.thyroid;
 
-import java.io.File;
+import java.io.File;	
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;	
@@ -11,34 +11,21 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.Key_Press_Any;
 import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
 
 public class ThyPrescription {
-
 	public static void main(String presd) throws Exception {
-		try {
-			readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
+		File_cdrw_proc tp1 = new File_cdrw_proc();
+		tp1.readfiler(Enter.wd +"/aeternum/thyroid/fourgate" + presd);
+//		Path path = Paths.get(Enter.wd +"/aeternum/thyroid/fourgate" + presd);
+		Key_Press_Any.main(null);		
 			
-			Path path = Paths.get(Enter.wt + "/singlebeam/subnewmenu/9PLANs" + presd);
-			Stream<String> lBl = Files.lines(path);
-			    Scanner myPx = new Scanner(System.in);  // Create a Scanner object
-			    System.out.println("Enter Px number : ");
-			    String choicePx = myPx.nextLine();  // Read user input
-			    System.out.println("Px number is : " + choicePx);  // Output user input
-				
-			    int choicePxi = Integer.parseInt(choicePx);
-				String nthPx = lBl.skip(choicePxi -1).findFirst().get();
-				System.out.println(nthPx);
+
 		
-				writefiler(Enter.wt + "/samsara/9PLAN", nthPx);	
-					
-					New9PLAN.main(null);
-//			myPx.close();			
-//			lBl.close();
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
+		
+		
 	}
 	// ----------	
 	static void readfiler(String readf) {
