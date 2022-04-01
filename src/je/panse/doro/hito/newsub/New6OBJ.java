@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_exec.*;
@@ -22,7 +22,8 @@ public class New6OBJ {
 					case 2 : CalcBP lab2 = new CalcBP(); 		lab2.main(null);break;
 					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
-					case 7 : CalcDEXA lab6 = new CalcDEXA(); 	lab6.main(null);break;
+					case 7 : CalcDEXA lab7 = new CalcDEXA(); 	lab7.main(null);break;
+
 
 					case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
