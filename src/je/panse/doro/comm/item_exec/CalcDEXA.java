@@ -20,7 +20,6 @@ public class CalcDEXA {
 				double zt_score = dexa_scan.nextDouble();
 				calc_z(zt_score);
 			}
-			
 			else if (gender_val.equals("f")){
 				System.out.print("Enter  >>   Fracture(y/quit)...Menopause(y/n) : ");
 					fracture_val = dexa_scan.next();
@@ -74,10 +73,11 @@ public class CalcDEXA {
 		    System.out.println(result_z);
 			String result_zt_score = ("\n   골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
 		    
-		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
+//			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
+			fcp1.writeliner(Enter.wts + "/8ACC", result_zt_score);
+			fcp1.writeliner(Enter.wts + "/8ACC", result_z);
 			New6OBJ dexa1 = new New6OBJ();
 			dexa1.main("");
 	}

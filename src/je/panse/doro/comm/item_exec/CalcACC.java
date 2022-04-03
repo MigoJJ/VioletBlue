@@ -36,22 +36,17 @@ public class CalcACC {
 					case "dp" : accessInsert("\t#  DM with Peripheral Neuropathy");break;
 					case "da" : accessInsert("\t#  DM with Autonomic Neuropathy");break;
 					case "pd" : accessInsert("\t#  Prediabetes");break;
-
 			case "t" : accessInsert("\t#  Hypertension ")	;break;
-			
 			case "c" : accessInsert("\t#  Hypercholesterolemia ");break;
 			case "ctg" : accessInsert("\t#  HyperTriGlyceridemia ");break;
-
 	
 			case "te" : accessInsert("\t#  Hyperthyroidism : Graves' disease");break;
 				case "to" : accessInsert("\t#  Hypothyroidism : Hashimoto's thyroiditis");break;
 				case "ts" : accessInsert("\t#  Subacute Thyroiditis ");break;
 				case "tn" : accessInsert("\t#  Thyroid nodule ")	;break;
-				case "tc" : accessInsert("\t#  Thyroid Cancer  PTC");break;
+				case "tc" : accessInsert("\t#  Thyroid Cancer : s/p PTC opration ");break;
 				case "tsg" : accessInsert("\t#  Simple Goiter")	;break;
-				case "nti" : accessInsert("\t#  Non-Thyroidal illness ");break;
-
-
+				case "nti" : accessInsert("\t#  Non-Thyroidal Illness ");break;
 				case "tep" : accessInsert("\t#  Hyperthyroidism with Pregnancy ");break;
 				case "top" : accessInsert("\t#  Hypothyroidism with Pregnancy ");break;
 		
@@ -60,29 +55,31 @@ public class CalcACC {
 			
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;
 			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
+			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
 			// ----------------------------------------------진료 보조
-			case "oc" : accessInsert("\t#  Cholecystectomy d/t GB stone	");break;
-			case "oa" : accessInsert("\t#  Appendectomy ");break;
-			case "oh" : accessInsert("\t#  TAH : Total Abdominal Hysterectomy ");break;	
+			case "oc" : accessInsert("\t#  s/p Cholecystectomy d/t GB stone	");break;
+			case "oa" : accessInsert("\t#  s/p Appendectomy ");break;
+			case "oh" : accessInsert("\t#  s/p TAH : Total Abdominal Hysterectomy ");break;	
 			case "pb" : accessInsert("\t#  BPH ");break;
+			case "pbo" : accessInsert("\t#  Prostate cancer operation(+)");break;
+
 				
-			case "hf" : accessInsert("\t#  Fatty Liver ");break;
-			case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
+	   		case "hbv" :accessInsert("\t#  HBsAg(+) Carrier ");break;
+	   		case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
 			case "hn" : accessInsert("\t#  Hepatic Nodule ");break;
-			case "hb" : accessInsert("\t#  Hepatis B Infection   HBsAg(+)");break;
-			
+
 			case "rc" : accessInsert("\t#  Renal Cyst ");break;
 			case "rn" : accessInsert("\t#  Renal Nodule ");break;
 			
 			case "bc" : accessInsert("\t#  Breast Cyst ");break;
 			case "bn" : accessInsert("\t#  Breast Nodule ");break;
-			case "bca" : accessInsert("\t#  Breast Cancer ");break;
+			case "bco" : accessInsert("\t#  s/p Breast Cancer Operation");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : accessInsert("\t#  Bronchial Asthma ");break;
 			case "pc" : accessInsert("\t#  Chronic Cough ");break;
 			case "pp" : accessInsert("\t#  Pneumonia ");break;
-			case "pt" : accessInsert("\t#  Pulmonary Tuberculosis ");break;
-			case "pn" : accessInsert("\t#  NMTPulmonary Tuberculosis ");break;
+			case "pt" : accessInsert("\t#  s/p Pulmonary Tuberculosis ");break;
+			case "nmt" : accessInsert("\t#  NMT Pulmonary Tuberculosis ");break;
           
 			default: System.out.println(" ReInsert disease code please ...  : ");break;
 		}
