@@ -1,3 +1,0 @@
-LAB >
-    FBS       [ 1 ] mg/dl     HbA1c [ 1.0 ] %
-    free-T4   [  26.05  ] ug/dL    TSH [  0.005  ] mIU/mL

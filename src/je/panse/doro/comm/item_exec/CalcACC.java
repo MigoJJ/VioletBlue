@@ -59,6 +59,11 @@ public class CalcACC {
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;
 			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
 			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
+			case "ins": accessInsert("\t#  Insomnia");break;
+			case "ver": accessInsert("\t#  Vertigo");break;
+
+			
+			
 			// ----------------------------------------------진료 보조
 			case "oc" : accessInsert("\t#  s/p Cholecystectomy d/t GB stone	");break;
 			case "oa" : accessInsert("\t#  s/p Appendectomy ");break;

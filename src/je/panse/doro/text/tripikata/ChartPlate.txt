@@ -1,18 +1,12 @@
- < Chief Complaint >
- 
-
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
+C.C.>
+   
 S >
 O >
-LAB >
-    FBS       [ 1 ] mg/dl     HbA1c [ 1.0 ] %
-    free-T4   [  26.05  ] ug/dL    TSH [  0.005  ] mIU/mL
+    BP    [ 120 / 80 ]mmHg   PR [ 70 ]/minute  Regular LSP
+    BP    [ 120 / 75 ]mmHg   PR [ 67 ]/minute  Regular LSP
 A >
+	#  Hypertension 
 P >
+	...ditto & OPD F/U x [  1  ]-month later
+	...next Lab F/U plan (+)
+	...no medication change or dose-adjust
