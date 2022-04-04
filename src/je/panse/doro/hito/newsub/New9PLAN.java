@@ -21,7 +21,8 @@ public class New9PLAN {
 	
 				switch (select_code) {
 					case 1 : CalcDitto ob3 = new CalcDitto(); ob3.main(null);break;
-					case 2  : ThyPrescription ob4 = new ThyPrescription(); ob4.main("/ThyroidStart"); break;
+					case 2 : ThyPrescription ob4 = new ThyPrescription(); 
+							ob4.main("/ThyroidStart"); break;
 
 			   		case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();

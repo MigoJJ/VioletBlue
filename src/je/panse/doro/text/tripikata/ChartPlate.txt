@@ -14,5 +14,31 @@ General state :  -- Good  (no any significant state change)
 	osteoporosis  2010 year-diagnosed
 S >
 O >
+<<<<<<< HEAD
+<<<<<<< HEAD
+    BP    [ 0 / 0 ]mmHg   PR [ 0 ]/minute  Regular LSP
+    FBS       [ 0 ] mg/dl     HbA1c [ 0.0 ] %
+=======
+>>>>>>> refs/remotes/origin/220402_up
+=======
+>>>>>>> refs/remotes/origin/220402_up
 A >
+<<<<<<< HEAD
+<<<<<<< HEAD
+	#  Hypertension 
+	#  Hypercholesterolemia 
+	#  DM without complications	
+=======
+>>>>>>> refs/remotes/origin/220402_up
+=======
+>>>>>>> refs/remotes/origin/220402_up
 P >
+<<<<<<< HEAD
+<<<<<<< HEAD
+	...ditto & OPD F/U x [  2  ]-month later
+	...next Lab F/U plan (+)
+	...no medication change or dose-adjust
+=======
+>>>>>>> refs/remotes/origin/220402_up
+=======
+>>>>>>> refs/remotes/origin/220402_up
