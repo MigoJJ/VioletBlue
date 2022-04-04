@@ -13,6 +13,11 @@ public class New3CC {
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();
+		    
+//		    if (b==(int)99 | b >= (int)1900) {
+//		    	
+//		    }
+		    
 		    System.out.println("Enter year/month/day:");    	c = s.nextLine();
 		    System.out.println("\nEnter... state of health E/G/F/P...");
 		    														f = s.nextLine();
@@ -45,13 +50,13 @@ public class New3CC {
 	static void egfp(String state) throws IOException {
 		String chartline1;
 		switch(state) {
-			case "e":   f = "-- Excellent";		    break;
-			case "g":   f = "-- Good";			    break;
-			case "f":   f = "-- Fair";			    break;  
-			case "p":   f = "-- Poor";			    break;  
+			case "e":   f = "--  Excellent";		    break;
+			case "g":   f = "--  Good";			    break;
+			case "f":   f = "--  Fair";			    break;  
+			case "p":   f = "--  Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		chartline1 = "General state :  " + f + "  (no any significant state change)";
+		chartline1 = "    General state :  " + f + "  (no any significant state change)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
 		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
 	}

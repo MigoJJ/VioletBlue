@@ -1,11 +1,10 @@
 C.C.>   
 S >
 O >
-    FBS       [ 124 ] mg/dl     HbA1c [ 7.1 ] %
+    BP    [ 130 / 75 ]mmHg   PR [ 66 ]/minute  Regular LSP
 A >
-	#  DM without complications	
-	#  Hypercholesterolemia 
+	#  Hypertension 
 P >
 	...ditto & OPD F/U x [  3  ]-month later
 	...next Lab F/U plan (+)
-	...medication change or dose-adjust
+	...no medication change or dose-adjust

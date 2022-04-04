@@ -28,7 +28,7 @@ public class CalcDitto {
 		    dosead = input.nextInt();
 	        
 		    if (dosead == 1) {
-		        doseadl = ("\t...medication change or dose-adjust");
+		        doseadl = ("\t...no medication change or dose-adjust");
 	        }
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
