@@ -1,2 +1,2 @@
 O >
-    BP    [ 130 / 75 ]mmHg   PR [ 66 ]/minute  Regular LSP
+    BP    [ 0 / 0 ]mmHg   PR [ 0 ]/minute  Regular LSP
