@@ -44,12 +44,15 @@ public class CalcACC {
 				case "to" : accessInsert("\t#  Hypothyroidism : Hashimoto's thyroiditis");break;
 				case "ts" : accessInsert("\t#  Subacute Thyroiditis ");break;
 				case "tn" : accessInsert("\t#  Thyroid nodule ")	;break;
-				case "tc" : accessInsert("\t#  Thyroid Cancer : s/p PTC opration ");break;
 				case "tsg" : accessInsert("\t#  Simple Goiter")	;break;
 				case "nti" : accessInsert("\t#  Non-Thyroidal Illness ");break;
 				case "tep" : accessInsert("\t#  Hyperthyroidism with Pregnancy ");break;
 				case "top" : accessInsert("\t#  Hypothyroidism with Pregnancy ");break;
-		
+				case "tc"  : accessInsert("\t#  Papillary Thyroid Cancer OP(+)"
+						+ "\n\tHypothyroidism");break;
+				case "tcr" : accessInsert("\t#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
+						+ "\n\tHypothyroidism");break;
+
 			case "os" : accessInsert("\t#  Osteoporosis ");break;
 			case "ospe" : accessInsert("\t#  Osteopenia ");break;
 			
@@ -63,7 +66,6 @@ public class CalcACC {
 			case "pb" : accessInsert("\t#  BPH ");break;
 			case "pbo" : accessInsert("\t#  Prostate cancer operation(+)");break;
 
-				
 	   		case "hbv" :accessInsert("\t#  HBsAg(+) Carrier ");break;
 	   		case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
 			case "hn" : accessInsert("\t#  Hepatic Nodule ");break;
