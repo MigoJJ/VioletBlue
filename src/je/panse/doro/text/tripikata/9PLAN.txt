@@ -1,4 +1,7 @@
 P >
+<<<<<<< HEAD
 	...ditto & OPD F/U x [  2  ]-month later
 	...next Lab F/U plan (+)
 	...no medication change or dose-adjust
+=======
+>>>>>>> refs/remotes/origin/220402_up

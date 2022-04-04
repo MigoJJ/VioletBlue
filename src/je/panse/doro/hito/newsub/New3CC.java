@@ -10,16 +10,22 @@ import je.panse.doro.main.Enter;
 public class New3CC {
 	public static String a, b, c, f;
 	public static void main(String[] args) throws Exception { 
+	    b="99";
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();
-		    
-//		    if (b==(int)99 | b >= (int)1900) {
-//		    	
-//		    }
-		    
-		    System.out.println("Enter year/month/day:");    	c = s.nextLine();
-		    System.out.println("\nEnter... state of health E/G/F/P...");
+
+			Integer bint = Integer.valueOf(b);
+			if (bint == 99 | bint >= 1990) {
+				simplecc(bint);
+				File_cw_chart dn1 = new File_cw_chart();
+				dn1.deuxnine();
+				Newcategory cc1 = new Newcategory(); 
+				cc1.main(null); 	
+			}
+
+			System.out.println("Enter year/month/day:");    	c = s.nextLine();
+			System.out.println("\nEnter... state of health E/G/F/P...");
 		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
@@ -50,15 +56,28 @@ public class New3CC {
 	static void egfp(String state) throws IOException {
 		String chartline1;
 		switch(state) {
-			case "e":   f = "--  Excellent";		    break;
-			case "g":   f = "--  Good";			    break;
-			case "f":   f = "--  Fair";			    break;  
-			case "p":   f = "--  Poor";			    break;  
+			case "e":   f = "-- Excellent";		    break;
+			case "g":   f = "-- Good";			    break;
+			case "f":   f = "-- Fair";			    break;  
+			case "p":   f = "-- Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		chartline1 = "    General state :  " + f + "  (no any significant state change)";
+		chartline1 = "General state :  " + f + "  (no any significant state change)";
 		File_cdrw_proc fcp2 = new File_cdrw_proc();
 		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
+	}
+	//------------------------------------------------
+	static void simplecc(int bint) throws IOException {
+		if (bint == 99) {
+			String chartline4 = ("\t" + a) ;
+			File_cdrw_proc fcp2 = new File_cdrw_proc();
+			fcp2.writeliner(Enter.wts + "/3CC", chartline4);
+		}
+		else if (bint >= 1900) {
+			String chartline3 = ( "\t" + a + "  " + bint + " year-diagnosed");
+			File_cdrw_proc fcp2 = new File_cdrw_proc();
+			fcp2.writeliner(Enter.wts + "/3CC", chartline3);
+		}
 	}
 //------------------------------------------------
 }
