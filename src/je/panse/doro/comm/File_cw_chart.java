@@ -25,7 +25,7 @@ public class File_cw_chart {
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
-			  nu1.copyfiler(Enter.wtk + laname +fruit, Enter.wts + fruit);
+			  nu1.copyfiler(Enter.wt + laname +fruit, Enter.wts + fruit);
    }
 	// --------------------------------------------Write Files To Chart	
 	public void writechart() throws IOException {
@@ -57,7 +57,7 @@ public class File_cw_chart {
 			  list.add("/Comment");
 
 			  for(String fruit:list)
-				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit +".txt");
+				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
 	}
 // ------------------------------------------------Clean ChatPlate
 	public void cleanChartPlate() throws IOException {
