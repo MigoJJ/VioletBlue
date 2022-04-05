@@ -11,6 +11,8 @@ public class Enter {
 	public static String wt  = (wd + "/text");
 	public static String wtk = (wd + "/text/knots");
 	public static String wts = (wd + "/text/samsara");
+	public static String wtt = (wd + "/text/tripikata");
+
 // ------------------------------------------------------file preparing
 	public static void main(String[] args) throws Exception {
 		System.out.println(currentUsersHomeDir);

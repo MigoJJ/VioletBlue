@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_exec;
+package je.panse.doro.comm.item_execute;
 
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
