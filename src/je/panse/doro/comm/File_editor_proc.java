@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class File_editor_proc {
 	public static void main(String string){
 		try{
-          File file = new File(Enter.wt + "/tripikata/ChartPlate.txt");
+          File file = new File(Enter.wt + "/tripikata/ChartPlate");
           if(!Desktop.isDesktopSupported())
            {
         	  	System.out.println("not supported");

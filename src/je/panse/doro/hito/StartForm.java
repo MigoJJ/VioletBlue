@@ -22,7 +22,7 @@ public class StartForm {
 					case 1 : Newcategory st2 = new Newcategory(); 	
 							st2.main(null);break;
 					case 2 : File_cw_chart st3 = new File_cw_chart();
-							st3.callchartlist("/soap");
+							st3.callchartlist("/knots/soap");
 							Newcategory st4 = new Newcategory(); 
 							st4.main(null);break;
 					case 3 : break;  // Disease Category
