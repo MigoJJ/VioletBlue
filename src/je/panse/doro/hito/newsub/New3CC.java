@@ -8,15 +8,13 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
 
 public class New3CC {
-	public static String a, b, c, f;
+	static String a, b, c, f;
 	File_cw_chart dn1 = new File_cw_chart();
 	Newcategory cc1 = new Newcategory(); 
+	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	
-	public static void main(String[] args) throws Exception { 
-		File_cw_chart dn1 = new File_cw_chart();
-		Newcategory cc1 = new Newcategory(); 
-		File_cdrw_proc fcp1 = new File_cdrw_proc();
-	    b="99";
+	public void main(String[] args) throws Exception {
+
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
 		    System.out.println("Enter duration:");	    	b = s.nextLine();
@@ -40,7 +38,7 @@ public class New3CC {
 		}
 	}
 	//------------------------------------------------
-	static void yymmdd(String ymd) throws IOException {
+	void yymmdd(String ymd) throws IOException {
 		String chartline;
 		switch(ymd) {
 			case "y":   c = " year-ago";			    break;
@@ -50,12 +48,11 @@ public class New3CC {
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
-		File_cdrw_proc fcp1 = new File_cdrw_proc();
 		fcp1.writeliner(Enter.wts + "/3CC", chartline);
 						  
 		}
 	//------------------------------------------------
-	static void egfp(String state) throws IOException {
+	void egfp(String state) throws IOException {
 		String chartline1;
 		switch(state) {
 			case "e":   f = "-- Excellent";		    break;
@@ -65,20 +62,17 @@ public class New3CC {
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline1 = "General state :  " + f + "  (no any significant state change)";
-		File_cdrw_proc fcp2 = new File_cdrw_proc();
-		fcp2.writeliner(Enter.wts + "/3CC", chartline1);
+		fcp1.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 	//------------------------------------------------
-	static void simplecc(int bint) throws IOException {
+	void simplecc(int bint) throws IOException {
 		if (bint == 99) {
 			String chartline4 = ("\t" + a) ;
-			File_cdrw_proc fcp2 = new File_cdrw_proc();
-			fcp2.writeliner(Enter.wts + "/3CC", chartline4);
+			fcp1.writeliner(Enter.wts + "/3CC", chartline4);
 		}
 		else if (bint >= 1900) {
 			String chartline3 = ( "\t" + a + "  " + bint + " year-diagnosed");
-			File_cdrw_proc fcp2 = new File_cdrw_proc();
-			fcp2.writeliner(Enter.wts + "/3CC", chartline3);
+			fcp1.writeliner(Enter.wts + "/3CC", chartline3);
 		}
 	}
 //------------------------------------------------

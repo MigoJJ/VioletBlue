@@ -8,8 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-
-
 public class File_editor_proc {
 	public static void main(String string){
 		try{
