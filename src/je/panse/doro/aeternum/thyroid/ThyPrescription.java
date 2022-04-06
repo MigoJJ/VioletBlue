@@ -1,6 +1,6 @@
 package je.panse.doro.aeternum.thyroid;
 
-import java.io.File;			
+import java.io.File;				
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,6 +16,9 @@ import je.panse.doro.main.Enter;
 public class ThyPrescription {
 	public static void main(String presd) throws Exception {
 		File_cdrw_proc tp1 = new File_cdrw_proc();
+		Newcategory cc1 = new Newcategory();
+		File_editor_proc tp2 = new File_editor_proc();
+		
 		tp1.readfiler(Enter.wd +"/aeternum/thyroid/fourgate" + presd);
 		
 		Path path = Paths.get(Enter.wd +"/aeternum/thyroid/prescriptlist");
@@ -28,18 +31,15 @@ public class ThyPrescription {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
-					case 21  : File_editor_proc.linepickup(path + "/ThySyrPx", Enter.wts+ "/9PLAN" );break;
-					case 22  : File_editor_proc.linepickup(path + "/ThySyxPx", Enter.wts+ "/9PLAN" );break;
-					case 23  : File_editor_proc.linepickup(path + "/ThyMetPx", Enter.wts+ "/9PLAN" );break;
-					case 24  : File_editor_proc.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
-					case 25  : File_editor_proc.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
-					case 26  : File_editor_proc.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
+					case 21  : tp2.linepickup(path + "/ThySyrPx", Enter.wts+ "/9PLAN" );break;
+					case 22  : tp2.linepickup(path + "/ThySyxPx", Enter.wts+ "/9PLAN" );break;
+					case 23  : tp2.linepickup(path + "/ThyMetPx", Enter.wts+ "/9PLAN" );break;
+					case 24  : tp2.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
+					case 25  : tp2.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
+					case 26  : tp2.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
 					case 9 : case 99 : case 999:
-						Newcategory.main(null);
-						
-					//			   		case 9 : case 99 : case 999 :
-//			   			Key_Iwbb st999 = new Key_Iwbb();
-//			   			st999.Key_Iwbb_Page(select_code); break;
+						cc1.main(null);
+
 					default :System.out.println(" uncertain ... please check  !!");
 					}
 				}
@@ -64,7 +64,6 @@ public class ThyPrescription {
 			e.printStackTrace();
 		}
     }
-
 	       
 	   	static void selectfiler(Path rrr) throws IOException {
 			Stream<String> lBl = Files.lines(rrr);
@@ -82,16 +81,5 @@ public class ThyPrescription {
 	       
 
     }
-//	static void writefiler(String writef, String writed) throws IOException {
-//	    try {
-//	      FileWriter myWriter = new FileWriter(writef, true);
-//	      myWriter.write(writed+ "\n");
-//	      myWriter.close();
-////		      System.out.println("Successfully wrote to the file.");
-//	    } catch (IOException e) {
-//	      System.out.println("An error occurred.");
-//	      e.printStackTrace();
-//	    }
-//	 }
 // ----------	
 }

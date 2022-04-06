@@ -12,6 +12,7 @@ import je.panse.doro.main.SingleBeam;
 public class DirectoryAdmin {
 	public static void copy_Directory(String ladir, String nudir) throws IOException {
 		try {
+			File_cdrw_proc da1 = new File_cdrw_proc();
 			List<String> list=new ArrayList<String>();  
 			  list.add("/3CC");  
 			  list.add("/4PMH");  
@@ -21,14 +22,14 @@ public class DirectoryAdmin {
 			  list.add("/8ACC");  
 			  list.add("/9PLAN");
 	
-			  for(String fruit:list)  
-				  File_cdrw_proc.copyfiler(ladir +fruit, nudir+ fruit );
+			  for(String fruit:list)
+					da1.copyfiler(ladir +fruit, nudir+ fruit );
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	// ------------------------------------
-	static void clear_Directory(String ari) throws Exception {	
+	public void clear_Directory(String ari) throws Exception {	
 		File fin = new File(ari);
 		File[] finlist = fin.listFiles();       
 	 		for (int n = 0; n < finlist.length; n++) {

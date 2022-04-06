@@ -1,6 +1,7 @@
 // Jae Joon Koh M.D. ph.D.
 package je.panse.doro.main;
-import je.panse.doro.comm.*;		
+
+import je.panse.doro.comm.*;			
 import je.panse.doro.hito.StartForm;
 
 public class Enter {

@@ -9,7 +9,13 @@ import je.panse.doro.main.Enter;
 
 public class New3CC {
 	public static String a, b, c, f;
+	File_cw_chart dn1 = new File_cw_chart();
+	Newcategory cc1 = new Newcategory(); 
+	
 	public static void main(String[] args) throws Exception { 
+		File_cw_chart dn1 = new File_cw_chart();
+		Newcategory cc1 = new Newcategory(); 
+		File_cdrw_proc fcp1 = new File_cdrw_proc();
 	    b="99";
 	    try (Scanner s = new Scanner(System.in)) {
 	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
@@ -18,21 +24,17 @@ public class New3CC {
 			Integer bint = Integer.valueOf(b);
 			if (bint == 99 | bint >= 1990) {
 				simplecc(bint);
-				File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();
-				Newcategory cc1 = new Newcategory(); 
 				cc1.main(null); 	
 			}
-
 			System.out.println("Enter year/month/day:");    	c = s.nextLine();
 			System.out.println("\nEnter... state of health E/G/F/P...");
 		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();
-	    	File_cw_chart dn1 = new File_cw_chart();
 			dn1.deuxnine();
-			Newcategory.main(null);
+			cc1.main(null);
 		}catch (IOException e) {
 		e.printStackTrace();
 		}

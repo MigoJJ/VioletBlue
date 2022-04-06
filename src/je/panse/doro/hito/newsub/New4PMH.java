@@ -15,7 +15,8 @@ public class New4PMH {
 				fcp1.writeliner(Enter.wts + "/4PMH", "\n\t" + pmh);
 			File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();
-	   		Newcategory.main(null);
+			Newcategory cc1 = new Newcategory(); 
+				cc1.main(null);
 		}
 	}
 	// ----------------------------------------------

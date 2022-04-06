@@ -13,7 +13,7 @@ import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public static void main(String agrs) throws Exception {
+	public void main(String agrs) throws Exception {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 		File_cw_chart ob3 = new File_cw_chart(); 
@@ -22,7 +22,7 @@ public class Newcategory {
     	switching();
 	}	
 // --------------------------------------------    	
-    static void switching() throws Exception {
+    void switching() throws Exception {
    		Scanner new_code = new Scanner(System.in);
    		int select_code = 0;
 
