@@ -64,7 +64,6 @@ public class ThyPrescription {
 			e.printStackTrace();
 		}
     }
-
 	       
 	   	static void selectfiler(Path rrr) throws IOException {
 			Stream<String> lBl = Files.lines(rrr);
@@ -82,16 +81,5 @@ public class ThyPrescription {
 	       
 
     }
-//	static void writefiler(String writef, String writed) throws IOException {
-//	    try {
-//	      FileWriter myWriter = new FileWriter(writef, true);
-//	      myWriter.write(writed+ "\n");
-//	      myWriter.close();
-////		      System.out.println("Successfully wrote to the file.");
-//	    } catch (IOException e) {
-//	      System.out.println("An error occurred.");
-//	      e.printStackTrace();
-//	    }
-//	 }
 // ----------	
 }

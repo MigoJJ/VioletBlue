@@ -4,16 +4,16 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_exec.CalcACC;
-import je.panse.doro.comm.item_exec.CalcBP;
-import je.panse.doro.comm.item_exec.CalcDitto;
-import je.panse.doro.comm.item_exec.CalcHbA1c;
+import je.panse.doro.comm.item_execute.CalcACC;
+import je.panse.doro.comm.item_execute.CalcBP;
+import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.comm.item_execute.CalcHbA1c;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
-	public static void main(String agrs) throws Exception {
+	public void main(String agrs) throws Exception {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 		File_cw_chart ob3 = new File_cw_chart(); 
@@ -22,7 +22,7 @@ public class Newcategory {
     	switching();
 	}	
 // --------------------------------------------    	
-    static void switching() throws Exception {
+    void switching() throws Exception {
    		Scanner new_code = new Scanner(System.in);
    		int select_code = 0;
 
@@ -33,7 +33,7 @@ public class Newcategory {
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 		   	switch (select_code) {
-		   		case 1 : New3CC.main(null);	  	break;
+		   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;
 		   		case 2 : New4PMH.main(null);  	break;
 				case 3 : New5SUJ.main(null);  	break;
 		   		case 4 : New6OBJ.main(null);  	break;

@@ -4,10 +4,10 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_exec.CalcACC;
-import je.panse.doro.comm.item_exec.CalcBP;
-import je.panse.doro.comm.item_exec.CalcDitto;
-import je.panse.doro.comm.item_exec.CalcHbA1c;
+import je.panse.doro.comm.item_execute.CalcACC;
+import je.panse.doro.comm.item_execute.CalcBP;
+import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.comm.item_execute.CalcHbA1c;
 import je.panse.doro.hito.newsub.*;
 
 public class RecoveryNewcategory {
@@ -34,7 +34,7 @@ public class RecoveryNewcategory {
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 		   	switch (select_code) {
-		   		case 1 : New3CC.main(null);	  	break;
+	   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;
 		   		case 2 : New4PMH.main(null);  	break;
 				case 3 : New5SUJ.main(null);  	break;
 		   		case 4 : New6OBJ.main(null);  	break;

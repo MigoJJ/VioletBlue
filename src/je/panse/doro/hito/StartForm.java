@@ -9,28 +9,25 @@ import je.panse.doro.main.Enter;
 public class StartForm {
 	public static void main(String[] string) throws Exception {
 		File_cdrw_proc st1 = new File_cdrw_proc(); 
-		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
+			st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
+		Newcategory st2 = new Newcategory(); 
+		File_cw_chart st3 = new File_cw_chart();
+		ThyPrescription st4 = new ThyPrescription(); 
+		Key_Iwbb st5 = new Key_Iwbb(); 
 
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;
-			
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
 				select_code = Integer.valueOf(case_code.nextLine());
 			
 				switch (select_code) {
-					case 1 : Newcategory st2 = new Newcategory(); 	
-							st2.main(null);break;
-					case 2 : File_cw_chart st3 = new File_cw_chart();
-							st3.callchartlist("/knots/soap");
-							Newcategory st4 = new Newcategory(); 
-							st4.main(null);break;
+					case 1 : st2.main(null);break;
+					case 2 : st3.callchartlist("/knots/soap");
+							  st2.main(null);break;
 					case 3 : break;  // Disease Category
-					case 4 : ThyPrescription st6 = new ThyPrescription(); 
-							st6.main("/ThyroidStart");break; // Items		
-			   		case 999 :
-				   			Key_Iwbb st9 = new Key_Iwbb(); 
-				   			st9.Key_Iwbb_Page(select_code);	break;
+					case 4 : st4.main("/ThyroidStart");break; // Items		
+			   		case 999:st5.Key_Iwbb_Page(select_code);	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}	

@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_exec;
+package je.panse.doro.comm.item_execute;
 
 import java.io.BufferedWriter;	
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.item_exec.CalcACC;
+import je.panse.doro.comm.item_execute.CalcACC;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
