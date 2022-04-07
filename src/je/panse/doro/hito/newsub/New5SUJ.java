@@ -14,28 +14,25 @@ public class New5SUJ{
     	String st;
 		try (FileWriter fileWriter = new FileWriter(path,true)) {
 			Scanner suj_text = new Scanner(System.in);
-			System.out.println("Enter Subjective Complains  ...   : ");
+			System.out.println("*****Enter Subjective Complains  ...   : ");
 
 			do{
 				st = (suj_text.nextLine().trim());
 			   if(st.equals("quit")){
 		        	System.out.println("Inserted code finished  !  ");
 		        	File_cw_chart dn1 = new File_cw_chart();
-					dn1.deuxnine();
 		        	Newcategory si1= new Newcategory(); 
+					dn1.deuxnine();
 					si1.main(null); 	
 		    	break;
 			   }
 				System.out.println("st = :  " + st + "\n");
 				fileWriter.append(st + "\n");
 			  suj_insert(st);
-
 			}while (st != "quit");
 			System.out.println("Success");
-
 			suj_text.close();
 		}
-
 	}
 
 	private static void suj_insert(String st) throws IOException {

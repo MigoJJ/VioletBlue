@@ -9,11 +9,12 @@ import je.panse.doro.main.Enter;
 public class StartForm {
 	public static void main(String[] string) throws Exception {
 		File_cdrw_proc st1 = new File_cdrw_proc(); 
-			st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 		Newcategory st2 = new Newcategory(); 
 		File_cw_chart st3 = new File_cw_chart();
 		ThyPrescription st4 = new ThyPrescription(); 
 		Key_Iwbb st5 = new Key_Iwbb(); 
+		
+		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;

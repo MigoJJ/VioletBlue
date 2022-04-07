@@ -15,18 +15,18 @@ public class Key_Iwbb {
 		DirectoryAdmin dn5 = new DirectoryAdmin();
 
 		if (select_code == 9) { 
-				dn1.deuxnine();
-				dn2.main(null);
+			dn1.deuxnine();
+			dn2.main(null);
 		 }
 		 else if (select_code == 99) {
-			 dn1.deuxnine();
-			 dn3.main(null);
+			dn1.deuxnine();
+			dn3.main(null);
 		  }
 		  else if (select_code == 999){
 			 dn1.deuxnine();
-			 dn3.main(null);
-		
+			 dn4.main(null);
 			 dn5.clear_Directory(Enter.wts);
+			 dn3.main(null);
 
 		            }
 		  else {

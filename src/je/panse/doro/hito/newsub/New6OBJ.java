@@ -24,7 +24,6 @@ public class New6OBJ {
 					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
 					case 7 : CalcDEXA lab7 = new CalcDEXA(); 	lab7.main(null);break;
 
-
 					case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;

@@ -15,10 +15,9 @@ public class Newcategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
+		File_cw_chart  ob3 = new File_cw_chart(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-		File_cw_chart ob3 = new File_cw_chart(); 
     	ob3.cleanChartPlate();
-	
     	switching();
 	}	
 // --------------------------------------------    	
@@ -27,8 +26,6 @@ public class Newcategory {
    		int select_code = 0;
 
    		while (true) {
-//		   	if (select_code == 99) { break; }
-		 	
 		   	System.out.println("Enter selected code number ...   : ");
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());
 	

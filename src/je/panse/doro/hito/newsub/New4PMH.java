@@ -11,12 +11,13 @@ public class New4PMH {
 	    try (Scanner s = new Scanner(System.in)) {
 			System.out.println("Enter PMH ...:");
 			String pmh = s.nextLine();
+			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/4PMH", "\n\t" + pmh);
-			File_cw_chart dn1 = new File_cw_chart();
-				dn1.deuxnine();
-			Newcategory cc1 = new Newcategory(); 
-				cc1.main(null);
+			File_cw_chart  dn1  = new File_cw_chart();
+			Newcategory    cc1  = new Newcategory(); 
+			fcp1.writeliner(Enter.wts + "/4PMH", "\n\t" + pmh);
+			dn1.deuxnine();
+			cc1.main(null);
 		}
 	}
 	// ----------------------------------------------
