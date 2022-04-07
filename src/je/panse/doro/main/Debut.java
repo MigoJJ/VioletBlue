@@ -10,7 +10,7 @@ import je.panse.doro.hito.Newcategory;
 public class Debut {
 	public void main(String[] args) throws Exception {
 		DirectoryAdmin de2 = new DirectoryAdmin();
-		Newcategory de3 = new Newcategory();
+		Newcategory    de3 = new Newcategory();
 		try (Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;
  			
@@ -21,11 +21,11 @@ public class Debut {
 					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
 					case 2 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 					case 3 : de2.prepare_ChartPlate();
-							de2.copy_Directory(Enter.wtk + "/hana", Enter.wts);
+							  de2.copy_Directory(Enter.wtk + "/hana", Enter.wts);
 							Enter.main(null);  	
 							break;
 					case 4 : de2.copy_Directory(Enter.wtt, Enter.wts);
-							de3.main(null);  	
+							  de3.main(null);  	
 							break; 
 					default :System.out.println(" uncertain ... please check  !!");
 				}
