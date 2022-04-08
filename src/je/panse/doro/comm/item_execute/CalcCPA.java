@@ -54,7 +54,7 @@ public class CalcCPA {
 			bufferedWriter.close();
 }
 //------------------------------------------------
-	   void accessInsert(String EKG_code) throws IOException {
+   void accessInsert(String EKG_code) throws IOException {
 				try {
 					System.out.println(EKG_code);
 					writecoding(EKG_code);

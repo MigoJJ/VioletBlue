@@ -6,6 +6,7 @@ import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcChol;
 import je.panse.doro.comm.item_execute.CalcHbA1c;
 import je.panse.doro.comm.item_execute.CalcTFT;
+import je.panse.doro.comm.item_execute.CalcVitD;
 import je.panse.doro.main.Enter;
 
 public class New7LAB {
@@ -22,6 +23,8 @@ public class New7LAB {
 			  	case 1 : CalcHbA1c  nl2 = new CalcHbA1c(); 	nl2.main(null);break;
 				case 2 : CalcTFT  nl3 = new CalcTFT(); 		nl3.main(null);break;
 				case 3 : CalcChol nl4 = new CalcChol();		nl4.main(null);break;
+				case 4 : CalcVitD nl5 = new CalcVitD();		nl5.main(null);break;
+
 		   		
 		   		case 9 : case 99 : case 999 :
 		   			Key_Iwbb st999 = new Key_Iwbb();
