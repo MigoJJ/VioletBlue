@@ -3,7 +3,8 @@
 					dn  #  DM with Nephropathy");
 					dp  #  DM with Peripheral Neuropathy
 					da  #  DM with Autonomic Neuropathy
-					pd  #  Prediabetes 
+3
+2					pd  #  Prediabetes 
 		
 		t  #  Hypertension 
 		c  #  Hypercholesterolemia 
@@ -28,7 +29,6 @@
 	   hc   #  Hepatic Cyst
 	   hn   #  Hepatic Nodule
 	       
-	   
 	   rc   #  Renal Cyst
 	   rn   #  Renal Nodule 
 	   
@@ -41,14 +41,11 @@
 	   pp   #  Pneumonia
 	   pt   #  Pulmonary Tuberculosis 
 	   
-   		
    		hv     HBsAg(+)
    		bco    Breast Cancer Opreation
    		Coronary spasm
 	   	Sinus Bradycardia
 	   	Atrial Fibrillation
-	   	
 	   	Insomnia
-	   	Vertigo
-	   	
+	   	Vertigo	
 	   		

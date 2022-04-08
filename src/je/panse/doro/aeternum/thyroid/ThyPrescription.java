@@ -1,6 +1,6 @@
 package je.panse.doro.aeternum.thyroid;
 
-import java.io.File;			
+import java.io.File;				
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,8 +14,8 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class ThyPrescription {
-	public static void main(String presd) throws Exception {
-		File_cdrw_proc tp1 = new File_cdrw_proc();
+	public void main(String presd) throws Exception {
+		File_cdrw_proc   tp1 = new File_cdrw_proc();
 		File_editor_proc tp2 = new File_editor_proc();
 		tp1.readfiler(Enter.wd +"/aeternum/thyroid/fourgate" + presd);
 		

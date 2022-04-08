@@ -6,7 +6,7 @@ import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 														
 public class CalcHbA1c {
-	public static void main(String args) throws Exception { 
+	public void main(String args) throws Exception { 
 		int Glucose;
 		double HbA1c;
 		String  Gluresult;

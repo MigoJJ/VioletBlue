@@ -1,19 +1,11 @@
- < Chief Complaint >
- 
-    dm (onset 7 year-ago)
-
-General state :  -- Good  (no any significant state change)
-
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
+C.C.>
+   
 S >
 O >
-LAB >
+    BP    [ 120 / 75 ]mmHg   PR [ 73 ]/minute  Regular LSP
 A >
+	#  Hypertension 
 P >
+	...ditto & OPD F/U x [  2  ]-month later
+	...next Lab F/U plan (+)
+	...no medication change or dose-adjust
