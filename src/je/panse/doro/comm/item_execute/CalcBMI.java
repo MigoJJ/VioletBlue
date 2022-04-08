@@ -25,8 +25,8 @@ class bmi{
 	}
 }
 
-class CalcBMI {
-	void main(String[] Strings) throws Exception {
+public class CalcBMI {
+	public void main(String[] Strings) throws Exception {
         try (Scanner input = new Scanner(System.in)) {
 			System.out.print("*****Input weight in kilogram: ");
 			double weight = input.nextDouble();
