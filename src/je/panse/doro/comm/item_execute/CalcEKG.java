@@ -53,10 +53,7 @@ public class CalcEKG {
 					case 19 : accessInsert("이소성 심박조율 (Ectopic rhythm)"); break;
 					case 20 : accessInsert("심실내 전도지연/조기전이 (Delayed ventricular conduction/Early conduction)"); break;
 					case 21 : accessInsert("고 T파 (Peaked T waves, Hyperacute T waves (HATW))"); break;
-					
-	//				case "c" : Com.main(null);break;
-	//				case "q" : InputButton.quitButton(null);break;
-	//				case "qq" : InputQuitSave.main(null);break;
+
 					case 9 : File_cw_chart dn1 = new File_cw_chart();
 							dn1.deuxnine();;	break;
 					default :System.out.println(" uncertain ... please check  !!");
