@@ -43,6 +43,7 @@ public class CalcACC {
 			case "te" : accessInsert("\t#  Hyperthyroidism : Graves' disease");break;
 				case "to" : accessInsert("\t#  Hypothyroidism : Hashimoto's thyroiditis");break;
 				case "ts" : accessInsert("\t#  Subacute Thyroiditis ");break;
+				case "tt" : accessInsert("\t#  c/w Chronic Thyroiditis on USG");break;
 				case "tn" : accessInsert("\t#  Thyroid nodule ")	;break;
 				case "tsg" : accessInsert("\t#  Simple Goiter")	;break;
 				case "nti" : accessInsert("\t#  Non-Thyroidal Illness ");break;
@@ -59,7 +60,8 @@ public class CalcACC {
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;
 			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
 			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
-			
+			case "as": accessInsert("\t#  Artherosclerosis Carotid artery");break;
+
 			case "gre": accessInsert("\t#  Reflux esophagitis");break;
 			case "gcag": accessInsert("\t#  Chonic Atrophic Gastritis");break;
 			case "gcsg": accessInsert("\t#  Chronic Superficial Gastritis");break;
@@ -73,7 +75,7 @@ public class CalcACC {
 			case "pbo" : accessInsert("\t#  Prostate cancer operation(+)");break;
 
 	   		case "hbv" :accessInsert("\t#  HBsAg(+) Carrier ");break;
-	   		case "hh" : accessInsert("\t#  Hepatic HEmagioma");break;
+	   		case "hh" : accessInsert("\t#  Hepatic Hemagioma");break;
 	   		case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
 			case "hn" : accessInsert("\t#  Hepatic Nodule ");break;
 
@@ -88,6 +90,8 @@ public class CalcACC {
 			case "ins": accessInsert("\t#  Insomnia");break;
 			case "ver": accessInsert("\t#  Vertigo");break;
 			case "hd": accessInsert("\t#  Headache");break;
+			case "UTI": accessInsert("\t#  Urinary Tract Infection");break;
+			case "URI": accessInsert("\t#  Upper Respiratory Infection");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : accessInsert("\t#  Bronchial Asthma ");break;
 			case "pc" : accessInsert("\t#  Chronic Cough ");break;
