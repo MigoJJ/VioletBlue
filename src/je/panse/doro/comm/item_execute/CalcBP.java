@@ -6,32 +6,28 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcBP {
-	public static int SBP, DBP, PR;
-	public static String BPresult;
+	int SBP, DBP, PR;
+	String BPresult;
 
-	public static void main(String args) throws Exception { 
+	public static void main(String args) throws Exception {
+		New6OBJ np2 = new New6OBJ();
+		CalcBP bp1 = new CalcBP();
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+    		ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("***** Input SBP   mmHg : ");
-	        	SBP = input.nextInt();
+	        	bp1.SBP = input.nextInt();
 	        System.out.print("***** Input DBP   mmHg : ");
-	        	DBP = input.nextInt();
+	        	bp1.DBP = input.nextInt();
 	        System.out.print("***** Input pulse rate / minute : ");
-	        	PR = input.nextInt();
+	        	bp1.PR = input.nextInt();
 //        input.close();
-
-	        	BPresult = ("    BP    [ " + SBP +  " / " + DBP + " ]mmHg" 
-			+ "   PR [ " + PR + " ]/minute" + "  Regular LSP");
-
-			System.out.print(BPresult);
-			
-			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/6OBJ", BPresult);
-			New6OBJ np2 = new New6OBJ();
-				np2.main("");
-			
+	        	bp1.BPresult = ("    BP    [ " + bp1.SBP +  " / " 
+	        	+ bp1.DBP + " ]mmHg" 
+	        	+ "   PR [ " + bp1.PR + " ]/minute" + "  Regular LSP");
+			ob2.writeliner(Enter.wts + "/6OBJ", bp1.BPresult);
+			np2.main("");
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
 			}
