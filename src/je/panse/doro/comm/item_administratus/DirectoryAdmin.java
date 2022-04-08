@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
 
 public class DirectoryAdmin {
-	public static void copy_Directory(String ladir, String nudir) throws IOException {
+	public void copy_Directory(String ladir, String nudir) throws IOException {
 		try {
 			File_cdrw_proc da1 = new File_cdrw_proc();
 			List<String> list=new ArrayList<String>();  

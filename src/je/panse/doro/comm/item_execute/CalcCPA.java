@@ -11,7 +11,7 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcCPA {
-	public static void main(String args) throws Exception { 
+	public void main(String args) throws Exception { 
 
 		File_cdrw_proc ekg1 = new File_cdrw_proc(); 
 		ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJs/CPAj");
@@ -40,7 +40,7 @@ public class CalcCPA {
 		}
    	}	
 	//------------------------------------------------
-	static void writecoding(String writec) throws IOException {
+	void writecoding(String writec) throws IOException {
 			File file_acc = new File(Enter.wts + "/6OBJ");
 			System.out.println(file_acc);
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
@@ -54,7 +54,7 @@ public class CalcCPA {
 			bufferedWriter.close();
 }
 //------------------------------------------------
-	   static void accessInsert(String EKG_code) throws IOException {
+   void accessInsert(String EKG_code) throws IOException {
 				try {
 					System.out.println(EKG_code);
 					writecoding(EKG_code);

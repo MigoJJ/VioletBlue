@@ -1,12 +1,9 @@
- 1  :  정상 (No Active lesions inLung)
+ 1  :  정상 (No Active lesions in Lung)
 
  2  :  폐결핵 흔적 (Pulmonary tuberculosis scar))
  
- 3  :  동빈맥(Sinus tachycardia)
- 4  :  심실조기수축(Early ventricular constraction)
- 5  :  심방조기수축(Early atrial constraction)
- 6  :  비특이적 ST-T분절 변화/비특이적 T분절 변화(Nonspecific ST-T change)
- 7  :  완전(불완전) 우각차단(Complete/Incomplete Rt bundle branch block)
- 8  :  좌각차단(Lt bundle branch block)
+ 3  :  폐 결절 (Pulmonary nodule)
+ 
+ 4  :  심장비대 (Cardiomegaly)
 
  9  :  Qiut 

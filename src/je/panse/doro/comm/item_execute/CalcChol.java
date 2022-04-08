@@ -19,21 +19,15 @@ public class CalcChol {
 	        
 	        System.out.print("========= Input LDL  : ");
 	        int LDL = input.nextInt();
-//   
 //      input.close();
-
 	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dl" );
-
-
 			System.out.print(Cholresult);
-			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult);
 			New7LAB.main("");
-			
 			} catch (NumberFormatException e) {
 			e.printStackTrace();
 			}
 	}
-	}
+}

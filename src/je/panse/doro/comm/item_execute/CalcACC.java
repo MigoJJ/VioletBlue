@@ -48,7 +48,7 @@ public class CalcACC {
 				case "nti" : accessInsert("\t#  Non-Thyroidal Illness ");break;
 				case "tep" : accessInsert("\t#  Hyperthyroidism with Pregnancy ");break;
 				case "top" : accessInsert("\t#  Hypothyroidism with Pregnancy ");break;
-				case "tc"  : accessInsert("\t#  Papillary Thyroid Cancer OP(+)"
+				case "tco"  : accessInsert("\t#  Papillary Thyroid Cancer OP(+)"
 						+ "\n\tHypothyroidism");break;
 				case "tcr" : accessInsert("\t#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
 						+ "\n\tHypothyroidism");break;
@@ -59,10 +59,11 @@ public class CalcACC {
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;
 			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
 			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
-			case "ins": accessInsert("\t#  Insomnia");break;
-			case "ver": accessInsert("\t#  Vertigo");break;
-
 			
+			case "gre": accessInsert("\t#  Reflux esophagitis");break;
+			case "gcag": accessInsert("\t#  Chonic Atrophic Gastritis");break;
+			case "gcsg": accessInsert("\t#  Chronic Superficial Gastritis");break;
+			case "gceg": accessInsert("\t#  r/o Chronic Erosive Gastritis");break;
 			
 			// ----------------------------------------------진료 보조
 			case "oc" : accessInsert("\t#  s/p Cholecystectomy d/t GB stone	");break;
@@ -72,19 +73,26 @@ public class CalcACC {
 			case "pbo" : accessInsert("\t#  Prostate cancer operation(+)");break;
 
 	   		case "hbv" :accessInsert("\t#  HBsAg(+) Carrier ");break;
+	   		case "hh" : accessInsert("\t#  Hepatic HEmagioma");break;
 	   		case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
 			case "hn" : accessInsert("\t#  Hepatic Nodule ");break;
 
 			case "rc" : accessInsert("\t#  Renal Cyst ");break;
+			case "rs" : accessInsert("\t#  Renal Stone ");break;
 			case "rn" : accessInsert("\t#  Renal Nodule ");break;
 			
 			case "bc" : accessInsert("\t#  Breast Cyst ");break;
 			case "bn" : accessInsert("\t#  Breast Nodule ");break;
 			case "bco" : accessInsert("\t#  s/p Breast Cancer Operation");break;
+
+			case "ins": accessInsert("\t#  Insomnia");break;
+			case "ver": accessInsert("\t#  Vertigo");break;
+			case "hd": accessInsert("\t#  Headache");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : accessInsert("\t#  Bronchial Asthma ");break;
 			case "pc" : accessInsert("\t#  Chronic Cough ");break;
 			case "pp" : accessInsert("\t#  Pneumonia ");break;
+			case "pn" : accessInsert("\t#  s/p Pulmonary Nodule");break;
 			case "pt" : accessInsert("\t#  s/p Pulmonary Tuberculosis ");break;
 			case "nmt" : accessInsert("\t#  NMT Pulmonary Tuberculosis ");break;
           
