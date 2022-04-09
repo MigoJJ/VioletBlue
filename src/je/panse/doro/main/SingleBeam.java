@@ -1,6 +1,7 @@
 package je.panse.doro.main;
 
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.ClearConsole;
 
 public class SingleBeam {
 	public static void main(String[] args) throws Exception {

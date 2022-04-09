@@ -60,6 +60,7 @@ public class CalcACC {
 			case "ap" : accessInsert("\t#  Angina Pectoris");break;
 			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
 			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
+			case "at": accessInsert("\t#  Atypical Chest pain");break;
 			case "as": accessInsert("\t#  Artherosclerosis Carotid artery");break;
 
 			case "gre": accessInsert("\t#  Reflux esophagitis");break;
@@ -90,6 +91,7 @@ public class CalcACC {
 			case "ins": accessInsert("\t#  Insomnia");break;
 			case "ver": accessInsert("\t#  Vertigo");break;
 			case "hd": accessInsert("\t#  Headache");break;
+			case "ida": accessInsert("\t#  Iron Deficiency Anemia");break;
 			case "UTI": accessInsert("\t#  Urinary Tract Infection");break;
 			case "URI": accessInsert("\t#  Upper Respiratory Infection");break;
 			// ----------------------------------------------이찬주원장님

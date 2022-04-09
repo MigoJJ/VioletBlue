@@ -1,13 +1,16 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
 import je.panse.doro.aeternum.thyroid.ThyPrescription;
 import je.panse.doro.comm.*;
+import je.panse.doro.comm.item_administratus.ClearConsole;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String[] string) throws Exception {
+    	System.out.println(System.lineSeparator().repeat(10));
+
 		File_cdrw_proc st1 = new File_cdrw_proc(); 
 		Newcategory st2 = new Newcategory(); 
 		File_cw_chart st3 = new File_cw_chart();
