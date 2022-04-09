@@ -3,15 +3,18 @@ package je.panse.doro.main;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Key_Press_Any;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
 	public void main(String[] args) throws Exception {
-		DirectoryAdmin de2 = new DirectoryAdmin();
-		Newcategory de3 = new Newcategory();
-		try (Scanner case_code = new Scanner(System.in)) {
+		DirectoryAdmin 	de2  = new DirectoryAdmin();
+		Newcategory 		de3  = new Newcategory();
+		File_cw_chart 	fcwc = new File_cw_chart();
+		File_editor_proc  dn4 = new File_editor_proc();
+		try(Scanner case_code = new Scanner(System.in)) {
 			int select_code = 0;
  			
 			while (true) {
@@ -25,6 +28,8 @@ public class Debut {
 							Enter.main(null);  	
 							break;
 					case 4 : de2.copy_Directory(Enter.wtt, Enter.wts);
+							fcwc.writechart();
+							dn4.main(Enter.wt + "/tripikata/ChartPlate");
 							de3.main(null);  	
 							break; 
 					default :System.out.println(" uncertain ... please check  !!");

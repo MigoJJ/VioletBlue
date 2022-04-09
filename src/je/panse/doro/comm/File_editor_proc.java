@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class File_editor_proc {
-	public static void main(String string){
+	public static void main(String stringDir){
 		try{
-          File file = new File(Enter.wt + "/tripikata/ChartPlate");
+          File file = new File(stringDir);
           if(!Desktop.isDesktopSupported())
            {
         	  	System.out.println("not supported");

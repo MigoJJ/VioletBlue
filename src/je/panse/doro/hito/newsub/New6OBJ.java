@@ -9,7 +9,7 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
 	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+    		ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -19,9 +19,9 @@ public class New6OBJ {
 	
 				switch (select_code) {
 					case 1 : CalcBMI  lab1 = new CalcBMI();	lab1.main(null);break;
-					case 2 : CalcBP lab2 = new CalcBP(); 		lab2.main(null);break;
-					case 4 : CalcCPA lab4 = new CalcCPA(); 	lab4.main(null);break;					
-					case 5 : CalcEKG lab5 = new CalcEKG(); 	lab5.main(null);break;
+					case 2 : CalcBP   lab2 = new CalcBP(); 	lab2.main(null);break;
+					case 4 : CalcCPA  lab4 = new CalcCPA(); 	lab4.main(null);break;					
+					case 5 : CalcEKG  lab5 = new CalcEKG(); 	lab5.main(null);break;
 					case 7 : CalcDEXA lab7 = new CalcDEXA(); 	lab7.main(null);break;
 
 					case 9 : case 99 : case 999 :

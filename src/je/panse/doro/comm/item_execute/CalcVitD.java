@@ -8,17 +8,17 @@ import je.panse.doro.main.Enter;
 public class CalcVitD {
 	public void main(String args) throws Exception { 
 		double vitamin_D;
-		String  VitDGluresult;
+		String  VitDresult;
 
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input 25-OH-Vitamin-D : ");
 	        vitamin_D = input.nextDouble();
 	        //      input.close();
 
-	        VitDGluresult = ("    25-OH-Vitamin-D    [ " + vitamin_D +  " ] ng/mL" );
+	        VitDresult = ("    25-OH-Vitamin-D    [ " + vitamin_D +  " ] ng/mL" );
 
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/7LAB", VitDGluresult);
+				fcp1.writeliner(Enter.wts + "/7LAB", VitDresult);
 			New7LAB.main("");
 			
 			} catch (NumberFormatException e) {
