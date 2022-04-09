@@ -18,8 +18,8 @@ public class Newcategory {
 		
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
 		File_cw_chart  ob3 = new File_cw_chart(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-    	ob3.cleanChartPlate();
+    		ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+    		ob3.cleanChartPlate();
     	switching();
 	}	
 // --------------------------------------------    	

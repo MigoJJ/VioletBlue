@@ -24,7 +24,7 @@ public class Key_Iwbb {
 		  }
 		 else if (select_code == 999){
 			dn1.deuxnine();
-			dn4.main(null);
+			dn4.main(Enter.wt + "/tripikata/ChartPlate");
 			dn5.clear_Directory(Enter.wts);
 			dn3.main(null);
 		            }
