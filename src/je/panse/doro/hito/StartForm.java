@@ -29,8 +29,11 @@ public class StartForm {
 					case 1 : st2.main(null);break;
 					case 2 : st3.callchartlist("/knots/soap");
 							  st2.main(null);break;
-					case 3 : break;  // Disease Category
-					case 4 : st4.main("/ThyroidStart");break; // Items		
+					case 3 : st4.main("/ThyroidStart");break;  // Disease Category
+					
+					case 4 : st1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+							  Itemcategory itc = new Itemcategory();
+							  itc.main(null);break; // Items		
 			   		case 999:st5.Key_Iwbb_Page(select_code);	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
