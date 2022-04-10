@@ -52,25 +52,18 @@ public class Key_Iwbb {
 	}
 	
 	public void returnkeylist(String selectkey) throws IOException, Exception {
-	   	switch (selectkey) {
-		   	case "Debutkey" : rk0.main(null);	  	break;
-		   	case "StartFormkey" : rk2.main(null);	  	break;
-		   	case "Newcategorykey" : rk3.main(null);	  	break;
-		   	
-	//	   	case "Discategorykey" : rk5.main(null);	  	break;
-		   	case "Itemcategorykey" : rk4.main(null);	  	break;
-		   	default :System.out.println(" uncertain ... please check  !!");
-		}
-	}
-	   	
-	public void returnkey(String skeys) throws IOException, Exception {
-		if ( skeys != null) {
-			Key_Iwbb bb1 = new Key_Iwbb();
-			bb1.returnkeylist(skeys);
+		if (selectkey!=null) {
+			switch (selectkey) {
+			   	case "Debutkey" : rk0.main(null);	  	break;
+			   	case "StartFormkey" : rk2.main(null);	  	break;
+			   	case "Newcategorykey" : rk3.main(null);	  	break;
+		//	   	case "Discategorykey" : rk5.main(null);	  	break;
+			   	case "Itemcategorykey" : rk4.main(null);	  	break;
+			   	default :System.out.println(" uncertain ... please check  !!");
+			}
 		}
 		else {
-			New6OBJ np2 = new New6OBJ();
-			np2.main("");	
+			rk3.main(null);
 		}
 	}
 // ----------

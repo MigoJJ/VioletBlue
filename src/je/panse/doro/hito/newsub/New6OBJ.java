@@ -7,7 +7,8 @@ import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.main.Enter;
 
 public class New6OBJ {
-	public static void main(String args) throws Exception { 
+	public static void main(String skeys) throws Exception {
+		skeys=null;
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     		ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
