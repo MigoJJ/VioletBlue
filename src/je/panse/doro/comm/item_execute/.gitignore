@@ -10,3 +10,5 @@
 /bmi.class
 /CalcDEXA.class
 /CalcVitD.class
+/bmi$CalcBMI.class
+/CalcBMI$bmi.class
