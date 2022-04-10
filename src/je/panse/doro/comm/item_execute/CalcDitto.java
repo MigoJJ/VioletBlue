@@ -16,11 +16,6 @@ public class CalcDitto {
 	public void main(String skeys) throws Exception {
 		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 
-		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-		}else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-		}
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("Input ditto month : ");
 			dittomo = input.nextInt();
