@@ -27,6 +27,7 @@ public class Key_Iwbb {
 	Newcategory   rk3 = new Newcategory();
 	Itemcategory  rk4 = new Itemcategory();
 //	Discategory   rk5 = new Discategory();
+	File_cdrw_proc rk14 = new File_cdrw_proc();
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
 		File_cw_chart 	rk11 = new File_cw_chart();
@@ -37,8 +38,7 @@ public class Key_Iwbb {
 			rk11.deuxnine();
 			returnkeylist("Newcategorykey");
 		 }
-		 else if (select_code == 99) {
-			rk11.deuxnine();
+		 else if (select_code == 99) {			rk11.deuxnine();
 			returnkeylist("StartFormkey");
 		  }
 		 else if (select_code == 999){
@@ -58,7 +58,9 @@ public class Key_Iwbb {
 			   	case "StartFormkey" : rk2.main(null);	  	break;
 			   	case "Newcategorykey" : rk3.main(null);	  	break;
 		//	   	case "Discategorykey" : rk5.main(null);	  	break;
-			   	case "Itemcategorykey" : rk4.main(null);	  	break;
+			   	case "Itemcategorykey" : 
+			   		rk14.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+			   		rk4.main(selectkey);	  	break;
 			   	default :System.out.println(" uncertain ... please check  !!");
 			}
 		}

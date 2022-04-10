@@ -1,4 +1,3 @@
-// Jae Joon Koh M.D. ph.D.
 package je.panse.doro.main;
 
 import je.panse.doro.comm.*;			
@@ -15,12 +14,12 @@ public class Enter {
 	public static String wtt = (wd + "/text/tripikata");
 
 // ------------------------------------------------------file preparing
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {	
 		System.out.println(currentUsersHomeDir);
 		CurrentDate.defineTime();
 //		CurrentDate.defineDate();
 // ------------------------------------------------------GDStm Program starting
-        StartForm.main(null);
+       StartForm.main(null);
 	}
 // ----------    
 }

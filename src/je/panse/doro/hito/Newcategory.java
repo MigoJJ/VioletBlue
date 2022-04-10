@@ -30,11 +30,9 @@ public class Newcategory {
 // --------------------------------------------    	
     void switching() throws Exception {
 		try (Scanner new_code = new Scanner(System.in)){
-   		int select_code = 0;
-
    		while (true) {
 		   	System.out.println("Enter selected code number ...   : ");
-		   	select_code = Integer.valueOf(new_code.nextLine().trim());
+		   	int select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 		   	switch (select_code) {
 		   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;

@@ -61,7 +61,7 @@ public class New3CC {
 			case "p":   f = "-- Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		chartline1 = "General state :  " + f + "  (no any significant state change)";
+		chartline1 = "\tGeneral state :  " + f + "  (no any significant state change)";
 		fcp1.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 	//------------------------------------------------

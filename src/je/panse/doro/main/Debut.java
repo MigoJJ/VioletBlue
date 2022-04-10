@@ -15,11 +15,9 @@ public class Debut {
 		File_cw_chart 	fcwc = new File_cw_chart();
 		File_editor_proc  dn4 = new File_editor_proc();
 		try(Scanner case_code = new Scanner(System.in)) {
-			int select_code = 0;
- 			
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
-				select_code = Integer.valueOf(case_code.nextLine());
+				int select_code = Integer.valueOf(case_code.nextLine());
 				switch (select_code) {
 					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
 					case 2 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
@@ -46,6 +44,5 @@ public class Debut {
 		Key_Press_Any.main(null);
 		SingleBeam.main(null);		
 	}
-
 // ----------
 }
