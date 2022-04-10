@@ -3,11 +3,12 @@ package je.panse.doro.comm.item_execute;
 import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcDEXA {
-	public void main(String args) throws Exception {
+	public void main(String skeys) throws Exception {
 			System.out.print("Enter  >>   Age...Gender... : ");
 			Scanner dexa_scan = new Scanner(System.in);
 				int realage = dexa_scan.nextInt();
@@ -78,8 +79,7 @@ public class CalcDEXA {
 //			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
 			fcp1.writeliner(Enter.wts + "/8ACC", result_zt_score);
 			fcp1.writeliner(Enter.wts + "/8ACC", result_z);
-			New6OBJ dexa1 = new New6OBJ();
-			dexa1.main("");
+			New6OBJ.main(null);
 	}
 // ---------
 }

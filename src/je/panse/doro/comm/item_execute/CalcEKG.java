@@ -7,14 +7,14 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcACC;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class CalcEKG {
-	public void main(String args) throws Exception { 
-
+	public void main(String skeys) throws Exception { 
 		File_cdrw_proc ekg1 = new File_cdrw_proc(); 
 		ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJs/EKGj");
 		
@@ -58,7 +58,8 @@ public class CalcEKG {
 							dn1.deuxnine();;	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-				New6OBJ.main(null);
+				Key_Iwbb bb1 = new Key_Iwbb();
+				bb1.returnkeylist(skeys);
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

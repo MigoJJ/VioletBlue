@@ -6,12 +6,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New8ACC;
 import je.panse.doro.main.Enter;
 
 public class CalcACC {
-    public static void main(String args[]) throws Exception{
+    public static void main(String skeys) throws Exception{
         Scanner scanner=new Scanner(System.in);
         while (true) {
             System.out.println("Insert disease code : ");
@@ -19,8 +20,8 @@ public class CalcACC {
         	code_select(question);
                 if(question.equals("quit")){
 		            	System.out.println("Inserted code finished  !  ");
-		            	Newcategory ob6 = new Newcategory(); 
-						ob6.main(null); 	
+						Key_Iwbb bb1 = new Key_Iwbb();
+						bb1.returnkeylist(skeys);	
 	            	break;
 	            }
         	}

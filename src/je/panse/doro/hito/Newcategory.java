@@ -14,17 +14,22 @@ import je.panse.doro.main.Enter;
 public class Newcategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
-    	System.out.println(System.lineSeparator().repeat(10));
-		
-		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-		File_cw_chart  ob3 = new File_cw_chart(); 
-    		ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-    		ob3.cleanChartPlate();
-    	switching();
+		try {	
+	    	System.out.println(System.lineSeparator().repeat(10));
+			
+			File_cdrw_proc ob2 = new File_cdrw_proc(); 
+			File_cw_chart  ob3 = new File_cw_chart(); 
+	    		ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+	    		ob3.cleanChartPlate();
+	    	switching();
+	    	
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
 	}	
 // --------------------------------------------    	
     void switching() throws Exception {
-   		Scanner new_code = new Scanner(System.in);
+		try (Scanner new_code = new Scanner(System.in)){
    		int select_code = 0;
 
    		while (true) {
@@ -51,7 +56,8 @@ public class Newcategory {
 				default :System.out.println(" uncertain ... please check  !!");
 		   	}
 //		new_code.close();
-   		}
-   	}
+   			}
+		}
+    }
  // --------------------------------------------
 }

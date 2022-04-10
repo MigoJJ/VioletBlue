@@ -2,34 +2,69 @@ package je.panse.doro.comm;
 
 import java.io.IOException;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
+import je.panse.doro.comm.item_execute.CalcACC;
+import je.panse.doro.comm.item_execute.CalcBP;
+import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.comm.item_execute.CalcHbA1c;
+import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
+import je.panse.doro.hito.newsub.New3CC;
+import je.panse.doro.hito.newsub.New4PMH;
+import je.panse.doro.hito.newsub.New5SUJ;
+import je.panse.doro.hito.newsub.New6OBJ;
+import je.panse.doro.hito.newsub.New7LAB;
+import je.panse.doro.hito.newsub.New8ACC;
+import je.panse.doro.hito.newsub.New9PLAN;
+import je.panse.doro.main.Debut;
 import je.panse.doro.main.Enter;
+import je.panse.doro.main.SingleBeam;
 
 public class Key_Iwbb {
+	SingleBeam   	rk0 = new SingleBeam();
+	Debut   		rk1 = new Debut();
+	StartForm     rk2 = new StartForm();
+	Newcategory   rk3 = new Newcategory();
+	Itemcategory  rk4 = new Itemcategory();
+//	Discategory   rk5 = new Discategory();
+
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
-		File_cw_chart dn1 = new File_cw_chart();
-		Newcategory   dn2 = new Newcategory();
-		StartForm     dn3 = new StartForm();
-		File_editor_proc dn4 = new File_editor_proc();
-		DirectoryAdmin   dn5 = new DirectoryAdmin();
+		File_cw_chart 	rk11 = new File_cw_chart();
+		File_editor_proc 	rk12 = new File_editor_proc();
+		DirectoryAdmin   	rk13 = new DirectoryAdmin();
 
 		if (select_code == 9) { 
-			dn1.deuxnine();
-			dn2.main(null);
+			rk11.deuxnine();
+			returnkeylist("Newcategorykey");
 		 }
 		 else if (select_code == 99) {
-			dn1.deuxnine();
-			dn3.main(null);
+			rk11.deuxnine();
+			returnkeylist("StartFormkey");
 		  }
 		 else if (select_code == 999){
-			dn1.deuxnine();
-			dn4.main(Enter.wt + "/tripikata/ChartPlate");
-			dn5.clear_Directory(Enter.wts);
-			dn3.main(null);
+			rk11.deuxnine();
+			rk12.main(Enter.wt + "/tripikata/ChartPlate");
+			rk13.clear_Directory(Enter.wts);
+			returnkeylist("SingleBeamkey");
 		            }
 		 else {
 		  }
+	}
+	
+	public void returnkeylist(String selectkey) throws IOException, Exception {
+		if (selectkey!=null) {
+			switch (selectkey) {
+			   	case "Debutkey" : rk0.main(null);	  	break;
+			   	case "StartFormkey" : rk2.main(null);	  	break;
+			   	case "Newcategorykey" : rk3.main(null);	  	break;
+		//	   	case "Discategorykey" : rk5.main(null);	  	break;
+			   	case "Itemcategorykey" : rk4.main(null);	  	break;
+			   	default :System.out.println(" uncertain ... please check  !!");
+			}
+		}
+		else {
+			rk3.main(null);
+		}
 	}
 // ----------
 }
