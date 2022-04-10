@@ -13,6 +13,7 @@ import je.panse.doro.main.Enter;
 
 public class CalcACC {
     public static void main(String skeys) throws Exception{
+    	
         Scanner scanner=new Scanner(System.in);
         while (true) {
             System.out.println("Insert disease code : ");

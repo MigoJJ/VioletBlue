@@ -13,7 +13,14 @@ public class CalcDitto {
 
 	int dittomo, labfu, dosead;
 	String dittomol, labful, doseadl; 
-	public void main(String skeys) throws Exception { 
+	public void main(String skeys) throws Exception {
+		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
+
+		if (skeys == "Itemcategorykey") {
+			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+		}else {
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+		}
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("Input ditto month : ");
 			dittomo = input.nextInt();
@@ -39,10 +46,9 @@ public class CalcDitto {
 			else if (dosead == 4) { doseadl = ("\t...예전 약으로");}
 			else {
 		    }
-			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
-				fcp1.writeliner(Enter.wts + "/9PLAN", labful);
-				fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
+			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
+			fcp1.writeliner(Enter.wts + "/9PLAN", labful);
+			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 			File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();	
 			Key_Iwbb bb1 = new Key_Iwbb();

@@ -1,15 +1,14 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;				
+import java.util.Scanner;					
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
 
 public class Itemcategory {
-	public void main(String[] args) throws Exception {
-    	try (Scanner new_code = new Scanner(System.in)) {
-			int select_code = 0;
+	public void main(String selectkey) throws Exception {
+		try (Scanner new_code = new Scanner(System.in)) {
 					System.out.println("Enter selected code number ...   : ");
-					select_code = Integer.valueOf(new_code.nextLine().trim());
+					int select_code = new_code.nextInt();
 		
 					switch (select_code) {
 						case 1 : CalcBMI  lab1 = new CalcBMI();	lab1.main("Itemcategorykey");break;

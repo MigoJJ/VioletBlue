@@ -5,11 +5,11 @@ import je.panse.doro.comm.item_administratus.ClearConsole;
 
 public class SingleBeam {
 	public static void main(String[] string) throws Exception {
-    	File_cdrw_proc sf1 = new File_cdrw_proc(); 
-	    	sf1.readfiler(Enter.wt + "/singlebeam/SingleBeam");
+    	File_cdrw_proc sb1 = new File_cdrw_proc(); 
+	    	sb1.readfiler(Enter.wt + "/singlebeam/SingleBeam");
 			//sf1.readfiler(Enter.wt + "/singlebeam/DoctorLogin");
-    	Debut sf2 = new Debut(); 
-	    	sf2.main(null);
+    	Debut sb2 = new Debut(); 
+	    	sb2.main(null);
 	}
 // ----------
 }

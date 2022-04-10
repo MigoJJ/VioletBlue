@@ -20,10 +20,9 @@ public class StartForm {
 		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 
 		try (Scanner case_code = new Scanner(System.in)) {
-			int select_code = 0;
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
-				select_code = Integer.valueOf(case_code.nextLine());
+				int select_code = Integer.valueOf(case_code.nextLine());
 			
 				switch (select_code) {
 					case 1 : st2.main(null);break;
