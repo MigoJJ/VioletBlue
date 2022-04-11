@@ -32,77 +32,87 @@ public class CalcACC {
 //------------------------------------------------     
 	static void code_select(String dcode) throws IOException {
 		switch (dcode) {
-			case "d" : accessInsert("\t#  DM without complications	");break;
-					case "dr" : accessInsert("\t#  DM with Retinopathy ");break;
-					case "dn" : accessInsert("\t#  DM with Nephropathy");break;
-					case "dp" : accessInsert("\t#  DM with Peripheral Neuropathy");break;
-					case "da" : accessInsert("\t#  DM with Autonomic Neuropathy");break;
-					case "pd" : accessInsert("\t#  Prediabetes");break;
-			case "t" : accessInsert("\t#  Hypertension ")	;break;
-			case "c" : accessInsert("\t#  Hypercholesterolemia ");break;
-			case "ctg" : accessInsert("\t#  HyperTriGlyceridemia ");break;
+			case "d" : aI("\t#  DM without complications	");break;
+					case "dr" : aI("\t#  DM without Retinopathy ");break;
+						case "drnp" : aI("\t#  DM with Retinopathy : Non-proliferative diabetic retinopathy");break;
+						case "drp" : aI("\t#  DM with Retinopathy : Proliferative diabetic retinopathy");break;
+					case "dn" : aI("\t#  DM with Nephropathy");break;
+						case "dnm" : aI("\t#  DM with Nephropathy with microalbuminuria");break;
+						case "dnp" : aI("\t#  DM with Nephropathy with proteinuria");break;
+						case "dnc" : aI("\t#  DM with Nephropathywith CRF");break;
+					case "dp" : aI("\t#  DM with Peripheral Neuropathy");break;
+					case "da" : aI("\t#  DM with Autonomic Neuropathy");break;
+					case "pd" : aI("\t#  Prediabetes");break;
+			case "t" : aI("\t#  Hypertension ")	;break;
+			case "c" : aI("\t#  Hypercholesterolemia ");break;
+			case "ctg" : aI("\t#  HyperTriGlyceridemia ");break;
 	
-			case "te" : accessInsert("\t#  Hyperthyroidism : Graves' disease");break;
-				case "to" : accessInsert("\t#  Hypothyroidism : Hashimoto's thyroiditis");break;
-				case "ts" : accessInsert("\t#  Subacute Thyroiditis ");break;
-				case "tt" : accessInsert("\t#  c/w Chronic Thyroiditis on USG");break;
-				case "tn" : accessInsert("\t#  Thyroid nodule ")	;break;
-				case "tsg" : accessInsert("\t#  Simple Goiter")	;break;
-				case "nti" : accessInsert("\t#  Non-Thyroidal Illness ");break;
-				case "tep" : accessInsert("\t#  Hyperthyroidism with Pregnancy ");break;
-				case "top" : accessInsert("\t#  Hypothyroidism with Pregnancy ");break;
-				case "tco"  : accessInsert("\t#  Papillary Thyroid Cancer OP(+)"
+			case "te" : aI("\t#  Hyperthyroidism : Graves' disease");break;
+				case "to" : aI("\t#  Hypothyroidism : Hashimoto's thyroiditis");break;
+				case "ts" : aI("\t#  Subacute Thyroiditis ");break;
+				case "tt" : aI("\t#  c/w Chronic Thyroiditis on USG");break;
+				case "tn" : aI("\t#  Thyroid nodule ")	;break;
+				case "tsg" : aI("\t#  Simple Goiter")	;break;
+				case "nti" : aI("\t#  Non-Thyroidal Illness ");break;
+				case "tep" : aI("\t#  Hyperthyroidism with Pregnancy ");break;
+				case "top" : aI("\t#  Hypothyroidism with Pregnancy ");break;
+				case "tco" : aI("\t#  Papillary Thyroid Cancer OP(+)"
 						+ "\n\tHypothyroidism");break;
-				case "tcr" : accessInsert("\t#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
+				case "tcr" : aI("\t#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
 						+ "\n\tHypothyroidism");break;
 
-			case "os" : accessInsert("\t#  Osteoporosis ");break;
-			case "ospe" : accessInsert("\t#  Osteopenia ");break;
+			case "sos" : aI("\t#  Severe Osteoporosis ");break;
+				case "os" : aI("\t#  Osteoporosis ");break;
+				case "ospe" : aI("\t#  Osteopenia ");break;
 			
-			case "ap" : accessInsert("\t#  Angina Pectoris");break;
-			case "af" : accessInsert("\t#  Atrial Fibrillation ");break;
-			case "ami": accessInsert("\t#  s/p Aute Myocardial Infaction ");break;
-			case "at": accessInsert("\t#  Atypical Chest pain");break;
-			case "as": accessInsert("\t#  Artherosclerosis Carotid artery");break;
+			case "at": aI("\t#  Atypical Chest pain");break;
+				case "ap" : aI("\t#  Angina Pectoris");break;
+				case "af" : aI("\t#  Atrial Fibrillation ");break;
+				case "ami": aI("\t#  s/p Aute Myocardial Infaction ");break;
+				case "as": aI("\t#  Artherosclerosis Carotid artery");break;
 
-			case "gre": accessInsert("\t#  Reflux esophagitis");break;
-			case "gcag": accessInsert("\t#  Chonic Atrophic Gastritis");break;
-			case "gcsg": accessInsert("\t#  Chronic Superficial Gastritis");break;
-			case "gceg": accessInsert("\t#  r/o Chronic Erosive Gastritis");break;
+			case "ge": aI("\t#  Epigastric Pain");break;
+				case "gre": aI("\t#  Reflux esophagitis");break;
+				case "gcag": aI("\t#  Chonic Atrophic Gastritis");break;
+				case "gcsg": aI("\t#  Chronic Superficial Gastritis");break;
+				case "gceg": aI("\t#  r/o Chronic Erosive Gastritis");break;
+				case "ggp": aI("\t#  GB polyp");break;
+
 			
 			// ----------------------------------------------진료 보조
-			case "oc" : accessInsert("\t#  s/p Cholecystectomy d/t GB stone	");break;
-			case "oa" : accessInsert("\t#  s/p Appendectomy ");break;
-			case "oh" : accessInsert("\t#  s/p TAH : Total Abdominal Hysterectomy ");break;	
-			case "pb" : accessInsert("\t#  BPH ");break;
-			case "pbo" : accessInsert("\t#  Prostate cancer operation(+)");break;
+			case "oc" : aI("\t#  s/p Cholecystectomy d/t GB stone	");break;
+				case "oa" : aI("\t#  s/p Appendectomy ");break;
+				case "oh" : aI("\t#  s/p TAH : Total Abdominal Hysterectomy ");break;	
+				case "bph" : aI("\t#  BPH ");break;
+				case "opc" : aI("\t#  Prostate cancer operation(+)");break;
 
-	   		case "hbv" :accessInsert("\t#  HBsAg(+) Carrier ");break;
-	   		case "hh" : accessInsert("\t#  Hepatic Hemagioma");break;
-	   		case "hc" : accessInsert("\t#  Hepatic Cyst ");break;
-			case "hn" : accessInsert("\t#  Hepatic Nodule ");break;
-
-			case "rc" : accessInsert("\t#  Renal Cyst ");break;
-			case "rs" : accessInsert("\t#  Renal Stone ");break;
-			case "rn" : accessInsert("\t#  Renal Nodule ");break;
+	   		case "hbv" :aI("\t#  HBsAg(+) Carrier ");break;
+		   		case "hh" : aI("\t#  Hepatic Hemagioma");break;
+		   		case "hc" : aI("\t#  Hepatic Cyst ");break;
+				case "hn" : aI("\t#  Hepatic Nodule ");break;
+				case "hf" : aI("\t#  Fatty Liver");break;
 			
-			case "bc" : accessInsert("\t#  Breast Cyst ");break;
-			case "bn" : accessInsert("\t#  Breast Nodule ");break;
-			case "bco" : accessInsert("\t#  s/p Breast Cancer Operation");break;
+			case "rc" : aI("\t#  Renal Cyst ");break;
+				case "rs" : aI("\t#  Renal Stone ");break;
+				case "rn" : aI("\t#  Renal Nodule ");break;
+			
+			case "bc" : aI("\t#  Breast Cyst ");break;
+				case "bn" : aI("\t#  Breast Nodule ");break;
+				case "bco" : aI("\t#  s/p Breast Cancer Operation");break;
 
-			case "ins": accessInsert("\t#  Insomnia");break;
-			case "ver": accessInsert("\t#  Vertigo");break;
-			case "hd": accessInsert("\t#  Headache");break;
-			case "ida": accessInsert("\t#  Iron Deficiency Anemia");break;
-			case "UTI": accessInsert("\t#  Urinary Tract Infection");break;
-			case "URI": accessInsert("\t#  Upper Respiratory Infection");break;
+			case "ins": aI("\t#  Insomnia");break;
+				case "ver": aI("\t#  Vertigo");break;
+				case "hd": aI("\t#  Headache");break;
+				case "ida": aI("\t#  Iron Deficiency Anemia");break;
+				case "UTI": aI("\t#  Urinary Tract Infection");break;
+				case "URI": aI("\t#  Upper Respiratory Infection");break;
 			// ----------------------------------------------이찬주원장님
-			case "pa" : accessInsert("\t#  Bronchial Asthma ");break;
-			case "pc" : accessInsert("\t#  Chronic Cough ");break;
-			case "pp" : accessInsert("\t#  Pneumonia ");break;
-			case "pn" : accessInsert("\t#  s/p Pulmonary Nodule");break;
-			case "pt" : accessInsert("\t#  s/p Pulmonary Tuberculosis ");break;
-			case "nmt" : accessInsert("\t#  NMT Pulmonary Tuberculosis ");break;
+			case "pa" : aI("\t#  s/p Bronchial Asthma ");break;
+				case "pc" : aI("\t#  Chronic Cough ");break;
+				case "pp" : aI("\t#  Pneumonia ");break;
+				case "pn" : aI("\t#  s/p Pulmonary Nodule");break;
+				case "pt" : aI("\t#  s/p Pulmonary Tuberculosis ");break;
+				case "ntm" : aI("\t#  NTM : Nontuberculous Mycobacterial Pulmonary Disease ");break;
           
 			default: System.out.println(" ReInsert disease code please ...  : ");break;
 		}
@@ -122,7 +132,7 @@ public class CalcACC {
 			bufferedWriter.close();
 }
 //------------------------------------------------
-	   static void accessInsert(String diaease_description) throws IOException {
+	   static void aI(String diaease_description) throws IOException {
 				try {
 					System.out.println(diaease_description);
 					writecoding(diaease_description);

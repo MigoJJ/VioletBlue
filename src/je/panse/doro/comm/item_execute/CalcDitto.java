@@ -19,7 +19,7 @@ public class CalcDitto {
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("Input ditto month : ");
 			dittomo = input.nextInt();
-			dittomol = ("\t...ditto & OPD F/U x [  " + dittomo +  "  ]-month later");
+			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
 			
 			System.out.print("Lab Follow-up will be needed ? :");
 			labfu = input.nextInt();
