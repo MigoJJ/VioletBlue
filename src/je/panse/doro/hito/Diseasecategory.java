@@ -43,6 +43,7 @@ public class Diseasecategory {
 			    		ob2.readfiler(Enter.wds + "/DxSuppList");
 			    		DisSupp ob4 = new DisSupp();
 			    		ob4.main(null);
+			    		
 			    		break;
 	//		   						
 			   		case 9 : case 99: case 999 :	
