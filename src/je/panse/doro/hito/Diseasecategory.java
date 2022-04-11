@@ -1,6 +1,7 @@
 package je.panse.doro.hito;
 
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 import je.panse.doro.aeternum.supportdiagnosis.DisSupp;
@@ -33,14 +34,11 @@ public class Diseasecategory {
 	}	
 // --------------------------------------------    	
     void switching() throws Exception {
-   		while (true) {
-	
-	   			int select_code = 0;
-
-		        try (Scanner input = new Scanner(System.in)) {
-					System.out.print("*****Input weight in kilogram: ");
-					double weight = input.nextDouble();
-			   	switch (select_code) {
+   			int scode =1;	
+	       Scanner input = new Scanner(System.in);
+					System.out.print("*****Input code : ");
+					scode = input.nextInt();
+			   	switch (scode) {
 			   		case 0 : 
 			    		ob2.readfiler(Enter.wds + "/DxSuppList");
 			    		DisSupp ob4 = new DisSupp();
@@ -49,15 +47,10 @@ public class Diseasecategory {
 	//		   						
 			   		case 9 : case 99: case 999 :	
 			   			Key_Iwbb st999 = new Key_Iwbb(); 
-			   			st999.Key_Iwbb_Page(select_code); break;
+			   			st999.Key_Iwbb_Page(scode); break;
 					default :System.out.println(" uncertain ... please check  !!");
 			   	}
-	//		new_code.close();
-	   			
-			} catch (NumberFormatException e) {
-				e.printStackTrace();
-			}
-		}
+			input.close();
 	}
 // ----------
 }
