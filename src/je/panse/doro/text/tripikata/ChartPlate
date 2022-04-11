@@ -1,33 +1,15 @@
- < Chief Complaint >
- 
-    dm (onset 6 year-ago)
-
-	General state :  -- Good  (no any significant state change)
-
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
-	dfgsdf
+C.C.>
+   
 S >
-    dsfgdsf
 O >
-.   height   [  175.0 ] cm
-.   weight   [  75.0  ] kg
-.   BMI      [  24.5  ] kg/m^2
-.   waist    [  99  ] cm
-    BP    [ 125 / 85 ]mmHg   PR [ 99 ]/minute  Regular LSP
-LAB >
+    FBS  [ 146 ] mg/dl     HbA1c [ 7.5 ] %
+	Creatinine [ 0.9 ] mg/dl
+	eGFR [ 87.0 ] ml/min	+A/C ratio [ 5.22 ]
+    TC-HDL-TG LDL     [  189 - 45 - 215 - 104  ] mg/dl
 A >
 	#  DM without complications	
 	#  Hypercholesterolemia 
-	#  Hypertension 
-	#  DM with Retinopathy 
 P >
 	...ditto & OPD F/U x [  3  ]-month later
 	...next Lab F/U plan (+)
-	...no medication change or dose-adjust
+	...no dose-adjust and continue
