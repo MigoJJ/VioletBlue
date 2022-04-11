@@ -12,6 +12,7 @@ public class Enter {
 	public static String wtk = (wd + "/text/knots");
 	public static String wts = (wd + "/text/samsara");
 	public static String wtt = (wd + "/text/tripikata");
+	public static String wds = (wd + "/aeternum/supportdiagnosis");
 
 // ------------------------------------------------------file preparing
 	public static void main(String[] args) throws Exception {	
