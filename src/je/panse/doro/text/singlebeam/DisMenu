@@ -1,13 +1,24 @@
 --------------------------------------------
       Good Doctors’ Clinic
 ----------------------------------------------
-		1. 	Diabetes Mellitus  
-		2.	HyperCHOLesterolemia
-			HtperTriGlyceridemia
-		3. 	HYpertension
+	0.	Diagnosis Support
+	
+	1. 	Diabetes Mellitus 
 		
-		4.	Thyroid Disease
-
-		5.	Osteoporosis
+	2.	Hypertension
 		
+	3. 	Hypercholestarolemia
+		
+	4.	Thyroid
+			[ 41 ] Hyperthyroidism : Greaves' disease
+			[ 42 ] Hyperthyroidism 
+			[ 43 ] Hypothyoridism  : Hashimoto's thyroiditis
+			[ 44 ] Hypothyroidism
+			[ 45 ] Subacute Thyroiditis
+		
+	5.	Osteoporosis
+		
+	6.	Infection 
+			[ 61 ] URI
+			[ 62 ] UTI      
 ----------------------------------------------

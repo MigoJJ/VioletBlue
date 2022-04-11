@@ -14,7 +14,7 @@ public class StartForm {
 		File_cdrw_proc st1 = new File_cdrw_proc(); 
 		Newcategory st2 = new Newcategory(); 
 		File_cw_chart st3 = new File_cw_chart();
-		ThyPrescription st4 = new ThyPrescription(); 
+		Diseasecategory st4 = new Diseasecategory(); 
 		Key_Iwbb st5 = new Key_Iwbb(); 
 		
 		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
@@ -28,7 +28,7 @@ public class StartForm {
 					case 1 : st2.main(null);break;
 					case 2 : st3.callchartlist("/knots/soap");
 							  st2.main(null);break;
-					case 3 : st4.main("/ThyroidStart");break;  // Disease Category
+					case 3 : st4.main(null);break;  // Disease Category
 					
 					case 4 : st1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 							  Itemcategory itc = new Itemcategory();
