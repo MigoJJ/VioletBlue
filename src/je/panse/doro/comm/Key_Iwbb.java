@@ -33,6 +33,10 @@ public class Key_Iwbb {
 		 else if (select_code == 99) {			
 			rk11.deuxnine();
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/0407_up
+=======
+			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
 >>>>>>> refs/remotes/origin/0407_up
 =======
 			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
