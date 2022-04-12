@@ -5,6 +5,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Key_Press_Any;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.hito.Newcategory;
 
@@ -16,7 +17,7 @@ public class Debut {
 		File_editor_proc  dn4 = new File_editor_proc();
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
-				System.out.println("Enter selected code number ...   : ");
+				System.out.println(">>> Enter code number ...>>>   : ");
 				int select_code = Integer.valueOf(case_code.nextLine());
 				switch (select_code) {
 					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
@@ -28,6 +29,7 @@ public class Debut {
 					case 4 : de2.copy_Directory(Enter.wtt, Enter.wts);
 							fcwc.writechart();
 							dn4.main(Enter.wt + "/tripikata/ChartPlate");
+							Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 							de3.main(null);  	
 							break; 
 					default :System.out.println(" uncertain ... please check  !!");

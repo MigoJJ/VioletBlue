@@ -23,8 +23,6 @@ public class Itemcategory {
 						case 13 : CalcChol  nl4 = new CalcChol();	 nl4.main("Itemcategorykey");break;
 						case 14 : CalcCr  nl5 = new CalcCr();	 nl5.main("Itemcategorykey");break;
 						case 15 : CalcVitD  nl6 = new CalcVitD();	 nl6.main("Itemcategorykey");break;
-						
-						
 
 						case 9 : case 99 : case 999 :
 					   			Key_Iwbb st999 = new Key_Iwbb();

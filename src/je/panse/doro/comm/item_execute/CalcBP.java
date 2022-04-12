@@ -13,14 +13,13 @@ public class CalcBP {
 	public static void main(String skeys) throws Exception {
 		Key_Iwbb bb1 = new Key_Iwbb();
 		CalcBP bp1 = new CalcBP();
-		File_cdrw_proc ob2 = new File_cdrw_proc(); 
+		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 		if (skeys == "Itemcategorykey") {
-    		ob2.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-		}else {
-    		ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
-
-    	try (Scanner input = new Scanner(System.in)) {
+		else {
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+		}
+    		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("***** Input SBP   mmHg : ");
 	        	bp1.SBP = input.nextInt();
 	        System.out.print("***** Input DBP   mmHg : ");
@@ -31,7 +30,7 @@ public class CalcBP {
 	        	bp1.BPresult = ("    BP    [ " + bp1.SBP +  " / " 
 	        	+ bp1.DBP + " ]mmHg" 
 	        	+ "   PR [ " + bp1.PR + " ]/minute" + "  Regular LSP");
-			ob2.writeliner(Enter.wts + "/6OBJ", bp1.BPresult);
+	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult);
 			bb1.returnkeylist(skeys);
 			} catch (NumberFormatException e) {
 			e.printStackTrace();

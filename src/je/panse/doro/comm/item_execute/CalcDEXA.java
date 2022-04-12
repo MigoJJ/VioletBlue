@@ -10,13 +10,6 @@ import je.panse.doro.main.Enter;
 public class CalcDEXA {
 	public void main(String skeys) throws Exception {
 		System.out.println("skeys   :  " + skeys);
-		
-		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
-		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-		}else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-		}
 
 		System.out.print("Enter  >>   Age...Gender... : ");
 		try(Scanner dexa_scan = new Scanner(System.in)){

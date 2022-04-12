@@ -22,7 +22,9 @@ public class CalcHbA1c {
 //      input.close();
 		        if (Fbspp2 == 0) {FP = "FBS";}
 		        else {FP = ("PP"+ Fbspp2);}
-		        Gluresult = ("    " + FP + "  [ " + Glucose +  " ] mg/dl"	+ "     HbA1c [ " + HbA1c + " ] %");
+		        Gluresult = ("    " + FP 
+		        		+ "  [ " + Glucose +  " ] mg/dl"	
+		        		+ "     HbA1c [ " + HbA1c + " ] %");
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 			Key_Iwbb bb1 = new Key_Iwbb();

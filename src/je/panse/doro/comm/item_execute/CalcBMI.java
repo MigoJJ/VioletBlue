@@ -10,11 +10,10 @@ public class CalcBMI {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
 		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-		}else {
+		}
+		else {
 			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
-		
         try (Scanner input = new Scanner(System.in)) {
 			System.out.print("*****Input weight in kilogram: ");
 			double weight = input.nextDouble();
