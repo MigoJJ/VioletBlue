@@ -22,8 +22,7 @@ public class Enter {
 		CurrentDate.defineTime();
 //		CurrentDate.defineDate();
 // ------------------------------------------------------GDStm Program starting
-		File_cdrw_proc st1 = new File_cdrw_proc(); 
-		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
+		Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
        StartForm.main(null);
 	}
 // ----------    
