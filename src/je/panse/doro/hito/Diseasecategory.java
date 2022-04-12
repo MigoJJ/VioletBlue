@@ -7,12 +7,12 @@ import java.util.Scanner;
 import je.panse.doro.aeternum.supportdiagnosis.DisSupp;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.ImageCall;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcACC;
 import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_execute.CalcHbA1c;
+import je.panse.doro.comm.item_image.ImageCall;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 

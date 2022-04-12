@@ -9,12 +9,12 @@ import je.panse.doro.main.Enter;
 public class CalcChol {
 	public void main(String skeys) throws Exception {
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-
 		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-		}else {
+		}
+		else {
 			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
+
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input TC : ");
 	        int TC = input.nextInt();
@@ -29,7 +29,7 @@ public class CalcChol {
 	        int LDL = input.nextInt();
 //      input.close();
 	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
-	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dl" );
+	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
 			System.out.print(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult);
 			Key_Iwbb bb1 = new Key_Iwbb();

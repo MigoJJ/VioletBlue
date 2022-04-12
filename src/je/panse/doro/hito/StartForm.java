@@ -9,21 +9,15 @@ import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String[] string) throws Exception {
-    	System.out.println(System.lineSeparator().repeat(10));
-
-		File_cdrw_proc st1 = new File_cdrw_proc(); 
 		Newcategory st2 = new Newcategory(); 
 		File_cw_chart st3 = new File_cw_chart();
 		Diseasecategory st4 = new Diseasecategory(); 
 		Key_Iwbb st5 = new Key_Iwbb(); 
-		
-		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
-
-
+		try {	
 			while (true) {
-				try (Scanner case_code = new Scanner(System.in)) {
+				Scanner case_code = new Scanner(System.in);
 				int select_code =1;
-				System.out.println("Enter selected code number ...   : ");
+				System.out.println(">>> Enter selected code number ...>>>   : ");
 				select_code = case_code.nextInt();
 			
 				switch (select_code) {
@@ -38,11 +32,10 @@ public class StartForm {
 			   		case 999:st5.Key_Iwbb_Page(select_code);	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-				
-		} catch (NumberFormatException e) {
+			}
+			}catch (NumberFormatException e) {
 			e.printStackTrace();
-		}
-    }
-	}
+			}
+    	}
 // ----------
 }

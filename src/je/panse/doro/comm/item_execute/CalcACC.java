@@ -34,8 +34,8 @@ public class CalcACC {
 		switch (dcode) {
 			case "d" : aI("\t#  DM without complications	");break;
 					case "dr" : aI("\t#  DM without Retinopathy ");break;
-						case "drnp" : aI("\t#  DM with Retinopathy : Non-proliferative diabetic retinopathy");break;
-						case "drp" : aI("\t#  DM with Retinopathy : Proliferative diabetic retinopathy");break;
+						case "drnp" : aI("\t#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
+						case "drp" : aI("\t#  DM with Retinopathy \n\t: Proliferative diabetic retinopathy");break;
 					case "dn" : aI("\t#  DM with Nephropathy");break;
 						case "dnm" : aI("\t#  DM with Nephropathy with microalbuminuria");break;
 						case "dnp" : aI("\t#  DM with Nephropathy with proteinuria");break;
@@ -43,6 +43,9 @@ public class CalcACC {
 					case "dp" : aI("\t#  DM with Peripheral Neuropathy");break;
 					case "da" : aI("\t#  DM with Autonomic Neuropathy");break;
 					case "pd" : aI("\t#  Prediabetes");break;
+					
+					
+					
 			case "t" : aI("\t#  Hypertension ")	;break;
 			case "c" : aI("\t#  Hypercholesterolemia ");break;
 			case "ctg" : aI("\t#  HyperTriGlyceridemia ");break;
@@ -110,7 +113,7 @@ public class CalcACC {
 				case "bco" : aI("\t#  s/p Breast Cancer Operation");break;
 
 			case "ins": aI("\t#  Insomnia");break;
-			case "cov": aI("\t#  COVID-19 PCR (+)");break;
+				case "cov": aI("\t#  COVID-19 PCR (+)");break;
 				case "ver": aI("\t#  Vertigo");break;
 				case "hd": aI("\t#  Headache");break;
 				case "ida": aI("\t#  Iron Deficiency Anemia");break;

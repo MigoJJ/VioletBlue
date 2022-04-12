@@ -1,6 +1,8 @@
 package je.panse.doro.main;
 
-import je.panse.doro.comm.*;			
+import je.panse.doro.comm.*;
+import je.panse.doro.hito.Diseasecategory;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 
 public class Enter {
@@ -20,6 +22,8 @@ public class Enter {
 		CurrentDate.defineTime();
 //		CurrentDate.defineDate();
 // ------------------------------------------------------GDStm Program starting
+		File_cdrw_proc st1 = new File_cdrw_proc(); 
+		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
        StartForm.main(null);
 	}
 // ----------    
