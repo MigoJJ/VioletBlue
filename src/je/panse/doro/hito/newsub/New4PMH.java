@@ -3,6 +3,7 @@ package je.panse.doro.hito.newsub;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -17,6 +18,7 @@ public class New4PMH {
 			Newcategory    cc1  = new Newcategory(); 
 			fcp1.writeliner(Enter.wts + "/4PMH", "\n\t" + pmh);
 			dn1.deuxnine();
+			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			cc1.main(null);
 		}
 	}

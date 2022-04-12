@@ -5,7 +5,7 @@ import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
 
 public class Itemcategory {
-	public void main(String selectkey) throws Exception {
+	public static void main(String selectkey) throws Exception {
 		try (Scanner new_code = new Scanner(System.in)) {
 					System.out.println("Enter selected code number ...   : ");
 					int select_code = new_code.nextInt();

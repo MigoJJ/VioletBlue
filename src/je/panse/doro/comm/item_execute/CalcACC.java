@@ -6,14 +6,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New8ACC;
 import je.panse.doro.main.Enter;
 
 public class CalcACC {
     public static void main(String skeys) throws Exception{
-    	
+    	File_cdrw_proc fcp1 = new File_cdrw_proc();
+
         Scanner scanner=new Scanner(System.in);
         while (true) {
             System.out.println("Insert disease code : ");
@@ -21,8 +24,15 @@ public class CalcACC {
         	code_select(question);
                 if(question.equals("quit")){
 		            	System.out.println("Inserted code finished  !  ");
-						Key_Iwbb bb1 = new Key_Iwbb();
-						bb1.returnkeylist(skeys);	
+						if (skeys == "Itemcategorykey") {
+							fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+							Itemcategory.main(null);
+						}
+						else {
+							fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+							Newcategory nc1 = new Newcategory();
+							nc1.main(null);
+						}
 	            	break;
 	            }
         	}

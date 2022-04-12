@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -23,6 +24,7 @@ public class New5SUJ{
 		        	File_cw_chart dn1 = new File_cw_chart();
 		        	Newcategory si1= new Newcategory(); 
 					dn1.deuxnine();
+					Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 					si1.main(null); 	
 		    	break;
 			   }

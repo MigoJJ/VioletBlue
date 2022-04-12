@@ -15,9 +15,10 @@ public class StartForm {
 		Diseasecategory st4 = new Diseasecategory(); 
  
 		try {	
+			int select_code =1;
 			while (true) {
 				Scanner case_code = new Scanner(System.in);
-				int select_code =1;
+
 				System.out.println(">>> Enter selected code number ...>>>   : ");
 				select_code = case_code.nextInt();
 			

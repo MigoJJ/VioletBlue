@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.hito.Itemcategory;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
@@ -42,9 +44,18 @@ public class CalcDEXA {
 					double zt_score = dexa_scan.nextDouble();
 					calc_z(zt_score, fracture_val);
 				}
-
-	Key_Iwbb bb1 = new Key_Iwbb();
-	bb1.returnkeylist(skeys);
+				//----------------------------
+				
+				if (skeys == "Itemcategorykey") {
+					File_cdrw_proc cpa1 = new File_cdrw_proc(); 
+					cpa1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					Itemcategory.main(null);
+				}
+				else {
+					File_cdrw_proc fcp1 = new File_cdrw_proc(); 
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					New6OBJ.main(null);
+				}
 	dexa_scan.close();
 	} catch (NumberFormatException e) {
 		e.printStackTrace();

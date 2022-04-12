@@ -8,13 +8,13 @@ import je.panse.doro.main.Enter;
 
 public class New6OBJ {
 	public static void main(String skeys) throws Exception {
-		skeys=null;
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     		ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
-			int select_code = 0;
+
 			while (true) {
+				int select_code = 0;
 				System.out.println("Enter selected code number ...   : ");
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	

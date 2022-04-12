@@ -1,9 +1,9 @@
 package je.panse.doro.comm.item_execute;
 
-import java.util.Scanner;
+import java.util.Scanner;		
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.hito.newsub.New7LAB;
+import je.panse.doro.hito.Itemcategory;
+import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class CalcTFT {
@@ -31,16 +31,21 @@ public class CalcTFT {
 			    double Tg_Ab = input.nextDouble();
 		       System.out.print("***Anti-microsomal Ab   :");
 		       double micro_Ab = input.nextDouble();
-
 				autoantibodies(TSH_R_Ab,micro_Ab,Tg_Ab);
 			}
-			Key_Iwbb bb1 = new Key_Iwbb();
-			bb1.returnkeylist(skeys);
-		} 
-    	catch (NumberFormatException e) {
+			if (skeys == "Itemcategorykey") {
+					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					Itemcategory.main(null);
+			}
+			else {
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					Newcategory nc1 = new Newcategory();
+					nc1.main(null);
+				}
+			}catch (NumberFormatException e) {
 			e.printStackTrace();
+			}
 		}
-	}
 	//---------------------------------------------------		
 	void autoantibodies(double tshr, double micr, double tgr) throws Exception {
         String tshrresult = ("    Anti-TSH-R Ab        : [  " + tshr +  "  ]\tIU/L\t    < 1.75  ");

@@ -3,6 +3,10 @@ package je.panse.doro.comm.item_execute;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.Menu_list;
+import je.panse.doro.hito.Itemcategory;
+import je.panse.doro.hito.Newcategory;
+import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
@@ -32,9 +36,17 @@ public class CalcChol {
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
 			System.out.print(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult);
-			Key_Iwbb bb1 = new Key_Iwbb();
-			bb1.returnkeylist(skeys);
-		} catch (NumberFormatException e) {
+				
+				if (skeys == "Itemcategorykey") {
+					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					Itemcategory.main(null);
+				}
+				else {
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					Newcategory nc1 = new Newcategory();
+					nc1.main(null);
+				}
+    	} catch (NumberFormatException e) {
 		e.printStackTrace();
 		}
 	}

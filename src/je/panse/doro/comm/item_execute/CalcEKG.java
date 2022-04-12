@@ -8,7 +8,9 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_execute.CalcACC;
+import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
@@ -58,8 +60,14 @@ public class CalcEKG {
 							dn1.deuxnine();;	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-				Key_Iwbb bb1 = new Key_Iwbb();
-				bb1.returnkeylist(skeys);
+				if (skeys == "Itemcategorykey") {
+					ekg1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					Itemcategory.main(null);
+				}
+				else {
+					ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					New6OBJ.main(null);
+				}
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

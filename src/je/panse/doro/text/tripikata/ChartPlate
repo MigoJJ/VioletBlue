@@ -1,20 +1,30 @@
-C.C.>
-   
+ < Chief Complaint >
+ 
+
+< Past Medical History >
+    ----------------------------------------------------------------
+    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
+         DM (-)   HTN (-)   Chol (-)
+    FHx>  
+    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
+         All denied conditions 
+    ----------------------------------------------------------------
 S >
 O >
-<<<<<<< HEAD
-=======
+.   height   [  1.0 ] cm
+.   weight   [  1.0  ] kg
+.   BMI      [  10000.0  ] kg/m^2
+.   waist    [  1  ] cm
+    BP    [ 125 / 1 ]mmHg   PR [ 1 ]/minute  Regular LSP
+    Chest PA  : 정상 (No Active lesions inLung)
+    EKG       : 정상 (Within Normal Limits)
 LAB >
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/0413_up
-=======
->>>>>>> refs/remotes/origin/0413_up
-=======
->>>>>>> refs/remotes/origin/0413_up
-=======
->>>>>>> refs/remotes/origin/0413_up
+    FBS  [ 100 ] mg/dl     HbA1c [ 6.3 ] %
+    free-T4 [  1.0  ] ug/dL    TSH [  1.0  ] mIU/mL
+    TC-HDL-TG LDL     [  1 - 1 - 1 - 1  ] mg/dL
+
+	Creatinine [ 1.0 ] mg/dl
+	eGFR [ 1.0 ] ml/min	+A/C ratio [ 1.0 ]
+    25-OH-Vitamin-D    [ 222.0 ] ng/mL
 A >
-	#  Atypical Chest pain
 P >
