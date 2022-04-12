@@ -19,10 +19,12 @@ public class StartForm {
 		
 		st1.readfiler(Enter.wt + "/singlebeam/StartMenuList");
 
-		try (Scanner case_code = new Scanner(System.in)) {
+
 			while (true) {
+				try (Scanner case_code = new Scanner(System.in)) {
+				int select_code =1;
 				System.out.println("Enter selected code number ...   : ");
-				int select_code = Integer.valueOf(case_code.nextLine());
+				select_code = case_code.nextInt();
 			
 				switch (select_code) {
 					case 1 : st2.main(null);break;
@@ -36,10 +38,11 @@ public class StartForm {
 			   		case 999:st5.Key_Iwbb_Page(select_code);	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-			}	
+				
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
     }
+	}
 // ----------
 }

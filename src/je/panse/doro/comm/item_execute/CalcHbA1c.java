@@ -9,14 +9,14 @@ import je.panse.doro.main.Enter;
 public class CalcHbA1c {
 	public void main(String skeys) throws Exception { 
 		int Glucose;
-		int Fbspp2;
+		double Fbspp2;
 		double HbA1c;
     	String FP = "FBS";
 		String  Gluresult;
  
     	try (Scanner input = new Scanner(System.in)) {
     		System.out.print("========= Input FBS/PP2   Glucose  HBA1c(%)   : ");
-		        Fbspp2 = input.nextInt();
+		        Fbspp2 = input.nextDouble();
 		        Glucose = input.nextInt();
 		        HbA1c = input.nextDouble();
 //      input.close();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.ImageCall;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
 public class DisSupp {
@@ -27,6 +28,8 @@ public class DisSupp {
 		}catch (NumberFormatException e) {
 		e.printStackTrace();
 		}
+		StartForm     rk2 = new StartForm();
+		rk2.main(null);
 	}
 // -------
 }

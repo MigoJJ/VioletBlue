@@ -67,19 +67,22 @@ public class CalcACC {
 			
 			case "at": aI("\t#  Atypical Chest pain");break;
 				case "ap" : aI("\t#  Angina Pectoris");break;
-				case "af" : aI("\t#  Atrial Fibrillation ");break;
 				case "ami": aI("\t#  s/p Aute Myocardial Infaction ");break;
 				case "as": aI("\t#  Artherosclerosis Carotid artery");break;
-
+				case "af" : aI("\t#  Atrial Fibrillation ");break;
+				case "pvc" : aI("\t#  Premature Ventricular Contractions");break;
+				case "apc" : aI("\t#  atrial premature complexes");break;
+				
 			case "ge": aI("\t#  Epigastric Pain");break;
 				case "gre": aI("\t#  Reflux esophagitis");break;
 				case "gcag": aI("\t#  Chonic Atrophic Gastritis");break;
 				case "gcsg": aI("\t#  Chronic Superficial Gastritis");break;
 				case "gceg": aI("\t#  r/o Chronic Erosive Gastritis");break;
 				case "ggp": aI("\t#  GB polyp");break;
-
 			
 			// ----------------------------------------------진료 보조
+			case "cd" : aI("\t#  Cognitive Disorder");break;
+	
 			case "oc" : aI("\t#  s/p Cholecystectomy d/t GB stone	");break;
 				case "oa" : aI("\t#  s/p Appendectomy ");break;
 				case "oh" : aI("\t#  s/p TAH : Total Abdominal Hysterectomy ");break;	
@@ -91,21 +94,28 @@ public class CalcACC {
 		   		case "hc" : aI("\t#  Hepatic Cyst ");break;
 				case "hn" : aI("\t#  Hepatic Nodule ");break;
 				case "hf" : aI("\t#  Fatty Liver");break;
+					case "hfmi" : aI("\t#  Mild Fatty Liver");break;
+					case "hfmo" : aI("\t#  Moderate Fatty Liver");break;
+					case "hfse" : aI("\t#  Severe Fatty Liver");break;
 			
 			case "rc" : aI("\t#  Renal Cyst ");break;
 				case "rs" : aI("\t#  Renal Stone ");break;
 				case "rn" : aI("\t#  Renal Nodule ");break;
+				case "rh" : aI("\t#  hematuria ");break;
+				case "rp" : aI("\t#  isolated proteinuria");break;
 			
 			case "bc" : aI("\t#  Breast Cyst ");break;
 				case "bn" : aI("\t#  Breast Nodule ");break;
+				case "bnb" : aI("\t#  Breast Nodule with biopsy ");break;
 				case "bco" : aI("\t#  s/p Breast Cancer Operation");break;
 
 			case "ins": aI("\t#  Insomnia");break;
+			case "cov": aI("\t#  COVID-19 PCR (+)");break;
 				case "ver": aI("\t#  Vertigo");break;
 				case "hd": aI("\t#  Headache");break;
 				case "ida": aI("\t#  Iron Deficiency Anemia");break;
-				case "UTI": aI("\t#  Urinary Tract Infection");break;
-				case "URI": aI("\t#  Upper Respiratory Infection");break;
+				case "uti": aI("\t#  Urinary Tract Infection");break;
+				case "uri": aI("\t#  Upper Respiratory Infection");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : aI("\t#  s/p Bronchial Asthma ");break;
 				case "pc" : aI("\t#  Chronic Cough ");break;
