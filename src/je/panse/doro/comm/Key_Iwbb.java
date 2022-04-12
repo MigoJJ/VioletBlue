@@ -26,21 +26,10 @@ public class Key_Iwbb {
 			rk11.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			returnkeylist("Newcategorykey");
-		 }
-<<<<<<< HEAD
-		 else if (select_code == 99) {			rk11.deuxnine();
-=======
-		 else if (select_code == 99) {			
-			rk11.deuxnine();
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/0407_up
-=======
+		}
+		else if(select_code == 99) { 
 			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
->>>>>>> refs/remotes/origin/0407_up
-=======
-			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
->>>>>>> refs/remotes/origin/0407_up
+
 			returnkeylist("StartFormkey");
 		  }
 		 else if (select_code == 999){
@@ -51,7 +40,8 @@ public class Key_Iwbb {
 		            }
 		 else {
 		  }
-	}
+		
+    }
 	
 	public void returnkeylist(String selectkey) throws IOException, Exception {
 		if (selectkey!=null) {

@@ -6,10 +6,7 @@ public class SingleBeam {
 	public static void main(String[] string) throws Exception {
 		Menu_list.main(Enter.wt + "/singlebeam/SingleBeam");
 			//sf1.readfiler(Enter.wt + "/singlebeam/DoctorLogin");
-<<<<<<< HEAD
-=======
-	
->>>>>>> refs/remotes/origin/0407_up
+
     	Debut sb2 = new Debut(); 
 	    	sb2.main(null);
 	}
