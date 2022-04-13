@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;					
+import java.io.IOException;						
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -15,19 +15,17 @@ public class New3CC {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	
 	public void main(String[] args) throws Exception {
-
-	    try (Scanner s = new Scanner(System.in)) {
-	    	System.out.println("Enter chief complain :");  	a = s.nextLine();
-		    System.out.println("Enter duration:");	    	b = s.nextLine();
-
+		try (Scanner s = new Scanner(System.in)) {
+			System.out.println(">>> Enter chief complain :>>>");  	a = s.nextLine();
+			System.out.println(">>> Enter duration:>>>");	    	b = s.nextLine();
 			Integer bint = Integer.valueOf(b);
 			if (bint == 99 | bint >= 1990) {
 				simplecc(bint);
 				dn1.deuxnine();
 				cc1.main(null); 	
 			}
-			System.out.println("Enter year/month/day:");    	c = s.nextLine();
-			System.out.println("\nEnter... state of health E/G/F/P...");
+			System.out.println(">>> Enter year/month/day:>>>");    	c = s.nextLine();
+			System.out.println("\n>>> Enter... state of health E/G/F/P...>>>");
 		    														f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);

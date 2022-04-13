@@ -28,7 +28,8 @@ public class New6OBJ {
 					case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
-					default :System.out.println(" uncertain ... please check  !!");
+					default :
+						System.out.println(" uncertain ... please check  !!");
 				}
 			}
 		} catch (NumberFormatException e) {

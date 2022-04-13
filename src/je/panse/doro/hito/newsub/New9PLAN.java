@@ -14,9 +14,7 @@ public class New9PLAN {
 		CalcDitto       ob3 = new CalcDitto();
 		ThyPrescription ob4 = new ThyPrescription(); 
 		Key_Iwbb        st999 = new Key_Iwbb();
-		
     	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
-
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {
@@ -28,8 +26,9 @@ public class New9PLAN {
 					case 2 : ob4.main("/ThyroidStart"); break;
 
 			   		case 9 : case 99 : case 999 :
-			   				  st999.Key_Iwbb_Page(select_code); break;
-					default :System.out.println(" uncertain ... please check  !!");
+		   				st999.Key_Iwbb_Page(select_code); break;
+					default :
+						System.out.println(" uncertain ... please check  !!");
 					}
 				New9PLAN.main(null); break;
 			}

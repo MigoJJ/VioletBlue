@@ -15,12 +15,12 @@ public class CalcBMI {
 
         try (Scanner input = new Scanner(System.in)) {
 			System.out.print("*****Input weight in kilogram: ");
-			double weight = input.nextDouble();
+				double weight = input.nextDouble();
 			System.out.print("*****Input height in centimeter: ");
-			double height = input.nextDouble();
+				double height = input.nextDouble();
 			System.out.print("*****Input waist in centimeter: ");
-			int waist = input.nextInt();
-			double BMI = weight / (height* height/10000);
+				int waist = input.nextInt();
+				double BMI = weight / (height* height/10000);
 			String result2 = String.format("%.1f", BMI);
 //	        input.close();
 			String rheight   = (".   height   [  " + height + " ] cm");

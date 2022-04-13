@@ -1,7 +1,6 @@
 package je.panse.doro.comm;
 
-import java.io.File;
-import je.panse.doro.main.Enter;
+import java.io.File;	
 import java.awt.Desktop;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -31,7 +30,7 @@ public class File_editor_proc {
 		try {
 			destination.open(new File(pickupfile));
 			Scanner sc = new Scanner(System.in);
-				System.out.println("Enter a pickup line number :");
+				System.out.println(">>> Enter a pickup line number :>>>");
 				int lnol = sc.nextInt();
 				System.out.println("User input is  : "+ lnol);
 				String line3 = Files.readAllLines(Paths.get(pickupfile)).get(lnol-1);

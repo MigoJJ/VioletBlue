@@ -19,12 +19,13 @@ public class New8ACC {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
-					case 1 : CalcACC ob3 = new CalcACC();	 ob3.main(null);break;
-
+					case 1 : 
+						CalcACC ob3 = new CalcACC();	 ob3.main(null);break;
 			   		case 9 : case 99 : case 999 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
-					default :System.out.println(" uncertain ... please check  !!");
+					default :
+						System.out.println(" uncertain ... please check  !!");
 				}
 				StartForm.main(null);
 			}

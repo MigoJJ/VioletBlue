@@ -18,25 +18,20 @@ public class CalcChol {
 		else {
 			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
-
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input TC : ");
 	        int TC = input.nextInt();
-	        
 	        System.out.print("========= Input HDL  : ");
 	        int HDL = input.nextInt();
-	        
 	        System.out.print("========= Input TG : ");
 	        int TG = input.nextInt();
-	        
 	        System.out.print("========= Input LDL  : ");
 	        int LDL = input.nextInt();
 //      input.close();
 	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
-			System.out.print(Cholresult);
+	        System.out.print(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult);
-				
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);

@@ -27,11 +27,13 @@ public class CalcCPA {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
-					case 1 : accessInsert("정상 (No Active lesions inLung)"); break;
-					case 2 : accessInsert("폐결핵 흔적 (Pulmonary tuberculosis scar)"); break;
+					case 1 : 
+						accessInsert("정상 (No Active lesions in Lung)"); break;
+					case 2 : 
+						accessInsert("폐결핵 흔적 (Pulmonary tuberculosis scar)"); break;
 
-
-					case 9 : File_cw_chart dn1 = new File_cw_chart();
+					case 9 : 
+						File_cw_chart dn1 = new File_cw_chart();
 							dn1.deuxnine();	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
@@ -61,7 +63,7 @@ public class CalcCPA {
 			bufferedWriter.newLine();
 			bufferedWriter.flush();
 			bufferedWriter.close();
-}
+	}
 //------------------------------------------------
    void accessInsert(String EKG_code) throws IOException {
 				try {
@@ -70,6 +72,6 @@ public class CalcCPA {
 				} catch (IOException e) {
 					e.printStackTrace();
 			}
-}
+   }
 // ----------
 }

@@ -12,9 +12,10 @@ import je.panse.doro.hito.Newcategory;
 public class Debut {
 	public void main(String[] args) throws Exception {
 		DirectoryAdmin 	de2  = new DirectoryAdmin();
-		Newcategory 		de3  = new Newcategory();
 		File_cw_chart 	fcwc = new File_cw_chart();
 		File_editor_proc  dn4 = new File_editor_proc();
+		Newcategory 		de3  = new Newcategory();
+
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
 				System.out.println(">>> Enter code number ...>>>   : ");

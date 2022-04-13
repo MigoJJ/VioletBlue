@@ -10,7 +10,7 @@ import je.panse.doro.main.Enter;
 public class New4PMH {
 	public static void main(String[] args) throws Exception { 
 	    try (Scanner s = new Scanner(System.in)) {
-			System.out.println("Enter PMH ...:");
+			System.out.println(">>> Enter PMH ...>>>:");
 			String pmh = s.nextLine();
 			
 			File_cdrw_proc fcp1 = new File_cdrw_proc();

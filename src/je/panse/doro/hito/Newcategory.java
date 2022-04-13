@@ -1,7 +1,6 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;
-import je.panse.doro.comm.File_cdrw_proc;
+import java.util.Scanner;	
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcACC;
@@ -9,14 +8,13 @@ import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_execute.CalcHbA1c;
 import je.panse.doro.hito.newsub.*;
-import je.panse.doro.main.Enter;
 
 public class Newcategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
 		try {	
 			File_cw_chart  ob3 = new File_cw_chart(); 
-	    		ob3.cleanChartPlate();
+	    	ob3.cleanChartPlate();
 	    	switching();
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
@@ -28,15 +26,14 @@ public class Newcategory {
    		while (true) {
 		   	System.out.println("Enter selected code number ...   : ");
 		   	int select_code = Integer.valueOf(new_code.nextLine().trim());
-	
 		   	switch (select_code) {
-		   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;
-		   		case 2 : New4PMH.main(null);  	break;
-				case 3 : New5SUJ.main(null);  	break;
-		   		case 4 : New6OBJ.main(null);  	break;
-				case 5 : New7LAB.main(null);  	break;
-				case 6 : New8ACC.main(null);  	break;
-				case 7 : New9PLAN.main(null);  	break;
+		   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);break;
+		   		case 2 : New4PMH.main(null);break;
+				case 3 : New5SUJ.main(null);break;
+		   		case 4 : New6OBJ.main(null);break;
+				case 5 : New7LAB.main(null);break;
+				case 6 : New8ACC.main(null);break;
+				case 7 : New9PLAN.main(null);break;
 
 				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
@@ -46,10 +43,13 @@ public class Newcategory {
 		   		case 9 : case 99: case 999 :	
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
 		   			st999.Key_Iwbb_Page(select_code); break;
-				default :System.out.println(" uncertain ... please check  !!");
-		   	}
+				default :
+					System.out.println(" uncertain ... please check  !!");
+		   }
 //		new_code.close();
    			}
+		}catch (NumberFormatException e) {
+		e.printStackTrace();
 		}
     }
  // --------------------------------------------
