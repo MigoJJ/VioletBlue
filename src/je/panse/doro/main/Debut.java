@@ -36,6 +36,20 @@ public class Debut {
 							Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 							nc1.main(null);  	
 							break; 
+							
+						case 311 :
+							File_cw_chart  ob3 = new File_cw_chart(); 
+					    	ob3.cleanChartPlate();
+							fcw.callchartlist("/knots/hana");
+					    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+							nc1.main(null);break; // Items		
+						
+						case 312 :
+							File_cw_chart  ob4 = new File_cw_chart(); 
+					    	ob4.cleanChartPlate();
+							fcw.callchartlist("/knots/soap");
+					    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+							nc1.main(null);break; // Items		
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}
