@@ -37,8 +37,8 @@ public class CalcChol {
 					Itemcategory.main(null);
 				}
 				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-					Newcategory nc1 = new Newcategory();
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+					New7LAB nc1 = new New7LAB();
 					nc1.main(null);
 				}
     	} catch (NumberFormatException e) {

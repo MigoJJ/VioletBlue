@@ -28,15 +28,15 @@ public class CalcCr {
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresult);
 
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-					Newcategory nc1 = new Newcategory();
-					nc1.main(null);
-				}
+			       if (skeys == "Itemcategorykey") {
+						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+						Itemcategory.main(null);
+					}
+					else {
+						fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+						New7LAB nc1 = new New7LAB();
+						nc1.main(null);
+					}
 			
 		} catch (NumberFormatException e) {
 		e.printStackTrace();

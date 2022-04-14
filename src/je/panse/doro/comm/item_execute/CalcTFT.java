@@ -4,6 +4,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
+import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
 public class CalcTFT {
@@ -33,13 +34,13 @@ public class CalcTFT {
 		       double micro_Ab = input.nextDouble();
 				autoantibodies(TSH_R_Ab,micro_Ab,Tg_Ab);
 			}
-			if (skeys == "Itemcategorykey") {
+		       if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);
-			}
-			else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-					Newcategory nc1 = new Newcategory();
+				}
+				else {
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+					New7LAB nc1 = new New7LAB();
 					nc1.main(null);
 				}
 			}catch (NumberFormatException e) {

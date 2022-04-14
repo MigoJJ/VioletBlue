@@ -11,21 +11,9 @@
     ----------------------------------------------------------------
 S >
 O >
-.   height   [  16.0 ] cm
-.   weight   [  16.0  ] kg
-.   BMI      [  625.0  ] kg/m^2
-.   waist    [  16  ] cm
-    BP [ 16 / 16 ]mmHg   PR [ 16 ]/min  Regular LSP
 LAB >
-    FBS  [ 11 ] mg/dl     HbA1c [ 6.9 ] %
+.   Hb  [ 1.0 ] g/dL
+.   WBC [ 1 ] cells/L
+.   Plt [ 1 ] billon/L
 A >
-	#  Hypercholesterolemia 
-	#  Hypertension 
-	#  HyperTriGlyceridemia 
-	#  Pneumonia 
-	#  Chronic Cough 
-	#  s/p Cholecystectomy d/t GB stone	
 P >
-	...OPD F/U x [  6  ]-month later
-	...next Lab F/U plan (+)
-	...dose-down

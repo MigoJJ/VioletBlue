@@ -15,7 +15,7 @@ public class CalcHbA1c {
 		double Fbspp2;
 		double HbA1c;
     	String FP = "FBS";
-		String  Gluresult;
+		String Gluresult;
  
     	try (Scanner input = new Scanner(System.in)) {
     		System.out.print("========= Input FBS/PP2   Glucose  HBA1c(%)   : ");
@@ -31,15 +31,15 @@ public class CalcHbA1c {
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
-					Newcategory nc1 = new Newcategory();
-					nc1.main(null);
-				}
+			       if (skeys == "Itemcategorykey") {
+						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+						Itemcategory.main(null);
+					}
+					else {
+						fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+						New7LAB nc1 = new New7LAB();
+						nc1.main(null);
+					}
 			
 		} catch (NumberFormatException e) {
 		e.printStackTrace();
