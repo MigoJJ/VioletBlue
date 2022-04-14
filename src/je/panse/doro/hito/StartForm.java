@@ -33,7 +33,21 @@ public class StartForm {
 					case 4 :
 						Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");
 						st4.main(null);break; // Items		
-			   		case 999:
+						
+					case 311 :
+						File_cw_chart  ob3 = new File_cw_chart(); 
+				    	ob3.cleanChartPlate();
+						st1.callchartlist("/knots/hana");
+				    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+						st2.main(null);break; // Items		
+					
+					case 312 :
+						File_cw_chart  ob4 = new File_cw_chart(); 
+				    	ob4.cleanChartPlate();
+						st1.callchartlist("/knots/soap");
+				    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+						st2.main(null);break; // Items		
+					case 999:
 			   			st5.Key_Iwbb_Page(select_code);	break;
 					default :
 						System.out.println(" uncertain ... please check  !!");
