@@ -14,7 +14,6 @@ public class New9PLAN {
 		CalcDitto       ob3 = new CalcDitto();
 		ThyPrescription ob4 = new ThyPrescription(); 
 		Key_Iwbb        st999 = new Key_Iwbb();
-    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {

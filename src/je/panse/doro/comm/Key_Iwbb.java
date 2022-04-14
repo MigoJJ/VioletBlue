@@ -18,15 +18,16 @@ public class Key_Iwbb {
 //	Discategory   rk5 = new Discategory();
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
+		DirectoryAdmin   	rk13 = new DirectoryAdmin();
 		File_cw_chart 	rk11 = new File_cw_chart();
 		File_editor_proc 	rk12 = new File_editor_proc();
-		DirectoryAdmin   	rk13 = new DirectoryAdmin();
 		if (select_code == 9) { 
 			rk11.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			returnkeylist("Newcategorykey");
 		}
 		else if(select_code == 99) { 
+			rk11.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
 			returnkeylist("StartFormkey");
 		  }

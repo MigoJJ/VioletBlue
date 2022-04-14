@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;						
+import java.io.IOException;							
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -10,9 +10,9 @@ import je.panse.doro.main.Enter;
 
 public class New3CC {
 	static String a, b, c, f;
-	File_cw_chart dn1 = new File_cw_chart();
-	Newcategory cc1 = new Newcategory(); 
-	File_cdrw_proc fcp1 = new File_cdrw_proc();
+	File_cdrw_proc 	fcp = new File_cdrw_proc();
+	File_cw_chart 	dn1 = new File_cw_chart();
+	Newcategory 		cc1 = new Newcategory(); 
 	
 	public void main(String[] args) throws Exception {
 		try (Scanner s = new Scanner(System.in)) {
@@ -48,7 +48,7 @@ public class New3CC {
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
-		fcp1.writeliner(Enter.wts + "/3CC", chartline);
+		fcp.writeliner(Enter.wts + "/3CC", chartline);
 						  
 		}
 	//------------------------------------------------
@@ -62,17 +62,17 @@ public class New3CC {
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline1 = "\tGeneral state :  " + f + "  (no any significant state change)";
-		fcp1.writeliner(Enter.wts + "/3CC", chartline1);
+		fcp.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 	//------------------------------------------------
 	void simplecc(int bint) throws IOException {
 		if (bint == 99) {
 			String chartline4 = ("\t" + a) ;
-			fcp1.writeliner(Enter.wts + "/3CC", chartline4);
+			fcp.writeliner(Enter.wts + "/3CC", chartline4);
 		}
 		else if (bint >= 1900) {
 			String chartline3 = ( "\t" + a + "  " + bint + " year-diagnosed");
-			fcp1.writeliner(Enter.wts + "/3CC", chartline3);
+			fcp.writeliner(Enter.wts + "/3CC", chartline3);
 		}
 	}
 //------------------------------------------------

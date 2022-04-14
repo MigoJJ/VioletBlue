@@ -12,9 +12,6 @@ import je.panse.doro.main.Enter;
 
 public class New7LAB {
 	public static void main(String args) throws Exception { 
-		File_cdrw_proc nl1 = new File_cdrw_proc(); 
-    		nl1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
-
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {

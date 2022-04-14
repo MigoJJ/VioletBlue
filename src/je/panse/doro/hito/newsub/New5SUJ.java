@@ -10,7 +10,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class New5SUJ{
-	public static void main(String args[]) throws Exception {
+	public static void main(String args, Menu_list suj_insert) throws Exception {
 		String path = (Enter.wts + "/5SUJ");      
     	String st;
 		try (FileWriter fileWriter = new FileWriter(path,true)) {
@@ -20,24 +20,26 @@ public class New5SUJ{
 			do{
 				st = (suj_text.nextLine().trim());
 			   if(st.equals("quit")){
-		        	System.out.println("Inserted code finished  !  ");
-		        	File_cw_chart dn1 = new File_cw_chart();
-		        	Newcategory si1= new Newcategory(); 
-					dn1.deuxnine();
+			    	System.out.println("Inserted code finished  !  ");
 					Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+			    	File_cw_chart dn1 = new File_cw_chart();
+			    	Newcategory si1= new Newcategory(); 
+					dn1.deuxnine();
 					si1.main(null); 	
-		    	break;
-			   }
+			    	break;
+			}
 				System.out.println("st = :  " + st + "\n");
 				fileWriter.append(st + "\n");
-			  suj_insert(st);
+			  New5SUJ.suj_insert(st);
 			}while (st != "quit");
 			System.out.println("Success");
 			suj_text.close();
+		}catch (IOException e) {
+		e.printStackTrace();
 		}
 	}
 
-	private static void suj_insert(String st) throws IOException {
+	static void suj_insert(String st) throws IOException {
     	String SUJresult = ("    " + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writeliner(Enter.wts + "/5SUJ", SUJresult);

@@ -1,5 +1,6 @@
 package je.panse.doro.hito.newsub;
 
+import java.io.IOException;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -20,6 +21,8 @@ public class New4PMH {
 			dn1.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			cc1.main(null);
+		}catch (IOException e) {
+		e.printStackTrace();
 		}
 	}
 	// ----------------------------------------------

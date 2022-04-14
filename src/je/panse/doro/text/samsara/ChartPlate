@@ -1,19 +1,31 @@
-C.C.>
-   
-S >    B형 간염 : 검진 2021-10 결과 확인 하기로
+ < Chief Complaint >
+ 
+
+< Past Medical History >
+    ----------------------------------------------------------------
+    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
+         DM (-)   HTN (-)   Chol (-)
+    FHx>  
+    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
+         All denied conditions 
+    ----------------------------------------------------------------
+S >
 O >
-    BP [ 135 / 90 ]mmHg   PR [ 72 ]/min  Regular LSP
-.   height   [  9.0 ] cm
-.   weight   [  6.0  ] kg
-.   BMI      [  740.7  ] kg/m^2
-.   waist    [  1  ] cm
+.   height   [  16.0 ] cm
+.   weight   [  16.0  ] kg
+.   BMI      [  625.0  ] kg/m^2
+.   waist    [  16  ] cm
+    BP [ 16 / 16 ]mmHg   PR [ 16 ]/min  Regular LSP
+LAB >
+    FBS  [ 11 ] mg/dl     HbA1c [ 6.9 ] %
 A >
+	#  Hypercholesterolemia 
 	#  Hypertension 
-	#  BPH 
-	#  Hepatic Cyst 
-	#  Prediabetes
-	#  HBsAg(+) Carrier 
+	#  HyperTriGlyceridemia 
+	#  Pneumonia 
+	#  Chronic Cough 
+	#  s/p Cholecystectomy d/t GB stone	
 P >
-	...OPD F/U x [  3  ]-month later
+	...OPD F/U x [  6  ]-month later
 	...next Lab F/U plan (+)
-	...no dose-adjust and continue
+	...dose-down

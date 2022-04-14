@@ -11,10 +11,11 @@ import je.panse.doro.hito.Newcategory;
 
 public class Debut {
 	public void main(String[] args) throws Exception {
-		DirectoryAdmin 	de2  = new DirectoryAdmin();
-		File_cw_chart 	fcwc = new File_cw_chart();
-		File_editor_proc  dn4 = new File_editor_proc();
-		Newcategory 		de3  = new Newcategory();
+		DirectoryAdmin	da1 = new DirectoryAdmin();
+		File_cw_chart 	fcw = new File_cw_chart();
+		File_editor_proc	fep = new File_editor_proc();
+		Enter				en1 = new Enter();
+		Newcategory 		nc1 = new Newcategory();
 
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
@@ -23,15 +24,17 @@ public class Debut {
 				switch (select_code) {
 					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
 					case 2 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
-					case 3 : de2.prepare_ChartPlate();
-							de2.copy_Directory(Enter.wtk + "/hana", Enter.wts);
-							Enter.main(null);  	
+					case 3 : 
+							da1.prepare_ChartPlate();
+							da1.copy_Directory(Enter.wtk + "/hana", Enter.wts);
+							en1.main(null);  	
 							break;
-					case 4 : de2.copy_Directory(Enter.wtt, Enter.wts);
-							fcwc.writechart();
-							dn4.main(Enter.wt + "/tripikata/ChartPlate");
+					case 4 : 
+							da1.copy_Directory(Enter.wtt, Enter.wts);
+							fcw.writechart();
+							fep.main(Enter.wt + "/samsara/ChartPlate");
 							Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
-							de3.main(null);  	
+							nc1.main(null);  	
 							break; 
 					default :System.out.println(" uncertain ... please check  !!");
 				}

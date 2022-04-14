@@ -7,10 +7,12 @@ import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String[] string) throws Exception {
-		File_cw_chart st3 = new File_cw_chart();
-		Key_Iwbb st5 = new Key_Iwbb();
-		Newcategory st2 = new Newcategory(); 
-		Diseasecategory st4 = new Diseasecategory(); 
+		File_cw_chart 	st1	= new File_cw_chart();
+		Newcategory 		st2 = new Newcategory(); 
+		Diseasecategory 	st3 = new Diseasecategory(); 
+		Itemcategory 		st4 = new Itemcategory();
+		Key_Iwbb 			st5 = new Key_Iwbb();
+
 		try {	
 			int select_code =1;
 			while (true) {
@@ -23,15 +25,14 @@ public class StartForm {
 						st2.main(null);break;
 					case 2 :
 						Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu"); 
-						st3.callchartlist("/knots/soap");
+						st1.callchartlist("/knots/soap");
 						st2.main(null);break;
 					case 3 :
 						Menu_list.main(Enter.wt + "/singlebeam/DisMenu"); 
-						st4.main(null);break;  // Disease Category
+						st3.main(null);break;  // Disease Category
 					case 4 :
 						Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");
-						Itemcategory itc = new Itemcategory();
-						itc.main(null);break; // Items		
+						st4.main(null);break; // Items		
 			   		case 999:
 			   			st5.Key_Iwbb_Page(select_code);	break;
 					default :
