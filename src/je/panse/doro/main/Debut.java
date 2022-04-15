@@ -37,14 +37,14 @@ public class Debut {
 							nc1.main(null);  	
 							break; 
 							
-						case 311 :
+						case 31 :
 							File_cw_chart  ob3 = new File_cw_chart(); 
 					    	ob3.cleanChartPlate();
 							fcw.callchartlist("/knots/hana");
 					    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 							nc1.main(null);break; // Items		
 						
-						case 312 :
+						case 32 :
 							File_cw_chart  ob4 = new File_cw_chart(); 
 					    	ob4.cleanChartPlate();
 							fcw.callchartlist("/knots/soap");

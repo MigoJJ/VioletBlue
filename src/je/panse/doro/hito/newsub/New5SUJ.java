@@ -19,7 +19,7 @@ public class New5SUJ{
 
 			do{
 				st = (suj_text.nextLine().trim());
-			   if(st.equals("quit")){
+			   if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
 			    	System.out.println("Inserted code finished  !  ");
 					Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			    	File_cw_chart dn1 = new File_cw_chart();

@@ -41,10 +41,10 @@ public class New3CC {
 	void yymmdd(String ymd) throws IOException {
 		String chartline;
 		switch(ymd) {
-			case "y":   c = " year-ago";			    break;
-			case "m":   c = " month-ago";			    break;
-			case "w":   c = " week-ago";			    break; 
-			case "d":   c = " day-ago";			    break;  
+			case "y": case "ㅛ":  c = " year-ago";			    break;
+			case "m": case "ㅡ":  c = " month-ago";			    break;
+			case "w": case "ㅈ":  c = " week-ago";			    break; 
+			case "d": case "ㅇ":  c = " day-ago";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
@@ -55,10 +55,10 @@ public class New3CC {
 	void egfp(String state) throws IOException {
 		String chartline1;
 		switch(state) {
-			case "e":   f = "-- Excellent";		    break;
-			case "g":   f = "-- Good";			    break;
-			case "f":   f = "-- Fair";			    break;  
-			case "p":   f = "-- Poor";			    break;  
+			case "e": case "ㄷ":  f = "-- Excellent";		    break;
+			case "g": case "ㅎ":  f = "-- Good";			    break;
+			case "f": case "ㄹ":  f = "-- Fair";			    break;  
+			case "p": case "ㅔ":  f = "-- Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
 		chartline1 = "\tGeneral state :  " + f + "  (no any significant state change)";

@@ -16,13 +16,12 @@ import je.panse.doro.main.Enter;
 public class CalcACC {
     public static void main(String skeys) throws Exception{
     	File_cdrw_proc fcp1 = new File_cdrw_proc();
-
-        Scanner scanner=new Scanner(System.in);
-        while (true) {
+       Scanner scanner=new Scanner(System.in);
+       while (true) {
             System.out.println("Insert disease code : ");
             String question = scanner.nextLine();
         	code_select(question);
-                if(question.equals("quit")){
+                if(question.equals("quit")|question.equals("q")| question.equals("ㅂ")){
 		            	System.out.println("Inserted code finished  !  ");
 						if (skeys == "Itemcategorykey") {
 							fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
@@ -53,8 +52,6 @@ public class CalcACC {
 					case "dp" : aI("\t#  DM with Peripheral Neuropathy");break;
 					case "da" : aI("\t#  DM with Autonomic Neuropathy");break;
 					case "pd" : aI("\t#  Prediabetes");break;
-					
-					
 					
 			case "t" : aI("\t#  Hypertension ")	;break;
 			case "c" : aI("\t#  Hypercholesterolemia ");break;
