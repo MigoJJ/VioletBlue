@@ -4,7 +4,9 @@
 
 	Version	0.0		Starting ittia
 	
-	Version	0.1		Studying JAVA
+	Version	0.1		jar
+		install openjdk-17-jdk-headless
+		
 	
 	Version	0.2		Instance OOP 
 					variables static
