@@ -32,7 +32,7 @@ public class CalcCBC {
 				cbchb(rHb,rWBC,rPlt);
 			}
         
-		       if (skeys == "Itemcategorykey") {
+		if (skeys == "Itemcategorykey") {
    		File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 			Itemcategory.main(null);
