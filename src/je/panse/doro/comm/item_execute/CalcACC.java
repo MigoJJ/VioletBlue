@@ -88,10 +88,15 @@ public class CalcACC {
 				case "gcag": aI("\t#  Chonic Atrophic Gastritis");break;
 				case "gcsg": aI("\t#  Chronic Superficial Gastritis");break;
 				case "gceg": aI("\t#  r/o Chronic Erosive Gastritis");break;
-				case "ggp": aI("\t#  GB polyp");break;
+
+				case "cp": aI("\t#  Colonic Polyp");break;
+				case "cd": aI("\t#  Colonic diverticulum");break;
+				case "gp": aI("\t#  GB polyp");break;
+				case "ggp": aI("\t#  Gastric Polyp");break;
+
 			
 			// ----------------------------------------------진료 보조
-			case "cd" : aI("\t#  Cognitive Disorder");break;
+			case "cod" : aI("\t#  Cognitive Disorder");break;
 	
 			case "oc" : aI("\t#  s/p Cholecystectomy d/t GB stone	");break;
 				case "oa" : aI("\t#  s/p Appendectomy ");break;
@@ -111,7 +116,8 @@ public class CalcACC {
 			case "rc" : aI("\t#  Renal Cyst ");break;
 				case "rs" : aI("\t#  Renal Stone ");break;
 				case "rn" : aI("\t#  Renal Nodule ");break;
-				case "rh" : aI("\t#  hematuria ");break;
+				case "rh" : aI("\t#  isolated hematuria ");break;
+				case "rhg" : aI("\t#  gross hematuria ");break;
 				case "rp" : aI("\t#  isolated proteinuria");break;
 			
 			case "bc" : aI("\t#  Breast Cyst ");break;
