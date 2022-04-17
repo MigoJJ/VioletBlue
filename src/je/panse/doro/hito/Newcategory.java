@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.comm.item_execute.CalcACC;
 import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcDitto;
@@ -15,7 +16,7 @@ import je.panse.doro.main.Enter;
 public class Newcategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
-		try {	
+		try {
 			File_cw_chart  ob3 = new File_cw_chart(); 
 	    	ob3.cleanChartPlate();
 	    	switching();

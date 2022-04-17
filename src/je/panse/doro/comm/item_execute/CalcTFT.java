@@ -11,16 +11,19 @@ public class CalcTFT {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 
 	public void main(String skeys) throws Exception {
-		double free_T4, TSH;
+		double T3,free_T4, TSH;
 		String  TFTresult;
     	try (Scanner input = new Scanner(System.in)) {
+	        System.out.print("*****Input T3 : ");
+	        T3 = input.nextDouble();
 	        System.out.print("*****Input free_T4 : ");
 	        free_T4 = input.nextDouble();
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
 //      input.close();
-	        TFTresult = ("    free-T4 [  " + free_T4 +  "  ] ug/dL" 
-	        			+ "    TSH [  " + TSH + "  ] mIU/mL");
+	        TFTresult = ("        T3 [  " + T3 +  "  ] ug/dL\n" 
+	        		+ "    free-T4 [  " + free_T4 +  "  ] ug/dL\n" 
+	        		+ "    TSH [  " + TSH + "  ] mIU/mL\n");
 	        fcp1.writeliner(Enter.wts + "/7LAB", TFTresult);
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");
