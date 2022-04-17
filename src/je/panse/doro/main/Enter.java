@@ -1,6 +1,7 @@
 package je.panse.doro.main;
 
-import je.panse.doro.comm.*;	
+import je.panse.doro.comm.*;
+import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.hito.StartForm;
 
 public class Enter {

@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import java.util.Scanner;		
 
 import je.panse.doro.comm.*;
+import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
