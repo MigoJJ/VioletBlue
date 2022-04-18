@@ -89,6 +89,7 @@ public class CalcACC {
 				case "gcag": aI("\t#  Chonic Atrophic Gastritis");break;
 				case "gcsg": aI("\t#  Chronic Superficial Gastritis");break;
 				case "gceg": aI("\t#  r/o Chronic Erosive Gastritis");break;
+				case "gibs": aI("\t#  r/o Irritable Bowel Syndrome3");break;
 
 				case "cp": aI("\t#  Colonic Polyp");break;
 				case "cd": aI("\t#  Colonic diverticulum");break;
