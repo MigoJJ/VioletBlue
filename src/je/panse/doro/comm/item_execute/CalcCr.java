@@ -23,8 +23,8 @@ public class CalcCr {
 				eGFR = input.nextDouble();
 				ACratio = input.nextDouble();
 //      input.close();
-		       Crresult = ("\tCreatinine [ " + Cr +  " ] mg/dl"	+ "\n\teGFR [ " + eGFR + " ] ml/min"
-		    		   + "\t+A/C ratio [ " + ACratio + " ]");
+		       Crresult = ("Creatinine [ " + Cr +  " ] mg/dl"	+ "eGFR [ " + eGFR + " ] ml/min"
+		    		   + "+A/C ratio [ " + ACratio + " ]");
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresult);
 

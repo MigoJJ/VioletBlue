@@ -62,6 +62,7 @@ public class CalcACC {
 				case "ts" : aI("\t#  Subacute Thyroiditis ");break;
 				case "tt" : aI("\t#  c/w Chronic Thyroiditis on USG");break;
 				case "tn" : aI("\t#  Thyroid nodule ")	;break;
+				case "tc" : aI("\t#  Thyroid cyst ")	;break;
 				case "tsg" : aI("\t#  Simple Goiter")	;break;
 				case "nti" : aI("\t#  Non-Thyroidal Illness ");break;
 				case "tep" : aI("\t#  Hyperthyroidism with Pregnancy ");break;
@@ -118,7 +119,7 @@ public class CalcACC {
 				case "rn" : aI("\t#  Renal Nodule ");break;
 				case "rh" : aI("\t#  isolated hematuria ");break;
 				case "rhg" : aI("\t#  gross hematuria ");break;
-				case "rp" : aI("\t#  isolated proteinuria");break;
+				case "rip" : aI("\t#  isolated proteinuria");break;
 			
 			case "bc" : aI("\t#  Breast Cyst ");break;
 				case "bn" : aI("\t#  Breast Nodule ");break;

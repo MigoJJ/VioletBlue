@@ -21,9 +21,9 @@ public class CalcTFT {
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
 //      input.close();
-	        TFTresult = ("        T3 [  " + T3 +  "  ] ug/dL\n" 
-	        		+ "    free-T4 [  " + free_T4 +  "  ] ug/dL\n" 
-	        		+ "    TSH [  " + TSH + "  ] mIU/mL\n");
+	        TFTresult = ("    T3         [  " + T3 +  "  ] ug/dL" 
+	        		+ "    free-T4 [  " + free_T4 +  "  ] ug/dL" 
+	        		+ "    TSH      [  " + TSH + "  ] mIU/mL\n");
 	        fcp1.writeliner(Enter.wts + "/7LAB", TFTresult);
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");

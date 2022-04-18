@@ -29,7 +29,7 @@ public class New5SUJ{
 			    	break;
 			}
 				System.out.println("st = :  " + st + "\n");
-				fileWriter.append(st + "\n");
+				fileWriter.append("\n" + st);
 			  New5SUJ.suj_insert(st);
 			}while (st != "quit");
 			System.out.println("Success");
