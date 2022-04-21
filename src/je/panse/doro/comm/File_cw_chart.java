@@ -12,6 +12,11 @@ public class File_cw_chart {
 			nc5.writechart();
 			nc5.chartbackup();
 	}
+	public void deuxnine1() throws IOException {
+		File_cw_chart nc5 = new File_cw_chart();	
+			nc5.writechart();
+			nc5.chartbackup();
+	}
 	// -------------------------------------------Form Files Copying
 	public void callchartlist(String laname) throws IOException {
 	   File_cdrw_proc nu1 = new File_cdrw_proc();

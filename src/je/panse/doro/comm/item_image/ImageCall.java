@@ -1,8 +1,7 @@
 package je.panse.doro.comm.item_image;
 
-import javax.imageio.ImageIO;		
+import javax.imageio.ImageIO;			
 import javax.swing.*;
-import je.panse.doro.main.Enter;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;

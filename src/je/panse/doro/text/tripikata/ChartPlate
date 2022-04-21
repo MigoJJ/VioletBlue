@@ -1,19 +1,16 @@
- < Chief Complaint >
- 
+C.C.>
+   
+    dm (onset 6 year-ago)
 
-< Past Medical History >
-    ----------------------------------------------------------------
-    PMH> tuberculosis(-) asthma(-) hepatitis(-) operation(-)
-         DM (-)   HTN (-)   Chol (-)
-    FHx>  
-    Allergy> food(-) drug(-) injection(-) antibiotics(-) vaccine(-)
-         All denied conditions 
-    ----------------------------------------------------------------
+	General state :  -- Good  (no any significant state change)
 S >
 O >
-    BP [ 125 / 85 ]mmHg   PR [ 96 ]/min  Regular LSP
-LAB >
-    T3         [  1.25  ] ug/dL    free-T4 [  12.56  ] ug/dL    TSH      [  3.1  ] mIU/mL
-
+    FBS  [ 142 ] mg/dl     HbA1c [ 5.3 ] %
 A >
+	#  Hypercholesterolemia 
+	#  Hypertension 
+	#  DM without Retinopathy 
 P >
+	...OPD F/U x [  0  ]-month later
+	...next 지디스검진 plan (+)
+	...dose-down

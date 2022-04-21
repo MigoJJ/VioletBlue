@@ -1,11 +1,12 @@
 package je.panse.doro.comm;
 
-import java.io.File;	
+import java.io.File;		
 import java.awt.Desktop;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
+import javax.swing.JFrame;
 
 public class File_editor_proc {
 	public static void main(String stringDir){
@@ -16,10 +17,11 @@ public class File_editor_proc {
         	  	System.out.println("not supported");
         	  	return;
            }
-          		Desktop desktop = Desktop.getDesktop();
-          		if(file.exists())
-          			desktop.open(file);
-        }
+   		Desktop desktop = Desktop.getDesktop();
+   		if(file.exists())
+       			desktop.open(file);
+//   		    Desktop.getDesktop().edit(file);
+         }
 		catch(Exception e){
             e.printStackTrace();
         }
