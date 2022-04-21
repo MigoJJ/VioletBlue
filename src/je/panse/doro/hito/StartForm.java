@@ -29,7 +29,7 @@ public class StartForm {
 						st1.callchartlist("/knots/soap");
 						st2.main(null);break;
 					case 3 :
-						Menu_list.main(Enter.wt + "/singlebeam/DisMenu"); 
+						Menu_list.main(Enter.wd + "/fourgate/FourgateMenu"); 
 						st3.main(null);break;  // Disease Category
 					case 4 :
 						Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");

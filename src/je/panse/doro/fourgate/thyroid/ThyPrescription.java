@@ -1,4 +1,4 @@
-package je.panse.doro.aeternum.thyroid;
+package je.panse.doro.fourgate.thyroid;
 
 import java.io.File;				
 import java.io.FileNotFoundException;
@@ -10,6 +10,9 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_editor_proc;
+import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_execute.CalcBP;
+import je.panse.doro.comm.item_execute.CalcTFT;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -17,10 +20,10 @@ public class ThyPrescription {
 	public void main(String presd) throws Exception {
 		File_cdrw_proc   tp1 = new File_cdrw_proc();
 		File_editor_proc tp2 = new File_editor_proc();
-		tp1.readfiler(Enter.wd +"/aeternum/thyroid/fourgate" + presd);
+//		tp1.readfiler(Enter.wd +"/fourgate/thyroid/" + presd);
 		
-		Path path = Paths.get(Enter.wd +"/aeternum/thyroid/prescriptlist");
-		String pathf = (Enter.wd +"/aeternum/thyroid/prescriptlist");
+		Path path = Paths.get(Enter.wd +"/fourgate/thyroid/text/prescriptlist");
+		String pathf = (Enter.wd +"/fourgate/thyroid/text/prescriptlist");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -29,12 +32,18 @@ public class ThyPrescription {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
-					case 21  : tp2.linepickup(path + "/ThySyrPx", Enter.wts+ "/9PLAN" );break;
-					case 22  : tp2.linepickup(path + "/ThySyxPx", Enter.wts+ "/9PLAN" );break;
-					case 23  : tp2.linepickup(path + "/ThyMetPx", Enter.wts+ "/9PLAN" );break;
-					case 24  : tp2.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
-					case 25  : tp2.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
-					case 26  : tp2.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
+					case 1 : Menu_list.main(Enter.wd + "/fourgate/thyroid/text/thyroidfindins/DescribeThyroid");
+								;break;
+
+					case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main("diseasecategorythyroid");break;
+					case 3 : CalcBP   lab2 = new CalcBP(); 	lab2.main("diseasecategorythyroid");break;
+
+					case 51  : tp2.linepickup(path + "/ThySyrPx", Enter.wts+ "/9PLAN" );break;
+					case 52  : tp2.linepickup(path + "/ThySyxPx", Enter.wts+ "/9PLAN" );break;
+					case 53  : tp2.linepickup(path + "/ThyMetPx", Enter.wts+ "/9PLAN" );break;
+					case 54  : tp2.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
+					case 55  : tp2.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
+					case 56  : tp2.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
 					case 9 : case 99 : case 999:
 						Newcategory st2 = new Newcategory(); 
 						st2.main(null);

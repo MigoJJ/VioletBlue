@@ -1,20 +1,10 @@
 package je.panse.doro.hito;
 
-
-import java.util.NoSuchElementException;
 import java.util.Scanner;
-
-import je.panse.doro.aeternum.supportdiagnosis.DisSupp;
-import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
-import je.panse.doro.comm.item_execute.CalcACC;
-import je.panse.doro.comm.item_execute.CalcBP;
-import je.panse.doro.comm.item_execute.CalcDitto;
-import je.panse.doro.comm.item_execute.CalcHbA1c;
-import je.panse.doro.comm.item_image.ImageCall;
-import je.panse.doro.hito.newsub.*;
+import je.panse.doro.fourgate.thyroid.ThyPrescription;
 import je.panse.doro.main.Enter;
 
 public class Diseasecategory {
@@ -22,8 +12,8 @@ public class Diseasecategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
 		try {	
-	    	System.out.println(System.lineSeparator().repeat(10));
-	    		ob3.cleanChartPlate();
+//	    	System.out.println(System.lineSeparator().repeat(10));
+	    	ob3.cleanChartPlate();
 	    	switching();
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
@@ -36,11 +26,10 @@ public class Diseasecategory {
 					System.out.print(">>> Input code ....>>> : ");
 					scode = input.nextInt();
 			   	switch (scode) {
-			   		case 0 : 
-			   			Menu_list.main(Enter.wds + "/DxSuppList");
-			    		DisSupp ob4 = new DisSupp();
+			   		case 2 : 
+			   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+			   			ThyPrescription ob4 = new ThyPrescription();
 			    		ob4.main(null);
-			    		
 			    		break;
 	//		   						
 			   		case 9 : case 99: case 999 :	

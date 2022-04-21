@@ -1,11 +1,11 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;		
+import java.util.Scanner;
 
-import je.panse.doro.aeternum.thyroid.ThyPrescription;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.fourgate.thyroid.ThyPrescription;
 import je.panse.doro.main.Enter;
 
 public class New9PLAN {

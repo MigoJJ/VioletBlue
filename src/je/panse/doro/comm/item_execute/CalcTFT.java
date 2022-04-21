@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute;
 
 import java.util.Scanner;		
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.fourgate.thyroid.ThyPrescription;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
@@ -21,9 +22,9 @@ public class CalcTFT {
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
 //      input.close();
-	        TFTresult = ("    T3         [  " + T3 +  "  ] ug/dL" 
-	        		+ "    free-T4 [  " + free_T4 +  "  ] ug/dL" 
-	        		+ "    TSH      [  " + TSH + "  ] mIU/mL\n");
+	        TFTresult = ("    T3 [  " + T3 +  "  ]ug/dL" 
+	        		+ "  free-T4 [  " + free_T4 +  "  ]ug/dL" 
+	        		+ "  TSH [  " + TSH + "  ]mIU/mL");
 	        fcp1.writeliner(Enter.wts + "/7LAB", TFTresult);
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");
@@ -40,6 +41,11 @@ public class CalcTFT {
 		       if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);
+		       }
+				else if (skeys == "diseasecategorythyroid") {
+						fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+			   			ThyPrescription tp1 = new ThyPrescription();
+			    		tp1.main(null);
 				}
 				else {
 					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");

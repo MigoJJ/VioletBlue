@@ -1,11 +1,10 @@
 package je.panse.doro.comm.item_execute;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.Menu_list;
+import je.panse.doro.fourgate.thyroid.ThyPrescription;
 import je.panse.doro.hito.Itemcategory;
-import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
@@ -36,6 +35,11 @@ public class CalcBP {
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);
+				}
+				else if (skeys == "diseasecategorythyroid") {
+					fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+		   			ThyPrescription tp1 = new ThyPrescription();
+		    		tp1.main(null);
 				}
 				else {
 					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
