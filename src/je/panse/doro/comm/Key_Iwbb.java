@@ -23,7 +23,7 @@ public class Key_Iwbb {
 		File_editor_proc 	rk12 = new File_editor_proc();
 		if (select_code == 9) { 
 			rk11.deuxnine1();
-			rk12.main(Enter.wt + "/tripikata/ChartPlate");
+//			rk12.main(Enter.wt + "/tripikata/ChartPlate");
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			returnkeylist("Newcategorykey");
 		}
