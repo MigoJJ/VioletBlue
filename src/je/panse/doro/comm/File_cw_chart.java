@@ -8,7 +8,7 @@ import je.panse.doro.main.Enter;
 public class File_cw_chart {
 	public void deuxnine() throws IOException {
 		File_cw_chart nc5 = new File_cw_chart();	
-			nc5.cleanChartPlate();
+//			nc5.cleanChartPlate();
 			nc5.writechart();
 			nc5.chartbackup();
 	}
