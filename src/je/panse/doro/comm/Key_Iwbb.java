@@ -29,13 +29,13 @@ public class Key_Iwbb {
 		}
 		else if(select_code == 99) { 
 			rk11.deuxnine1();
-			rk12.main(Enter.wt + "/tripikata/ChartPlate");
+			rk12.main(Enter.wt + "/samsara/ChartPlate");
 			Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
 			returnkeylist("StartFormkey");
 		  }
 		 else if (select_code == 999){
-			rk11.deuxnine();
-			rk12.main(Enter.wt + "/tripikata/ChartPlate");
+			rk11.deuxnine1();
+			rk12.main(Enter.wt + "/samsara/ChartPlate");
 			rk13.clear_Directory(Enter.wts);
 			returnkeylist("SingleBeamkey");
 		            }

@@ -17,8 +17,8 @@ public class Newcategory {
 // --------------------------------------------	
 	public void main(String agrs) throws Exception {
 		try {
-			File_cw_chart  ob3 = new File_cw_chart(); 
-	    	ob3.cleanChartPlate();
+//			File_cw_chart  ob3 = new File_cw_chart(); 
+//	    	ob3.cleanChartPlate();
 	    	switching();
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
