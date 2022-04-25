@@ -9,23 +9,37 @@ import java.util.Scanner;
 import javax.swing.JFrame;
 
 public class File_editor_proc {
-	public static void main(String stringDir){
-		try{
-          File file = new File(stringDir);
-          if(!Desktop.isDesktopSupported())
-           {
-        	  	System.out.println("not supported");
-        	  	return;
-           }
-   		Desktop desktop = Desktop.getDesktop();
-   		if(file.exists())
-       			desktop.open(file);
-//   		    Desktop.getDesktop().edit(file);
-         }
-		catch(Exception e){
-            e.printStackTrace();
-        }
-    }
+    public static void main(String args) throws InterruptedException 
+    {
+            Runtime obj = Runtime.getRuntime();
+            try 
+            {
+                    obj.exec("gedit /home/migoey/ittia.sh");
+                    Thread.sleep(7000); 
+                    obj.exec("killall gedit");
+            }
+            catch(IOException e) 
+            {
+                    System.out.println(e);
+            }   
+    }   
+	//	public static void main(String stringDir){
+//		try{
+//          File file = new File(stringDir);
+//          if(!Desktop.isDesktopSupported())
+//           {
+//        	  	System.out.println("not supported");
+//        	  	return;
+//           }
+//   		Desktop desktop = Desktop.getDesktop();
+//   		if(file.exists())
+//       			desktop.open(file);
+////   		    Desktop.getDesktop().edit(file);
+//         }
+//		catch(Exception e){
+//            e.printStackTrace();
+//        }
+//    }
 	
 	public static void linepickup(String pickupfile, String savefilename) {
 		Desktop destination=Desktop.getDesktop();
