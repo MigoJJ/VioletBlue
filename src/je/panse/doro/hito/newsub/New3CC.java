@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
-
-import java.io.IOException;							
+	
+import java.io.IOException;								
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -61,7 +61,7 @@ public class New3CC {
 			case "p": case "ㅔ":  f = "-- Poor";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		chartline1 = "\tGeneral state :  " + f + "  (no any significant state change)";
+		chartline1 = "\tGeneral state :  " + f + "  (no any significant status )";
 		fcp.writeliner(Enter.wts + "/3CC", chartline1);
 	}
 	//------------------------------------------------
@@ -73,6 +73,8 @@ public class New3CC {
 		else if (bint >= 1900) {
 			String chartline3 = ( "\t" + a + "  " + bint + " year-diagnosed");
 			fcp.writeliner(Enter.wts + "/3CC", chartline3);
+		}
+		else {
 		}
 	}
 //------------------------------------------------
