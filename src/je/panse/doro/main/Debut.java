@@ -4,9 +4,9 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.File_editor_proc;
-import je.panse.doro.comm.Key_Press_Any;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
+import je.panse.doro.comm.item_administratus.Key_Press_Any;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {

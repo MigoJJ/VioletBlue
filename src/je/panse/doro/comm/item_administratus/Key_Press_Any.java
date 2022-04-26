@@ -1,4 +1,4 @@
-package je.panse.doro.comm;
+package je.panse.doro.comm.item_administratus;
 
 import java.io.BufferedReader;			
 import java.io.IOException;

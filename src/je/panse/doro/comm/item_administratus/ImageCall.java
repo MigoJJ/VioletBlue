@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_image;
+package je.panse.doro.comm.item_administratus;
 
 import javax.imageio.ImageIO;			
 import javax.swing.*;

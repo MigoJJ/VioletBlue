@@ -1,12 +1,14 @@
 package je.panse.doro.comm;
 
-import java.io.File;		
+import java.io.File;			
 import java.awt.Desktop;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
-import javax.swing.JFrame;
+
+
+import je.panse.doro.main.Enter;
 
 public class File_editor_proc {
     public static void main(String args) throws InterruptedException 
@@ -14,8 +16,8 @@ public class File_editor_proc {
             Runtime obj = Runtime.getRuntime();
             try 
             {
-                    obj.exec("gedit /home/migoey/ittia.sh");
-                    Thread.sleep(7000); 
+                    obj.exec("gedit " + Enter.wt +"/samsara/ChartPlate");
+                    Thread.sleep(10000); 
                     obj.exec("killall gedit");
             }
             catch(IOException e) 

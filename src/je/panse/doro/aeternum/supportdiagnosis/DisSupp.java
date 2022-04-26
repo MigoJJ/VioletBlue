@@ -3,7 +3,7 @@ package je.panse.doro.aeternum.supportdiagnosis;
 import java.util.Scanner;
 
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_image.ImageCall;
+import je.panse.doro.comm.item_administratus.ImageCall;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
