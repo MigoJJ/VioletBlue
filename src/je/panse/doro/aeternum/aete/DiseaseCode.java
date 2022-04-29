@@ -95,10 +95,12 @@ public class DiseaseCode {
 			case "ins": cresult =("\t#  Insomnia");break;
 				case "cov": cresult =("\t#  COVID-19 PCR (+)");break;
 				case "ver": cresult =("\t#  Vertigo");break;
-				case "hd": cresult =("\t#  Headache");break;
+				case "hea": cresult =("\t#  Headache");break;
 				case "ida": cresult =("\t#  Iron Deficiency Anemia");break;
 				case "uti": cresult =("\t#  Urinary Tract Infection");break;
 				case "uri": cresult =("\t#  Upper Respiratory Infection");break;
+				case "gou": cresult =("\t#  Gout");break;
+
 			// ----------------------------------------------이찬주원장님
 			case "pa" : cresult =("\t#  s/p Bronchial Asthma ");break;
 				case "pc" : cresult =("\t#  Chronic Cough ");break;
