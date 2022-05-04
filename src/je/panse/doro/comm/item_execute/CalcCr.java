@@ -18,8 +18,8 @@ public class CalcCr {
 		double eGFR = input.nextDouble();
 		double ACratio = input.nextDouble();
 		String Crresult;
-		String ReGFR;
-		String RACratio;
+		String ReGFR="";
+		String RACratio="";
 		
 			if (ACratio <30){
 				RACratio = "A1 : Normal to mildly increased";
@@ -56,9 +56,11 @@ public class CalcCr {
        Crresult = ("\t" + Cr +"\t\t" + eGFR + "\t\t" + ACratio);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresultheadline);
-				fcp1.writeliner(Enter.wts + "/7LAB", "----------------------------------------------------");
+				fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresult);
-
+				fcp1.writeliner(Enter.wts + "/7LAB", "  " + RACratio);
+				fcp1.writeliner(Enter.wts + "/7LAB", "  " + ReGFR);
+				
 			       if (skeys == "Itemcategorykey") {
 						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 						Itemcategory.main(null);
