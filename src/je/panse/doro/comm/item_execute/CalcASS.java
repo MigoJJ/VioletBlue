@@ -12,7 +12,7 @@ import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
-public class CalcACC {
+public class CalcASS {
     public static void main(String skeys) throws Exception{
     	File_cdrw_proc fcp1 = new File_cdrw_proc();
        Scanner scanner=new Scanner(System.in);

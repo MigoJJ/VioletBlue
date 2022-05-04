@@ -6,7 +6,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
-import je.panse.doro.comm.item_execute.CalcACC;
+import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_execute.CalcHbA1c;
@@ -51,7 +51,7 @@ public class Newcategory {
 
 				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
-				case 61 : CalcACC ob3 = new CalcACC();	 	ob3.main(null);break;
+				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
 				
 		   		case 9 : case 99: case 999 :	
