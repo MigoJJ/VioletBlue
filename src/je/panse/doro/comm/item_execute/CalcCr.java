@@ -22,21 +22,21 @@ public class CalcCr {
 		String RACratio="";
 		
 			if (ACratio <30){
-				RACratio = "A1 : Normal to mildly increased";
+				RACratio = "A1  : Normal to mildly increased A/C_ratio";
 			}
 			else if (ACratio >=30 && ACratio <=300) {
-				RACratio = "A2 : Moderately increased";
+				RACratio = "A2  : Moderately increased A/C_ratio";
 			}
 			else if (ACratio >300) {
-				RACratio = "A3 : Severely increased";
+				RACratio = "A3  : Severely increased A/C_ratio";
 			}
 			
 		
 			if (eGFR >=90){
-				ReGFR = "G1 : Normal GFR";
+				ReGFR = "G1  : Normal GFR";
 			}
 			else if (eGFR < 89 && eGFR >=60) {
-				ReGFR = "G2 : Mildly decreased GFR";
+				ReGFR = "G2  : Mildly decreased GFR";
 			}
 			else if (eGFR < 59 && eGFR >=45) {
 				ReGFR = "G3a : Mildly to moderately decreased GFR";
@@ -45,10 +45,10 @@ public class CalcCr {
 				ReGFR = "G3b : Moderate to severely decreased GFR";
 			}
 			else if (eGFR < 29 && eGFR >=15) {
-				ReGFR = "G4 : Severely decreased GFR";
+				ReGFR = "G4  : Severely decreased GFR";
 			}
 			else if (eGFR < 15) {
-				ReGFR = "G5 : Kidney failure";
+				ReGFR = "G5  : Kidney failure";
 			}
 	
 //input.close();
