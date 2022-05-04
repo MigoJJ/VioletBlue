@@ -43,8 +43,8 @@ public class Newcategory {
 		    		fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
 					New7LAB.main(null);break;
 				case 6 : 
-			    	fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ACC_List");
-					New8ACC.main(null);break;
+			    	fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ASS_List");
+					New8ASS.main(null);break;
 				case 7 : 
 			    	fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
 					New9PLAN.main(null);break;

@@ -19,7 +19,7 @@ public class DirectoryAdmin {
 			  list.add("/5SUJ");  
 			  list.add("/6OBJ");  
 			  list.add("/7LAB");  
-			  list.add("/8ACC");  
+			  list.add("/8ASS");  
 			  list.add("/9PLAN");
 	
 			  for(String fruit:list)

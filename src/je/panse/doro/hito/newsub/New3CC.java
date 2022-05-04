@@ -1,8 +1,7 @@
 package je.panse.doro.hito.newsub;
 	
-import java.io.IOException;								
+import java.io.IOException;									
 import java.util.Scanner;
-
 import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
@@ -14,7 +13,7 @@ public class New3CC {
 	static String a, b, c, f;
 	File_cdrw_proc 	fcp = new File_cdrw_proc();
 	File_cw_chart 	dn1 = new File_cw_chart();
-	Newcategory 	cc1 = new Newcategory(); 
+	Newcategory 		cc1 = new Newcategory(); 
 	
 	public void main(String[] args) throws Exception {
 		try (Scanner s = new Scanner(System.in)) {

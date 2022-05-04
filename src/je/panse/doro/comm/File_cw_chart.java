@@ -27,7 +27,7 @@ public class File_cw_chart {
 			  list.add("/5SUJ");  
 			  list.add("/6OBJ");  
 			  list.add("/7LAB");  
-			  list.add("/8ACC");  
+			  list.add("/8ASS");  
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
@@ -42,7 +42,7 @@ public class File_cw_chart {
 			  list.add("/5SUJ");  
 			  list.add("/6OBJ");  
 			  list.add("/7LAB");  
-			  list.add("/8ACC");  
+			  list.add("/8ASS");  
 			  list.add("/9PLAN");
 
 			  for(String fruit:list)  
@@ -57,7 +57,7 @@ public class File_cw_chart {
 			  list.add("/5SUJ");  
 			  list.add("/6OBJ");  
 			  list.add("/7LAB");  
-			  list.add("/8ACC");  
+			  list.add("/8ASS");  
 			  list.add("/9PLAN");
 			  list.add("/ChartPlate");
 			  list.add("/Comment");

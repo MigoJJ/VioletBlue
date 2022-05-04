@@ -22,10 +22,6 @@ public class CalcTFT {
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
 //      input.close();
-//	        TFTresult = ("    T3 [  " + T3 +  "  ]ug/dL" 
-//	        		+ "  free-T4 [  " + free_T4 +  "  ]ug/dL" 
-//	        		+ "  TSH [  " + TSH + "  ]mIU/mL");
-//	        fcp1.writeliner(Enter.wts + "/7LAB", TFTresult);
 	        
 	        String TFTheadline = ("     T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
 	        String tftresult = ("\t" + T3 +"\t\t" + free_T4 + "\t\t" + TSH);

@@ -7,10 +7,10 @@ import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
 
-public class New8ACC {
+public class New8ASS {
 	public static void main(String args) throws Exception { 
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ACC_List");
+    	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ASS_List");
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;

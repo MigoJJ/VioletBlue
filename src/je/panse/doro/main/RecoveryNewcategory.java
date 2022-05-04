@@ -39,7 +39,7 @@ public class RecoveryNewcategory {
 				case 3 : New5SUJ.main(null, null);  	break;
 		   		case 4 : New6OBJ.main(null);  	break;
 				case 5 : New7LAB.main(null);  	break;
-				case 6 : New8ACC.main(null);  	break;
+				case 6 : New8ASS.main(null);  	break;
 				case 7 : New9PLAN.main(null);  	break;
 
 				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
