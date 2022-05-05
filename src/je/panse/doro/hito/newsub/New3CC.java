@@ -58,7 +58,6 @@ public class New3CC {
 		}
 		chartline = "\n    " + a + " (onset " + b + c + ")\n";
 		fcp.writeliner(Enter.wts + "/3CC", chartline);
-						  
 		}
 	//------------------------------------------------
 	void egfp(String state) throws IOException {
@@ -80,7 +79,7 @@ public class New3CC {
 			fcp.writeliner(Enter.wts + "/3CC", chartline4);
 		}
 		else if (bint >= 1900) {
-			String chartline3 = ( "\t" + a + "  " + bint + " year-Dx");
+			String chartline3 = ( "\t" + a + "  " + bint + " Dx");
 			fcp.writeliner(Enter.wts + "/3CC", chartline3);
 		}
 		else {

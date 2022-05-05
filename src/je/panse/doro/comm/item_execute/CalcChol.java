@@ -31,7 +31,7 @@ public class CalcChol {
 	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
 	        System.out.print(Cholresult);
-				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult);
+				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult  + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);

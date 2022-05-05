@@ -54,11 +54,11 @@ public class CalcASS {
     }
 //------------------------------------------------
     static void writecoding(String writec) throws IOException {
-			File file_acc = new File(Enter.wts + "/8ASS");
-			System.out.println(file_acc);
-			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
+			File file_ass = new File(Enter.wts + "/8ASS");
+			System.out.println(file_ass);
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_ass,true));
 				try {
-					bufferedWriter.write(writec);
+					bufferedWriter.write("\t" + writec);
 				} catch (IOException e) {
 					e.printStackTrace();
 			}

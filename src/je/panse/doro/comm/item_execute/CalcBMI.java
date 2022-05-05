@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
@@ -8,7 +8,6 @@ import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
-
 public class CalcBMI {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
@@ -23,10 +22,10 @@ public class CalcBMI {
 				double BMI = weight / (height* height/10000);
 			String result2 = String.format("%.1f", BMI);
 //	        input.close();
-			String rheight   = (".   height   [  " + height + " ] cm");
-			String rweight   = (".   weight   [  " + weight + "  ] kg");
-			String BMIresult = (".   BMI      [  " + result2 +  "  ] kg/m^2"); 
-			String rwwaist   = (".   waist    [  " + waist + "  ] cm");
+			String rheight   =  String.valueOf(height);
+			String rweight   =  String.valueOf(weight);
+			String BMIresult =  String.valueOf(result2); 
+			String rwwaist   =  String.valueOf(waist);
 			
 			bmi bmi1 = new bmi();
 			if (waist == 0) {
@@ -37,11 +36,15 @@ public class CalcBMI {
         }
     }
 	class bmi{
-		void BMIhw(String rh, String rw, String rB,String rwa, String skeys) throws Exception {			
-				fcp1.writeliner(Enter.wts + "/6OBJ", rh);
-				fcp1.writeliner(Enter.wts + "/6OBJ", rw);
-				fcp1.writeliner(Enter.wts + "/6OBJ", rB);
-				fcp1.writeliner(Enter.wts + "/6OBJ", rwa);
+		void BMIhw(String rh, String rw, String rB,String rwa, String skeys) throws Exception {	
+		       String BMIheadline = ("Height(cm)	Weight(kg)	BMI	Waist");
+		       String Bresult = ("  " + rh +" \t\t" + rw + "  \t\t" + rB + "\t" + rwa);
+					File_cdrw_proc fcp1 = new File_cdrw_proc();
+						fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
+						fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
+						fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
+						
+//				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);

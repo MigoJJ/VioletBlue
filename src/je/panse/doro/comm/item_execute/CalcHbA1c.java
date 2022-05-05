@@ -29,7 +29,7 @@ public class CalcHbA1c {
 		        		+ "  [ " + Glucose +  " ] mg/dl"	
 		        		+ "     HbA1c [ " + HbA1c + " ] %");
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
+				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult  + "\n");
 
 			       if (skeys == "Itemcategorykey") {
 						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");

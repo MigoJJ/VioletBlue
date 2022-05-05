@@ -31,7 +31,7 @@ public class CalcBP {
 	        	bp1.BPresult = ("    BP [ " + bp1.SBP +  " / " 
 	        	+ bp1.DBP + " ]mmHg" 
 	        	+ "   PR [ " + bp1.PR + " ]/min" + "  Regular LSP");
-	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult);
+	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);

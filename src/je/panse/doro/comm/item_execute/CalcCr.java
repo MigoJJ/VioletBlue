@@ -57,9 +57,7 @@ public class CalcCr {
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresultheadline);
 				fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
-				fcp1.writeliner(Enter.wts + "/7LAB", Crresult);
-				fcp1.writeliner(Enter.wts + "/7LAB", "  " + RACratio);
-				fcp1.writeliner(Enter.wts + "/7LAB", "  " + ReGFR);
+				fcp1.writeliner(Enter.wts + "/7LAB", Crresult + "\n" + RACratio + "\n" + ReGFR  + "\n");
 				
 			       if (skeys == "Itemcategorykey") {
 						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
