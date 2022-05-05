@@ -30,7 +30,7 @@ public class CalcDitto {
 			System.out.print("Dose Adjust ? : ");
 			dosead = input.nextInt();
 
-			if (dosead == 5) { doseadl = ("\t...no medication change or dose-adjust");}
+			if (dosead == 0) { doseadl = ("\t...no medication change or dose-adjust");}
 			else if (dosead == 5) { doseadl = ("\t...New Starting Medication :");}
 			else if (dosead == 55) { doseadl = ("\t...Discontinue Medication :");}
 			else if (dosead == 6) { doseadl = ("\t...Continue Medication");}
