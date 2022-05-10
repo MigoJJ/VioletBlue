@@ -13,12 +13,8 @@ public class CalcCBC {
 	int Plt;
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 
-
 	public void main(String skeys) throws Exception {
-//		double Hb;
-//		int WBC;
-//		int Plt;
-		
+	
     	try (Scanner input = new Scanner(System.in)) {
     		System.out.print("========= Hb    WBC   Platelet : ");
     		Hb = input.nextDouble();

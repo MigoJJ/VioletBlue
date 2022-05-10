@@ -14,9 +14,9 @@ public class DiseaseCode {
 					case "dnm" : cresult =("#  DM with Nephropathy with microalbuminuria");break;
 					case "dnp" : cresult =("#  DM with Nephropathy with proteinuria");break;
 					case "dnc" : cresult =("#  DM with Nephropathywith CRF");break;
-					case "dp" : cresult =("#  DM with Peripheral Neuropathy");break;
-					case "da" : cresult =("#  DM with Autonomic Neuropathy");break;
-					case "pd" : cresult =("#  Prediabetes");break;
+				case "dp" : cresult =("#  DM with Peripheral Neuropathy");break;
+				case "da" : cresult =("#  DM with Autonomic Neuropathy");break;
+				case "pd" : cresult =("#  Prediabetes");break;
 					
 			case "t" : cresult =("#  Hypertension ")	;break;
 			case "c" : cresult =("#  Hypercholesterolemia ");break;
@@ -54,27 +54,35 @@ public class DiseaseCode {
 				case "gcag": cresult =("#  Chonic Atrophic Gastritis");break;
 				case "gcsg": cresult =("#  Chronic Superficial Gastritis");break;
 				case "gceg": cresult =("#  r/o Chronic Erosive Gastritis");break;
-				case "gibs": cresult =("#  r/o Irritable Bowel Syndrome3");break;
+				case "gibs": cresult =("#  r/o Irritable Bowel Syndrome");break;
+				case "ggil": cresult =("#  Gilbert's syndrome");break;
+				case "gcon": cresult =("#  Constipation");break;
 
+				
 				case "cp": cresult =("#  Colonic Polyp");break;
-				case "cd": cresult =("#  Colonic diverticulum");break;
+				case "cd": cresult =("#  Colonic diverticulum");break;				
 				case "gp": cresult =("#  GB polyp");break;
+				case "gs": cresult =("#  GB stone");break;
 				case "ggp": cresult =("#  Gastric Polyp");break;
-
 			
 			// ----------------------------------------------진료 보조
-			case "cod" : cresult =("#  Cognitive Disorder");break;
+			case "cog" : cresult =("#  Cognitive Disorder");break;
 	
 			case "oc" : cresult =("#  s/p Cholecystectomy d/t GB stone	");break;
 				case "oa" : cresult =("#  s/p Appendectomy ");break;
+				case "occ" : cresult =("#  s/p Colon cancer op(+)");break;
 				case "oh" : cresult =("#  s/p TAH : Total Abdominal Hysterectomy ");break;	
 				case "bph" : cresult =("#  BPH ");break;
-				case "opc" : cresult =("#  Prostate cancer operation(+)");break;
+				case "op" : cresult =("#  Prostate cancer operation(+)");break;
+				case "ob" : cresult =("#  s/p Breast Cancer Operation");break;
+				case "ot" : cresult =("#  Papillary Thyroid Cancer OP(+)"
+						+ "\n\tHypothyroidism");break;
 
 	   		case "hbv" :cresult =("#  HBsAg(+) Carrier ");break;
 		   		case "hh" : cresult =("#  Hepatic Hemagioma");break;
 		   		case "hc" : cresult =("#  Hepatic Cyst ");break;
 				case "hn" : cresult =("#  Hepatic Nodule ");break;
+				case "hhn" : cresult =("#  Hepatic higher echoic nodule ");break;
 				case "hf" : cresult =("#  Fatty Liver");break;
 					case "hfmi" : cresult =("#  Mild Fatty Liver");break;
 					case "hfmo" : cresult =("#  Moderate Fatty Liver");break;
@@ -82,9 +90,10 @@ public class DiseaseCode {
 			
 			case "rc" : cresult =("#  Renal Cyst ");break;
 				case "rs" : cresult =("#  Renal Stone ");break;
+				case "rse" : cresult =("#  Renal Stone s/p ESWL");break;
 				case "rn" : cresult =("#  Renal Nodule ");break;
-				case "rh" : cresult =("#  isolated hematuria ");break;
-				case "rhg" : cresult =("#  gross hematuria ");break;
+				case "rih" : cresult =("#  isolated hematuria ");break;
+				case "rgh" : cresult =("#  gross hematuria ");break;
 				case "rip" : cresult =("#  isolated proteinuria");break;
 			
 			case "bc" : cresult =("#  Breast Cyst ");break;
@@ -96,10 +105,13 @@ public class DiseaseCode {
 				case "cov": cresult =("#  COVID-19 PCR (+)");break;
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
+				case "dep": cresult =("#  Depression");break;
+				case "anx": cresult =("#  Anxiety disorder");break;
 				case "ida": cresult =("#  Iron Deficiency Anemia");break;
 				case "uti": cresult =("#  Urinary Tract Infection");break;
 				case "uri": cresult =("#  Upper Respiratory Infection");break;
 				case "gou": cresult =("#  Gout");break;
+				case "dis": cresult =("#  HIVD : herniated intervertebral disc");break;
 
 			// ----------------------------------------------이찬주원장님
 			case "pa" : cresult =("#  s/p Bronchial Asthma ");break;
