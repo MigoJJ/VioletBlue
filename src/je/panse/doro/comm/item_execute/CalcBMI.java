@@ -56,10 +56,12 @@ public class CalcBMI {
 		}
 		
 		void BMIhw(String rh, String rw, String rB, String skeys) throws Exception {			
-			File_cdrw_proc fcp1 = new File_cdrw_proc();
-				fcp1.writeliner(Enter.wts + "/6OBJ", rh);
-				fcp1.writeliner(Enter.wts + "/6OBJ", rw);
-				fcp1.writeliner(Enter.wts + "/6OBJ", rB);
+		       String BMIheadline = ("Height(cm)	Weight(kg)	BMI");
+		       String Bresult = ("  " + rh +" \t\t" + rw + "  \t\t" + rB);
+					File_cdrw_proc fcp1 = new File_cdrw_proc();
+						fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
+						fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
+						fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);
