@@ -35,7 +35,7 @@ public class CalcEKG {
 					case 4 : accessInsert("심실조기수축 (Early ventricular constraction)"); break;
 					case 5 : accessInsert("심방조기수축 (Early atrial constraction)"); break;
 					
-					case 6 : accessInsert("비특이적 ST-T분절 변화/비특이적 T분절 변화 (Nonspecific ST-T change)"); break;
+					case 6 : accessInsert("비특이적 ST-T분절 변화(Nonspecific ST-T change)"); break;
 					case 7 : accessInsert("완전(불완전) 우각차단 (Complete/Incomplete Rt bundle branch block)"); break;
 					case 8 : accessInsert("좌각차단 (Lt bundle branch block)"); break;
 					
@@ -49,6 +49,7 @@ public class CalcEKG {
 					case 15 : accessInsert("심근허혈 (Myocardial ischemia)"); break;
 					
 					case 16 : accessInsert("심방세동 (Artrial Fibrillation)"); break;
+					case 161 : accessInsert("심방조동(Atral flutter)"); break;
 					case 17 : accessInsert("WPW 증후군 (WPW syndrome)"); break;
 					
 					case 18 : accessInsert("저전압 (Low voltage)"); break;
@@ -80,6 +81,8 @@ public class CalcEKG {
 			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_acc,true));
 				try {
 					bufferedWriter.write("    EKG       : " + writec);
+				    File_cdrw_proc fcp1 = new File_cdrw_proc();
+					fcp1.writeliner(Enter.wts + "/8ASS", "\t#  EKG : " + writec);
 				} catch (IOException e) {
 					e.printStackTrace();
 			}

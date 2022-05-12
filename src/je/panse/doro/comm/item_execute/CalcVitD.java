@@ -16,9 +16,11 @@ public class CalcVitD {
 	        System.out.print("========= Input 25-OH-Vitamin-D : ");
 	        vitamin_D = input.nextDouble();
 	        //      input.close();
-	        VitDresult = ("    25-OH-Vitamin-D    [ " + vitamin_D +  " ] ng/mL" );
+	        VitDresult = ("\t#  25-OH-Vitamin-D  [ " + vitamin_D +  " ] ng/mL" );
 	        File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", VitDresult);
+				fcp1.writeliner(Enter.wts + "/8ASS", VitDresult);
+				
 			       if (skeys == "Itemcategorykey") {
 						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 						Itemcategory.main(null);

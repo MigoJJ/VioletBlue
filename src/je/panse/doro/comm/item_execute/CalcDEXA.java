@@ -75,7 +75,7 @@ public class CalcDEXA {
 	     if(fracture.equals("y") && zt_score <= -2.5) {
 			    print_z(zt_score,"T-score","   #    Severe Osteoporosis   #");
 	     }
-	     else if(zt_score <= -2.5) {
+	     else if(fracture.equals("n") && zt_score <= -2.5) {
 			    print_z(zt_score,"T-score","   #    Osteoporosis   #");
 	     }
 	     else if(zt_score > -2.5  && zt_score <= -1.0) {
@@ -97,9 +97,9 @@ public class CalcDEXA {
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
-//			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
-			fcp1.writeliner(Enter.wts + "/8ACC", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/8ACC", result_z);
+			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
+			fcp1.writeliner(Enter.wts + "/8ASS", result_zt_score);
+			fcp1.writeliner(Enter.wts + "/8ASS", result_z);
 	}
 // ---------
 }

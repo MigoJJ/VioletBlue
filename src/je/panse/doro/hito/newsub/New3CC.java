@@ -77,10 +77,12 @@ public class New3CC {
 		if (bint == 99) {
 			String chartline4 = ("\t" + a) ;
 			fcp.writeliner(Enter.wts + "/3CC", chartline4);
+			fcp.writeliner(Enter.wts + "/8ASS", chartline4);
 		}
 		else if (bint >= 1900) {
 			String chartline3 = ( "\t" + a + "  " + bint + " Dx");
 			fcp.writeliner(Enter.wts + "/3CC", chartline3);
+			fcp.writeliner(Enter.wts + "/8ASS", chartline3);
 		}
 		else {
 		}
