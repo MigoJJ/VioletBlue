@@ -84,7 +84,8 @@ public class ThyPrescription {
 			System.out.println(nthPx);
 			
 			File_cdrw_proc tp2 = new File_cdrw_proc();
-			tp2.writeliner(Enter.wt + "/samsara/9PLAN", nthPx);	
+			String nthPx1 = ("    ..." + nthPx);
+			tp2.writeliner(Enter.wt + "/samsara/9PLAN", nthPx1);	
 	       
 
     }
