@@ -21,21 +21,21 @@ public class New3CC {
 			
 			if (a.startsWith(":")) {
 				String aa = a.substring(1, a.length());
-				DiseaseCode e =new DiseaseCode();  
+				DiseaseCode e = new DiseaseCode();  
 				System.out.println(e.code_select(aa));
 				a = e.code_select(aa);
 			}
-			
 			System.out.println(">>> Enter duration:>>>");	    	b = s.nextLine();
 			Integer bint = Integer.valueOf(b);
-			if (bint == 99 | bint >= 1990) {
+			if (bint == 99 | bint >= 1964) {
 				simplecc(bint);
 				dn1.deuxnine();
 				cc1.main(null); 	
 			}
-			System.out.println(">>> Enter year/month/day:>>>");    	c = s.nextLine();
+			System.out.println(">>> Enter year/month/day:>>>");
+				c = s.nextLine();
 			System.out.println("\n>>> Enter... state of health E/G/F/P...>>>");
-		    														f = s.nextLine();
+		   		f = s.nextLine();
 			yymmdd(c);
 	    	egfp(f);
 //			s.close();

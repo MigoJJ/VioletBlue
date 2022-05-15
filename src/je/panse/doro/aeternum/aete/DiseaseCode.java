@@ -49,8 +49,7 @@ public class DiseaseCode {
 				case "pvc" : cresult =("#  Premature Ventricular Contractions");break;
 				case "apc" : cresult =("#  atrial premature complexes");break;
 				
-			case "ge": cresult =("#  Epigastric Pain");break;
-				case "gre": cresult =("#  Reflux esophagitis");break;
+			case "gre": cresult =("#  Reflux esophagitis");break;
 				case "gcag": cresult =("#  Chonic Atrophic Gastritis");break;
 				case "gcsg": cresult =("#  Chronic Superficial Gastritis");break;
 				case "gceg": cresult =("#  r/o Chronic Erosive Gastritis");break;
@@ -66,12 +65,11 @@ public class DiseaseCode {
 				case "ggp": cresult =("#  Gastric Polyp");break;
 			
 			// ----------------------------------------------진료 보조
-			case "cog" : cresult =("#  Cognitive Disorder");break;
-	
 			case "oc" : cresult =("#  s/p Cholecystectomy d/t GB stone	");break;
 				case "oa" : cresult =("#  s/p Appendectomy ");break;
 				case "occ" : cresult =("#  s/p Colon cancer op(+)");break;
 				case "oh" : cresult =("#  s/p TAH : Total Abdominal Hysterectomy ");break;	
+				case "oho" : cresult =("#  s/p TAH with BSO");break;	
 				case "bph" : cresult =("#  BPH ");break;
 				case "op" : cresult =("#  Prostate cancer operation(+)");break;
 				case "ob" : cresult =("#  s/p Breast Cancer Operation");break;
@@ -100,14 +98,26 @@ public class DiseaseCode {
 				case "bn" : cresult =("#  Breast Nodule ");break;
 				case "bnb" : cresult =("#  Breast Nodule with biopsy ");break;
 				case "bco" : cresult =("#  s/p Breast Cancer Operation");break;
-
+				case "bcoc" : cresult =("#  s/p Breast Cancer Operation+ ChemoTx(+)");break;
+				case "bcor" : cresult =("#  s/p Breast Cancer Operation + RT(+) ");break;
+				case "bcocr" : cresult =("#  s/p Breast Cancer Operation \n\t:  ChemoTx(+) + RT(+)");break;
+				
 			case "ins": cresult =("#  Insomnia");break;
+				case "epi": cresult =("#  Epigastric pain");break;
+				case "dys": cresult =("#  Dysuria and frequency");break;
+				case "dir": cresult =("#  Diarrhea");break;
 				case "cov": cresult =("#  COVID-19 PCR (+)");break;
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
+				case "wei": cresult =("#  Weight loss");break;
 				case "dep": cresult =("#  Depression");break;
 				case "anx": cresult =("#  Anxiety disorder");break;
+				case "cog" : cresult =("#  Cognitive Disorder");break;
+				
 				case "ida": cresult =("#  Iron Deficiency Anemia");break;
+				case "leu": cresult =("#  Leukocytopenia");break;
+				case "thr": cresult =("#  Thrombocytopenia");break;
+				case "got": cresult =("#  GOT/GPT/GGT elevation");break;
 				case "uti": cresult =("#  Urinary Tract Infection");break;
 				case "uri": cresult =("#  Upper Respiratory Infection");break;
 				case "gou": cresult =("#  Gout");break;
