@@ -10,6 +10,8 @@ public class DiseaseCode {
 				case "dr" : cresult =("#  DM without Retinopathy ");break;
 					case "drnp" : cresult =("#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
 					case "drp" : cresult =("#  DM with Retinopathy \n\t: Proliferative diabetic retinopathy");break;
+					case "drm" : cresult =("#  DM with Retinopathy \n\t: Macular edema");break;
+
 				case "dn" : cresult =("#  DM with Nephropathy");break;
 					case "dnm" : cresult =("#  DM with Nephropathy with microalbuminuria");break;
 					case "dnp" : cresult =("#  DM with Nephropathy with proteinuria");break;
@@ -30,11 +32,12 @@ public class DiseaseCode {
 				case "tc" : cresult =("#  Thyroid cyst ")	;break;
 				case "tsg" : cresult =("#  Simple Goiter")	;break;
 				case "nti" : cresult =("#  Non-Thyroidal Illness ");break;
-				case "tep" : cresult =("#  Hyperthyroidism with Pregnancy ");break;
-				case "top" : cresult =("#  Hypothyroidism with Pregnancy ");break;
+				case "tep" : cresult =("#  Hyperthyroidism with Pregnancy [   ]  weeks");break;
+				case "top" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks ");break;
 				case "tco" : cresult =("#  Papillary Thyroid Cancer OP(+)"
 						+ "\n\tHypothyroidism");break;
-				case "tcr" : cresult =("#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
+				case "tco"
+						+ "r" : cresult =("#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
 						+ "\n\tHypothyroidism");break;
 
 			case "sos" : cresult =("#  Severe Osteoporosis ");break;
@@ -46,8 +49,8 @@ public class DiseaseCode {
 				case "ami": cresult =("#  s/p Aute Myocardial Infaction ");break;
 				case "as": cresult =("#  Artherosclerosis Carotid artery");break;
 				case "af" : cresult =("#  Atrial Fibrillation ");break;
-				case "pvc" : cresult =("#  Premature Ventricular Contractions");break;
-				case "apc" : cresult =("#  atrial premature complexes");break;
+				case "pvc" : cresult =("#  PVC  Premature Ventricular Contractions");break;
+				case "apc" : cresult =("#  APC  atrial premature complexes");break;
 				
 			case "gre": cresult =("#  Reflux esophagitis");break;
 				case "gcag": cresult =("#  Chonic Atrophic Gastritis");break;
@@ -55,10 +58,12 @@ public class DiseaseCode {
 				case "gceg": cresult =("#  r/o Chronic Erosive Gastritis");break;
 				case "gibs": cresult =("#  r/o Irritable Bowel Syndrome");break;
 				case "ggil": cresult =("#  Gilbert's syndrome");break;
-				case "gcon": cresult =("#  Constipation");break;
+				case "gcon": cresult =("#  Severe Constipation");break;
 
 				
 				case "cp": cresult =("#  Colonic Polyp");break;
+					case "cpm": cresult =("#  Colonic Polyps multiple");break;
+					case "cps": cresult =("#  Colonic Polyp single");break;
 				case "cd": cresult =("#  Colonic diverticulum");break;				
 				case "gp": cresult =("#  GB polyp");break;
 				case "gs": cresult =("#  GB stone");break;
@@ -110,10 +115,9 @@ public class DiseaseCode {
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
 				case "wei": cresult =("#  Weight loss");break;
-				case "dep": cresult =("#  Depression");break;
-				case "anx": cresult =("#  Anxiety disorder");break;
+
 				case "cog" : cresult =("#  Cognitive Disorder");break;
-				
+				case "gla" : cresult =("#  Glaucoma(+)");break;
 				case "ida": cresult =("#  Iron Deficiency Anemia");break;
 				case "leu": cresult =("#  Leukocytopenia");break;
 				case "thr": cresult =("#  Thrombocytopenia");break;
@@ -123,6 +127,8 @@ public class DiseaseCode {
 				case "gou": cresult =("#  Gout");break;
 				case "dis": cresult =("#  HIVD : herniated intervertebral disc");break;
 
+				case "dep": cresult =("#  Depression");break;
+				case "anx": cresult =("#  Anxiety disorder");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : cresult =("#  s/p Bronchial Asthma ");break;
 				case "pc" : cresult =("#  Chronic Cough ");break;
