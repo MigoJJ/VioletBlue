@@ -22,9 +22,9 @@ public class CalcDitto {
 			labfu = input.nextInt();
 	        
 			if (labfu == 0) {   labful = ("\t...Obervation and Follow-up"); }
-			else if (labfu == 1) {   labful = ("\t...next Lab F/U plan (+)"); }
-			else if (labfu == 2) {   labful = ("\t...next 공단검진 plan (+)"); }
-			else if (labfu == 3) {   labful = ("\t...next 지디스검진 plan (+)"); }
+			else if (labfu == 1) {   labful = ("\t...next Lab F/U... "); }
+			else if (labfu == 2) {   labful = ("\t...next 공단검진..."); }
+			else if (labfu == 3) {   labful = ("\t...next 지디스검진..."); }
 			else {
 			}
 			System.out.print("Dose Adjust ? : ");

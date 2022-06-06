@@ -17,7 +17,7 @@ public class CalcASS {
     	File_cdrw_proc fcp1 = new File_cdrw_proc();
     	Scanner scanner=new Scanner(System.in);
     	while (true) {
-            System.out.println("Insert disease code : >>>>>>>>>>");
+            System.out.println(">>>>>>>>>> Insert disease code : >>>>>>>>>>");
             String question = scanner.nextLine();
         	code_select(question);
                 if(question.equals("quit")|question.equals("q")| question.equals("ㅂ")){

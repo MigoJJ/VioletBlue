@@ -8,7 +8,7 @@ public class DiseaseCode {
 		switch (dcode) {
 			case "d" : cresult =("#  DM without complications	");break;
 				case "dr" : cresult =("#  DM without Retinopathy ");break;
-					case "drnp" : cresult =("#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
+					case "drn" : cresult =("#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
 					case "drp" : cresult =("#  DM with Retinopathy \n\t: Proliferative diabetic retinopathy");break;
 					case "drm" : cresult =("#  DM with Retinopathy \n\t: Macular edema");break;
 
@@ -49,18 +49,19 @@ public class DiseaseCode {
 				case "ami": cresult =("#  s/p Aute Myocardial Infaction ");break;
 				case "as": cresult =("#  Artherosclerosis Carotid artery");break;
 				case "af" : cresult =("#  Atrial Fibrillation ");break;
+				case "afr" : cresult =("#  Atrial Fibrillation with RVR ");break;
+				case "afl" : cresult =("#  Atrial Flutter ");break;
 				case "pvc" : cresult =("#  PVC  Premature Ventricular Contractions");break;
 				case "apc" : cresult =("#  APC  atrial premature complexes");break;
 				
 			case "gre": cresult =("#  Reflux esophagitis");break;
 				case "gcag": cresult =("#  Chonic Atrophic Gastritis");break;
 				case "gcsg": cresult =("#  Chronic Superficial Gastritis");break;
-				case "gceg": cresult =("#  r/o Chronic Erosive Gastritis");break;
+				case "geg": cresult =("#  r/o Erosive Gastritis");break;
 				case "gibs": cresult =("#  r/o Irritable Bowel Syndrome");break;
 				case "ggil": cresult =("#  Gilbert's syndrome");break;
 				case "gcon": cresult =("#  Severe Constipation");break;
 
-				
 				case "cp": cresult =("#  Colonic Polyp");break;
 					case "cpm": cresult =("#  Colonic Polyps multiple");break;
 					case "cps": cresult =("#  Colonic Polyp single");break;
@@ -79,10 +80,13 @@ public class DiseaseCode {
 				case "op" : cresult =("#  Prostate cancer operation(+)");break;
 				case "ob" : cresult =("#  s/p Breast Cancer Operation");break;
 				case "ot" : cresult =("#  Papillary Thyroid Cancer OP(+)"
-						+ "\n\tHypothyroidism");break;
-
+						+ "\n\twith Hypothyroidism");break;
+						
 	   		case "hbv" :cresult =("#  HBsAg(+) Carrier ");break;
-		   		case "hh" : cresult =("#  Hepatic Hemagioma");break;
+	   		case "hcv" :cresult =("#  HCVAb( Pisitive )  ");break;
+	   		case "hcvp" :cresult =("#  HCVAb(Pisitive) --> PCR(Negative) confirmed  ");break;
+	   		
+	   		case "hh" : cresult =("#  Hepatic Hemagioma");break;
 		   		case "hc" : cresult =("#  Hepatic Cyst ");break;
 				case "hn" : cresult =("#  Hepatic Nodule ");break;
 				case "hhn" : cresult =("#  Hepatic higher echoic nodule ");break;
@@ -111,17 +115,25 @@ public class DiseaseCode {
 				case "epi": cresult =("#  Epigastric pain");break;
 				case "dys": cresult =("#  Dysuria and frequency");break;
 				case "dir": cresult =("#  Diarrhea");break;
+				case "con": cresult =("#  Constipation");break;
 				case "cov": cresult =("#  COVID-19 PCR (+)");break;
+					case "covc": cresult =("#  COVID-19 PCR (+) with r/o complications");break;
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
 				case "wei": cresult =("#  Weight loss");break;
+				case "esa": cresult =("#  Easy fatigue");break;
+				case "obe": cresult =("#  Obesity");break;
+					case "obec": cresult =("#  Central Obesity");break;
+				
+				case "gla": cresult =("#  Glaucoma(+)");break;
+				case "cat": cresult =("#  Cataract(+)");break;
+				case "cato": cresult =("#  Cataract operation (+)");break;
 
-				case "cog" : cresult =("#  Cognitive Disorder");break;
-				case "gla" : cresult =("#  Glaucoma(+)");break;
 				case "ida": cresult =("#  Iron Deficiency Anemia");break;
 				case "leu": cresult =("#  Leukocytopenia");break;
 				case "thr": cresult =("#  Thrombocytopenia");break;
 				case "got": cresult =("#  GOT/GPT/GGT elevation");break;
+				
 				case "uti": cresult =("#  Urinary Tract Infection");break;
 				case "uri": cresult =("#  Upper Respiratory Infection");break;
 				case "gou": cresult =("#  Gout");break;
@@ -129,6 +141,7 @@ public class DiseaseCode {
 
 				case "dep": cresult =("#  Depression");break;
 				case "anx": cresult =("#  Anxiety disorder");break;
+				case "cog": cresult =("#  Cognitive Disorder");break;
 			// ----------------------------------------------이찬주원장님
 			case "pa" : cresult =("#  s/p Bronchial Asthma ");break;
 				case "pc" : cresult =("#  Chronic Cough ");break;
