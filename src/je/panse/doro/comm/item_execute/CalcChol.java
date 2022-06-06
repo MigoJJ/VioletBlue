@@ -27,10 +27,12 @@ public class CalcChol {
 	        int TG = input.nextInt();
 	        System.out.print("========= Input LDL  : ");
 	        int LDL = input.nextInt();
-//      input.close();
-	        String Cholresult = ("    TC-HDL-TG LDL     [  " 
+  		
+	//      input.close();
+	        String Cholresult = ("    TC-HDL-TG-LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
-	        System.out.print(Cholresult);
+	                
+	        System.out.println(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult  + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");

@@ -46,9 +46,13 @@ public class DiseaseCode {
 			
 			case "at": cresult =("#  Atypical Chest pain");break;
 				case "ap" : cresult =("#  Angina Pectoris");break;
-				case "ami": cresult =("#  s/p Aute Myocardial Infaction ");break;
+				case "omi": cresult =("#  Old Myocardial Infacttion");break; 
+				case "ami": cresult =("#  Acute Myocardial Infaction ");break;
+				
 				case "as": cresult =("#  Artherosclerosis Carotid artery");break;
-				case "af" : cresult =("#  Atrial Fibrillation ");break;
+				case "asa": cresult =("#  Artherosclerosis Carotid artery and Aorta");break;
+				
+			case "af" : cresult =("#  Atrial Fibrillation ");break;
 				case "afr" : cresult =("#  Atrial Fibrillation with RVR ");break;
 				case "afl" : cresult =("#  Atrial Flutter ");break;
 				case "pvc" : cresult =("#  PVC  Premature Ventricular Contractions");break;
