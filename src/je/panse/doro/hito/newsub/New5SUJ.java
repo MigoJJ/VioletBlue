@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
@@ -18,20 +19,26 @@ public class New5SUJ{
 			do{
 				st = (suj_text.nextLine().trim());
 				if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
-			    	System.out.println("Inserted code finished  !  ");
-						Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
-				    	File_cw_chart dn1 = new File_cw_chart();
-				    	Newcategory si1= new Newcategory(); 
-						dn1.deuxnine();
-						si1.main(null); 	
-						break;
+					Key_returnquit krq = new Key_returnquit();
+						krq.mainquit(st);
+					break;
 				}
 				else if (st.startsWith(":")) {
-						New5SUJ.insertDcode(st + "/");
+					New5SUJ.insertDcode(st + "/");
+				}
+				else if (st.startsWith("]")) {
+					st = st.substring(1, st.length());
+					New5SUJ.suj_insert(st, "/4PMH");
+				}
+				else if (st.startsWith("#")) {
+					New5SUJ.suj_insert(st, "/8ASS");
+				}
+				else if (st.startsWith("...")) {
+					New5SUJ.suj_insert(st, "/9PLAN");
 				}
 				else {
-						System.out.println("st = :  " + st + "\n");
-						New5SUJ.suj_insert(st);
+					System.out.println("st = :  " + st + "\n");
+					New5SUJ.suj_insert(st, "/5SUJ");
 				}
 			}while (st != "quit");
 					System.out.println("Success");
@@ -41,12 +48,12 @@ public class New5SUJ{
 		}
 	}
 
-	static void suj_insert(String st) throws IOException {
-    	String SUJresult = ("    " + st); 
+	static void suj_insert(String st, String ilocation) throws IOException {
+    	String SUJresult = ("\t" + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
-			suj1.writeliner(Enter.wts + "/5SUJ", SUJresult);
+			suj1.writeliner(Enter.wts + ilocation, SUJresult);
 	}
-	
+
 	static void insertDcode(String ist) throws IOException {
 		try {
 			String[] subOfSuj = ist.split("/", 2);
@@ -55,10 +62,8 @@ public class New5SUJ{
 					System.out.println(subOfSuj[0].length());
 					System.out.println(subOfSuj[1].length());
 			DiseaseCode e = new DiseaseCode();
-					New5SUJ.suj_insert(e.code_select(sunst0) + subOfSuj[1]);
+					New5SUJ.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
 					System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
-			File_cdrw_proc suj1 = new File_cdrw_proc();
-					suj1.writeliner(Enter.wts + "/8ASS", "\t" + e.code_select(sunst0) + subOfSuj[1]);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

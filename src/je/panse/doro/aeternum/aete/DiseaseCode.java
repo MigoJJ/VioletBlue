@@ -78,6 +78,7 @@ public class DiseaseCode {
 			case "oc" : cresult =("#  s/p Cholecystectomy d/t GB stone	");break;
 				case "oa" : cresult =("#  s/p Appendectomy ");break;
 				case "occ" : cresult =("#  s/p Colon cancer op(+)");break;
+				case "ogc" : cresult =("#  s/p Gastric cancer cancer op(+)");break;
 				case "oh" : cresult =("#  s/p TAH : Total Abdominal Hysterectomy ");break;	
 				case "oho" : cresult =("#  s/p TAH with BSO");break;	
 				case "bph" : cresult =("#  BPH ");break;
@@ -85,6 +86,7 @@ public class DiseaseCode {
 				case "ob" : cresult =("#  s/p Breast Cancer Operation");break;
 				case "ot" : cresult =("#  Papillary Thyroid Cancer OP(+)"
 						+ "\n\twith Hypothyroidism");break;
+				case "oca" : cresult =("#  Cataract OP(+)");
 						
 	   		case "hbv" :cresult =("#  HBsAg(+) Carrier ");break;
 	   		case "hcv" :cresult =("#  HCVAb( Pisitive )  ");break;
@@ -137,6 +139,7 @@ public class DiseaseCode {
 				case "leu": cresult =("#  Leukocytopenia");break;
 				case "thr": cresult =("#  Thrombocytopenia");break;
 				case "got": cresult =("#  GOT/GPT/GGT elevation");break;
+				case "her": cresult =("#  Herpes Zoster");break;
 				
 				case "uti": cresult =("#  Urinary Tract Infection");break;
 				case "uri": cresult =("#  Upper Respiratory Infection");break;
