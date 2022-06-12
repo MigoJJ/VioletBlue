@@ -1,12 +1,13 @@
 [ 7.2 ] ThyroidStart
 ----------------------------------------------
 	
-	1.	Physical Examination
+	1.	History
+	2.	Symptoms
+	3.	Physical Examination
 	
-	2.	TFT
-	3.	BP
-	4.	Symptom		
-		
+	3.	TFT  BP
+	
+	
 	5.	Thyroid Prescriptions
 		 [ 51	]  Synthroid
 		 [ 52	]  Synthyroxine

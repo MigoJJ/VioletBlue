@@ -13,6 +13,7 @@ import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcTFT;
+import je.panse.doro.fourgate.thyroid.text.thyroidfindins.ThyroidPhysicalExam;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -32,8 +33,10 @@ public class ThyPrescription {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {
+
+
 					case 1 : Menu_list.main(Enter.wd + "/fourgate/thyroid/text/thyroidfindins/DescribeThyroid");
-								;break;
+						;break;
 
 					case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main("diseasecategorythyroid");break;
 					case 3 : CalcBP   lab2 = new CalcBP(); 	lab2.main("diseasecategorythyroid");break;
