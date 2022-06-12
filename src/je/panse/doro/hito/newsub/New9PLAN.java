@@ -17,7 +17,7 @@ public class New9PLAN {
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {
-				System.out.println("Enter selected code number ...   : ");
+				System.out.println(">>>-----Enter selected code number ...   : ");
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 	
 				switch (select_code) {

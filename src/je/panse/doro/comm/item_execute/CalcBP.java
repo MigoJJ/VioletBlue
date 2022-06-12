@@ -22,15 +22,13 @@ public class CalcBP {
 		}
     		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("***** Input SBP   mmHg : ");
-	        	bp1.SBP = input.nextInt();
 	        System.out.print("***** Input DBP   mmHg : ");
-	        	bp1.DBP = input.nextInt();
 	        System.out.print("***** Input pulse rate / minute : ");
-	        	bp1.PR = input.nextInt();
+	        bp1.SBP = input.nextInt();
+        	bp1.DBP = input.nextInt();
+        	bp1.PR = input.nextInt();
 //        input.close();
-	        	bp1.BPresult = ("    BP [ " + bp1.SBP +  " / " 
-	        	+ bp1.DBP + " ]mmHg" 
-	        	+ "   PR [ " + bp1.PR + " ]/min" + "  Regular LSP");
+	        	bp1.BPresult = String.format("    BP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
 	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");

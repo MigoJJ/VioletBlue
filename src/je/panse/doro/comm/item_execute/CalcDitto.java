@@ -14,20 +14,27 @@ public class CalcDitto {
 	public void main(String skeys) throws Exception {
 		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 		try (Scanner input = new Scanner(System.in)) {
-			System.out.print("Input ditto month : ");
+			System.out.print(".....>>>>> Input ditto month : ");
 			dittomo = input.nextInt();
 			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
 			
-			System.out.print("Lab Follow-up will be needed ? :");
+			System.out.print(".....>>>>> Lab Follow-up will be needed ? :");
+			System.out.print("\n   0   : ...Observation and Follow-up");
+			System.out.print("\n   10   : ...Follow-up without medication");
+			System.out.print("\n   1   :...next Lab F/U... ");
+			System.out.print("\n   2   :...next 공단검진...");
+			System.out.print("\n   3   :...next 지디스검진...\n");
+			
 			labfu = input.nextInt();
 	        
-			if (labfu == 0) {   labful = ("\t...Obervation and Follow-up"); }
+			if (labfu == 0) {   labful = ("\t...Observation and Follow-up"); }
+			if (labfu == 10) {   labful = ("\t...Follow-up without medication"); }
 			else if (labfu == 1) {   labful = ("\t...next Lab F/U... "); }
 			else if (labfu == 2) {   labful = ("\t...next 공단검진..."); }
 			else if (labfu == 3) {   labful = ("\t...next 지디스검진..."); }
 			else {
 			}
-			System.out.print("Dose Adjust ? : ");
+			System.out.print(".....>>>>> Dose Adjust ? : ");
 			dosead = input.nextInt();
 
 			if (dosead == 0) { doseadl = ("\t...no medication change or dose-adjust");}

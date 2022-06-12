@@ -22,7 +22,7 @@ public class Itemcategory {
 				
 			  	case 11 : CalcHbA1c	nl2 = new CalcHbA1c();nl2.main("Itemcategorykey");break;
 				case 12 : CalcTFT  	nl3 = new CalcTFT(); 	nl3.main("Itemcategorykey");break;
-				case 13 : CalcChol	nl4 = new CalcChol();	nl4.main("Itemcategorykey");break;
+				case 13 : CalcLpa	nl4 = new CalcLpa();	nl4.main("Itemcategorykey");break;
 				case 14 : CalcCr  	nl5 = new CalcCr();		nl5.main("Itemcategorykey");break;
 				case 15 : CalcVitD  	nl6 = new CalcVitD();	nl6.main("Itemcategorykey");break;
 				case 16 : CalcCBC  	nl7 = new CalcCBC();		nl7.main("Itemcategorykey");break;
