@@ -1,0 +1,39 @@
+-----------------------------
+  Findings in Thyroid Disease
+------------------------------
+
+   Goiter size  [  ....  ] cc
+------------------------------
+
+	[  0  ]	goiter ruled out
+	[  1  ]	goiter ruled in Diffuse Enlargement"
+
+	[  2  ]	goiter ruled in Nodular Enlargement" 
+	     [ 21 ]	Single Nodular Goiter 
+	     [ 22 ]	Multiple Nodular Goiter
+			     
+------------------------------
+   Detect any nodules
+
+	[  0  ]	None
+	[  1  ]	Single nodule 
+	[  2  ]	Multinodular Goiter 
+			
+-------------------------------
+   thyroid gland for consistency
+
+	[  1  ]	Soft	
+	[  2  ]	Soft to Firm
+	[  3  ]	Firm
+
+	[  4  ]	Cobble-stone
+	[  5  ]	Firm to hard
+	[  6  ]	Hard			
+										
+-------------------------------
+   Evaluate the thyroid gland for tenderness
+
+	[  0  ]	Tender
+	[  1  ]	Non-tender
+	 
+-------------------------------

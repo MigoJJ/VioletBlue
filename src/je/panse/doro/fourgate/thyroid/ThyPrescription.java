@@ -13,7 +13,6 @@ import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.CalcTFT;
-import je.panse.doro.fourgate.thyroid.text.thyroidfindins.ThyroidPhysicalExam;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 

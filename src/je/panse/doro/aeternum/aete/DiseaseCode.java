@@ -19,7 +19,8 @@ public class DiseaseCode {
 				case "dp" : cresult =("#  DM with Peripheral Neuropathy");break;
 				case "da" : cresult =("#  DM with Autonomic Neuropathy");break;
 				case "pd" : cresult =("#  Prediabetes");break;
-					
+				case "pg" : cresult =("#  Gestational Diabetes Mellitus");break;
+				
 			case "t" : cresult =("#  Hypertension ")	;break;
 			case "c" : cresult =("#  Hypercholesterolemia ");break;
 			case "ctg" : cresult =("#  HyperTriGlyceridemia ");break;
