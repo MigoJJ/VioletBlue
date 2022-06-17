@@ -16,19 +16,18 @@ public class CalcLpa {
 		if (skeys == "Itemcategorykey") {
 		}
 		else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
 		}
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print(">>>>>>> Input Lp(a) >>>>>>> : \n");
+	        	Double Lpa  = input.nextDouble();
 	        System.out.print(">>>>>>> Input Apob >>>>>>> : ");
-	        
-	        Double Lpa  = input.nextDouble();
-	        int Apob = input.nextInt();
+	        	int Apob = input.nextInt();
   		
 	//      input.close();
 	        String Lpar = String.format("\tLiporpotein(a)   [ %3.1f ]  ≤ 30.0 mg/dL ", Lpa); 
-	        String Apobr= String.format("\tApoLiporpotein(b)[ %3d ]"
-	        		+ " M:46-174   F:46-142 mg/dL", Apob); 
+	        String Apobr= String.format("\tApoLiporpotein(B)[ %3d ]"
+	        		+ "  M:46-174   F:46-142 mg/dL", Apob); 
 	        String lar = ("\t" + Lpar + "\n\t" + Apobr);
 
 	                

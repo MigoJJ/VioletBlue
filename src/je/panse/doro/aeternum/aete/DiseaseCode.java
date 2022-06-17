@@ -90,11 +90,11 @@ public class DiseaseCode {
 				case "oca" : cresult =("#  Cataract OP(+)");
 						
 	   		case "hbv" :cresult =("#  HBsAg(+) Carrier ");break;
-	   		case "hcv" :cresult =("#  HCVAb( Pisitive )  ");break;
-	   		case "hcvp" :cresult =("#  HCVAb(Pisitive) --> PCR(Negative) confirmed  ");break;
+	   		case "hcv" :cresult =("#  Hepatitis C virus (HCV) chronic infection");break;
+	   		case "hcvp" :cresult =("#  HCV-Ab(Pisitive) --> PCR(Negative) confirmed  ");break;
 	   		
 	   		case "hh" : cresult =("#  Hepatic Hemagioma");break;
-		   		case "hc" : cresult =("#  Hepatic Cyst ");break;
+	   			case "hc" : cresult =("#  Hepatic Cyst ");break;
 				case "hn" : cresult =("#  Hepatic Nodule ");break;
 				case "hhn" : cresult =("#  Hepatic higher echoic nodule ");break;
 				case "hf" : cresult =("#  Fatty Liver");break;
@@ -128,7 +128,8 @@ public class DiseaseCode {
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
 				case "wei": cresult =("#  Weight loss");break;
-				case "esa": cresult =("#  Easy fatigue");break;
+					case "weig": cresult =("#  Weight gain");break;
+				case "eas": cresult =("#  Easy fatigue");break;
 				case "obe": cresult =("#  Obesity");break;
 					case "obec": cresult =("#  Central Obesity");break;
 				
@@ -140,6 +141,8 @@ public class DiseaseCode {
 				case "leu": cresult =("#  Leukocytopenia");break;
 				case "thr": cresult =("#  Thrombocytopenia");break;
 				case "got": cresult =("#  GOT/GPT/GGT elevation");break;
+				case "afp" : cresult =("#  AFP elevation ");break;
+				case "ca1" : cresult =("#  CA19-9 elevation ");break;
 				case "her": cresult =("#  Herpes Zoster");break;
 				
 				case "uti": cresult =("#  Urinary Tract Infection");break;

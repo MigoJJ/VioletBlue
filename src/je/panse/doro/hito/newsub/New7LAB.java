@@ -25,8 +25,8 @@ public class New7LAB {
 				case 3 : CalcChol 	nl4 = new CalcChol();	nl4.main(null);break;
 				case 4 : CalcCr	 	nl5 = new CalcCr();		nl5.main(null);break;
 				case 5 : CalcVitD  	nl6 = new CalcVitD();	nl6.main(null);break;
-				case 6 : CalcCBC  	nl7 = new CalcCBC();	nl7.main(null);break;
-				case 7 : CalcLpa  	nl8 = new CalcLpa();	nl8.main(null);break;
+				case 6 : CalcCBC  	nl7 = new CalcCBC();		nl7.main(null);break;
+				case 7 : CalcLpa  	nl8 = new CalcLpa();		nl8.main(null);break;
 
 		   		case 9 : case 99 : case 999 :
 		   			Key_Iwbb st999 = new Key_Iwbb();

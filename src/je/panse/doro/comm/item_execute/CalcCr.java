@@ -52,12 +52,12 @@ public class CalcCr {
 			}
 	
 //input.close();
-       String Crresultheadline = ("Creatinine (mg/dl) \teGFR (ml/min) \tA/C ratio");
+       String Crresultheadline = ("\tCreatinine (mg/dl) \teGFR (ml/min) \tA/C ratio");
        Crresult = ("\t" + Cr +"\t\t" + eGFR + "\t\t" + ACratio);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresultheadline);
-				fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
-				fcp1.writeliner(Enter.wts + "/7LAB", Crresult + "\n" + RACratio + "\n" + ReGFR  + "\n");
+				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
+				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + Crresult + "\n\t" + RACratio + "\n\t" + ReGFR  + "\n");
 				
 			       if (skeys == "Itemcategorykey") {
 						fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
