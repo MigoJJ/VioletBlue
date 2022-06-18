@@ -27,7 +27,7 @@ public class CalcTFT {
 	        String tftresult = ("     " + T3 +"\t\t" + free_T4 + "\t\t" + TSH);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", TFTheadline);
-	 				fcp1.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
+	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
 	 				fcp1.writeliner(Enter.wts + "/7LAB", tftresult + "\n");
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");
