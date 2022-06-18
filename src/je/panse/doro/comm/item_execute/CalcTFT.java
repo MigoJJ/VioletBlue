@@ -23,8 +23,8 @@ public class CalcTFT {
 	        TSH = input.nextDouble();
 //      input.close();
 	        
-	        String TFTheadline = ("     T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String tftresult = ("     " + T3 +"\t\t" + free_T4 + "\t\t" + TSH);
+	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
+	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + TSH);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");

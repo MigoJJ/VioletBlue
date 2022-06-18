@@ -28,7 +28,7 @@ public class CalcLpa {
 	        String Lpar = String.format("\tLiporpotein(a)   [ %3.1f ]  ≤ 30.0 mg/dL ", Lpa); 
 	        String Apobr= String.format("\tApoLiporpotein(B)[ %3d ]"
 	        		+ "  M:46-174   F:46-142 mg/dL", Apob); 
-	        String lar = ("\t" + Lpar + "\n\t" + Apobr);
+	        String lar = (Lpar + "\n" + Apobr);
 
 	                
 	        System.out.println(lar);

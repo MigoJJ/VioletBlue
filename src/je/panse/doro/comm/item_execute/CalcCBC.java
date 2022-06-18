@@ -64,13 +64,13 @@ public class CalcCBC {
 		fcp1.writeliner(Enter.wts + "/7LAB", rPlt);
 	}
 	static void cbchb(double Hb, int WBC, int Plt) throws Exception {		
-	       String CBCheadline = ("    Hb (g/dl) \t WBC (cells/L) \tPlatelet (billion/L)");
-	       String CBCresult = ("\t" + Hb +"\t\t" + WBC + "\t\t" + Plt);
+	       String CBCheadline = "\tHb (g/dl)   WBC (cells/L)  Platelet (billion/L)";
+	       String CBCresult = (Hb +"\t\t" + WBC + "\t\t" + Plt);
 				File_cdrw_proc fcp2 = new File_cdrw_proc();
 					fcp2.writeliner(Enter.wts + "/7LAB", CBCheadline);
-					fcp2.writeliner(Enter.wts + "/7LAB", "-----------------------------------------------");
-					fcp2.writeliner(Enter.wts + "/7LAB", CBCresult);
-		
+					fcp2.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
+					fcp2.writeliner(Enter.wts + "/7LAB", "\t" + CBCresult);
+									
 		}
 // ----------	
 }
