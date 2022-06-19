@@ -5,6 +5,7 @@ import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.fourgate.thyroid.ThyPrescription;
+import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.main.Enter;
 
 public class Diseasecategory {
@@ -28,7 +29,7 @@ public class Diseasecategory {
 			   	switch (scode) {
 			   		case 2 : 
 			   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
-			   			ThyPrescription ob4 = new ThyPrescription();
+			   			ThyroidEnter ob4 = new ThyroidEnter();
 			    		ob4.main(null);
 			    		break;
 	//		   						
