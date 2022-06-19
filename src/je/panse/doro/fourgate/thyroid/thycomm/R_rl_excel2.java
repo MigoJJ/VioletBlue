@@ -1,0 +1,54 @@
+package je.panse.doro.fourgate.thyroid.thycomm;
+
+import java.io.FileInputStream;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.main.Enter;
+
+public class R_rl_excel2 {
+     public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno) {
+         try {
+//     		String excelFilePath = "/home/migoey/git/ApacheExcel/src/datafiles/Lab2007.xlsx";
+     		String excelFilePath = "/home/migowj/git/Violetblue/src/je/panse/doro/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
+
+    		FileInputStream inputstream = new FileInputStream(excelFilePath); 
+            XSSFWorkbook 	workbook = 	new XSSFWorkbook(inputstream);
+            XSSFSheet 		sheet = 	workbook.getSheetAt(sheetno);
+            int rows=sheet.getPhysicalNumberOfRows();
+                System.out.println(".....................................");
+                XSSFRow row=sheet.getRow(rowindex);
+            int cells=row.getPhysicalNumberOfCells();
+                XSSFCell cell=row.getCell(columnindex);
+                String value="Migo WJ ~~^^";
+               	switch(cell.getCellType()) {
+							case STRING:System.out.print(cell.getStringCellValue() + "\t");
+							       String rres = cell.getStringCellValue(); 
+
+							       File_cdrw_proc fcp1 = new File_cdrw_proc();
+				        				fcp1.writeliner(Enter.wts + "/7LAB", rres);
+				        			charctReturn(rres);
+        				
+					        				
+							       ; break;
+							case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
+							case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;
+							default:	break;
+               		}
+
+        System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
+
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+     static String charctReturn (String rresf) {
+    	 return rresf;
+	}
+
+} 
