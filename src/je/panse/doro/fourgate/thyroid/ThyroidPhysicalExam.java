@@ -15,14 +15,15 @@ import je.panse.doro.main.Enter;
 public class ThyroidPhysicalExam {
      public static void main(String[] args) throws Exception{
         try {
-        	//	     		String excelFilePath = "/home/migowj/git/Violetblue/src/je/panse/doro/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
-        	String excelFilePath = "/home/migoey/git/VioletBlue/src/je/panse/doro/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
+        	//String excelFilePath = Enter.wd + "/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
+        	String excelFilePath = (Enter.wd + "/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx");
         	FileInputStream inputstream = new FileInputStream(excelFilePath); 
-        	XSSFWorkbook workbook = new XSSFWorkbook(inputstream);
         	
+        	XSSFWorkbook workbook = new XSSFWorkbook(inputstream);
+        	XSSFSheet sheet=workbook.getSheetAt(0);
+            
             int rowindex=0;
             int columnindex=0;
-            XSSFSheet sheet=workbook.getSheetAt(0);
             int rows=sheet.getPhysicalNumberOfRows();
             
             for(rowindex=0;rowindex<rows;rowindex++){
@@ -49,29 +50,41 @@ public class ThyroidPhysicalExam {
 //	   	            System.out.println("Insert program ..");
  			    	Scanner input = new Scanner(System.in);
  						int excelcolrowchoice=0;
- 			    		System.out.println("========= choice the number >>>>>>>>>>>>>>>>");
+ 			    		System.out.println("\r====== choice the number >>>>>>");
 	        	        excelcolrowchoice = input.nextInt();
 	        	        
-	        	        System.out.println("cells :" + cells);
-	        	        System.out.println("rows :" + rows);
-	        	        System.out.println("rowindex :" + rowindex);
+//	        	        System.out.println("cells :" + cells);
+//	        	        System.out.println("rows :" + rows);
+//	        	        System.out.println("rowindex :" + rowindex);
 
 						R_rl_excel2 rre1 = new 	R_rl_excel2();
+					    File_cdrw_proc fcp1 = new File_cdrw_proc();
                     	switch(rowindex) {
                     		case 0: 
- 						       String eclc =  ( "\t Goiter size  :  [  " + excelcolrowchoice + "  ] cc");
-						       File_cdrw_proc fcp1 = new File_cdrw_proc();
-		        				fcp1.writeliner(Enter.wts + "/7LAB", eclc);		break;
-    						case 1 : case 2: case 3 : case 4 : case 5: case 6 : case 7 : 
+                    			
+ 						       String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
+ 						      fcp1.writeliner(Enter.wts + "/7LAB", "<Thyroid Physical Exam>");
+ 						       fcp1.writeliner(Enter.wts + "/7LAB", eclc);
+		        				break;
+    						case 1 : case 2: case 3 : case 4 : case 5: case 6 : 
+		        				fcp1.writeliner(Enter.wts + "/7LAB", ".....................................");
+    							rre1.R_rl_excel_point(0,rowindex-1,1);
     							rre1.R_rl_excel_point(excelcolrowchoice,rowindex-1,1);
-    							; break;
-
-    						default:break;
+    							break;
+    						case 7 :
+		        				fcp1.writeliner(Enter.wts + "/7LAB", ".....................................");
+    							rre1.R_rl_excel_point(0,rowindex-1,1);
+    							rre1.R_rl_excel_point(excelcolrowchoice+1,rowindex-1,1);
+    							break;
+     						default:break;
                     	}
    	              //input.close();
                   //====================================if
 	                }
                 }
+            
+            ThyroidEnter.main(null);
+            
 	      }catch(Exception e) {
 	      e.printStackTrace();
 	      }

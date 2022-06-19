@@ -11,6 +11,8 @@ import je.panse.doro.main.Enter;
 
 public class R_rl_excel2 {
      public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno) {
+ 		File_cdrw_proc fcp1 = new File_cdrw_proc();
+
          try {
 //     		String excelFilePath = "/home/migoey/git/ApacheExcel/src/datafiles/Lab2007.xlsx";
      		String excelFilePath = "/home/migoey/git/VioletBlue/src/je/panse/doro/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
@@ -25,18 +27,23 @@ public class R_rl_excel2 {
                 XSSFCell cell=row.getCell(columnindex);
                 String value="Migo WJ ~~^^";
                 if(cell!=null){
-                
                 	switch(cell.getCellType()) {
-					case STRING:System.out.print(cell.getStringCellValue() + "\t"); break;
+					case STRING:System.out.print(cell.getStringCellValue() + "\t");
+						fcp1.writeliner(Enter.wts + "/7LAB", "\t" + cell.getStringCellValue());
+						break;
+                    						
 					case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
+					
 					case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;
+					
 					default:	break;
                   	}
-                   	
-                    System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
-				    File_cdrw_proc fcp1 = new File_cdrw_proc();
-       				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);	
-                    
+
+                	System.out.println("\n\r");
+//                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
+//            	    File_cdrw_proc fcp1 = new File_cdrw_proc();
+//       				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);	
+//                    
                 }else{
                 }
         }catch(Exception e) {

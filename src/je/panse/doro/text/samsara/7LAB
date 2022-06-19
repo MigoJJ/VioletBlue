@@ -1,20 +1,65 @@
-	 Goiter size  :  [  56  ] cc
-	1번 행 row : 0번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 1번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 2번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 3번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 4번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 5번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 6번 열 cloumn 값: Migo WJ ~~^^
-	 Goiter size  :  [  45  ] cc
-	1번 행 row : 0번 열 cloumn 값: Migo WJ ~~^^
-	 Goiter size  :  [  15  ] cc
-	1번 행 row : 0번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 1번 열 cloumn 값: Migo WJ ~~^^
-	2번 행 row : 2번 열 cloumn 값: Migo WJ ~~^^
-	2번 행 row : 3번 열 cloumn 값: Migo WJ ~~^^
-	2번 행 row : 4번 열 cloumn 값: Migo WJ ~~^^
-	1번 행 row : 5번 열 cloumn 값: Migo WJ ~~^^
-	0번 행 row : 6번 열 cloumn 값: Migo WJ ~~^^
-	 Goiter size  :  [  15  ] cc
-	3번 행 row : 0번 열 cloumn 값: Migo WJ ~~^^
+	Goiter size  :  [  15  ] cc
+.....................................
+	Goiter ruled out / in :
+	goiter ruled in Diffuse Enlargement
+.....................................
+	Nodules :
+	Single nodule 
+.....................................
+	Consistency : 
+	Soft to Firm
+.....................................
+	Tenderness : 
+.....................................
+	Bruit : 
+.....................................
+	DTR :
+	3+ = increased
+.....................................
+	Exophthalmos :
+	Class 1 : Only signs (limited to upper lid retraction and stare, with or without lid lag)
+	Goiter size  :  [  25  ] cc
+.....................................
+	Goiter ruled out / in :
+	goiter ruled out
+.....................................
+	Nodules :
+	None
+.....................................
+	Consistency : 
+	Soft
+.....................................
+	Tenderness : 
+	Tender
+.....................................
+	Bruit : 
+	Systolic or continuous Bruit (no) 
+.....................................
+	DTR :
+	2+ = normal / average
+.....................................
+	Exophthalmos :
+	Class 0 : No signs or symptoms
+<Thyroid Physical Exam>
+	Goiter size  :  [  25  ] cc
+.....................................
+	Goiter ruled out / in :
+	goiter ruled in Diffuse Enlargement
+.....................................
+	Nodules :
+	None
+.....................................
+	Consistency : 
+	Soft
+.....................................
+	Tenderness : 
+	Tender
+.....................................
+	Bruit : 
+	Systolic or continuous Bruit (yes) 
+.....................................
+	DTR :
+	1+ = present but depressed
+.....................................
+	Exophthalmos :
+	Class 1 : Only signs (limited to upper lid retraction and stare, with or without lid lag)
