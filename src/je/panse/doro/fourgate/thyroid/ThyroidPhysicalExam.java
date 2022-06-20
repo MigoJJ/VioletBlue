@@ -7,6 +7,7 @@ import java.util.Scanner;
 import org.apache.commons.io.input.CloseShieldInputStream;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.newsub.New7LAB;
@@ -82,7 +83,8 @@ public class ThyroidPhysicalExam {
                   //====================================if
 	                }
                 }
-            
+            File_cw_chart fcc = new File_cw_chart();
+            fcc.deuxnine();
             ThyroidEnter.main(null);
             
 	      }catch(Exception e) {
