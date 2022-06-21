@@ -27,13 +27,14 @@ public class R_rl_excel2 {
                 	switch(cell.getCellType()) {
 					case STRING:System.out.print(cell.getStringCellValue() + "\t");
 						fcp1.writeliner(Enter.wts + "/7LAB", "\t" + cell.getStringCellValue());
+						value = value + cell.getStringCellValue();
 						break;
 					case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
 					case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;
 					default:	break;
                   	}
                 	System.out.println("\n\r");
-//                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
+                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
                 }else{
                 }
         }catch(Exception e) {

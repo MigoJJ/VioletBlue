@@ -8,6 +8,7 @@ import org.apache.commons.io.input.CloseShieldInputStream;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.fourgate.thyroid.thycomm.LmDeux;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.newsub.New7LAB;
@@ -62,9 +63,8 @@ public class ThyroidPhysicalExam {
 					    File_cdrw_proc fcp1 = new File_cdrw_proc();
                     	switch(rowindex) {
                     		case 0: 
-                    			
- 						       String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
- 						      fcp1.writeliner(Enter.wts + "/7LAB", "<Thyroid Physical Exam>");
+                    			String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
+ 						       fcp1.writeliner(Enter.wts + "/7LAB", "<Thyroid Physical Exam>");
  						       fcp1.writeliner(Enter.wts + "/7LAB", eclc);
 		        				break;
     						case 1 : case 2: case 3 : case 4 : case 5: case 6 : 
@@ -83,6 +83,7 @@ public class ThyroidPhysicalExam {
                   //====================================if
 	                }
                 }
+            LmDeux.main(null);
             File_cw_chart fcc = new File_cw_chart();
             fcc.deuxnine();
             ThyroidEnter.main(null);

@@ -1,6 +1,5 @@
-LAB >
 <Thyroid Physical Exam>
-	Goiter size  :  [  45  ] cc
+	Goiter size  :  [  30  ] cc
 .....................................
 	Goiter ruled out / in :
 	goiter ruled out
@@ -18,7 +17,15 @@ LAB >
 	Systolic or continuous Bruit (yes) 
 .....................................
 	DTR :
-	2+ = normal / average
+	1+ = present but depressed
 .....................................
 	Exophthalmos :
-	Class 2 : Soft tissue involvement (oedema of conjunctivae and lids, conjunctival injection, etc.)
+	Class 1 : Only signs 
+	<Thyroid Physical Exam>Goiter size  :  [  30  ] cc
+	Goiter ruled out / in :goiter ruled out
+	Nodules :None
+	Consistency :Soft
+	Tenderness :Tender
+	Bruit :Systolic or continuous Bruit (yes)
+	DTR :1+ = present but depressed
+	Exophthalmos :Class 1 : Only signs
