@@ -60,29 +60,27 @@ public class CalcDEXA {
 	} catch (NumberFormatException e) {
 		e.printStackTrace();
 		}
-
 //	dexa_scan.close();
-	
 	}
 	// --------------------------------
 	void calc_z(double zt_score) throws Exception {
 	     if (zt_score <= -2.0) {
-			    print_z(zt_score,"Z-score", "    #   연령기대치이하  #");}
-	     else {print_z(zt_score,"Z-score","    #   정상   #");}
+			    print_z(zt_score,"Z-score", "\t#   연령기대치이하  #");}
+	     else {print_z(zt_score,"Z-score","\t#  정상   #");}
 	}
 	// --------------------------------
 	void calc_z(double zt_score, String fracture) throws Exception {
 	     if(fracture.equals("y") && zt_score <= -2.5) {
-			    print_z(zt_score,"T-score","   #    Severe Osteoporosis   #");
+			    print_z(zt_score,"T-score","\t#  Severe Osteoporosis   #");
 	     }
 	     else if(fracture.equals("n") && zt_score <= -2.5) {
-			    print_z(zt_score,"T-score","   #    Osteoporosis   #");
+			    print_z(zt_score,"T-score","\t#  Osteoporosis   #");
 	     }
 	     else if(zt_score > -2.5  && zt_score <= -1.0) {
-	    	     print_z(zt_score,"T_score","   #    Osteopenia   #");
+	    	     print_z(zt_score,"T_score","\t#  Osteopenia   #");
 	     }
 	     else if(zt_score > -1.0) {
-			    print_z(zt_score,"T-score","   #    Normal Bone Mineral Density   #");
+			    print_z(zt_score,"T-score","\t#  Normal Bone Mineral Density   #");
 	     }
 	     else {
 	     }
@@ -90,10 +88,10 @@ public class CalcDEXA {
 	// --------------------------------
 	void print_z(double zt_score, String zt, String result_z) throws Exception {
 		
-		    System.out.println("\n   골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
+		    System.out.println("\n\t골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
 		    
 		    System.out.println(result_z);
-			String result_zt_score = ("\n   골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
+			String result_zt_score = ("\n\t골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);

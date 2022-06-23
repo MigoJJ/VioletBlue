@@ -1,14 +1,18 @@
  < Chief Complaint & Present Illness>
  
+<<<<<<< HEAD
      (onset 5 year-ago)
 
 	P.I. >
 	yeth
 	egh
 	egh
+=======
+>>>>>>> refs/remotes/origin/feature
 
 < Past Medical History >
 	-------------------------------
+<<<<<<< HEAD
 	PMH> tuberculosis(-) asthma(-) hepatitis(-) 
 	     operation(-)
 	     DM (-)   HTN (-)   Chol (-)
@@ -17,8 +21,32 @@
 	     antibiotics(-) vaccine(-)
 	     Others All denied conditions 
 	-------------------------------
+=======
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
+	FHx>  
+	Allergy> ☐ food  ☐ injection/IV 
+	           
+	-------------------------------
+	[ v ]	No known drug allergies
+	
+	[ √ ]   Artherosclerosis Carotid artery
+
+	[ √ ]   Atrial Fibrillation 
+
+	[ √ ]   Prostate cancer operation(+)
+>>>>>>> refs/remotes/origin/feature
 S >
 O >
 LAB >
 A >
+<<<<<<< HEAD
+=======
+	#  Artherosclerosis Carotid artery
+	#  Atrial Fibrillation 
+	#  Prostate cancer operation(+)
+>>>>>>> refs/remotes/origin/feature
 P >

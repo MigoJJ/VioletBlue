@@ -1,18 +1,20 @@
 package je.panse.doro.fourgate.thyroid;
 
-import java.io.FileInputStream;	
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
+import org.apache.commons.io.input.CloseShieldInputStream;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.fourgate.thyroid.thycomm.LmDeux;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
-import je.panse.doro.hito.Diseasecategory;
+import je.panse.doro.hito.Itemcategory;
+import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
  
-public class ThyroidPhysicalExam {
+public class ThyroidPhysicalExam2 {
      public static void main(String[] args) throws Exception{
         try {
         	//String excelFilePath = Enter.wd + "/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";
@@ -61,17 +63,17 @@ public class ThyroidPhysicalExam {
 					    File_cdrw_proc fcp1 = new File_cdrw_proc();
                     	switch(rowindex) {
                     		case 0:
-  						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n<Thyroid Physical Exam>\n");
+  						       fcp1.writeliner(Enter.wts + "/7LAB", "\n<Thyroid Physical Exam>\n");
                     			String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
- 						       fcp1.writeliner(Enter.wts + "/6OBJ", eclc);
+ 						       fcp1.writeliner(Enter.wts + "/7LAB", eclc);
 		        				break;
     						case 1 : case 2: case 3 : case 4 : case 5: case 6 : 
-		        				fcp1.writeliner(Enter.wts + "/6OBJ", ".....................................");
+		        				fcp1.writeliner(Enter.wts + "/7LAB", ".....................................");
     							rre1.R_rl_excel_point(0,rowindex-1,1);
     							rre1.R_rl_excel_point(excelcolrowchoice,rowindex-1,1);
     							break;
     						case 7 :
-		        				fcp1.writeliner(Enter.wts + "/6OBJ", ".....................................");
+		        				fcp1.writeliner(Enter.wts + "/7LAB", ".....................................");
     							rre1.R_rl_excel_point(0,rowindex-1,1);
     							rre1.R_rl_excel_point(excelcolrowchoice+1,rowindex-1,1);
     							break;
@@ -84,8 +86,7 @@ public class ThyroidPhysicalExam {
             LmDeux.main(null);
             File_cw_chart fcc = new File_cw_chart();
             fcc.deuxnine();
-            Diseasecategory dc1 = new Diseasecategory();
-            dc1.main(null);
+            ThyroidEnter.main(null);
             
 	      }catch(Exception e) {
 	      e.printStackTrace();

@@ -61,9 +61,9 @@ public class CalcTFT {
 		}
 	//---------------------------------------------------		
 	void autoantibodies(double tshr, double micr, double tgr) throws Exception {
-        String tshrresult = ("    Anti-TSH-R Ab        : [  " + tshr +  "  ]\tIU/L\t    < 1.75  ");
-        String tgrresult = ("    Anti-Thyrogobulin Ab : [  " + tgr +  "  ]\tng/mL\t    < 115  ");
-        String micrresult = ("    Anti-microsomal Ab   : [  " + micr +  "  ]\tIU/mL\t    < 34  ");
+        String tshrresult = ("\tAnti-TSH-R Ab       : [  " + tshr +  "  ] IU/L < 1.75  ");
+        String tgrresult = ("\tAnti-Thyrogobulin Ab : [  " + tgr +  "  ] ng/mL < 115  ");
+        String micrresult = ("\tAnti-microsomal Ab  : [  " + micr +  "  ] IU/mL < 34  ");
 
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", tgrresult);
