@@ -37,8 +37,7 @@ public class DiseaseCode {
 				case "top" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks ");break;
 				case "tco" : cresult =("#  Papillary Thyroid Cancer OP(+)"
 						+ "\n\tHypothyroidism");break;
-				case "tco"
-						+ "r" : cresult =("#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
+				case "tcor": cresult =("#  Papillary Thyroid Cancer OP(+)  RAI Tx(+)"
 						+ "\n\tHypothyroidism");break;
 
 			case "sos" : cresult =("#  Severe Osteoporosis ");break;
@@ -47,8 +46,10 @@ public class DiseaseCode {
 			
 			case "at": cresult =("#  Atypical Chest pain");break;
 				case "ap" : cresult =("#  Angina Pectoris");break;
+				case "aps" : cresult =("#  Angina Pectoris with stent insertion");break;
 				case "omi": cresult =("#  Old Myocardial Infacttion");break; 
 				case "ami": cresult =("#  Acute Myocardial Infaction ");break;
+				case "amis": cresult =("#  Acute Myocardial Infaction with stent insertion");break;
 				
 				case "as": cresult =("#  Artherosclerosis Carotid artery");break;
 				case "asa": cresult =("#  Artherosclerosis Carotid artery and Aorta");break;
@@ -89,6 +90,7 @@ public class DiseaseCode {
 						+ "\n\twith Hypothyroidism");break;
 				case "oca" : cresult =("#  Cataract OP(+)");
 						
+	   		case "hav" :cresult =("#  s/p Hwpatitis A infection");break;
 	   		case "hbv" :cresult =("#  HBsAg(+) Carrier ");break;
 	   		case "hcv" :cresult =("#  Hepatitis C virus (HCV) chronic infection");break;
 	   		case "hcvp" :cresult =("#  HCV-Ab(Pisitive) --> PCR(Negative) confirmed  ");break;
@@ -121,6 +123,7 @@ public class DiseaseCode {
 			case "ins": cresult =("#  Insomnia");break;
 				case "epi": cresult =("#  Epigastric pain");break;
 				case "dys": cresult =("#  Dysuria and frequency");break;
+				case "ind": cresult =("#  Epigastric pain and Indigestion");break;
 				case "dir": cresult =("#  Diarrhea");break;
 				case "con": cresult =("#  Constipation");break;
 				case "cov": cresult =("#  COVID-19 PCR (+)");break;

@@ -1,4 +1,4 @@
-package je.panse.doro.main;
+package je.panse.doro.aeternum.aete;
 
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
@@ -8,6 +8,8 @@ import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.comm.item_administratus.Key_Press_Any;
 import je.panse.doro.hito.Newcategory;
+import je.panse.doro.main.Enter;
+import je.panse.doro.main.SingleBeam;
 
 public class Debut {
 	public void main(String[] args) throws Exception {
