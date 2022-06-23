@@ -22,10 +22,10 @@ public class Diseasecategory {
 	}	
 // --------------------------------------------    	
     void switching() throws Exception {
-   			int scode =1;	
-	       Scanner input = new Scanner(System.in);
-					System.out.print(">>> Input code ....>>> : ");
-					scode = input.nextInt();
+   			int scode =2;	
+//	       Scanner input = new Scanner(System.in);
+//					System.out.print(">>> Input code ....>>> : ");
+//					scode = input.nextInt();
 			   	switch (scode) {
 			   		case 2 : 
 			   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
@@ -38,7 +38,7 @@ public class Diseasecategory {
 			   			st999.Key_Iwbb_Page(scode); break;
 					default :System.out.println(" uncertain ... please check  !!");
 			   	}
-			input.close();
+//			input.close();
 	}
 // ----------
 }
