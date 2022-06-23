@@ -37,11 +37,11 @@ public class CalcBMI {
     }
 	class bmi{
 		void BMIhw(String rh, String rw, String rB,String rwa, String skeys) throws Exception {	
-		       String BMIheadline = ("    Height(cm)	Weight(kg)	BMI	Waist");
-		       String Bresult = ("    " + rh +" \t" + rw + "\t\t" + rB + "\t" + rwa);
+		       String BMIheadline = ("\tHeight(cm)	Weight(kg)	BMI	Waist");
+		       String Bresult = ("\t" + rh +"\t\t" + rw + "\t\t" + rB + "\t" + rwa);
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
 						fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
-						fcp1.writeliner(Enter.wts + "/7LAB", "    -------------------------------------------");
+						fcp1.writeliner(Enter.wts + "/7LAB", "\t-------------------------------------------");
 						fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 						
 //				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
@@ -56,11 +56,11 @@ public class CalcBMI {
 		}
 		
 		void BMIhw(String rh, String rw, String rB, String skeys) throws Exception {			
-		       String BMIheadline = ("    Height(cm)	Weight(kg)	BMI");
-		       String Bresult = ("    " + rh +" \t" + rw + "\t\t" + rB);
+		       String BMIheadline = ("\t\tHeight(cm)	Weight(kg)	BMI");
+		       String Bresult = ("\t" + rh +" \t\t" + rw + "\t\t" + rB);
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
 						fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
-						fcp1.writeliner(Enter.wts + "/7LAB", "    -------------------------------------------");
+						fcp1.writeliner(Enter.wts + "/7LAB", "\t-------------------------------------------");
 						fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");

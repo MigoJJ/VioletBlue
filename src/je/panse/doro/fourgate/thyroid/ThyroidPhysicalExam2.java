@@ -14,7 +14,7 @@ import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
  
-public class ThyroidPhysicalExam {
+public class ThyroidPhysicalExam2 {
      public static void main(String[] args) throws Exception{
         try {
         	//String excelFilePath = Enter.wd + "/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx";

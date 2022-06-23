@@ -19,11 +19,11 @@ public class LmDeux {
 		for (int i = 0; i < tokens.length; i++) {
 		    System.out.println(tokens[i]);
  			File_cdrw_proc fcp1 = new File_cdrw_proc();
+//			fcp1.writeliner(Enter.wts + "/7LAB", "\n\t" + tokens[i]);
 			fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tokens[i]);
+
 		}
-		
 	}
-	
 	public static String readfiler(String readf) {
 		String finalString="";
 		try{

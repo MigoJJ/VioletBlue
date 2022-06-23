@@ -34,7 +34,7 @@ public class R_rl_excel2 {
 					default:	break;
                   	}
                 	System.out.println("\n\r");
-                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
+//                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
                 }else{
                 }
         }catch(Exception e) {

@@ -1,11 +1,12 @@
 package je.panse.doro.comm;
 
-import java.io.IOException;	
+import java.io.IOException;
+
+import je.panse.doro.aeternum.aete.Debut;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
-import je.panse.doro.main.Debut;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
 

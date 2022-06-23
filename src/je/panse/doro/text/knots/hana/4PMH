@@ -1,11 +1,12 @@
 
 < Past Medical History >
 	-------------------------------
-	PMH> tuberculosis(-) asthma(-) hepatitis(-) 
-	     operation(-)
-	     DM (-)   HTN (-)   Chol (-)
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
 	FHx>  
-	Allergy> food(-) drug(-) injection(-) 
-	     antibiotics(-) vaccine(-)
-	     Others All denied conditions 
+	Allergy> ☐ food  ☐ injection/IV 
+	          [ v ] No known drug allergies 
 	-------------------------------
