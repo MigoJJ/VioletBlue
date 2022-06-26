@@ -30,9 +30,9 @@ public class New4PMH {
 					\t..............................\n
 					""");
 			System.out.println(pmhlist);
-		System.out.println("Square Root: \u221A"); //√
-		System.out.println("Square Root: \u2611"); //☑
-		System.out.println("Square Root: \u2BC0"); //
+			System.out.println("Negativet symbol : \u221A"); //√
+			System.out.println("Positive Symbol : \u2611"); //☑
+			System.out.println("Positive Symbol : \u2BC0"); //
 
 			String dcode ="";
 			while (true) {
@@ -59,22 +59,20 @@ public class New4PMH {
 					fcp1.writeliner(Enter.wts + "/8ASS", "\t" + e.code_select(dcode));
 				}
 			}
-		
 		} catch(IndexOutOfBoundsException e) {
 			System.out.println(e);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println(e);
 			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			System.out.println(e);
 			e.printStackTrace();
 		}
-			    
-		}
+	}
 
-	    public static String readfiler(String readf) {
-			String finalString="";
-			try{
+    public static String readfiler(String readf) {
+		String finalString="";
+		try{
 				File textDirName = new File(readf); 
 					Scanner myReader = new Scanner(textDirName);
 					StringBuilder stringBuilder = new StringBuilder();
@@ -89,7 +87,7 @@ public class New4PMH {
 				System.out.println("An error occurred.");
 				e.printStackTrace();
 			}
-			return finalString;
-	    }
+		return finalString;
+    }
 //------------------------------------
-	}
+}
