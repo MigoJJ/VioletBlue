@@ -19,29 +19,53 @@ O >
 
 <Thyroid Physical Exam>
 
-	Goiter size  :  [  25  ] cc
-.....................................
-.....................................
-.....................................
-.....................................
-.....................................
-.....................................
-.....................................
-LAB >
+	Goiter size  :  [  45  ] cc
+	.....................................
 	Goiter ruled out / in :
-	goiter ruled out
+	    goiter ruled in Diffuse Enlargement
+	.....................................
 	Nodules :
-	None
+	    Single nodule 
+	.....................................
 	Consistency : 
-	Soft
+	    Soft to Firm
+	.....................................
 	Tenderness : 
-	Tender
+	    Non-tender
+	.....................................
 	Bruit : 
-	Systolic or continuous Bruit (yes) 
+	    Systolic or continuous Bruit [ no ] 
+	.....................................
 	DTR :
-	1+ = present but depressed
+	    2+ = normal / average
+	.....................................
 	Exophthalmos :
-	Class 1 : Only signs 
-	LAB >Goiter ruled out / in :goiter ruled outNodules :NoneConsistency :SoftTenderness :TenderBruit :Systolic or continuous Bruit (yes)DTR :1+ = present but depressedExophthalmos :Class 1 : Only signs
+	    Class 2 : Soft tissue involvement 
+
+<Thyroid Physical Exam>
+
+	Goiter size  :  [  15  ] cc
+	.....................................
+	Goiter ruled out / in :
+	    [  out  ]
+	.....................................
+	Nodules :
+	    None
+	.....................................
+	Consistency : 
+	    Soft
+	.....................................
+	Tenderness : 
+	    Tender
+	.....................................
+	Bruit : 
+	    Systolic or continuous Bruit [ yes ] 
+	.....................................
+	DTR :
+	     1+ = present but depressed
+	.....................................
+	Exophthalmos :
+	    Class 1 : Only signs 
+LAB >
 A >
 P >

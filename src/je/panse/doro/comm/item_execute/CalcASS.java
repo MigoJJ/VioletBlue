@@ -1,11 +1,10 @@
 package je.panse.doro.comm.item_execute;
 	
-import java.io.BufferedWriter;		
+import java.io.BufferedWriter;			
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.hito.Itemcategory;
