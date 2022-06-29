@@ -87,7 +87,7 @@ public class File_cdrw_proc   {
 	public void writelinera(String writef, String writed) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
-	      myWriter.append(writed+ "\n");
+	      myWriter.append(writed);
 	      myWriter.close();
 //		      System.out.println("Successfully wrote to the file.");
 	    } catch (IOException e) {
