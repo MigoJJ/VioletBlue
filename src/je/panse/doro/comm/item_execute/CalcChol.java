@@ -29,7 +29,7 @@ public class CalcChol {
 	        int LDL = input.nextInt();
   		
 	//      input.close();
-	        String Cholresult = ("    TC-HDL-TG-LDL     [  " 
+	        String Cholresult = ("\tTC-HDL-TG-LDL     [  " 
 	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
 	                
 	        System.out.println(Cholresult);
