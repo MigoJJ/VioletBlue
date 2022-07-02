@@ -28,7 +28,7 @@ public class CalcBP {
         	bp1.DBP = input.nextInt();
         	bp1.PR = input.nextInt();
 //        input.close();
-	        	bp1.BPresult = String.format("\t\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
+	        	bp1.BPresult = String.format("\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
 	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
