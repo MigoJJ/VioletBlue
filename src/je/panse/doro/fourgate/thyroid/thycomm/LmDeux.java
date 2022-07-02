@@ -21,7 +21,6 @@ public class LmDeux {
  			File_cdrw_proc fcp1 = new File_cdrw_proc();
 //			fcp1.writeliner(Enter.wts + "/7LAB", "\n\t" + tokens[i]);
 			fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tokens[i]);
-
 		}
 	}
 	public static String readfiler(String readf) {

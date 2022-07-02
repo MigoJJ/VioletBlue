@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 < Past Medical History >
 	-------------------------------
@@ -22,4 +23,7 @@
 	-------------------------------
 	[ v ]	No known drug allergies
 	
+>>>>>>> refs/remotes/origin/feature
+=======
+< Past Medical History >
 >>>>>>> refs/remotes/origin/feature

@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_execute;
+package je.panse.doro.comm.item_execute.lab7;
 
 import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
@@ -40,8 +40,9 @@ public class CalcHbA1c {
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 	    		fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
-		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG : [ " + sg + " ] mg/dl");
-		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
+		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG  : [ " + sg + " / " 
+		    	             + sm + " ]...mg/dl...mmol/l");
+//		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
 
 		    	if (skeys == "Itemcategorykey") {
 				fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
