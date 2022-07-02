@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_execute;
+package je.panse.doro.comm.item_execute.lab7;
 
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
@@ -10,30 +10,29 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
-public class CalcChol {
+public class CalcLpa {
 	public void main(String skeys) throws Exception {
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
 		if (skeys == "Itemcategorykey") {
 		}
 		else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
 		}
     	try (Scanner input = new Scanner(System.in)) {
-	        System.out.print("========= Input TC : ");
-	        int TC = input.nextInt();
-	        System.out.print("========= Input HDL  : ");
-	        int HDL = input.nextInt();
-	        System.out.print("========= Input TG : ");
-	        int TG = input.nextInt();
-	        System.out.print("========= Input LDL  : ");
-	        int LDL = input.nextInt();
+	        System.out.print(">>>>>>> Input Lp(a) >>>>>>> : \n");
+	        	Double Lpa  = input.nextDouble();
+	        System.out.print(">>>>>>> Input Apob >>>>>>> : ");
+	        	int Apob = input.nextInt();
   		
 	//      input.close();
-	        String Cholresult = ("\tTC-HDL-TG-LDL     [  " 
-	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
+	        String Lpar = String.format("\tLiporpotein(a)   [ %3.1f ]  ≤ 30.0 mg/dL ", Lpa); 
+	        String Apobr= String.format("\tApoLiporpotein(B)[ %3d ]"
+	        		+ "  M:46-174   F:46-142 mg/dL", Apob); 
+	        String lar = (Lpar + "\n" + Apobr);
+
 	                
-	        System.out.println(Cholresult);
-				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult  + "\n");
+	        System.out.println(lar);
+				fcp1.writeliner(Enter.wts + "/7LAB", lar + "\n");
 				if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
 					Itemcategory.main(null);

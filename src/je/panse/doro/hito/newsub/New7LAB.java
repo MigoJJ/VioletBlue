@@ -3,13 +3,13 @@ package je.panse.doro.hito.newsub;
 import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_execute.CalcCBC;
-import je.panse.doro.comm.item_execute.CalcLpa;
-import je.panse.doro.comm.item_execute.CalcCr;
-import je.panse.doro.comm.item_execute.CalcHbA1c;
-import je.panse.doro.comm.item_execute.CalcChol;
-import je.panse.doro.comm.item_execute.CalcTFT;
-import je.panse.doro.comm.item_execute.CalcVitD;
+import je.panse.doro.comm.item_execute.lab7.CalcCBC;
+import je.panse.doro.comm.item_execute.lab7.CalcChol;
+import je.panse.doro.comm.item_execute.lab7.CalcCr;
+import je.panse.doro.comm.item_execute.lab7.CalcHbA1c;
+import je.panse.doro.comm.item_execute.lab7.CalcLpa;
+import je.panse.doro.comm.item_execute.lab7.CalcTFT;
+import je.panse.doro.comm.item_execute.lab7.CalcVitD;
 import je.panse.doro.main.Enter;
 
 public class New7LAB {
