@@ -8,10 +8,10 @@ import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.main.Enter;
 
-public class New3PI{
+public class New3PI2{
 	public static void main(String args) throws Exception {
 		String st;
-		New3PI.suj_insert("P.I. >", "/3CC");
+		New3PI2.suj_insert("P.I. >", "/3CC");
 		try {
 			System.out.println("*****Enter Present illness*****  ...   : ");
 			Scanner suj_text = new Scanner(System.in);
@@ -22,25 +22,22 @@ public class New3PI{
 						krq.mainquit(st);
 					break;
 				}
-				else if (st.startsWith(">")) {
-//					New3PI.insertDcode(st + "/");
-				}
 				else if (st.startsWith(":")) {
-					New3PI.insertDcode(st + "/");
+					New3PI2.insertDcode(st + "/");
 				}
 				else if (st.startsWith("]")) {
 					st = st.substring(1, st.length());
-					New3PI.suj_insert(st, "/4PMH");
+					New3PI2.suj_insert(st, "/4PMH");
 				}
 				else if (st.startsWith("#")) {
-					New3PI.suj_insert(st, "/8ASS");
+					New3PI2.suj_insert(st, "/8ASS");
 				}
 				else if (st.startsWith("...")) {
-					New3PI.suj_insert(st, "/9PLAN");
+					New3PI2.suj_insert(st, "/9PLAN");
 				}
 				else {
 					System.out.println("st = :  " + st + "\n");
-					New3PI.suj_insert(st, "/3CC");
+					New3PI2.suj_insert(st, "/3CC");
 				}
 			}while (st != "quit");
 					System.out.println("Success");
@@ -64,7 +61,7 @@ public class New3PI{
 					System.out.println(subOfSuj[0].length());
 					System.out.println(subOfSuj[1].length());
 			DiseaseCode e = new DiseaseCode();
-					New3PI.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
+					New3PI2.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
 					System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

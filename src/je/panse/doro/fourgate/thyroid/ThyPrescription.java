@@ -11,8 +11,8 @@ import java.util.stream.Stream;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Menu_list;
-import je.panse.doro.comm.item_execute.CalcBP;
-import je.panse.doro.comm.item_execute.CalcTFT;
+import je.panse.doro.comm.item_execute.lab7.CalcBP;
+import je.panse.doro.comm.item_execute.lab7.CalcTFT;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
