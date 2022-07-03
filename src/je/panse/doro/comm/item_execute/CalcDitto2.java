@@ -12,7 +12,7 @@ import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
-public class dittonew {
+public class CalcDitto2 {
 	int dittomo, labfu, dosead;
 	String dittomol, labful, doseadl; 
 	public void main(String skeys) throws Exception {
@@ -21,12 +21,12 @@ public class dittonew {
 			System.out.print(".....>>>>> Input ditto month : ");
 			dittomo = input.nextInt();
 			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
+			
 			System.out.print(".....>>>>> Lab Follow-up will be needed ? :");
 			labfu = input.nextInt();
-
 			String[] a = list_select(labfu);         //obtain the array  
 			for (int i = 0; i < a.length; i++) {//for loop to print the array  
-//				System.out.println( a[i]+ "  ");
+				System.out.println( a[i]+ "  ");
 				}
 			
 			ArrayList<String> sympt = new ArrayList<>(Arrays.asList(a));

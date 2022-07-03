@@ -1,9 +1,24 @@
-C.C.>
-   
+ < Chief Complaint & Present Illness>
+ 	P.I. >
+	test
+
 < Past Medical History >
+	-------------------------------
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
+	FHx>  
+	Allergy> ☐ food  ☐ injection/IV 
+	has been suffered : ⯀           
+	-------------------------------
+	[ v ]	 No known drug allergies
+	
 S >
+	√ Febrile sense	√ Myalgia	☐ sneezing	☐ sore throat
 O >
+LAB >
 A >
-	...OPD F/U x [  6  ]-month later
-	...next 지디스검진...
-	...Continue Medication
+	#  HyperTriGlyceridemia 
+P >
