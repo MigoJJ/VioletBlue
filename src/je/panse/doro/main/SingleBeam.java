@@ -1,6 +1,5 @@
 package je.panse.doro.main;
 
-import je.panse.doro.aeternum.aete.Debut;
 import je.panse.doro.comm.Menu_list;
 
 public class SingleBeam {
