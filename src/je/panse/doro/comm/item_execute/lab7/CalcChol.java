@@ -20,12 +20,12 @@ public class CalcChol {
 		}
     	try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("========= Input TC : ");
+	        System.out.print("\n========= Input HDL  : ");
+	        System.out.print("\n========= Input TG : ");
+	        System.out.print("\n========= Input LDL  : ");
 	        int TC = input.nextInt();
-	        System.out.print("========= Input HDL  : ");
 	        int HDL = input.nextInt();
-	        System.out.print("========= Input TG : ");
 	        int TG = input.nextInt();
-	        System.out.print("========= Input LDL  : ");
 	        int LDL = input.nextInt();
   		
 	//      input.close();

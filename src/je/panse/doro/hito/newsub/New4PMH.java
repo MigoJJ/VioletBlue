@@ -39,7 +39,7 @@ public class New4PMH {
 				}
 				else {
 					System.out.println("st = :  " + st + "\n");
-					New5SUJ.suj_insert(st, "/5SUJ");
+					New5SUJ.suj_insert(st, "/4PMH");
 				}
 			}while (st != "quit");
 					System.out.println("Success");

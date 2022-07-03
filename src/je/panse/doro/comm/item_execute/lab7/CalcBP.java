@@ -22,8 +22,8 @@ public class CalcBP {
 		}
     		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("***** Input SBP   mmHg : ");
-	        System.out.print("***** Input DBP   mmHg : ");
-	        System.out.print("***** Input pulse rate / minute : ");
+	        System.out.print("\r***** Input DBP   mmHg : ");
+	        System.out.print("\r***** Input pulse rate / minute : ");
 	        bp1.SBP = input.nextInt();
         	bp1.DBP = input.nextInt();
         	bp1.PR = input.nextInt();
