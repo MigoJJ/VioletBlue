@@ -1,15 +1,12 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.File;
+import java.io.File;	
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
-
 import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.thycomm.LmDeux;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -45,7 +42,7 @@ public class New4PMH {
 			        }
 			    else {
 				Scanner pmhistory = new Scanner(System.in);  // Create a Scanner object
-			    System.out.println("Enter Positive History >>>");
+			    System.out.println("Enter Past Medical History >>>");
 					DiseaseCode e =new DiseaseCode(); 
 				    dcode = pmhistory.nextLine().trim();  // Read user input
 				    System.out.println(e.code_select(dcode)); 

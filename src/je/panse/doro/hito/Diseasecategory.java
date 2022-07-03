@@ -1,10 +1,8 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.ThyPrescription;
 import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.main.Enter;
 
@@ -22,22 +20,22 @@ public class Diseasecategory {
 	}	
 // --------------------------------------------    	
     void switching() throws Exception {
-   			int scode =2;	
+		int scode =2;	
 //	       Scanner input = new Scanner(System.in);
 //					System.out.print(">>> Input code ....>>> : ");
 //					scode = input.nextInt();
-			   	switch (scode) {
-			   		case 2 : 
-			   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
-			   			ThyroidEnter ob4 = new ThyroidEnter();
-			    		ob4.main(null);
-			    		break;
-	//		   						
-			   		case 9 : case 99: case 999 :	
-			   			Key_Iwbb st999 = new Key_Iwbb(); 
-			   			st999.Key_Iwbb_Page(scode); break;
-					default :System.out.println(" uncertain ... please check  !!");
-			   	}
+		   	switch (scode) {
+		   		case 2 : 
+		   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+		   			ThyroidEnter ob4 = new ThyroidEnter();
+		    		ob4.main(null);
+		    		break;
+//		   						
+		   		case 9 : case 99: case 999 :	
+		   			Key_Iwbb st999 = new Key_Iwbb(); 
+		   			st999.Key_Iwbb_Page(scode); break;
+				default :System.out.println(" uncertain ... please check  !!");
+		   	}
 //			input.close();
 	}
 // ----------

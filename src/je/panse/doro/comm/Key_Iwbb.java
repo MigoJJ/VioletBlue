@@ -20,7 +20,7 @@ public class Key_Iwbb {
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
 		DirectoryAdmin   	rk13 = new DirectoryAdmin();
-		File_cw_chart 		rk11 = new File_cw_chart();
+		File_cw_chart 	rk11 = new File_cw_chart();
 		File_editor_proc 	rk12 = new File_editor_proc();
 		if (select_code == 9) { 
 			rk11.deuxnine1();

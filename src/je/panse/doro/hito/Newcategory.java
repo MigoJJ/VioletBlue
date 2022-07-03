@@ -1,16 +1,11 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
-import je.panse.doro.comm.item_execute.CalcASS;
-import je.panse.doro.comm.item_execute.CalcDitto;
-import je.panse.doro.comm.item_execute.CalcSymptom;
-import je.panse.doro.comm.item_execute.lab7.CalcBP;
-import je.panse.doro.comm.item_execute.lab7.CalcHbA1c;
+import je.panse.doro.comm.item_execute.*;
+import je.panse.doro.comm.item_execute.lab7.*;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
@@ -35,24 +30,21 @@ public class Newcategory {
 		   	int select_code = Integer.valueOf(new_code.nextLine().trim());
 		   	switch (select_code) {
 		   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
-		   		case 11 : New3PI n32 = new New3PI(); n32.main(null);break;
-		   		case 12 : CalcSymptom n33 = new CalcSymptom(); n33.main(null);break;
+			   		case 11 : New3PI n32 = new New3PI(); n32.main(null);break;
+			   		case 12 : CalcSymptom n33 = new CalcSymptom(); n33.main(null);break;
 		   		
 		   		case 2 : New4PMH.main(null);break;
 				case 3 : New5SUJ.main(null, null);break;
-		   		case 4 : 
-		    		fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+		   		case 4 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		   			New6OBJ.main(null);break;
-				case 5 : 
-		    		fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+				case 5 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
 					New7LAB.main(null);break;
-				case 6 : 
-			    	fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ASS_List");
+				case 6 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ASS_List");
 					New8ASS.main(null);break;
-				case 7 : 
-			    	fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
+				case 7 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
 					New9PLAN.main(null);break;
 
+				case 41 : CalcBMI ob0 = new CalcBMI();	 	ob0.main(null);break;
 				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
 				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
