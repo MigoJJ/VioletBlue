@@ -36,14 +36,14 @@ public class New3CC {
 			System.out.println(">>>----- Enter year/month/day:>>>");	c = s.nextLine();
 				yymmdd(c);
 			System.out.println("\n>>>----- Enter... state of health E/G/F/P...>>>");
-		   		f = s.nextLine().trim();
-		   		if (f != null && !f.isEmpty()) {
-		   			egfp(f);
-		   		}
-			System.out.println("\n>>>----- Present Illness : yes?>>>");	g = s.nextLine().trim();
-                if (g != null && !g.isEmpty()) {
-                	cc2.main(null);
-                }
+	   		f = s.nextLine().trim();
+	   		if (f != null && !f.isEmpty()) {
+	   			egfp(f);
+	   		}
+			System.out.println("\n>>>----- Present Illness : >>>");	g = s.nextLine().trim();
+           if (g != null && !g.isEmpty()) {
+            	cc2.main(null);
+            }
 			//			s.close();
 			dn1.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");

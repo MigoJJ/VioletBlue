@@ -1,8 +1,24 @@
-C.C.>
-   	P.I. >
+ < Chief Complaint & Present Illness>
+ 	P.I. >
+	test
+
 < Past Medical History >
+	-------------------------------
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
+	FHx>  
+	Allergy> ☐ food  ☐ injection/IV 
+	has been suffered : ⯀           
+	-------------------------------
+	[ v ]	 No known drug allergies
+	
 S >
+	√ Febrile sense	√ Myalgia	☐ sneezing	☐ sore throat
 O >
+LAB >
 A >
-	#  Hypercholesterolemia   test 2022/
+	#  HyperTriGlyceridemia 
 P >
