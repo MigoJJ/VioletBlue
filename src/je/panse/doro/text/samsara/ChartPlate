@@ -1,6 +1,5 @@
  < Chief Complaint & Present Illness>
- 	P.I. >
-	test
+ 
 
 < Past Medical History >
 	-------------------------------
@@ -16,9 +15,26 @@
 	[ v ]	 No known drug allergies
 	
 S >
-	√ Febrile sense	√ Myalgia	☐ sneezing	☐ sore throat
 O >
+
+<Thyroid Physical Exam>
+
+	Goiter size  :  [  1  ] cc
+	
+Goiter ruled out / in :	
+    [  out  ]	
+Nodules :	
+    None	
+Consistency : 	
+    Soft	
+Tenderness : 	
+    Tender	
+Bruit : 	
+    Systolic or continuous Bruit [ yes ] 	
+DTR :	
+     1+ = present but depressed	
+Exophthalmos :	
+    Class 1 : Only signs 
 LAB >
 A >
-	#  HyperTriGlyceridemia 
 P >
