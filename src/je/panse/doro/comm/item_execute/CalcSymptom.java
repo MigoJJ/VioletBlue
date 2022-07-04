@@ -35,7 +35,7 @@ public class CalcSymptom {
 		Scanner uaah = new Scanner(System.in);
 	   	int scc = Integer.valueOf(uaah.nextLine().trim());
 	   	
-	   	if(scc==0 | scc >= 6) {
+	   	if(scc==0 | scc >= 7) {
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			Newcategory nc1 = new Newcategory();
 			nc1.main(null);
