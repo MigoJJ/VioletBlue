@@ -50,9 +50,10 @@ public class ThyroidPhysicalExam {
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
 						switch(rowindex) {
 							case 0:
-						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n<Thyroid Physical Exam>\n");
+						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n<Thyroid Physical Exam>----------\n");
 								String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
-						       fcp1.writeliner(Enter.wts + "/6OBJ", eclc);
+						       fcp1.writeliner(Enter.wts + "/6OBJ", "\t" + eclc);
+						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n\t-----------------------------\n");
 								break;
 							case 1 : case 2: case 3 : case 4 : case 5: case 6 : 
 //								fcp1.writeliner(Enter.wts + "/6OBJ", "\n.....................................\n");
