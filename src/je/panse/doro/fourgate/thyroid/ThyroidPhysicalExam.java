@@ -1,14 +1,11 @@
 package je.panse.doro.fourgate.thyroid;
 
-import java.io.FileInputStream;		
+import java.io.FileInputStream;			
 import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.thycomm.LmDeux;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
-import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
  
 public class ThyroidPhysicalExam {
