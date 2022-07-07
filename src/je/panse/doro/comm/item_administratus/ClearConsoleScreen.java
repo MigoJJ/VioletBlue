@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ClearConsoleScreen {
     public  static void main (String [] args){
-    	for(int i = 0; i < 20; i++) // Default Height of cmd is 300 and Default width is 80
+    	for(int i = 0; i < 15; i++) // Default Height of cmd is 300 and Default width is 80
     	    System.out.print("\n"); // Prints a backspace
     }
 }

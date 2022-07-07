@@ -1,40 +1,11 @@
- < Chief Complaint & Present Illness>
- 
-
-< Past Medical History >
-	-------------------------------
-	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
-	☐ operation  ☐ Hearing loss  ☐ arthritis
-	☐ CVA    ☐ Cognitive disorder 
-	☐ DM     ☐ HTN    ☐ Dyslipidemia 
-	☐ Cancer ☐ GERD   ☐ COPD
-	FHx>  
-	Allergy> ☐ food  ☐ injection/IV 
-	has been suffered : ⯀           
-	-------------------------------
-	[ v ]	 No known drug allergies
-	
-S >
+C.C.>
+   
+<PMHx>
+S >...have been suffered :  √ 
 O >
+	Height(cm)	Weight(kg)	BMI	Waist
+	-------------------------------------------
+	158.0		55.0		22.0	99
 
-<Thyroid Physical Exam>
-
-	Goiter size  :  [  1  ] cc
-	
-Goiter ruled out / in :	
-    [  out  ]	
-Nodules :	
-    None	
-Consistency : 	
-    Soft	
-Tenderness : 	
-    Tender	
-Bruit : 	
-    Systolic or continuous Bruit [ yes ] 	
-DTR :	
-     1+ = present but depressed	
-Exophthalmos :	
-    Class 1 : Only signs 
-LAB >
 A >
 P >
