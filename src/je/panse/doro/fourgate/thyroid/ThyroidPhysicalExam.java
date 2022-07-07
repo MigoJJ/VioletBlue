@@ -52,19 +52,19 @@ public class ThyroidPhysicalExam {
 						switch(rowindex) {
 							case 0:
 						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n<Thyroid Physical Exam>----------\n");
-								String eclc =  ( "\tGoiter size  :  [  " + excelcolrowchoice + "  ] cc");
+								String eclc =  ( "Goiter size  :  [  " + excelcolrowchoice + "  ] cc");
 						       fcp1.writeliner(Enter.wts + "/6OBJ", "\t" + eclc);
-						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n\t-----------------------------\n");
+//						       fcp1.writeliner(Enter.wts + "/6OBJ", "\n\t-----------------------------\n");
 								break;
 							case 1 : case 2: case 3 : case 4 : case 5: case 6 : 
-//								fcp1.writeliner(Enter.wts + "/6OBJ", "\n.....................................\n");
+								fcp1.writeliner(Enter.wts + "/6OBJ", "");
 								rre1.R_rl_excel_point(0,rowindex-1,1);
 								rre1.R_rl_excel_point(excelcolrowchoice,rowindex-1,1);
 								break;
 							case 7 :
-//								fcp1.writeliner(Enter.wts + "/6OBJ", "\n.....................................\n");
-									rre1.R_rl_excel_point(0,rowindex-1,1);
-									rre1.R_rl_excel_point(excelcolrowchoice+1,rowindex-1,1);
+								fcp1.writeliner(Enter.wts + "/6OBJ", "");
+								rre1.R_rl_excel_point(0,rowindex-1,1);
+								rre1.R_rl_excel_point(excelcolrowchoice+1,rowindex-1,1);
 									break;
 								default:break;
 							}
