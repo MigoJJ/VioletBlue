@@ -25,7 +25,12 @@ public class R_rl_excel2 {
                 if(cell!=null){
 						switch(cell.getCellType()) {
 							case STRING:System.out.print(cell.getStringCellValue() + "\t");
-								fcp1.writelinera(Enter.wts + "/6OBJ", "\t" + cell.getStringCellValue());
+							
+							    String iwbter = "\t" + cell.getStringCellValue();
+							    String sfiwbt = String.format("%12s", iwbter);
+								fcp1.writelinera(Enter.wts + "/6OBJ", sfiwbt);
+							
+//								fcp1.writelinera(Enter.wts + "/6OBJ", "\t" + cell.getStringCellValue());
 								break;
 							case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
 							case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;
