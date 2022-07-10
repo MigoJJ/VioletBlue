@@ -1,43 +1,13 @@
- < Chief Complaint & Present Illness>
- 
+C.C.>
+   
 <PMHx>
-	-------------------------------
-	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
-	☐ operation  ☐ Hearing loss  ☐ arthritis
-	☐ CVA    ☐ Cognitive disorder 
-	☐ DM     ☐ HTN    ☐ Dyslipidemia 
-	☐ Cancer ☐ GERD   ☐ COPD
-	FHx>  
-	Allergy> ☐ food  ☐ injection/IV 
-	have been suffered : ⯀  √         
-	-------------------------------
-	[ v ]	 No known drug allergies
-	
-S >  ...have been suffered :  √ 
+S >...have been suffered :  √ 
 O >
-
-<Thyroid Physical Exam>----------
-
-	Goiter size  :  [  25  ] cc
-
-	Goiter :
-	Nodules :
-	Consistency : 	Soft
-	Tenderness : 	    Non-tender
-	Bruit : 	    Systolic or continuous Bruit [ no ] 
-	DTR :	    2+ = normal / average
-	Exophthalmos :	    Class 2 : Soft tissue involvement 
-<Thyroid Physical Exam>----------
-
-	Goiter size  :  [  2  ] cc
-
-	Goiter :	ruled in Diffuse Enlargement
-	Nodules :	    Single nodule 
-	Consistency : 	Soft to Firm
-	Tenderness : 	    Non-tender
-	Bruit : 	    Systolic or continuous Bruit [ no ] 
-	DTR :	    2+ = normal / average
-	Exophthalmos :	    Class 2 : Soft tissue involvement 
-LAB >
 A >
 P >
+	...OPD F/U x [  3  ]-month later
+	...next Lab F/U... 
+	...Continue Medication
+	...OPD F/U x [  6  ]-month later
+	...next 지디스검진...
+null
