@@ -26,7 +26,7 @@ public class Diseasecategory {
 //					scode = input.nextInt();
 		   	switch (scode) {
 		   		case 2 : 
-		   			Menu_list.main(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+		   			Menu_list.main(Enter.wd + "/fourgate/thyroid/dataxlsxfile/ThyroidStart");
 		   			ThyroidEnter ob4 = new ThyroidEnter();
 		    		ob4.main(null);
 		    		break;
