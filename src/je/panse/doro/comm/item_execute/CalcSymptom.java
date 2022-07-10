@@ -9,11 +9,14 @@ import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class CalcSymptom {
 	public static void main(String[] args) throws Exception {
+		ClearConsoleScreen ccs = new ClearConsoleScreen();
+		ccs.main(null);
 		System.out.println(
 		"""
 		-------------------------
@@ -32,7 +35,7 @@ public class CalcSymptom {
 		Scanner uaah = new Scanner(System.in);
 	   	int scc = Integer.valueOf(uaah.nextLine().trim());
 	   	
-	   	if(scc==0 | scc >= 6) {
+	   	if(scc==0 | scc >= 7) {
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			Newcategory nc1 = new Newcategory();
 			nc1.main(null);
@@ -107,15 +110,15 @@ public class CalcSymptom {
 			case 1 : String[] arr={"Febrile sense", "Myalgia","cough", "sputum", "sneezing", "sore throat"};
 					return arr;  
 			case 2 : String[] arr1={
+					"Losing weight",
+					"muscle weakness & tremors",
 					"anxiety & depression", 
 					"irritability & nervousness",
 					"Insomnia", 
-					"Losing weight",
-					"muscle weakness & tremors",
 					"irregular menstrual periods or stop",
 					"sensitive to heat", 
 					"vision problems or eye irritation"
-					 	};
+					};
 					return arr1;  
 			case 3 : String[] arr2= {		
 					"tiredness","being sensitive to cold","weight gain","constipation",
@@ -124,19 +127,18 @@ public class CalcSymptom {
 					"loss of libido (sex drive)",
 					"pain, numbness and a tingling sensation in the hand and fingers "
 					+ "(carpal tunnel syndrome) irregular periods or heavy periods"
-						};
+					};
 					return arr2;  
 					
 			case 4 : String[] arr3={
-					"• Anorexia",
-					"• Weight loss (e.g. malabsorption, malignancy)",
-					"• Nausea",
-					"• Fatigue",
-					"• Fever (e.g. intrabdominal infection)",
-					"• Pruritis (e.g. cholestasis)",
-					"• Confusion (e.g. hepatic encephalopathy)",
-					"• Weight loss (e.g. malabsorption, malignancy)"
-						};
+					" Anorexia",
+					" Nausea",
+					" Fatigue",
+					" Fever", 
+					" Pruritis (cholestasis)",
+					" Confusion", 
+					" Weight loss"," Weight gain" 
+					 };
 					return arr3;  
 			case 5 : String[] arr4={
 					"Shortness of breath","Nausea, vomiting, or belching",
@@ -144,8 +146,22 @@ public class CalcSymptom {
 					"Palpitations","Fatigue","Dizziness","Fainting",
 					"Indigestion, vomiting","Vague abdominal discomfort",
 					"Tingling sensation in either arm (more often the left) or shoulder"
-						};
-					return arr4;  
+					};
+					return arr4;
+			case 6 : String[] arr5={
+					"Urinate (pee) a lot, often at night",
+					"Are very thirsty",
+					"Lose weight without trying",
+					"Are very hungry",
+					"Have blurry vision",
+					"Have numb or tingling hands or feet",
+					"Feel very tired",
+					"Have very dry skin",
+					"Have sores that heal slowly",
+					"Have more infections than usual"
+					};
+					return arr5;  
+	   		
 	   		case 9 : case 99: case 999 :	
 	   			Key_Iwbb st999 = new Key_Iwbb(); 
 	   			st999.Key_Iwbb_Page(dlist); break;

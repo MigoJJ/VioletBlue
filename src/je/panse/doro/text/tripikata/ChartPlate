@@ -1,8 +1,6 @@
  < Chief Complaint & Present Illness>
- 	P.I. >
-	test
-
-< Past Medical History >
+ 
+<PMHx>
 	-------------------------------
 	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
 	☐ operation  ☐ Hearing loss  ☐ arthritis
@@ -11,14 +9,35 @@
 	☐ Cancer ☐ GERD   ☐ COPD
 	FHx>  
 	Allergy> ☐ food  ☐ injection/IV 
-	has been suffered : ⯀           
+	have been suffered : ⯀  √         
 	-------------------------------
 	[ v ]	 No known drug allergies
 	
-S >
-	√ Febrile sense	√ Myalgia	☐ sneezing	☐ sore throat
+S >  ...have been suffered :  √ 
 O >
+
+<Thyroid Physical Exam>----------
+
+	Goiter size  :  [  25  ] cc
+
+	Goiter :
+	Nodules :
+	Consistency : 	Soft
+	Tenderness : 	    Non-tender
+	Bruit : 	    Systolic or continuous Bruit [ no ] 
+	DTR :	    2+ = normal / average
+	Exophthalmos :	    Class 2 : Soft tissue involvement 
+<Thyroid Physical Exam>----------
+
+	Goiter size  :  [  2  ] cc
+
+	Goiter :	ruled in Diffuse Enlargement
+	Nodules :	    Single nodule 
+	Consistency : 	Soft to Firm
+	Tenderness : 	    Non-tender
+	Bruit : 	    Systolic or continuous Bruit [ no ] 
+	DTR :	    2+ = normal / average
+	Exophthalmos :	    Class 2 : Soft tissue involvement 
 LAB >
 A >
-	#  HyperTriGlyceridemia 
 P >

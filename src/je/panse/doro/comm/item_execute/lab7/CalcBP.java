@@ -20,32 +20,31 @@ public class CalcBP {
 		else {
 			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
-    		try (Scanner input = new Scanner(System.in)) {
-	        System.out.print("***** Input SBP   mmHg : ");
-	        System.out.print("\r***** Input DBP   mmHg : ");
-	        System.out.print("\r***** Input pulse rate / minute : ");
-	        bp1.SBP = input.nextInt();
-        	bp1.DBP = input.nextInt();
-        	bp1.PR = input.nextInt();
-//        input.close();
-	       bp1.BPresult = String.format("\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
-	       fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else if (skeys == "diseasecategorythyroid") {
-					fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
-		   			ThyPrescription tp1 = new ThyPrescription();
-		    		tp1.main(null);
-				}
-				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.print("\r***** Input  [SBP ] [ DBP ]  [pulse rate / minute ] : ");
+			bp1.SBP = input.nextInt();
+			bp1.DBP = input.nextInt();
+			bp1.PR = input.nextInt();
+			//        input.close();
+		   bp1.BPresult = String.format("\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
+		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
+
+		   if (skeys == "Itemcategorykey") {
+			   fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+				Itemcategory.main(null);
+			}
+			else if (skeys == "diseasecategorythyroid") {
+				fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+				ThyPrescription tp1 = new ThyPrescription();
+				tp1.main(null);
+			}
+			else {
+				fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 					New6OBJ.main(null);
 				}
-			} catch (NumberFormatException e) {
-			e.printStackTrace();
-			}
+		} catch (NumberFormatException e) {
+		e.printStackTrace();
+		}
 	}
 //---------------------------------------------------		
 }
