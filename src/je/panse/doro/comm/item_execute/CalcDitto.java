@@ -30,7 +30,7 @@ public class CalcDitto {
 			else {
 		    }
 			System.out.print(".....>>>>> Dose Follow-up plan ? : ");
-			System.out.println ("\n 0   :  ...Observation and Follow-up\n");
+			System.out.println ("\n0   :  ...Observation and Follow-up\n");
 			System.out.println (" 10   : ...Follow-up without medication\n");
 			System.out.println (" 1   :  ...next Lab F/U...\n");
 			System.out.println (" 2   :  ...next 공단검진 F/U...\n");
