@@ -11,6 +11,7 @@ import je.panse.doro.comm.item_execute.lab7.CalcCPA;
 import je.panse.doro.comm.item_execute.lab7.CalcCr;
 import je.panse.doro.comm.item_execute.lab7.CalcDEXA;
 import je.panse.doro.comm.item_execute.lab7.CalcEKG;
+import je.panse.doro.comm.item_execute.lab7.CalcGOT;
 import je.panse.doro.comm.item_execute.lab7.CalcHbA1c;
 import je.panse.doro.comm.item_execute.lab7.CalcLpa;
 import je.panse.doro.comm.item_execute.lab7.CalcTFT;
@@ -37,6 +38,8 @@ public class Itemcategory {
 				case 14 : CalcCr  	nl5 = new CalcCr();		nl5.main("Itemcategorykey");break;
 				case 15 : CalcVitD  	nl6 = new CalcVitD();	nl6.main("Itemcategorykey");break;
 				case 16 : CalcCBC  	nl7 = new CalcCBC();		nl7.main("Itemcategorykey");break;
+				case 17 : CalcLpa  	nl8 = new CalcLpa();		nl8.main("Itemcategorykey");break;
+				case 18 : CalcGOT  	nl9 = new CalcGOT();		nl9.main("Itemcategorykey");break;
 
 
 				case 9 : case 99 : case 999 :

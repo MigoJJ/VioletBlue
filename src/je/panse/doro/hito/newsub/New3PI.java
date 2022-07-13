@@ -22,9 +22,9 @@ public class New3PI{
 						krq.mainquit(st);
 					break;
 				}
-				else if (st.startsWith(">")) {
+//				else if (st.startsWith(">")) {
 //					New3PI.insertDcode(st + "/");
-				}
+//				}
 				else if (st.startsWith(":")) {
 					New3PI.insertDcode(st + "/");
 				}

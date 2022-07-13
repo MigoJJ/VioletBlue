@@ -13,6 +13,7 @@
 
 =======
 C.C.>
+<<<<<<< HEAD
    	P.I. >
 >>>>>>> refs/remotes/origin/feature
 < Past Medical History >
@@ -48,8 +49,14 @@ C.C.>
 =======
 >>>>>>> refs/remotes/origin/feature
 S >
+=======
+   
+<PMHx>
+S >...have been suffered :  √ 
+>>>>>>> refs/remotes/origin/feature
 O >
 A >
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -60,4 +67,12 @@ A >
 =======
 	#  Hypercholesterolemia   test 2022/
 >>>>>>> refs/remotes/origin/feature
+=======
+>>>>>>> refs/remotes/origin/feature
 P >
+	...OPD F/U x [  3  ]-month later
+	...next Lab F/U... 
+	...Continue Medication
+	...OPD F/U x [  6  ]-month later
+	...next 지디스검진...
+null

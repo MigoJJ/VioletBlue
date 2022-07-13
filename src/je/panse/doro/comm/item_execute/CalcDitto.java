@@ -17,23 +17,6 @@ public class CalcDitto {
 			System.out.print(".....>>>>> Input ditto month : ");
 			dittomo = input.nextInt();
 			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
-			
-			System.out.print(".....>>>>> Lab Follow-up will be needed ? :");
-			System.out.print("\n   0   : ...Observation and Follow-up");
-			System.out.print("\n   10   : ...Follow-up without medication");
-			System.out.print("\n   1   :...next Lab F/U... ");
-			System.out.print("\n   2   :...next 공단검진...");
-			System.out.print("\n   3   :...next 지디스검진...\n");
-			
-			labfu = input.nextInt();
-	        
-			if (labfu == 0) {   labful = ("\t...Observation and Follow-up"); }
-			if (labfu == 10) {   labful = ("\t...Follow-up without medication"); }
-			else if (labfu == 1) {   labful = ("\t...next Lab F/U... "); }
-			else if (labfu == 2) {   labful = ("\t...next 공단검진..."); }
-			else if (labfu == 3) {   labful = ("\t...next 지디스검진..."); }
-			else {
-			}
 			System.out.print(".....>>>>> Dose Adjust ? : ");
 			dosead = input.nextInt();
 
@@ -41,11 +24,27 @@ public class CalcDitto {
 			else if (dosead == 5) { doseadl = ("\t...New Starting Medication :");}
 			else if (dosead == 55) { doseadl = ("\t...Discontinue Medication :");}
 			else if (dosead == 6) { doseadl = ("\t...Continue Medication");}
-			else if (dosead == 2) { doseadl = ("\t...dose-down");}
-			else if (dosead == 8) { doseadl = ("\t...dose-up");}
+			else if (dosead == 2) { doseadl = ("\t...dose-down : ");}
+			else if (dosead == 8) { doseadl = ("\t...dose-up : ");}
 			else if (dosead == 4) { doseadl = ("\t...예전 약으로");}
 			else {
 		    }
+			System.out.print(".....>>>>> Dose Follow-up plan ? : ");
+			System.out.println ("\n0   :  ...Observation and Follow-up\n");
+			System.out.println (" 10   : ...Follow-up without medication\n");
+			System.out.println (" 1   :  ...next Lab F/U...\n");
+			System.out.println (" 2   :  ...next 공단검진 F/U...\n");
+			System.out.println (" 3   :  ...next 지디스 검진 F/U...\n");
+			labfu = input.nextInt();
+	        
+			if (labfu == 0) {   labful = ("\t...Observation and Follow-up"); }
+			else if (labfu == 10) {   labful = ("\t...Follow-up without medication\n"); }
+			else if (labfu == 1) {   labful = ("\t...next Lab F/U... "); }
+			else if (labfu == 2) {   labful = ("\t...next 공단검진..."); }
+			else if (labfu == 3) {   labful = ("\t...next 지디스검진..."); }
+			else {
+			}
+
 			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
 			fcp1.writeliner(Enter.wts + "/9PLAN", labful);
 			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);

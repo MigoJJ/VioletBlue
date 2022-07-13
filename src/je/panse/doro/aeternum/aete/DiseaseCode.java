@@ -6,6 +6,17 @@ public class DiseaseCode {
 	public String code_select(String dcode) throws IOException {
 	    String cresult = "";
 		switch (dcode) {
+		
+			case "fd" : cresult =("#  Diabetes mellitus  F/U");break;
+			case "ft" : cresult =("#  Hypertension F/U")	;break;
+			case "fc" : cresult =("#  Hypercholesterolemia F/U");break;
+			case "fctg" : cresult =("#  HyperTriGlyceridemia F/U");break;
+			case "fte" : cresult =("#  Hyperthyroidism F/U");break;
+			case "fto" : cresult =("#  Hypothyroidism F/U");break;
+			case "fnti" : cresult =("#  Non-Thyroidal Illness F/U");break;
+			case "ftep" : cresult =("#  Hyperthyroidism with Pregnancy [   ]  weeks F/U");break;
+			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks F/U");break;
+					
 			case "d" : cresult =("#  DM without complications	");break;
 				case "dr" : cresult =("#  DM without Retinopathy ");break;
 					case "drn" : cresult =("#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
