@@ -63,19 +63,17 @@ public class CalcDittoProc3 {
 	}
 
 	public static void iwbtList(String[] args) throws Exception {
-		String submenuNo = "1";
+		Integer submenuNo = 1;
 		try {
-			while(submenuNo !=null) {
+			while(submenuNo != null) {
 				System.out.println(">>> insert code ...");
 				Scanner sc = new Scanner(System.in);
-					submenuNo = sc.nextLine();
+					submenuNo = sc.nextInt();
 					System.out.println("User input: " + submenuNo);	
 					R_rl_excel3 rre1 = new 	R_rl_excel3();
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
-
-						int itssubmenuNo = Integer.parseInt(submenuNo);
 									fcp1.writeliner(Enter.wts + "/9PLAN", "");
-									rre1.R_rl_excel_point(itssubmenuNo-1,0,0);
+									rre1.R_rl_excel_point(submenuNo-1,0,0);
 			}          
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
