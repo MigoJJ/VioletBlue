@@ -26,7 +26,7 @@ public class CalcDitto {
 			else if (dosead == 6) { doseadl = ("\t...Continue Medication");}
 			else if (dosead == 2) { doseadl = ("\t...dose-down : ");}
 			else if (dosead == 8) { doseadl = ("\t...dose-up : ");}
-			else if (dosead == 4) { doseadl = ("\t...예전 약으로");}
+			else if (dosead == 4) { doseadl = ("\t...previous Px");}
 			else {
 		    }
 			System.out.print(".....>>>>> Dose Follow-up plan ? : ");
@@ -35,6 +35,7 @@ public class CalcDitto {
 			System.out.println (" 1   :  ...next Lab F/U...\n");
 			System.out.println (" 2   :  ...next 공단검진 F/U...\n");
 			System.out.println (" 3   :  ...next 지디스 검진 F/U...\n");
+			
 			labfu = input.nextInt();
 	        
 			if (labfu == 0) {   labful = ("\t...Observation and Follow-up"); }
