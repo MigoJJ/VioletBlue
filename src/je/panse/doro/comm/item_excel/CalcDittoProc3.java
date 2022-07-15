@@ -7,11 +7,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
+import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
 
 public class CalcDittoProc3 {
@@ -53,8 +56,7 @@ public class CalcDittoProc3 {
 			}
 			
 			iwbtList(null);
-			New7LAB nc1 = new New7LAB();
-			nc1.main(null);
+
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -65,7 +67,7 @@ public class CalcDittoProc3 {
 	public static void iwbtList(String[] args) throws Exception {
 		Integer submenuNo = 1;
 		try {
-			while(submenuNo != null) {
+			while(submenuNo != 9) {
 				System.out.println(">>> insert code ...");
 				Scanner sc = new Scanner(System.in);
 					submenuNo = sc.nextInt();
@@ -74,8 +76,12 @@ public class CalcDittoProc3 {
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
 									fcp1.writeliner(Enter.wts + "/9PLAN", "");
 									rre1.R_rl_excel_point(submenuNo-1,0,0);
-			}          
-		} catch (IOException e) {
+			}  
+			File_cdrw_proc fcp1 = new File_cdrw_proc(); 
+			fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+			Newcategory nc1 = new Newcategory();
+			nc1.main(null);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

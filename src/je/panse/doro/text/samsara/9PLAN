@@ -1,33 +1,8 @@
+P >
+	...OPD F/U x [  6  ]-month later
+	...Continue Medication
 
-	...Observation and Follow-up
-	...Follow-up without medication
-	...Lab F/U...
-	...Observation and Follow-up
-	...Lab F/U...
+	    DM Lab  :  Lp(a), ApoB, +A/C, Alab F/U
 	    TFT , Auto-antibodies F/U
-	...Lab F/U...
-	...Observation and Follow-up
-	...Lab F/U...
-	    TFT , Auto-antibodies F/U
-	...Follow-up without medication
-	    TFT , Auto-antibodies F/U
-          	.
-	...next  공단검진...
-	    TFT , Auto-antibodies F/U
-     	...USG
-	...Observation and Follow-up
-	...Observation and Follow-up
-	...next  공단검진...
-	...Observation and Follow-up
-	...Follow-up without medication
-	    DEXA    EKG    CPA 
-	...Observation and Follow-up
-	...Follow-up without medication
-	...Observation and Follow-up
-	...Lab F/U...
-          	.
-	...Follow-up without medication
-	...Lab F/U...
-	    TFT , Auto-antibodies F/U
-          	.
-	    TFT , Auto-antibodies F/U
+	...next 지디스 검진…
+	---------------------------------------------
