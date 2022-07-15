@@ -7,10 +7,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.Key_returnquit;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
-import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
@@ -19,7 +15,7 @@ public class CalcDittoProc3 {
 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9list.xlsx");
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
 		XSSFWorkbook workbook =  new XSSFWorkbook(inputstream) ;
-		XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
+		XSSFSheet sheet = workbook.getSheetAt(sheeNo);
 		
 		int rows = sheet.getLastRowNum();
 		int cols = sheet.getRow(1).getLastCellNum();
@@ -72,8 +68,8 @@ public class CalcDittoProc3 {
 					System.out.println("User input: " + submenuNo);	
 					R_rl_excel3 rre1 = new 	R_rl_excel3();
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
-									fcp1.writeliner(Enter.wts + "/9PLAN", "");
-									rre1.R_rl_excel_point(submenuNo-1,0,0);
+						fcp1.writeliner(Enter.wts + "/9PLAN", "");
+						rre1.R_rl_excel_point(submenuNo-1,0,0);
 			}          
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
