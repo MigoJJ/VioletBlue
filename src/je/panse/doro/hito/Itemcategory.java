@@ -4,18 +4,18 @@ import java.util.Scanner;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.comm.item_execute.*;
-import je.panse.doro.comm.item_execute.lab7.CalcBMI;
-import je.panse.doro.comm.item_execute.lab7.CalcBP;
-import je.panse.doro.comm.item_execute.lab7.CalcCBC;
-import je.panse.doro.comm.item_execute.lab7.CalcCPA;
-import je.panse.doro.comm.item_execute.lab7.CalcCr;
-import je.panse.doro.comm.item_execute.lab7.CalcDEXA;
-import je.panse.doro.comm.item_execute.lab7.CalcEKG;
-import je.panse.doro.comm.item_execute.lab7.CalcGOT;
-import je.panse.doro.comm.item_execute.lab7.CalcHbA1c;
-import je.panse.doro.comm.item_execute.lab7.CalcLpa;
-import je.panse.doro.comm.item_execute.lab7.CalcTFT;
-import je.panse.doro.comm.item_execute.lab7.CalcVitD;
+import je.panse.doro.comm.item_execute.souslab7.CalcBMI;
+import je.panse.doro.comm.item_execute.souslab7.CalcBP;
+import je.panse.doro.comm.item_execute.souslab7.CalcCBC;
+import je.panse.doro.comm.item_execute.souslab7.CalcCPA;
+import je.panse.doro.comm.item_execute.souslab7.CalcCr;
+import je.panse.doro.comm.item_execute.souslab7.CalcDEXA;
+import je.panse.doro.comm.item_execute.souslab7.CalcEKG;
+import je.panse.doro.comm.item_execute.souslab7.CalcGOT;
+import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
+import je.panse.doro.comm.item_execute.souslab7.CalcLpa;
+import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
+import je.panse.doro.comm.item_execute.souslab7.CalcVitD;
 
 public class Itemcategory {
 	public static void main(String selectkey) throws Exception {

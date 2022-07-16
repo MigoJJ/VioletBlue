@@ -3,11 +3,11 @@ package je.panse.doro.hito.newsub;
 import java.util.Scanner;				
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
-import je.panse.doro.comm.item_execute.lab7.CalcBMI;
-import je.panse.doro.comm.item_execute.lab7.CalcBP;
-import je.panse.doro.comm.item_execute.lab7.CalcCPA;
-import je.panse.doro.comm.item_execute.lab7.CalcDEXA;
-import je.panse.doro.comm.item_execute.lab7.CalcEKG;
+import je.panse.doro.comm.item_execute.souslab7.CalcBMI;
+import je.panse.doro.comm.item_execute.souslab7.CalcBP;
+import je.panse.doro.comm.item_execute.souslab7.CalcCPA;
+import je.panse.doro.comm.item_execute.souslab7.CalcDEXA;
+import je.panse.doro.comm.item_execute.souslab7.CalcEKG;
 
 public class New6OBJ {
 	public static void main(String skeys) throws Exception {
