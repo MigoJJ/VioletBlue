@@ -9,10 +9,8 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.main.Enter;
 
 public class R_rl_excel3{
-     public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno) {
-    	 File_cdrw_proc fcp1 = new File_cdrw_proc();
- 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9list.xlsx");
-
+     public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno, String excelFilePath) {
+    	File_cdrw_proc fcp1 = new File_cdrw_proc();
         try {
      		FileInputStream inputstream = new FileInputStream(excelFilePath); 
      		XSSFWorkbook 	workbook = 	new XSSFWorkbook(inputstream);

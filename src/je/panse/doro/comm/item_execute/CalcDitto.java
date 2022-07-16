@@ -17,11 +17,13 @@ public class CalcDitto {
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print(".....>>>>> Input ditto month : ");
 			dittomo = input.nextInt();
+			
+			if (dittomo !=0) {
 			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
+			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
+			}
 			System.out.print(".....>>>>> Dose Adjust ? : ");
 			dosead = input.nextInt();
-			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
-
 			if(dosead !=3) {
 			if (dosead == 0) { doseadl = ("\t...no medication change or dose-adjust");}
 				else if (dosead == 5) { doseadl = ("\t...New Starting Medication :");}

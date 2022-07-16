@@ -53,17 +53,19 @@ public class SymptomEnter {
 			String sousNo =sc.nextLine();	
 			sousNoi = Integer.parseInt(sousNo);
 					String pret = R_rl_excel_pick.R_rl_excel_point(sousNoi-1,eppuCellNo,1,excelFilePath);
+					if(sousNoi !=9) {
 					 if (sousNo.startsWith("0")) {
 						 System.out.print( "\t☐" + pret+"\n");
 						 String slschoice = ("\t☐ " + pret.trim());
-						 writelinera(Enter.wts + "/5SUJ", slschoice);
+						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
 					 else {
 						 System.out.print( "\t√" + pret +"\n");
 						 String slschoice = ("\t√ " + pret.trim());
-						 writelinera(Enter.wts + "/5SUJ", slschoice);
+						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
 				}
+			}
 		//		nc1.main(null);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

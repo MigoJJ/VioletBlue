@@ -19,7 +19,7 @@ import je.panse.doro.main.Enter;
 
 public class CalcDittoProc3 {
 	public void main(int sheeNo, int columNo) throws IOException {
-		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9list.xlsx");
+		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9List.xlsx");
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
 		XSSFWorkbook workbook =  new XSSFWorkbook(inputstream) ;
 		XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
@@ -55,7 +55,7 @@ public class CalcDittoProc3 {
 				e = e+1;
 			}
 			
-			iwbtList(null);
+			iwbtList(excelFilePath);
 
 
 		} catch (Exception e) {
@@ -64,7 +64,7 @@ public class CalcDittoProc3 {
 		}
 	}
 
-	public static void iwbtList(String[] args) throws Exception {
+	public static void iwbtList(String excelFilePath) throws Exception {
 		Integer submenuNo = 1;
 		try {
 			while(submenuNo != 9) {
@@ -75,7 +75,7 @@ public class CalcDittoProc3 {
 					R_rl_excel3 rre1 = new 	R_rl_excel3();
 					File_cdrw_proc fcp1 = new File_cdrw_proc();
 									fcp1.writeliner(Enter.wts + "/9PLAN", "");
-									rre1.R_rl_excel_point(submenuNo-1,0,0);
+									rre1.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
 			}  
 			File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 			fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
