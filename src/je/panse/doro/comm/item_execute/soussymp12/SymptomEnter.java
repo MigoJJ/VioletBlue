@@ -14,7 +14,7 @@ public class SymptomEnter {
 	public void main(String[] args) throws Exception {
 		ClearConsoleScreen ccs = new ClearConsoleScreen();
 		ccs.main(null);
-		rre1.main(0,0,excelFilePath);
+//		rre1.main(0,0,excelFilePath);
 		eppu(null);
 	}
 		
@@ -22,6 +22,7 @@ public class SymptomEnter {
 		Integer submenuNo = 1;
 		try {
 				while(submenuNo != 9) {
+					rre1.main(0,0,excelFilePath);
 					System.out.println(">>> insert code ...");
 					Scanner sc = new Scanner(System.in);
 						submenuNo = sc.nextInt();
@@ -48,18 +49,16 @@ public class SymptomEnter {
 
 	private void eppu_cell(int eppuCellNo) throws Exception {
 		try {
-			
+			int sousNoi = 0;
+			while(sousNoi != 9) {			
 			System.out.println(">>> insert code ...");
 			Scanner sc = new Scanner(System.in);
 			String sousNo =sc.nextLine();	
-			int sousNoi = Integer.parseInt(sousNo);
-			
+			sousNoi = Integer.parseInt(sousNo);
 				System.out.println("User input: " + sousNo);	
 				System.out.println("User input: " + sousNoi);	
-		
-//				while(eppuCellNo != 9) {
 					String pret = R_rl_excel_pick.R_rl_excel_point(sousNoi-1,eppuCellNo,1,excelFilePath);
-					System.out.println("ret  pickup  : " + pret);
+					System.out.println("ret  pickup  : " + pret.trim());
 					 if (sousNo.startsWith("0")) {
 						 System.out.print( "\t☐" + pret+"\n");
 						 String slschoice = ("\t☐" + pret);
@@ -70,9 +69,7 @@ public class SymptomEnter {
 						 String slschoice = ("\t√" + pret);
 						 writelinera(Enter.wts + "/5SUJ", slschoice);
 					 }
-					
-					
-//				}
+				}
 		//		nc1.main(null);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
