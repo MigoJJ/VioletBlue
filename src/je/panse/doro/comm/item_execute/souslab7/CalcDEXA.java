@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_execute.lab7;
+package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
