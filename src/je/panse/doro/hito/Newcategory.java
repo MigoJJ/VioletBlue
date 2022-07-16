@@ -6,6 +6,7 @@ import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.comm.item_execute.souslab7.*;
+import je.panse.doro.comm.item_execute.soussymp12.Sympt12main;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
@@ -31,7 +32,7 @@ public class Newcategory {
 		   	switch (select_code) {
 		   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
 			   		case 11 : New3PI n32 = new New3PI(); n32.main(null);break;
-			   		case 12 : CalcSymptom n33 = new CalcSymptom(); n33.main(null);break;
+			   		case 12 : Sympt12main n33 = new Sympt12main(); n33.main(null);break;
 		   		
 		   		case 2 : New4PMH.main(null);break;
 				case 3 : New5SUJ.main(null, null);break;
