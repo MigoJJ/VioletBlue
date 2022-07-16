@@ -25,15 +25,20 @@ public class SymptomEnter {
 						submenuNo = sc.nextInt();
 						System.out.println("User input: " + submenuNo);	
 						
-						String ret = R_rl_excel_pick.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);		
-//						System.out.println(ret);		
-
-
+						String ret = R_rl_excel_pick.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
+						System.out.println("ret    : " + ret);	
+			
+						int colNo=1;
+						if (ret.trim().startsWith("DM")) {	colNo=0;}
+						else if (ret.trim().startsWith("Thy")) {	colNo=1;}
+						else if (ret.trim().startsWith("URI")) {	colNo=2;}
+						else if (ret.trim().startsWith("Abo")) {	colNo=3;}
+						else if (ret.trim().startsWith("Aty")) {	colNo=4;}
+						else {
+						}
+						rre1.main(1,colNo,excelFilePath);
 				}
-//
-//						
-//						
-//						
+		
 //						R_rl_excel3 rre1 = new 	R_rl_excel3();
 //						File_cdrw_proc fcp1 = new File_cdrw_proc();
 //										fcp1.writeliner(Enter.wts + "/9PLAN", "");
