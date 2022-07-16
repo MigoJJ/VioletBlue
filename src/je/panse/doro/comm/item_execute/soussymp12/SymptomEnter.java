@@ -14,7 +14,6 @@ public class SymptomEnter {
 	public void main(String[] args) throws Exception {
 		ClearConsoleScreen ccs = new ClearConsoleScreen();
 		ccs.main(null);
-//		rre1.main(0,0,excelFilePath);
 		eppu(null);
 	}
 		
@@ -26,9 +25,7 @@ public class SymptomEnter {
 					System.out.println(">>> insert code ...");
 					Scanner sc = new Scanner(System.in);
 						submenuNo = sc.nextInt();
-						System.out.println("User input: " + submenuNo);	
 						String ret = R_rl_excel_pick.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
-						System.out.println("ret    : " + ret);	
 						int colNo=1;
 						if (ret.trim().startsWith("DM")) {	colNo=0;}
 						else if (ret.trim().startsWith("Thy")) {	colNo=1;}
@@ -55,18 +52,15 @@ public class SymptomEnter {
 			Scanner sc = new Scanner(System.in);
 			String sousNo =sc.nextLine();	
 			sousNoi = Integer.parseInt(sousNo);
-				System.out.println("User input: " + sousNo);	
-				System.out.println("User input: " + sousNoi);	
 					String pret = R_rl_excel_pick.R_rl_excel_point(sousNoi-1,eppuCellNo,1,excelFilePath);
-					System.out.println("ret  pickup  : " + pret.trim());
 					 if (sousNo.startsWith("0")) {
 						 System.out.print( "\t☐" + pret+"\n");
-						 String slschoice = ("\t☐" + pret);
+						 String slschoice = ("\t☐ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice);
 					 }
 					 else {
 						 System.out.print( "\t√" + pret +"\n");
-						 String slschoice = ("\t√" + pret);
+						 String slschoice = ("\t√ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice);
 					 }
 				}
@@ -82,7 +76,7 @@ public class SymptomEnter {
 //	      myWriter.write("\t"+fts+"\r");
 	      myWriter.write("\t"+fts);
 	      myWriter.close();
-		  System.out.println("   ...Successfully wrote to the file.");
+//		  System.out.println("   ...Successfully wrote to the file.");
 	    } catch (IOException e) {
 	      System.out.println("An error occurred.");
 	      e.printStackTrace();
