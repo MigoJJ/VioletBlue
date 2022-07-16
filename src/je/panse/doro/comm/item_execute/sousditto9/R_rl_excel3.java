@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_excel;
+package je.panse.doro.comm.item_execute.sousditto9;
 
 import java.io.FileInputStream;	
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -8,12 +8,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.main.Enter;
 
-public class R_rl_excel2 {
+public class R_rl_excel3{
      public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno) {
     	 File_cdrw_proc fcp1 = new File_cdrw_proc();
-        try {
-     		String excelFilePath = (Enter.wd + "/fourgate/thyroid/dataxlsxfile/Thyroidpe.xlsx");
+ 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9list.xlsx");
 
+        try {
      		FileInputStream inputstream = new FileInputStream(excelFilePath); 
      		XSSFWorkbook 	workbook = 	new XSSFWorkbook(inputstream);
      		XSSFSheet 		sheet = 	workbook.getSheetAt(sheetno);
@@ -28,7 +28,7 @@ public class R_rl_excel2 {
 							
 							    String iwbter = "\t" + cell.getStringCellValue();
 							    String sfiwbt = String.format("%12s", iwbter);
-								fcp1.writelinera(Enter.wts + "/6OBJ", sfiwbt);
+								fcp1.writelinera(Enter.wts + "/9PLAN", sfiwbt);
 							
 //								fcp1.writelinera(Enter.wts + "/6OBJ", "\t" + cell.getStringCellValue());
 								break;
