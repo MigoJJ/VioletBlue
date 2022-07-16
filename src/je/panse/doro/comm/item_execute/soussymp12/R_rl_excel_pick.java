@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_excel;
+package je.panse.doro.comm.item_execute.soussymp12;
 
 import java.io.FileInputStream;	
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -8,13 +8,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.main.Enter;
 
-public class R_rl_excel3 {
-     public static void R_rl_excel_point(int rowindex, int columnindex, int sheetno) {
+public class R_rl_excel_pick{
+     public static String R_rl_excel_point(int rowindex, int columnindex, int sheetno, String fP) {
+    	 String sfiwbt ="";
     	 File_cdrw_proc fcp1 = new File_cdrw_proc();
         try {
-     		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9list.xlsx");
-
-     		FileInputStream inputstream = new FileInputStream(excelFilePath); 
+     		FileInputStream inputstream = new FileInputStream(fP); 
      		XSSFWorkbook 	workbook = 	new XSSFWorkbook(inputstream);
      		XSSFSheet 		sheet = 	workbook.getSheetAt(sheetno);
      		int rows=sheet.getPhysicalNumberOfRows();
@@ -27,22 +26,23 @@ public class R_rl_excel3 {
 							case STRING:System.out.print(cell.getStringCellValue() + "\t");
 							
 							    String iwbter = "\t" + cell.getStringCellValue();
-							    String sfiwbt = String.format("%12s", iwbter);
+							    sfiwbt = String.format("%12s", iwbter);
 								fcp1.writelinera(Enter.wts + "/9PLAN", sfiwbt);
-							
-//								fcp1.writelinera(Enter.wts + "/6OBJ", "\t" + cell.getStringCellValue());
 								break;
 							case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
 							case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;
 							default:	break;
 						}
                 	System.out.println("\r");
-//                  System.out.println("\t" + rowindex+"번 행 row : "+columnindex+"번 열 cloumn 값: "+value);
+
                 	}else{
                	}
 			}catch(Exception e) {
 			    e.printStackTrace();
 			}
+
+		return sfiwbt;
+        
      }
      static String charctReturn (String rresf) {
     	 return rresf;

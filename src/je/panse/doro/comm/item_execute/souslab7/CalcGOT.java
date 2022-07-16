@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_execute.lab7;
+package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -51,7 +51,7 @@ public class CalcGOT {
 			for(String i : gotgpt2) {
 				System.out.print(" >>> " + i);
 				System.out.println("... " + gotgpt.get(ii));
-				fcp1.writeliner(Enter.wts + "/7LAB", "\t>>> " + i + "... " + gotgpt.get(ii));
+				fcp1.writelinera(Enter.wts + "/7LAB", "\t>>> " + i + "... " + gotgpt.get(ii));
 			ii++;	
 			}
 		} catch (Exception e) {

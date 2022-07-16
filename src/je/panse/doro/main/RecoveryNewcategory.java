@@ -6,8 +6,8 @@ import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.comm.item_execute.CalcDitto;
-import je.panse.doro.comm.item_execute.lab7.CalcBP;
-import je.panse.doro.comm.item_execute.lab7.CalcHbA1c;
+import je.panse.doro.comm.item_execute.souslab7.CalcBP;
+import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
 import je.panse.doro.hito.newsub.*;
 
 public class RecoveryNewcategory {

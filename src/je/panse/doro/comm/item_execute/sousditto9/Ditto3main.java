@@ -1,8 +1,8 @@
-package je.panse.doro.comm.item_excel;
+package je.panse.doro.comm.item_execute.sousditto9;
 
 import java.io.IOException;
 
-public class dittomain {
+public class Ditto3main {
 
 	public static void main(String[] args) throws IOException {
 		CalcDittoProc3 cdp3 = new CalcDittoProc3();
