@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
+import je.panse.doro.comm.item_execute.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.*;
 import je.panse.doro.comm.item_execute.soussymp12.Sympt12main;
 import je.panse.doro.hito.newsub.*;
@@ -46,7 +47,6 @@ public class Newcategory {
 					New9PLAN.main(null);break;
 
 				case 41 : CalcBMI ob0 = new CalcBMI();	 	ob0.main(null);break;
-				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
 				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
