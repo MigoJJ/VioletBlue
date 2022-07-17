@@ -1,76 +1,14 @@
-<<<<<<< HEAD
- < Chief Complaint & Present Illness>
- 
-<<<<<<< HEAD
-     (onset 5 year-ago)
-
-	P.I. >
-	yeth
-	egh
-	egh
-=======
->>>>>>> refs/remotes/origin/feature
-
-=======
 C.C.>
-<<<<<<< HEAD
-   	P.I. >
->>>>>>> refs/remotes/origin/feature
-< Past Medical History >
-<<<<<<< HEAD
-	-------------------------------
-<<<<<<< HEAD
-	PMH> tuberculosis(-) asthma(-) hepatitis(-) 
-	     operation(-)
-	     DM (-)   HTN (-)   Chol (-)
-	FHx>  
-	Allergy> food(-) drug(-) injection(-) 
-	     antibiotics(-) vaccine(-)
-	     Others All denied conditions 
-	-------------------------------
-=======
-	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
-	☐ operation  ☐ Hearing loss  ☐ arthritis
-	☐ CVA    ☐ Cognitive disorder 
-	☐ DM     ☐ HTN    ☐ Dyslipidemia 
-	☐ Cancer ☐ GERD   ☐ COPD
-	FHx>  
-	Allergy> ☐ food  ☐ injection/IV 
-	           
-	-------------------------------
-	[ v ]	No known drug allergies
-	
-	[ √ ]   Artherosclerosis Carotid artery
-
-	[ √ ]   Atrial Fibrillation 
-
-	[ √ ]   Prostate cancer operation(+)
->>>>>>> refs/remotes/origin/feature
-=======
->>>>>>> refs/remotes/origin/feature
-S >
-=======
    
 <PMHx>
+	05
+	9
 S >...have been suffered :  √ 
->>>>>>> refs/remotes/origin/feature
+		√ increased thirst and urination
+		☐ increased hunger
+		☐ Rapid heartbeat (palpitations)
+		√ Feeling shaky and/or nervous
 O >
 A >
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-	#  Artherosclerosis Carotid artery
-	#  Atrial Fibrillation 
-	#  Prostate cancer operation(+)
->>>>>>> refs/remotes/origin/feature
-=======
-	#  Hypercholesterolemia   test 2022/
->>>>>>> refs/remotes/origin/feature
-=======
->>>>>>> refs/remotes/origin/feature
 P >
-	...OPD F/U x [  3  ]-month later
-	...Continue Medication
-
-	...Methimazole [  5  ] mg 2  tab po tid…Indenol  [ 10  ] mg 1 tab po tid
+         	DM	increased thirst and urination	increased hunger          	.	Rapid heartbeat (palpitations)	Feeling shaky and/or nervous

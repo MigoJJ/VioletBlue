@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-< Past Medical History >
-	-------------------------------
-<<<<<<< HEAD
-	PMH> tuberculosis(-) asthma(-) hepatitis(-) 
-	     operation(-)
-	     DM (-)   HTN (-)   Chol (-)
-	FHx>  
-	Allergy> food(-) drug(-) injection(-) 
-	     antibiotics(-) vaccine(-)
-	     Others All denied conditions 
-	-------------------------------
-=======
-	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
-	☐ operation  ☐ Hearing loss  ☐ arthritis
-	☐ CVA    ☐ Cognitive disorder 
-	☐ DM     ☐ HTN    ☐ Dyslipidemia 
-	☐ Cancer ☐ GERD   ☐ COPD
-	FHx>  
-	Allergy> ☐ food  ☐ injection/IV 
-	           
-	-------------------------------
-	[ v ]	No known drug allergies
-	
->>>>>>> refs/remotes/origin/feature
-=======
-< Past Medical History >
->>>>>>> refs/remotes/origin/feature
-=======
 <PMHx>
->>>>>>> refs/remotes/origin/feature
+	05
+	9
