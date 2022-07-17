@@ -24,7 +24,6 @@ public class ThyroidPhysicalExam {
 
 			ClearConsoleScreen.main(null); 
 			
-			
 			for(rowindex=0;rowindex<rows;rowindex++){
 				XSSFRow row=sheet.getRow(rowindex);
 				if(row !=null){

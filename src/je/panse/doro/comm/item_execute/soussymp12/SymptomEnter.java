@@ -2,8 +2,9 @@ package je.panse.doro.comm.item_execute.soussymp12;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;	
+import java.util.Scanner;
 
+import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.main.Enter;
 
@@ -36,6 +37,8 @@ public class SymptomEnter {
 						}
 						rre1.main(1,colNo,excelFilePath);
 						eppu_cell(colNo);
+						File_cw_chart rre1 = new File_cw_chart();
+						rre1.writechart(); 
 				}
 		//		nc1.main(null);
 			} catch (Exception e) {

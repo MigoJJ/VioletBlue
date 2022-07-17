@@ -3,6 +3,8 @@ package je.panse.doro.fourgate.thyroid;
 import java.util.Scanner;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.fourgate.thyroid.goiter.EtGoiterProc;
+import je.panse.doro.fourgate.thyroid.goiter.ThyroidPhysicalExam;
+import je.panse.doro.fourgate.thyroid.pregnancy.PregnaacyEnter;
 import je.panse.doro.main.Enter;
 
 public class ThyroidEnter {
@@ -16,10 +18,16 @@ public class ThyroidEnter {
 //					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");
 //					case 2 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");
 					case 3 : 
-						EtGoiterProc erc2 = new EtGoiterProc();
-						erc2.main(0,0);
+						ThyroidPhysicalExam erc2 = new ThyroidPhysicalExam();
+						erc2.main(null);
 						break;
 					
+					case 4 : 
+						PregnaacyEnter erc3 = new PregnaacyEnter();
+						erc3.main(null);
+						break;
+							
+						
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}
