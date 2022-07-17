@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.soussymp12;
 
-import java.io.FileWriter;
+import java.io.FileWriter;	
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -58,12 +58,12 @@ public class SymptomEnter {
 					String pret = R_rl_excel_pick.R_rl_excel_point(sousNoi-1,eppuCellNo,1,excelFilePath);
 					if(sousNoi !=9) {
 					 if (sousNo.startsWith("0")) {
-						 System.out.print( "\t☐" + pret+"\n");
+						 System.out.println("☐ " + pret.trim());
 						 String slschoice = ("☐ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
 					 else {
-						 System.out.print( "\t√" + pret +"\n");
+						 System.out.println("√ " + pret.trim());
 						 String slschoice = ("√ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
@@ -78,7 +78,6 @@ public class SymptomEnter {
 	private void writelinera(String writef, String fts) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
-//	      myWriter.write("\t"+fts+"\r");
 	      myWriter.write("\t"+fts);
 	      myWriter.close();
 //		  System.out.println("   ...Successfully wrote to the file.");

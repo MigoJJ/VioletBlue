@@ -14,7 +14,7 @@ public class R_rl_excel4 {
 	public void main(int sheeNo, int columNo,String fP) throws IOException {
 		FileInputStream inputstream = new FileInputStream(fP);
 		XSSFWorkbook workbook =  new XSSFWorkbook(inputstream) ;
-		XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
+		XSSFSheet sheet = workbook.getSheetAt(sheeNo); 
 		int rows = sheet.getLastRowNum();
 		int cols = sheet.getRow(1).getLastCellNum();
 		
@@ -35,18 +35,13 @@ public class R_rl_excel4 {
 								break;
 							}
 					}
-//					System.out.println();
-			}  //---col
-//			System.out.println(thyoridList);
+			}
 			int e = 1;
 			for(String i : thyoridList) {
 				System.out.printf("[ %s ] ",e);
 				System.out.println(i);
 				e = e+1;
 			}
-			
-//			iwbtList(null);
-
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
