@@ -69,13 +69,13 @@ public class CalcSymptom {
 //						 System.out.print( "\t☐ " + sympt.get(i)+"\n");
 						 }else {
 							 if (inputNo.startsWith("0")) {
-								 System.out.print( "\t☐ " + sympt.get(i)+"\n");
-								 String slschoice = ("☐ " + sympt.get(i));
+								 System.out.print( "\t☐" + sympt.get(i)+"\n");
+								 String slschoice = ("\t☐" + sympt.get(i));
 								 writelinera(Enter.wts + "/5SUJ", slschoice);
 							 }
 							 else {
-								 System.out.print( " " + "√  " + sympt.get(i)+"\n");
-								 String slschoice = ("√ " + sympt.get(i));
+								 System.out.print( "\t√" + sympt.get(i)+"\n");
+								 String slschoice = ("\t√" + sympt.get(i));
 								 writelinera(Enter.wts + "/5SUJ", slschoice);
 							 }
 						}
