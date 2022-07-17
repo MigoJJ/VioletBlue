@@ -27,7 +27,7 @@ public class R_rl_excel_pick{
 							
 							    String iwbter = "\t" + cell.getStringCellValue();
 							    sfiwbt = String.format("%12s", iwbter);
-								fcp1.writelinera(Enter.wts + "/9PLAN", sfiwbt);
+								 fcp1.writelinera(Enter.wts + "/5SUJ", sfiwbt);
 								break;
 							case NUMERIC:System.out.print(cell.getNumericCellValue() + "\t");break;
 							case BOOLEAN:System.out.print(cell.getBooleanCellValue() + "\t"); break;

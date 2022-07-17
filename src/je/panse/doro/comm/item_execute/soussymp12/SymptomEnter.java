@@ -59,12 +59,12 @@ public class SymptomEnter {
 					if(sousNoi !=9) {
 					 if (sousNo.startsWith("0")) {
 						 System.out.print( "\t☐" + pret+"\n");
-						 String slschoice = ("\t☐ " + pret.trim());
+						 String slschoice = ("☐ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
 					 else {
 						 System.out.print( "\t√" + pret +"\n");
-						 String slschoice = ("\t√ " + pret.trim());
+						 String slschoice = ("√ " + pret.trim());
 						 writelinera(Enter.wts + "/5SUJ", slschoice + "\n");
 					 }
 				}
