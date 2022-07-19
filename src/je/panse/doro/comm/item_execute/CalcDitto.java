@@ -21,20 +21,23 @@ public class CalcDitto {
 			if (dittomo !=0) {
 			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
 			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
+			System.out.println(dittomol);
 			}
 			System.out.print(".....>>>>> Dose Adjust ? : ");
 			dosead = input.nextInt();
 			if(dosead !=3) {
-			if (dosead == 0) { doseadl = ("\t...no medication change or dose-adjust");}
+			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}
 				else if (dosead == 5) { doseadl = ("\t...New Starting Medication :");}
 				else if (dosead == 55) { doseadl = ("\t...Discontinue Medication :");}
-				else if (dosead == 6) { doseadl = ("\t...Continue Medication");}
+				else if (dosead == 6) { doseadl = ("\t...Repeat previous Prescription");}
 				else if (dosead == 2) { doseadl = ("\t...dose-down : ");}
 				else if (dosead == 8) { doseadl = ("\t...dose-up : ");}
 				else if (dosead == 4) { doseadl = ("\t...previous Px");}
-			
+				else if (dosead == 0) { doseadl = ("\t...Observation & Follow-up without medication");}
+				else if (dosead == 1) { doseadl = ("\t...With symptomatic treatment");}
+
 			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
-			
+			System.out.println(doseadl);
 			}else {
 		    }
 			
