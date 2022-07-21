@@ -54,6 +54,7 @@ public class CalcGOT {
 				fcp1.writelinera(Enter.wts + "/7LAB", "\t>>> " + i + "... " + gotgpt.get(ii));
 			ii++;	
 			}
+			fcp1.writeliner(Enter.wts + "/7LAB", "\n");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

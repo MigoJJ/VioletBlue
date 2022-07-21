@@ -19,7 +19,7 @@ public class CalcDitto {
 			dittomo = input.nextInt();
 			
 			if (dittomo !=0) {
-			dittomol = ("\t...OPD F/U x [  " + dittomo +  "  ]-month later");
+			dittomol = ("\t...Return to clinic [ " + dittomo +  " ]-month");
 			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
 			System.out.println(dittomol);
 			}
@@ -27,14 +27,14 @@ public class CalcDitto {
 			dosead = input.nextInt();
 			if(dosead !=3) {
 			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}
-				else if (dosead == 5) { doseadl = ("\t...New Starting Medication :");}
-				else if (dosead == 55) { doseadl = ("\t...Discontinue Medication :");}
-				else if (dosead == 6) { doseadl = ("\t...Repeat previous Prescription");}
-				else if (dosead == 2) { doseadl = ("\t...dose-down : ");}
-				else if (dosead == 8) { doseadl = ("\t...dose-up : ");}
-				else if (dosead == 4) { doseadl = ("\t...previous Px");}
+				else if (dosead == 5) { doseadl = ("\t...starting new medicine:");}
+				else if (dosead == 55) { doseadl = ("\t...Medication discontinuation :");}
+				else if (dosead == 6) { doseadl = ("\t...now well treated with current medication");}
+				else if (dosead == 2) { doseadl = ("\t...an reduction in drug dosage : ");}
+				else if (dosead == 8) { doseadl = ("\t...an increase in drug dosage : ");}
+				else if (dosead == 4) { doseadl = ("\t...Return to previous Px");}
 				else if (dosead == 0) { doseadl = ("\t...Observation & Follow-up without medication");}
-				else if (dosead == 1) { doseadl = ("\t...With symptomatic treatment");}
+				else if (dosead == 1) { doseadl = ("\t...With conservative treatment");}
 
 			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 			System.out.println(doseadl);

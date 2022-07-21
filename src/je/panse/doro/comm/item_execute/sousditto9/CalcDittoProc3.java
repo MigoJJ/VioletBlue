@@ -23,12 +23,10 @@ public class CalcDittoProc3 {
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
 		XSSFWorkbook workbook =  new XSSFWorkbook(inputstream) ;
 		XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
-		
 		int rows = sheet.getLastRowNum();
 		int cols = sheet.getRow(1).getLastCellNum();
-
-		ArrayList<String> thyoridList = new ArrayList<>(Arrays.asList());
 		
+		ArrayList<String> thyoridList = new ArrayList<>(Arrays.asList());
 		try {
 			for(int r=0; r<=rows; r++) {
 				XSSFRow row = sheet.getRow(r);// 0
@@ -54,10 +52,7 @@ public class CalcDittoProc3 {
 				System.out.println(i);
 				e = e+1;
 			}
-			
 			iwbtList(excelFilePath);
-
-
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
