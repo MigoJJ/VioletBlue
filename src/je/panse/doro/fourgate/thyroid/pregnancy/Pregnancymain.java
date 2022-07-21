@@ -15,14 +15,12 @@ public class Pregnancymain {
 		ccs.main(null);
 
 		ArrayList<String> thypreg = new ArrayList<String>();
-
 		try {
 			String sccStr = "JJ";
 			while(!(sccStr).equals("")) {
 				System.out.println("\n.... Pregnancy #   weeks   due date   Dx  GY .......");
 				Scanner uaah = new Scanner(System.in);
 					sccStr = uaah.nextLine().trim();
-					//	   	int scc = Integer.valueOf(uaah.nextLine().trim());
 					thypreg.add(sccStr);
 			    System.out.println(thypreg);
 			}

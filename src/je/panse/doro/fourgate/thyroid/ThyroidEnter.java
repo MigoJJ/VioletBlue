@@ -4,7 +4,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.fourgate.thyroid.goiter.EtGoiterProc;
 import je.panse.doro.fourgate.thyroid.goiter.ThyroidPhysicalExam;
-import je.panse.doro.fourgate.thyroid.pregnancy.PregnaacyEnter;
+import je.panse.doro.fourgate.thyroid.pregnancy.PregnacyEnter;
 import je.panse.doro.main.Enter;
 
 public class ThyroidEnter {
@@ -23,7 +23,7 @@ public class ThyroidEnter {
 						break;
 					
 					case 4 : 
-						PregnaacyEnter erc3 = new PregnaacyEnter();
+						PregnacyEnter erc3 = new PregnacyEnter();
 						erc3.main(null);
 						break;
 							

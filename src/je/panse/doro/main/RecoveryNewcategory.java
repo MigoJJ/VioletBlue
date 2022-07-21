@@ -1,6 +1,6 @@
 package je.panse.doro.main;
 
-import java.util.Scanner;	
+import java.util.Scanner;		
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;

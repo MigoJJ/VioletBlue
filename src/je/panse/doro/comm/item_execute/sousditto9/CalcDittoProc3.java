@@ -31,21 +31,19 @@ public class CalcDittoProc3 {
 			for(int r=0; r<=rows; r++) {
 				XSSFRow row = sheet.getRow(r);// 0
 				XSSFCell cell = row.getCell(columNo);
-					if (cell != null) {
-						switch(cell.getCellType()) {
-							case STRING:
-								String getrc = (cell.getStringCellValue()+ "\t");
-								thyoridList.add(getrc);
-								break;
-							case NUMERIC:System.out.print(cell.getNumericCellValue()+ "\t"); break;
-							case BOOLEAN:System.out.print(cell.getBooleanCellValue()+ "\t"); break;
-							default:
-								break;
-							}
-					}
-//					System.out.println();
+				if (cell != null) {
+					switch(cell.getCellType()) {
+						case STRING:
+							String getrc = (cell.getStringCellValue()+ "\t");
+							thyoridList.add(getrc);
+							break;
+						case NUMERIC:System.out.print(cell.getNumericCellValue()+ "\t"); break;
+						case BOOLEAN:System.out.print(cell.getBooleanCellValue()+ "\t"); break;
+						default:
+							break;
+						}
+				}
 			}  //---col
-//			System.out.println(thyoridList);
 			int e = 1;
 			for(String i : thyoridList) {
 				System.out.printf("[ %s ] ",e);
@@ -55,7 +53,6 @@ public class CalcDittoProc3 {
 			iwbtList(excelFilePath);
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -71,10 +68,10 @@ public class CalcDittoProc3 {
 			while(submenuNo != 9) {
 				System.out.println(">>> insert code ...");
 				Scanner sc = new Scanner(System.in);
-					submenuNo = sc.nextInt();
-					System.out.println("User input: " + submenuNo);	
-						fcp1.writeliner(Enter.wts + "/9PLAN", "");
-						rre2.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
+				submenuNo = sc.nextInt();
+				System.out.println("User input: " + submenuNo);	
+				fcp1.writeliner(Enter.wts + "/9PLAN", "");
+				rre2.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
 			}  
 			rre1.writechart(); 
 			fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");

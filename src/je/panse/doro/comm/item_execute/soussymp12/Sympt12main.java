@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.soussymp12;
 
-import java.io.IOException;
+import java.io.IOException;	
 
 public class Sympt12main {
 
