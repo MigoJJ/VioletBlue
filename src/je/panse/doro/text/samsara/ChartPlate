@@ -1,14 +1,32 @@
-C.C.>
-   
+< Chief Complaint & Present Illness>
+ 
 <PMHx>
-S >...have been suffered :  √ 
+	-------------------------------
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
+	Allergy> ☐ food  ☐ injection/IV
+	have been suffered : ⯀        
+	-------------------------------	
+	[ v ] No known allergy with any medication 
+	
+S >  ...have been suffered :  √
+ 
 O >
+
+<Thyroid Physical Exam>----------
+
+	Goiter size  :  [  45  ] cc
+
+   	Goiter :	ruled in Nodular Enlargement
+  	Nodules :	Single nodule 
+	Consistency : 	Soft to Firm
+	Tenderness :  	Non-tender
+   	Bruit : 	Systolic or continuous Bruit [ no ] 
+     	DTR : 	2+ = normal / average
+	Werner’s Report : 	Class 2 : Soft tissue involvement 
+LAB >
 A >
 P >
-	...Return to clinic [ 3 ]-month
-	...now well treated with current medication
-	   continue with current dosages of meds
-
-	...Obtain FBS and HbA1c tests today.
-	...Plan to telemedicine.
-          	.
