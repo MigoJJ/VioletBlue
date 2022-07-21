@@ -29,7 +29,8 @@ public class CalcDitto {
 			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}
 				else if (dosead == 5) { doseadl = ("\t...starting new medicine:");}
 				else if (dosead == 55) { doseadl = ("\t...Medication discontinuation :");}
-				else if (dosead == 6) { doseadl = ("\t...now well treated with current medication");}
+				else if (dosead == 6) { doseadl = ("\t...now well treated with current medication\n"
+						+ "\t   continue with current dosages of meds");}
 				else if (dosead == 2) { doseadl = ("\t...an reduction in drug dosage : ");}
 				else if (dosead == 8) { doseadl = ("\t...an increase in drug dosage : ");}
 				else if (dosead == 4) { doseadl = ("\t...Return to previous Px");}
