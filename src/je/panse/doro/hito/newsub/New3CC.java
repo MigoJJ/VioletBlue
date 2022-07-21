@@ -31,6 +31,7 @@ public class New3CC {
 			if (bint == 99 | bint >= 1964) {
 				simplecc(bint);
 				dn1.deuxnine();
+				Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu"); 
 				cc1.main(null); 	
 			}
 			System.out.println(">>>----- Enter year/month/day:>>>");	c = s.nextLine();
@@ -42,7 +43,7 @@ public class New3CC {
 	   		}
 			System.out.println("\n>>>----- Present Illness : >>>");	g = s.nextLine().trim();
            if (g != null && !g.isEmpty()) {
-            	cc2.main(null);
+           cc2.main(null);
             }
 			//			s.close();
 			dn1.deuxnine();
