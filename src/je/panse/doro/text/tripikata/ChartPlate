@@ -1,9 +1,34 @@
-C.C.>
-   
+ < Chief Complaint & Present Illness>
+ 	# [ 1 ] preganacy  [ 12 ] weeks
+		Due-date [2023-05]
+		Hyperthyroidism at 도곡함춘 산부인과
 <PMHx>
-S >...have been suffered :  √ 
+	-------------------------------
+	☐ asthma     ☐ tuberculosis  ☐ hepatitis 
+	☐ operation  ☐ Hearing loss  ☐ arthritis
+	☐ CVA    ☐ Cognitive disorder 
+	☐ DM     ☐ HTN    ☐ Dyslipidemia 
+	☐ Cancer ☐ GERD   ☐ COPD
+	FHx>  
+	Allergy> ☐ food  ☐ injection/IV 
+	have been suffered : ⯀  √         
+	-------------------------------
+	[ v ]	 No known drug allergies
+	
+S >  ...have been suffered :  √ 
 O >
+
+<Thyroid Physical Exam>----------
+
+	Goiter size  :  [  15  ] cc
+
+   	Goiter :	ruled in Diffuse Enlargement
+  	Nodules :	Single nodule 
+	Consistency : 	Soft to Firm
+	Tenderness :  	Non-tender
+   	Bruit : 	Systolic or continuous Bruit [ no ] 
+      	DTR :	2+ = normal / average
+	Exophthalmos :	Class 2 : Soft tissue involvement 
+LAB >
 A >
-	#  test
 P >
-	...testing
