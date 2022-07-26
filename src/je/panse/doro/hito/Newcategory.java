@@ -47,6 +47,7 @@ public class Newcategory {
 					New9PLAN.main(null);break;
 
 				case 41 : CalcBMI ob0 = new CalcBMI();	 	ob0.main(null);break;
+				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
 				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;

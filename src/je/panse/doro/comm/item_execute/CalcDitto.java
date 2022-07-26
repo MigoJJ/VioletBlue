@@ -19,7 +19,7 @@ public class CalcDitto {
 			dittomo = input.nextInt();
 			
 			if (dittomo !=0) {
-			dittomol = ("\t...Return to clinic [ " + dittomo +  " ]-month");
+			dittomol = ("\t...Follow-up in the clinic in [ " + dittomo +  " ]-month");
 			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
 			System.out.println(dittomol);
 			}
