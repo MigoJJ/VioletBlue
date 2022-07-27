@@ -9,9 +9,11 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import je.panse.doro.main.Enter;
+
 public class ReadExcel_cell {
 	public static Cell main(int a1, int b1, int c1) throws IOException {
-	    File excelFile = new File("/home/migowj/git/VioletBlue_5SUB/src/subjective_data/SymptList.xlsx");
+	    File excelFile = new File(Enter.wd + "/fourgate/symptom/subjective_data/SymptList.xlsx");
 	    FileInputStream fis = new FileInputStream(excelFile);
 	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 	    XSSFSheet sheet = workbook.getSheetAt(a1);

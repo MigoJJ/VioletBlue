@@ -25,23 +25,6 @@ public class File_editor_proc {
                     System.out.println(e);
             }   
     }   
-	//	public static void main(String stringDir){
-//		try{
-//          File file = new File(stringDir);
-//          if(!Desktop.isDesktopSupported())
-//           {
-//        	  	System.out.println("not supported");
-//        	  	return;
-//           }
-//   		Desktop desktop = Desktop.getDesktop();
-//   		if(file.exists())
-//       			desktop.open(file);
-////   		    Desktop.getDesktop().edit(file);
-//         }
-//		catch(Exception e){
-//            e.printStackTrace();
-//        }
-//    }
 	
 	public static void linepickup(String pickupfile, String savefilename) {
 		Desktop destination=Desktop.getDesktop();

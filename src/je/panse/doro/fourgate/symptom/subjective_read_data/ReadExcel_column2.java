@@ -1,9 +1,7 @@
 package je.panse.doro.fourgate.symptom.subjective_read_data;
 
-import java.io.File;	
+import java.io.File;		
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -13,10 +11,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.main.Enter;
 
 public class ReadExcel_column2 {
 	public static void main(int sheetNo,  int colNo) throws Exception {
-	    File excelFile = new File("/home/migowj/git/VioletBlue_5SUB/src/subjective_data/SymptList.xlsx");
+	    File excelFile = new File(Enter.wd + "/fourgate/symptom/subjective_data/SymptList.xlsx");
 	    FileInputStream fis = new FileInputStream(excelFile);
 	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 	    XSSFSheet sheet = workbook.getSheetAt(sheetNo);
@@ -52,11 +51,8 @@ public class ReadExcel_column2 {
 	}
 	
 	private static void choiceIndex(int lri,int cno,int sno) throws Exception {
-		
-		String textPath ="/home/migowj/git/VioletBlue_5SUB/src/subjective_data/SymptList.xlsx";
+		String textPath = (Enter.wts + "/5SUJ");
 		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
-
-		
 		try(Scanner sc = new Scanner(System.in)) {
 			String inputNo = "JJ";
 			while(!(inputNo = sc.nextLine()).equals("")) {
@@ -64,16 +60,14 @@ public class ReadExcel_column2 {
 				int number = (Integer.parseInt(inputNo));
 		          Cell returenedSympt1= (ReadExcel_cell.main(sno,cno,number));
 		          String returenedSympt=returenedSympt1.toString();
-		          
-//		          System.out.println("returenedSympt  >>>   " +returenedSympt);
 				if (number < lri) {
 					 if (inputNo.startsWith("0")) {
 					 System.out.print( "\t☐ " +returenedSympt+"\n");
-					 fcp1.writelinera("/home/migowj/git/Violetblue/src/je/panse/doro/text/samsara/5SUJ", "\t☐ " +returenedSympt+"\n");
+					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt+"\n");
 					 }
 					 else {
 					 System.out.print( "\t√ " + returenedSympt +"\n");
-					 fcp1.writelinera("/home/migowj/git/Violetblue/src/je/panse/doro/text/samsara/5SUJ", "\t√ " +returenedSympt+"\n");
+					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt+"\n");
 					 }
 				}
 		}
