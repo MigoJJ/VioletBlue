@@ -64,6 +64,7 @@ public class New3PI{
 					System.out.println(subOfSuj[0].length());
 					System.out.println(subOfSuj[1].length());
 			DiseaseCode e = new DiseaseCode();
+					New3PI.suj_insert("PMHx>", "/8ASS");
 					New3PI.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
 					System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
 		} catch (IOException e) {

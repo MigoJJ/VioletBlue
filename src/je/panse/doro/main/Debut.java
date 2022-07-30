@@ -10,13 +10,12 @@ import je.panse.doro.comm.item_administratus.Key_Press_Any;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
+	DirectoryAdmin	da1 = new DirectoryAdmin();
+	File_cw_chart 	fcw = new File_cw_chart();
+	File_editor_proc	fep = new File_editor_proc();
+	Enter				en1 = new Enter();
+	Newcategory 		nc1 = new Newcategory();
 	public void main(String[] args) throws Exception {
-		DirectoryAdmin	da1 = new DirectoryAdmin();
-		File_cw_chart 	fcw = new File_cw_chart();
-		File_editor_proc	fep = new File_editor_proc();
-		Enter				en1 = new Enter();
-		Newcategory 		nc1 = new Newcategory();
-
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
 				System.out.println(">>> Enter selected number :  >>>");
@@ -36,20 +35,9 @@ public class Debut {
 							Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 							nc1.main(null);  	
 							break; 
-							
-						case 31 :
-							File_cw_chart  ob3 = new File_cw_chart(); 
-					    	ob3.cleanChartPlate();
-							fcw.callchartlist("/knots/hana");
-					    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
-							nc1.main(null);break; // Items		
-						
-						case 32 :
-							File_cw_chart  ob4 = new File_cw_chart(); 
-					    	ob4.cleanChartPlate();
-							fcw.callchartlist("/knots/soap");
-					    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
-							nc1.main(null);break; // Items		
+						case 31 : callSheet("/knots/hana");break;
+						case 32 : callSheet("/knots/soap");break;
+									
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 			}
@@ -64,5 +52,12 @@ public class Debut {
 		Key_Press_Any.main(null);
 		SingleBeam.main(null);		
 	}
-// ----------
+	public void callSheet(String cdir) throws Exception {
+		File_cw_chart  ob3 = new File_cw_chart(); 
+    	ob3.cleanChartPlate();
+		fcw.callchartlist(cdir);
+    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+		nc1.main(null); // Items		
+	}
+	// ----------
 }
