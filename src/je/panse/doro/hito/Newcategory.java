@@ -1,11 +1,11 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;		
+import java.util.Scanner;			
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
-import je.panse.doro.comm.item_execute.CalcBP;
+import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.*;
 import je.panse.doro.fourgate.symptom.subjective_read_data.Symptom12Enter;
 import je.panse.doro.hito.newsub.*;

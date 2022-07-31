@@ -5,7 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcDitto;
-import je.panse.doro.fourgate.thyroid.ThyPrescription;
+import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
 import je.panse.doro.main.Enter;
 
 public class New9PLAN {
@@ -15,8 +15,7 @@ public class New9PLAN {
 		ThyPrescription ob4 = new ThyPrescription(); 
 		Key_Iwbb        st999 = new Key_Iwbb();
 		
-		ob2.readfiler(Enter.wt + "/home/migowj/git/Violetblue/src/je/panse/doro/text/singlebeam/DisMenu");
-
+//		ob2.readfiler(Enter.wt + "/singlebeam/DisMenu");
 		
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
