@@ -2,6 +2,9 @@ package je.panse.doro.fourgate.symptom.subjective_read_data;
 
 import java.util.Scanner;
 
+import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.main.Enter;
+
 public class Symptom12Enter {
 	public static void main(String[] args) throws Exception {
 		System.out.println(
@@ -20,6 +23,8 @@ public class Symptom12Enter {
 		-------------------------	""");
 
 		ReadExcel_column2 ret1 = new ReadExcel_column2();
+		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
+		fcp1.writeliner(Enter.wts + "/5SUJ", "...have been suffered :  √"); 
 		System.out.println("\n........... inset the number ...> ");
 
 		String inputNo="jj";
