@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;
+import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
@@ -13,6 +13,8 @@ import je.panse.doro.main.Enter;
 public class New4PMH {
 
 	public static void main(String[] args) throws Exception {
+		New4PMHni n4pn = new New4PMHni();
+		n4pn(null);
 		String st;
 		try {
 			New5SUJ.suj_insert("PMHx>", "/4PMH");
@@ -61,13 +63,13 @@ public class New4PMH {
 	void insertDcode(String ist) throws IOException {
 		try {
 			String[] subOfSuj = ist.split("/", 2);
-				subOfSuj[0] = subOfSuj[0].trim(); 
+			subOfSuj[0] = subOfSuj[0].trim(); 
 			String sunst0 = subOfSuj[0].substring(1, subOfSuj[0].length());
-				System.out.println(subOfSuj[0].length());
-				System.out.println(subOfSuj[1].length());
+			System.out.println(subOfSuj[0].length());
+			System.out.println(subOfSuj[1].length());
 			DiseaseCode e = new DiseaseCode();
-				New5SUJ.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
-				System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
+			New5SUJ.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
+			System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
