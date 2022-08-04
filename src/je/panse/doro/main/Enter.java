@@ -14,8 +14,8 @@ public class Enter {
 	public static String wts = (wd + "/text/samsara");
 	public static String wtt = (wd + "/text/tripikata");
 	public static String wds = (wd + "/aeternum/supportdiagnosis");
-
-// ------------------------------------------------------file preparing
+	
+	// ------------------------------------------------------file preparing
 	public static void main(String[] args) throws Exception {	
 //		CurrentDate.defineDate();
 // ------------------------------------------------------GDStm Program starting

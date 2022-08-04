@@ -63,11 +63,11 @@ public class ReadExcel_column2 {
 				if (number < lri) {
 					 if (inputNo.startsWith("0")) {
 					 System.out.print( "\t☐ " +returenedSympt+"\n");
-					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt+"\n");
+					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt);
 					 }
 					 else {
 					 System.out.print( "\t√ " + returenedSympt +"\n");
-					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt+"\n");
+					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt);
 					 }
 				}
 		}

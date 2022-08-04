@@ -1,10 +1,27 @@
 C.C.>
    
+<<<<<<< HEAD
 <PMHx>
 S >...have been suffered :  √ 
+=======
+PMHx>------------------------------
+	 ☐ diabetes mellitus	 ⯀ HTN	 ☐ dyslipidemia
+	 ☐ asthma	 ☐ tuberculosis	 ⯀ COPD
+	 ☐ Cancer	 ☐ hepatitis	 ☐ GERD
+	 ⯀ operation	 ☐ hearing loss	 ☐ arthritis
+	 ☐ depression	 ☐ cognitive disorder	 ☐ CVA
+	 ☐ Allergy>
+	 ☐ medication	 ☐ injection/IV	 ☐ food
+	...have been suffered ⯀
+	---------------------------
+	[ v ] No known allergy with any medication
+S >
+>>>>>>> refs/remotes/origin/GDS220731
 O >
 A >
+	
 P >
+<<<<<<< HEAD
 	...Follow-up in the clinic in [ 3 ]-month
 	...now well treated with current medication
 	   continue with current dosages of meds
@@ -13,3 +30,6 @@ P >
 	...Continue a low-fat diet and exercise. 
     Consider increasing walking time to 20-30 minutes 
     To assist with weight loss.
+=======
+	...test
+>>>>>>> refs/remotes/origin/GDS220731

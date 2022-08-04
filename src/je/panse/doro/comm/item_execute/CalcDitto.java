@@ -10,20 +10,27 @@ import je.panse.doro.main.Enter;
 
 public class CalcDitto {
 
-	int dittomo, labfu, dosead;
+	double dittomo, labfu, dosead;
 	String dittomol, labful, doseadl; 
 	public void main(String skeys) throws Exception {
 		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print(".....>>>>> Input ditto month : ");
-			dittomo = input.nextInt();
-			
+			dittomo = input.nextDouble();
 			if (dittomo !=0) {
-			dittomol = ("\t...Follow-up in the clinic in [ " + dittomo +  " ]-month");
-			fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
-			System.out.println(dittomol);
+				dittomol = ("\t...Follow-up in the clinic in [ " + dittomo +  " ]-month");
+				fcp1.writeliner(Enter.wts + "/9PLAN", dittomol);
+				System.out.println(dittomol);
 			}
-			System.out.print(".....>>>>> Dose Adjust ? : ");
+			System.out.print(".....>>>>> Dose Adjust ? : \n");
+			System.out.println(
+					"""
+					-------------------------
+                  \t1...With conservative treatment
+                  \t0...Observation & Follow-up without medication
+                  \t3...skip
+					-------------------------
+							""");
 			dosead = input.nextInt();
 			if(dosead !=3) {
 			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}
@@ -41,8 +48,7 @@ public class CalcDitto {
 			System.out.println(doseadl);
 			}else {
 		    }
-			
-//			fcp1.writeliner(Enter.wts + "/9PLAN", labful);
+
 			Ditto3main.main(null);
 			File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();	

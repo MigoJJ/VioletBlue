@@ -2,7 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;		
 import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.fourgate.thyroid.ThyPrescription;
+import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;

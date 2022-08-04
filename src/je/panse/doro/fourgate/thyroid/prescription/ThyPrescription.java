@@ -1,4 +1,4 @@
-package je.panse.doro.fourgate.thyroid;
+package je.panse.doro.fourgate.thyroid.prescription;
 
 import java.io.File;				
 import java.io.FileNotFoundException;
