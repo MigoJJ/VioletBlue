@@ -18,7 +18,7 @@ public class New4PMHni {
 			"Cancer","hepatitis","GERD\n","operation",
 			"hearing loss","arthritis\n",
 			"depression","cognitive disorder","CVA\n",
-			"Allergy>\n","food","injection/IV","medication\n")
+			"Allergy>\n","medication","injection/IV","food\n")
 		);
 		for (String pmhx : pmh) {
 		    System.out.print(pmh.indexOf(pmhx)+" "+pmhx+"\t  ");
@@ -52,8 +52,8 @@ public class New4PMHni {
 		ArrayList<String> pmhchoice = new ArrayList<String>();
 		try {
 			String sccStr = "JJ";
+			System.out.println("\n.......Past Medcal History Pickup...> ");
 			while(!(sccStr).equals("")) {
-				System.out.println("\n.......Past Medcal History Pickup...> ");
 				Scanner uaah = new Scanner(System.in);
 					sccStr = uaah.nextLine().trim();
 					pmhchoice.add(sccStr);

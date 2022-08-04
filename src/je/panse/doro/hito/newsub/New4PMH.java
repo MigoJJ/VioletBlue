@@ -13,12 +13,10 @@ import je.panse.doro.main.Enter;
 public class New4PMH {
 
 	public static void main(String[] args) throws Exception {
-		New4PMHni n4pn = new New4PMHni();
-		n4pn(null);
+		New4PMHni.main(null);
 		String st;
 		try {
-			New5SUJ.suj_insert("PMHx>", "/4PMH");
-
+//			New5SUJ.suj_insert("PMHx>", "/4PMH");
 			System.out.println("*****Enter PMHx*****  ...   : ");
 			Scanner suj_text = new Scanner(System.in);
 			do{
@@ -53,7 +51,6 @@ public class New4PMH {
 			e.printStackTrace();
 		}
 	}
-
 	void suj_insert(String st, String ilocation) throws IOException {
     	String SUJresult = ("\t" + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
