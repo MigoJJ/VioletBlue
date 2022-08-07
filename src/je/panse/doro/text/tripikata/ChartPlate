@@ -1,75 +1,28 @@
-< Chief Complaint & Present Illness>
- 
-PMHx>------------------------------
-	 ☐ diabetes mellitus	 ☐ HTN	 ☐ dyslipidemia
-	 ⯀ asthma	 ☐ tuberculosis	 ☐ COPD
-	 ⯀ Cancer	 ☐ hepatitis	 ☐ GERD
-	 ⯀ operation	 ☐ hearing loss	 ☐ arthritis
-	 ☐ depression	 ☐ cognitive disorder	 ☐ CVA
-	 ☐ Allergy>
-	 ☐ medication	 ☐ injection/IV	 ☐ food
-	...have been suffered ⯀
-	---------------------------
-	[ v ] No known allergy with any medication	
-		
-S >  ...have been suffered :  √
- 
+C.C.>
+   
+S >
 O >
+	Height(cm)	Weight(kg)	BMI	Waist
+	-------------------------------------------
+	175.0		75.0		24.5	88
 
-<Thyroid Physical Exam>----------
-
-	Goiter size  :  [  15  ] cc
-
-   	Goiter :	ruled  [  out  ]
-  	Nodules :       	None
-	Consistency :        	soft
-	Tenderness :      	Tender
-   	Bruit : 	Systolic or continuous Bruit [ yes ] 
-     	DTR : 	1+ = present but depressed
-	Werner’s Report : 	Class 1 : Only signs 
-<Thyroid Physical Exam>----------
-
-	Goiter size  :  [  15  ] cc
-
-   	Goiter :	ruled in Diffuse Enlargement
-  	Nodules :       	None
-	Consistency :        	soft
-	Tenderness :      	Tender
-   	Bruit : 	Systolic or continuous Bruit [ yes ] 
-     	DTR : 	1+ = present but depressed
-	Werner’s Report : 	Class 1 : Only signs 
-<Thyroid Physical Exam>----------
-
-	Goiter size  :  [  15  ] cc
-
-   	Goiter :	ruled in Diffuse Enlargement
-  	Nodules :       	None
-	Consistency :        	Firm
-	Tenderness : 
-   	Bruit : 	Systolic or continuous Bruit [ no ] 
-     	DTR : 	4+ = clonus
-	Werner’s Report : 
-LAB >
 A >
 P >
-	...  Methimazole 2.5 mg 1 tab p.o. q.d. 
-	...  Synthroxine 25 ug 0.5 tab p.o. q.d. 
-	...  Synthroid 50 ug 1 tab p.o. q.d. 
-	...  Synthroxine 100 ug 1 tab p.o. q.d. 
-	...  Synthroxine 25 ug 1 tab p.o. q.d. 
-	...  Methimazole 2.5 mg 1 tab p.o. q.d. 
-	...  Camen 5 mg 1 tab p.o. q.d. 
+	...Follow-up in the clinic in [ 3.0 ]-month
+	...With conservative treatment
+
 	...  Methimazole 5 mg 2 tab p.o. b.i.d. 
+	...  Methimazole 5 mg 2 tab p.o. b.i.d. 
+	...  Methimazole 5 mg 2 tab p.o. b.i.d. 
+	...  Methimazole 5 mg 2 tab p.o. b.i.d. 
+	...  Methimazole 5 mg 2 tab p.o. b.i.d. 
+	...  . . . . 
+
 	...  Antiroid 50 mg 2 tab p.o. t.i.d. 
 	...  Methimazole 5 mg 1 tab p.o. q.d. 
-	...  Antiroid 50 mg 1 tab p.o. q.d. 
+	...  Synthroxine 25 ug 1 tab p.o. q.d. 
 	...  . . . . 
-	...  Synthroid 50 ug 1 tab p.o. q.d. 
-	...  Synthroxine 50 ug 1 tab p.o. q.d. 
-	...  . . . . 
-	...  Antiroid 50 mg 2 tab p.o. b.i.d. 
-	...  . . . . 
-	...  Indenol 10 mg 1 tab p.o. q.d. 
-	...  Indenol 10 mg 1 tab p.o. b.i.d. 
-	...  Indenol 10 mg 1 tab p.o. b.i.d. 
-	...  Antiroid 50 mg 1 tab p.o. q.d. 
+	...Follow-up in the clinic in [ 3.0 ]-month
+	...now well treated with current medication
+	   continue with current dosages of meds
+

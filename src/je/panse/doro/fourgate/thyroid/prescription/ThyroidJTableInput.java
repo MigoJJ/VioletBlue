@@ -10,6 +10,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+
+import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.hito.newsub.New6OBJ;
+import je.panse.doro.main.Enter;
 	 
 public class ThyroidJTableInput extends JPanel{
     private boolean DEBUG = false;
@@ -81,12 +85,12 @@ public class ThyroidJTableInput extends JPanel{
 //                System.out.println(sumrowsData);
                 try {
 					ThyroidPxEnter.main(sumrowsData);
-				} catch (IOException e1) {
+					} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-                
                 }
+
           	}
  	       //-----------------------------------
 	 		});
@@ -140,7 +144,7 @@ public class ThyroidJTableInput extends JPanel{
 	            public void run() {
 	                try {
 						createAndShowGUI();
-					} catch (IOException e) {
+					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}

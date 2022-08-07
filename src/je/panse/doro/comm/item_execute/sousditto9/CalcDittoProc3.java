@@ -73,10 +73,10 @@ public class CalcDittoProc3 {
 				submenuNo = sc.nextInt();
 
 				
-				if (submenuNo == 20) {
-					ThyroidJTableInput tji1 =  new ThyroidJTableInput();
-					tji1.main(null);			
-				}
+//				if (submenuNo == 20) {
+//					ThyroidJTableInput tji1 =  new ThyroidJTableInput();
+//					tji1.main(null);			
+//				}
 				
 				System.out.println("User input: " + submenuNo);	
 				fcp1.writeliner(Enter.wts + "/9PLAN", "");
