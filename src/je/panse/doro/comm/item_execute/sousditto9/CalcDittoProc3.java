@@ -11,6 +11,7 @@ import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.Menu_list;
+import je.panse.doro.fourgate.thyroid.prescription.ThyroidJTableInput;
 import je.panse.doro.fourgate.thyroid.prescription.sel_px;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.hito.Newcategory;
@@ -72,10 +73,10 @@ public class CalcDittoProc3 {
 				submenuNo = sc.nextInt();
 
 				
-				if (submenuNo == 20) {
-					sel_px sp = new sel_px();
-					sp.main(null);				
-				}
+//				if (submenuNo == 20) {
+//					ThyroidJTableInput tji1 =  new ThyroidJTableInput();
+//					tji1.main(null);			
+//				}
 				
 				System.out.println("User input: " + submenuNo);	
 				fcp1.writeliner(Enter.wts + "/9PLAN", "");

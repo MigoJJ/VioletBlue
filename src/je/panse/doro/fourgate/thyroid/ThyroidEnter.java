@@ -1,10 +1,11 @@
 package je.panse.doro.fourgate.thyroid;
 
 import java.util.Scanner;
+
 import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.goiter.EtGoiterProc;
 import je.panse.doro.fourgate.thyroid.goiter.ThyroidPhysicalExam;
 import je.panse.doro.fourgate.thyroid.pregnancy.PregnacyEnter;
+import je.panse.doro.fourgate.thyroid.prescription.ThyroidJTableInput;
 import je.panse.doro.main.Enter;
 
 public class ThyroidEnter {
@@ -25,6 +26,10 @@ public class ThyroidEnter {
 					case 4 : 
 						PregnacyEnter erc3 = new PregnacyEnter();
 						erc3.main(null);
+						break;
+					case 5 : 
+						ThyroidJTableInput tji1 =  new ThyroidJTableInput();
+						tji1.main(null);
 						break;
 							
 						

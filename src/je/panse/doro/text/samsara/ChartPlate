@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C.C.>
    
 <PMHx>
@@ -13,3 +14,39 @@ P >
 	...Continue a low-fat diet and exercise. 
     Consider increasing walking time to 20-30 minutes 
     To assist with weight loss.
+=======
+< Chief Complaint & Present Illness>
+ 
+PMHx>------------------------------
+	 ☐ diabetes mellitus	 ☐ HTN	 ☐ dyslipidemia
+	 ⯀ asthma	 ☐ tuberculosis	 ☐ COPD
+	 ⯀ Cancer	 ☐ hepatitis	 ☐ GERD
+	 ⯀ operation	 ☐ hearing loss	 ☐ arthritis
+	 ☐ depression	 ☐ cognitive disorder	 ☐ CVA
+	 ☐ Allergy>
+	 ☐ medication	 ☐ injection/IV	 ☐ food
+	...have been suffered ⯀
+	---------------------------
+	[ v ] No known allergy with any medication	
+		
+S >  ...have been suffered :  √
+ 
+O >
+	BP [ 999 / 2 ]mmHg   PR [ 2 ]/min  Regular LSP
+
+LAB >
+A >
+P >
+	...  Synthroxine 25 ug 1 tab p.o. q.d. 
+	...  Methimazole 2.5 mg 1 tab p.o. q.d. 
+	...  Antiroid 50 mg 2 tab p.o. q.d. 
+	...  Camen 5 mg 1 tab p.o. q.d. 
+	...  . . . . 
+	...  Indenol 10 mg 1 tab p.o. q.d. 
+	...  . . . . 
+	...  . . . . 
+	...  . . . . 
+	...  Methimazole 5 mg 1 tab p.o. q.d. 
+	...  Antiroid 50 mg 2 tab p.o. q.d. 
+	...  . . . . 
+>>>>>>> refs/remotes/origin/GDS220731
