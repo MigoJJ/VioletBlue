@@ -16,11 +16,11 @@ import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 	 
 public class ThyroidJTableInput extends JPanel{
-	static {
-        System.loadLibrary("/usr/lib/jvm/java-17-openjdk-amd64/lib");
-	}
-	
-	
+//	static {
+//        System.loadLibrary("libawt_xawt");
+//	}
+//	
+//	
     private boolean DEBUG = false;
  
     public ThyroidJTableInput()  throws IOException {
