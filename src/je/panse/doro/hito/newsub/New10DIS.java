@@ -25,7 +25,7 @@ public class New10DIS {
 					case 1 : insert_dis("Diabetes Mellitus F/U", tarfile + "/diabetes" );break;
 					case 2 : insert_dis("Hypertension F/U", tarfile + "/hypertension" );break;
 					case 3 : insert_dis("Hypercholestarolemia F/U", tarfile + "/hyperchol" );break;
-					case 41 : insert_dis("Hyperthyroidiam F/U", tarfile + "/thyhyper" );break;
+					case 41 : insert_dis("Hyperthyroidism F/U", tarfile + "/thyhyper" );break;
 					case 42 : insert_dis("Hypothyroidiam F/U", tarfile + "/thyhypo" );break;
 
 					case 5 : insert_dis("Osteoporosis F/U", tarfile + "/osteoporosis" );break;
