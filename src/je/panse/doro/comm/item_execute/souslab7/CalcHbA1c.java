@@ -45,7 +45,7 @@ public class CalcHbA1c {
 //		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
 
 		    	if (skeys == "Itemcategorykey") {
-				fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+				fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 				Itemcategory.main(null);
 			}
 			else {

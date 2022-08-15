@@ -12,7 +12,7 @@ public class New10DIS {
 	File_cdrw_proc  ob2 = new File_cdrw_proc();
 	public void main(String args) throws Exception { 
 		Newcategory 	cc1 = new Newcategory(); 
-		Menu_list.main(Enter.wt + "/singlebeam/DisMenu"); 
+		Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/DisMenu"); 
 		File_cw_chart 	dn1 = new File_cw_chart();
 		
     	try (Scanner new_code = new Scanner(System.in)) {

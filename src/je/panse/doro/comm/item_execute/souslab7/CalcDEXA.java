@@ -48,7 +48,7 @@ public class CalcDEXA {
 				
 				if (skeys == "Itemcategorykey") {
 					File_cdrw_proc cpa1 = new File_cdrw_proc(); 
-					cpa1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

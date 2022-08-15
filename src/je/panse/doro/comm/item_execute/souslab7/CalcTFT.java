@@ -42,7 +42,7 @@ public class CalcTFT {
 				autoantibodies(TSH_R_Ab,micro_Ab,Tg_Ab);
 			}
 		       if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 		       }
 				else if (skeys == "diseasecategorythyroid") {

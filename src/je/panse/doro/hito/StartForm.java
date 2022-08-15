@@ -32,7 +32,7 @@ public class StartForm {
 						Menu_list.main(Enter.wd + "/fourgate/FourgateMenu"); 
 						st3.main(null);break;  // Disease Category
 					case 4 :
-						Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");
+						Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 						st4.main(null);break; // Items		
 
 					case 9 : case 99: case 999:

@@ -53,7 +53,7 @@ public class CalcDitto {
 			File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();	
 				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

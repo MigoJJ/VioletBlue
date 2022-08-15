@@ -38,7 +38,7 @@ public class CalcCPA {
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				if (skeys == "Itemcategorykey") {
-					cpa1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

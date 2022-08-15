@@ -46,7 +46,7 @@ class bmi{
 		fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 		//				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
 		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 			Itemcategory.main(null);
 		}
 		else {

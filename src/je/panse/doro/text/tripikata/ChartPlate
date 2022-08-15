@@ -1,18 +1,16 @@
 C.C.>
    
+PMHx>------------------------------
+	 ⯀ diabetes mellitus	 ⯀ HTN	 ☐ dyslipidemia
+	 ☐ asthma	 ☐ tuberculosis	 ⯀ COPD
+	 ☐ Cancer	 ☐ hepatitis	 ☐ GERD
+	 ☐ operation	 ☐ hearing loss	 ☐ arthritis
+	 ☐ depression	 ☐ cognitive disorder	 ☐ CVA
+	 ☐ Allergy>
+	 ☐ medication	 ☐ injection/IV	 ☐ food
+	...have been suffered ⯀
+	---------------------------
+	[ v ] No known allergy with any medication	999
 O >
-	Height(cm)	Weight(kg)	BMI	Waist
-	-------------------------------------------
-	175.0		45.0		14.7	85
-
 A >
 P >
-	...Follow-up in the clinic in [ 3.0 ]-month
-	...now well treated with current medication
-	   continue with current dosages of meds
-
-        	...	...Follow-up in the clinic in [ 3.0 ]-month
-	...now well treated with current medication
-	   continue with current dosages of meds
-
-        	...
