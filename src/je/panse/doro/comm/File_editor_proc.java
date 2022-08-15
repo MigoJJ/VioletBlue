@@ -11,11 +11,9 @@ import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
 public class File_editor_proc {
-    public static void main(String args) throws InterruptedException 
-    {
+    public static void main(String args) throws InterruptedException {
             Runtime obj = Runtime.getRuntime();
-            try 
-            {
+            try {
                     obj.exec("gedit " + Enter.wt +"/samsara/ChartPlate");
                     Thread.sleep(10000); 
                     obj.exec("killall gedit");

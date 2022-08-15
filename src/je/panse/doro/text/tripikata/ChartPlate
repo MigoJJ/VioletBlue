@@ -1,15 +1,18 @@
 C.C.>
    
-    1 (onset 11 uncertain ... please check  !!)
-
-	General state :  1  
-	P.I. >
-	1
-	1
-	
-S >
-	999
-	q
 O >
+	Height(cm)	Weight(kg)	BMI	Waist
+	-------------------------------------------
+	175.0		45.0		14.7	85
+
 A >
 P >
+	...Follow-up in the clinic in [ 3.0 ]-month
+	...now well treated with current medication
+	   continue with current dosages of meds
+
+        	...	...Follow-up in the clinic in [ 3.0 ]-month
+	...now well treated with current medication
+	   continue with current dosages of meds
+
+        	...

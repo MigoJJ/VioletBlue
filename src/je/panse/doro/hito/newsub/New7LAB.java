@@ -30,7 +30,7 @@ public class New7LAB {
 				case 7 : CalcLpa  	nl8 = new CalcLpa();		nl8.main(null);break;
 				case 8 : CalcGOT  	nl9 = new CalcGOT();		nl9.main(null);break;
 
-		   		case 9 : case 99 : case 999 :
+		   		case 9 : case 99 : case 999 : case 71 :
 		   			Key_Iwbb st999 = new Key_Iwbb();
 		   			st999.Key_Iwbb_Page(select_code); break;
 				default :

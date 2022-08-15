@@ -66,23 +66,20 @@ public class CalcDittoProc3 {
 		Newcategory nc1 = new Newcategory();
 		
 		Integer submenuNo = 1;
+		
 		try {
 			while(submenuNo != 9) {
 				System.out.println(">>> insert code ...");
 				Scanner sc = new Scanner(System.in);
 				submenuNo = sc.nextInt();
-
-				
 //				if (submenuNo == 20) {
 //					ThyroidJTableInput tji1 =  new ThyroidJTableInput();
 //					tji1.main(null);			
 //				}
-				
 				System.out.println("User input: " + submenuNo);	
 				fcp1.writeliner(Enter.wts + "/9PLAN", "");
 				rre2.R_rl_excel_point(submenuNo-1,0,0,excelFilePath);
 			} 
-
 			rre1.writechart(); 
 			fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			nc1.main(null);

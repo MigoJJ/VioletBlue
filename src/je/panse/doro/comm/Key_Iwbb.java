@@ -2,6 +2,7 @@ package je.panse.doro.comm;
 
 import java.io.IOException;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
+import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
@@ -38,6 +39,11 @@ public class Key_Iwbb {
 			rk13.clear_Directory(Enter.wts);
 			returnkeylist("SingleBeamkey");
 		            }
+		 else if (select_code == 71){
+			 CalcDitto ob4 = new CalcDitto();ob4.main(null);
+			 Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+			 returnkeylist("Newcategorykey");
+		 }
 		 else {
 		  }
     }
