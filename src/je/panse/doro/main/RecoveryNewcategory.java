@@ -36,7 +36,7 @@ public class RecoveryNewcategory {
 		   	switch (select_code) {
 	   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;
 		   		case 2 : New4PMH.main(null);  	break;
-				case 3 : New5SUJ.main(null, null);  	break;
+				case 3 : Edcaproc.main(null, null);  	break;
 		   		case 4 : New6OBJ.main(null);  	break;
 				case 5 : New7LAB.main(null);  	break;
 				case 6 : New8ASS.main(null);  	break;
