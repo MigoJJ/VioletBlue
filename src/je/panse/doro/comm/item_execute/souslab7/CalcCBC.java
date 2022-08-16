@@ -39,7 +39,7 @@ public class CalcCBC {
 			}
 		if (skeys == "Itemcategorykey") {
 //   		File_cdrw_proc fcp1 = new File_cdrw_proc();
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 			Itemcategory.main(null);
 		}
 		else {

@@ -14,11 +14,11 @@ public class RecoveryNewcategory {
 // --------------------------------------------	
 	public static void main(String agrs) throws Exception {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    	ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+    		ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 		File_cw_chart ob3 = new File_cw_chart(); 
-    	ob3.cleanChartPlate();
+    		ob3.cleanChartPlate();
     	File_cw_chart st3 = new File_cw_chart();
-		st3.callchartlist(Enter.wt + "/stripikata");
+			st3.callchartlist(Enter.wt + "/stripikata");
 	
     	switching();
 	}	

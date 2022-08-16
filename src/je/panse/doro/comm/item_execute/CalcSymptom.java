@@ -162,7 +162,7 @@ public class CalcSymptom {
 					};
 					return arr5;  
 	   		
-	   		case 9 : case 99: case 999 :	
+	   		case 9 : case 99: case 999 :case 71 :	
 	   			Key_Iwbb st999 = new Key_Iwbb(); 
 	   			st999.Key_Iwbb_Page(dlist); break;
 			default :

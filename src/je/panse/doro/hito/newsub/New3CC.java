@@ -19,7 +19,6 @@ public class New3CC {
 	public void main(String[] args) throws Exception {
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.println(">>>>>> Enter chief complain :>>>");  	a = s.nextLine();
-			
 			if (a.startsWith(":")) {
 				String aa = a.substring(1, a.length());
 				DiseaseCode e = new DiseaseCode();  

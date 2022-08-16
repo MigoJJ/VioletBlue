@@ -18,8 +18,8 @@ public class New5SUJ{
 			Scanner suj_text = new Scanner(System.in);
 			do{
 				st = (suj_text.nextLine().trim());
-//				if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
-				if(st.equals("")){
+				if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
+//				if(st.equals("")){
 					Key_returnquit krq = new Key_returnquit();
 						krq.mainquit(st);
 					break;

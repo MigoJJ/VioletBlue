@@ -22,7 +22,7 @@ public class CalcASS {
 			if(question.equals("quit")|question.equals("q")| question.equals("ㅂ")){
 	        	System.out.println("Inserted code finished  !  ");
 				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

@@ -21,7 +21,7 @@ public class New8ASS {
 				switch (select_code) {
 					case 1 : 
 						CalcASS ob3 = new CalcASS();	 ob3.main(null);break;
-			   		case 9 : case 99 : case 999 :
+			   		case 9 : case 99 : case 999 : case 71 :
 			   			Key_Iwbb st999 = new Key_Iwbb();
 			   			st999.Key_Iwbb_Page(select_code); break;
 					default :

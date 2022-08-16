@@ -30,7 +30,7 @@ public class CalcBP {
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 
 		   if (skeys == "Itemcategorykey") {
-			   fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+			   fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 				Itemcategory.main(null);
 			}
 			else if (skeys == "diseasecategorythyroid") {

@@ -19,7 +19,7 @@ public class New3PI{
 				st = (suj_text.nextLine().trim());
 				if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
 					Key_returnquit krq = new Key_returnquit();
-						krq.mainquit(st);
+					krq.mainquit(st);
 					break;
 				}
 //				else if (st.startsWith(">")) {
@@ -42,8 +42,9 @@ public class New3PI{
 					System.out.println("st = :  " + st + "\n");
 					New3PI.suj_insert(st, "/3CC");
 				}
-			}while (st != "quit");
+			}while (true);
 					System.out.println("Success");
+
 					suj_text.close();
 		}catch (IOException e) {
 			e.printStackTrace();

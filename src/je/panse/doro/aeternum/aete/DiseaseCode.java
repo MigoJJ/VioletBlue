@@ -17,7 +17,9 @@ public class DiseaseCode {
 			case "ftep" : cresult =("#  Hyperthyroidism with Pregnancy [   ]  weeks F/U");break;
 			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks F/U");break;
 					
-			case "d" : cresult =("#  DM without complications	");break;
+			case "do" : cresult =("#  DM without complications	");break;
+			case "d" : cresult =("#  Diabetes Mellitus	");break;
+
 				case "dr" : cresult =("#  DM without Retinopathy ");break;
 					case "drn" : cresult =("#  DM with Retinopathy \n\t: Non-proliferative diabetic retinopathy");break;
 					case "drp" : cresult =("#  DM with Retinopathy \n\t: Proliferative diabetic retinopathy");break;

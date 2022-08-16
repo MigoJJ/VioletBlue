@@ -27,7 +27,7 @@ public class New9PLAN {
 					case 1 : ob3.main(null);break;
 					case 2 : ob4.main("/ThyroidStart"); break;
 
-			   		case 9 : case 99 : case 999 :
+			   		case 9 : case 99 : case 999 : case 71 :
 		   				st999.Key_Iwbb_Page(select_code); break;
 					default :
 						System.out.println(" uncertain ... please check  !!");

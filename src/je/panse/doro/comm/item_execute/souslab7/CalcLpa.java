@@ -34,7 +34,7 @@ public class CalcLpa {
 	        System.out.println(lar);
 				fcp1.writeliner(Enter.wts + "/7LAB", lar + "\n");
 				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

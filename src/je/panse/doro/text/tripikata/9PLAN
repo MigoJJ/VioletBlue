@@ -1,6 +1,7 @@
 P >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	...Follow-up in the clinic in [ 3 ]-month
 	...now well treated with current medication
 	   continue with current dosages of meds
@@ -25,4 +26,9 @@ P >
 	...  Methimazole 5 mg 1 tab p.o. q.d. 
 	...  Antiroid 50 mg 2 tab p.o. q.d. 
 	...  . . . . 
+>>>>>>> refs/remotes/origin/GDS220731
+=======
+	...Follow-up in the clinic in [ 3.0 ]-month
+	...now well treated with current medication
+	   continue with current dosages of meds
 >>>>>>> refs/remotes/origin/GDS220731

@@ -1,26 +1,22 @@
 package je.panse.doro.fourgate.thyroid.prescription;
 
-import java.awt.Dimension;
+import java.awt.Dimension;	
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.hito.newsub.New6OBJ;
-import je.panse.doro.main.Enter;
 	 
 public class ThyroidJTableInput extends JPanel{
-    private boolean DEBUG = false;
+    private static final long serialVersionUID = 1L;
+	private boolean DEBUG = false;
  
     public ThyroidJTableInput()  throws IOException {
         super(new GridLayout(1,0));
-	 
 	        String[] columnNames = {"Name",
 	                                "Last Name",
 	                                "Sport",
@@ -59,8 +55,6 @@ public class ThyroidJTableInput extends JPanel{
 	        {"Indenol", "10 mg","1 tab p.o.", "b.i.d."},
 	        {"Indenol", "10 mg","1 tab p.o.", "t.i.d."},
 	        };
-
-	        
 	        
 	        final JTable table = new JTable(data, columnNames);
 	        table.setPreferredScrollableViewportSize(new Dimension(500, 600));

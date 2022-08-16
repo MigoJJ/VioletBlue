@@ -62,7 +62,7 @@ public class CalcEKG {
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				if (skeys == "Itemcategorykey") {
-					ekg1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+					ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {

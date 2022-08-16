@@ -7,7 +7,7 @@ import je.panse.doro.main.Enter;
 
 public class StartForm {
 	public static void main(String[] string) throws Exception {
-		File_cw_chart 		st1	= new File_cw_chart();
+		File_cw_chart 	st1	= new File_cw_chart();
 		Newcategory 		st2 = new Newcategory(); 
 		Diseasecategory 	st3 = new Diseasecategory(); 
 		Itemcategory 		st4 = new Itemcategory();
@@ -32,7 +32,7 @@ public class StartForm {
 						Menu_list.main(Enter.wd + "/fourgate/FourgateMenu"); 
 						st3.main(null);break;  // Disease Category
 					case 4 :
-						Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");
+						Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 						st4.main(null);break; // Items		
 
 					case 9 : case 99: case 999:
