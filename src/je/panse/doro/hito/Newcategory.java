@@ -35,7 +35,7 @@ public class Newcategory {
 			   			Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
 		   		
 		   		case 2 : New4PMH.main(null);break;
-				case 3 : New5SUJ.main(null, null);break;
+				case 3 : Edcaproc.main(null, null);break;
 		   		case 4 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		   			New6OBJ.main(null);break;
 				case 5 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");

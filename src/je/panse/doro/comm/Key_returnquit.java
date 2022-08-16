@@ -25,5 +25,3 @@ public class Key_returnquit {
 	}
 //------------------
 }
-//Key_returnquit krq = new Key_returnquit();
-//krq.mainquit(st);
