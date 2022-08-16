@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.sousditto9;
 
-import java.io.FileInputStream;			
+import java.io.FileInputStream;				
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,54 +8,53 @@ import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.Key_returnquit;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.fourgate.thyroid.prescription.ThyroidJTableInput;
-import je.panse.doro.fourgate.thyroid.prescription.sel_px;
-import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.hito.Newcategory;
-import je.panse.doro.hito.newsub.New7LAB;
-import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
 
 public class CalcDittoProc3 {
 	public void main(int sheeNo, int columNo) throws IOException {
 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9List.xlsx");
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
-		XSSFWorkbook workbook =  new XSSFWorkbook(inputstream) ;
-		XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
-		int rows = sheet.getLastRowNum();
-		int cols = sheet.getRow(1).getLastCellNum();
-		
-		ArrayList<String> thyoridList = new ArrayList<>(Arrays.asList());
-		try {
-			for(int r=0; r<=rows; r++) {
-				XSSFRow row = sheet.getRow(r);// 0
-				XSSFCell cell = row.getCell(columNo);
-				if (cell != null) {
-					switch(cell.getCellType()) {
-						case STRING:
-							String getrc = (cell.getStringCellValue()+ "\t");
-							thyoridList.add(getrc);
-							break;
-						case NUMERIC:System.out.print(cell.getNumericCellValue()+ "\t"); break;
-						case BOOLEAN:System.out.print(cell.getBooleanCellValue()+ "\t"); break;
-						default:
-							break;
-						}
-				}
-			}  //---col
-			int e = 1;
-			for(String i : thyoridList) {
-				System.out.printf("[ %s ] ",e);
-				System.out.println(i);
-				e = e+1;
-			}
-			iwbtList(excelFilePath);
+		try (XSSFWorkbook workbook = new XSSFWorkbook(inputstream)) {
+			XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
+			int rows = sheet.getLastRowNum();
+			
+			System.out.println("int rows = sheet.getLastRowNum();  >>" + rows);
+			
+			int cols = sheet.getRow(1).getLastCellNum();
+			
+			System.out.println("int cols = sheet.getRow(1).getLastCellNum();  >>" + cols);
 
-		} catch (Exception e) {
-			e.printStackTrace();
+						
+			ArrayList<String> thyoridList = new ArrayList<>(Arrays.asList());
+			try {
+				for(int r=0; r<=rows; r++) {
+					XSSFRow row = sheet.getRow(r);// 0
+					XSSFCell cell = row.getCell(columNo);
+					if (cell != null) {
+						switch(cell.getCellType()) {
+							case STRING:
+								String getrc = (cell.getStringCellValue()+ "\t");
+								thyoridList.add(getrc);
+								break;
+							case NUMERIC:System.out.print(cell.getNumericCellValue()+ "\t"); break;
+							case BOOLEAN:System.out.print(cell.getBooleanCellValue()+ "\t"); break;
+							default:
+								break;
+							}
+					}
+				}  //---col
+				int e = 1;
+				for(String i : thyoridList) {
+					System.out.printf("[ %s ] ",e);
+					System.out.println(i);
+					e = e+1;
+				}
+				iwbtList(excelFilePath);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
