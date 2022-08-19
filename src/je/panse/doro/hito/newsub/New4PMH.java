@@ -28,21 +28,21 @@ public class New4PMH {
 					break;
 				}
 				else if (st.startsWith(":")) {
-					New5SUJ.insertDcode(st + "/");
+					Edcaproc.insertDcode(st + "/");
 				}
 				else if (st.startsWith("]")) {
 					st = st.substring(1, st.length());
-					New5SUJ.suj_insert(st, "/4PMH");
+					Edcaproc.suj_insert(st, "/4PMH");
 				}
 				else if (st.startsWith("#")) {
-					New5SUJ.suj_insert(st, "/8ASS");
+					Edcaproc.suj_insert(st, "/8ASS");
 				}
 				else if (st.startsWith("...")) {
-					New5SUJ.suj_insert(st, "/9PLAN");
+					Edcaproc.suj_insert(st, "/9PLAN");
 				}
 				else {
 					System.out.println("st = :  " + st + "\n");
-					New5SUJ.suj_insert(st, "/4PMH");
+					Edcaproc.suj_insert(st, "/4PMH");
 				}
 			}while (st != "");
 					System.out.println("Success");
@@ -65,7 +65,7 @@ public class New4PMH {
 			System.out.println(subOfSuj[0].length());
 			System.out.println(subOfSuj[1].length());
 			DiseaseCode e = new DiseaseCode();
-			New5SUJ.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
+			Edcaproc.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
 			System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
