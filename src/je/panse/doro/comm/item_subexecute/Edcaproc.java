@@ -34,13 +34,13 @@ public class Edcaproc {
 
 	}
 
-	static void suj_insert(String st, String ilocation) throws IOException {
+	public static void suj_insert(String st, String ilocation) throws IOException {
     	String SUJresult = ("\t" + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writeliner(Enter.wts + ilocation, SUJresult);
 	}
 
-	static String insertDcode(String ist) throws IOException {
+	public static String insertDcode(String ist) throws IOException {
 		String re ="";
 		try {
 			String[] subOfSuj = ist.split("/", 2);

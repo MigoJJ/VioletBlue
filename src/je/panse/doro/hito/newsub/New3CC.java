@@ -1,8 +1,7 @@
 package je.panse.doro.hito.newsub;
 	
-import java.io.IOException;									
+import java.io.IOException;										
 import java.util.Scanner;
-import je.panse.doro.aeternum.aete.DiseaseCode;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_returnquit;
@@ -20,7 +19,7 @@ public class New3CC {
 	
 	public void main(String[] args) throws Exception {
 		try (Scanner s = new Scanner(System.in)) {
-			System.out.println(">>>>>> Enter chief complain :>>>");
+			System.out.println("\n\n>>>>>> Enter chief complain :>>>");
 			a = s.nextLine();
 			a = (a.trim());
 			if(a.equals("")){
