@@ -15,7 +15,7 @@ public class New4PMH {
 		try {
 			Scanner suj_text = new Scanner(System.in);
 			st = (suj_text.nextLine().trim());
-			Edcamain.main(st,"/5PMH");
+			Edcamain.main(st,"/4PMH");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

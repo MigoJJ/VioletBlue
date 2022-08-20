@@ -8,7 +8,6 @@ import je.panse.doro.main.Enter;
 public class Edcaproc {
 	public static void main(String st, String ipath) {
 		try {
-
 				if (st.startsWith(":")) {
 					String s = Edcaproc.insertDcode(st + "/");
 					Edcaproc.suj_insert(s, ipath);
@@ -31,11 +30,10 @@ public class Edcaproc {
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public static void suj_insert(String st, String ilocation) throws IOException {
-    	String SUJresult = ("\t" + st); 
+    	String SUJresult = ("\n\t" + st); 
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writeliner(Enter.wts + ilocation, SUJresult);
 	}
@@ -55,6 +53,8 @@ public class Edcaproc {
 			DiseaseCode e = new DiseaseCode();
 			System.out.println(":>>> " + e.code_select(sunst0) + sunst1);
 			re = (e.code_select(sunst0) + sunst1);
+			System.out.println("		return re; >>>" + re);
+		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
