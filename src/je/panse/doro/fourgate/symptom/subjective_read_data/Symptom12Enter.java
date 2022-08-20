@@ -10,6 +10,7 @@ public class Symptom12Enter {
 	public static void main(String[] args) throws Exception {
 		System.out.println(
 		"""
+	S > ...have been suffered ⯀ √
 		-------------------------
 	\t1.	Diabetes Mellitus
 	
@@ -21,11 +22,13 @@ public class Symptom12Enter {
 	
 	\t6.	Abdominal pain	
 	\t7.	Atypical chest pain	
+
 		-------------------------	""");
 
+		
+		File_cdrw_proc fcp1 = new File_cdrw_proc();
+		fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
 		ReadExcel_column2 ret1 = new ReadExcel_column2();
-		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
-//		fcp1.writeliner(Enter.wts + "/5SUJ", "...have been suffered :  √"); 
 		System.out.println("\n........... inset the number ...> ");
 
 		String inputNo="JJ";

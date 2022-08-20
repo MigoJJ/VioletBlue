@@ -1,6 +1,6 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;					
+import java.util.Scanner;						
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
@@ -30,8 +30,6 @@ public class Newcategory {
 		   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
 			   		case 11 : New3PI n32 = new New3PI(); n32.main(null);break;
 			   		case 12 : 
-						File_cdrw_proc fcp1 = new File_cdrw_proc();
-						fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
 			   			Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
 		   		
 		   		case 2 : New4PMH.main(null);break;
