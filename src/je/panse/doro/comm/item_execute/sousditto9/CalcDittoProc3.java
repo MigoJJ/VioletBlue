@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.sousditto9;
 
-import java.io.FileInputStream;				
+import java.io.FileInputStream;					
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,12 +8,14 @@ import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
+import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
 public class CalcDittoProc3 {
 	public void main(int sheeNo, int columNo) throws IOException {
 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9List.xlsx");
+		
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
 		try (XSSFWorkbook workbook = new XSSFWorkbook(inputstream)) {
 			XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
@@ -51,6 +53,11 @@ public class CalcDittoProc3 {
 					e = e+1;
 				}
 				iwbtList(excelFilePath);
+				System.out.print(".....>>>>> Input Additional Plan : ");
+				Scanner suj_text = new Scanner(System.in);
+				String st = (suj_text.nextLine().trim());
+				Edcamain.main("..." + st,"/5SUJ");
+
 
 			} catch (Exception e) {
 				e.printStackTrace();

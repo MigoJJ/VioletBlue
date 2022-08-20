@@ -53,8 +53,6 @@ public class Edcaproc {
 			DiseaseCode e = new DiseaseCode();
 			System.out.println(":>>> " + e.code_select(sunst0) + sunst1);
 			re = (e.code_select(sunst0) + sunst1);
-			System.out.println("		return re; >>>" + re);
-		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
