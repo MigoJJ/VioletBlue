@@ -1,79 +1,31 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;	
 import java.util.Scanner;
-import je.panse.doro.aeternum.aete.DiseaseCode;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_returnquit;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.hito.Newcategory;
-import je.panse.doro.main.Enter;
+import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class New4PMH {
 
 	public static void main(String[] args) throws Exception {
 		New4PMHni.main(null);
-		String st;
-		try {
-//			New5SUJ.suj_insert("PMHx>", "/4PMH");
-			System.out.println("*****Enter PMHx*****  ...   : ");
-			Scanner suj_text = new Scanner(System.in);
-			do{
-				st = (suj_text.nextLine().trim());
-//				if(st.equals("quit")|st.equals("q")|st.equals("ㅂ")){
-				if(st.equals("")){
-					Key_returnquit krq = new Key_returnquit();
-					krq.mainquit(st);
-					break;
-				}
-				else if (st.startsWith(":")) {
-					Edcaproc.insertDcode(st + "/");
-				}
-				else if (st.startsWith("]")) {
-					st = st.substring(1, st.length());
-					Edcaproc.suj_insert(st, "/4PMH");
-				}
-				else if (st.startsWith("#")) {
-					Edcaproc.suj_insert(st, "/8ASS");
-				}
-				else if (st.startsWith("...")) {
-					Edcaproc.suj_insert(st, "/9PLAN");
-				}
-				else {
-					System.out.println("st = :  " + st + "\n");
-					Edcaproc.suj_insert(st, "/4PMH");
-				}
-			}while (st != "");
-					System.out.println("Success");
-					suj_text.close();
-		}catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	void suj_insert(String st, String ilocation) throws IOException {
-    	String SUJresult = ("\t" + st); 
-		File_cdrw_proc suj1 = new File_cdrw_proc();
-		suj1.writeliner(Enter.wts + ilocation, SUJresult);
-	}
+		String st="JJ";
+		System.out.println("*****Enter Past Medical Hostory*****  ...   : ");
 
-	void insertDcode(String ist) throws IOException {
+		do {
 		try {
-			String[] subOfSuj = ist.split("/", 2);
-			subOfSuj[0] = subOfSuj[0].trim(); 
-			String sunst0 = subOfSuj[0].substring(1, subOfSuj[0].length());
-			System.out.println(subOfSuj[0].length());
-			System.out.println(subOfSuj[1].length());
-			DiseaseCode e = new DiseaseCode();
-			Edcaproc.suj_insert(e.code_select(sunst0) + subOfSuj[1], "/8ASS");
-			System.out.println(":>>> " + e.code_select(sunst0) + subOfSuj[1]);
-		} catch (IOException e) {
+			Scanner suj_text = new Scanner(System.in);
+			st = (suj_text.nextLine().trim());
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return;
-	}
-	// ---------- 
+			Edcamain.main(st,"/5PMH");
+		} while (!(st == ""));
+			Key_returnquit krq = new Key_returnquit();
+			krq.mainquit(st);
+		}
+
+// ---------- 
 }
 
 	

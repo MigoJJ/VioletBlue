@@ -1,16 +1,14 @@
 package je.panse.doro.hito.newsub;
 
 import java.util.Scanner;
-import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_returnquit;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 
-public class New3PI{
+public class New5SUJ{
 	public static void main(String args) throws Exception {
-		File_cdrw_proc 	fcp = new File_cdrw_proc();
-		fcp.writeliner("P.I. >", "/3CC");
 		String st="JJ";
-		System.out.println("*****Enter Present illness*****  ...   : ");
+		System.out.println("\n\n*****Enter Subjective complaint*****  ...   : ");
 
 		do {
 		try {
@@ -20,7 +18,7 @@ public class New3PI{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			Edcamain.main(st,"/3CC");
+			Edcamain.main(st,"/5SUJ");
 		} while (!(st == ""));
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(st);
