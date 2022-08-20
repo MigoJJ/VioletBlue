@@ -15,11 +15,11 @@ public class New4PMH {
 		try {
 			Scanner suj_text = new Scanner(System.in);
 			st = (suj_text.nextLine().trim());
+			Edcamain.main(st,"/5PMH");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			Edcamain.main(st,"/5PMH");
 		} while (!(st == ""));
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(st);
