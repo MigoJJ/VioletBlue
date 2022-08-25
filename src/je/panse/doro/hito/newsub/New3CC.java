@@ -105,9 +105,7 @@ public class New3CC {
 				else {
 				chartline4 = "\t" + a +"\n";
 				}
-			
 			fcp.writeliner(Enter.wts + "/3CC", chartline4);
-//			
 //			fcp.writeliner(Enter.wts + "/8ASS", chartline4);
 		}
 		else if (bint >= 1900) {
