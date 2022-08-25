@@ -4,11 +4,13 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.item_subexecute.Edcamain;
+import je.panse.doro.main.Enter;
 
 public class New3PI{
 	public static void main(String args) throws Exception {
 		File_cdrw_proc 	fcp = new File_cdrw_proc();
-		fcp.writeliner("P.I. >", "/3CC");
+		fcp.writeliner(Enter.wts + "/3CC","P.I. >");
+
 		String st="JJ";
 		System.out.println("*****Enter Present illness*****  ...   : ");
 

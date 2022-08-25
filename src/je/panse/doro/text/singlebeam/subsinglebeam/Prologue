@@ -4,20 +4,18 @@
 
 	Version	0.0		Starting ittia
 	
-	Version	0.1		jar
-		install openjdk-17-jdk-headless
-		
+	Version	0.1		
+		LTS openjdk-17-jdk-headless
+		LTS openjdk-11-jdk-headless
 	
 	Version	0.2		Instance OOP 
-					variables static
+		variables static
+		Overloading shortcut Iwbb
+		try catch IOExptions
 	
-	Version	0.3		Overloading shortcut Iwbb
-	
-	Version	0.4		try catch IOExptions
-	
-	Version	0.5		jar for windows	
+	Version	0.3		jar for windows	
 	
 	Version	0.6		security
 	
-	Version	0.7		Maven 	JAVAscript
+	Version	0.7		Gradle Swing JAVAscript
 ----------------------------------------------	   
