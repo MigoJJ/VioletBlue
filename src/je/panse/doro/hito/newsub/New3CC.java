@@ -74,10 +74,10 @@ public class New3CC {
 		}
 		
 		if (a.startsWith(":")) {
-		chartline = "\t(onset " + b + c + ")\n";
+		chartline = "\t(onset " + b + c + ")";
 		}
 		else {
-		chartline = "\t" + a + "  (onset " + b + c + ")\n";
+		chartline = "\t" + a + "  (onset " + b + c + ")";
 		}
 		fcp.writeliner(Enter.wts + "/3CC", chartline);
 		}
