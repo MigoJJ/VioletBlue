@@ -3,17 +3,23 @@
 	      Good Doctors’ Clinic
 	--------------------------------------------------------------------
 	
-	Version         -- V 0.11
+	Version         -- V 0.21
 	Made by         -- Jae Joon Koh M.D.
 	
 	Ubuntu------------------------------
-	Description: Ubuntu 21.10
+	Description:	Ubuntu 20.04.4 LTS at GDS
+	Codename:	focal
+	Description: Ubuntu 21.10 at Home
 	Codename: impish
 	
 	JAVA--------------------------------
-	openjdk-17-jre-headless  
-	# version 17.0.2+8-1~22.10
-	openjdk 11.0.11 2021-04-20
+	openjdk version "17.0.4" 2022-07-19
+	OpenJDK Runtime Environment (build 17.0.4+8-Ubuntu-120.04)
+	OpenJDK 64-Bit Server VM (build 17.0.4+8-Ubuntu-120.04, mixed mode, sharing)
+	
+	openjdk version "11.0.16" 2022-07-19
+	OpenJDK Runtime Environment (build 11.0.16+8-post-Ubuntu-0ubuntu120.04)
+	OpenJDK 64-Bit Server VM (build 11.0.16+8-post-Ubuntu-0ubuntu120.04, mixed mode, sharing)
 	
 	Eclipse-----------------------------
 	Version: 2021-06 (4.20.0)
