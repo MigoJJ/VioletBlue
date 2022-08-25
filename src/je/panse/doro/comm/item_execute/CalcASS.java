@@ -1,68 +1,27 @@
 package je.panse.doro.comm.item_execute;
 	
-import java.io.BufferedWriter;			
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
-import je.panse.doro.aeternum.aete.DiseaseCode;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.hito.Itemcategory;
-import je.panse.doro.hito.Newcategory;
-import je.panse.doro.main.Enter;
+import je.panse.doro.comm.Key_returnquit;
+import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class CalcASS {
 	public static void main(String skeys) throws Exception{
-		File_cdrw_proc fcp1 = new File_cdrw_proc();
-		Scanner scanner=new Scanner(System.in);
-		while (true) {
-			System.out.println(">>>>>>>>>> Insert disease code : >>>>>>>>>>");
-			String question = scanner.nextLine();
-			code_select(question);
-			if(question.equals("quit")|question.equals("q")| question.equals("ㅂ")){
-	        	System.out.println("Inserted code finished  !  ");
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-					Newcategory nc1 = new Newcategory();
-					nc1.main(null);
-				}
-	       break;
-			}
-        }
-    	System.out.println("Success");
-    	scanner.close();
-    }
-//------------------------------------------------     
-    static void code_select(String dcode) throws IOException {
-		DiseaseCode e =new DiseaseCode();  
-		   aI(e.code_select(dcode));  
-	}
-//------------------------------------------------ 
-    static void aI(String diaease_description) throws IOException {
+		String st="JJ";
+		System.out.println("\n\n*****Enter Assessment*****  ...   : ");
+
+		do {
 		try {
-			System.out.println(diaease_description);
-			writecoding(diaease_description);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-    }
-//------------------------------------------------
-    static void writecoding(String writec) throws IOException {
-		File file_ass = new File(Enter.wts + "/8ASS");
-		System.out.println(file_ass);
-		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file_ass,true));
-			try {
-				bufferedWriter.write("\t" + writec);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		bufferedWriter.newLine();
-		bufferedWriter.flush();
-		bufferedWriter.close();
-    }
+			Scanner suj_text = new Scanner(System.in);
+			st = (suj_text.nextLine().trim());
+			Edcamain.main(st,"/8ASS");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		} while (!(st == ""));
+			Key_returnquit krq = new Key_returnquit();
+			krq.mainquit(st);
+		}
 //------------------------------------------------
 }

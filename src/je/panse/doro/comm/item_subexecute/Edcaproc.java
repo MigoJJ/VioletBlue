@@ -23,7 +23,6 @@ public class Edcaproc {
 					Edcaproc.suj_insert(st, "/9PLAN");
 				}
 				else {
-					System.out.println("st = :  " + st + "\n");
 					Edcaproc.suj_insert(st, ipath);
 				}
 
@@ -49,12 +48,9 @@ public class Edcaproc {
 			if (subOfSuj[1].length()>0) {
 				sunst1 = subOfSuj[1].substring(0, subOfSuj[1].length()-1);
 			}
-
 			DiseaseCode e = new DiseaseCode();
 			System.out.println(":>>> " + e.code_select(sunst0) + sunst1);
 			re = (e.code_select(sunst0) + sunst1);
-			System.out.println("		return re; >>>" + re);
-		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
