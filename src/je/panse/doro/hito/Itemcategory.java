@@ -10,7 +10,7 @@ import je.panse.doro.comm.item_execute.souslab7.CalcCBC;
 import je.panse.doro.comm.item_execute.souslab7.CalcCPA;
 import je.panse.doro.comm.item_execute.souslab7.CalcCr;
 import je.panse.doro.comm.item_execute.souslab7.CalcDEXA;
-import je.panse.doro.comm.item_execute.souslab7.CalcEKG;
+import je.panse.doro.comm.item_execute.souslab7.CalcEKG3;
 import je.panse.doro.comm.item_execute.souslab7.CalcGOT;
 import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
 import je.panse.doro.comm.item_execute.souslab7.CalcLpa;
@@ -29,7 +29,7 @@ public class Itemcategory {
 				case 2 : CalcBP   lab2 = new CalcBP();  lab2.main("Itemcategorykey");break;
 //						case 3 : CalcGFS  lab3 = new CalcGFS(); lab3.main("Itemcategorykey");break;					
 				case 4 : CalcCPA  lab4 = new CalcCPA(); lab4.main("Itemcategorykey");break;					
-				case 5 : CalcEKG  lab5 = new CalcEKG(); lab5.main("Itemcategorykey");break;
+				case 5 : CalcEKG3  lab5 = new CalcEKG3(); lab5.main("Itemcategorykey");break;
 				case 7 : CalcDEXA lab7 = new CalcDEXA();lab7.main("Itemcategorykey");break;
 				
 			  	case 11 : CalcHbA1c	nl2 = new CalcHbA1c();nl2.main("Itemcategorykey");break;
