@@ -24,13 +24,11 @@ public class CalcDitto {
 			}
 			System.out.print(".....>>>>> Dose Adjust ? : \n");
 			System.out.println(
-					"""
-					-------------------------
-                  \t1...With conservative treatment
-                  \t0...Observation & Follow-up without medication
-                  \t3...skip
-					-------------------------
-							""");
+					"-------------------------\n"
+					+ "\t1...With conservative treatment\n"
+					+ "\t0...Observation & Follow-up without medication\n"
+					+ "\t3...skip\n"
+					+ "--------------------------");
 			dosead = input.nextInt();
 			if(dosead !=3) {
 			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}

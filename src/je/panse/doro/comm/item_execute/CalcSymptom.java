@@ -18,18 +18,14 @@ public class CalcSymptom {
 		ClearConsoleScreen ccs = new ClearConsoleScreen();
 		ccs.main(null);
 		System.out.println(
-		"""
-		-------------------------
-		\t1. URI
-		\t2. Hypothyroidism
-		\t3. Hyperthyroidism
-		
-		\t4. Abdominal pain
-		\t5. Atypical chest pain
-		
-		\t6. DM
-		-------------------------
-				""");
+		"-------------------------\n"
+		+ "\t1. URI\n"
+		+ "\t2. Hypothyroidism\n"
+		+ "\t3. Hyperthyroidism\n"
+		+ "\t4. Abdominal pain\n"
+		+ "\t5. Atypical chest pain"
+		+ "\t6. DM\n"
+		+ "-------------------------");
 		
 		System.out.println("*****Enter key *****  ...   : ");
 		Scanner uaah = new Scanner(System.in);

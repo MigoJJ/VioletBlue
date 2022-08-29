@@ -9,23 +9,16 @@ import je.panse.doro.main.Enter;
 public class Symptom12Enter {
 	public static void main(String[] args) throws Exception {
 		System.out.println(
-		"""
-	S > ...have been suffered ⯀ √
-		-------------------------
-	\t1.	Diabetes Mellitus
-	
-	\t2.	Hyperthyroidism	
-	\t3.	Hypothyroidism	
-	
-	\t4.	URI  	
-	\t5.	UTI
-	
-	\t6.	Abdominal pain	
-	\t7.	Atypical chest pain	
-
-		-------------------------	""");
-
-		
+		"S > ...have been suffered ⯀ √\n"
+		+ "-------------------------\n"
+		+ "\t1.	Diabetes Mellitus\n"
+		+ "\t2.	Hyperthyroidism\n"
+		+ "\t3.	Hypothyroidism\n"
+		+ "\t4.	URI\n"
+		+ "\t5.	UTI\n"
+		+ "\t6.	Abdominal pain\n"
+		+ "\t7.	Atypical chest pain\n"
+		+ "-------------------------");
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
 		fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
 		ReadExcel_column2 ret1 = new ReadExcel_column2();
