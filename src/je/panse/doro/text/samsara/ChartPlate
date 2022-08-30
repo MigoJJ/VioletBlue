@@ -1,8 +1,12 @@
 C.C.>
 O >
-	EKG  : 정상 (Within Normal Limits)
-	Chest PA  : 정상 (No Active lesions in Lung)
-A >
-	#  EKG : 정상 (Within Normal Limits)
-#  CPA : 정상 (No Active lesions in Lung)
-P >
+		A >
+		P >
+	line   :   C.C.>
+		line   :
+	line   :
+		line   :   O >
+		line   :   A >
+		line   :   P >
+		line
+   :   >>>>>>>>>>>>>

@@ -3,6 +3,8 @@ package je.panse.doro.comm;
 import java.io.IOException;	
 import java.util.ArrayList;
 import java.util.List;
+
+import je.panse.doro.comm.item_administratus.TextEditRemoveline;
 import je.panse.doro.main.Enter;
 
 public class File_cw_chart {
@@ -17,6 +19,8 @@ public class File_cw_chart {
 			nc5.cleanChartPlate();
 			nc5.writechart();
 			nc5.chartbackup();
+			TextEditRemoveline terl =new TextEditRemoveline();
+			terl.main(null);			
 	}
 	// -------------------------------------------Form Files Copying
 	public void callchartlist(String laname) throws IOException {
