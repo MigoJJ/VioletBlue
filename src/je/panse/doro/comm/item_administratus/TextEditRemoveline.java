@@ -3,14 +3,16 @@ package je.panse.doro.comm.item_administratus;
 import java.io.*;	
 import java.util.Scanner;
 
+import je.panse.doro.main.Enter;
+
 public class TextEditRemoveline {
 	public static void main(String[] args) {
         final String EMPTY_STRING = "";
         Scanner file;
         PrintWriter writer;
         try {
-            file = new Scanner(new File("/home/migowj/git/VioletBlue/src/je/panse/doro/text/samsara/ChartPlate"));
-            writer = new PrintWriter("/home/migowj/git/VioletBlue/src/je/panse/doro/text/samsara/ChartPlate.tmp");
+            file = new Scanner(new File(Enter.wd + "/text/samsara/ChartPlate"));
+            writer = new PrintWriter(Enter.wd + "/text/samsara/ChartPlate.tmp");
 
             while (file.hasNext()) {
 //		                String line = file.nextLine().trim();
@@ -24,8 +26,8 @@ public class TextEditRemoveline {
             file.close();
             writer.close();
             
-            File file1 = new File("/home/migowj/git/VioletBlue/src/je/panse/doro/text/samsara/ChartPlate");
-            File file2 = new File("/home/migowj/git/VioletBlue/src/je/panse/doro/text/samsara/ChartPlate.tmp");
+            File file1 = new File(Enter.wd + "/text/samsara/ChartPlate");
+            File file2 = new File(Enter.wd + "/text/samsara/ChartPlate.tmp");
             file1.delete();
             file2.renameTo(file1);
 

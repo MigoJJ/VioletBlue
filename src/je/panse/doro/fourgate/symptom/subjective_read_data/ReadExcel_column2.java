@@ -32,9 +32,9 @@ public class ReadExcel_column2 {
                 String cellData = df.formatCellValue(c);
 
                 if(j==0) {
-                System.out.println("-".repeat(12));
+                System.out.println("-".repeat(20));
                 System.out.println(">>> "+cellData);
-                System.out.println("-".repeat(12));
+                System.out.println("-".repeat(20));
             	}
                 else {
                 	printIndex(cellData,j);
@@ -47,7 +47,10 @@ public class ReadExcel_column2 {
 	  }
 	
 	private static void printIndex(String cd, int inlist) {
-          System.out.println(inlist +  " >  "+cd+"\n");
+		if (cd.equals(".")) {
+		}else {
+          System.out.println(inlist +  " >  "+cd);
+		}
 	}
 	
 	private static void choiceIndex(int lri,int cno,int sno) throws Exception {
