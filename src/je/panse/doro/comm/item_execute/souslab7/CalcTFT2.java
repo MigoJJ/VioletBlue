@@ -31,7 +31,7 @@ public class CalcTFT2 {
 		        }
 //      input.close();
 	        String TFTheadline = ("T3  (ug/dL)  free T-4 (ng/dl)  TSH (mIU/ml)");
-	        String TFTreferval = ("(0.60-1.81)       (0.89-1.76)   (0.55-4.78)");
+	        String TFTreferval = ("  0.60-1.81         0.89-1.76     0.55-4.78");
  	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + retvalue);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
