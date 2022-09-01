@@ -7,23 +7,18 @@ public class ResultEditAdd {
 		return rvalresult;
 	}
 	//---String result Positive Reactive 
-	static String cr_result(String valresult){
+	static String cr_result(String valresult, String iconAdd){
 		String rvalresult = ("➤ " + valresult);
 		return rvalresult;
 	}
-	//---double result low only 
-	static String cr_result(double valhigh, double valresult ){
-		String rvalresult = (">  " + Double.toString(valresult));
-		return rvalresult;
-	}
 	//---double result range 
-	static String cr_result(double vallow, double valhigh, double valresult ){
+	public static String cr_result(double vallow, double valhigh, double valresult ){
 		String rvalresult = Double.toString(valresult);
 		if(vallow > valresult) {
-			rvalresult = (Double.toString(valresult)+ " ⮟  ");
+			rvalresult = (Double.toString(valresult)+ "  ⮟");
 		}
 		else if (valhigh < valresult) {
-			rvalresult = (Double.toString(valresult)+ " ⮝  ");
+			rvalresult = (Double.toString(valresult)+ "   ⮝");
 		}
 		return rvalresult;
 	}

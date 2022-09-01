@@ -9,15 +9,14 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
-public class CalcTFT {
+public class CalcTFT2 {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
+
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
 		String  TFTresult;
 		String retvalue ="-";
 		String retvalue1 ="-";
-		String retvalue2 ="-";
-		String retvalue3 ="-";
 
 		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("*****Input T3 : ");
@@ -26,15 +25,10 @@ public class CalcTFT {
 	        free_T4 = input.nextDouble();
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
-	        if(TSH < 0.05) {
-       			retvalue = ResultEditAdd.cr_result(TSH, " < ");
-	        }
-	        else {
-	        	retvalue = Double.toString(TSH);
-	        }
 //      input.close();
+	        
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String tftresult = (T3 +"\t" + free_T4 + "\t\t" + retvalue);
+	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + TSH);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
@@ -46,44 +40,43 @@ public class CalcTFT {
 				System.out.print("***Anti-TSH-R Ab   :");
 		       double TSH_R_Ab = input.nextDouble();
 		       		if (TSH_R_Ab == 0.3) {
-		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "< ");
+		       			retvalue = ResultEditAdd.cr_result(TSH_R_Ab, " < ");
+		       			String TSH_R_Ab1 = retvalue;
 		       		}
-		       		else if(TSH_R_Ab > 1.75) {
-		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "⮝ ");
-		       		}
-		       		else {
-		    		retvalue1 = Double.toString(TSH_R_Ab);
-		       		}
+		       
 				System.out.print("***Anti-Thyrogobulin Ab  :");
 			    double Tg_Ab = input.nextDouble();
 		       		if (Tg_Ab > 175) {
-		       			retvalue2 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
+		       			retvalue1 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
 		       		}
-		       		else {
-		    		retvalue2 = Double.toString(TSH_R_Ab);
-		       		}
+			    
 		       System.out.print("***Anti-microsomal Ab   :");
 		       double micro_Ab = input.nextDouble();
-	       			if (micro_Ab > 34) {
-	       				retvalue3 = ResultEditAdd.cr_result(micro_Ab,  "⮝ ");
-	       			}
-		       		else {
-		    		retvalue3 = Double.toString(micro_Ab);
-		       		}
-					autoantibodies(retvalue1,retvalue2,retvalue3);
+				autoantibodies(retvalue,micro_Ab,retvalue1);
 			}
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
-			New7LAB nc1 = new New7LAB();
-			nc1.main(null);
+		       if (skeys == "Itemcategorykey") {
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+					Itemcategory.main(null);
+		       }
+				else if (skeys == "diseasecategorythyroid") {
+						fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
+			   			ThyPrescription tp1 = new ThyPrescription();
+			    		tp1.main(null);
+				}
+				else {
+					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+					New7LAB nc1 = new New7LAB();
+					nc1.main(null);
+				}
 			}catch (NumberFormatException e) {
 			e.printStackTrace();
 			}
 		}
 	//---------------------------------------------------		
-	void autoantibodies(String tshr, String tgr, String micr ) throws Exception {
-        String tshrresult = ("\tAnti-TSH-R Ab       : [ " + tshr +  " ] IU/L < 1.75  ");
-         String tgrresult = ("\tAnti-Thyrogobulin Ab : [ " + tgr +  " ] ng/mL < 115  ");
-        String micrresult = ("\tAnti-microsomal Ab  : [ " + micr +  " ] IU/mL < 34  ");
+	void autoantibodies(String tshr, double micr, String tgr) throws Exception {
+        String tshrresult = ("\tAnti-TSH-R Ab       : [  " + tshr +  "  ] IU/L < 1.75  ");
+         String tgrresult = ("\tAnti-Thyrogobulin Ab : [  " + tgr +  "  ] ng/mL < 115  ");
+        String micrresult = ("\tAnti-microsomal Ab  : [  " + micr +  "  ] IU/mL < 34  ");
 
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", tgrresult);
