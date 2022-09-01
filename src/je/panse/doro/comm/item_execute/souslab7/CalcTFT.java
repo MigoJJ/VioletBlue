@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;		
 import je.panse.doro.comm.File_cdrw_proc;
+import je.panse.doro.comm.item_subexecute.ResultEditAdd;
 import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
@@ -14,7 +15,10 @@ public class CalcTFT {
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
 		String  TFTresult;
-    	try (Scanner input = new Scanner(System.in)) {
+		String retvalue ="-";
+		String retvalue1 ="-";
+
+		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("*****Input T3 : ");
 	        T3 = input.nextDouble();
 	        System.out.print("*****Input free_T4 : ");
@@ -35,11 +39,19 @@ public class CalcTFT {
 			if (AutoAb.equals("y")) {
 				System.out.print("***Anti-TSH-R Ab   :");
 		       double TSH_R_Ab = input.nextDouble();
+		       		if (TSH_R_Ab == 0.3) {
+		       			retvalue = ResultEditAdd.cr_result(TSH_R_Ab, " < ");
+		       		}
+		       
 				System.out.print("***Anti-Thyrogobulin Ab  :");
 			    double Tg_Ab = input.nextDouble();
+		       		if (Tg_Ab > 175) {
+		       			retvalue1 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
+		       		}
+			    
 		       System.out.print("***Anti-microsomal Ab   :");
 		       double micro_Ab = input.nextDouble();
-				autoantibodies(TSH_R_Ab,micro_Ab,Tg_Ab);
+				autoantibodies(retvalue,micro_Ab,retvalue1);
 			}
 		       if (skeys == "Itemcategorykey") {
 					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
@@ -60,9 +72,9 @@ public class CalcTFT {
 			}
 		}
 	//---------------------------------------------------		
-	void autoantibodies(double tshr, double micr, double tgr) throws Exception {
+	void autoantibodies(String tshr, double micr, String tgr) throws Exception {
         String tshrresult = ("\tAnti-TSH-R Ab       : [  " + tshr +  "  ] IU/L < 1.75  ");
-        String tgrresult = ("\tAnti-Thyrogobulin Ab : [  " + tgr +  "  ] ng/mL < 115  ");
+         String tgrresult = ("\tAnti-Thyrogobulin Ab : [  " + tgr +  "  ] ng/mL < 115  ");
         String micrresult = ("\tAnti-microsomal Ab  : [  " + micr +  "  ] IU/mL < 34  ");
 
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
