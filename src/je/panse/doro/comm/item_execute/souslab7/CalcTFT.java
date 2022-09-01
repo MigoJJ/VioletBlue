@@ -13,12 +13,9 @@ public class CalcTFT {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
-		String  TFTresult;
-		String retvalue ="-";
-		String retvalue1 ="-";
-		String retvalue2 ="-";
+		String  TFTresult;		String retvalue ="-";
+		String retvalue1 ="-";	String retvalue2 ="-";
 		String retvalue3 ="-";
-
 		try (Scanner input = new Scanner(System.in)) {
 	        System.out.print("*****Input T3 : ");
 	        T3 = input.nextDouble();
@@ -26,25 +23,26 @@ public class CalcTFT {
 	        free_T4 = input.nextDouble();
 	        System.out.print("*****Input TSH  : ");
 	        TSH = input.nextDouble();
-	        if(TSH < 0.05) {
-       			retvalue = ResultEditAdd.cr_result(TSH, " < ");
-	        }
-	        else {
-	        	retvalue = Double.toString(TSH);
-	        }
+		        if(TSH < 0.05) {
+	       			retvalue = ResultEditAdd.cr_result(TSH, " < ");
+		        }
+		        else {
+		        	retvalue = Double.toString(TSH);
+		        }
 //      input.close();
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String tftresult = (T3 +"\t" + free_T4 + "\t\t" + retvalue);
+	        String TFTreferval = ("(  ) (  ) (  )");
+ 	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + retvalue);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tftresult + "\n");
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");
-	       String AutoAb = input.next();
+			String AutoAb = input.next();
 			if (AutoAb.equals("y")) {
 				System.out.print("***Anti-TSH-R Ab   :");
-		       double TSH_R_Ab = input.nextDouble();
+				double TSH_R_Ab = input.nextDouble();
 		       		if (TSH_R_Ab == 0.3) {
 		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "< ");
 		       		}
@@ -62,19 +60,22 @@ public class CalcTFT {
 		       		else {
 		    		retvalue2 = Double.toString(TSH_R_Ab);
 		       		}
-		       System.out.print("***Anti-microsomal Ab   :");
-		       double micro_Ab = input.nextDouble();
-	       			if (micro_Ab > 34) {
+		       	System.out.print("***Anti-microsomal Ab   :");
+		       	double micro_Ab = input.nextDouble();
+		       		if (micro_Ab == 0.9) {
+		       			retvalue3 = ResultEditAdd.cr_result(micro_Ab, "< ");
+		       		}
+		       		else if (micro_Ab > 34) {
 	       				retvalue3 = ResultEditAdd.cr_result(micro_Ab,  "⮝ ");
 	       			}
 		       		else {
 		    		retvalue3 = Double.toString(micro_Ab);
 		       		}
 					autoantibodies(retvalue1,retvalue2,retvalue3);
-			}
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
-			New7LAB nc1 = new New7LAB();
-			nc1.main(null);
+				}
+				fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+				New7LAB nc1 = new New7LAB();
+				nc1.main(null);
 			}catch (NumberFormatException e) {
 			e.printStackTrace();
 			}
@@ -82,7 +83,7 @@ public class CalcTFT {
 	//---------------------------------------------------		
 	void autoantibodies(String tshr, String tgr, String micr ) throws Exception {
         String tshrresult = ("\tAnti-TSH-R Ab       : [ " + tshr +  " ] IU/L < 1.75  ");
-         String tgrresult = ("\tAnti-Thyrogobulin Ab : [ " + tgr +  " ] ng/mL < 115  ");
+        String tgrresult = ("\tAnti-Thyrogobulin Ab : [ " + tgr +  " ] ng/mL < 115  ");
         String micrresult = ("\tAnti-microsomal Ab  : [ " + micr +  " ] IU/mL < 34  ");
 
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
