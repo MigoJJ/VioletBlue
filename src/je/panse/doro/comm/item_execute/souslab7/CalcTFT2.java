@@ -9,7 +9,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
-public class CalcTFT {
+public class CalcTFT2 {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
@@ -30,11 +30,13 @@ public class CalcTFT {
 		        	retvalue = Double.toString(TSH);
 		        }
 //      input.close();
-	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String TFTreferval = ("(  ) (  ) (  )");
+	        String TFTheadline = ("T3  (ug/dL)  free T-4 (ng/dl)  TSH (mIU/ml)");
+	        String TFTreferval = ("  0.60-1.81         0.89-1.76     0.55-4.78");
  	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + retvalue);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
+	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTreferval);
+
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tftresult + "\n");
 				
