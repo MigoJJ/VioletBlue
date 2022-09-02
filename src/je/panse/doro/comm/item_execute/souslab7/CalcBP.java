@@ -21,7 +21,7 @@ public class CalcBP {
 			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 		}
 		try (Scanner input = new Scanner(System.in)) {
-			System.out.print("\r***** Input  [SBP ] [ DBP ]  [pulse rate / minute ] : ");
+			System.out.print("\r\t***** Input \n\t[SBP]\n\t[DBP]\n\t[pulse rate/ minute] : ");
 			bp1.SBP = input.nextInt();
 			bp1.DBP = input.nextInt();
 			bp1.PR = input.nextInt();

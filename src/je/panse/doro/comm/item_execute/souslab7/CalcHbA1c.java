@@ -14,7 +14,7 @@ public class CalcHbA1c {
     	String FP = "FBS";
  
     	try (Scanner input = new Scanner(System.in)) {
-    		System.out.print("========= Input FBS/PP2   Glucose  HBA1c(%)   : ");
+    		System.out.print("========= Input \n\t[FBS/PP2]\n\t[Glucose]\n\t[HBA1c(%)]   : ");
 		        Fbspp2 = input.nextDouble();
 		        Glucose = input.nextInt();
 		        HbA1c = input.nextDouble();

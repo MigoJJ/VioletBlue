@@ -16,7 +16,7 @@ public class CalcCBC {
 	public void main(String skeys) throws Exception {
 	
     	try (Scanner input = new Scanner(System.in)) {
-    		System.out.print("========= Hb    WBC   Platelet : ");
+    		System.out.print("========= Input\n\t[Hb]\n\t[WBC]\n\t[Platelet]  : ");
     		Hb = input.nextDouble();
     		WBC = input.nextInt();
     		Plt = input.nextInt();

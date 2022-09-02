@@ -49,9 +49,9 @@ public class CalcGOT {
 		
 		try {int ii=0;
 			for(String i : gotgpt2) {
-				System.out.print(" >>> " + i);
+				System.out.print(" > " + i);
 				System.out.println("... " + gotgpt.get(ii));
-				fcp1.writelinera(Enter.wts + "/7LAB", "\t>>> " + i + "... " + gotgpt.get(ii));
+				fcp1.writelinera(Enter.wts + "/7LAB", "\t" + i + "... " + gotgpt.get(ii));
 			ii++;	
 			}
 			fcp1.writeliner(Enter.wts + "/7LAB", "\n");
