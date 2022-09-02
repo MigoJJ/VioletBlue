@@ -31,10 +31,11 @@ public class CalcTFT {
 		        }
 //      input.close();
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String TFTreferval = ("(  ) (  ) (  )");
+	        String TFTreferval = ("   0.9-2.5        10.6-19.4       0.25-5.0");
  	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + retvalue);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
+	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTreferval);
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tftresult + "\n");
 				
@@ -85,7 +86,6 @@ public class CalcTFT {
         String tshrresult = ("\tAnti-TSH-R Ab       : [ " + tshr +  " ] IU/L < 1.75  ");
         String tgrresult = ("\tAnti-Thyrogobulin Ab : [ " + tgr +  " ] ng/mL < 115  ");
         String micrresult = ("\tAnti-microsomal Ab  : [ " + micr +  " ] IU/mL < 34  ");
-
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", tgrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", micrresult);
