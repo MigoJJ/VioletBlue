@@ -23,11 +23,9 @@ public class Symptom12Enter {
 		fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
 		ReadExcel_column2 ret1 = new ReadExcel_column2();
 		System.out.println("\n........... inset the number ...> ");
-
 		String inputNo="JJ";
 			try(Scanner sc = new Scanner(System.in)) {
 				while(!(inputNo = sc.nextLine()).equals("")) {
-					
 					switch(inputNo) {
 						case "1":	ret1.main(1,0);    break;
 						case "2":	ret1.main(1,1);    break;

@@ -9,7 +9,7 @@ import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
-public class CalcTFT {
+public class CalcTFT2 {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
@@ -30,8 +30,8 @@ public class CalcTFT {
 		        	retvalue = Double.toString(TSH);
 		        }
 //      input.close();
-	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String TFTreferval = ("   0.9-2.5        10.6-19.4       0.25-5.0");
+	        String TFTheadline = ("T3  (ug/dL)  free T-4 (ng/dl)  TSH (mIU/ml) 외부");
+	        String TFTreferval = ("  0.60-1.81         0.89-1.76     0.55-4.78");
  	        String tftresult = (T3 +"\t\t" + free_T4 + "\t\t" + retvalue);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
@@ -86,6 +86,7 @@ public class CalcTFT {
         String tshrresult = ("\tAnti-TSH-R Ab       : [ " + tshr +  " ] IU/L < 1.75  ");
         String tgrresult = ("\tAnti-Thyrogobulin Ab : [ " + tgr +  " ] ng/mL < 115  ");
         String micrresult = ("\tAnti-microsomal Ab  : [ " + micr +  " ] IU/mL < 34  ");
+
         fcp1.writeliner(Enter.wts + "/7LAB", tshrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", tgrresult);
         fcp1.writeliner(Enter.wts + "/7LAB", micrresult);
