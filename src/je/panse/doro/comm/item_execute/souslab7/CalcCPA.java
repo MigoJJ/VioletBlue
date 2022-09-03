@@ -58,7 +58,7 @@ public class CalcCPA {
 				try {
 					bufferedWriter.write("\tChest PA  : " + writec);
 				    File_cdrw_proc fcp1 = new File_cdrw_proc();
-					fcp1.writeliner(Enter.wts + "/8ASS", "\t#  CPA : " + writec);
+					fcp1.writeliner(Enter.wts + "/8ASS", "\tⓒ CPA : " + writec);
 				} catch (IOException e) {
 					e.printStackTrace();
 			}

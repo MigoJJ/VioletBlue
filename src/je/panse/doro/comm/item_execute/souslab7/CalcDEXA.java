@@ -91,7 +91,7 @@ public class CalcDEXA {
 		    System.out.println("\n\t골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
 		    
 		    System.out.println(result_z);
-			String result_zt_score = ("\n\t골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
+			String result_zt_score = ("\n\tⓓ DEXA " + zt +  " :  " + zt_score);
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);

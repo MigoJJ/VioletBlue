@@ -52,7 +52,11 @@ public class CalcGOT {
 				System.out.print(" > " + i);
 				System.out.println("... " + gotgpt.get(ii));
 				fcp1.writelinera(Enter.wts + "/7LAB", "\t" + i + "... " + gotgpt.get(ii));
-			ii++;	
+
+				if(i=="GGT") {
+					fcp1.writelinera(Enter.wts + "/7LAB", "\n");
+				}
+				ii++;	
 			}
 			fcp1.writeliner(Enter.wts + "/7LAB", "\n");
 		} catch (Exception e) {

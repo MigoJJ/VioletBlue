@@ -15,10 +15,10 @@ public class ResultEditAdd {
 	public static String cr_result(double vallow, double valhigh, double valresult ){
 		String rvalresult = Double.toString(valresult);
 		if(vallow > valresult) {
-			rvalresult = (Double.toString(valresult)+ "  ⮟");
+			rvalresult = (Double.toString(valresult)+ " ⮟");
 		}
 		else if (valhigh < valresult) {
-			rvalresult = (Double.toString(valresult)+ "   ⮝");
+			rvalresult = (Double.toString(valresult)+ " ⮝");
 		}
 		return rvalresult;
 	}

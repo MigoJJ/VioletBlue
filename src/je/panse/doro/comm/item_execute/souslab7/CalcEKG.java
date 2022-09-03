@@ -82,7 +82,7 @@ public class CalcEKG {
 				try {
 					bufferedWriter.write("\tEKG  : " + writec);
 				    File_cdrw_proc fcp1 = new File_cdrw_proc();
-					fcp1.writeliner(Enter.wts + "/8ASS", "\t#  EKG : " + writec);
+					fcp1.writeliner(Enter.wts + "/8ASS", "\tⓔ EKG : " + writec);
 				} catch (IOException e) {
 					e.printStackTrace();
 			}
