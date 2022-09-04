@@ -15,6 +15,7 @@ public class New4PMHni {
 		ArrayList<String> pmh = new ArrayList<>(Arrays.asList(
 			"diabetes mellitus","HTN","dyslipidemia\n",
 			"Cancer","operation","thyroid disease\n",
+			"chest pain/tightness", "shortness of breath\n",
 			"asthma","tuberculosis","pneumonia\n",
 			"chronic/acute hepatitis","GERD\n",
 			"gout","arthritis", "hearing loss\n",
