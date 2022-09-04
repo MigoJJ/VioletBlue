@@ -14,14 +14,15 @@ public class New4PMHni {
 		System.out.print("\t");
 		ArrayList<String> pmh = new ArrayList<>(Arrays.asList(
 			"diabetes mellitus","HTN","dyslipidemia\n",
-			"asthma","tuberculosis","COPD\n",
-			"Cancer","hepatitis","GERD\n","operation",
-			"hearing loss","arthritis\n",
-			"depression","cognitive disorder","CVA\n",
+			"Cancer","operation","thyroid disease\n",
+			"asthma","tuberculosis","pneumonia\n",
+			"chronic/acute hepatitis","GERD\n",
+			"gout","arthritis", "hearing loss\n",
+			"CVA","depression","cognitive disorder\n",
 			"Allergy>\n","medication","injection/IV","food\n")
 		);
 		for (String pmhx : pmh) {
-		    System.out.print(pmh.indexOf(pmhx)+" "+pmhx+"\t  ");
+		    System.out.print(pmh.indexOf(pmhx)+" "+pmhx+"\t\n  ");
 		}
 		System.out.println("...have been suffered ⯀\n\t---------------------------");
 		System.out.println("\t[ v ] No known allergy with any medication");
