@@ -21,11 +21,9 @@ public class CalcTFT {
 			System.out.print("*****Input T3 : ");
 			T3 = input.nextDouble();
 			String retvalueT3 = ResultEditAdd.cr_result(0.9, 2.5,T3);
-
 			System.out.print("*****Input free_T4 : ");
 			free_T4 = input.nextDouble();
 			String retvalueT4 = ResultEditAdd.cr_result(10.6, 19.4,free_T4);
-			
 			System.out.print("*****Input TSH  : ");
 			TSH = input.nextDouble();
 			String retvalueTSH ="";
