@@ -50,7 +50,7 @@ public class Pregnancymain {
 			default:	System.out.println("존재하지 않는 산부인과 입니다.");
 			}
 			System.out.printf("# %s preganacy  %s weeks  Due-date %s at %s", p0,p1,p2,pp3);
-			String tpr =  String.format("\t# [ %s ] preganacy  [ %s ] weeks\n\t\tDue-date [%s]\n\t\t%s at %s", p0,p1,p2,pp3,pp4);
+			String tpr =  String.format("# [ %s ]preganacy  [ %s ]weeks\tDue-date [%s]\n\t\t%s at %s", p0,p1,p2,pp3,pp4);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/3CC", tpr);
 
