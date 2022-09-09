@@ -1,4 +1,4 @@
-package je.panse.doro.fourgate.description;
+package je.panse.doro.fourgate.ros;
 
 import java.io.*;			
 import java.util.*;
@@ -15,8 +15,8 @@ import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 
-public class Get_ExceltoJtable02 {
+public class Rosproc {
 	 public static void main(String[] args) {
-		 Librexls_JtableCall.main("/fourgate/description/GDSdescription.xls","...","/9PLAN");
+		 Librexls_JtableCall.main("/fourgate/ros/ROSlist.xls","ROS", "/6OBJ");
 	 }
 }
