@@ -7,6 +7,7 @@ import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.*;
+import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.fourgate.symptom.subjective_read_data.Symptom12Enter;
 import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
@@ -49,6 +50,8 @@ public class Newcategory {
 				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
 				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
+				case 72 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
+
 				
 		   		case 9 : case 99: case 999 :	
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
