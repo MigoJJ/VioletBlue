@@ -56,7 +56,7 @@ class bmi{
 	}
 		
 	void BMIhw(String rh, String rw, String rB, String skeys) throws Exception {			
-       String BMIheadline = ("\t\tHeight(cm)	Weight(kg)	BMI");
+       String BMIheadline = ("\tHeight(cm)	Weight(kg)	 BMI");
        String Bresult = ("\t" + rh +" \t\t" + rw + "\t\t" + rB);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);

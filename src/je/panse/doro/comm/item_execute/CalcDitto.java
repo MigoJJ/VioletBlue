@@ -44,20 +44,12 @@ public class CalcDitto {
 
 			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 			System.out.println(doseadl);
-			}else {
-		    }
-
 			Ditto3main.main(null);
 			File_cw_chart dn1 = new File_cw_chart();
 				dn1.deuxnine();	
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-					Newcategory nc1 = new Newcategory();
-					nc1.main(null);
+				fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+				Newcategory nc1 = new Newcategory();
+				nc1.main(null);
 				}
 	        //        input.close();
 		} catch (NumberFormatException e) {

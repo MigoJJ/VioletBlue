@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus;
 
-import java.io.*;				
+import java.io.*;					
 import java.util.*;
 import javax.swing.*;
 
@@ -65,7 +65,7 @@ public class Librexls_JtableCall {
 		 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
 
-		 Font  f1  = new Font("Arial Mono", Font.PLAIN,  15);
+		 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
 		 table.setFont(f1);
 		 
 		 table.setModel(model);
@@ -92,8 +92,6 @@ public class Librexls_JtableCall {
 			    			// TODO Auto-generated catch block
 			    			e1.printStackTrace();
 			    		}
-	                         
-	             
 	             if (! source.isRowSelected(row))
 	                 source.changeSelection(row, column, false, false);
 	         		}
