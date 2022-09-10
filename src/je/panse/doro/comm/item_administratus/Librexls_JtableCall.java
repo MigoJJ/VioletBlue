@@ -19,8 +19,6 @@ public class Librexls_JtableCall {
 	 public static void main(String xlspath, String soaptit, String soaptar) {
 		 Vector headers = new Vector();
 		 Vector data = new Vector();
-
-		 
 		 File file = new File(Enter.wd + xlspath);
 		 try {
 			 Workbook workbook = Workbook.getWorkbook(file);
@@ -42,10 +40,10 @@ public class Librexls_JtableCall {
 				 }
 		 	}
 		 catch (Exception e) {
-		 e.printStackTrace();
+			 e.printStackTrace();
 		 }
 		 JTable table = new JTable() {;
-		  @Override
+		 @Override
 		    public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
 		      Component component = super.prepareRenderer(renderer, row, column);
 		      int rendererWidth = component.getPreferredSize().width;
@@ -57,17 +55,15 @@ public class Librexls_JtableCall {
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
 		 f.add(scroll);
-		 f.setSize(1200, 800);
+		 f.setSize(1000, 800);
 		 f.setLocationRelativeTo(null); 
 		 f.setResizable(true);
 		 f.setVisible(true);
 		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
-
-		 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
+		 Font  f1  = new Font("Consolas", Font.PLAIN,  13);
 		 table.setFont(f1);
-		 
 		 table.setModel(model);
 		 table.setAutoCreateRowSorter(true);
 		 model = new DefaultTableModel(data, headers);
@@ -76,7 +72,8 @@ public class Librexls_JtableCall {
 		 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 //		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
 //		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
-	 
+
+		  
 		 table.addMouseListener( new MouseAdapter(){
 	        public void mousePressed(MouseEvent e){
 	             JTable source = (JTable)e.getSource();
