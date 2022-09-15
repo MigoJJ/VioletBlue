@@ -1,12 +1,12 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;		
+import java.util.Scanner;			
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
-import je.panse.doro.main.Enter;
 
 public class New9PLAN {
 	public static void main(String args) throws Exception { 
@@ -14,9 +14,6 @@ public class New9PLAN {
 		CalcDitto       ob3 = new CalcDitto();
 		ThyPrescription ob4 = new ThyPrescription(); 
 		Key_Iwbb        st999 = new Key_Iwbb();
-		
-//		ob2.readfiler(Enter.wt + "/singlebeam/DisMenu");
-		
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {
@@ -25,8 +22,7 @@ public class New9PLAN {
 	
 				switch (select_code) {
 					case 1 : ob3.main(null);break;
-					case 2 : ob4.main("/ThyroidStart"); break;
-
+					case 2 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
 			   		case 9 : case 99 : case 999 : case 71 :
 		   				st999.Key_Iwbb_Page(select_code); break;
 					default :
@@ -38,5 +34,4 @@ public class New9PLAN {
 			e.printStackTrace();
 		}
    	}		
-// ----------------------------------------------
 }
