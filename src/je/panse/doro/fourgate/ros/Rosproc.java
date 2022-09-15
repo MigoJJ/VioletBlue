@@ -17,6 +17,6 @@ import jxl.Workbook;
 
 public class Rosproc {
 	 public static void main(String[] args) {
-		 Librexls_JtableCall.main("/fourgate/ros/ROSlist.xls",">", "/6OBJ");
+		 Librexls_JtableCall.main("/fourgate/ros/ROSlist.xls","> ", "/6OBJ");
 	 }
 }

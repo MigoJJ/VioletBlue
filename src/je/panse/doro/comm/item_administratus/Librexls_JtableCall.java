@@ -62,7 +62,7 @@ public class Librexls_JtableCall {
 		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
-		 Font  f1  = new Font("Consolas", Font.PLAIN,  13);
+		 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
 		 table.setFont(f1);
 		 table.setModel(model);
 		 table.setAutoCreateRowSorter(true);
