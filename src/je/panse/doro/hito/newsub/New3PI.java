@@ -23,7 +23,7 @@ public class New3PI{
 			e.printStackTrace();
 		}
 			Edcamain.main(st,"/3CC");
-		} while (!(st == ""));
+		} while (!(st.equals("")));
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(st);
 		}
