@@ -17,7 +17,6 @@ public class ReadExcel_cell {
 	    FileInputStream fis = new FileInputStream(excelFile);
 	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 	    XSSFSheet sheet = workbook.getSheetAt(a1);
-	    
         Row row = sheet.getRow(0);
         int lastRowIndex = sheet.getLastRowNum() + 1;
 //        System.out.println("Last row index :" + lastRowIndex);

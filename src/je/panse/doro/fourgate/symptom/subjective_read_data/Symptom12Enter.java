@@ -20,7 +20,7 @@ public class Symptom12Enter {
 		+ "\t7.	Atypical chest pain\n"
 		+ "-------------------------");
 		File_cdrw_proc fcp1 = new File_cdrw_proc();
-		fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
+//		fcp1.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
 		ReadExcel_column2 ret1 = new ReadExcel_column2();
 		System.out.println("\n........... inset the number ...> ");
 		String inputNo="JJ";
