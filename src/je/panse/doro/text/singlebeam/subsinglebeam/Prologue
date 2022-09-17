@@ -10,11 +10,15 @@
 	
 	Version	0.2		Instance OOP 
 		variables static
+		Array
 		Overloading shortcut Iwbb
 		try catch IOExptions
 	
-	Version	0.3		jar for windows	
-	
+	Version	0.3		jar for windows
+		LTS java-17-oracle
+		JTable
+		xls, xlsx
+		
 	Version	0.6		security
 	
 	Version	0.7		Gradle Swing JAVAscript
