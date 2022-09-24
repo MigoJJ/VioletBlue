@@ -30,17 +30,18 @@ public class CalcDitto {
 					+ "\t3...skip\n"
 					+ "--------------------------");
 			dosead = input.nextInt();
-			if(dosead !=3) {
+
 			if (dosead == 9) { doseadl = ("\t...no medication change or dose-adjust");}
 				else if (dosead == 5) { doseadl = ("\t...starting new medicine:");}
 				else if (dosead == 55) { doseadl = ("\t...Medication discontinuation :");}
-				else if (dosead == 6) { doseadl = ("\t...now well treated with current medication\n"
+				else if (dosead == 6) { doseadl = ("\t...now [ well ] treated with current medication\n"
 						+ "\t   continue with current dosages of meds");}
-				else if (dosead == 2) { doseadl = ("\t...an reduction in drug dosage : ");}
+				else if (dosead == 2) { doseadl = ("\t...a reduction in drug dosage : ");}
 				else if (dosead == 8) { doseadl = ("\t...an increase in drug dosage : ");}
 				else if (dosead == 4) { doseadl = ("\t...Return to previous Px");}
 				else if (dosead == 0) { doseadl = ("\t...Observation & Follow-up without medication");}
 				else if (dosead == 1) { doseadl = ("\t...With conservative treatment");}
+				else if (dosead == 3) { doseadl = ("\t");}
 
 			fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 			System.out.println(doseadl);
@@ -49,12 +50,13 @@ public class CalcDitto {
 				dn1.deuxnine();	
 				fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
 				Newcategory nc1 = new Newcategory();
-				nc1.main(null);
-				}
+				nc1.main("");
+				
 	        //        input.close();
 		} catch (NumberFormatException e) {
 		e.printStackTrace();
 		}
+		
 
 	}
 //---------------------------------------------------		

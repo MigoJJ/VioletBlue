@@ -31,8 +31,7 @@ public class Newcategory {
 		   	switch (select_code) {
 		   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
 			   		case 11 :	New3PI n32 = new New3PI(); n32.main(null);break;
-			   		case 12 :	fcp.writeliner(Enter.wts + "/5SUJ", "S > ...have been suffered ⯀ √");
-			   			Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
+			   		case 12 :	Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
 			   		case 13 : Rosproc n34 = new Rosproc(); n34.main(null);break;
 			   		
 		   		case 2 : New4PMH.main(null);break;
