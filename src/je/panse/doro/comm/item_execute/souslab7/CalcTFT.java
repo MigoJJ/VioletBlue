@@ -63,7 +63,7 @@ public class CalcTFT {
 		       		retvalue2 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
 		       		}
 		       	else {
-		       			retvalue2 = Double.toString(TSH_R_Ab);
+		       			retvalue2 = Double.toString(Tg_Ab);
 		       		}
 		       	System.out.print("***Anti-microsomal Ab   :");
 		       	double micro_Ab = input.nextDouble();
