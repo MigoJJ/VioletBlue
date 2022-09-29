@@ -16,6 +16,9 @@ public class Edcaproc {
 					st = st.substring(1, st.length());
 					Edcaproc.suj_insert(st, "/4PMH");
 				}
+				else if (st.startsWith(">")) {
+						Edcaproc.suj_insert(st, "/5SUJ");
+				}
 				else if (st.startsWith("#")) {
 					Edcaproc.suj_insert(st, "/8ASS");
 				}
@@ -24,7 +27,7 @@ public class Edcaproc {
 				}
 				else {
 					Edcaproc.suj_insert(st, ipath);
-				}
+				}	
 
 		}catch (IOException e) {
 			e.printStackTrace();
@@ -51,6 +54,7 @@ public class Edcaproc {
 			DiseaseCode e = new DiseaseCode();
 			System.out.println(":>>> " + e.code_select(sunst0) + sunst1);
 			re = (e.code_select(sunst0) + sunst1);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
