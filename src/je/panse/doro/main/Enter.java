@@ -20,7 +20,7 @@ public class Enter {
 //		CurrentDate.defineDate();
 // ------------------------------------------------------GDStm Program starting
 		Menu_list.main(Enter.wt + "/singlebeam/StartMenuList");
-		StartForm.main(null);
+		StartForm.main(args);
 	}
 // ----------    
 }
