@@ -13,7 +13,6 @@ public class StartForm {
 		Diseasecategory 	st3 = new Diseasecategory(); 
 		Itemcategory 		st4 = new Itemcategory();
 		Key_Iwbb 			st5 = new Key_Iwbb();
-
 		try {	
 			int select_code =1;
 			while (true) {
@@ -22,22 +21,20 @@ public class StartForm {
 				select_code = case_code.nextInt();
 				switch (select_code) {
 					case 1 :
-						Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu"); 
+						Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
 						st1.callchartlist("/knots/hana");
 						st2.main(null);break;
 					case 2 :
-						Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu"); 
+						Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
 						st1.callchartlist("/knots/soap");
 						st2.main(null);break;
 					case 3 :
 						Menu_list.main(Enter.wd + "/fourgate/FourgateMenu"); 
 						st3.main(null);break;  // Disease Category
 					case 4 :
-						Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+						Menu_list.main(Enter.wtss + "/Menu2ndLine/ItemMenu");
 						st4.main(null);break; // Items		
-
 					default :
-						System.out.println(" uncertain ... please check  !!");
 						Key_shortcut.main(select_code);
 				}
 			}			

@@ -1,11 +1,17 @@
-<<<<<<< HEAD
-C.C.>   
+< Chief Complaint & Present Illness>
+the patient was visited for
+PMHx>------------------------------
+	 ☐ diabetes mellitus	 ☐ HTN	 ☐ dyslipidemia
+	 ☐ asthma	 ☐ tuberculosis	 ☐ COPD
+	 ☐ Cancer	 ☐ hepatitis	 ☐ GERD
+	 ☐ operation	 ☐ hearing loss	 ☐ arthritis
+	 ☐ depression	 ☐ cognitive disorder	 ☐ CVA
+	 ☐ Allergy>
+	 ☐ medication	 ☐ injection/IV	 ☐ food
+	...have been suffered ⯀
+	---------------------------
+	[ v ] No known allergy with any medication
 O >
-	Height(cm)	Weight(kg)	BMI	Waist
-	-------------------------------------------
-	165.0		55.0		20.2	85
-
+LAB >
 A >
 P >
-=======
->>>>>>> refs/remotes/origin/GDS220910

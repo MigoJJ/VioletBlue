@@ -7,6 +7,7 @@ import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.comm.item_administratus.Key_Press_Any;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
@@ -15,14 +16,14 @@ public class Debut {
 	File_editor_proc	fep = new File_editor_proc();
 	Enter				en1 = new Enter();
 	Newcategory 		nc1 = new Newcategory();
-	public void main(String[] args) throws Exception {
+	public void main(String args) throws Exception {
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
 				System.out.println(">>> Enter selected number :  >>>");
 				int select_code = Integer.valueOf(case_code.nextLine());
 				switch (select_code) {
-					case 1 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/Prologue");break;
-					case 2 : press_Key(Enter.wt + "/singlebeam/subsinglebeam/VersionInfo");break;
+					case 1 : press_Key(Enter.wtss + "/Prologue");break;
+					case 2 : press_Key(Enter.wtss + "/VersionInfo");break;
 					case 3 : 
 							da1.prepare_ChartPlate();
 							da1.copy_Directory(Enter.wtk + "/hana", Enter.wts);
@@ -31,14 +32,14 @@ public class Debut {
 					case 4 : 
 							da1.copy_Directory(Enter.wtt, Enter.wts);
 							fcw.writechart();
-							fep.main(Enter.wt + "/samsara/ChartPlate");
-							Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+							fep.main(Enter.wts + "/ChartPlate");
+							Menu_list.main(Enter.wtsi + "/ChartPopUpMenu");
 							nc1.main(null);  	
 							break; 
 						case 31 : callSheet("/knots/hana");break;
 						case 32 : callSheet("/knots/soap");break;
-									
-					default :System.out.println(" uncertain ... please check  !!");
+					default :
+						Key_shortcut.main(select_code);
 				}
 			}
 		} catch (NumberFormatException e) {
@@ -56,7 +57,7 @@ public class Debut {
 		File_cw_chart  ob3 = new File_cw_chart(); 
     	ob3.cleanChartPlate();
 		fcw.callchartlist(cdir);
-    	Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
+    	Menu_list.main(Enter.wtsi + "/ChartPopUpMenu");
 		nc1.main(null); // Items		
 	}
 	// ----------
