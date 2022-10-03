@@ -35,11 +35,11 @@ public class CalcTFT {
 			     }
 			//      input.close();
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
-	        String TFTreferval = ("   0.9-2.5        10.6-19.4       0.25-5.0");
+//	        String TFTreferval = ("   0.9-2.5        10.6-19.4       0.25-5.0");
  	        String tftresult = (retvalueT3 +"\t\t" + retvalueT4 + "\t\t" + retvalueTSH);
 	 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
-	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTreferval);
+//	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTreferval);
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
 	 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tftresult + "\n");
 				
@@ -48,7 +48,7 @@ public class CalcTFT {
 			if (AutoAb.equals("y")) {
 				System.out.print("***Anti-TSH-R Ab   :");
 				double TSH_R_Ab = input.nextDouble();
-		       		if (TSH_R_Ab == 0.3) {
+		       		if (TSH_R_Ab == 0.80) {
 		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "< ");
 		       		}
 		       		else if(TSH_R_Ab > 1.75) {
@@ -67,7 +67,7 @@ public class CalcTFT {
 		       		}
 		       	System.out.print("***Anti-microsomal Ab   :");
 		       	double micro_Ab = input.nextDouble();
-		       	if (micro_Ab == 0.9) {
+		       	if (micro_Ab == 0.90) {
 		       		retvalue3 = ResultEditAdd.cr_result(micro_Ab, "< ");
 		       		}
 		       	else if (micro_Ab > 34) {
@@ -78,7 +78,7 @@ public class CalcTFT {
 		       		}
 					autoantibodies(retvalue1,retvalue2,retvalue3);
 				}
-				fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+				fcp1.readfiler(Enter.wtss + "/7LAB_List");
 				New7LAB nc1 = new New7LAB();
 				nc1.main(null);
 			}catch (NumberFormatException e) {
