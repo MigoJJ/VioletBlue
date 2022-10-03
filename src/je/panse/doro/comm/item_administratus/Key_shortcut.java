@@ -1,6 +1,7 @@
 package je.panse.doro.comm.item_administratus;
 
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.Menu_list;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_execute.souslab7.CalcBMI;
@@ -8,10 +9,10 @@ import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.CalcChol;
 import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
 import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
-import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New10DIS;
 import je.panse.doro.hito.newsub.New9PLAN;
+import je.panse.doro.main.Enter;
 
 public class Key_shortcut {
 	public static void main(int select_code) throws Exception {
@@ -34,6 +35,7 @@ public class Key_shortcut {
    			Key_Iwbb st999 = new Key_Iwbb(); 
    			st999.Key_Iwbb_Page(select_code); break;
 		default :
+			Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
 			Newcategory 		st2 = new Newcategory(); 
 			st2.main(null);break;
 	   	}

@@ -1,9 +1,8 @@
 package je.panse.doro.fourgate.symptom.subjective_read_data;
 
-import java.io.File;	
+import java.io.File;		
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Scanner;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -34,6 +33,4 @@ public class ReadExcel_cell {
 	private static void printIndex(String cd, int inlist) {
             System.out.println(inlist +  " >  "+cd+"\n");
 	}
-	
 }
-	

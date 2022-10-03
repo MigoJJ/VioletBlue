@@ -22,7 +22,7 @@ public class New4PMHni {
 			"Allergy>\n","medication","injection/IV","food\n")
 		);
 		for (String pmhx : pmh) {
-		    System.out.print(pmh.indexOf(pmhx)+" "+pmhx+"\t\n  ");
+		    System.out.print(pmh.indexOf(pmhx)+" "+pmhx+"    ");
 		}
 		System.out.println("...have been suffered ⯀\n\t---------------------------");
 		System.out.println("\t[ v ] No known allergy with any medication");

@@ -59,22 +59,22 @@ public class ReadExcel_column2 {
 		try(Scanner sc = new Scanner(System.in)) {
 			String inputNo = "JJ";
 			while(!(inputNo = sc.nextLine()).equals("")) {
-//				System.out.println("\n........... inset the number ...> ");
+				System.out.println("\n........... inset the number ...> ");
 				int number = (Integer.parseInt(inputNo));
-		          Cell returenedSympt1= (ReadExcel_cell.main(sno,cno,number));
-		          String returenedSympt=returenedSympt1.toString();
 				if (number < lri) {
+					Cell returenedSympt1= (ReadExcel_cell.main(sno,cno,number));
+					String returenedSympt=returenedSympt1.toString();
+				
 					 if (inputNo.startsWith("0")) {
-					 System.out.print( "\t☐ " +returenedSympt+"\n");
-					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt);
-					 }
-					 else {
-					 System.out.print( "\t√ " + returenedSympt +"\n");
-					 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt);
+						 System.out.print( "\t☐ " +returenedSympt+"\n");
+						 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt);
+					 }else{
+						 System.out.print( "\t√ " + returenedSympt +"\n");
+						 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt);
 					 }
 				}
-		}
-		Symptom12Enter nc1 = new Symptom12Enter();
+			}
+			Symptom12Enter nc1 = new Symptom12Enter();
 			nc1.main(null);	
 		} catch (IndexOutOfBoundsException e) {
 			// TODO Auto-generated catch block
