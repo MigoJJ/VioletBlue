@@ -29,6 +29,8 @@ public class Debut {
 							da1.copy_Directory(Enter.wtk + "/hana", Enter.wts);
 							en1.main(null);  	
 							break;
+						case 31 : callSheet("/knots/hana");break;
+						case 32 : callSheet("/knots/soap");break;
 					case 4 : 
 							da1.copy_Directory(Enter.wtt, Enter.wts);
 							fcw.writechart();
@@ -36,8 +38,7 @@ public class Debut {
 							Menu_list.main(Enter.wtsi + "/ChartPopUpMenu");
 							nc1.main(null);  	
 							break; 
-						case 31 : callSheet("/knots/hana");break;
-						case 32 : callSheet("/knots/soap");break;
+
 					default :
 						Key_shortcut.main(select_code);
 				}

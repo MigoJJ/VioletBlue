@@ -63,9 +63,8 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ASS");  
 			  list.add("/9PLAN");
-			  list.add("/ChartPlate");
-			  list.add("/Comment");
-
+//			  list.add("/ChartPlate");
+//			  list.add("/Comment");
 			  for(String fruit:list)
 				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
 	}
