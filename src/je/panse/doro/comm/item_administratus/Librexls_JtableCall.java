@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus;
 
-import java.io.*;						
+import java.io.*;							
 import java.util.*;
 import javax.swing.*;
 
