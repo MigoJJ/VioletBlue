@@ -22,8 +22,8 @@ public class Debut {
 				System.out.println(">>> Enter selected number :  >>>");
 				int select_code = Integer.valueOf(case_code.nextLine());
 				switch (select_code) {
-					case 1 : press_Key(Enter.wtss + "/Prologue");break;
-					case 2 : press_Key(Enter.wtss + "/VersionInfo");break;
+					case 1 : press_Key(Enter.wtsi + "/subsinglebeam/Prologue");break;
+					case 2 : press_Key(Enter.wtsi + "/subsinglebeam/VersionInfo");break;
 					case 3 : 
 							da1.prepare_ChartPlate();
 							da1.copy_Directory(Enter.wtk + "/hana", Enter.wts);

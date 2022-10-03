@@ -1,6 +1,7 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;					
+import java.util.Scanner;
+
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.comm.item_administratus.Key_shortcut;
