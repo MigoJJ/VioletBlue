@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_returnquit;
 import je.panse.doro.comm.item_subexecute.Edcamain;
@@ -15,14 +15,14 @@ public class New3PI{
 		System.out.println("*****Enter Present illness*****  ...   : ");
 
 		do {
-		try {
-			Scanner suj_text = new Scanner(System.in);
-			st = (suj_text.nextLine().trim());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-			Edcamain.main(st,"/3CC");
+			try {
+				Scanner suj_text = new Scanner(System.in);
+				st = (suj_text.nextLine().trim());
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+				Edcamain.main(st,"/3CC");
 		} while (!(st.equals("")));
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(st);

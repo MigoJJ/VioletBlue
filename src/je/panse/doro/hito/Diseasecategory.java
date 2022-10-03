@@ -27,9 +27,6 @@ public class Diseasecategory {
 		   			ThyroidEnter ob4 = new ThyroidEnter();
 		    		ob4.main(null);
 		    		break;
-		   		case 9 : case 99: case 999 :	
-		   			Key_Iwbb st999 = new Key_Iwbb(); 
-		   			st999.Key_Iwbb_Page(scode); break;
 				default :
 					System.out.println(" uncertain ... please check  !!");
 					Key_shortcut.main(scode);

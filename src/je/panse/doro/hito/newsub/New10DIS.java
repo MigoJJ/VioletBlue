@@ -5,6 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -12,7 +13,7 @@ public class New10DIS {
 	File_cdrw_proc  ob2 = new File_cdrw_proc();
 	public void main(String args) throws Exception { 
 		Newcategory 	cc1 = new Newcategory(); 
-		Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/DisMenu"); 
+		Menu_list.main(Enter.wtss + "/Menu2ndLine/DisMenu"); 
 		File_cw_chart 	dn1 = new File_cw_chart();
 		
     	try (Scanner new_code = new Scanner(System.in)) {
@@ -27,12 +28,9 @@ public class New10DIS {
 					case 3 : insert_dis("Hypercholestarolemia F/U", tarfile + "/hyperchol" );break;
 					case 41 : insert_dis("Hyperthyroidism F/U", tarfile + "/thyhyper" );break;
 					case 42 : insert_dis("Hypothyroidiam F/U", tarfile + "/thyhypo" );break;
-
 					case 5 : insert_dis("Osteoporosis F/U", tarfile + "/osteoporosis" );break;
-
 					default :
-						System.out.println(" uncertain ... please check  !!");
-						
+						Key_shortcut.main(select_code);
 					}
 				dn1.deuxnine();
 				Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");

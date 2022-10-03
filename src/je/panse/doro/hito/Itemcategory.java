@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import java.util.Scanner;					
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.comm.item_execute.souslab7.CalcBMI;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;
@@ -40,12 +41,8 @@ public class Itemcategory {
 				case 16 : CalcCBC  	nl7 = new CalcCBC();		nl7.main("Itemcategorykey");break;
 				case 17 : CalcLpa  	nl8 = new CalcLpa();		nl8.main("Itemcategorykey");break;
 				case 18 : CalcGOT  	nl9 = new CalcGOT();		nl9.main("Itemcategorykey");break;
-
-
-				case 9 : case 99 : case 999 :
-			   			Key_Iwbb st999 = new Key_Iwbb();
-			   			st999.Key_Iwbb_Page(select_code); break;
-				default :System.out.println(" uncertain ... please check  !!");
+				default :
+					Key_shortcut.main(select_code);
 				}
 		}catch (NumberFormatException e) {
 		e.printStackTrace();

@@ -14,20 +14,16 @@ import je.panse.doro.main.Enter;
 
 public class CalcDittoProc3 {
 	public void main(int sheeNo, int columNo) throws IOException {
+//		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9List.xlsx");
 		String excelFilePath = (Enter.wd + "/aeternum/dataxlsx/Plan9List.xlsx");
 		
 		FileInputStream inputstream = new FileInputStream(excelFilePath);
 		try (XSSFWorkbook workbook = new XSSFWorkbook(inputstream)) {
 			XSSFSheet sheet = workbook.getSheetAt(sheeNo); //XSSFSheet sheet = new workbook.getSheet("Sheet");
 			int rows = sheet.getLastRowNum();
-			
 			System.out.println("int rows = sheet.getLastRowNum();  >>" + rows);
-			
 			int cols = sheet.getRow(1).getLastCellNum();
-			
 			System.out.println("int cols = sheet.getRow(1).getLastCellNum();  >>" + cols);
-
-						
 			ArrayList<String> thyoridList = new ArrayList<>(Arrays.asList());
 			try {
 				for(int r=0; r<=rows; r++) {

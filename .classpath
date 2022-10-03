@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/commons-codec-1.15.jar"/>
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/commons-collections4-4.4.jar"/>
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/commons-compress-1.21.jar"/>
@@ -28,5 +24,6 @@
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/slf4j-api-1.7.36.jar"/>
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/SparseBitSet-1.2.jar"/>
 	<classpathentry kind="lib" path="/home/migoey/Drivers/Sum/xmlbeans-5.0.3.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Drivers/jxl/jxl-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

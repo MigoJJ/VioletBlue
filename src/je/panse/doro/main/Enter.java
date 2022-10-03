@@ -15,8 +15,8 @@ public class Enter {
 	public static String wtt = (wd + "/text/tripikata");
 	public static String wds = (wd + "/aeternum/supportdiagnosis");
 	
-	public static String wtsi = (wd + "/text/singlebeam");
-	public static String wtss = (wd + "/singlebeam/subnewmenu");
+	public static String wtsi = (wt + "/singlebeam");
+	public static String wtss = (wt + "/singlebeam/subnewmenu");
 	// ------------------------------------------------------file preparing
 	public static void main(String[] args) throws Exception {	
 //		CurrentDate.defineDate();

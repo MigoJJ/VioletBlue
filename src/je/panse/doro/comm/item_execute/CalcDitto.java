@@ -46,6 +46,7 @@ public class CalcDitto {
 				else if (dosead == 7) { CalcDitto.more_insert(doseadl);}
 				else {	}
 			CalcDitto.save_exit(dosead,doseadl);
+			CalcDitto.more_insert(doseadl);
 	        //        input.close();
 		} catch (NumberFormatException e) {
 		e.printStackTrace();
@@ -64,7 +65,7 @@ public class CalcDitto {
 	static void save_exit(double dosead, String doseadl) throws Exception {
 		fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 		System.out.println(doseadl);
-		Ditto3main.main(null);
+//		Ditto3main.main(null);
 	}
 	
 	static void wos_exit(String doseadl) throws Exception {

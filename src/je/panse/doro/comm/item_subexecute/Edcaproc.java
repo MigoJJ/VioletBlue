@@ -16,12 +16,12 @@ public class Edcaproc {
 					st = st.substring(1, st.length());
 					Edcaproc.suj_insert(st, "/4PMH");
 				}
+				else if (st.startsWith(">")) {
+					Edcaproc.suj_insert(st, "/5SUJ");
+				}
 				else if (st.startsWith("}")) {
 					st = st.substring(1, st.length());
 					Edcaproc.suj_insert(st, "/6OBJ");
-			}
-				else if (st.startsWith(">")) {
-						Edcaproc.suj_insert(st, "/5SUJ");
 				}
 				else if (st.startsWith("#")) {
 					Edcaproc.suj_insert(st, "/8ASS");
@@ -48,7 +48,7 @@ public class Edcaproc {
 		String re ="";
 		try {
 			String[] subOfSuj = ist.split("/", 2);
-			subOfSuj[0] = subOfSuj[0].trim(); 
+				subOfSuj[0] = subOfSuj[0].trim(); 
 			String sunst0 = subOfSuj[0].substring(1, subOfSuj[0].length());
 			String sunst1 = subOfSuj[1].substring(0, subOfSuj[1].length());
 
