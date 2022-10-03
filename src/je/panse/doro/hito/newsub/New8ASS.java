@@ -3,6 +3,7 @@ package je.panse.doro.hito.newsub;
 import java.util.Scanner;	
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;
@@ -21,11 +22,10 @@ public class New8ASS {
 				switch (select_code) {
 					case 1 : 
 						CalcASS ob3 = new CalcASS();	 ob3.main(null);break;
-			   		case 9 : case 99 : case 999 : case 71 :
-			   			Key_Iwbb st999 = new Key_Iwbb();
-			   			st999.Key_Iwbb_Page(select_code); break;
+
 					default :
 						System.out.println(" uncertain ... please check  !!");
+						Key_shortcut.main(select_code);
 				}
 				StartForm.main(null);
 			}

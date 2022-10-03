@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.File_editor_proc;
 import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
 import je.panse.doro.hito.Newcategory;
@@ -46,10 +47,9 @@ public class ThyPrescription {
 					case 54  : tp2.linepickup(path + "/ThyAntPx", Enter.wts+ "/9PLAN" );break;
 					case 55  : tp2.linepickup(path + "/ThyCamenPx", Enter.wts+ "/9PLAN" );break;
 					case 56  : tp2.linepickup(path + "/ThyIndPx", Enter.wts+ "/9PLAN" );break;
-					case 9 : case 99 : case 999:
-						Newcategory st2 = new Newcategory(); 
-						st2.main(null);
+
 					default :System.out.println(" uncertain ... please check  !!");
+					Key_shortcut.main(select_code);
 					}
 				}
 			}

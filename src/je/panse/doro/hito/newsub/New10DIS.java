@@ -32,6 +32,7 @@ public class New10DIS {
 
 					default :
 						System.out.println(" uncertain ... please check  !!");
+						
 					}
 				dn1.deuxnine();
 				Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");

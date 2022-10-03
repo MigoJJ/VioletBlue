@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import java.util.Scanner;			
 
 import je.panse.doro.comm.*;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
@@ -39,6 +40,7 @@ public class StartForm {
 			   			st5.Key_Iwbb_Page(select_code);	break;
 					default :
 						System.out.println(" uncertain ... please check  !!");
+						Key_shortcut.main(select_code);
 				}
 			}			
 		}catch (NumberFormatException e) {

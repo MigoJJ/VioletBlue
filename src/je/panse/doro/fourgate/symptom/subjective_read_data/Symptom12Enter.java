@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.main.Enter;
 
 public class Symptom12Enter {
@@ -34,11 +35,10 @@ public class Symptom12Enter {
 						case "5":	ret1.main(1,4);    break;
 						case "6":	ret1.main(1,5);    break;
 						case "7":	ret1.main(1,6);    break;
-						case "9" : case "99" : case "999" :case "71" :
-				   			Key_Iwbb st999 = new Key_Iwbb();
-				   			int SinputNo = Integer.valueOf(inputNo);
-				   			st999.Key_Iwbb_Page(SinputNo); break;
 					  default:
+						  int inumber = Integer.parseInt(inputNo);
+							Key_shortcut.main(inumber);
+
 					    // code block
 					}
 			}
