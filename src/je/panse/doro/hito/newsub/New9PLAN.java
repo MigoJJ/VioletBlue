@@ -1,14 +1,14 @@
 package je.panse.doro.hito.newsub;
 
 import java.io.IOException;
-import java.util.Scanner;				
+import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_subexecute.Edcamain;
-import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
 
 public class New9PLAN {
@@ -25,7 +25,7 @@ public class New9PLAN {
 	
 				switch (select_code) {
 					case 1 : ob3.main(null);break;
-					case 2 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
+					case 2 : Run_another_jar ob5 = new Run_another_jar();ob5.main(null);break;
 					case 3 : New9PLAN.more_description(args);break;
 
 					default :
