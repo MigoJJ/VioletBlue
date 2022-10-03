@@ -3,6 +3,7 @@ package je.panse.doro.hito.newsub;
 import java.util.Scanner;
 
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_execute.souslab7.CalcCBC;
 import je.panse.doro.comm.item_execute.souslab7.CalcChol;
 import je.panse.doro.comm.item_execute.souslab7.CalcCr;
@@ -31,11 +32,9 @@ public class New7LAB {
 				case 7 : CalcLpa  	nl8 = new CalcLpa();		nl8.main(null);break;
 				case 8 : CalcGOT  	nl9 = new CalcGOT();		nl9.main(null);break;
 
-		   		case 9 : case 99 : case 999 : case 71 :
-		   			Key_Iwbb st999 = new Key_Iwbb();
-		   			st999.Key_Iwbb_Page(select_code); break;
 				default :
 					System.out.println(" uncertain ... please check  !!");
+					Key_shortcut.main(select_code);
 				}
 			}
 		}catch (NumberFormatException e) {

@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import java.util.Scanner;			
 
 import je.panse.doro.comm.*;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.main.Enter;
 
 public class StartForm {
@@ -35,10 +36,9 @@ public class StartForm {
 						Menu_list.main(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
 						st4.main(null);break; // Items		
 
-					case 9 : case 99: case 999:
-			   			st5.Key_Iwbb_Page(select_code);	break;
 					default :
 						System.out.println(" uncertain ... please check  !!");
+						Key_shortcut.main(select_code);
 				}
 			}			
 		}catch (NumberFormatException e) {

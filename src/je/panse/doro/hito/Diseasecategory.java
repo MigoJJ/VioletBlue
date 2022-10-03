@@ -3,6 +3,7 @@ package je.panse.doro.hito;
 import je.panse.doro.comm.File_cw_chart;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.main.Enter;
 
@@ -29,7 +30,9 @@ public class Diseasecategory {
 		   		case 9 : case 99: case 999 :	
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
 		   			st999.Key_Iwbb_Page(scode); break;
-				default :System.out.println(" uncertain ... please check  !!");
+				default :
+					System.out.println(" uncertain ... please check  !!");
+					Key_shortcut.main(scode);
 		   	}
 //			input.close();
 	}

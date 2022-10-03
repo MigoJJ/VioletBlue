@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.*;
@@ -14,7 +15,7 @@ import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
 public class Newcategory {
-	public void main(String agrs) throws Exception {
+	public void main(String string) throws Exception {
 		try {
 	    	switching();
 		} catch (NumberFormatException e) {
@@ -45,20 +46,9 @@ public class Newcategory {
 				case 7 : fcp.readfiler(Enter.wt + "/singlebeam/subnewmenu/9PLAN_List");
 					New9PLAN.main(null);break;
 
-				case 10 : New10DIS nd1 = new New10DIS(); 	nd1.main(null);break;
-				case 41 : CalcBMI ob0 = new CalcBMI();	 	ob0.main(null);break;
-				case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;
-				case 51 : CalcHbA1c ob2 = new CalcHbA1c();ob2.main(null);break;
-				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
-				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
-				case 72 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
-
-				
-		   		case 9 : case 99: case 999 :	
-		   			Key_Iwbb st999 = new Key_Iwbb(); 
-		   			st999.Key_Iwbb_Page(select_code); break;
 				default :
 					System.out.println(" uncertain ... please check  !!");
+					Key_shortcut.main(select_code);
 		   }
 //		new_code.close();
    			}

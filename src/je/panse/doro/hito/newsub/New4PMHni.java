@@ -77,7 +77,7 @@ public class New4PMHni {
 			}
 	    	myWriter.write("\t...have been suffered ⯀\n\t---------------------------\n");
 	    	myWriter.write("\t[ v ] No known allergy with any medication");
-	    myWriter.close();
+	    	myWriter.close();
 	    	System.out.println("Successfully wrote to the file.");
 	    } catch (IOException e) {
 		    System.out.println("An error occurred.");
