@@ -16,6 +16,10 @@ public class Edcaproc {
 					st = st.substring(1, st.length());
 					Edcaproc.suj_insert(st, "/4PMH");
 				}
+				else if (st.startsWith("}")) {
+					st = st.substring(1, st.length());
+					Edcaproc.suj_insert(st, "/6OBJ");
+			}
 				else if (st.startsWith(">")) {
 						Edcaproc.suj_insert(st, "/5SUJ");
 				}

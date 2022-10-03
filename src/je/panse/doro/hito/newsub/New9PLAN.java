@@ -1,10 +1,12 @@
 package je.panse.doro.hito.newsub;
 
+import java.io.IOException;
 import java.util.Scanner;				
 
 import je.panse.doro.comm.File_cdrw_proc;
 import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcDitto;
+import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
 
@@ -23,15 +25,34 @@ public class New9PLAN {
 				switch (select_code) {
 					case 1 : ob3.main(null);break;
 					case 2 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
+					case 3 : New9PLAN.more_description(args);break;
+
 			   		case 9 : case 99 : case 999 : case 71 :
 		   				st999.Key_Iwbb_Page(select_code); break;
 					default :
 						System.out.println(" uncertain ... please check  !!");
 					}
-				New9PLAN.main(null); break;
+				New9PLAN.main(args); break;
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
-   	}		
+   	}	
+	public static void more_description(String args) throws IOException {
+		
+		String st="JJ";
+		System.out.println("*****Enter More description*****  ...   : ");
+
+		do {
+		try {
+			Scanner suj_text = new Scanner(System.in);
+			st = (suj_text.nextLine().trim());
+			Edcamain.main(st,"/9PLAN");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		} while (!(st == ""));
+	}
+	
 }

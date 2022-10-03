@@ -14,7 +14,7 @@ import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
 public class Newcategory {
-	public void main(String agrs) throws Exception {
+	public void main(String string) throws Exception {
 		try {
 	    	switching();
 		} catch (NumberFormatException e) {
@@ -52,7 +52,7 @@ public class Newcategory {
 				case 61 : CalcASS ob3 = new CalcASS();	 	ob3.main(null);break;
 				case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
 				case 72 : Get_ExceltoJtable02 ob5 = new Get_ExceltoJtable02();ob5.main(null);break;
-
+				case 73 : New9PLAN ob6 = new New9PLAN(); ob6.more_description(null);break;
 				
 		   		case 9 : case 99: case 999 :	
 		   			Key_Iwbb st999 = new Key_Iwbb(); 
