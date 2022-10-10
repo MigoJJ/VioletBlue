@@ -3,6 +3,7 @@ package je.panse.doro.comm;
 import java.io.IOException;
 
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
+import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
@@ -37,9 +38,13 @@ public class Key_Iwbb {
 		 else if (select_code == 999){
 			rk11.deuxnine1();
 			rk12.main(Enter.wt + "/samsara/ChartPlate");
+			
+			String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_clipboard/clipboard.jar");
+			Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);
+			
 			rk13.clear_Directory(Enter.wts);
 			returnkeylist("SingleBeamkey");
-		            }
+		}
 		 else if (select_code == 71){
 			 CalcDitto ob4 = new CalcDitto();ob4.main(null);
 			 Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");

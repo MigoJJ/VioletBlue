@@ -30,7 +30,9 @@ public class Newcategory {
 			   		case 11 :	New3PI n32 = new New3PI(); n32.main(null);break;
 			   		case 12 :	Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
 //			   		case 13 : Rosproc n34 = new Rosproc(); n34.main(null);break;
-					case 13 : Run_another_jar ob5 = new Run_another_jar();ob5.main(null);break;
+					case 13 : 
+						String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_button/Jbutton.jar");
+						Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);break;
 			   		
 		   		case 2 : New4PMH.main(null);break;
 				case 3 : New5SUJ.main(null);break;
