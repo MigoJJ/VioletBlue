@@ -48,12 +48,12 @@ public class CalcDEXA {
 				
 				if (skeys == "Itemcategorykey") {
 					File_cdrw_proc cpa1 = new File_cdrw_proc(); 
-					cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+					cpa1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {
 					File_cdrw_proc fcp1 = new File_cdrw_proc(); 
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 					New6OBJ.main(null);
 				}
 	dexa_scan.close();

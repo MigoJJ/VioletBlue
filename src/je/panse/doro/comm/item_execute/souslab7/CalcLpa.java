@@ -16,7 +16,7 @@ public class CalcLpa {
 		if (skeys == "Itemcategorykey") {
 		}
 		else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+			fcp1.readfiler(Enter.wtss + "/7LAB_List");
 		}
     	try (Scanner input = new Scanner(System.in)) {
 	       System.out.print(">>>>>>> Input Lp(a) >>>>>>> : \n");
@@ -33,11 +33,11 @@ public class CalcLpa {
 	        System.out.println(lar);
 				fcp1.writeliner(Enter.wts + "/7LAB", lar + "\n");
 				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+					fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {
-					fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/7LAB_List");
+					fcp1.readfiler(Enter.wtss +  "/7LAB_List");
 					New7LAB nc1 = new New7LAB();
 					nc1.main(null);
 				}

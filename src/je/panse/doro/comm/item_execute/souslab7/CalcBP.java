@@ -18,7 +18,7 @@ public class CalcBP {
 		if (skeys == "Itemcategorykey") {
 		}
 		else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 		}
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("\r***** Input  [SBP ] [ DBP ]  [pulse rate / minute ] : ");
@@ -30,7 +30,7 @@ public class CalcBP {
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 
 		   if (skeys == "Itemcategorykey") {
-			   fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+			   fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 				Itemcategory.main(null);
 			}
 			else if (skeys == "diseasecategorythyroid") {
@@ -39,7 +39,7 @@ public class CalcBP {
 				tp1.main(null);
 			}
 			else {
-				fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+				fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 					New6OBJ.main(null);
 				}
 		} catch (NumberFormatException e) {

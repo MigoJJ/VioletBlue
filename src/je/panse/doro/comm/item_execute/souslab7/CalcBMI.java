@@ -46,11 +46,11 @@ class bmi{
 		fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 		//				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
 		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+			fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 			Itemcategory.main(null);
 		}
 		else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 			New6OBJ.main(null);
 		}
 	}
@@ -64,10 +64,10 @@ class bmi{
 				fcp1.writeliner(Enter.wts + "/7LAB", "\t"+ dliner);
 				fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 		if (skeys == "Itemcategorykey") {
-			fcp1.readfiler(Enter.wt + "/singlebeam/ItemMenu");
+			fcp1.readfiler(Enter.wtsi + "/ItemMenu");
 			Itemcategory.main(null);
 		}else {
-			fcp1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 			New6OBJ.main(null);
 		}
 	}

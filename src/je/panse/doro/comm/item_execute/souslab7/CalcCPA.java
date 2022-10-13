@@ -17,7 +17,7 @@ import je.panse.doro.main.Enter;
 public class CalcCPA {
 	public void main(String skeys) throws Exception { 
 		File_cdrw_proc cpa1 = new File_cdrw_proc(); 
-			cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJs/CPAj");
+			cpa1.readfiler(Enter.wtss + "/6OBJs/CPAj");
 		System.out.println(cpa1);
 
     	try (Scanner new_code = new Scanner(System.in)) {
@@ -38,11 +38,11 @@ public class CalcCPA {
 					default :System.out.println(" uncertain ... please check  !!");
 				}
 				if (skeys == "Itemcategorykey") {
-					cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
+					cpa1.readfiler(Enter.wtss + "enu2ndLine/ItemMenu");
 					Itemcategory.main(null);
 				}
 				else {
-					cpa1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
+					cpa1.readfiler(Enter.wtss + "/6OBJ_List");
 					New6OBJ.main(null);
 				}
 			}

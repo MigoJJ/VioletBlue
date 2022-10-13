@@ -72,7 +72,7 @@ public class CalcDitto {
 		fcp1.writeliner(Enter.wts + "/9PLAN", doseadl);
 		File_cw_chart dn1 = new File_cw_chart();
 			dn1.deuxnine();	
-			fcp1.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+			fcp1.readfiler(Enter.wtsi + "/ChartPopUpMenu");
 		Newcategory nc1 = new Newcategory();
 			nc1.main("");
 	}
