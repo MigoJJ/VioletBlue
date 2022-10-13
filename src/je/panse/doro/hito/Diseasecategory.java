@@ -21,16 +21,16 @@ public class Diseasecategory {
 
 	void switching() throws Exception {
 		int scode =2;	
-		   	switch (scode) {
-		   		case 2 : 
-//		   			Menu_list.main(Enter.wd + "/fourgate/thyroid/dataxlsxfile/ThyroidStart");
-		   			ThyroidEnter ob4 = new ThyroidEnter();
-		    		ob4.main(null);
-		    		break;
-				default :
-					System.out.println(" uncertain ... please check  !!");
-					Key_shortcut.main(scode);
-		   	}
+	   	switch (scode) {
+	   		case 2 : 
+//		   		Menu_list.main(Enter.wd + "/fourgate/thyroid/dataxlsxfile/ThyroidStart");
+	   			ThyroidEnter ob4 = new ThyroidEnter();
+	    		ob4.main(null);
+	    		break;
+			default :
+				System.out.println(" uncertain ... please check  !!");
+				Key_shortcut.main(scode);
+	   	}
 //			input.close();
 	}
 // ----------

@@ -29,7 +29,7 @@ public class Key_shortcut {
 				
 		case 71 : CalcDitto ob4 = new CalcDitto();ob4.main(null);break;
 		case 72 : 
-			String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_button/Jbutton.jar");
+			String jarName =("java -jar" + Enter.udbu +"/Jbutton.jar");
 			Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);break;
 		case 73 : New9PLAN ob6 = new New9PLAN(); ob6.more_description(null);break;
 		

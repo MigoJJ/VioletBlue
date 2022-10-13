@@ -29,7 +29,7 @@ public class Itemcategory {
 			switch (select_code) {
 				case 1 : CalcBMI  lab1 = new CalcBMI(); lab1.main("Itemcategorykey");break;
 				case 2 : CalcBP   lab2 = new CalcBP();  lab2.main("Itemcategorykey");break;
-//						case 3 : CalcGFS  lab3 = new CalcGFS(); lab3.main("Itemcategorykey");break;					
+//				case 3 : CalcGFS  lab3 = new CalcGFS(); lab3.main("Itemcategorykey");break;					
 				case 4 : CalcCPA  lab4 = new CalcCPA(); lab4.main("Itemcategorykey");break;					
 				case 5 : CalcEKG3  lab5 = new CalcEKG3(); lab5.main("Itemcategorykey");break;
 				case 7 : CalcDEXA lab7 = new CalcDEXA();lab7.main("Itemcategorykey");break;

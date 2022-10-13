@@ -31,8 +31,7 @@ public class Newcategory {
 			   		case 12 :	Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
 //			   		case 13 : Rosproc n34 = new Rosproc(); n34.main(null);break;
 					case 13 : 
-						String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_button/Jbutton.jar");
-						Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);break;
+						String jarName =("java -jar" + Enter.udbu + "/Jbutton.jar");
 			   		
 		   		case 2 : New4PMH.main(null);break;
 				case 3 : New5SUJ.main(null);break;
@@ -44,7 +43,6 @@ public class Newcategory {
 					New8ASS.main(null);break;
 				case 7 : fcp.readfiler(Enter.wtss + "/9PLAN_List");
 					New9PLAN.main(null);break;
-
 				default :
 					System.out.println(" uncertain ... please check  !!");
 					Key_shortcut.main(select_code);

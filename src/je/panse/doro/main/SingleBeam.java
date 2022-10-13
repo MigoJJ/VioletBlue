@@ -4,7 +4,7 @@ import je.panse.doro.comm.Menu_list;
 
 public class SingleBeam {
 	public static void main(String[] args) throws Exception {
-		Menu_list.main(Enter.wt + "/singlebeam/SingleBeam");
+		Menu_list.main(Enter.wtsi + "/SingleBeam");
 		Debut sb2 = new Debut(); 
 		sb2.main(null);
 	}

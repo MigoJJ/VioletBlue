@@ -21,11 +21,9 @@ public class StartForm {
 				select_code = case_code.nextInt();
 				switch (select_code) {
 					case 1 :
-						
 						Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
 						st1.callchartlist("/knots/hana");
 						st2.main(null)
-//						
 						;break;
 					case 2 :
 						Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
