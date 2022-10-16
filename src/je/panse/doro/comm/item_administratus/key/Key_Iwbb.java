@@ -2,9 +2,9 @@ package je.panse.doro.comm.item_administratus.key;
 
 import java.io.IOException;
 
-import je.panse.doro.comm.item_administratus.DirectoryAdmin;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.Run_another_jar;
+import je.panse.doro.comm.item_administratus.file.file_DirAdmin;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.file.File_editor_proc;
 import je.panse.doro.comm.item_execute.CalcDitto;
@@ -23,7 +23,7 @@ public class Key_Iwbb {
 	Itemcategory  rk4 = new Itemcategory();
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
-		DirectoryAdmin   	rk13 = new DirectoryAdmin();
+		file_DirAdmin   	rk13 = new file_DirAdmin();
 		File_cw_chart 	rk11 = new File_cw_chart();
 		File_editor_proc 	rk12 = new File_editor_proc();
 		if (select_code == 9) { 

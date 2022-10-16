@@ -1,15 +1,14 @@
-package je.panse.doro.comm.item_administratus;
+package je.panse.doro.comm.item_administratus.file;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
 
-public class DirectoryAdmin {
+public class file_DirAdmin {
 	public void copy_Directory(String ladir, String nudir) throws IOException {
 		try {
 			File_cdrw_proc da1 = new File_cdrw_proc();
