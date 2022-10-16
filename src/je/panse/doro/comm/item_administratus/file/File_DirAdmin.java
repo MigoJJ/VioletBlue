@@ -8,7 +8,7 @@ import java.util.List;
 import je.panse.doro.main.Enter;
 import je.panse.doro.main.SingleBeam;
 
-public class file_DirAdmin {
+public class File_DirAdmin {
 	public void copy_Directory(String ladir, String nudir) throws IOException {
 		try {
 			File_cdrw_proc da1 = new File_cdrw_proc();

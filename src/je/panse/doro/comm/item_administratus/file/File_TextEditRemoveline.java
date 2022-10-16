@@ -1,11 +1,11 @@
-package je.panse.doro.comm.item_administratus;
+package je.panse.doro.comm.item_administratus.file;
 
 import java.io.*;	
 import java.util.Scanner;
 
 import je.panse.doro.main.Enter;
 
-public class TextEditRemoveline {
+public class File_TextEditRemoveline {
 	public static void main(String[] args) {
         final String EMPTY_STRING = "";
         Scanner file;

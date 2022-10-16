@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.Run_another_jar;
-import je.panse.doro.comm.item_administratus.file.file_DirAdmin;
+import je.panse.doro.comm.item_administratus.file.File_DirAdmin;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.file.File_editor_proc;
 import je.panse.doro.comm.item_execute.CalcDitto;
@@ -23,7 +23,7 @@ public class Key_Iwbb {
 	Itemcategory  rk4 = new Itemcategory();
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
-		file_DirAdmin   	rk13 = new file_DirAdmin();
+		File_DirAdmin   	rk13 = new File_DirAdmin();
 		File_cw_chart 	rk11 = new File_cw_chart();
 		File_editor_proc 	rk12 = new File_editor_proc();
 		if (select_code == 9) { 
@@ -42,8 +42,10 @@ public class Key_Iwbb {
 			rk11.deuxnine1();
 			rk12.main(Enter.wt + "/samsara/ChartPlate");
 			
-			String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_clipboard/clipboard.jar");
-			Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);
+//			String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_clipboard/clipboard.jar");
+//			Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);
+
+			Key_clipboard_cp.main(null);			
 			
 			rk13.clear_Directory(Enter.wts);
 			returnkeylist("SingleBeamkey");

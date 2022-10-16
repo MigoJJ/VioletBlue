@@ -3,7 +3,7 @@ package je.panse.doro.main;
 import java.util.Scanner;
 
 import je.panse.doro.comm.item_administratus.Menu_list;
-import je.panse.doro.comm.item_administratus.file.file_DirAdmin;
+import je.panse.doro.comm.item_administratus.file.File_DirAdmin;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.file.File_editor_proc;
@@ -12,7 +12,7 @@ import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
-	file_DirAdmin	da1 = new file_DirAdmin();
+	File_DirAdmin	da1 = new File_DirAdmin();
 	File_cw_chart 	fcw = new File_cw_chart();
 	File_editor_proc	fep = new File_editor_proc();
 	Enter				en1 = new Enter();
