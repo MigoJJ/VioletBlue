@@ -21,11 +21,11 @@ public class CalcLpa {
     	try (Scanner input = new Scanner(System.in)) {
 	       System.out.print(">>>>>>> Input Lp(a) >>>>>>> : \n");
 	       System.out.print(">>>>>>> Input Apob >>>>>>> : ");
-    		Double Lpa  = input.nextDouble();
-	       int Apob = input.nextInt();
+    		double Lpa  = input.nextDouble();
+	       double Apob = input.nextDouble();
 	//      input.close();
 	        String Lpar = String.format("\tLiporpotein(a)   [ %3.1f ]  ≤ 30.0 mg/dL ", Lpa); 
-	        String Apobr= String.format("\tApoLiporpotein(B)[ %3d ]"
+	        String Apobr= String.format("\tApoLiporpotein(B)[ %3.1f ]"
 	        		+ "  M:46-174   F:46-142 mg/dL", Apob); 
 	        String lar = (Lpar + "\n" + Apobr);
 
