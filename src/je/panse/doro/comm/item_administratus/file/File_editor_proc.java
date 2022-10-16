@@ -1,4 +1,4 @@
-package je.panse.doro.comm;
+package je.panse.doro.comm.item_administratus.file;
 
 import java.io.File;			
 import java.awt.Desktop;
@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
-
 
 import je.panse.doro.main.Enter;
 

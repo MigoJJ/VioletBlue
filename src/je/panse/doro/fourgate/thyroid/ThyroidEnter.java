@@ -2,8 +2,8 @@ package je.panse.doro.fourgate.thyroid;
 
 import java.util.Scanner;
 
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.fourgate.thyroid.goiter.ThyroidPhysicalExam;
 import je.panse.doro.fourgate.thyroid.pregnancy.PregnacyEnter;
 import je.panse.doro.fourgate.thyroid.prescription.ThyroidJTableInput;

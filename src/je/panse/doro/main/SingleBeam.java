@@ -1,6 +1,6 @@
 package je.panse.doro.main;
 
-import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.Menu_list;
 
 public class SingleBeam {
 	public static void main(String[] args) throws Exception {

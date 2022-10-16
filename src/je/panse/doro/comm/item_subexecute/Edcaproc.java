@@ -1,8 +1,9 @@
 package je.panse.doro.comm.item_subexecute;
 
-import java.io.IOException;	
-import je.panse.doro.aeternum.aete.DiseaseCode;
-import je.panse.doro.comm.File_cdrw_proc;
+import java.io.IOException;
+
+import je.panse.doro.aeternum.DiseaseCode;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.main.Enter;
 
 public class Edcaproc {

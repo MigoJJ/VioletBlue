@@ -3,7 +3,10 @@ package je.panse.doro.hito;
 import java.util.Scanner;			
 
 import je.panse.doro.comm.*;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.file.File_cw_chart;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.main.Enter;
 
 public class StartForm {

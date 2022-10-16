@@ -3,9 +3,10 @@ package je.panse.doro.fourgate.thyroid.goiter;
 import java.io.FileInputStream;			
 import java.util.Scanner;
 import org.apache.poi.xssf.usermodel.*;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
+
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.fourgate.thyroid.thycomm.R_rl_excel2;
 import je.panse.doro.main.Enter;

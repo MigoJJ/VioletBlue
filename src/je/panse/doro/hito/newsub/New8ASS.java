@@ -1,9 +1,10 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;	
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import java.util.Scanner;
+
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Enter;

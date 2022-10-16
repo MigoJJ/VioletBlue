@@ -1,13 +1,14 @@
 package je.panse.doro.main;
 
-import java.util.Scanner;	
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.File_editor_proc;
-import je.panse.doro.comm.Menu_list;
+import java.util.Scanner;
+
 import je.panse.doro.comm.item_administratus.DirectoryAdmin;
-import je.panse.doro.comm.item_administratus.Key_Press_Any;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.file.File_cw_chart;
+import je.panse.doro.comm.item_administratus.file.File_editor_proc;
+import je.panse.doro.comm.item_administratus.key.Key_Press_Any;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {

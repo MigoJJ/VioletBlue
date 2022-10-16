@@ -1,7 +1,7 @@
-package je.panse.doro.comm.item_administratus;
+package je.panse.doro.comm.item_administratus.key;
 
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.Menu_list;
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_execute.souslab7.CalcBMI;

@@ -2,9 +2,9 @@ package je.panse.doro.fourgate.symptom.subjective_read_data;
 
 import java.util.Scanner;
 
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.main.Enter;
 
 public class Symptom12Enter {

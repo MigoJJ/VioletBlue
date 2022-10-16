@@ -3,13 +3,14 @@ package je.panse.doro.hito.newsub;
 import java.io.IOException;
 import java.util.Scanner;
 
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
 import je.panse.doro.comm.item_administratus.Run_another_jar;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.CalcDitto;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
+import je.panse.doro.main.Enter;
 
 public class New9PLAN {
 	public static void main(String args) throws Exception { 
@@ -25,7 +26,8 @@ public class New9PLAN {
 	
 				switch (select_code) {
 					case 1 : ob3.main(null);break;
-					case 2 : Run_another_jar ob5 = new Run_another_jar();ob5.main(null);break;
+					case 2 : String jarName =("java -jar " + Enter.udbu + "/Jbutton.jar");
+								Run_another_jar.main(jarName);break;
 					case 3 : New9PLAN.more_description(args);break;
 
 					default :

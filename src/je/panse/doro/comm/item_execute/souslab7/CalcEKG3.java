@@ -5,10 +5,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;			
 import java.util.Scanner;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_cw_chart;
-import je.panse.doro.comm.Key_Iwbb;
-import je.panse.doro.comm.Menu_list;
+
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.file.File_cw_chart;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.fourgate.description.Get_ExceltoJtable02;
 import je.panse.doro.hito.Itemcategory;

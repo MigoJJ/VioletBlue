@@ -2,9 +2,9 @@ package je.panse.doro.hito;
 
 import java.util.Scanner;
 
-import je.panse.doro.comm.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.*;
 import je.panse.doro.comm.item_execute.souslab7.CalcBMI;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;

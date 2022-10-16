@@ -8,10 +8,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 import java.util.stream.Stream;
-import je.panse.doro.comm.File_cdrw_proc;
-import je.panse.doro.comm.File_editor_proc;
-import je.panse.doro.comm.Menu_list;
-import je.panse.doro.comm.item_administratus.Key_shortcut;
+
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.file.File_editor_proc;
+import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.souslab7.CalcBP;
 import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
 import je.panse.doro.hito.Newcategory;

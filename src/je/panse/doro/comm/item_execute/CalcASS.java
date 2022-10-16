@@ -1,7 +1,8 @@
 package je.panse.doro.comm.item_execute;
 	
 import java.util.Scanner;
-import je.panse.doro.comm.Key_returnquit;
+
+import je.panse.doro.comm.item_administratus.key.Key_returnquit;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class CalcASS {

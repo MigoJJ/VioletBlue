@@ -1,8 +1,9 @@
 package je.panse.doro.hito.newsub;
 
 import java.util.Scanner;
-import je.panse.doro.comm.Key_returnquit;
-import je.panse.doro.comm.Menu_list;
+
+import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.key.Key_returnquit;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class New5SUJ{

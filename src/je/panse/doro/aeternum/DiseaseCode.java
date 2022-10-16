@@ -1,4 +1,4 @@
-package je.panse.doro.aeternum.aete;
+package je.panse.doro.aeternum;
 
 import java.io.IOException;
 
