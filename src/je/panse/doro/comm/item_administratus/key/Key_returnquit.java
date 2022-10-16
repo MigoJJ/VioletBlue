@@ -9,7 +9,7 @@ import je.panse.doro.main.Enter;
 
 public class Key_returnquit {
 
-	public void mainquit(String st) {
+	public void mainquit(String st) throws Exception {
 	    	System.out.println("Inserted code finished  ^^!!!  ");
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 	    	try {
@@ -20,10 +20,7 @@ public class Key_returnquit {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 	
+			}
 	}
 //------------------
 }
