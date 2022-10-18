@@ -1,12 +1,8 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
-
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_subexecute.ResultEditAdd;
-import je.panse.doro.fourgate.thyroid.prescription.ThyPrescription;
-import je.panse.doro.hito.Itemcategory;
-import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
@@ -28,12 +24,8 @@ public class CalcTFT {
 			System.out.print("*****Input TSH  : ");
 			TSH = input.nextDouble();
 			String retvalueTSH ="";
-			    if(TSH < 0.05) {
-					retvalueTSH = ResultEditAdd.cr_result(TSH, " < ");
-			     }
-			    else {
-			    	retvalueTSH = ResultEditAdd.cr_result(0.25,5.0,TSH);
-			     }
+			    if(TSH < 0.05) {retvalueTSH = ResultEditAdd.cr_result(TSH, " < ");}
+			    else {retvalueTSH = ResultEditAdd.cr_result(0.25,5.0,TSH);}
 			//      input.close();
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
 //	        String TFTreferval = ("   0.9-2.5        10.6-19.4       0.25-5.0");
@@ -46,7 +38,7 @@ public class CalcTFT {
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");
 			String AutoAb = input.next();
-			if (AutoAb.equals("y")) {
+			if (AutoAb.equals("y")|AutoAb.equals("ㅛ")) {
 				System.out.print("***Anti-TSH-R Ab   :");
 				double TSH_R_Ab = input.nextDouble();
 		       		if (TSH_R_Ab == 0.80) {
@@ -68,8 +60,8 @@ public class CalcTFT {
 		       		}
 		       	System.out.print("***Anti-microsomal Ab   :");
 		       	double micro_Ab = input.nextDouble();
-		       	if (micro_Ab == 0.90) {
-		       		retvalue3 = ResultEditAdd.cr_result(micro_Ab, "< ");
+		       	if (micro_Ab == 0.9) {
+		       		retvalue3 = ResultEditAdd.cr_result(micro_Ab, " < ");
 		       		}
 		       	else if (micro_Ab > 34) {
 	       			retvalue3 = ResultEditAdd.cr_result(micro_Ab,  "⮝ ");
