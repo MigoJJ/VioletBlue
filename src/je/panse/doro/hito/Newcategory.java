@@ -21,21 +21,17 @@ public class Newcategory {
 
 	void switching() throws Exception {
 		File_cdrw_proc fcp = new File_cdrw_proc();
+		String a ="JJ";
 		try (Scanner new_code = new Scanner(System.in)){
 			while (true) {
 			   	System.out.println("Enter selected code number ...   : ");
-				
-				String a = new_code.nextLine();
-				a = (a.trim());
-				if(a.equals("")){
+				a = new_code.nextLine().trim();
+				if(a==""){
 					Key_returnquit krq = new Key_returnquit();
 					krq.mainquit(a);
 				}
-				
 //				int select_code = Integer.parseInt(new_code.nextLine().trim());
 				int select_code = Integer.parseInt(a);
-
-
 			   	switch (select_code) {
 			   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
 				   		case 11 :	New3PI n32 = new New3PI(); n32.main(null);break;
