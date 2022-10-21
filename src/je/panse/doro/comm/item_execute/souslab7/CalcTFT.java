@@ -46,7 +46,7 @@ public class CalcTFT {
 			       		else {retvalue1 = Double.toString(TSH_R_Ab);}
 				System.out.print("***Anti-Thyrogobulin Ab  :");
 					    double Tg_Ab = input.nextDouble();
-				       	if (Tg_Ab > 175) {
+				       	if (Tg_Ab > 115) {
 				       		retvalue2 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
 				       		}
 				       	else {retvalue2 = Double.toString(Tg_Ab);
