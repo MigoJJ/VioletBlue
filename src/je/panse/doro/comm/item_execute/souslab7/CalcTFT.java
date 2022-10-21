@@ -10,21 +10,17 @@ public class CalcTFT {
 	File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
 		double T3,free_T4, TSH;
-		String  TFTresult;
-		String retvalue1 ="-";
-		String retvalue2 ="-";
-		String retvalue3 ="-";
+		String retvalue1, retvalue2, retvalue3, retvalueTSH ="";
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("*****Input T3 : ");
 			T3 = input.nextDouble();
-			String retvalueT3 = ResultEditAdd.cr_result(0.9, 2.5,T3);
-			System.out.print("*****Input free_T4 : ");
+				String retvalueT3 = ResultEditAdd.cr_result(0.9, 2.5,T3);
+				System.out.print("*****Input free_T4 : ");
 			free_T4 = input.nextDouble();
-			String retvalueT4 = ResultEditAdd.cr_result(10.6, 19.4,free_T4);
-			System.out.print("*****Input TSH  : ");
+				String retvalueT4 = ResultEditAdd.cr_result(10.6, 19.4,free_T4);
+				System.out.print("*****Input TSH  : ");
 			TSH = input.nextDouble();
-			String retvalueTSH ="";
-			    if(TSH < 0.05) {retvalueTSH = ResultEditAdd.cr_result(TSH, " < ");}
+				if(TSH < 0.05) {retvalueTSH = ResultEditAdd.cr_result(TSH, " < ");}
 			    else {retvalueTSH = ResultEditAdd.cr_result(0.25,5.0,TSH);}
 			//      input.close();
 	        String TFTheadline = ("T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)");
@@ -41,23 +37,20 @@ public class CalcTFT {
 			if (AutoAb.equals("y")|AutoAb.equals("ㅛ")) {
 				System.out.print("***Anti-TSH-R Ab   :");
 				double TSH_R_Ab = input.nextDouble();
-		       		if (TSH_R_Ab == 0.80) {
-		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "< ");
-		       		}
-		       		else if(TSH_R_Ab > 1.75) {
-		       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "⮝ ");
-		       		}
-		       		else {
-		    		retvalue1 = Double.toString(TSH_R_Ab);
-		       		}
+			       		if (TSH_R_Ab == 0.80) {
+			       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "< ");
+			       		}
+			       		else if(TSH_R_Ab > 1.75) {
+			       			retvalue1 = ResultEditAdd.cr_result(TSH_R_Ab, "⮝ ");
+			       		}
+			       		else {retvalue1 = Double.toString(TSH_R_Ab);}
 				System.out.print("***Anti-Thyrogobulin Ab  :");
-			    double Tg_Ab = input.nextDouble();
-		       	if (Tg_Ab > 175) {
-		       		retvalue2 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
-		       		}
-		       	else {
-		       			retvalue2 = Double.toString(Tg_Ab);
-		       		}
+					    double Tg_Ab = input.nextDouble();
+				       	if (Tg_Ab > 175) {
+				       		retvalue2 = ResultEditAdd.cr_result(Tg_Ab, "⮝ ");
+				       		}
+				       	else {retvalue2 = Double.toString(Tg_Ab);
+				       		}
 		       	System.out.print("***Anti-microsomal Ab   :");
 		       	double micro_Ab = input.nextDouble();
 		       	if (micro_Ab == 0.9) {
