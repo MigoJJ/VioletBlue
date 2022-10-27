@@ -31,24 +31,24 @@ public class CalcHbA1c {
 		         }
 		    
     		    else if (HbA1c !=0) {
-				double IFCC = ((HbA1c-2.152)/0.09148);
-				String s = String.format("%.0f", IFCC);
-				System.out.println("\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
-				double eAGg = ((28.7*HbA1c)-46.7);
-				String sg = String.format("%.0f", eAGg);
-				System.out.println("\t\tHbA1c-eAG : [ " + sg + " ] mg/dl");
-				double eAGm = (0.0555*eAGg);
-				//mg/dL in mmol/L, conversion factor: 1 mg/dL = 0.0555 mmol/L 
-				String sm = String.format("%.1f", eAGm);
-				
-				String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl" + "\tHbA1c [ " + HbA1c + " ] %");
-    		    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
-				
-				System.out.println("\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
-			    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
-			    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG  : [ " + sg + " / " 
-			    	             + sm + " ]...mg/dl...mmol/l");
-		    }	
+					double IFCC = ((HbA1c-2.152)/0.09148);
+					String s = String.format("%.0f", IFCC);
+					System.out.println("\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
+					double eAGg = ((28.7*HbA1c)-46.7);
+					String sg = String.format("%.0f", eAGg);
+					System.out.println("\t\tHbA1c-eAG : [ " + sg + " ] mg/dl");
+					double eAGm = (0.0555*eAGg);
+					//mg/dL in mmol/L, conversion factor: 1 mg/dL = 0.0555 mmol/L 
+					String sm = String.format("%.1f", eAGm);
+					
+					String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl" + "\tHbA1c [ " + HbA1c + " ] %");
+	    		    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
+					System.out.println(Gluresult);
+					System.out.println("\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
+				    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
+				    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG  : [ " + sg + " / " 
+				    	             + sm + " ]...mg/dl...mmol/l");
+    		    }	
 		    	if (skeys == "Itemcategorykey") {
 				fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 				Itemcategory.main(null);

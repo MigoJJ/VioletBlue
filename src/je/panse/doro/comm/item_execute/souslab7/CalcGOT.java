@@ -63,7 +63,7 @@ public class CalcGOT {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		fcp1.readfiler(Enter.wtss + "LAB_List");
+		fcp1.readfiler(Enter.wtss + "/7LAB_List");
 		New7LAB nc1 = new New7LAB();
 		nc1.main(null);
 	}
