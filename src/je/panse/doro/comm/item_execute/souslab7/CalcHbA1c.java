@@ -24,39 +24,7 @@ public class CalcHbA1c {
 	        
 	        if (HbA1c == 0) {
 		        String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl");
-<<<<<<< HEAD
-    		    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
-		         }
-		    
-    		    else if (HbA1c !=0) {
-					double IFCC = ((HbA1c-2.152)/0.09148);
-					String s = String.format("%.0f", IFCC);
-					System.out.println("\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
-					double eAGg = ((28.7*HbA1c)-46.7);
-					String sg = String.format("%.0f", eAGg);
-					System.out.println("\t\tHbA1c-eAG : [ " + sg + " ] mg/dl");
-					double eAGm = (0.0555*eAGg);
-					//mg/dL in mmol/L, conversion factor: 1 mg/dL = 0.0555 mmol/L 
-					String sm = String.format("%.1f", eAGm);
-					
-					String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl" + "\tHbA1c [ " + HbA1c + " ] %");
-	    		    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
-					System.out.println(Gluresult);
-					System.out.println("\t\tHbA1c-eAG : [ " + sm + " ] mmol/l");
-				    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-IFCC : [ " + s + " ] mmol/mol");
-				    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG  : [ " + sg + " / " 
-				    	             + sm + " ]...mg/dl...mmol/l");
-    		    }	
-		    	if (skeys == "Itemcategorykey") {
-				fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
-				Itemcategory.main(null);
-			}
-			else {
-				fcp1.readfiler(Enter.wtss + "/7LAB_List");
-				New7LAB nc1 = new New7LAB();
-				nc1.main(null);
-			}
-=======
+
 			    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 			}
     		else {
@@ -79,7 +47,7 @@ public class CalcHbA1c {
 			fcp1.readfiler(Enter.wtss + "/7LAB_List");
 			New7LAB nc1 = new New7LAB();
 			nc1.main(null);
->>>>>>> branch 'GDS221016' of https://github.com/MigoJJ/VioletBlue.git
+
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
