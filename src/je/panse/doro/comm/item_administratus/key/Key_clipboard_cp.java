@@ -29,7 +29,6 @@ public class Key_clipboard_cp {
 		    e.printStackTrace();
 		}
 		fileContent = contentBuilder.toString();
-		System.out.print(fileContent);
 		Tttc(fileContent);
 	}
 

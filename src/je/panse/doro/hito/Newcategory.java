@@ -50,7 +50,6 @@ public class Newcategory {
 					case 7 : fcp.readfiler(Enter.wtss + "/9PLAN_List");
 						New9PLAN.main(null);break;
 					default :
-						System.out.println(" uncertain ... please check  !!");
 						Key_shortcut.main(select_code);
 			   }
 //		new_code.close();

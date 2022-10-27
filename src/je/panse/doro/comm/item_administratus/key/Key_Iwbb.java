@@ -44,8 +44,7 @@ public class Key_Iwbb {
 			
 //			String jarName =("java -jar /home/migowj/ittia1_chart/addjar_ittia1/ittia1_clipboard/clipboard.jar");
 //			Run_another_jar ob5 = new Run_another_jar();ob5.main(jarName);
-
-			Key_clipboard_cp.main(null);			
+//			Key_clipboard_cp.main(null);			
 			
 			rk13.clear_Directory(Enter.wts);
 			returnkeylist("SingleBeamkey");

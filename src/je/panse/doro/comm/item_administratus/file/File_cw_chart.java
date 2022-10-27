@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import je.panse.doro.comm.item_administratus.key.Key_clipboard_cp;
 import je.panse.doro.main.Enter;
 
 public class File_cw_chart {
@@ -19,7 +20,8 @@ public class File_cw_chart {
 			nc5.writechart();
 			nc5.chartbackup();
 			File_TextEditRemoveline terl =new File_TextEditRemoveline();
-			terl.main(null);			
+			terl.main(null);
+			Key_clipboard_cp.main(null);		
 	}
 	// -------------------------------------------Form Files Copying
 	public void callchartlist(String laname) throws IOException {
