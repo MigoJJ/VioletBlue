@@ -34,7 +34,6 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ASS");  
 			  list.add("/9PLAN");
-
 			  for(String fruit:list)  
 			  nu1.copyfiler(Enter.wt + laname +fruit, Enter.wts + fruit);
    }
@@ -49,7 +48,6 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ASS");  
 			  list.add("/9PLAN");
-
 			  for(String fruit:list)  
 			  nu9.rwfiler(Enter.wts + fruit, Enter.wts + "/ChartPlate");
 	}

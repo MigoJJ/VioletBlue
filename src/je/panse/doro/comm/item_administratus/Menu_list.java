@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus;
 
-import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;	
 import je.panse.doro.main.Enter;
 
 public class Menu_list {
@@ -12,5 +12,4 @@ public class Menu_list {
 		File_cdrw_proc fcp = new File_cdrw_proc(); 
 			fcp.readfiler(menulist);
 	}
-// ----------
 }

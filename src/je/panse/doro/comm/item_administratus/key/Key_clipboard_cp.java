@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus.key;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader;	
 import java.io.FileReader;
 import java.io.IOException;
 import je.panse.doro.main.Enter;
@@ -19,13 +19,10 @@ public class Key_clipboard_cp {
 		try (BufferedReader br = new BufferedReader(new FileReader(filePath))) 
 		{
 		    String sCurrentLine;
-		    while ((sCurrentLine = br.readLine()) != null) 
-		    {
+		    while ((sCurrentLine = br.readLine()) != null){
 		        contentBuilder.append(sCurrentLine).append("\n");
 		    }
-		} 
-		catch (IOException e) 
-		{
+		} catch (IOException e)	{
 		    e.printStackTrace();
 		}
 		fileContent = contentBuilder.toString();

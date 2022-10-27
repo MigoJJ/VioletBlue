@@ -1,8 +1,7 @@
 package je.panse.doro.hito.newsub;
 	
-import java.io.IOException;											
+import java.io.IOException;
 import java.util.Scanner;
-
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
@@ -75,10 +74,10 @@ public class New3CC {
 		}
 		
 		if (a.startsWith(":")) {
-		chartline = "\t(onset " + b + c + ")";
+			chartline = "\t(onset " + b + c + ")";
 		}
 		else {
-		chartline = "\t" + a + "  (onset " + b + c + ")";
+			chartline = "\t" + a + "  (onset " + b + c + ")";
 		}
 		fcp.writeliner(Enter.wts + "/3CC", chartline);
 		}
@@ -102,10 +101,10 @@ public class New3CC {
 			String chartline4 = "";
 			if (a.startsWith(":")) {
 				chartline4 = "";
-				}
-				else {
+			}
+			else {
 				chartline4 = "\t" + a +"\n";
-				}
+			}
 			fcp.writeliner(Enter.wts + "/3CC", chartline4);
 //			fcp.writeliner(Enter.wts + "/8ASS", chartline4);
 		}
@@ -114,9 +113,9 @@ public class New3CC {
 			if (a.startsWith(":")) {
 				chartline3 = ("\t" + bint + " Dx");
 				}
-				else {
+			else {
 				chartline3 = ("\t" + a + "\t" + bint + " Dx");
-				}
+			}
 			fcp.writeliner(Enter.wts + "/3CC", chartline3);
 //			fcp.writeliner(Enter.wts + "/8ASS", chartline3);
 		}

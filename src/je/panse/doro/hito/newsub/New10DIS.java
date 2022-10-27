@@ -12,10 +12,11 @@ import je.panse.doro.main.Enter;
 
 public class New10DIS {
 	File_cdrw_proc  ob2 = new File_cdrw_proc();
+	Newcategory 	cc1 = new Newcategory(); 
+	File_cw_chart 	dn1 = new File_cw_chart();
+	
 	public void main(String args) throws Exception { 
-		Newcategory 	cc1 = new Newcategory(); 
 		Menu_list.main(Enter.wtss + "/Menu2ndLine/DisMenu"); 
-		File_cw_chart 	dn1 = new File_cw_chart();
 		
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
@@ -32,7 +33,7 @@ public class New10DIS {
 					case 5 : insert_dis("Osteoporosis F/U", tarfile + "/osteoporosis" );break;
 					default :
 						Key_shortcut.main(select_code);
-					}
+				}
 				dn1.deuxnine();
 				Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 				cc1.main(null);
@@ -47,6 +48,4 @@ public class New10DIS {
 		ob2.writeliner(Enter.wts + "/3CC", ccresult);
 		ob2.rwfiler(fread, Enter.wts + "/9PLAN");
 	}
-		
-// ----------------------------------------------
 }

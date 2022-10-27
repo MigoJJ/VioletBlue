@@ -11,16 +11,14 @@ import je.panse.doro.main.Enter;
 
 public class File_editor_proc {
     public static void main(String args) throws InterruptedException {
-            Runtime obj = Runtime.getRuntime();
-            try {
-                    obj.exec("gedit " + Enter.wt +"/samsara/ChartPlate");
-                    Thread.sleep(10000); 
-                    obj.exec("killall gedit");
-            }
-            catch(IOException e) 
-            {
-                    System.out.println(e);
-            }   
+        Runtime obj = Runtime.getRuntime();
+        try {
+            obj.exec("gedit " + Enter.wt +"/samsara/ChartPlate");
+            Thread.sleep(10000); 
+            obj.exec("killall gedit");
+        } catch(IOException e) {
+            System.out.println(e);
+        }   
     }   
 	
 	public static void linepickup(String pickupfile, String savefilename) {
@@ -36,8 +34,7 @@ public class File_editor_proc {
 			File_cdrw_proc savef1 = new File_cdrw_proc();
 				savef1.writeliner(savefilename, line3);
 		} catch (IOException e) {
-		e.printStackTrace();
+			e.printStackTrace();
 		}
 	}
-// ----------	
 }

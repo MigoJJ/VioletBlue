@@ -16,7 +16,7 @@ public class File_cdrw_proc   {
 				System.out.println("File created: " + cfiler.getName());
 			} 
 			else {
-//				System.out.println("File already exists.");
+				System.out.println("File already exists.");
 			}
 		}catch (IOException e) {
 //		System.out.println("An error occurred.");

@@ -10,20 +10,18 @@ public class New5SUJ{
 	public static void main(String args) throws Exception {
 		String st="JJ";
 		System.out.println("\n\n*****Enter Subjective complaint*****  ...   : ");
-
 		do {
-		try {
-			Scanner suj_text = new Scanner(System.in);
-			st = (suj_text.nextLine().trim());
-			Edcamain.main(st,"/5SUJ");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			try {
+				Scanner suj_text = new Scanner(System.in);
+				st = (suj_text.nextLine().trim());
+				Edcamain.main(st,"/5SUJ");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
 		} while (!(st == ""));
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(st);
-		}
-	// ---------- 
+	}
 }

@@ -1,7 +1,6 @@
 package je.panse.doro.hito;
 
-import java.util.Scanner;
-
+import java.util.Scanner;	
 import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_returnquit;
@@ -11,14 +10,6 @@ import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
 public class Newcategory {
-	public void main(String args) throws Exception {
-		try {
-	    	switching();
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
-	}	
-
 	void switching() throws Exception {
 		File_cdrw_proc fcp = new File_cdrw_proc();
 		String a ="JJ";
@@ -30,12 +21,12 @@ public class Newcategory {
 					Key_returnquit krq = new Key_returnquit();
 					krq.mainquit(a);
 				}
-//				int select_code = Integer.parseInt(new_code.nextLine().trim());
 				int select_code = Integer.parseInt(a);
 			   	switch (select_code) {
 			   		case 1 : New3CC n31 = new New3CC(); n31.main(null);break;
 				   		case 11 :	New3PI n32 = new New3PI(); n32.main(null);break;
-				   		case 12 :	Symptom12Enter n33 = new Symptom12Enter(); n33.main(null);break;
+				   		case 12 :	Symptom12Enter n33 = new Symptom12Enter();
+				   					n33.main(null);break;
 						case 13 : 
 							String jarName =("java -jar " + Enter.udbu + "/Jbutton.jar");
 							Run_another_jar.main(jarName);break;
@@ -53,10 +44,17 @@ public class Newcategory {
 						Key_shortcut.main(select_code);
 			   }
 //		new_code.close();
-   		}
+			}
 		}catch (NumberFormatException e) {
-		e.printStackTrace();
+			e.printStackTrace();
 		}
     }
- // --------------------------------------------
+
+	public void main(String args) throws Exception {
+		try {
+	    	switching();
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
+	}
 }
