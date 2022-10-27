@@ -16,11 +16,10 @@ public class File_cdrw_proc   {
 				System.out.println("File created: " + cfiler.getName());
 			} 
 			else {
-//				System.out.println("File already exists.");
+				System.out.println("File already exists.");
 			}
 		}catch (IOException e) {
-//		System.out.println("An error occurred.");
-		e.printStackTrace();
+			e.printStackTrace();
 		}
 	}
 // ------------------------------   	
@@ -29,9 +28,9 @@ public class File_cdrw_proc   {
 		if( dfiler.exists() ){ 
 			if(dfiler.delete()){ System.out.println("successfully deleting file ~~^^"); 
 			}
-//			else{ System.out.println("Fail to delete file ^^"); } 
+			else{ System.out.println("Fail to delete file ^^"); } 
 			}
-//			else{ System.out.println("No exsisting files ~~"); } 
+			else{ System.out.println("No exsisting files ~~"); } 
 	}
 // ------------------------------
 	public void copyfiler(String copyfo, String copyft) throws IOException {
