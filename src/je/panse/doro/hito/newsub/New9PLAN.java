@@ -41,20 +41,17 @@ public class New9PLAN {
 		}
    	}	
 	public static void more_description(String args) throws IOException {
-		
 		String st="JJ";
 		System.out.println("*****Enter More description*****  ...   : ");
-
 		do {
-		try {
-			Scanner suj_text = new Scanner(System.in);
-			st = (suj_text.nextLine().trim());
-			Edcamain.main(st,"/9PLAN");
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			try {
+				Scanner suj_text = new Scanner(System.in);
+				st = (suj_text.nextLine().trim());
+				Edcamain.main(st,"/9PLAN");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} while (!(st == ""));
 	}
-	
 }

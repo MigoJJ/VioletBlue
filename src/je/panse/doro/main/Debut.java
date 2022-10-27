@@ -1,6 +1,6 @@
 package je.panse.doro.main;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_DirAdmin;
@@ -39,7 +39,6 @@ public class Debut {
 							Menu_list.main(Enter.wtsi + "/ChartPopUpMenu");
 							nc1.main(null);  	
 							break; 
-
 					default :
 						Key_shortcut.main(select_code);
 				}
