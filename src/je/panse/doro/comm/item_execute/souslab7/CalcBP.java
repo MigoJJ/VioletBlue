@@ -37,20 +37,8 @@ public class CalcBP {
 				   bp1.BPresult = String.format("at GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
 			}
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
-
-		   if (skeys == "Itemcategorykey") {
-			   fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
-				Itemcategory.main(null);
-			}
-			else if (skeys == "diseasecategorythyroid") {
-				fcp1.readfiler(Enter.wd + "/fourgate/thyroid/ThyroidStart");
-				ThyPrescription tp1 = new ThyPrescription();
-				tp1.main(null);
-			}
-			else {
-				fcp1.readfiler(Enter.wtss + "/6OBJ_List");
-					New6OBJ.main(null);
-				}
+			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
+			New6OBJ.main(null);
 		} catch (NumberFormatException e) {
 		e.printStackTrace();
 		}

@@ -1,14 +1,15 @@
-<<<<<<< HEAD
-	GOT... 1
+	GOT... 46	GPT... 66	GGT... 55
+	Bil... 0.9	Alb... 4.3
 
-	GOT... 1	GPT... 2	GGT... 3
-	Bil... 4	Alb... 5
-
-	GOT... 1	GPT... 2	GGT... h
+	TC-HDL-TG-LDL     [  173 - 51 - 64 - 118  ] mg/dL
 
 
-=======
-	PP1.0  [ 125 ] mg/dl	HbA1c [ 6.3 ] %
-		HbA1c-IFCC : [ 45 ] mmol/mol
-		HbA1c-eAG  : [ 134 / 7.4 ]...mg/dl...mmol/l
->>>>>>> branch 'GDS221016' of https://github.com/MigoJJ/VioletBlue.git
+	Creatinine (mg/dl) 	eGFR (ml/min) 	A/C ratio
+	-----------------------------------------------
+		0.7		0.0		0.0
+	A1  : Normal to mildly increased A/C_ratio
+	G5  : Kidney failure
+
+	FBS  [ 124 ] mg/dl	HbA1c [ 5.8 ] %
+		HbA1c-IFCC : [ 40 ] mmol/mol
+		HbA1c-eAG  : [ 120 / 6.6 ]...mg/dl...mmol/l
