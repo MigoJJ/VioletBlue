@@ -29,13 +29,8 @@ public class CalcBP {
 			bp1.PR = input.nextInt();
 			//        input.close();
 			
-			if (bp1.PR == 0) {
-				   bp1.BPresult = String.format("\tBP [ %d / %d ]mmHg", bp1.SBP,bp1.DBP);
-			}else if (bp1.PR==1) {
-				   bp1.BPresult = String.format("at Home\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min", bp1.SBP,bp1.DBP);
-			}else {
-				   bp1.BPresult = String.format("at GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
-			}
+		   bp1.BPresult = String.format("at GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
+
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 			New6OBJ.main(null);

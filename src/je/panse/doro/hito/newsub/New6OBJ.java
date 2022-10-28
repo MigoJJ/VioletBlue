@@ -28,7 +28,7 @@ public class New6OBJ {
 							Key_shortcut.main(select_code);
 					}
 				}
-//				Key_shortcut.main(select_code);
+				Key_shortcut.main(select_code);
 			}	
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
