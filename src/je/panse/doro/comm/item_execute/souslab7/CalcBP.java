@@ -29,7 +29,7 @@ public class CalcBP {
 			bp1.PR = input.nextInt();
 			//        input.close();
 			
-		   bp1.BPresult = String.format("at GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
+		   bp1.BPresult = String.format("\tat GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
 
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
 			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
