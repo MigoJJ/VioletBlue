@@ -15,7 +15,7 @@ public class DiseaseCode {
 			case "fto" : cresult =("#  Hypothyroidism F/U");break;
 			case "fnti" : cresult =("#  Non-Thyroidal Illness F/U");break;
 			case "ftep" : cresult =("#  Hyperthyroidism with Pregnancy [   ]  weeks F/U");break;
-			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks F/U");break;
+			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [   ]  weeks F/U");break;
 					
 			case "do" : cresult =("#  DM without complications	");break;
 			case "d" : cresult =("#  Diabetes Mellitus	");break;
