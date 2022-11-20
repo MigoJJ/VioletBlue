@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 	
-import java.io.IOException;
+import java.io.IOException;	
 import java.util.Scanner;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
@@ -9,7 +9,7 @@ import je.panse.doro.comm.item_administratus.key.Key_returnquit;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
-
+	
 public class New3CC {
 	static String a, b, c, f, g;
 	File_cdrw_proc 	fcp = new File_cdrw_proc();
