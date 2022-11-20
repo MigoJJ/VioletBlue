@@ -14,7 +14,7 @@ public class File_editor_proc {
         Runtime obj = Runtime.getRuntime();
         try {
             obj.exec("gedit " + Enter.wt +"/samsara/ChartPlate");
-            Thread.sleep(10000); 
+            Thread.sleep(7000); 
             obj.exec("killall gedit");
         } catch(IOException e) {
             System.out.println(e);
