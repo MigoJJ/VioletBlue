@@ -7,6 +7,8 @@ import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.key.Key_shortcut;
+import je.panse.doro.comm.item_execute.souslab7.CalcBP;
+import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;
 
@@ -25,8 +27,14 @@ public class New10DIS {
 				select_code = Integer.valueOf(new_code.nextLine().trim());
 				String tarfile = (Enter.wt+"/knots/dise");
 				switch (select_code) {
-					case 1 : insert_dis("Diabetes Mellitus F/U", tarfile + "/diabetes" );break;
-					case 2 : insert_dis("Hypertension F/U", tarfile + "/hypertension" );break;
+					case 1 : insert_dis("Diabetes Mellitus F/U", tarfile + "/diabetes" );
+					    CalcHbA1c chba1c = new CalcHbA1c();
+					    chba1c.main(null);
+						break;
+					case 2 : insert_dis("Hypertension F/U", tarfile + "/hypertension" );
+						CalcBP cbp = new CalcBP();
+					    cbp.main(null);
+					    break;
 					case 3 : insert_dis("Hypercholestarolemia F/U", tarfile + "/hyperchol" );break;
 					case 41 : insert_dis("Hyperthyroidism F/U", tarfile + "/thyhyper" );break;
 					case 42 : insert_dis("Hypothyroidiam F/U", tarfile + "/thyhypo" );break;

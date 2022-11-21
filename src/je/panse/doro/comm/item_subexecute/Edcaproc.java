@@ -1,9 +1,12 @@
 package je.panse.doro.comm.item_subexecute;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import je.panse.doro.aeternum.DiseaseCode;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.key.Key_replaceWord;
 import je.panse.doro.main.Enter;
 
 public class Edcaproc {
@@ -18,11 +21,11 @@ public class Edcaproc {
 					Edcaproc.suj_insert(st, "/4PMH");
 				}
 				else if (st.startsWith(">")) {
-					Edcaproc.suj_insert(st, "/5SUJ");
+					Edcaproc.suj_insert(st, "/6OBJ");
 				}
 				else if (st.startsWith("}")) {
 					st = st.substring(1, st.length());
-					Edcaproc.suj_insert(st, "/6OBJ");
+					Edcaproc.suj_insert(st, "/5SUJ");
 				}
 				else if (st.startsWith("#")) {
 					Edcaproc.suj_insert(st, "/8ASS");
@@ -41,6 +44,18 @@ public class Edcaproc {
 
 	public static void suj_insert(String st, String ilocation) throws IOException {
     	String SUJresult = ("\n\t" + st); 
+  	
+		Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
+		Matcher matcher = pattern.matcher(SUJresult);
+		boolean matchFound = matcher.find();
+		if(matchFound) {
+		  System.out.println("Match found");
+		  SUJresult = Key_replaceWord.main(SUJresult);
+		} else {
+		  System.out.println("Match not found");
+		}
+
+    	
 		File_cdrw_proc suj1 = new File_cdrw_proc();
 		suj1.writeliner(Enter.wts + ilocation, SUJresult);
 	}

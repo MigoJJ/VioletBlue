@@ -1,19 +1,10 @@
-C.C.>
-PMHx>------------------------------
-	 ☐ diabetes mellitus	 ☐ HTN	 ☐ dyslipidemia
-	 ☐ Cancer	 ☐ operation	 ☐ thyroid disease
-	 ☐ asthma	 ☐ tuberculosis	 ☐ pneumonia
-	 ☐ chronic/acute hepatitis	 ☐ GERD
-	 ☐ gout	 ☐ arthritis	 ☐ hearing loss
-	 ☐ CVA	 ☐ depression	 ☐ cognitive disorder
-	 ☐ Allergy>
-	 ☐ medication	 ☐ injection/IV	 ☐ food
-	...have been suffered ⯀
-	---------------------------
-	[ v ] No known allergy with any medication
-	2
-	3
-	6
+C.C.>   	Hypertension F/U
+S >
 O >
+	at GDS clinic
+	BP [ 125 / 80 ]mmHg   PR [ 74 ]/min  Regular LSP
 A >
 P >
+	...Patient counseling for more strict control
+	...Continue a low-salt and protein diet and exercise.
+		“Continue with POC.” (plan of care)

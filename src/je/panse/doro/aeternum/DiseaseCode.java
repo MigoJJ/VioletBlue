@@ -2,6 +2,8 @@ package je.panse.doro.aeternum;
 
 import java.io.IOException;
 
+import je.panse.doro.comm.item_administratus.key.Key_replaceWord;
+
 public class DiseaseCode {
 	public String code_select(String dcode) throws IOException {
 	    String cresult = "";
@@ -15,8 +17,7 @@ public class DiseaseCode {
 			case "fto" : cresult =("#  Hypothyroidism F/U");break;
 			case "fnti" : cresult =("#  Non-Thyroidal Illness F/U");break;
 			case "ftep" : cresult =("#  Hyperthyroidism with Pregnancy [   ]  weeks F/U");break;
-			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [    ]  weeks F/U");break;
-					
+			case "ftop" : cresult =("#  Hypothyroidism with Pregnancy [   ]  weeks F/U");break;
 			case "do" : cresult =("#  DM without complications	");break;
 			case "d" : cresult =("#  Diabetes Mellitus	");break;
 
@@ -140,18 +141,20 @@ public class DiseaseCode {
 				case "dir": cresult =("#  Diarrhea");break;
 				case "con": cresult =("#  Constipation");break;
 				case "cov": cresult =("#  COVID-19 PCR (+)");break;
-					case "covc": cresult =("#  COVID-19 PCR (+) with r/o complications");break;
+					case "covc": cresult =("#  s/p COVID-19 PCR (+) without complications [   ]");break;
+					case "covs": cresult =("#  s/p COVID-19 PCR (+) with complications [   ]");break;
+
 				case "ver": cresult =("#  Vertigo");break;
 				case "hea": cresult =("#  Headache");break;
-				case "wei": cresult =("#  Weight loss");break;
-					case "weig": cresult =("#  Weight gain");break;
+				case "wei": cresult =("#  Weight loss [   ] kg");break;
+					case "weig": cresult =("#  Weight gain [   ] kg");break;
 				case "eas": cresult =("#  Easy fatigue");break;
 				case "obe": cresult =("#  Obesity");break;
 					case "obec": cresult =("#  Central Obesity");break;
 				
 				case "gla": cresult =("#  Glaucoma(+)");break;
 				case "cat": cresult =("#  Cataract(+)");break;
-				case "cato": cresult =("#  Cataract operation (+)");break;
+				case "cato": cresult =("#  Cataract operation (+) [   ]");break;
 
 				case "ida": cresult =("#  Iron Deficiency Anemia");break;
 				case "leu": cresult =("#  Leukocytopenia");break;
@@ -176,7 +179,14 @@ public class DiseaseCode {
 				case "pn" : cresult =("#  s/p Pulmonary Nodule");break;
 				case "pt" : cresult =("#  s/p Pulmonary Tuberculosis ");break;
 				case "ntm" : cresult =("#  NTM : Nontuberculous Mycobacterial Pulmonary Disease ");break;
-          
+
+			case "gr" : cresult =("#  GDS RC ");break;
+				case "grr" : cresult =("#  GDSRC Result Consultation");break;
+				case "gg" : cresult =("#  공단검진");break;
+				case "ggr" : cresult =("#  공단검진 결과상담");break;
+				case "go" : cresult =("#  Other clinic RC result");break;
+				case "gor" : cresult =("# Other clinic result consultation");break;	
+				
 			default: System.out.println(" ReInsert disease code please ...  : ");break;
 		}
 		return cresult;
