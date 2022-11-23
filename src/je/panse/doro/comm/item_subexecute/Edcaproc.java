@@ -45,10 +45,10 @@ public class Edcaproc {
 	public static void suj_insert(String st, String ilocation) throws IOException {
     	String SUJresult = ("\n\t" + st); 
   	
-		Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
-		Matcher matcher = pattern.matcher(SUJresult);
-		boolean matchFound = matcher.find();
-		if(matchFound) {
+//		Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
+//		Matcher matcher = pattern.matcher(SUJresult);
+//		boolean matchFound = matcher.find();
+		if(SUJresult.contains("[   ]")) {
 		  System.out.println("Match found");
 		  SUJresult = Key_replaceWord.main(SUJresult);
 		} else {
