@@ -33,6 +33,7 @@ public class Debut {
 						case 31 : callSheet("/knots/hana");break;
 						case 32 : callSheet("/knots/soap");break;
 					case 4 : 
+						       da1.prepare_ChartPlate();
 							File_cw_chart 	rk11 = new File_cw_chart();
 								rk11.deuxnine1();
 								fep.main(Enter.wts + "/ChartPlate");
