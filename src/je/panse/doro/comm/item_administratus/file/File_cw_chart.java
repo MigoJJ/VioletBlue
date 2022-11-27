@@ -51,6 +51,8 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ASS");  
 			  list.add("/9PLAN");
+			  System.out.println("for(String fruit:list) "+ list);
+
 			  for(String fruit:list)  
 			  nu9.rwfiler(Enter.wts + fruit, Enter.wts + "/ChartPlate");
 	}
