@@ -31,7 +31,7 @@ public class File_DirAdmin {
 	public void clear_Directory(String ari) throws Exception {	
 		File fin = new File(ari);
 		File[] finlist = fin.listFiles();       
-	 		for (int n = 0; n < finlist.length; n++) {
+	 		for (int n = 0; n < finlist.length+1; n++) {
 	 			if (finlist[n].isFile()) {
 	 				System.gc();
 	 				Thread.sleep(10);
