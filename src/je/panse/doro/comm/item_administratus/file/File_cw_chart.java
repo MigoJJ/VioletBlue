@@ -34,7 +34,10 @@ public class File_cw_chart {
 			  list.add("/7LAB");  
 			  list.add("/8ASS");  
 			  list.add("/9PLAN");
+//			  list.add("");
+			  System.out.println("for(String fruit:list) "+ list);
 			  for(String fruit:list)  
+				  				  			  
 			  nu1.copyfiler(Enter.wt + laname +fruit, Enter.wts + fruit);
    }
 	// --------------------------------------------Write Files To Chart	
