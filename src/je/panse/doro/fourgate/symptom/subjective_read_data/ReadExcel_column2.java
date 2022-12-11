@@ -40,7 +40,7 @@ public class ReadExcel_column2 {
                 	printIndex(cellData,j);
                 }
              }
-             System.out.println("-----------\n");
+             System.out.println("-----------");
              choiceIndex(lastRowIndex,colNo,sheetNo);
              workbook.close();
 	    fis.close();
@@ -57,19 +57,19 @@ public class ReadExcel_column2 {
 		String textPath = (Enter.wts + "/5SUJ");
 		File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 		try(Scanner sc = new Scanner(System.in)) {
+			System.out.println("..........inset the number & QUIT <enter> ");
 			String inputNo = "JJ";
-			while(!(inputNo = sc.nextLine()).equals("")) {
-				System.out.println("\n........... inset the number ...> ");
+						while(!(inputNo = sc.nextLine()).equals("")) {
 				int number = (Integer.parseInt(inputNo));
 				if (number < lri) {
 					Cell returenedSympt1= (ReadExcel_cell.main(sno,cno,number));
 					String returenedSympt=returenedSympt1.toString();
 				
 					 if (inputNo.startsWith("0")) {
-						 System.out.print( "\t☐ " +returenedSympt+"\n");
+						 System.out.print( "\t☐ " +returenedSympt);
 						 fcp1.writeliner(Enter.wts + "/5SUJ", "\t☐ " +returenedSympt);
 					 }else{
-						 System.out.print( "\t√ " + returenedSympt +"\n");
+						 System.out.print( "\t√ " + returenedSympt);
 						 fcp1.writeliner(Enter.wts + "/5SUJ", "\t√ " +returenedSympt);
 					 }
 				}
