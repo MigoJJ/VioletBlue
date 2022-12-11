@@ -7,16 +7,18 @@ import je.panse.doro.comm.item_administratus.file.File_DirAdmin;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.file.File_editor_proc;
+import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.key.Key_Press_Any;
 import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.hito.Newcategory;
 
 public class Debut {
-	File_DirAdmin	da1 = new File_DirAdmin();
+	File_DirAdmin		da1 = new File_DirAdmin();
 	File_cw_chart 	fcw = new File_cw_chart();
 	File_editor_proc	fep = new File_editor_proc();
 	Enter				en1 = new Enter();
 	Newcategory 		nc1 = new Newcategory();
+
 	public void main(String args) throws Exception {
 		try(Scanner case_code = new Scanner(System.in)) {
 			while (true) {
@@ -33,13 +35,20 @@ public class Debut {
 						case 31 : callSheet("/knots/hana");break;
 						case 32 : callSheet("/knots/soap");break;
 					case 4 : 
-						       da1.prepare_ChartPlate();
-							File_cw_chart 	rk11 = new File_cw_chart();
-								rk11.deuxnine1();
-								fep.main(Enter.wts + "/ChartPlate");
+							da1.prepare_ChartPlate();
+							fcw.deuxnine1();
+							fep.main(Enter.wts + "/ChartPlate");
 							Menu_list.main(Enter.wtsi + "/ChartPopUpMenu");
-								nc1.main(null);  	
+							nc1.main(null);  	
 							break; 
+					case 5 : 
+					       da1.prepare_ChartPlate();
+							fcw.callchartlist("/knots/soap");
+							select_code = 999;
+							Key_Iwbb Iwbb = new Key_Iwbb();
+							Iwbb.Key_Iwbb_Page(select_code);
+						
+						break; 
 					default :
 						Key_shortcut.main(select_code);
 				}
