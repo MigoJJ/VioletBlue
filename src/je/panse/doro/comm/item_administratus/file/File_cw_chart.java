@@ -14,7 +14,7 @@ public class File_cw_chart {
 			nc5.writechart();
 			nc5.chartbackup();
 	}
-	public void deuxnine1() throws IOException {
+	public void deuxnine1() throws IOException, InterruptedException {
 		File_cw_chart nc5 = new File_cw_chart();
 			nc5.cleanChartPlate();
 			nc5.writechart();

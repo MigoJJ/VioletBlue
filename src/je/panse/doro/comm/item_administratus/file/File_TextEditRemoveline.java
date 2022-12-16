@@ -18,6 +18,10 @@ public class File_TextEditRemoveline {
 	}
 
 	public static void deleteEmptyLine() {
+		
+		System.out.println("deleteEmptyline enter ---");
+
+		
 		final String EMPTY_STRING = "";
 		Scanner file;
 		PrintWriter writer;
@@ -47,6 +51,10 @@ public class File_TextEditRemoveline {
 		file2.renameTo(file1);
 	}
 	public static void deletesopa(String readf) throws IOException {
+		
+		System.out.println("deletesoap enter ---");
+
+		
 		try{
 			File textDirName = new File(readf); 
 			Scanner myReader = new Scanner(textDirName);
