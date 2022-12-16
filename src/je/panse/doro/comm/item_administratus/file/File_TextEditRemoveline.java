@@ -12,6 +12,9 @@ public class File_TextEditRemoveline {
 		File_TextEditRemoveline.deleteEmptyLine();
 		File_TextEditRemoveline.renameFiles();
 		File_TextEditRemoveline.deletesopa(chartplate);
+		File_TextEditRemoveline.renameFiles();
+		File_TextEditRemoveline.deleteEmptyLine();
+		File_TextEditRemoveline.renameFiles();
 	}
 
 	public static void deleteEmptyLine() {
@@ -57,12 +60,13 @@ public class File_TextEditRemoveline {
 					adata = adata.replace("A >\nP >", "\nP >");
 //					adata = adata.replace("P >", "\n");
 					adata = adata+"\n";
-					File_cdrw_proc.writeliner(adata,chartemp);
-			}					
+					
+			}		
+			File_cdrw_proc.writeliner(chartemp, adata);
 			System.out.println(adata);
 			myReader.close();
 
-			File_TextEditRemoveline.renameFiles();
+//			File_TextEditRemoveline.renameFiles();
 		
 		}catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");
