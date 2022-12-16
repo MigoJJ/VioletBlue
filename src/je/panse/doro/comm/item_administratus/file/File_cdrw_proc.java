@@ -72,7 +72,7 @@ public class File_cdrw_proc   {
 	    }
 	}
 //----------------------------------------------------
-	public void writeliner(String writef, String writed) throws IOException {
+	public static void writeliner(String writef, String writed) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
 	      myWriter.write(writed+ "\n");
