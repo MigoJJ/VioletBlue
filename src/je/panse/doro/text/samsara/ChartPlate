@@ -1,9 +1,4 @@
-C.C.>   P.I. >
-	test
-O >
-	Height(cm)	Weight(kg)	BMI	Waist
-	-------------------------------------------
-	156.0		56.0		23.0	69
-A >
-	#  Hypercholesterolemia
 P >
+	...Follow-up in the clinic in [ 3.0 ]-month
+	...now [ well ] treated with current medication
+	   continue with current dosages of meds
