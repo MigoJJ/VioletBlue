@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
-public class File_TextEditRemoveline {
+public class File_TextEditRemoveline2 {
 	final static String chartplate = (Enter.wd + "/text/samsara/ChartPlate");
 	final static String chartemp = (Enter.wd + "/text/samsara/ChartPlate.tmp");
 	
@@ -12,12 +12,12 @@ public class File_TextEditRemoveline {
 		
 		System.out.println("deleteEmptyline main enter ---");
 		
-		File_TextEditRemoveline.deleteEmptyLine();
-		File_TextEditRemoveline.renameFiles();
-		File_TextEditRemoveline.deletesopa(chartplate);
-		File_TextEditRemoveline.renameFiles();
-		File_TextEditRemoveline.deleteEmptyLine();
-		File_TextEditRemoveline.renameFiles();
+		File_TextEditRemoveline2.deleteEmptyLine();
+		File_TextEditRemoveline2.renameFiles();
+		File_TextEditRemoveline2.deletesopa(chartplate);
+		File_TextEditRemoveline2.renameFiles();
+		File_TextEditRemoveline2.deleteEmptyLine();
+		File_TextEditRemoveline2.renameFiles();
 	}
 
 	public static void deleteEmptyLine() {

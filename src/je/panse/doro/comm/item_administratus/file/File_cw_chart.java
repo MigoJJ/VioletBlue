@@ -19,8 +19,10 @@ public class File_cw_chart {
 			nc5.cleanChartPlate();
 			nc5.writechart();
 			nc5.chartbackup();
-			File_TextEditRemoveline terl =new File_TextEditRemoveline();
+
+			File_TextEditRemoveline terl = new File_TextEditRemoveline();
 			terl.main(null);
+			
 			Key_clipboard_cp.main(null);		
 	}
 	// -------------------------------------------Form Files Copying
