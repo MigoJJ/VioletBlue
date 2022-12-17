@@ -9,9 +9,6 @@ public class File_TextEditRemoveline {
 	final static String chartemp = (Enter.wd + "/text/samsara/ChartPlate.tmp");
 	
 	public void main(String args[]) throws IOException {
-		
-		System.out.println("deleteEmptyline main enter ---");
-		
 		File_TextEditRemoveline.deleteEmptyLine();
 		File_TextEditRemoveline.renameFiles();
 		File_TextEditRemoveline.deletesopa(chartplate);
@@ -21,9 +18,6 @@ public class File_TextEditRemoveline {
 	}
 
 	public static void deleteEmptyLine() {
-		
-		System.out.println("deleteEmptyline enter ---");
-		
 		final String EMPTY_STRING = "";
 		Scanner file;
 		PrintWriter writer;
@@ -53,10 +47,6 @@ public class File_TextEditRemoveline {
 		file2.renameTo(file1);
 	}
 	public static void deletesopa(String readf) throws IOException {
-		
-		System.out.println("deletesoap enter ---");
-
-		
 		try{
 			File textDirName = new File(readf); 
 			Scanner myReader = new Scanner(textDirName);
