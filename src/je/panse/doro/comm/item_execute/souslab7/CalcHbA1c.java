@@ -1,6 +1,8 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.util.Scanner;	
+import java.util.Scanner;
+
+import add_strings.Add_date;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
@@ -23,9 +25,8 @@ public class CalcHbA1c {
 	        else {FP = ("PP"+ Fbspp2);}
 	        
 	        if (HbA1c == 0) {
-		        String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl");
-
-			    fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
+				String Gluresult = ("\t" + FP + "  [ " + Glucose +  " ] mg/dl");
+				fcp1.writeliner(Enter.wts + "/7LAB", Gluresult);
 			}
     		else {
 				double IFCC = ((HbA1c-2.152)/0.09148);
@@ -44,6 +45,7 @@ public class CalcHbA1c {
 		    	fcp1.writeliner(Enter.wts + "/7LAB", "\t\tHbA1c-eAG  : [ " + sg + " / " 
 		    	             + sm + " ]...mg/dl...mmol/l");
     		}
+			fcp1.writeliner(Enter.wts + "/6OBJ","\t"+ Add_date.main("h") +"\n");
 			fcp1.readfiler(Enter.wtss + "/7LAB_List");
 			New7LAB nc1 = new New7LAB();
 			nc1.main(null);

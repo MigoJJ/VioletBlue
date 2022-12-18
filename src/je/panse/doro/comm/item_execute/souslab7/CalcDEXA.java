@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
+import add_strings.Add_date;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.hito.Itemcategory;
@@ -65,22 +66,22 @@ public class CalcDEXA {
 	// --------------------------------
 	void calc_z(double zt_score) throws Exception {
 	     if (zt_score <= -2.0) {
-			    print_z(zt_score,"Z-score", "\t#   연령기대치이하  #");}
+			    print_z(zt_score,"Z-score", "\t# 연령기대치이하 #");}
 	     else {print_z(zt_score,"Z-score","\t#  정상   #");}
 	}
 	// --------------------------------
 	void calc_z(double zt_score, String fracture) throws Exception {
 	     if(fracture.equals("y") && zt_score <= -2.5) {
-			    print_z(zt_score,"T-score","\t#  Severe Osteoporosis   #");
+			    print_z(zt_score,"T-score","\t# Severe Osteoporosis #");
 	     }
 	     else if(fracture.equals("n") && zt_score <= -2.5) {
-			    print_z(zt_score,"T-score","\t#  Osteoporosis   #");
+			    print_z(zt_score,"T-score","\t# Osteoporosis #");
 	     }
 	     else if(zt_score > -2.5  && zt_score <= -1.0) {
-	    	     print_z(zt_score,"T_score","\t#  Osteopenia   #");
+	    	     print_z(zt_score,"T_score","\t# Osteopenia #");
 	     }
 	     else if(zt_score > -1.0) {
-			    print_z(zt_score,"T-score","\t#  Normal Bone Mineral Density   #");
+			    print_z(zt_score,"T-score","\t# Normal Bone Mineral Density #");
 	     }
 	     else {
 	     }
@@ -91,13 +92,14 @@ public class CalcDEXA {
 		    System.out.println("\n\t골밀도 검사 결과   " + zt +  " :  " + zt_score + " 입니다.");
 		    
 		    System.out.println(result_z);
-			String result_zt_score = ("\n\tⓓ DEXA " + zt +  " :  " + zt_score);
+			String result_zt_score = ("\n\tⓓ DEXA " + zt +  " : [ " + zt_score + " ]");
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/6OBJ", result_z);
+//			fcp1.writeliner(Enter.wts + "/6OBJ", result_z +"[ " + Add_date.main("d")+" ]");
 			fcp1.writeliner(Enter.wts + "/8ASS", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/8ASS", result_z);
+			fcp1.writeliner(Enter.wts + "/8ASS", result_z +"[ " + Add_date.main("d")+" ]");
+			
 	}
 // ---------
 }
