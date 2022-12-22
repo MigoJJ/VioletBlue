@@ -2,7 +2,7 @@ package je.panse.doro.hito;
 
 import java.util.Scanner;
 
-import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
+import je.panse.doro.comm.item_administratus.key.ClearConsoleScreen;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.*;

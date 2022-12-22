@@ -3,9 +3,9 @@ package je.panse.doro.fourgate.thyroid.pregnancy;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
+import je.panse.doro.comm.item_administratus.key.ClearConsoleScreen;
 import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.main.Enter;
 
