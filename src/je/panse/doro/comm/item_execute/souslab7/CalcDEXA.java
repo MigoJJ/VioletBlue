@@ -2,7 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
-import add_strings.Add_date;
+import add_strings.CurrentDateAdd_date;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.hito.Itemcategory;
@@ -98,7 +98,7 @@ public class CalcDEXA {
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
 //			fcp1.writeliner(Enter.wts + "/6OBJ", result_z +"[ " + Add_date.main("d")+" ]");
 			fcp1.writeliner(Enter.wts + "/8ASS", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/8ASS", result_z +"[ " + Add_date.main("d")+" ]");
+			fcp1.writeliner(Enter.wts + "/8ASS", result_z +"[ " + CurrentDateAdd_date.main("d")+" ]");
 			
 	}
 // ---------

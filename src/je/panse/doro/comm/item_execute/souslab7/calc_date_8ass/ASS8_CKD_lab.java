@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.souslab7.calc_date_8ass;
 
-import add_strings.Add_date;
+import add_strings.CurrentDateAdd_date;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class ASS8_CKD_lab {
@@ -11,8 +11,8 @@ public class ASS8_CKD_lab {
 		rReGFR[0] = rReGFR[0].trim();
 		
 		String RCKD =  ("# DM nephropathy evlaution "
-				+ "[ CKD "+rRACreatio[0]+" "+ rReGFR[0]+" : "+ Add_date.main("m")+" ]");
-		System.out.printf("[ CKD %s %s : %s ]",rRACreatio[0], rReGFR[0], Add_date.main("m"));
+				+ "[ CKD "+rRACreatio[0]+" "+ rReGFR[0]+" : "+ CurrentDateAdd_date.main("m")+" ]");
+		System.out.printf("[ CKD %s %s : %s ]",rRACreatio[0], rReGFR[0], CurrentDateAdd_date.main("m"));
 		Edcamain.main(RCKD,"/8ASS");
 	}
 }

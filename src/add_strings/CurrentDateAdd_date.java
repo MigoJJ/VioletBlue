@@ -3,7 +3,7 @@ package add_strings;
 import java.util.*;		
 import java.text.*;
 
-public class Add_date {
+public class CurrentDateAdd_date {
 	public static String save_time;
 
 	public String defineTime(String df) {
@@ -29,7 +29,7 @@ public class Add_date {
 
 	public static String main(String args) {
 		String dateinput = args;
-		Add_date add_date = new Add_date();
+		CurrentDateAdd_date add_date = new CurrentDateAdd_date();
 		String rcd = add_date.defineTime(dateinput);
 		System.out.println("Returned Current Date: " + rcd);		
 	   return rcd;
