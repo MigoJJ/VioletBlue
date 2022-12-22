@@ -1,4 +1,4 @@
-package add_strings;
+package je.panse.doro.comm.item_administratus;
 
 import java.util.*;		
 import java.text.*;

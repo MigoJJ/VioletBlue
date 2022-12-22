@@ -2,7 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
-import add_strings.CurrentDateAdd_date;
+import je.panse.doro.comm.item_administratus.CurrentDateAdd_date;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;

@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.souslab7.calc_date_8ass;
 
-import add_strings.CurrentDateAdd_date;
+import je.panse.doro.comm.item_administratus.CurrentDateAdd_date;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 
 public class ASS8_CKD_lab {
