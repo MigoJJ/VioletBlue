@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
-import je.panse.doro.comm.item_administratus.key.ClearConsoleScreen;
+import je.panse.doro.comm.item_administratus.key.Key_ClearConsoleScreen;
 import je.panse.doro.fourgate.thyroid.ThyroidEnter;
 import je.panse.doro.main.Enter;
 
 public class Pregnancymain {
 	public static void main(String[] args) throws Exception {
-		ClearConsoleScreen ccs = new ClearConsoleScreen();
+		Key_ClearConsoleScreen ccs = new Key_ClearConsoleScreen();
 		ccs.main(null);
 		ArrayList<String> thypreg = new ArrayList<String>();
 		try {
