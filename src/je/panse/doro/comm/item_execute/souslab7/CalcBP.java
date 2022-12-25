@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
+import je.panse.doro.comm.item_administratus.CurrentDateAdd_date;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_execute.souslab7.CalcBMI.bmi;
@@ -28,11 +29,10 @@ public class CalcBP {
 			bp1.DBP = input.nextInt();
 			bp1.PR = input.nextInt();
 			//        input.close();
-			
-		   bp1.BPresult = String.format("\tat GDS clinic\n\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
-
+			bp1.BPresult = String.format("\tBP [ %d / %d ]mmHg   PR [ %d ]/min  Regular LSP", bp1.SBP,bp1.DBP,bp1.PR);
+		   fcp1.writeliner(Enter.wts + "/6OBJ","\tat GDS clinic\t"+ CurrentDateAdd_date.main("") +"\n");
 		   fcp1.writeliner(Enter.wts + "/6OBJ", bp1.BPresult  + "\n");
-			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
+		   fcp1.readfiler(Enter.wtss + "/6OBJ_List");
 			New6OBJ.main(null);
 		} catch (NumberFormatException e) {
 		e.printStackTrace();

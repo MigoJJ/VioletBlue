@@ -43,7 +43,7 @@ class bmi{
 	   String Bresult = ("\t" + rh +"\t\t" + rw + "\t\t" + rB + "\t" + rwa);
 	   File_cdrw_proc fcp1 = new File_cdrw_proc();
 		fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
-		fcp1.writeliner(Enter.wts + "/7LAB", "\t-------------------------------------------");
+		fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------Ⓑ");
 		fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
 		//				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
 		if (skeys == "Itemcategorykey") {

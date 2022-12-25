@@ -3,15 +3,15 @@ package je.panse.doro.comm.item_execute.souslab7;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import je.panse.doro.comm.item_administratus.ClearConsoleScreen;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.comm.item_administratus.key.Key_ClearConsoleScreen;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
 
 public class CalcGOT {
 
 	public static void main(String string) {
-		ClearConsoleScreen ccs = new ClearConsoleScreen();
+		Key_ClearConsoleScreen ccs = new Key_ClearConsoleScreen();
 		ccs.main(null);
 
 		ArrayList<String> gotgpt = new ArrayList<String>();

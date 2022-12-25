@@ -15,6 +15,9 @@ public class File_TextEditRemoveline {
 		File_TextEditRemoveline.renameFiles();
 		File_TextEditRemoveline.deleteEmptyLine();
 		File_TextEditRemoveline.renameFiles();
+		
+		File_TextDeleteDuplicate.main(chartplate,chartemp);
+		File_TextEditRemoveline.renameFiles();
 	}
 
 	public static void deleteEmptyLine() {
