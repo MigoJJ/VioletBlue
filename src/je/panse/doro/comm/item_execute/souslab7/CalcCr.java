@@ -57,7 +57,7 @@ public class CalcCr {
        Crresult = ("\t" + Cr +"\t\t" + eGFR + "\t\t" + ACratio);
 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", Crresultheadline);
-				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
+				fcp1.writeliner(Enter.wts + "/7LAB", "\tⒸⓇ--------------------------------------------");
 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + Crresult + "\n\t" + RACratio + "\n\t" + ReGFR  + "\n");
 
 				ASS8_CKD_lab.main(RACratio, ReGFR);

@@ -43,7 +43,7 @@ public class CalcTFT2 {
 		 			File_cdrw_proc fcp1 = new File_cdrw_proc();
 		 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTheadline);
 		 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" +TFTreferval);
-		 				fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
+		 				fcp1.writeliner(Enter.wts + "/7LAB", "\tⓉⓉ---------------------------------------------");
 		 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + tftresult + "\n");
 				
 			System.out.print("*****Input Auto antibodies ? [  y/n  ] : ");

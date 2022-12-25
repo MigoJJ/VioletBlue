@@ -69,7 +69,7 @@ public class CalcCBC {
 	       String CBCresult = (Hb +"\t\t" + WBC + "\t\t" + Plt);
 				File_cdrw_proc fcp2 = new File_cdrw_proc();
 					fcp2.writeliner(Enter.wts + "/7LAB", CBCheadline);
-					fcp2.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------------------");
+					fcp2.writeliner(Enter.wts + "/7LAB", "\tⒸ----------------------------------------------");
 					fcp2.writeliner(Enter.wts + "/7LAB", "\t" + CBCresult);
 									
 		}
