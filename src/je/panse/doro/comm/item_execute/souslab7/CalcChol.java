@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
+import je.panse.doro.comm.item_administratus.CurrentDateAdd_date;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
@@ -30,20 +31,17 @@ public class CalcChol {
 	        int LDL = input.nextInt();
   		
 	//      input.close();
-	        String Cholresult = ("\tTC-HDL-TG-LDL     [  " 
-	        + TC + " - " + HDL + " - " + TG + " - " + LDL +  "  ] mg/dL\n" );
+	        String Cresult = "\t [ "+ + TC +  "-" + HDL + " - " + TG +  "-" + LDL +" ]";
+	        String Cholresult = ("\tTC-HDL-TG-LDL : " +Cresult + " mg/dL\n" );
 	                
 	        System.out.println(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult  + "\n");
-				if (skeys == "Itemcategorykey") {
-					fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
+				fcp1.writeliner(Enter.wts + "/8ASS", "\t"+ Cresult +"\t"+ CurrentDateAdd_date.main("m")+" ]");
+
 					fcp1.readfiler(Enter.wtss + "/7LAB_List");
 					New7LAB nc1 = new New7LAB();
 					nc1.main(null);
-				}
+
     	} catch (NumberFormatException e) {
 		e.printStackTrace();
 		}

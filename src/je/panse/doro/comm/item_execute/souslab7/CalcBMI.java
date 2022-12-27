@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7;
 
 import java.util.Scanner;
 
+import je.panse.doro.comm.item_administratus.CurrentDateAdd_date;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
@@ -45,7 +46,7 @@ class bmi{
 		fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
 		fcp1.writeliner(Enter.wts + "/7LAB", "\t-----------------------------------Ⓑ");
 		fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
-		//				fcp1.writeliner(Enter.wts + "/6OBJ", "  " + rh + "\t\t" + rw + "\t\t" + rB + "\t" +rwa);
+		fcp1.writeliner(Enter.wts + "/8ASS", "\t# Obesity BMI : [ " + rB+"\t"+ CurrentDateAdd_date.main("m")+" ]");
 		if (skeys == "Itemcategorykey") {
 			fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
 			Itemcategory.main(null);
@@ -64,6 +65,8 @@ class bmi{
 				fcp1.writeliner(Enter.wts + "/7LAB", BMIheadline);
 				fcp1.writeliner(Enter.wts + "/7LAB", "\t"+ dliner);
 				fcp1.writeliner(Enter.wts + "/7LAB", Bresult + "\n");
+				fcp1.writeliner(Enter.wts + "/8ASS", "\t# Obesity BMI : [ " + rB+"\t"+ CurrentDateAdd_date.main("m")+" ]");
+
 		if (skeys == "Itemcategorykey") {
 			fcp1.readfiler(Enter.wtsi + "/ItemMenu");
 			Itemcategory.main(null);
