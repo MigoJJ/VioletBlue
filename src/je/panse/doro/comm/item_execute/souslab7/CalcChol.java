@@ -31,12 +31,12 @@ public class CalcChol {
 	        int LDL = input.nextInt();
   		
 	//      input.close();
-	        String Cresult = "\t [ "+ + TC +  "-" + HDL + " - " + TG +  "-" + LDL +" ]";
+	        String Cresult = "\t[ "+ + TC +  "-" + HDL + " -" + TG +  "-" + LDL +" ]";
 	        String Cholresult = ("\tTC-HDL-TG-LDL : " +Cresult + " mg/dL\n" );
 	                
 	        System.out.println(Cholresult);
 				fcp1.writeliner(Enter.wts + "/7LAB", Cholresult  + "\n");
-				fcp1.writeliner(Enter.wts + "/8ASS", "\t"+ Cresult +"\t"+ CurrentDateAdd_date.main("m")+" ]");
+				fcp1.writeliner(Enter.wts + "/8ASS", "\t#  Lipid battery : "+ Cresult +""+ CurrentDateAdd_date.main("m"));
 
 					fcp1.readfiler(Enter.wtss + "/7LAB_List");
 					New7LAB nc1 = new New7LAB();
