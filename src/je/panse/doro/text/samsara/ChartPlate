@@ -1,5 +1,8 @@
 O >
-	T3 (ug/dL)  free T-4 (ug/dl)  TSH (mIU/ml)
-	-----------------------------------Ⓣ
-	1.0		2.0 ⮟		3.0
+	Hb (g/dl)   WBC (cells/L)  Platelet (billion/L)
+	-----------------------------------
+	12.5		3000		25
+A >
+	# Leukocytopenia : [ 3000	2022.12 ]
+	# Thrombocytopenia : [ 25	2022.12 ]
 P >
