@@ -36,8 +36,7 @@ public class New3CC {
 			if (bint == 99 | bint >= 1964) {
 				simplecc(bint);
 				dn1.deuxnine();
-				Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
-				cc1.main(null); 	
+				quit_toNewcategory(b);
 			}
 			System.out.println(">>>----- Enter year/month/day:>>>");
 			c = s.nextLine();
