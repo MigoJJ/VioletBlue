@@ -30,12 +30,7 @@ public class New3CC {
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
 			quit_toNewcategory(b);
-			if (b == "99") {
-				int bint = Integer.parseInt(b);
-				simplecc(bint);
-				dn1.deuxnine();
-				quit_toNewcategory(b);
-			}
+			
 			System.out.println(">>>----- Enter year/month/day:>>>");
 			c = s.nextLine();
 				yymmdd(c);
@@ -121,7 +116,7 @@ public class New3CC {
 	
 	static void quit_toNewcategory (String str) throws Exception {
 		str = (str.trim());
-		if(a.equals("")){
+		if(str.equals("")){
 			Key_returnquit krq = new Key_returnquit();
 			krq.mainquit(a);
 		}
