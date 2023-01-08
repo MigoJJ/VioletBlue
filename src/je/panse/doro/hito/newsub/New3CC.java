@@ -18,21 +18,20 @@ public class New3CC {
 	New3PI      	cc2 = new New3PI(); 
 	
 	public void main(String[] args) throws Exception {
+		
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.println("\n\n>>>>>> Enter chief complain :>>>");
 			a = s.nextLine();
-			a = (a.trim());
-			if(a.equals("")){
-				Key_returnquit krq = new Key_returnquit();
-				krq.mainquit(a);
-			}
+			quit_toNewcategory(a);
 			
 			if (a.startsWith(":")) {
 				Edcamain.main(a,"/3CC");
 			}	
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
+			quit_toNewcategory(b);
 			Integer bint = Integer.valueOf(b);
+
 			
 			if (bint == 99 | bint >= 1964) {
 				simplecc(bint);
@@ -120,6 +119,14 @@ public class New3CC {
 //			fcp.writeliner(Enter.wts + "/8ASS", chartline3);
 		}
 		else {
+		}
+	}
+	
+	static void quit_toNewcategory (String str) throws Exception {
+		str = (str.trim());
+		if(a.equals("")){
+			Key_returnquit krq = new Key_returnquit();
+			krq.mainquit(a);
 		}
 	}
 //------------------------------------------------
