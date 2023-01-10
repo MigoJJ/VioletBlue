@@ -6,6 +6,7 @@ import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.key.Key_returnquit;
+import je.panse.doro.comm.item_administratus.loop.Loop_strintCheck;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
@@ -18,28 +19,30 @@ public class New3CC {
 	New3PI      	cc2 = new New3PI(); 
 	
 	public void main(String[] args) throws Exception {
+		
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.println("\n\n>>>>>> Enter chief complain :>>>");
 			a = s.nextLine();
-			a = (a.trim());
-			if(a.equals("")){
-				Key_returnquit krq = new Key_returnquit();
-				krq.mainquit(a);
-			}
+			quit_toNewcategory(a);
 			
 			if (a.startsWith(":")) {
 				Edcamain.main(a,"/3CC");
 			}	
+			
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
-			Integer bint = Integer.valueOf(b);
-			
-			if (bint == 99 | bint >= 1964) {
-				simplecc(bint);
-				dn1.deuxnine();
-				Menu_list.main(Enter.wtsi + "/ChartPopUpMenu"); 
-				cc1.main(null); 	
+			boolean strint = Loop_strintCheck.main(b);
+			if (strint != false) {
+				int intb = Integer.parseInt(b);
+				simplecc(intb);
+			}else {
+				simplecc(b);
+				cc2.main(null);
 			}
+			
+			
+			quit_toNewcategory(b);
+			
 			System.out.println(">>>----- Enter year/month/day:>>>");
 			c = s.nextLine();
 				yymmdd(c);
@@ -89,7 +92,7 @@ public class New3CC {
 			case "g": case "ㅎ":  f = "-- Good";			    break;
 			case "f": case "ㄹ":  f = "-- Fair";			    break;  
 			case "p": case "ㅔ":  f = "-- Poor";			    break;  
-			default :   c = " uncertain ... please check  !!";
+			default :   c = " uncertain ...please check!!";
 		}
 //		chartline1 = "\tGeneral state :  " + f + "  (no any significant status )";
 		chartline1 = "\tGeneral state :  " + f + "  ";
@@ -120,6 +123,18 @@ public class New3CC {
 //			fcp.writeliner(Enter.wts + "/8ASS", chartline3);
 		}
 		else {
+		}
+	}
+	
+	void simplecc(String bint) throws IOException {
+		String chartline5 = ("\t" + b);
+		fcp.writeliner(Enter.wts + "/3CC", chartline5);
+	}
+	static void quit_toNewcategory (String str) throws Exception {
+		str = (str.trim());
+		if(str.equals("")){
+			Key_returnquit krq = new Key_returnquit();
+			krq.mainquit(a);
 		}
 	}
 //------------------------------------------------
