@@ -28,9 +28,10 @@ public class New3CC {
 			if (a.startsWith(":")) {
 				Edcamain.main(a,"/3CC");
 			}	
+			
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
-			boolean strint =Loop_strintCheck.main(b);
+			boolean strint = Loop_strintCheck.main(b);
 			if (strint != false) {
 				int intb = Integer.parseInt(b);
 				simplecc(intb);
