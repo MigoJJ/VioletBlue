@@ -6,6 +6,7 @@ import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.key.Key_returnquit;
+import je.panse.doro.comm.item_administratus.loop.Loop_strintCheck;
 import je.panse.doro.comm.item_subexecute.Edcamain;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.main.Enter;  
@@ -29,6 +30,16 @@ public class New3CC {
 			}	
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
+			boolean strint =Loop_strintCheck.main(b);
+			if (strint != false) {
+				int intb = Integer.parseInt(b);
+				simplecc(intb);
+			}else {
+				simplecc(b);
+				cc2.main(null);
+			}
+			
+			
 			quit_toNewcategory(b);
 			
 			System.out.println(">>>----- Enter year/month/day:>>>");
@@ -114,6 +125,10 @@ public class New3CC {
 		}
 	}
 	
+	void simplecc(String bint) throws IOException {
+		String chartline5 = ("\t" + b);
+		fcp.writeliner(Enter.wts + "/3CC", chartline5);
+	}
 	static void quit_toNewcategory (String str) throws Exception {
 		str = (str.trim());
 		if(str.equals("")){
