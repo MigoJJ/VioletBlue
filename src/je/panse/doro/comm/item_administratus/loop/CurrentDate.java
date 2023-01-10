@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_administratus;
+package je.panse.doro.comm.item_administratus.loop;
 
 import java.util.*;		
 import java.text.*;
