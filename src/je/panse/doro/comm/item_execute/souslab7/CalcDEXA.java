@@ -87,7 +87,7 @@ public class CalcDEXA {
 		    
 		    File_cdrw_proc fcp1 = new File_cdrw_proc();
 			fcp1.writeliner(Enter.wts + "/6OBJ", result_zt_score);
-			fcp1.writeliner(Enter.wts + "/8ASS", result_zt_score +"[ " + CurrentDateAdd_date.main("d")+" ]");
+			fcp1.writeliner(Enter.wts + "/8ASS", result_z + result_zt_score +"[ " + CurrentDateAdd_date.main("d")+" ]");
 			
 	}
 // ---------
