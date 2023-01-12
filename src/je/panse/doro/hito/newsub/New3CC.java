@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 	
-import java.io.IOException;	
+import java.io.IOException;		
 import java.util.Scanner;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
@@ -19,16 +19,13 @@ public class New3CC {
 	New3PI      	cc2 = new New3PI(); 
 	
 	public void main(String[] args) throws Exception {
-		
 		try (Scanner s = new Scanner(System.in)) {
 			System.out.println("\n\n>>>>>> Enter chief complain :>>>");
 			a = s.nextLine();
 			quit_toNewcategory(a);
-			
 			if (a.startsWith(":")) {
 				Edcamain.main(a,"/3CC");
 			}	
-			
 			System.out.println(">>>----- Enter duration:>>>");
 			b = s.nextLine();
 			boolean strint = Loop_strintCheck.main(b);
@@ -39,10 +36,7 @@ public class New3CC {
 				simplecc(b);
 				cc2.main(null);
 			}
-			
-			
 			quit_toNewcategory(b);
-			
 			System.out.println(">>>----- Enter year/month/day:>>>");
 			c = s.nextLine();
 				yymmdd(c);
@@ -60,7 +54,6 @@ public class New3CC {
 			dn1.deuxnine();
 			Menu_list.main(Enter.wt + "/singlebeam/ChartPopUpMenu");
 			cc1.main(null);
-			
 		}catch (IOException e) {
 		e.printStackTrace();
 		}
@@ -75,7 +68,6 @@ public class New3CC {
 			case "d": case "ㅇ":  c = " day-ago";			    break;  
 			default :   c = " uncertain ... please check  !!";
 		}
-		
 		if (a.startsWith(":")) {
 			chartline = "\t(onset " + b + c + ")";
 		}
@@ -125,7 +117,6 @@ public class New3CC {
 		else {
 		}
 	}
-	
 	void simplecc(String bint) throws IOException {
 		String chartline5 = ("\t" + b);
 		fcp.writeliner(Enter.wts + "/3CC", chartline5);
