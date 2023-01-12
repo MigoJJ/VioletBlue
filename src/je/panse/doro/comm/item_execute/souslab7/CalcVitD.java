@@ -1,10 +1,9 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.loop.CurrentDateAdd_date;
-import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New7LAB;
 import je.panse.doro.main.Enter;
@@ -21,16 +20,9 @@ public class CalcVitD {
 	        File_cdrw_proc fcp1 = new File_cdrw_proc();
 				fcp1.writeliner(Enter.wts + "/7LAB", VitDresult);
 				fcp1.writeliner(Enter.wts + "/8ASS", VitDresult + " [ " + CurrentDateAdd_date.main("m")+" ]");
-
-			       if (skeys == "Itemcategorykey") {
-						fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
-						Itemcategory.main(null);
-					}
-					else {
 						fcp1.readfiler(Enter.wtss + "/7LAB_List");
 						New7LAB nc1 = new New7LAB();
 						nc1.main(null);
-					}
 			
 			} catch (NumberFormatException e) {
 			e.printStackTrace();

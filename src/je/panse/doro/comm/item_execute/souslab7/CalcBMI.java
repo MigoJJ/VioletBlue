@@ -1,13 +1,12 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.io.IOException;
+import java.io.IOException;	
 import java.util.Scanner;
 
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.loop.CurrentDateAdd_date;
-import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
@@ -51,7 +50,7 @@ public class CalcBMI {
 			else if (BMI >= 18.5 & BMI < 25) {bmicategory ="Healthy Weight";}
 			else if (BMI >= 25 & BMI < 30) {bmicategory ="Overweight Weight";}
 			else if (BMI >= 30) {bmicategory ="Obesity";}
-			fcp1.writeliner(Enter.wts + "/8ASS", "\t# " + bmicategory +"[ " + result2 +" ] "+ CurrentDateAdd_date.main("m"));
+			fcp1.writeliner(Enter.wts + "/8ASS", "\t# " + bmicategory +"[BMI " + result2 +" ] "+ CurrentDateAdd_date.main("m"));
 		}
 }
 

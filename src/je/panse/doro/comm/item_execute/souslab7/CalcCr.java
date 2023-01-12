@@ -1,12 +1,11 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.util.Scanner;
+import java.util.Scanner;		
 
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_execute.souslab7.calc_date_8ass.ASS8_CKD_lab;
-import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New7LAB;
@@ -61,15 +60,8 @@ public class CalcCr {
 				fcp1.writeliner(Enter.wts + "/7LAB", "\t" + Crresult + "\n\t" + RACratio + "\n\t" + ReGFR  + "\n");
 
 				ASS8_CKD_lab.main(RACratio, ReGFR);
-
-				
-			       if (skeys == "Itemcategorykey") {
-						fcp1.readfiler(Enter.wtss + "/Menu2ndLine/ItemMenu");
-						Itemcategory.main(null);
-					}else {
 						fcp1.readfiler(Enter.wtss + "/7LAB_List");
 						New7LAB nc1 = new New7LAB();
-						nc1.main(null);}
 	
 		
 	} catch (NumberFormatException e) {
