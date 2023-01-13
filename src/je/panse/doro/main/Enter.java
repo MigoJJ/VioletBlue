@@ -20,7 +20,7 @@ public class Enter {
 	//----directory for jar
 	public static String udbu =("/home/migowj/ittia1_chart/addjar_ittia1/ittia1_button");
 	
-// ------------------------------------------------------file preparing
+// ------------------------------------------------------file preparing32
 	public static void main(String[] args) throws Exception {	
 		CurrentDate.defineTime();
 		System.out.println("currentUsersHomeDir" + currentUsersHomeDir);

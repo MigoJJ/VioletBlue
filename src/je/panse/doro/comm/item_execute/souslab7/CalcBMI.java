@@ -14,7 +14,7 @@ import je.panse.doro.main.Enter;
 public class CalcBMI {
 	static File_cdrw_proc fcp1 = new File_cdrw_proc();
 	public void main(String skeys) throws Exception {
-		 try (Scanner input = new Scanner(System.in)) {
+		try (Scanner input = new Scanner(System.in)) {
 			System.out.print("*****Input weight in kilogram: ");
 			double weight = input.nextDouble();
 			System.out.print("*****Input height in centimeter: ");
@@ -22,8 +22,14 @@ public class CalcBMI {
 			System.out.print("*****Input waist in centimeter: < (if inch   < 50)");
 			double waist = input.nextDouble();
 				String result3 = ""; 
+
 				if (waist < 50) {waist = (waist*2.54);
 					result3 = String.format("%.1f", waist);}
+				else {
+					result3 = String.format("%.1f", waist);
+				}
+				
+				
 			double BMI = weight / (height* height/10000);
 				String result2 = String.format("%.1f", BMI);
 			//	        input.close();
@@ -36,10 +42,11 @@ public class CalcBMI {
 			//  Write to Assessment BMI result
 			CalcBMI.BMItoAssessment(BMI);	
 
-			if (waist == 0) {
-				bmi1.BMIhw(rheight,rweight,BMIresult,skeys);
+			if (waist != 0) {
+				bmi1.BMIhw(rheight,rweight,BMIresult,rwwaist);
 			}else {
-				bmi1.BMIhw(rheight,rweight,BMIresult,rwwaist,skeys);
+				bmi1.BMIhw(rheight,rweight,BMIresult);
+
 			}
     }
 }
@@ -56,12 +63,12 @@ public class CalcBMI {
 
 class bmi{
 	static File_cdrw_proc fcp1 = new File_cdrw_proc();
-	void BMIhw(String rh, String rw, String rB,String rwa, String skeys) throws Exception {	
+	void BMIhw(String rh, String rw, String rB,String rwa) throws Exception {	
 	   String BMIheadline = ("\tHeight(cm)	Weight(kg)	BMI	Waist(cm)");
 	   String Bresult = ("\t" + rh +"\t\t" + rw + "\t\t" + rB + "\t" + rwa);
 	   bmi.writeBMI(BMIheadline,Bresult);
 	}
-	void BMIhw(String rh, String rw, String rB, String skeys) throws Exception {	
+	void BMIhw(String rh, String rw, String rB) throws Exception {	
 	   String dliner = "-".repeat(15);
 	   String BMIheadline = ("\tHeight(cm)	Weight(kg)	 BMI");
 	   String Bresult = ("\t" + rh +" \t\t" + rw + "\t\t" + rB);
