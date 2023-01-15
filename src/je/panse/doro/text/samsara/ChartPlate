@@ -1,16 +1,5 @@
-O >
-	Height(cm)	Weight(kg)	 BMI
-	-----------------------------------Ⓑ
-	175.0 		75.0		24.5
-	Creatinine (mg/dl) 	eGFR (ml/min) 	A/C ratio
-	--------------------------------ⒸⓇ
-		1.0		80.0		77.0
-	A2  : Moderately increased A/C_ratio
-	G2  : Mildly decreased GFR
-		1.0		75.0		89.0
-		1.0		75.0		88.0
-		1.0		77.0		178.88
-A >
-	# Healthy Weight[BMI 24.5 ] 2023.01
-	# DM nephropathy evlaution [ CKD A2 G2 : 2023.01 ]
+C.C.>
+	#  Hypercholesterolemia
+P.I.>
+	testpi
 P >
