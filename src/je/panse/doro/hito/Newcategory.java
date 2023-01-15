@@ -28,7 +28,7 @@ public class Newcategory {
 				   		case 12 :	Symptom12Enter n33 = new Symptom12Enter();
 				   					n33.main(null);break;
 						case 13 : 
-							String jarName =("java -jar " + Enter.udbu + "/Jbutton.jar");
+							String jarName =("java -jar " + Enter.udbu + "/ittia1j.jar");
 							Run_another_jar.main(jarName);break;
 			   		case 2 : New4PMH.main(null);break;
 					case 3 : New5SUJ.main(null);break;
