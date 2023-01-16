@@ -61,6 +61,16 @@ public class File_TextEditRemoveline {
 					adata = adata.replace("S >\nO >", "\nO >");
 					adata = adata.replace("O >\nA >", "\nA >");
 					adata = adata.replace("A >\nP >", "\nP >");
+					adata = adata.replace("C.C.>\nP.I.>", "\nP.I.>");
+					adata = adata.replace("P.I.>\nP >", "\nP >");
+//					adata = adata.replace("P.I.>\nS >", "\nS >");
+//					adata = adata.replace("P.I.>\nPMH >", "\nPMH >");
+
+					adata = adata.replace("P.I.>\nPast Medical History >", "\nPast Medical History >");
+					adata = adata.replace("Past Medical History >\n< Review of Systems >", "\n< Review of Systems >");
+					adata = adata.replace("< Review of Systems >\nS >", "\nS >");
+					adata = adata.replace("< Review of Systems >\nO >", "\nO >");
+					adata = adata.replace("< Review of Systems >\nA >", "\nA >");
 //					adata = adata.replace("P >", "\n");
 					adata = adata+"\n";
 					
