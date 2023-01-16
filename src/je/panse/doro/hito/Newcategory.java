@@ -1,5 +1,6 @@
 package je.panse.doro.hito;
 
+import java.io.InputStream;
 import java.util.Scanner;	
 import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
@@ -28,9 +29,13 @@ public class Newcategory {
 				   		case 12 :	Symptom12Enter n33 = new Symptom12Enter();
 				   					n33.main(null);break;
 						case 13 : 
-							String jarName =("java -jar " + Enter.udbu + "/Jbutton.jar");
-							Run_another_jar.main(jarName);break;
-			   		case 2 : New4PMH.main(null);break;
+				            String udbu2 =(Enter.currentUsersHomeDir + "/addjar_ittia2");
+				            String jarName =("java -jar " + udbu2 + "/ittia1jros.jar");
+				            Runtime runtime = Runtime.getRuntime();
+				            Process process = runtime.exec(jarName);
+							;break;
+						
+						case 2 : New4PMH.main(null);break;
 					case 3 : New5SUJ.main(null);break;
 			   		case 4 : fcp.readfiler(Enter.wtss + "/6OBJ_List");
 			   			New6OBJ.main(null);break;

@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.io.BufferedWriter;	
+import java.io.BufferedWriter;		
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;			
@@ -11,7 +11,6 @@ import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_execute.CalcASS;
-import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
@@ -62,14 +61,8 @@ public class CalcEKG {
 							dn1.deuxnine();;	break;
 					default :System.out.println(" uncertain ... please check  !!");
 				}
-				if (skeys == "Itemcategorykey") {
-					ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/Menu2ndLine/ItemMenu");
-					Itemcategory.main(null);
-				}
-				else {
 					ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 					New6OBJ.main(null);
-				}
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

@@ -18,9 +18,11 @@ public class Enter {
 	public static String wtsi  = (wt + "/singlebeam");
 	public static String wtss  = (wt + "/singlebeam/subnewmenu");
 	//----directory for jar
-	public static String udbu =("/home/migowj/ittia1_chart/addjar_ittia1/ittia1_button");
+	public static String udbu =("/home/migowj/ittia1_chart/addjar_ittia1");
+	public static String udbu2 =("/home/migowj/ittia1_chart/addjar_ittia2");
+
 	
-// ------------------------------------------------------file preparing
+// ------------------------------------------------------file preparing32
 	public static void main(String[] args) throws Exception {	
 		CurrentDate.defineTime();
 		System.out.println("currentUsersHomeDir" + currentUsersHomeDir);
