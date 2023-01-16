@@ -29,7 +29,7 @@ public class Newcategory {
 				   		case 12 :	Symptom12Enter n33 = new Symptom12Enter();
 				   					n33.main(null);break;
 						case 13 : 
-				            String udbu2 =("/home/migoey/ittia1_chart/addjar_ittia2");
+				            String udbu2 =(Enter.currentUsersHomeDir + "/addjar_ittia2");
 				            String jarName =("java -jar " + udbu2 + "/ittia1jros.jar");
 				            Runtime runtime = Runtime.getRuntime();
 				            Process process = runtime.exec(jarName);
