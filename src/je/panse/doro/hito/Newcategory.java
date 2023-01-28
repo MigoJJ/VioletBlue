@@ -11,7 +11,7 @@ import je.panse.doro.hito.newsub.*;
 import je.panse.doro.main.Enter;
 
 public class Newcategory {
-	void switching() throws Exception {
+	public static void switching() throws Exception {
 		File_cdrw_proc fcp = new File_cdrw_proc();
 		String a ="JJ";
 		try (Scanner new_code = new Scanner(System.in)){
@@ -55,7 +55,7 @@ public class Newcategory {
 		}
     }
 
-	public void main(String args) throws Exception {
+	public static void main(String args) throws Exception {
 		try {
 	    	switching();
 		} catch (NumberFormatException e) {
