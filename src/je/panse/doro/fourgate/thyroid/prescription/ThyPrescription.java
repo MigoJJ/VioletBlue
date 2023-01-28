@@ -40,7 +40,6 @@ public class ThyPrescription {
 						;break;
 
 					case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main("diseasecategorythyroid");break;
-					case 3 : CalcBP   lab2 = new CalcBP(); 	lab2.main("diseasecategorythyroid");break;
 
 					case 51  : tp2.linepickup(path + "/ThySyrPx", Enter.wts+ "/9PLAN" );break;
 					case 52  : tp2.linepickup(path + "/ThySyxPx", Enter.wts+ "/9PLAN" );break;

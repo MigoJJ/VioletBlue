@@ -27,52 +27,27 @@ public class File_cw_chart {
 	}
 	// -------------------------------------------Form Files Copying
 	public void callchartlist(String laname) throws IOException {
-	   File_cdrw_proc nu1 = new File_cdrw_proc();
-	   List<String> list=new ArrayList<String>();  
-			  list.add("/3CC");  
-			  list.add("/4PMH");  
-			  list.add("/5SUJ");  
-			  list.add("/6OBJ");  
-			  list.add("/7LAB");  
-			  list.add("/8ASS");  
-			  list.add("/9PLAN");
-//			  list.add("");
-			  System.out.println("for(String fruit:list) "+ list);
-			  for(String fruit:list)  
-				  				  			  
-			  nu1.copyfiler(Enter.wt + laname +fruit, Enter.wts + fruit);
+		File_cdrw_proc nu1 = new File_cdrw_proc();
+		List<String> list=new ArrayList<String>();  
+		addlist(list);
+		for(String fruit:list)  
+		  nu1.copyfiler(Enter.wt + laname +fruit, Enter.wts + fruit);
    }
 	// --------------------------------------------Write Files To Chart	
 	public void writechart() throws IOException {
 		File_cdrw_proc nu9 = new File_cdrw_proc();
-		List<String> list=new ArrayList<String>();  
-			  list.add("/3CC");  
-			  list.add("/4PMH");  
-			  list.add("/5SUJ");  
-			  list.add("/6OBJ");  
-			  list.add("/7LAB");  
-			  list.add("/8ASS");  
-			  list.add("/9PLAN");
-			  System.out.println("for(String fruit:list) "+ list);
-
-			  for(String fruit:list)  
-			  nu9.rwfiler(Enter.wts + fruit, Enter.wts + "/ChartPlate");
+		List<String> list = new ArrayList<String>();  
+		addlist(list);
+		for(String fruit:list)  
+		  nu9.rwfiler(Enter.wts + fruit, Enter.wts + "/ChartPlate");
 	}
 // ------------------------------------------------Backup Files
 	public void chartbackup() throws IOException {
 		File_cdrw_proc nu3 = new File_cdrw_proc();
-		List<String> list=new ArrayList<String>();  
-			  list.add("/3CC");  
-			  list.add("/4PMH");  
-			  list.add("/5SUJ");  
-			  list.add("/6OBJ");  
-			  list.add("/7LAB");  
-			  list.add("/8ASS");  
-			  list.add("/9PLAN");
-//			  list.add("/ChartPlate");
-//			  list.add("/Comment");
-			  for(String fruit:list)
-				  nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
+		List<String> list=new ArrayList<String>();
+		addlist(list);
+		for(String fruit:list)
+			nu3.copyfiler(Enter.wts + fruit, Enter.wt + "/tripikata" + fruit);
 	}
 // ------------------------------------------------Clean ChatPlate
 	public void cleanChartPlate() throws IOException {
@@ -82,5 +57,33 @@ public class File_cw_chart {
 			nc1.deletefiler(Enter.wts + "/Comment);");
 			nc1.checkfiler(Enter.wts + "/Comment");
 	}
+	private void addlist(List<String> list) throws IOException {
+		  list.add("/3CC");  
+		  list.add("/3PI");  
+		  list.add("/3PMH");  
+		  list.add("/3ROS"); 
+		  list.add("/4PMH");  
+		  list.add("/5SUJ");  
+		  list.add("/6OBJ");  
+		  list.add("/7LAB");  
+		  list.add("/8ASS");  
+		  list.add("/9PLAN");
+	}	
+	
 // ----------------------------------------------------------
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

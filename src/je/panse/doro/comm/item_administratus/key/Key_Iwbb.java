@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus.key;
 
-import java.io.IOException;
+import java.io.IOException;	
 
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.Run_another_jar;
@@ -8,7 +8,6 @@ import je.panse.doro.comm.item_administratus.file.File_DirAdmin;
 import je.panse.doro.comm.item_administratus.file.File_cw_chart;
 import je.panse.doro.comm.item_administratus.file.File_editor_proc;
 import je.panse.doro.comm.item_execute.CalcDitto;
-import je.panse.doro.hito.Itemcategory;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.StartForm;
 import je.panse.doro.main.Debut;
@@ -20,7 +19,6 @@ public class Key_Iwbb {
 	Debut  rk1 =new Debut();      
 	StartForm     rk2 = new StartForm();
 	Newcategory   rk3 = new Newcategory();
-	Itemcategory  rk4 = new Itemcategory();
 
 	public void Key_Iwbb_Page(int select_code) throws IOException, Exception {
 		File_DirAdmin   	rk13 = new File_DirAdmin();
@@ -58,10 +56,6 @@ public class Key_Iwbb {
 			   	case "Debutkey" 	 : rk1.main(null);	  	break;
 			   	case "StartFormkey"  : rk2.main(null);	  	break;
 			   	case "Newcategorykey": rk3.main(null);	  	break;
-		//	   	case "Discategorykey": rk5.main(null);	  	break;
-			   	case "Itemcategorykey": 
-			   		Menu_list.main(Enter.wt + "/singlebeam/ItemMenu");
-			   							  rk4.main(selectkey);break;
 			   	default :
 			   		System.out.println(" uncertain ... please check  !!");
 			}
