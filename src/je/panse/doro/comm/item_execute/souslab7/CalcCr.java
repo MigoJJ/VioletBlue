@@ -38,13 +38,13 @@ public class CalcCr {
 			else if (eGFR < 89 && eGFR >=60) {
 				ReGFR = "G2  : Mildly decreased GFR";
 			}
-			else if (eGFR < 59 && eGFR >=45) {
+			else if (eGFR < 60 && eGFR >=45) {
 				ReGFR = "G3a : Mildly to moderately decreased GFR";
 			}
-			else if (eGFR < 44 && eGFR >=30) {
+			else if (eGFR < 45 && eGFR >=30) {
 				ReGFR = "G3b : Moderate to severely decreased GFR";
 			}
-			else if (eGFR < 29 && eGFR >=15) {
+			else if (eGFR < 30 && eGFR >=15) {
 				ReGFR = "G4  : Severely decreased GFR";
 			}
 			else if (eGFR < 15) {
