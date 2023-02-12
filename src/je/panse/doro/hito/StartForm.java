@@ -16,8 +16,9 @@ public class StartForm {
 		Key_Iwbb 			st5 = new Key_Iwbb();
 		try {	
 			int select_code =1;
+			Scanner case_code = new Scanner(System.in);
 			while (true) {
-				Scanner case_code = new Scanner(System.in);
+
 				System.out.println(">>> Enter selected code number ...>>>   : ");
 				select_code = case_code.nextInt();
 				switch (select_code) {

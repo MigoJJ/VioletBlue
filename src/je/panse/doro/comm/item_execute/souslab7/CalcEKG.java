@@ -24,9 +24,12 @@ public class CalcEKG {
 
     	try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
+
+			System.out.println("Enter selected EKG code number ...   : ");
+			select_code = Integer.valueOf(new_code.nextLine().trim());
+			
 			while (true) {
-				System.out.println("Enter selected EKG code number ...   : ");
-				select_code = Integer.valueOf(new_code.nextLine().trim());
+
 	
 				switch (select_code) {
 					case 1 : accessInsert("정상 (Within Normal Limits)"); break;
@@ -59,7 +62,7 @@ public class CalcEKG {
 
 					case 9 : File_cw_chart dn1 = new File_cw_chart();
 							dn1.deuxnine();;	break;
-					default :System.out.println(" uncertain ... please check  !!");
+					default :System.out.println(" uncertain ... please check  !!");break;
 				}
 					ekg1.readfiler(Enter.wt + "/singlebeam/subnewmenu/6OBJ_List");
 					New6OBJ.main(null);
