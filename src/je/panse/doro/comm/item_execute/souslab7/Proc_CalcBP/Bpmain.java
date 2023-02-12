@@ -2,6 +2,7 @@ package je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP;
 
 import java.util.ArrayList;
 
+import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class Bpmain {
@@ -15,7 +16,7 @@ public class Bpmain {
 	  static String bt1 = "Forehead (temporal) temperature : ";
 	  static String br1 = "Respiratory Rate: ";
   static String save_time;
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
 	  File_delete_new.main(fhomeDir);
 	  save_time = CurrentDateAdd_date.defineTime("t");
 	  ArrayList<String> result = Bp_ArrayListInput.getStrings();
@@ -72,6 +73,8 @@ public class Bpmain {
 		 }
 		 else {
 		}
+
+
   }
 
 	private static String bpclassifyNo(String bbp2) {
@@ -87,5 +90,4 @@ public class Bpmain {
 		return bp2;
 	}
 
-	
 }
