@@ -26,9 +26,6 @@ public class New6OBJ {
                     case 2:
                         CalcBP bp = new CalcBP();
                         bp.main(null);
-//            			File_cdrw_proc fcp1 = new File_cdrw_proc();
-//            			fcp1.readfiler(Enter.wtss + "/6OBJ_List");
-//            			New6OBJ.main(null);
                         break;
                     case 4:
                         CalcCPA cpa = new CalcCPA();
