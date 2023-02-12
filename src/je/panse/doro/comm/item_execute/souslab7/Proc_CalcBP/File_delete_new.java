@@ -7,10 +7,10 @@ import java.io.IOException;
 public class File_delete_new {
   public static void main(String fhomeDir) {
     try {
-    	File file = new File(fhomeDir);
+    	File file = new File("/home/migoey/ittia1_chart/addjar_ittia5/hito/bp/bpoutput");
     	file.delete();
     	
-      FileWriter writer = new FileWriter(fhomeDir);
+      FileWriter writer = new FileWriter("/home/migoey/ittia1_chart/addjar_ittia5/hito/bp/bpoutput");
       writer.write("");
       writer.close();
       System.out.println("File created.");

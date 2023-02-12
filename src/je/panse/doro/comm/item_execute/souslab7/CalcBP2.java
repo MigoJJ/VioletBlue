@@ -1,7 +1,6 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.util.Scanner;	
-
+import java.util.Scanner;		
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.loop.CurrentDateAdd_date;

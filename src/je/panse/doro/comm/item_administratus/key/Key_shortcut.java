@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus.key;
 
-import je.panse.doro.comm.item_administratus.Menu_list;
+import je.panse.doro.comm.item_administratus.Menu_list;	
 import je.panse.doro.comm.item_administratus.Run_another_jar;
 import je.panse.doro.comm.item_execute.CalcASS;
 import je.panse.doro.comm.item_execute.CalcDitto;
@@ -11,12 +11,16 @@ import je.panse.doro.comm.item_execute.souslab7.CalcHbA1c;
 import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New10DIS;
+import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New9PLAN;
 import je.panse.doro.main.Enter;
 
 public class Key_shortcut {
 	public static void main(int select_code) throws Exception {
 	   	switch (select_code) {
+		case 324 : New6OBJ no6 = new New6OBJ(); 	no6.main(null);break;
+
+	   	
 			case 10 : New10DIS nd1 = new New10DIS(); 	nd1.main(null);break;
 			case 41 : CalcBMI ob0 = new CalcBMI();	 	ob0.main(null);break;
 			case 42 : CalcBP ob1 = new CalcBP();	 	ob1.main(null);break;

@@ -6,7 +6,7 @@ import java.text.*;
 public class CurrentDateAdd_date {
 	public static String save_time;
 
-	public String defineTime(String df) {
+	public static String defineTime(String df) {
 		  Date dNow = new Date( );
 	      SimpleDateFormat ft = new SimpleDateFormat ("E'요일'  yyyy.MM.dd 'at' hh:mm:ss a zzz");
 	      

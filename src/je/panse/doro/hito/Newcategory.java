@@ -14,8 +14,9 @@ public class Newcategory {
 	public static void switching() throws Exception {
 		File_cdrw_proc fcp = new File_cdrw_proc();
 		String a ="JJ";
-		try (Scanner new_code = new Scanner(System.in)){
+		
 			while (true) {
+				try (Scanner new_code = new Scanner(System.in)){
 			   	System.out.println("Enter selected code number ...   : ");
 				a = new_code.nextLine().trim();
 				if(a==""){
@@ -49,11 +50,11 @@ public class Newcategory {
 						Key_shortcut.main(select_code);
 			   }
 //		new_code.close();
-			}
 		}catch (NumberFormatException e) {
 			e.printStackTrace();
 		}
-    }
+		}
+	}
 
 	public static void main(String args) throws Exception {
 		try {

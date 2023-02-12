@@ -20,7 +20,7 @@ public class New7LAB {
 			int select_code = 0;
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
-				select_code = Integer.valueOf(new_code.nextLine().trim());
+				select_code = (new_code.nextInt());
 				switch (select_code) {
 			  	case 1 : CalcHbA1c	nl2 = new CalcHbA1c(); 	nl2.main(null);break;
 				case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main(null);break;

@@ -1,12 +1,9 @@
 package je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP;
 
-import java.util.ArrayList;
-
-import je.panse.doro.hito.newsub.New6OBJ;
+import java.util.ArrayList;	
 import je.panse.doro.main.Enter;
 
 public class Bpmain {
-//	  static String homeDir = System.getProperty("user.home");
 	  static String fhomeDir = Enter.udbu5 +"/hito/bp/bpoutput";
 	  static String bp1 = "at GDS, ";
 	  static String bp2,bp3,bp4;
@@ -15,7 +12,7 @@ public class Bpmain {
 	  static String bp7;
 	  static String bt1 = "Forehead (temporal) temperature : ";
 	  static String br1 = "Respiratory Rate: ";
-  static String save_time;
+	  static String save_time;
   public static void main(String[] args) throws Exception {
 	  File_delete_new.main(fhomeDir);
 	  save_time = CurrentDateAdd_date.defineTime("t");
