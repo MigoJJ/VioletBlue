@@ -13,11 +13,17 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
     public static void main(String[] args) throws Exception {
         try {
-        	while (true) {
-        		Scanner input = new Scanner(System.in); 
-                System.out.println("Enter selected code number ...   : ");
-                int code = 9;
-                code = input.nextInt();
+        	 Scanner input = new Scanner(System.in);
+     		System.out.print("Enter a number (or 'null' to quit): ");
+
+        	 while (true) {
+          		String str = input.nextLine();
+            		if (str.equals("null")) {
+            			str = "9";
+            			break;
+            		}
+
+            		int code = Integer.parseInt(str);
                 switch (code) {
                     case 1:
                         CalcBMI bmi = new CalcBMI();
@@ -40,10 +46,9 @@ public class New6OBJ {
                         dexa.main(null);
                         break;
                     default:
-                        System.out.println("Uncertain ... please check !!");
-                        Key_shortcut.main(code);
                         break;
                 		}
+                break;
         		}
         } catch (NumberFormatException e) {
             e.printStackTrace();

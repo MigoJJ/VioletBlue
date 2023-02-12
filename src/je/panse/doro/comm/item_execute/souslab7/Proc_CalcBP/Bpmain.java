@@ -1,9 +1,14 @@
 package je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP;
 
-import java.util.ArrayList;	
+import java.util.ArrayList;
+
+import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
+import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
 
 public class Bpmain {
+	static File_cdrw_proc fcp1 = new File_cdrw_proc();
+
 	  static String fhomeDir = Enter.udbu5 +"/hito/bp/bpoutput";
 	  static String bp1 = "at GDS, ";
 	  static String bp2,bp3,bp4;
@@ -70,7 +75,8 @@ public class Bpmain {
 		 }
 		 else {
 		}
-
+		fcp1.readfiler(Enter.wtss + "/6OBJ_List");
+		New6OBJ.main(null);
 
   }
 

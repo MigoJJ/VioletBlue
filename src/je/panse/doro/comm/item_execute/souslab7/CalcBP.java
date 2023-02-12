@@ -1,100 +1,14 @@
 package je.panse.doro.comm.item_execute.souslab7;
 
-import java.util.ArrayList;	
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
-import je.panse.doro.comm.item_administratus.loop.CurrentDateAdd_date;
-import je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP.Bp_ArrayListInput;
-import je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP.File_delete_new;
-import je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP.Filewriter_oneline;
+import je.panse.doro.comm.item_execute.souslab7.Proc_CalcBP.Bpmain;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.main.Enter;
-
 public class CalcBP {
-	  static String fhomeDir = Enter.udbu5 +"/hito/bp/bpoutput";
-	  static String bp1 = "at GDS, ";
-	  static String bp2,bp3,bp4;
-	  static String bp5 = "Regular ";
-	  static String bp6 = "BP measured at left seated position, \n";
-	  static String bp7;
-	  static String bt1 = "Forehead (temporal) temperature : ";
-	  static String br1 = "Respiratory Rate: ";
-	  static String save_time;
-  public static void main(String[] args) throws Exception {
-	  try {
-		File_delete_new.main(fhomeDir);
-		  save_time = CurrentDateAdd_date.defineTime("t");
-		  ArrayList<String> result = Bp_ArrayListInput.getStrings();
-//	  System.out.println("Inputs: " + result);
-		    for (int i = 0; i < result.size(); i++) {
-				if (result.get(i).startsWith("h")) {
-					bp1 = "at home, ";
-					save_time="";
-				}else if (result.get(i).startsWith("i")) {
-					bp5 = "irRegular ";
-				}else if (result.get(i).startsWith("r")) {
-					bp6 = "BP measured at right seated position, \n";
-				}else {
-				}
-		    } 
-		    result.remove("h");
-		    result.remove("i");
-		    result.remove("r");
-		    
-		    System.out.println("Date/Time : " + save_time);
-		    Filewriter_oneline.main("Date/Time : " + save_time);
-		    
-		    
-			if (result.size() < 2) {
-				CalcBP.bpclassifyNo(result.get(0));
-				System.out.println(bp1 +bp2);
-				Filewriter_oneline.main(bp1 +bp2);
-			}
-			else if (result.size() < 3) {
-				CalcBP.bpclassifyNo(result.get(0),result.get(1));
-				System.out.println(bp1 + bp2);
-				Filewriter_oneline.main(bp1 +bp2);
-			}
-			else if (result.size() < 4) {
-				CalcBP.bpclassifyNo(result.get(0),result.get(1),result.get(2));
-				System.out.println(bp1 + bp6 + bp2 + bp5 );
-				Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5);
-			}
-			 else if (result.size() < 5) {
-				CalcBP.bpclassifyNo(result.get(0),result.get(1),result.get(2));
-				System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
-				System.out.println("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
-				Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-				Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
-			}
-			 else if (result.size() < 6) {
-				CalcBP.bpclassifyNo(result.get(0),result.get(1),result.get(2));
-				System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
-				System.out.println("Body Temperature:[ " + result.get(3) + "°C ] (measured Forehead temperature)");
-				System.out.println("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
-				Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-				Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
-				Filewriter_oneline.main("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
-			 }
-			 else {
-			}
-
-	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-    }
-
-	private static String bpclassifyNo(String bbp2) {
-		bp2 = ("SBP [ " +bbp2 + " ] mmHg ");
-		return bp2;
-	}
-	private static String bpclassifyNo(String bbp2, String bbp3) {
-		bp2 = ("BP [ " +bbp2 + " / " + bbp3 + " ] mmHg ");	
-		return bp2;
-	}
-	private static String bpclassifyNo(String bbp2,String bbp3, String bbp4) {
-		bp2 = ("BP [ " +bbp2 + " / " + bbp3 + " ] mmHg" + " PR [ " + bbp4+ " ]/min ");	
-		return bp2;
-	}
-
+	  public static void main(String[] args) throws Exception {
+		Bpmain.main(null);
+		File_cdrw_proc cpa1 = new File_cdrw_proc(); 
+		cpa1.readfiler(Enter.wtss + "/6OBJ_List");
+		New6OBJ.main(null);
+	  }
 }
