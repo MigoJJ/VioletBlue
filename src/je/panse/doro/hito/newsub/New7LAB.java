@@ -1,8 +1,7 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
-import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.souslab7.CalcCBC;
 import je.panse.doro.comm.item_execute.souslab7.CalcChol;
@@ -41,5 +40,4 @@ public class New7LAB {
 			e.printStackTrace();
 		}
    	}	
-// ----------
 }

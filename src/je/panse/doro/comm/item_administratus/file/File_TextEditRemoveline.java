@@ -1,6 +1,6 @@
 package je.panse.doro.comm.item_administratus.file;
 
-import java.io.*;			
+import java.io.*;				
 import java.util.Scanner;
 import je.panse.doro.main.Enter;
 
