@@ -75,9 +75,6 @@ public class Bpmain {
 		 }
 		 else {
 		}
-		fcp1.readfiler(Enter.wtss + "/6OBJ_List");
-		New6OBJ.main(null);
-
   }
 
 	private static String bpclassifyNo(String bbp2) {

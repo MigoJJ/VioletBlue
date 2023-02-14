@@ -13,17 +13,18 @@ import je.panse.doro.main.Enter;
 public class New6OBJ {
     public static void main(String[] args) throws Exception {
         try {
-        	 Scanner input = new Scanner(System.in);
-     		System.out.print("Enter a number (or 'null' to quit): ");
+        	Scanner input = new Scanner(System.in);
+			System.out.print("Enter a number (or 'null' to quit): ");
+			while (true) {
 
-        	 while (true) {
-          		String str = input.nextLine();
-            		if (str.equals("null")) {
-            			str = "9";
-            			break;
-            		}
+				String str = input.nextLine();
+				
+				if (str =="null") {
+					New6OBJ.main(null);
+						}
 
-            		int code = Integer.parseInt(str);
+				
+				int code = Integer.parseInt(str);
                 switch (code) {
                     case 1:
                         CalcBMI bmi = new CalcBMI();

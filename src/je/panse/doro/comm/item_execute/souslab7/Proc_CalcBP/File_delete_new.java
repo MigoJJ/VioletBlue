@@ -10,7 +10,7 @@ public class File_delete_new {
     	File file = new File("/home/migoey/ittia1_chart/addjar_ittia5/hito/bp/bpoutput");
     	file.delete();
     	
-      FileWriter writer = new FileWriter("/home/migoey/ittia1_chart/addjar_ittia5/hito/bp/bpoutput");
+      FileWriter writer = new FileWriter("/home/migowj/ittia1_chart/addjar_ittia5/hito/bp/bpoutput");
       writer.write("");
       writer.close();
       System.out.println("File created.");
