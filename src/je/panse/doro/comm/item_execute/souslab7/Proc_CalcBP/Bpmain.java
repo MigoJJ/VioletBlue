@@ -12,10 +12,10 @@ public class Bpmain {
 	  static String bp1 = "at GDS, ";
 	  static String bp2,bp3,bp4;
 	  static String bp5 = "Regular ";
-	  static String bp6 = "BP measured at left seated position, \n";
+	  static String bp6 = " BP measured at left seated position, \n";
 	  static String bp7;
 	  static String bt1 = "Forehead (temporal) temperature : ";
-	  static String br1 = "Respiratory Rate: ";
+	  static String br1 = " Respiratory Rate: ";
 	  static String save_time;
   public static void main(String[] args) throws Exception {
 	  File_delete_new.main(fhomeDir);
@@ -29,7 +29,7 @@ public class Bpmain {
 			}else if (result.get(i).startsWith("i")) {
 				bp5 = "irRegular ";
 			}else if (result.get(i).startsWith("r")) {
-				bp6 = "BP measured at right seated position, \n";
+				bp6 = " BP measured at right seated position, \n";
 			}else {
 			}
 	    } 
@@ -59,18 +59,18 @@ public class Bpmain {
 		 else if (result.size() < 5) {
 			Bpmain.bpclassifyNo(result.get(0),result.get(1),result.get(2));
 			System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
-			System.out.println("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
+			System.out.println(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
 			Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-			Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
+			Filewriter_oneline.main(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
 		}
 		 else if (result.size() < 6) {
 			Bpmain.bpclassifyNo(result.get(0),result.get(1),result.get(2));
 			System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
-			System.out.println("Body Temperature:[ " + result.get(3) + "°C ] (measured Forehead temperature)");
-			System.out.println("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
+			System.out.println(" Body Temperature:[ " + result.get(3) + "°C ] (measured Forehead temperature)");
+			System.out.println(" Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
 			Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-			Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
-			Filewriter_oneline.main("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
+			Filewriter_oneline.main(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
+			Filewriter_oneline.main(" Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
 		 }
 		 else {
 		}

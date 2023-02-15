@@ -40,10 +40,10 @@ public class New6OBJ {
                         dexa.main(null);
                         break;
                     default:
-                        break;
-                		}
-                break;
-        		}
+							Key_shortcut.main(code);
+							break;
+        			}
+			}
         } catch (NumberFormatException e) {
             e.printStackTrace();
          }
