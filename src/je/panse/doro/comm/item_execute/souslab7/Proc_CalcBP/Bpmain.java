@@ -8,7 +8,6 @@ import je.panse.doro.main.Enter;
 
 public class Bpmain {
 	static File_cdrw_proc fcp1 = new File_cdrw_proc();
-
 	  static String fhomeDir = Enter.udbu5 +"/hito/bp/bpoutput";
 	  static String bp1 = "at GDS, ";
 	  static String bp2,bp3,bp4;
