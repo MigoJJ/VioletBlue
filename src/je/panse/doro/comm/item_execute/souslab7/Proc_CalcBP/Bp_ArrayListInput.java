@@ -15,7 +15,7 @@ public class Bp_ArrayListInput {
 		     }
 		     inputs.add(input);
 		   }
-		scan.close();
+//		scan.close();
 		return inputs;
 	}
 }
