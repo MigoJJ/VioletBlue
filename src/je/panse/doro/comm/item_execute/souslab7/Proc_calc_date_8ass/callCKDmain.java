@@ -1,4 +1,4 @@
-package je.panse.doro.comm.item_execute.souslab7.calc_date_8ass;
+package je.panse.doro.comm.item_execute.souslab7.Proc_calc_date_8ass;
 
 public class callCKDmain {
 

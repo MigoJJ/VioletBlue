@@ -5,7 +5,7 @@ import java.util.Scanner;
 import je.panse.doro.comm.item_administratus.Menu_list;
 import je.panse.doro.comm.item_administratus.file.File_cdrw_proc;
 import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
-import je.panse.doro.comm.item_execute.souslab7.calc_date_8ass.ASS8_CKD_lab;
+import je.panse.doro.comm.item_execute.souslab7.Proc_calc_date_8ass.ASS8_CKD_lab;
 import je.panse.doro.hito.Newcategory;
 import je.panse.doro.hito.newsub.New6OBJ;
 import je.panse.doro.hito.newsub.New7LAB;

@@ -1,12 +1,12 @@
-package je.panse.doro.comm.item_administratus.loop;
+package je.panse.doro.comm.item_execute.souslab7.Proc_calc_date_8ass;
 
 import java.util.*;		
 import java.text.*;
 
-public class CurrentDateAdd_date {
+public class Add_date {
 	public static String save_time;
 
-	public static String defineTime(String df) {
+	public String defineTime(String df) {
 		  Date dNow = new Date( );
 	      SimpleDateFormat ft = new SimpleDateFormat ("E'요일'  yyyy.MM.dd 'at' hh:mm:ss a zzz");
 	      
@@ -19,6 +19,9 @@ public class CurrentDateAdd_date {
 	      else if (df == "d") {
 	    	  ft = new SimpleDateFormat ("yyyy.MM.dd");
 	      }
+	      else if (df == "h") {
+	    	  ft = new SimpleDateFormat ("yyyy.MM.dd E   hh");
+	      }
 	      else {
 	    	  ft =  new SimpleDateFormat ("yyyy.MM.dd E  hh:mm a ");  
 	      }
@@ -29,7 +32,7 @@ public class CurrentDateAdd_date {
 
 	public static String main(String args) {
 		String dateinput = args;
-		CurrentDateAdd_date add_date = new CurrentDateAdd_date();
+		Add_date add_date = new Add_date();
 		String rcd = add_date.defineTime(dateinput);
 		System.out.println("Returned Current Date: " + rcd);		
 	   return rcd;

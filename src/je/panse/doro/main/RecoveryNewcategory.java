@@ -14,27 +14,24 @@ import je.panse.doro.hito.newsub.*;
 
 public class RecoveryNewcategory {
 // --------------------------------------------	
-	public static void main(String agrs) throws Exception {
-		File_cdrw_proc ob2 = new File_cdrw_proc(); 
-    		ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
-		File_cw_chart ob3 = new File_cw_chart(); 
-    		ob3.cleanChartPlate();
-    	File_cw_chart st3 = new File_cw_chart();
-			st3.callchartlist(Enter.wt + "/stripikata");
-	
-    	switching();
-	}	
-// --------------------------------------------    	
+	public static void main(String args) throws Exception {
+	    File_cdrw_proc ob2 = new File_cdrw_proc();
+	    ob2.readfiler(Enter.wt + "/singlebeam/ChartPopUpMenu");
+
+	    File_cw_chart ob3 = new File_cw_chart();
+	    ob3.cleanChartPlate();
+
+	    File_cw_chart st3 = new File_cw_chart();
+	    st3.callchartlist(Enter.wt + "/stripikata");
+
+	    switching();
+	}
     static void switching() throws Exception {
    		Scanner new_code = new Scanner(System.in);
    		int select_code = 0;
-
    		while (true) {
-//		   	if (select_code == 99) { break; }
-		 	
 		   	System.out.println("Enter selected code number ...   : ");
 		   	select_code = Integer.valueOf(new_code.nextLine().trim());
-	
 		   	switch (select_code) {
 	   		case 1 : New3CC nc1 = new New3CC();	 	nc1.main(null);	  	break;
 		   		case 2 : New4PMH.main(null);  	break;
@@ -57,5 +54,4 @@ public class RecoveryNewcategory {
 //		new_code.close();
    		}
    	}
- // --------------------------------------------
 }

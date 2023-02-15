@@ -1,8 +1,7 @@
 package je.panse.doro.hito.newsub;
 
-import java.util.Scanner;
+import java.util.Scanner;	
 
-import je.panse.doro.comm.item_administratus.key.Key_Iwbb;
 import je.panse.doro.comm.item_administratus.key.Key_shortcut;
 import je.panse.doro.comm.item_execute.souslab7.CalcCBC;
 import je.panse.doro.comm.item_execute.souslab7.CalcChol;
@@ -20,7 +19,7 @@ public class New7LAB {
 			int select_code = 0;
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
-				select_code = Integer.valueOf(new_code.nextLine().trim());
+				select_code = (new_code.nextInt());
 				switch (select_code) {
 			  	case 1 : CalcHbA1c	nl2 = new CalcHbA1c(); 	nl2.main(null);break;
 				case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main(null);break;
@@ -41,5 +40,4 @@ public class New7LAB {
 			e.printStackTrace();
 		}
    	}	
-// ----------
 }

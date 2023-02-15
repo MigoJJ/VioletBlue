@@ -14,16 +14,16 @@ public class New8ASS {
 		File_cdrw_proc ob2 = new File_cdrw_proc(); 
     	ob2.readfiler(Enter.wt + "/singlebeam/subnewmenu/8ASS_List");
 
-    	try (Scanner new_code = new Scanner(System.in)) {
+		try (Scanner new_code = new Scanner(System.in)) {
 			int select_code = 0;
 			while (true) {
 				System.out.println("Enter selected code number ...   : ");
 				select_code = Integer.valueOf(new_code.nextLine().trim());
-	
+		
 				switch (select_code) {
 					case 1 : 
 						CalcASS ob3 = new CalcASS();	 ob3.main(null);break;
-
+		
 					default :
 						System.out.println(" uncertain ... please check  !!");
 						Key_shortcut.main(select_code);
