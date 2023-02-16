@@ -13,31 +13,59 @@ import je.panse.doro.comm.item_execute.souslab7.CalcTFT;
 import je.panse.doro.comm.item_execute.souslab7.CalcTFT2;
 import je.panse.doro.comm.item_execute.souslab7.CalcVitD;
 
-public class New7LAB {
-	public static void main(String args) throws Exception { 
-    	try (Scanner new_code = new Scanner(System.in)) {
-			int select_code = 0;
-			while (true) {
-				System.out.println("Enter selected code number ...   : ");
-				select_code = (new_code.nextInt());
-				switch (select_code) {
-			  	case 1 : CalcHbA1c	nl2 = new CalcHbA1c(); 	nl2.main(null);break;
-				case 2 : CalcTFT   	nl3 = new CalcTFT(); 	nl3.main(null);break;
-					case 22 : CalcTFT2  	nl33 = new CalcTFT2(); 	nl33.main(null);break;
-				case 3 : CalcChol 	nl4 = new CalcChol();	nl4.main(null);break;
-				case 4 : CalcCr	 	nl5 = new CalcCr();		nl5.main(null);break;
-				case 5 : CalcVitD  	nl6 = new CalcVitD();	nl6.main(null);break;
-				case 6 : CalcCBC  	nl7 = new CalcCBC();		nl7.main(null);break;
-				case 7 : CalcLpa  	nl8 = new CalcLpa();		nl8.main(null);break;
-				case 8 : CalcGOT  	nl9 = new CalcGOT();		nl9.main(null);break;
+import java.util.Scanner;
 
-				default :
-					System.out.println(" uncertain ... please check  !!");
-					Key_shortcut.main(select_code);
-				}
-			}
-		}catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
-   	}	
+public class New7LAB {
+    public static void main(String[] args) throws Exception { 
+        try (Scanner scanner = new Scanner(System.in)) {
+            int selectCode = 0;
+            while (true) {
+                System.out.println("Enter selected code number...: ");
+                selectCode = scanner.nextInt();
+                switch (selectCode) {
+                    case 1:
+                        CalcHbA1c calcHbA1c = new CalcHbA1c();
+                        calcHbA1c.main(null);
+                        break;
+                    case 2:
+                        CalcTFT calcTFT = new CalcTFT();
+                        calcTFT.main(null);
+                        break;
+                    case 22:
+                        CalcTFT2 calcTFT2 = new CalcTFT2();
+                        calcTFT2.main(null);
+                        break;
+                    case 3:
+                        CalcChol calcChol = new CalcChol();
+                        calcChol.main(null);
+                        break;
+                    case 4:
+                        CalcCr calcCr = new CalcCr();
+                        calcCr.main(null);
+                        break;
+                    case 5:
+                        CalcVitD calcVitD = new CalcVitD();
+                        calcVitD.main(null);
+                        break;
+                    case 6:
+                        CalcCBC calcCBC = new CalcCBC();
+                        calcCBC.main(null);
+                        break;
+                    case 7:
+                        CalcLpa calcLpa = new CalcLpa();
+                        calcLpa.main(null);
+                        break;
+                    case 8:
+                        CalcGOT calcGOT = new CalcGOT();
+                        calcGOT.main(null);
+                        break;
+                    default:
+                        System.out.println("Uncertain... Please check!");
+                        Key_shortcut.main(selectCode);
+                }
+            }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+    }	
 }

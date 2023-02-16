@@ -1,6 +1,6 @@
 package je.panse.doro.hito.newsub;
 
-import java.io.IOException;	
+import java.io.IOException;		
 import java.util.Scanner;
 
 import je.panse.doro.comm.item_administratus.Menu_list;
