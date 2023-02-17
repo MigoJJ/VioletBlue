@@ -16,10 +16,6 @@ public class New6OBJ {
         	Scanner input = new Scanner(System.in);
 			System.out.print("Enter a number .... for excute ......: ");
 			
-			if (input != null) {
-				Newcategory.main(null);
-			}
-			
 			while (true) {
 				String str = input.nextLine();
 				int code = Integer.parseInt(str);
@@ -41,7 +37,7 @@ public class New6OBJ {
 			        ekg.main(null);
 			        break;
 			    case 7:
-			        CalcDEXA dexa = new CalcDEXA();
+			    	CalcDEXA dexa = new CalcDEXA();
 			        dexa.main(null);
 			        break;
 			    default:
