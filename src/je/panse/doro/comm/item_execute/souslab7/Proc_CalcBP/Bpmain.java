@@ -61,16 +61,16 @@ public class Bpmain {
 			System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
 			System.out.println(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
 			Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-			Filewriter_oneline.main(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
+			Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
 		}
 		 else if (result.size() < 6) {
 			Bpmain.bpclassifyNo(result.get(0),result.get(1),result.get(2));
 			System.out.println(bp1 + bp6 + bp2 + bp5 +"\n");
-			System.out.println(" Body Temperature:[ " + result.get(3) + "°C ] (measured Forehead temperature)");
-			System.out.println(" Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
+			System.out.println("Body Temperature:[ " + result.get(3) + "°C ] (measured Forehead temperature)");
+			System.out.println("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
 			Filewriter_oneline.main(bp1 + bp6 + bp2 + bp5+"\n");
-			Filewriter_oneline.main(" Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
-			Filewriter_oneline.main(" Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
+			Filewriter_oneline.main("Body Temperature: " + result.get(3) + "°C (measured Forehead temperature)");
+			Filewriter_oneline.main("Respiratory Rate:[ " + result.get(4) + " ] breaths /min (measured while sitting)");
 		 }
 		 else {
 		}
