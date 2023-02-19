@@ -77,15 +77,15 @@ public class Bpmain {
   }
 
 	private static String bpclassifyNo(String bbp2) {
-		bp2 = ("SBP [ " +bbp2 + " ] mmHg ");
+		bp2 = ("\tSBP [ " +bbp2 + " ] mmHg ");
 		return bp2;
 	}
 	private static String bpclassifyNo(String bbp2, String bbp3) {
-		bp2 = ("BP [ " +bbp2 + " / " + bbp3 + " ] mmHg ");	
+		bp2 = ("\tBP [ " +bbp2 + " / " + bbp3 + " ] mmHg ");	
 		return bp2;
 	}
 	private static String bpclassifyNo(String bbp2,String bbp3, String bbp4) {
-		bp2 = ("BP [ " +bbp2 + " / " + bbp3 + " ] mmHg" + " PR [ " + bbp4+ " ]/min ");	
+		bp2 = ("\tBP [ " +bbp2 + " / " + bbp3 + " ] mmHg" + " PR [ " + bbp4+ " ]/min ");	
 		return bp2;
 	}
 
