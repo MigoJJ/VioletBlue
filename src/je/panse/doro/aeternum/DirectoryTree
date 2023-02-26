@@ -1,0 +1,14 @@
+ittia_chart
+
+	addjar_ittia1		ittia1j.jar		FirstButtonPlate	i3
+
+	addjar_ittia2		ittia1jros.jar	ROS		i2	ROS
+
+	addjar_ittia3		ittia1c.jar		SecondButton	i2
+
+	addjar_ittia4		TxPx.jar				i2	Thyroid
+
+	addjar_ittia5		hito/bp/bpoutput		
+	
+	
+	addjar_ittia9		t.jar		
