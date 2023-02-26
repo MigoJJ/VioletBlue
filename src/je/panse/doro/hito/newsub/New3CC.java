@@ -118,7 +118,7 @@ public class New3CC {
 		}
 	}
 	void simplecc(String bint) throws IOException {
-		String chartline5 = ("\t" + b);
+		String chartline5 = ("\t" + a);
 		fcp.writeliner(Enter.wts + "/3CC", chartline5);
 	}
 	static void quit_toNewcategory (String str) throws Exception {
