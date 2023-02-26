@@ -9,7 +9,7 @@ public class Bp_ArrayListInput {
 			try {
 				Scanner scan = new Scanner(System.in);
 			   while (true) {
-							 System.out.println("Enter multiple inputs, press Enter to stop:");
+							 System.out.println("Enter BP BT RR inputs,.....press Enter to stop:");
 							 String input = scan.nextLine();
 							 if (input.isEmpty()) {
 									break;

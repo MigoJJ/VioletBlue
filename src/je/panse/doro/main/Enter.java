@@ -7,8 +7,8 @@ import je.panse.doro.hito.StartForm;
 public class Enter {
 		public static final String currentUsersDir = System.getProperty("user.dir");
 		public static final String currentUsersHomeDir = System.getProperty("user.home");
-		public static final String wd = currentUsersDir + "/src/je/panse/doro";
-//		public static final String wd = currentUsersDir + "/je/panse/doro";
+//		public static final String wd = currentUsersDir + "/src/je/panse/doro";
+		public static final String wd = currentUsersDir + "/je/panse/doro";
 		
 		public static final String wt = wd + "/text";
 		public static final String wtk = wd + "/text/knots";
